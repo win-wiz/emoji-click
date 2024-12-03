@@ -1,4 +1,27 @@
 {
+  "J/hVSQ": {
+    "translation": "{0}",
+    "message": "{0}",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        466
+      ],
+      [
+        "src/components/category-emoji.tsx",
+        525
+      ],
+      [
+        "src/components/category-emoji.tsx",
+        558
+      ],
+      [
+        "src/components/hot-emoji.tsx",
+        119
+      ]
+    ]
+  },
   "l1DhIF": {
     "translation": "<0>Parola chiave 1 (non tradurre in keywords.txt)</0><1>Parola chiave 2</1><2>Parola chiave 3 (non tradurre in keywords.txt)</2>",
     "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
@@ -8,7 +31,8 @@
         "src/app/[lang]/page.tsx",
         38
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "TsoDGX": {
     "translation": "auto-i18n-next-lingui-tiny-demo, aggiungi una nuova lingua al tuo sito web in 5 minuti",
@@ -17,7 +41,7 @@
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        11
+        14
       ]
     ]
   },
@@ -30,7 +54,8 @@
         "src/app/[lang]/page.tsx",
         33
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "aDJB+h": {
     "translation": "Usa Lingui per aggiungere una nuova lingua al tuo sito web in 5 minuti con l'AI",
@@ -39,7 +64,7 @@
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        12
+        15
       ]
     ]
   },
@@ -51,6 +76,477 @@
       [
         "src/app/[lang]/page.tsx",
         28
+      ]
+    ],
+    "obsolete": true
+  },
+  "Z4NkC3": {
+    "translation": "Ufficiali",
+    "message": "上班族",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        275
+      ]
+    ]
+  },
+  "/KqhBG": {
+    "translation": "Non voglio andare a lavorare, sono così esausti",
+    "message": "不想上班好累啊",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        12
+      ]
+    ]
+  },
+  "uW7qaK": {
+    "translation": "un emoji",
+    "message": "个表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        485
+      ],
+      [
+        "src/components/category-emoji.tsx",
+        528
+      ]
+    ]
+  },
+  "qNbLwo": {
+    "translation": "Bacio",
+    "message": "亲亲",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        39
+      ]
+    ]
+  },
+  "81qJXG": {
+    "translation": "Oggi mi sento particolarmente di buon umore",
+    "message": "今天心情特别好",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        10
+      ]
+    ]
+  },
+  "zYyCyW": {
+    "translation": "Tutte le categorie",
+    "message": "全部分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        373
+      ]
+    ]
+  },
+  "ysc16k": {
+    "translation": "Tutte le categorie di emoji",
+    "message": "全部表情分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        481
+      ]
+    ]
+  },
+  "eDowDR": {
+    "translation": "Medico",
+    "message": "医生",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        276
+      ]
+    ]
+  },
+  "5lS2OX": {
+    "translation": "Cuoco",
+    "message": "厨师",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        278
+      ]
+    ]
+  },
+  "CKHAZ/": {
+    "translation": "Amo",
+    "message": "喜欢",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        35
+      ]
+    ]
+  },
+  "/pWV7M": {
+    "translation": "Sono talmente stanco che non riesco a stare sveglio",
+    "message": "困得不行了",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        16
+      ]
+    ]
+  },
+  "5F7lbF": {
+    "translation": "Ridere",
+    "message": "大笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        23
+      ]
+    ]
+  },
+  "VpgGxv": {
+    "translation": "Ridere imbarazzato",
+    "message": "尴尬笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        26
+      ]
+    ]
+  },
+  "fNpbkb": {
+    "translation": "Il lavoro è finito, è fantastico",
+    "message": "工作完成啦好棒",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        15
+      ]
+    ]
+  },
+  "QM99lf": {
+    "translation": "Copiato",
+    "message": "已复制",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        606
+      ],
+      [
+        "src/components/hot-emoji.tsx",
+        166
+      ]
+    ]
+  },
+  "8Ml78r": {
+    "translation": "Ridere felice",
+    "message": "开心笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        22
+      ]
+    ]
+  },
+  "HbDzdg": {
+    "translation": "Emozione",
+    "message": "情感",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        33
+      ]
+    ]
+  },
+  "Yhxdgn": {
+    "translation": "Vorrei ringraziare ma il pollice in su non funziona",
+    "message": "想表达谢谢但点赞室",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        11
+      ]
+    ]
+  },
+  "r6acDk": {
+    "translation": "Cerca",
+    "message": "搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        46
+      ]
+    ]
+  },
+  "ZB1owk": {
+    "translation": "Sostiene varie espressioni orali",
+    "message": "支持各种口语表达",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        72
+      ]
+    ]
+  },
+  "lm7p2W": {
+    "translation": "Sostiene la ricerca multilingue",
+    "message": "支持多语言搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        76
+      ]
+    ]
+  },
+  "qm8wCa": {
+    "translation": "Occhi a cuoricino",
+    "message": "星星眼",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        37
+      ]
+    ]
+  },
+  "oTQPJM": {
+    "translation": "Voglio augurare un buon compleanno agli amici",
+    "message": "朋友生日想祝福",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        14
+      ]
+    ]
+  },
+  "DDScQ8": {
+    "translation": "Fai clic per copiare l'emoji",
+    "message": "点击可以复制表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/hot-emoji.tsx",
+        178
+      ]
+    ]
+  },
+  "hvta5u": {
+    "translation": "Emoji popolari",
+    "message": "热门表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/hot-emoji.tsx",
+        98
+      ]
+    ]
+  },
+  "9kPlaI": {
+    "translation": "Occhi a cuoricino",
+    "message": "爱心眼",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        36
+      ]
+    ]
+  },
+  "SMZ7ey": {
+    "translation": "Comprensione del contesto emotivo",
+    "message": "理解情感语境",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        80
+      ]
+    ]
+  },
+  "+x4GVv": {
+    "translation": "Trova l'emoji più adatto con l'AI",
+    "message": "用AI找到最适合的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        30
+      ]
+    ]
+  },
+  "LgfBZM": {
+    "translation": "Descrizioni più naturali, l'AI capisce ogni emozione che vuoi esprimere",
+    "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        33
+      ]
+    ]
+  },
+  "h+dKvB": {
+    "translation": "Descrizioni delle tue emozioni quotidiane...",
+    "message": "用日常口语描述你的感受...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        42
+      ]
+    ]
+  },
+  "HguvCd": {
+    "translation": "tipo",
+    "message": "种",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        483
+      ]
+    ]
+  },
+  "KU2ZGU": {
+    "translation": "😂",
+    "message": "笑哭",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        27
+      ]
+    ]
+  },
+  "2CQmUD": {
+    "translation": "Occhi sorridenti",
+    "message": "笑眼",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        24
+      ]
+    ]
+  },
+  "swD0Y5": {
+    "translation": "Insegnante",
+    "message": "老师",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        277
+      ]
+    ]
+  },
+  "d0FwMq": {
+    "translation": "Il capo mi aspetta, sono felice",
+    "message": "老板等我了开开心",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        13
+      ]
+    ]
+  },
+  "BR+jxt": {
+    "translation": "Categoria professionale",
+    "message": "职业",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        273
+      ]
+    ]
+  },
+  "gjhVY9": {
+    "translation": "Artista",
+    "message": "艺术家",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        279
+      ]
+    ]
+  },
+  "tuZXxr": {
+    "translation": "Categoria degli emoji",
+    "message": "表情分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        366
+      ]
+    ]
+  },
+  "PemLuA": {
+    "translation": "Emoji",
+    "message": "表情符号",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        20
+      ]
+    ]
+  },
+  "EojHaD": {
+    "translation": "Prova a cercare così:",
+    "message": "试试这样搜索：",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        53
+      ]
+    ]
+  },
+  "UI+jwu": {
+    "translation": "Sorridente",
+    "message": "露齿笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        25
+      ]
+    ]
+  },
+  "IOyS5i": {
+    "translation": "Bacio sulla guancia",
+    "message": "飞吻",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        38
       ]
     ]
   }

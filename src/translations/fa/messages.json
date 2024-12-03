@@ -1,4 +1,27 @@
 {
+  "J/hVSQ": {
+    "translation": "{0}",
+    "message": "{0}",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        466
+      ],
+      [
+        "src/components/category-emoji.tsx",
+        525
+      ],
+      [
+        "src/components/category-emoji.tsx",
+        558
+      ],
+      [
+        "src/components/hot-emoji.tsx",
+        119
+      ]
+    ]
+  },
   "l1DhIF": {
     "translation": "<0>Keywords 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
     "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
@@ -8,7 +31,8 @@
         "src/app/[lang]/page.tsx",
         38
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "TsoDGX": {
     "translation": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
@@ -17,7 +41,7 @@
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        11
+        14
       ]
     ]
   },
@@ -30,7 +54,8 @@
         "src/app/[lang]/page.tsx",
         33
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "aDJB+h": {
     "translation": "Use Lingui to add a new language to your website in 5 minutes with AI",
@@ -39,7 +64,7 @@
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        12
+        15
       ]
     ]
   },
@@ -51,6 +76,477 @@
       [
         "src/app/[lang]/page.tsx",
         28
+      ]
+    ],
+    "obsolete": true
+  },
+  "Z4NkC3": {
+    "translation": "کارجو",
+    "message": "上班族",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        275
+      ]
+    ]
+  },
+  "/KqhBG": {
+    "translation": " نه خواهشمند کار کنم، خیلی زنگ خورده ام",
+    "message": "不想上班好累啊",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        12
+      ]
+    ]
+  },
+  "uW7qaK": {
+    "translation": " یک عکس'émoji",
+    "message": "个表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        485
+      ],
+      [
+        "src/components/category-emoji.tsx",
+        528
+      ]
+    ]
+  },
+  "qNbLwo": {
+    "translation": " خوابیدنی",
+    "message": "亲亲",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        39
+      ]
+    ]
+  },
+  "81qJXG": {
+    "translation": " امروز خیلی خوبم",
+    "message": "今天心情特别好",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        10
+      ]
+    ]
+  },
+  "zYyCyW": {
+    "translation": " همه دسته‌بندی‌ها",
+    "message": "全部分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        373
+      ]
+    ]
+  },
+  "ysc16k": {
+    "translation": " همه دسته‌بندی‌apprecs",
+    "message": "全部表情分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        481
+      ]
+    ]
+  },
+  "eDowDR": {
+    "translation": " پزشkaan",
+    "message": "医生",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        276
+      ]
+    ]
+  },
+  "5lS2OX": {
+    "translation": " آشپزیکار",
+    "message": "厨师",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        278
+      ]
+    ]
+  },
+  "CKHAZ/": {
+    "translation": " دوست دارم",
+    "message": "喜欢",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        35
+      ]
+    ]
+  },
+  "/pWV7M": {
+    "translation": " ناچیدنی می‌کردم",
+    "message": "困得不行了",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        16
+      ]
+    ]
+  },
+  "5F7lbF": {
+    "translation": " پرنده‌دارید",
+    "message": "大笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        23
+      ]
+    ]
+  },
+  "VpgGxv": {
+    "translation": " خشم‌دارید",
+    "message": "尴尬笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        26
+      ]
+    ]
+  },
+  "fNpbkb": {
+    "translation": " کار من تمام شد خیلی خوب بود",
+    "message": "工作完成啦好棒",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        15
+      ]
+    ]
+  },
+  "QM99lf": {
+    "translation": " کپی شد",
+    "message": "已复制",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        606
+      ],
+      [
+        "src/components/hot-emoji.tsx",
+        166
+      ]
+    ]
+  },
+  "8Ml78r": {
+    "translation": " پرنده‌دارید",
+    "message": "开心笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        22
+      ]
+    ]
+  },
+  "HbDzdg": {
+    "translation": " عواطف",
+    "message": "情感",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        33
+      ]
+    ]
+  },
+  "Yhxdgn": {
+    "translation": " می‌خواهم از شما תודה بگویم اما نشانه‌گذاری‌کنید",
+    "message": "想表达谢谢但点赞室",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        11
+      ]
+    ]
+  },
+  "r6acDk": {
+    "translation": " جستجو کنید",
+    "message": "搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        46
+      ]
+    ]
+  },
+  "ZB1owk": {
+    "translation": " همه‌ی انواع گفتار آشپزی را پشتیبانی می‌کند",
+    "message": "支持各种口语表达",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        72
+      ]
+    ]
+  },
+  "lm7p2W": {
+    "translation": " پشتیبانی از چندین زبان برای جستجو",
+    "message": "支持多语言搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        76
+      ]
+    ]
+  },
+  "qm8wCa": {
+    "translation": " szemöldökög",
+    "message": "星星眼",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        37
+      ]
+    ]
+  },
+  "oTQPJM": {
+    "translation": " برای تولید روز تولد دوست دارید",
+    "message": "朋友生日想祝福",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        14
+      ]
+    ]
+  },
+  "DDScQ8": {
+    "translation": " کلیک کنید تا کپی نشانه‌گذاری کنید",
+    "message": "点击可以复制表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/hot-emoji.tsx",
+        178
+      ]
+    ]
+  },
+  "hvta5u": {
+    "translation": "apprecs پر بازدید",
+    "message": "热门表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/hot-emoji.tsx",
+        98
+      ]
+    ]
+  },
+  "9kPlaI": {
+    "translation": " szemöldökög",
+    "message": "爱心眼",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        36
+      ]
+    ]
+  },
+  "SMZ7ey": {
+    "translation": " عواطف را درک کنید",
+    "message": "理解情感语境",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        80
+      ]
+    ]
+  },
+  "+x4GVv": {
+    "translation": " با AI بهترینapprec برایتان پیدا کنید",
+    "message": "用AI找到最适合的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        30
+      ]
+    ]
+  },
+  "LgfBZM": {
+    "translation": " با توصیف طبیعی‌ترین راه، AI هر چیزی را می‌دانند که احساس شما را می‌خواهید 표현 کنید",
+    "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        33
+      ]
+    ]
+  },
+  "h+dKvB": {
+    "translation": " با توصیف حرفه‌ای روزانه احساسات خود را...",
+    "message": "用日常口语描述你的感受...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        42
+      ]
+    ]
+  },
+  "HguvCd": {
+    "translation": " نوع",
+    "message": "种",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        483
+      ]
+    ]
+  },
+  "KU2ZGU": {
+    "translation": "笑哭",
+    "message": "笑哭",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        27
+      ]
+    ]
+  },
+  "2CQmUD": {
+    "translation": " szemöldökög",
+    "message": "笑眼",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        24
+      ]
+    ]
+  },
+  "swD0Y5": {
+    "translation": " مدرس",
+    "message": "老师",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        277
+      ]
+    ]
+  },
+  "d0FwMq": {
+    "translation": " کارمند من منتظر БосPå می‌باشید خوشحالم",
+    "message": "老板等我了开开心",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        13
+      ]
+    ]
+  },
+  "BR+jxt": {
+    "translation": " مهنه",
+    "message": "职业",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        273
+      ]
+    ]
+  },
+  "gjhVY9": {
+    "translation": " هنرمند",
+    "message": "艺术家",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        279
+      ]
+    ]
+  },
+  "tuZXxr": {
+    "translation": " دسته‌بندی‌apprecs",
+    "message": "表情分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        366
+      ]
+    ]
+  },
+  "PemLuA": {
+    "translation": "apprecs‌znamok",
+    "message": "表情符号",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        20
+      ]
+    ]
+  },
+  "EojHaD": {
+    "translation": " اینطور جستجو کنید:",
+    "message": "试试这样搜索：",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        53
+      ]
+    ]
+  },
+  "UI+jwu": {
+    "translation": " پرنده‌دارید",
+    "message": "露齿笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        25
+      ]
+    ]
+  },
+  "IOyS5i": {
+    "translation": " اشتیاق‌دارید",
+    "message": "飞吻",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        38
       ]
     ]
   }

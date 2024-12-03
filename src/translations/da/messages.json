@@ -1,4 +1,27 @@
 {
+  "J/hVSQ": {
+    "translation": "{0}",
+    "message": "{0}",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        466
+      ],
+      [
+        "src/components/category-emoji.tsx",
+        525
+      ],
+      [
+        "src/components/category-emoji.tsx",
+        558
+      ],
+      [
+        "src/components/hot-emoji.tsx",
+        119
+      ]
+    ]
+  },
   "l1DhIF": {
     "translation": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
     "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
@@ -8,7 +31,8 @@
         "src/app/[lang]/page.tsx",
         38
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "TsoDGX": {
     "translation": "auto-i18n-next-lingui-tiny-demo, få tilføjet en ny dansk til din hjemmeside i fem minutter",
@@ -17,7 +41,7 @@
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        11
+        14
       ]
     ]
   },
@@ -30,7 +54,8 @@
         "src/app/[lang]/page.tsx",
         33
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "aDJB+h": {
     "translation": "Brug Lingui til at få tilføjet en ny dansk til din hjemmeside i fem minutter med AI",
@@ -39,7 +64,7 @@
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        12
+        15
       ]
     ]
   },
@@ -51,6 +76,477 @@
       [
         "src/app/[lang]/page.tsx",
         28
+      ]
+    ],
+    "obsolete": true
+  },
+  "Z4NkC3": {
+    "translation": "Ansatte",
+    "message": "上班族",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        275
+      ]
+    ]
+  },
+  "/KqhBG": {
+    "translation": "Jeg ønsker ikke at gå på jobb, jeg er trækket ud",
+    "message": "不想上班好累啊",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        12
+      ]
+    ]
+  },
+  "uW7qaK": {
+    "translation": "et emoji",
+    "message": "个表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        485
+      ],
+      [
+        "src/components/category-emoji.tsx",
+        528
+      ]
+    ]
+  },
+  "qNbLwo": {
+    "translation": "kys",
+    "message": "亲亲",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        39
+      ]
+    ]
+  },
+  "81qJXG": {
+    "translation": "Jeg har været særligt godt tilfreds idag",
+    "message": "今天心情特别好",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        10
+      ]
+    ]
+  },
+  "zYyCyW": {
+    "translation": "Alle kategorier",
+    "message": "全部分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        373
+      ]
+    ]
+  },
+  "ysc16k": {
+    "translation": "Alle emoji-kategorier",
+    "message": "全部表情分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        481
+      ]
+    ]
+  },
+  "eDowDR": {
+    "translation": "læge",
+    "message": "医生",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        276
+      ]
+    ]
+  },
+  "5lS2OX": {
+    "translation": "kokken",
+    "message": "厨师",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        278
+      ]
+    ]
+  },
+  "CKHAZ/": {
+    "translation": "gleder sig til",
+    "message": "喜欢",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        35
+      ]
+    ]
+  },
+  "/pWV7M": {
+    "translation": "så trækket ud jeg kunne sove",
+    "message": "困得不行了",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        16
+      ]
+    ]
+  },
+  "5F7lbF": {
+    "translation": "rigtig god stemning",
+    "message": "大笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        23
+      ]
+    ]
+  },
+  "VpgGxv": {
+    "translation": "skamfuld grin",
+    "message": "尴尬笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        26
+      ]
+    ]
+  },
+  "fNpbkb": {
+    "translation": "Jobbet er færdigt, godt nytår",
+    "message": "工作完成啦好棒",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        15
+      ]
+    ]
+  },
+  "QM99lf": {
+    "translation": "skrevet til utkopi",
+    "message": "已复制",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        606
+      ],
+      [
+        "src/components/hot-emoji.tsx",
+        166
+      ]
+    ]
+  },
+  "8Ml78r": {
+    "translation": "glædelig smil",
+    "message": "开心笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        22
+      ]
+    ]
+  },
+  "HbDzdg": {
+    "translation": "følelser",
+    "message": "情感",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        33
+      ]
+    ]
+  },
+  "Yhxdgn": {
+    "translation": "Jeg ønsker at takke, men klik på højst mulig antal ønskes",
+    "message": "想表达谢谢但点赞室",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        11
+      ]
+    ]
+  },
+  "r6acDk": {
+    "translation": "Søg",
+    "message": "搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        46
+      ]
+    ]
+  },
+  "ZB1owk": {
+    "translation": "understøtter forskellige mundtlige udtryk",
+    "message": "支持各种口语表达",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        72
+      ]
+    ]
+  },
+  "lm7p2W": {
+    "translation": "understøtter flerspråklig søgning",
+    "message": "支持多语言搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        76
+      ]
+    ]
+  },
+  "qm8wCa": {
+    "translation": "stjernerøde øjne",
+    "message": "星星眼",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        37
+      ]
+    ]
+  },
+  "oTQPJM": {
+    "translation": "til en ven på fødselsdagen ønsker jeg at holde øje med",
+    "message": "朋友生日想祝福",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        14
+      ]
+    ]
+  },
+  "DDScQ8": {
+    "translation": "Klik her for at kunne kopiere emoji",
+    "message": "点击可以复制表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/hot-emoji.tsx",
+        178
+      ]
+    ]
+  },
+  "hvta5u": {
+    "translation": "populære emoji",
+    "message": "热门表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/hot-emoji.tsx",
+        98
+      ]
+    ]
+  },
+  "9kPlaI": {
+    "translation": "kærlig øje",
+    "message": "爱心眼",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        36
+      ]
+    ]
+  },
+  "SMZ7ey": {
+    "translation": "forstår følelseskonteksten",
+    "message": "理解情感语境",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        80
+      ]
+    ]
+  },
+  "+x4GVv": {
+    "translation": "Finn størst mulig emoji med AI",
+    "message": "用AI找到最适合的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        30
+      ]
+    ]
+  },
+  "LgfBZM": {
+    "translation": "beskriv på den mest naturlige måde, AI forstår hver følelse du ønsker at udtrykke",
+    "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        33
+      ]
+    ]
+  },
+  "h+dKvB": {
+    "translation": "beskriv følelsen med hverdagsmåden...",
+    "message": "用日常口语描述你的感受...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        42
+      ]
+    ]
+  },
+  "HguvCd": {
+    "translation": "en",
+    "message": "种",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        483
+      ]
+    ]
+  },
+  "KU2ZGU": {
+    "translation": "笑哭",
+    "message": "笑哭",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        27
+      ]
+    ]
+  },
+  "2CQmUD": {
+    "translation": "smilende øjne",
+    "message": "笑眼",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        24
+      ]
+    ]
+  },
+  "swD0Y5": {
+    "translation": "lærer",
+    "message": "老师",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        277
+      ]
+    ]
+  },
+  "d0FwMq": {
+    "translation": "boss, jeg skal vente på ham, jeg er så glad",
+    "message": "老板等我了开开心",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        13
+      ]
+    ]
+  },
+  "BR+jxt": {
+    "translation": "yrke",
+    "message": "职业",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        273
+      ]
+    ]
+  },
+  "gjhVY9": {
+    "translation": "håndværker",
+    "message": "艺术家",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        279
+      ]
+    ]
+  },
+  "tuZXxr": {
+    "translation": "emoji-kategori",
+    "message": "表情分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        366
+      ]
+    ]
+  },
+  "PemLuA": {
+    "translation": "emoji",
+    "message": "表情符号",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        20
+      ]
+    ]
+  },
+  "EojHaD": {
+    "translation": "Søg således:",
+    "message": "试试这样搜索：",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        53
+      ]
+    ]
+  },
+  "UI+jwu": {
+    "translation": "endløs smil",
+    "message": "露齿笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        25
+      ]
+    ]
+  },
+  "IOyS5i": {
+    "translation": "følelsesfølsomme øjne",
+    "message": "飞吻",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        38
       ]
     ]
   }

@@ -1,10 +1,9 @@
 
 "use client";
 
-import { Zap } from "lucide-react";
 import Link from "next/link";
 import LanguageToggle from "./language-toggle";
-import { AVAILABLE_LOCALES } from "@/framework/locales";
+import { AVAILABLE_LOCALES } from "@/locales/config";
 
 export default function Navigation(
   { lang }: { lang: AVAILABLE_LOCALES }

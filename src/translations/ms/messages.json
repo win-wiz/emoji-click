@@ -1,4 +1,27 @@
 {
+  "J/hVSQ": {
+    "translation": "{0}",
+    "message": "{0}",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        466
+      ],
+      [
+        "src/components/category-emoji.tsx",
+        525
+      ],
+      [
+        "src/components/category-emoji.tsx",
+        558
+      ],
+      [
+        "src/components/hot-emoji.tsx",
+        119
+      ]
+    ]
+  },
   "l1DhIF": {
     "translation": "<0>Kata Kunci 1 (tidak diterjemahkan dalam keywords.txt)</0><1>Kata Kunci 2</1><2>Kata Kunci 3 (tidak diterjemahkan dalam keywords.txt)</2>",
     "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
@@ -8,7 +31,8 @@
         "src/app/[lang]/page.tsx",
         38
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "TsoDGX": {
     "translation": "auto-i18n-next-lingui-tiny-demo, tambahkan bahasa baru ke situs web Anda dalam 5 menit",
@@ -17,7 +41,7 @@
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        11
+        14
       ]
     ]
   },
@@ -30,7 +54,8 @@
         "src/app/[lang]/page.tsx",
         33
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "aDJB+h": {
     "translation": "Gunakan Lingui untuk menambahkan bahasa baru ke situs web Anda dalam 5 menit dengan AI",
@@ -39,7 +64,7 @@
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        12
+        15
       ]
     ]
   },
@@ -51,6 +76,477 @@
       [
         "src/app/[lang]/page.tsx",
         28
+      ]
+    ],
+    "obsolete": true
+  },
+  "Z4NkC3": {
+    "translation": "pekerja pejabat",
+    "message": "上班族",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        275
+      ]
+    ]
+  },
+  "/KqhBG": {
+    "translation": "Malas untuk pergi bekerja, rasa letih sangat",
+    "message": "不想上班好累啊",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        12
+      ]
+    ]
+  },
+  "uW7qaK": {
+    "translation": "sebuah emoji",
+    "message": "个表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        485
+      ],
+      [
+        "src/components/category-emoji.tsx",
+        528
+      ]
+    ]
+  },
+  "qNbLwo": {
+    "translation": "cium",
+    "message": "亲亲",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        39
+      ]
+    ]
+  },
+  "81qJXG": {
+    "translation": "Hari ini saya rasa begitu gembira",
+    "message": "今天心情特别好",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        10
+      ]
+    ]
+  },
+  "zYyCyW": {
+    "translation": "semua kategori",
+    "message": "全部分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        373
+      ]
+    ]
+  },
+  "ysc16k": {
+    "translation": "kategori emoji semua",
+    "message": "全部表情分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        481
+      ]
+    ]
+  },
+  "eDowDR": {
+    "translation": "doktor",
+    "message": "医生",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        276
+      ]
+    ]
+  },
+  "5lS2OX": {
+    "translation": "koki",
+    "message": "厨师",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        278
+      ]
+    ]
+  },
+  "CKHAZ/": {
+    "translation": "suka",
+    "message": "喜欢",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        35
+      ]
+    ]
+  },
+  "/pWV7M": {
+    "translation": "terlalu mengantuk",
+    "message": "困得不行了",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        16
+      ]
+    ]
+  },
+  "5F7lbF": {
+    "translation": "tersengih",
+    "message": "大笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        23
+      ]
+    ]
+  },
+  "VpgGxv": {
+    "translation": "tersengih malu",
+    "message": "尴尬笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        26
+      ]
+    ]
+  },
+  "fNpbkb": {
+    "translation": "Selesai projek, bagus",
+    "message": "工作完成啦好棒",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        15
+      ]
+    ]
+  },
+  "QM99lf": {
+    "translation": "disalin",
+    "message": "已复制",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        606
+      ],
+      [
+        "src/components/hot-emoji.tsx",
+        166
+      ]
+    ]
+  },
+  "8Ml78r": {
+    "translation": "tersengih gembira",
+    "message": "开心笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        22
+      ]
+    ]
+  },
+  "HbDzdg": {
+    "translation": "emosi",
+    "message": "情感",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        33
+      ]
+    ]
+  },
+  "Yhxdgn": {
+    "translation": "suka nak ucap terima kasih tapi klik suka",
+    "message": "想表达谢谢但点赞室",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        11
+      ]
+    ]
+  },
+  "r6acDk": {
+    "translation": "carian",
+    "message": "搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        46
+      ]
+    ]
+  },
+  "ZB1owk": {
+    "translation": "menyokong pelbagai ekspresi ucapan kasual",
+    "message": "支持各种口语表达",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        72
+      ]
+    ]
+  },
+  "lm7p2W": {
+    "translation": "menyokong carian bahasa pelbagai",
+    "message": "支持多语言搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        76
+      ]
+    ]
+  },
+  "qm8wCa": {
+    "translation": "mata hati",
+    "message": "星星眼",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        37
+      ]
+    ]
+  },
+  "oTQPJM": {
+    "translation": "ucapkan selamat harijadi kepada kawan",
+    "message": "朋友生日想祝福",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        14
+      ]
+    ]
+  },
+  "DDScQ8": {
+    "translation": "klik untuk boleh disalin emoji",
+    "message": "点击可以复制表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/hot-emoji.tsx",
+        178
+      ]
+    ]
+  },
+  "hvta5u": {
+    "translation": "emoji panas",
+    "message": "热门表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/hot-emoji.tsx",
+        98
+      ]
+    ]
+  },
+  "9kPlaI": {
+    "translation": "mata hati cinta",
+    "message": "爱心眼",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        36
+      ]
+    ]
+  },
+  "SMZ7ey": {
+    "translation": "memahami konteks emosi",
+    "message": "理解情感语境",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        80
+      ]
+    ]
+  },
+  "+x4GVv": {
+    "translation": "gunakan AI untuk cari emoji yang sesuai",
+    "message": "用AI找到最适合的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        30
+      ]
+    ]
+  },
+  "LgfBZM": {
+    "translation": "gambarkan dengan cara yang paling semula jadi, AI faham setiap emosi yang anda ingin ungkap",
+    "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        33
+      ]
+    ]
+  },
+  "h+dKvB": {
+    "translation": "gambarkan perasaan anda dengan ucapan kasar...",
+    "message": "用日常口语描述你的感受...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        42
+      ]
+    ]
+  },
+  "HguvCd": {
+    "translation": "sebuah",
+    "message": "种",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        483
+      ]
+    ]
+  },
+  "KU2ZGU": {
+    "translation": "tersengih",
+    "message": "笑哭",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        27
+      ]
+    ]
+  },
+  "2CQmUD": {
+    "translation": "mata sengih",
+    "message": "笑眼",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        24
+      ]
+    ]
+  },
+  "swD0Y5": {
+    "translation": "guru",
+    "message": "老师",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        277
+      ]
+    ]
+  },
+  "d0FwMq": {
+    "translation": "bos saya nak saya, gembira",
+    "message": "老板等我了开开心",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        13
+      ]
+    ]
+  },
+  "BR+jxt": {
+    "translation": "kerjaya",
+    "message": "职业",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        273
+      ]
+    ]
+  },
+  "gjhVY9": {
+    "translation": "artis",
+    "message": "艺术家",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        279
+      ]
+    ]
+  },
+  "tuZXxr": {
+    "translation": "kategori emoji",
+    "message": "表情分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        366
+      ]
+    ]
+  },
+  "PemLuA": {
+    "translation": "emoji",
+    "message": "表情符号",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        20
+      ]
+    ]
+  },
+  "EojHaD": {
+    "translation": "cuba cari seperti ini:",
+    "message": "试试这样搜索：",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search-emoji.tsx",
+        53
+      ]
+    ]
+  },
+  "UI+jwu": {
+    "translation": "tersengih",
+    "message": "露齿笑",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        25
+      ]
+    ]
+  },
+  "IOyS5i": {
+    "translation": "cium bibir",
+    "message": "飞吻",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category-emoji.tsx",
+        38
       ]
     ]
   }
