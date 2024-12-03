@@ -29,6 +29,8 @@
     "zod": "^3.23.3"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.6",
+    "@cloudflare/workers-types": "^4.20241127.0",
     "@lingui/cli": "^4.13.0",
     "@lingui/conf": "^4.13.0",
     "@lingui/format-json": "^4.13.0",
