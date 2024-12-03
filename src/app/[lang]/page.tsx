@@ -1,11 +1,12 @@
 import { SearchEmoji } from '@/components/search-emoji';
-import I18nLink from '@/components/i18n/i18n-link';
 import { canonicalUrl, getI18nInstance } from '@/i18n'
-import { t, Trans } from '@lingui/macro'
+import { t } from '@lingui/macro'
 import { setI18n } from '@lingui/react/server'
 import { Metadata } from 'next'
 import { HotEmoji } from '@/components/hot-emoji';
 import CategoryEmoji from '@/components/category-emoji';
+
+export const runtime = 'edge';
 
 export function generateMetadata({ params }: { params: { lang: string } }): Metadata {
   const i18n = getI18nInstance(params.lang)
