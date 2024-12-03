@@ -1,5 +1,3 @@
-import { env } from "@/env";
-
 export const localeNames = {
    "zh": '简体中文', // 简体中文
    "en": 'English', // 英语
@@ -66,4 +64,4 @@ export const locales = Object.keys(localeNames);
 
 export const DEFAULT_LOCALE = AVAILABLE_LOCALES.en;
 
-export const siteUrl = process.env.NODE_ENV === 'production' ? env.PRODUCTION_URL : "http://localhost:3000"
+export const siteUrl = process.env.NODE_ENV === 'production' ? process.env.PRODUCTION_URL : "http://localhost:3000"
