@@ -1,0 +1,57 @@
+{
+  "l1DhIF": {
+    "translation": "<0>कीवर्ड 1 (कीवर्ड्स.txt में अनल超好翻译)</0><1>कीवर्ड 2</1><2>कीवर्ड 3 (कीवर्ड्स.txt में अनल超好翻译)</2>",
+    "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        38
+      ]
+    ]
+  },
+  "TsoDGX": {
+    "translation": "auto-i18n-next-lingui-tiny-demo, 5 मिनट में अपनी वेबसाइट में एक नए भाषा जोड़ें",
+    "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        11
+      ]
+    ]
+  },
+  "dFY3S6": {
+    "translation": "उपर्युक्त पृष्ठ",
+    "message": "To Sub Page",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        33
+      ]
+    ]
+  },
+  "aDJB+h": {
+    "translation": "Lingui का उपयोग करके 5 मिनट में आपकी वेबसाइट में एक नए भाषा जोड़ें",
+    "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        12
+      ]
+    ]
+  },
+  "QpzMsa": {
+    "translation": "नमस्ते <0>Next.js!</0>",
+    "message": "Welcome to <0>Next.js!</0>",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        28
+      ]
+    ]
+  }
+}

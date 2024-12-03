@@ -1,0 +1,57 @@
+{
+  "l1DhIF": {
+    "translation": "<0>কিছু শব্দ (কীjsd.txt এ অনranslate করা না)</0><1>কিছু শব্দ</1><2>কিছু শব্দ (কীjsd.txt এ অনranslate করা না)</2>",
+    "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        38
+      ]
+    ]
+  },
+  "TsoDGX": {
+    "translation": "টু সাব পেইজ",
+    "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        11
+      ]
+    ]
+  },
+  "dFY3S6": {
+    "translation": "আপনার ওয়েবসাইটে 5 মিনিটে একটি নতুন ভাষা যোগ করুন",
+    "message": "To Sub Page",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        33
+      ]
+    ]
+  },
+  "aDJB+h": {
+    "translation": "আইএমএর ব্যবহার করে আপনার ওয়েবসাইটে 5 মিনিটে একটি নতুন ভাষা যোগ করুন",
+    "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        12
+      ]
+    ]
+  },
+  "QpzMsa": {
+    "translation": "আপনাকzlich বন্ধু Nexṭ.js!",
+    "message": "Welcome to <0>Next.js!</0>",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        28
+      ]
+    ]
+  }
+}

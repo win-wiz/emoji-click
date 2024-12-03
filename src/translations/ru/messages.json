@@ -1,0 +1,57 @@
+{
+  "l1DhIF": {
+    "translation": "<0>Не переводить в словах ключевых</0><1>Ключевое слово 2</1><2>Не переводить в словах ключевых</2>",
+    "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        38
+      ]
+    ]
+  },
+  "TsoDGX": {
+    "translation": "авто-i18n-next-lingui-tiny-демо, добавьте новый язык на ваш сайт за 5 минут",
+    "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        11
+      ]
+    ]
+  },
+  "dFY3S6": {
+    "translation": "На Подстраницу",
+    "message": "To Sub Page",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        33
+      ]
+    ]
+  },
+  "aDJB+h": {
+    "translation": "Используйте Lingui, чтобы добавить новый язык на ваш сайт всего за 5 минут с помощью ИИ",
+    "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        12
+      ]
+    ]
+  },
+  "QpzMsa": {
+    "translation": "Добро пожаловать в <0>Next.js!</0>",
+    "message": "Welcome to <0>Next.js!</0>",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        28
+      ]
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "l1DhIF": {
+    "translation": "<0>키워드 1 (키워드.txt에는 번역하지 않음)</0><1>키워드 2</1><2>키워드 3 (키워드.txt에는 번역하지 않음)</2>",
+    "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        38
+      ]
+    ]
+  },
+  "TsoDGX": {
+    "translation": "자동 i18n-next-lingui-tiny-데모, 5분만에 웹사이트에 새로운 언어 추가",
+    "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        11
+      ]
+    ]
+  },
+  "dFY3S6": {
+    "translation": "하위 페이지로 이동",
+    "message": "To Sub Page",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        33
+      ]
+    ]
+  },
+  "aDJB+h": {
+    "translation": "Lingui를 사용하여 5분만에 AI를 사용하여 웹사이트에 새로운 언어 추가",
+    "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        12
+      ]
+    ]
+  },
+  "QpzMsa": {
+    "translation": "<0>Next.js로 오신 것을 환영합니다!</0>",
+    "message": "Welcome to <0>Next.js!</0>",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        28
+      ]
+    ]
+  }
+}

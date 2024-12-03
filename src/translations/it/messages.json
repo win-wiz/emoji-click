@@ -1,0 +1,57 @@
+{
+  "l1DhIF": {
+    "translation": "<0>Parola chiave 1 (non tradurre in keywords.txt)</0><1>Parola chiave 2</1><2>Parola chiave 3 (non tradurre in keywords.txt)</2>",
+    "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        38
+      ]
+    ]
+  },
+  "TsoDGX": {
+    "translation": "auto-i18n-next-lingui-tiny-demo, aggiungi una nuova lingua al tuo sito web in 5 minuti",
+    "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        11
+      ]
+    ]
+  },
+  "dFY3S6": {
+    "translation": "In Pagina Secondaria",
+    "message": "To Sub Page",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        33
+      ]
+    ]
+  },
+  "aDJB+h": {
+    "translation": "Usa Lingui per aggiungere una nuova lingua al tuo sito web in 5 minuti con l'AI",
+    "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        12
+      ]
+    ]
+  },
+  "QpzMsa": {
+    "translation": "Benvenuto in <0>Next.js!</0>",
+    "message": "Welcome to <0>Next.js!</0>",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/page.tsx",
+        28
+      ]
+    ]
+  }
+}
