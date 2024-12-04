@@ -36,7 +36,7 @@ export default function SingleEmoji({
     >
       {/* 主要内容区域 - 点击跳转到详情页 */}
       <Link
-        href={lang === DEFAULT_LOCALE ? `/details` : `/${lang}/details`}
+        href={`/${lang}/details`}
         className="flex flex-col items-center flex-1 w-full cursor-pointer"
       >
         <span className="text-4xl sm:text-5xl mb-2 transform group-hover:scale-110 transition-transform duration-300">
