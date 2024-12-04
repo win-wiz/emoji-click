@@ -1,7 +1,9 @@
 import { Messages } from '@lingui/core'
-// 静态导入所有语言文件
-import enMessages from '@/translations/en/messages.json'
+
 import { AVAILABLE_LOCALES, DEFAULT_LOCALE } from './config';
+// 静态导入所有语言文件
+import zhMessages from '@/translations/zh/messages.json'
+import enMessages from '@/translations/en/messages.json'
 import csMessages from '@/translations/cs/messages.json'
 import frMessages from '@/translations/fr/messages.json'
 import deMessages from '@/translations/de/messages.json'
@@ -62,6 +64,7 @@ function convertToMessages(rawMessages: RawMessages): Messages {
 
 // 创建 messagesMap
 export const messagesMap: Record<string, Messages> = {
+  "zh": convertToMessages(zhMessages as RawMessages),
   "en": convertToMessages(enMessages as RawMessages),
   "cs": convertToMessages(csMessages as RawMessages),
   "fr": convertToMessages(frMessages as RawMessages),
