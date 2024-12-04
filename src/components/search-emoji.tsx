@@ -2,8 +2,10 @@
 
 import { useState } from 'react'
 import { Trans, t } from '@lingui/macro'
+import SearchDialog from '@/components/search/search-dialog'
 
 export const SearchEmoji = () => {
+  const [isOpen, setIsOpen] = useState(false)
   const [searchText, setSearchText] = useState('')
 
   const exampleSearches = [
@@ -33,16 +35,20 @@ export const SearchEmoji = () => {
           <Trans>用最自然的方式描述，AI 懂你想表达的每一种情绪</Trans>
         </p>
 
-        {/* 搜索框 */}
+        {/* 搜索框 - 点击时打开对话框 */}
         <div className="relative mb-10">
           <input
             type="text"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
+            onFocus={() => setIsOpen(true)}
             placeholder={t`用日常口语描述你的感受...`}
             className="w-full px-4 py-3.5 rounded-2xl border border-purple-200/70 focus:outline-none focus:ring-2 focus:ring-purple-500/30 shadow-sm bg-white/80 backdrop-blur-sm"
           />
-          <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-purple-600 text-white px-6 py-2 rounded-xl hover:bg-purple-700 transition-colors">
+          <button 
+            onClick={() => setIsOpen(true)}
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-purple-600 text-white px-6 py-2 rounded-xl hover:bg-purple-700 transition-colors"
+          >
             <Trans>搜索</Trans>
           </button>
         </div>
@@ -81,6 +87,15 @@ export const SearchEmoji = () => {
           </div>
         </div>
       </div>
+
+      {/* 搜索对话框 */}
+      <SearchDialog 
+        isOpen={isOpen} 
+        onClose={() => setIsOpen(false)}
+        initialSearch={searchText}
+        onSearch={setSearchText}
+        exampleSearches={exampleSearches}
+      />
     </div>
   )
 }

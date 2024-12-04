@@ -1,4 +1,4 @@
-import { AVAILABLE_LOCALES, DEFAULT_LOCALE, locales } from "./config"
+import { AVAILABLE_LOCALES, DEFAULT_LOCALE, locales, siteUrl } from "./config"
 import { globalI18n } from "./i18n"
 import { serverSideTranslations } from "./serverSideTranslations"
 
@@ -40,4 +40,8 @@ export async function activateLocale(lang: AVAILABLE_LOCALES) {
   const messages = i18n._i18nPropsNamespace.initialMessages
   globalI18n.loadAndActivate({ locale, messages })
   globalI18n.activate(lang)
+}
+
+export function canonicalUrl(path: string, lang: AVAILABLE_LOCALES) {
+  return `${siteUrl}${lang === DEFAULT_LOCALE ? '' : `/${lang}`}${path}`
 }

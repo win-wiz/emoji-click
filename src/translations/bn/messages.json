@@ -1,98 +1,39 @@
 {
-  "J/hVSQ": {
-    "translation": "{0}",
-    "message": "{0}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category-emoji.tsx",
-        466
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        525
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        558
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        119
-      ]
-    ]
-  },
-  "l1DhIF": {
-    "translation": "<0>কিছু শব্দ (কীjsd.txt এ অনranslate করা না)</0><1>কিছু শব্দ</1><2>কিছু শব্দ (কীjsd.txt এ অনranslate করা না)</2>",
-    "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        38
-      ]
-    ],
-    "obsolete": true
-  },
   "TsoDGX": {
-    "translation": "টু সাব পেইজ",
+    "translation": "",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        14
+        16
       ]
     ]
   },
-  "dFY3S6": {
-    "translation": "আপনার ওয়েবসাইটে 5 মিনিটে একটি নতুন ভাষা যোগ করুন",
-    "message": "To Sub Page",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        33
-      ]
-    ],
-    "obsolete": true
-  },
   "aDJB+h": {
-    "translation": "আইএমএর ব্যবহার করে আপনার ওয়েবসাইটে 5 মিনিটে একটি নতুন ভাষা যোগ করুন",
+    "translation": "",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        15
+        17
       ]
     ]
   },
-  "QpzMsa": {
-    "translation": "আপনাকzlich বন্ধু Nexṭ.js!",
-    "message": "Welcome to <0>Next.js!</0>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        28
-      ]
-    ],
-    "obsolete": true
-  },
   "Z4NkC3": {
-    "translation": "বসসর技工",
+    "translation": "",
     "message": "上班族",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        275
+        "src/components/category/category-emoji.tsx",
+        269
       ]
     ]
   },
   "/KqhBG": {
-    "translation": "না চাই কাজ করা হচ্ছে বুঝতে চাই যে কি মনে আছে",
+    "translation": "",
     "message": "不想上班好累啊",
     "comments": [],
     "origin": [
@@ -103,33 +44,33 @@
     ]
   },
   "uW7qaK": {
-    "translation": "একটি বাক্তি",
+    "translation": "",
     "message": "个表情",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        485
+        "src/components/category/category-modal.tsx",
+        57
       ],
       [
-        "src/components/category-emoji.tsx",
-        528
+        "src/components/category/category-modal.tsx",
+        101
       ]
     ]
   },
   "qNbLwo": {
-    "translation": "চুম্বন",
+    "translation": "",
     "message": "亲亲",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        39
+        "src/components/category/category-emoji.tsx",
+        33
       ]
     ]
   },
   "81qJXG": {
-    "translation": "আজকের মনের অবস্থা খুব ভালো",
+    "translation": "",
     "message": "今天心情特别好",
     "comments": [],
     "origin": [
@@ -140,62 +81,62 @@
     ]
   },
   "zYyCyW": {
-    "translation": "সমস্ত বিভাগ",
+    "translation": "",
     "message": "全部分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        373
+        "src/components/category/category-modal.tsx",
+        39
       ]
     ]
   },
   "ysc16k": {
-    "translation": "সমস্ত বাক্তি বিভাগ",
+    "translation": "",
     "message": "全部表情分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        481
+        "src/components/category/category-modal.tsx",
+        53
       ]
     ]
   },
   "eDowDR": {
-    "translation": "ডাক্তার",
+    "translation": "",
     "message": "医生",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        276
+        "src/components/category/category-emoji.tsx",
+        270
       ]
     ]
   },
   "5lS2OX": {
-    "translation": "চাকরী",
+    "translation": "",
     "message": "厨师",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        278
+        "src/components/category/category-emoji.tsx",
+        272
       ]
     ]
   },
   "CKHAZ/": {
-    "translation": "ভালবাসা",
+    "translation": "",
     "message": "喜欢",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        35
+        "src/components/category/category-emoji.tsx",
+        29
       ]
     ]
   },
   "/pWV7M": {
-    "translation": "খুব বored",
+    "translation": "",
     "message": "困得不行了",
     "comments": [],
     "origin": [
@@ -206,29 +147,29 @@
     ]
   },
   "5F7lbF": {
-    "translation": "হাসি",
+    "translation": "",
     "message": "大笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        23
+        "src/components/category/category-emoji.tsx",
+        17
       ]
     ]
   },
   "VpgGxv": {
-    "translation": "অস্বস্তিকর হাসি",
+    "translation": "",
     "message": "尴尬笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        26
+        "src/components/category/category-emoji.tsx",
+        20
       ]
     ]
   },
   "fNpbkb": {
-    "translation": "কর্ম সম্পন্ন হয়েছে ভালো",
+    "translation": "",
     "message": "工作完成啦好棒",
     "comments": [],
     "origin": [
@@ -239,44 +180,40 @@
     ]
   },
   "QM99lf": {
-    "translation": "কপি হয়েছে",
+    "translation": "",
     "message": "已复制",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        606
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        166
+        "src/components/single-emoji.tsx",
+        84
       ]
     ]
   },
   "8Ml78r": {
-    "translation": "হাসি",
+    "translation": "",
     "message": "开心笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        22
+        "src/components/category/category-emoji.tsx",
+        16
       ]
     ]
   },
   "HbDzdg": {
-    "translation": "ভাবনাবলী",
+    "translation": "",
     "message": "情感",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        33
+        "src/components/category/category-emoji.tsx",
+        27
       ]
     ]
   },
   "Yhxdgn": {
-    "translation": "কিছু বলতে চাই আপনার ধন্যবাদ জানাতে চাই কিন্তু লাইক দিতে চাই",
+    "translation": "",
     "message": "想表达谢谢但点赞室",
     "comments": [],
     "origin": [
@@ -287,7 +224,7 @@
     ]
   },
   "r6acDk": {
-    "translation": "খুঁজুন",
+    "translation": "",
     "message": "搜索",
     "comments": [],
     "origin": [
@@ -298,7 +235,7 @@
     ]
   },
   "ZB1owk": {
-    "translation": "সবকিছু ভাষার ব্যাখ্যা সমর্থন করে",
+    "translation": "",
     "message": "支持各种口语表达",
     "comments": [],
     "origin": [
@@ -309,7 +246,7 @@
     ]
   },
   "lm7p2W": {
-    "translation": "বিভিন্ন ভাষার অনুসন্ধান সমর্থন করে",
+    "translation": "",
     "message": "支持多语言搜索",
     "comments": [],
     "origin": [
@@ -320,18 +257,18 @@
     ]
   },
   "qm8wCa": {
-    "translation": "দৃষ্টিমণ্ডল",
+    "translation": "",
     "message": "星星眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        37
+        "src/components/category/category-emoji.tsx",
+        31
       ]
     ]
   },
   "oTQPJM": {
-    "translation": "প্রিয়জনের জন্মদিনে অভিনন্দন জানানো চাই",
+    "translation": "",
     "message": "朋友生日想祝福",
     "comments": [],
     "origin": [
@@ -342,40 +279,40 @@
     ]
   },
   "DDScQ8": {
-    "translation": "ক্লিক করুন এবং বাক্তি কপি করুন",
+    "translation": "",
     "message": "点击可以复制表情",
     "comments": [],
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        178
+        114
       ]
     ]
   },
   "hvta5u": {
-    "translation": "চর্চিত বাক্তি",
+    "translation": "",
     "message": "热门表情",
     "comments": [],
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        98
+        99
       ]
     ]
   },
   "9kPlaI": {
-    "translation": "মুখোমুখি হাসি",
+    "translation": "",
     "message": "爱心眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        36
+        "src/components/category/category-emoji.tsx",
+        30
       ]
     ]
   },
   "SMZ7ey": {
-    "translation": "ভাবনাবলীর বুঝা",
+    "translation": "",
     "message": "理解情感语境",
     "comments": [],
     "origin": [
@@ -386,7 +323,7 @@
     ]
   },
   "+x4GVv": {
-    "translation": "এইচআইএম দিয়ে সবচেয়ে ব juny适合র বাক্তি খুঁজুন",
+    "translation": "",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -397,7 +334,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "সমস্ত ভাবনা আপনি কি বলতে চাই তা বুঝে",
+    "translation": "",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -408,7 +345,7 @@
     ]
   },
   "h+dKvB": {
-    "translation": "আপনার অনুভূতি সম্পর্কে হালকা ভাষা ব্যবহার করুন...",
+    "translation": "",
     "message": "用日常口语描述你的感受...",
     "comments": [],
     "origin": [
@@ -419,51 +356,51 @@
     ]
   },
   "HguvCd": {
-    "translation": "এক ধরণ",
+    "translation": "",
     "message": "种",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        483
+        "src/components/category/category-modal.tsx",
+        55
       ]
     ]
   },
   "KU2ZGU": {
-    "translation": "笑哭",
+    "translation": "",
     "message": "笑哭",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        27
+        "src/components/category/category-emoji.tsx",
+        21
       ]
     ]
   },
   "2CQmUD": {
-    "translation": "হাসি চোখ",
+    "translation": "",
     "message": "笑眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        24
+        "src/components/category/category-emoji.tsx",
+        18
       ]
     ]
   },
   "swD0Y5": {
-    "translation": "গуру",
+    "translation": "",
     "message": "老师",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        277
+        "src/components/category/category-emoji.tsx",
+        271
       ]
     ]
   },
   "d0FwMq": {
-    "translation": "বসসর技工 আমার চেয়েছে আন্তরিক ভাবে খুশি",
+    "translation": "",
     "message": "老板等我了开开心",
     "comments": [],
     "origin": [
@@ -474,51 +411,51 @@
     ]
   },
   "BR+jxt": {
-    "translation": "পেশা",
+    "translation": "",
     "message": "职业",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        273
+        "src/components/category/category-emoji.tsx",
+        267
       ]
     ]
   },
   "gjhVY9": {
-    "translation": "শিল্পী",
+    "translation": "",
     "message": "艺术家",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        279
+        "src/components/category/category-emoji.tsx",
+        273
       ]
     ]
   },
   "tuZXxr": {
-    "translation": "বাক্তি বিভাগ",
+    "translation": "",
     "message": "表情分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        366
+        "src/components/category/category-emoji.tsx",
+        302
       ]
     ]
   },
   "PemLuA": {
-    "translation": "বাক্তি স.Symbol",
+    "translation": "",
     "message": "表情符号",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        20
+        "src/components/category/category-emoji.tsx",
+        14
       ]
     ]
   },
   "EojHaD": {
-    "translation": "এইভাবে খুঁজুন:",
+    "translation": "",
     "message": "试试这样搜索：",
     "comments": [],
     "origin": [
@@ -529,24 +466,24 @@
     ]
   },
   "UI+jwu": {
-    "translation": "নিখুঁতি",
+    "translation": "",
     "message": "露齿笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        25
+        "src/components/category/category-emoji.tsx",
+        19
       ]
     ]
   },
   "IOyS5i": {
-    "translation": "আম্মুখি চুম্বন",
+    "translation": "",
     "message": "飞吻",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        38
+        "src/components/category/category-emoji.tsx",
+        32
       ]
     ]
   }

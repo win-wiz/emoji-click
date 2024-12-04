@@ -1,98 +1,39 @@
 {
-  "J/hVSQ": {
-    "translation": "{0}",
-    "message": "{0}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category-emoji.tsx",
-        466
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        525
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        558
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        119
-      ]
-    ]
-  },
-  "l1DhIF": {
-    "translation": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
-    "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        38
-      ]
-    ],
-    "obsolete": true
-  },
   "TsoDGX": {
-    "translation": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
+    "translation": "авто-i18n-next-lingui-tiny-demo, додайте нову мову до вашого сайту за 5 хвилин",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        14
+        16
       ]
     ]
   },
-  "dFY3S6": {
-    "translation": "To Sub Page",
-    "message": "To Sub Page",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        33
-      ]
-    ],
-    "obsolete": true
-  },
   "aDJB+h": {
-    "translation": "Use Lingui to add a new language to your website in 5 minutes with AI",
+    "translation": "Використовуйте Lingui, щоб додати нову мову до вашого сайту за 5 хвилин із допомогою ІА",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        15
+        17
       ]
     ]
   },
-  "QpzMsa": {
-    "translation": "Welcome to <0>Next.js!</0>",
-    "message": "Welcome to <0>Next.js!</0>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        28
-      ]
-    ],
-    "obsolete": true
-  },
   "Z4NkC3": {
-    "translation": "рабочий",
+    "translation": "працівник офісу",
     "message": "上班族",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        275
+        "src/components/category/category-emoji.tsx",
+        269
       ]
     ]
   },
   "/KqhBG": {
-    "translation": "не хочу идти на работу, так устал",
+    "translation": "не хочу працювати, дуже важко",
     "message": "不想上班好累啊",
     "comments": [],
     "origin": [
@@ -103,33 +44,33 @@
     ]
   },
   "uW7qaK": {
-    "translation": "эмоция",
+    "translation": "одне'émoticon",
     "message": "个表情",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        485
+        "src/components/category/category-modal.tsx",
+        57
       ],
       [
-        "src/components/category-emoji.tsx",
-        528
+        "src/components/category/category-modal.tsx",
+        101
       ]
     ]
   },
   "qNbLwo": {
-    "translation": "поцелуй",
+    "translation": "цілovanie",
     "message": "亲亲",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        39
+        "src/components/category/category-emoji.tsx",
+        33
       ]
     ]
   },
   "81qJXG": {
-    "translation": "сегодня настроение особенно хорошее",
+    "translation": " сьогодні дуже хороше настроїні",
     "message": "今天心情特别好",
     "comments": [],
     "origin": [
@@ -140,62 +81,62 @@
     ]
   },
   "zYyCyW": {
-    "translation": "все категории",
+    "translation": "всі категорії",
     "message": "全部分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        373
+        "src/components/category/category-modal.tsx",
+        39
       ]
     ]
   },
   "ysc16k": {
-    "translation": "все категории эмодзи",
+    "translation": "всі категорії'émoticon",
     "message": "全部表情分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        481
+        "src/components/category/category-modal.tsx",
+        53
       ]
     ]
   },
   "eDowDR": {
-    "translation": "врач",
+    "translation": "доктор",
     "message": "医生",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        276
+        "src/components/category/category-emoji.tsx",
+        270
       ]
     ]
   },
   "5lS2OX": {
-    "translation": "повар",
+    "translation": "кухар",
     "message": "厨师",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        278
+        "src/components/category/category-emoji.tsx",
+        272
       ]
     ]
   },
   "CKHAZ/": {
-    "translation": "нравится",
+    "translation": "нравиться",
     "message": "喜欢",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        35
+        "src/components/category/category-emoji.tsx",
+        29
       ]
     ]
   },
   "/pWV7M": {
-    "translation": "очень устал",
+    "translation": "думаю, що заснула",
     "message": "困得不行了",
     "comments": [],
     "origin": [
@@ -206,29 +147,29 @@
     ]
   },
   "5F7lbF": {
-    "translation": "смех",
+    "translation": "сміється",
     "message": "大笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        23
+        "src/components/category/category-emoji.tsx",
+        17
       ]
     ]
   },
   "VpgGxv": {
-    "translation": "смущенная улыбка",
+    "translation": "сміється від сорому",
     "message": "尴尬笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        26
+        "src/components/category/category-emoji.tsx",
+        20
       ]
     ]
   },
   "fNpbkb": {
-    "translation": "работа завершена, отлично",
+    "translation": "робота зроблена, клас",
     "message": "工作完成啦好棒",
     "comments": [],
     "origin": [
@@ -239,44 +180,40 @@
     ]
   },
   "QM99lf": {
-    "translation": "скопировано",
+    "translation": "скопійовано",
     "message": "已复制",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        606
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        166
+        "src/components/single-emoji.tsx",
+        84
       ]
     ]
   },
   "8Ml78r": {
-    "translation": "счастливая улыбка",
+    "translation": "сміється від щастя",
     "message": "开心笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        22
+        "src/components/category/category-emoji.tsx",
+        16
       ]
     ]
   },
   "HbDzdg": {
-    "translation": "эмоции",
+    "translation": "емоції",
     "message": "情感",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        33
+        "src/components/category/category-emoji.tsx",
+        27
       ]
     ]
   },
   "Yhxdgn": {
-    "translation": "хотелось бы поблагодарить, но в комнате для лайков",
+    "translation": "хочеш поділитися своїми відчутями, але немає ні кого, хто цікавиться",
     "message": "想表达谢谢但点赞室",
     "comments": [],
     "origin": [
@@ -287,7 +224,7 @@
     ]
   },
   "r6acDk": {
-    "translation": "поиск",
+    "translation": "шукати",
     "message": "搜索",
     "comments": [],
     "origin": [
@@ -298,7 +235,7 @@
     ]
   },
   "ZB1owk": {
-    "translation": "поддерживает различные разговорные выражения",
+    "translation": "підтримує різні побутові висловлювання",
     "message": "支持各种口语表达",
     "comments": [],
     "origin": [
@@ -309,7 +246,7 @@
     ]
   },
   "lm7p2W": {
-    "translation": "поддерживает многоязычный поиск",
+    "translation": "підтримує багато мовний пошук",
     "message": "支持多语言搜索",
     "comments": [],
     "origin": [
@@ -320,18 +257,18 @@
     ]
   },
   "qm8wCa": {
-    "translation": "взгляд с широко открытыми глазами",
+    "translation": "візуалізація зі сірцями",
     "message": "星星眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        37
+        "src/components/category/category-emoji.tsx",
+        31
       ]
     ]
   },
   "oTQPJM": {
-    "translation": "поздравить друга с днем рождения",
+    "translation": "хочеш зробити подарунок другу на день народження",
     "message": "朋友生日想祝福",
     "comments": [],
     "origin": [
@@ -342,40 +279,40 @@
     ]
   },
   "DDScQ8": {
-    "translation": "щёлкните, чтобы скопировать эмодзи",
+    "translation": "клікніть, щоб скопіювати'émoticon",
     "message": "点击可以复制表情",
     "comments": [],
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        178
+        114
       ]
     ]
   },
   "hvta5u": {
-    "translation": "популярные эмодзи",
+    "translation": "популярніémoticon",
     "message": "热门表情",
     "comments": [],
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        98
+        99
       ]
     ]
   },
   "9kPlaI": {
-    "translation": "взгляд с любовью",
+    "translation": "серцевидні очі",
     "message": "爱心眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        36
+        "src/components/category/category-emoji.tsx",
+        30
       ]
     ]
   },
   "SMZ7ey": {
-    "translation": "понимание эмоционального контекста",
+    "translation": "розуміє емоційний контекст",
     "message": "理解情感语境",
     "comments": [],
     "origin": [
@@ -386,7 +323,7 @@
     ]
   },
   "+x4GVv": {
-    "translation": "найдите самые подходящие эмодзи с помощью ИИ",
+    "translation": "знайдіть найпідходящіémoticon із допомогою ІА",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -397,7 +334,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "напишите самым естественным образом, ИИ понимает каждую эмоцию, которую вы хотите передать",
+    "translation": "розповідайте свої відчуті найприроднішим способом, ІА розуміє кожне ваше почуття",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -408,7 +345,7 @@
     ]
   },
   "h+dKvB": {
-    "translation": "опишите свои чувства разговорной речью...",
+    "translation": "описуйте свої почуття повсякденною мовою...",
     "message": "用日常口语描述你的感受...",
     "comments": [],
     "origin": [
@@ -424,8 +361,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        483
+        "src/components/category/category-modal.tsx",
+        55
       ]
     ]
   },
@@ -435,35 +372,35 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        27
+        "src/components/category/category-emoji.tsx",
+        21
       ]
     ]
   },
   "2CQmUD": {
-    "translation": "улыбка",
+    "translation": "сміється однимیلцем",
     "message": "笑眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        24
+        "src/components/category/category-emoji.tsx",
+        18
       ]
     ]
   },
   "swD0Y5": {
-    "translation": "учитель",
+    "translation": "викладач",
     "message": "老师",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        277
+        "src/components/category/category-emoji.tsx",
+        271
       ]
     ]
   },
   "d0FwMq": {
-    "translation": "мой босс меня ждет, так рад",
+    "translation": "хозяїн очікає на мене, дуже раді",
     "message": "老板等我了开开心",
     "comments": [],
     "origin": [
@@ -474,13 +411,13 @@
     ]
   },
   "BR+jxt": {
-    "translation": "профессия",
+    "translation": "професія",
     "message": "职业",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        273
+        "src/components/category/category-emoji.tsx",
+        267
       ]
     ]
   },
@@ -490,35 +427,35 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        279
+        "src/components/category/category-emoji.tsx",
+        273
       ]
     ]
   },
   "tuZXxr": {
-    "translation": "категория эмоций",
+    "translation": "категориémoticon",
     "message": "表情分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        366
+        "src/components/category/category-emoji.tsx",
+        302
       ]
     ]
   },
   "PemLuA": {
-    "translation": "эмодзи",
+    "translation": "émoticon",
     "message": "表情符号",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        20
+        "src/components/category/category-emoji.tsx",
+        14
       ]
     ]
   },
   "EojHaD": {
-    "translation": "попробуйте искать так:",
+    "translation": "пошук таким чином:",
     "message": "试试这样搜索：",
     "comments": [],
     "origin": [
@@ -529,24 +466,24 @@
     ]
   },
   "UI+jwu": {
-    "translation": "улыбка",
+    "translation": "візуалізація зі сірцями",
     "message": "露齿笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        25
+        "src/components/category/category-emoji.tsx",
+        19
       ]
     ]
   },
   "IOyS5i": {
-    "translation": "поцелуй",
+    "translation": "цілovanie",
     "message": "飞吻",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        38
+        "src/components/category/category-emoji.tsx",
+        32
       ]
     ]
   }

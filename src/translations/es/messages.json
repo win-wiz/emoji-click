@@ -1,39 +1,4 @@
 {
-  "J/hVSQ": {
-    "translation": "{0}",
-    "message": "{0}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category-emoji.tsx",
-        466
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        525
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        558
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        119
-      ]
-    ]
-  },
-  "l1DhIF": {
-    "translation": "<0>Palabra clave 1 (no traducir en keywords.txt)</0><1>Palabra clave 2</1><2>Palabra clave 3 (no traducir en keywords.txt)</2>",
-    "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        38
-      ]
-    ],
-    "obsolete": true
-  },
   "TsoDGX": {
     "translation": "auto-i18n-next-lingui-tiny-demo, agrega un nuevo idioma a tu sitio web en 5 minutos",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
@@ -41,58 +6,34 @@
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        14
+        16
       ]
     ]
   },
-  "dFY3S6": {
-    "translation": "A la página secundaria",
-    "message": "To Sub Page",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        33
-      ]
-    ],
-    "obsolete": true
-  },
   "aDJB+h": {
-    "translation": "Usa Lingui para agregar un nuevo idioma a tu sitio web en 5 minutos con IA",
+    "translation": "Use Lingui para agregar un nuevo idioma a tu sitio web en 5 minutos con IA",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        15
+        17
       ]
     ]
   },
-  "QpzMsa": {
-    "translation": "Bienvenido a <0>Next.js!</0>",
-    "message": "Welcome to <0>Next.js!</0>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        28
-      ]
-    ],
-    "obsolete": true
-  },
   "Z4NkC3": {
-    "translation": "trabajador",
+    "translation": "persona trabajadora",
     "message": "上班族",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        275
+        "src/components/category/category-emoji.tsx",
+        269
       ]
     ]
   },
   "/KqhBG": {
-    "translation": "No quiero trabajar, estoy cansado",
+    "translation": "No quiero trabajar, estoy tan cansada",
     "message": "不想上班好累啊",
     "comments": [],
     "origin": [
@@ -108,12 +49,12 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        485
+        "src/components/category/category-modal.tsx",
+        57
       ],
       [
-        "src/components/category-emoji.tsx",
-        528
+        "src/components/category/category-modal.tsx",
+        101
       ]
     ]
   },
@@ -123,13 +64,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        39
+        "src/components/category/category-emoji.tsx",
+        33
       ]
     ]
   },
   "81qJXG": {
-    "translation": "Hoy me siento especialmente bien",
+    "translation": "estoy de buen humor hoy",
     "message": "今天心情特别好",
     "comments": [],
     "origin": [
@@ -145,19 +86,19 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        373
+        "src/components/category/category-modal.tsx",
+        39
       ]
     ]
   },
   "ysc16k": {
-    "translation": "todas las categorías de emoticonos",
+    "translation": "todas las categorías de emojis",
     "message": "全部表情分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        481
+        "src/components/category/category-modal.tsx",
+        53
       ]
     ]
   },
@@ -167,8 +108,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        276
+        "src/components/category/category-emoji.tsx",
+        270
       ]
     ]
   },
@@ -178,8 +119,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        278
+        "src/components/category/category-emoji.tsx",
+        272
       ]
     ]
   },
@@ -189,8 +130,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        35
+        "src/components/category/category-emoji.tsx",
+        29
       ]
     ]
   },
@@ -211,19 +152,19 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        23
+        "src/components/category/category-emoji.tsx",
+        17
       ]
     ]
   },
   "VpgGxv": {
-    "translation": "sonreír incómodo",
+    "translation": "sonrojarse",
     "message": "尴尬笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        26
+        "src/components/category/category-emoji.tsx",
+        20
       ]
     ]
   },
@@ -244,12 +185,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        606
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        166
+        "src/components/single-emoji.tsx",
+        84
       ]
     ]
   },
@@ -259,8 +196,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        22
+        "src/components/category/category-emoji.tsx",
+        16
       ]
     ]
   },
@@ -270,13 +207,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        33
+        "src/components/category/category-emoji.tsx",
+        27
       ]
     ]
   },
   "Yhxdgn": {
-    "translation": "quiero expresar mi agradecimiento pero el botón de me gusta no lo permite",
+    "translation": "quiero expresar mi agradecimiento pero el cuarto de los votos",
     "message": "想表达谢谢但点赞室",
     "comments": [],
     "origin": [
@@ -325,13 +262,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        37
+        "src/components/category/category-emoji.tsx",
+        31
       ]
     ]
   },
   "oTQPJM": {
-    "translation": "quiero felicitar al cumpleañero",
+    "translation": "feliz cumpleaños a un amigo",
     "message": "朋友生日想祝福",
     "comments": [],
     "origin": [
@@ -348,7 +285,7 @@
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        178
+        114
       ]
     ]
   },
@@ -359,7 +296,7 @@
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        98
+        99
       ]
     ]
   },
@@ -369,8 +306,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        36
+        "src/components/category/category-emoji.tsx",
+        30
       ]
     ]
   },
@@ -386,7 +323,7 @@
     ]
   },
   "+x4GVv": {
-    "translation": "utiliza AI para encontrar el emoji más adecuado",
+    "translation": "utiliza el AI para encontrar el emoji más adecuado",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -397,7 +334,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "describe de la manera más natural, AI entiende cada emoción que quieres expresar",
+    "translation": "describir de la manera más natural, el AI entiende cada emoción que quieres expresar",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -424,19 +361,19 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        483
+        "src/components/category/category-modal.tsx",
+        55
       ]
     ]
   },
   "KU2ZGU": {
-    "translation": "😂",
+    "translation": "risa",
     "message": "笑哭",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        27
+        "src/components/category/category-emoji.tsx",
+        21
       ]
     ]
   },
@@ -446,8 +383,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        24
+        "src/components/category/category-emoji.tsx",
+        18
       ]
     ]
   },
@@ -457,8 +394,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        277
+        "src/components/category/category-emoji.tsx",
+        271
       ]
     ]
   },
@@ -479,8 +416,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        273
+        "src/components/category/category-emoji.tsx",
+        267
       ]
     ]
   },
@@ -490,35 +427,35 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        279
+        "src/components/category/category-emoji.tsx",
+        273
       ]
     ]
   },
   "tuZXxr": {
-    "translation": "categorización de emoticonos",
+    "translation": "categorización de emojis",
     "message": "表情分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        366
+        "src/components/category/category-emoji.tsx",
+        302
       ]
     ]
   },
   "PemLuA": {
-    "translation": "símbolos emocionales",
+    "translation": "símbolos de emoji",
     "message": "表情符号",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        20
+        "src/components/category/category-emoji.tsx",
+        14
       ]
     ]
   },
   "EojHaD": {
-    "translation": "prueba con esta búsqueda:",
+    "translation": "prueba a buscar así:",
     "message": "试试这样搜索：",
     "comments": [],
     "origin": [
@@ -534,8 +471,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        25
+        "src/components/category/category-emoji.tsx",
+        19
       ]
     ]
   },
@@ -545,8 +482,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        38
+        "src/components/category/category-emoji.tsx",
+        32
       ]
     ]
   }

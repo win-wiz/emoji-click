@@ -1,39 +1,4 @@
 {
-  "J/hVSQ": {
-    "translation": "{0}",
-    "message": "{0}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category-emoji.tsx",
-        466
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        525
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        558
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        119
-      ]
-    ]
-  },
-  "l1DhIF": {
-    "translation": "<0>Neřetězcové fráze 1 (nepřeložte do souboru keywords.txt)</0><1>Neřetězcové fráze 2</1><2>Neřetězcové fráze 3 (nepřeložte do souboru keywords.txt)</2>",
-    "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        38
-      ]
-    ],
-    "obsolete": true
-  },
   "TsoDGX": {
     "translation": "auto-i18n-next-lingui-tiny-demo, přidejte nový jazyk na svůj web během 5 minut",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
@@ -41,21 +6,9 @@
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        14
+        16
       ]
     ]
-  },
-  "dFY3S6": {
-    "translation": "Do podstránky",
-    "message": "To Sub Page",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        33
-      ]
-    ],
-    "obsolete": true
   },
   "aDJB+h": {
     "translation": "Pomocí Lingui přidejte nový jazyk na svůj web během 5 minut pomocí AI",
@@ -64,30 +17,18 @@
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        15
+        17
       ]
     ]
   },
-  "QpzMsa": {
-    "translation": "Vítejte na <0>Next.js!</0>",
-    "message": "Welcome to <0>Next.js!</0>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        28
-      ]
-    ],
-    "obsolete": true
-  },
   "Z4NkC3": {
-    "translation": "úředník",
+    "translation": "Kadernice",
     "message": "上班族",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        275
+        "src/components/category/category-emoji.tsx",
+        269
       ]
     ]
   },
@@ -103,17 +44,17 @@
     ]
   },
   "uW7qaK": {
-    "translation": "jedno výrazové známky",
+    "translation": "jedno výrazové znaménko",
     "message": "个表情",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        485
+        "src/components/category/category-modal.tsx",
+        57
       ],
       [
-        "src/components/category-emoji.tsx",
-        528
+        "src/components/category/category-modal.tsx",
+        101
       ]
     ]
   },
@@ -123,13 +64,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        39
+        "src/components/category/category-emoji.tsx",
+        33
       ]
     ]
   },
   "81qJXG": {
-    "translation": "Dneska jsem měla zvlášť dobrou náladu",
+    "translation": "Dneska jsem měla neskutečně dobrou náladu",
     "message": "今天心情特别好",
     "comments": [],
     "origin": [
@@ -140,57 +81,57 @@
     ]
   },
   "zYyCyW": {
-    "translation": "Vše kategorie",
+    "translation": "Vše kategorizováno",
     "message": "全部分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        373
+        "src/components/category/category-modal.tsx",
+        39
       ]
     ]
   },
   "ysc16k": {
-    "translation": "Vše kategorie výrazových známek",
+    "translation": "Kategorie všech výrazových známek",
     "message": "全部表情分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        481
+        "src/components/category/category-modal.tsx",
+        53
       ]
     ]
   },
   "eDowDR": {
-    "translation": "lékař",
+    "translation": "Lékař",
     "message": "医生",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        276
+        "src/components/category/category-emoji.tsx",
+        270
       ]
     ]
   },
   "5lS2OX": {
-    "translation": "kuchař",
+    "translation": "Kuchař",
     "message": "厨师",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        278
+        "src/components/category/category-emoji.tsx",
+        272
       ]
     ]
   },
   "CKHAZ/": {
-    "translation": "mám rád",
+    "translation": "Mám ráda",
     "message": "喜欢",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        35
+        "src/components/category/category-emoji.tsx",
+        29
       ]
     ]
   },
@@ -206,29 +147,29 @@
     ]
   },
   "5F7lbF": {
-    "translation": "smích",
+    "translation": "Velký smích",
     "message": "大笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        23
+        "src/components/category/category-emoji.tsx",
+        17
       ]
     ]
   },
   "VpgGxv": {
-    "translation": "rozpačitý úsměv",
+    "translation": "Rozpačitý úsměv",
     "message": "尴尬笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        26
+        "src/components/category/category-emoji.tsx",
+        20
       ]
     ]
   },
   "fNpbkb": {
-    "translation": "Dokončil jsem práci, jak jsem rád",
+    "translation": "Dokončila jsem práci, jsem neskutečně šťastná",
     "message": "工作完成啦好棒",
     "comments": [],
     "origin": [
@@ -244,39 +185,35 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        606
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        166
+        "src/components/single-emoji.tsx",
+        84
       ]
     ]
   },
   "8Ml78r": {
-    "translation": "šťastný úsměv",
+    "translation": "Úsměv štěstí",
     "message": "开心笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        22
+        "src/components/category/category-emoji.tsx",
+        16
       ]
     ]
   },
   "HbDzdg": {
-    "translation": "nálada",
+    "translation": "Emoce",
     "message": "情感",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        33
+        "src/components/category/category-emoji.tsx",
+        27
       ]
     ]
   },
   "Yhxdgn": {
-    "translation": "Chci poděkovat, ale tlačit tlačítko není správné",
+    "translation": "Chci poděkovat, ale tlačítko Líbí není správné",
     "message": "想表达谢谢但点赞室",
     "comments": [],
     "origin": [
@@ -287,7 +224,7 @@
     ]
   },
   "r6acDk": {
-    "translation": "hledání",
+    "translation": "Vyhledávání",
     "message": "搜索",
     "comments": [],
     "origin": [
@@ -309,7 +246,7 @@
     ]
   },
   "lm7p2W": {
-    "translation": "Podporuje více jazykové vyhledávání",
+    "translation": "Podporuje vícejazyčné vyhledávání",
     "message": "支持多语言搜索",
     "comments": [],
     "origin": [
@@ -320,18 +257,18 @@
     ]
   },
   "qm8wCa": {
-    "translation": "očko",
+    "translation": "Zvědavé oči",
     "message": "星星眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        37
+        "src/components/category/category-emoji.tsx",
+        31
       ]
     ]
   },
   "oTQPJM": {
-    "translation": "Když chce kamarád něco přát k narozeninám",
+    "translation": "Když chcete přát kamarádce k narozeninám",
     "message": "朋友生日想祝福",
     "comments": [],
     "origin": [
@@ -342,35 +279,35 @@
     ]
   },
   "DDScQ8": {
-    "translation": "Klikněte pro možnost zkopírování výrazového známky",
+    "translation": "Klikněte pro možnost zkopírování výrazového znaménka",
     "message": "点击可以复制表情",
     "comments": [],
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        178
+        114
       ]
     ]
   },
   "hvta5u": {
-    "translation": "žhavé výrazové známky",
+    "translation": "Horké výrazové známky",
     "message": "热门表情",
     "comments": [],
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        98
+        99
       ]
     ]
   },
   "9kPlaI": {
-    "translation": "šťastné oko",
+    "translation": "Srdcové oko",
     "message": "爱心眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        36
+        "src/components/category/category-emoji.tsx",
+        30
       ]
     ]
   },
@@ -386,7 +323,7 @@
     ]
   },
   "+x4GVv": {
-    "translation": "Najděte pomocí AI vhodnou výrazovou známku",
+    "translation": "Pomocí AI najděte nejvhodnější výrazové znaménko",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -397,7 +334,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "Popište pomocí přirozeného způsobu, že AI chápe každou emoci, kterou chcete vyjádřit",
+    "translation": "Popište pomocí nej přirozenější způsob, že každý pocit, který chcete vyjádřit, vám AI porozumí",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -408,7 +345,7 @@
     ]
   },
   "h+dKvB": {
-    "translation": "Popište pomocí každodenní řeči, jak se cítíte...",
+    "translation": "Popište pomocí obyčejného každodenního jazyka, jak se právě cítíte...",
     "message": "用日常口语描述你的感受...",
     "comments": [],
     "origin": [
@@ -424,46 +361,46 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        483
+        "src/components/category/category-modal.tsx",
+        55
       ]
     ]
   },
   "KU2ZGU": {
-    "translation": "笑哭",
+    "translation": "😂",
     "message": "笑哭",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        27
+        "src/components/category/category-emoji.tsx",
+        21
       ]
     ]
   },
   "2CQmUD": {
-    "translation": "smějící oko",
+    "translation": "Úsměv přes oko",
     "message": "笑眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        24
+        "src/components/category/category-emoji.tsx",
+        18
       ]
     ]
   },
   "swD0Y5": {
-    "translation": "učitel",
+    "translation": "Učitel",
     "message": "老师",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        277
+        "src/components/category/category-emoji.tsx",
+        271
       ]
     ]
   },
   "d0FwMq": {
-    "translation": "Můj šéf už na mě čeká, jsem neskutečně rád",
+    "translation": "Můj šéf už čeká, jsem neskutečně šťastná",
     "message": "老板等我了开开心",
     "comments": [],
     "origin": [
@@ -474,35 +411,35 @@
     ]
   },
   "BR+jxt": {
-    "translation": "zaměstnání",
+    "translation": "Odměna",
     "message": "职业",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        273
+        "src/components/category/category-emoji.tsx",
+        267
       ]
     ]
   },
   "gjhVY9": {
-    "translation": "umělec",
+    "translation": "Umělec",
     "message": "艺术家",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        279
+        "src/components/category/category-emoji.tsx",
+        273
       ]
     ]
   },
   "tuZXxr": {
-    "translation": "kategorie výrazových známek",
+    "translation": "Kategorie výrazových známek",
     "message": "表情分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        366
+        "src/components/category/category-emoji.tsx",
+        302
       ]
     ]
   },
@@ -512,13 +449,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        20
+        "src/components/category/category-emoji.tsx",
+        14
       ]
     ]
   },
   "EojHaD": {
-    "translation": "Zkuste hledat například takhle:",
+    "translation": "Zkuste takto hledat:",
     "message": "试试这样搜索：",
     "comments": [],
     "origin": [
@@ -529,24 +466,24 @@
     ]
   },
   "UI+jwu": {
-    "translation": "úsměv",
+    "translation": "Úsměv se zuby",
     "message": "露齿笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        25
+        "src/components/category/category-emoji.tsx",
+        19
       ]
     ]
   },
   "IOyS5i": {
-    "translation": "polibek",
+    "translation": "Rozmazlený polibek",
     "message": "飞吻",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        38
+        "src/components/category/category-emoji.tsx",
+        32
       ]
     ]
   }

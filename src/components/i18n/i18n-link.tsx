@@ -1,16 +1,27 @@
+"use client";
+
+import { AVAILABLE_LOCALES, localeNames, locales } from "@/locales/config";
 import Link from "next/link";
-import config from "../../../lingui.config";
+import { usePathname } from "next/navigation";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function I18nLink({ children, href, lang, ...props }: { children: React.ReactNode; href: string; lang: string;[key: string]: any }) {
-  // console.log('lang=>>>', lang)
-  // console.log('href=>>>', href)
-  return <Link href={i18nLinkStr(href, lang)} {...props}>{children}</Link>
-}
+export default function I18nLink({ 
+  params,
+}: { 
+  params?: { lang: AVAILABLE_LOCALES }
+}) {
 
-export function i18nLinkStr(str: string, lang: string) {
-  if (lang === config.sourceLocale) {
-    return str
-  }
-  return `/${lang}${str}`
+  const pathname = usePathname();
+  
+  const pathWithoutLocale = pathname.split('/')[2];
+  return (
+    <div>
+      {
+        locales.map(locale => (
+          <Link key={locale} href={`/${locale}/${pathWithoutLocale}`}>
+            { localeNames[locale as keyof typeof localeNames] }
+          </Link>
+        ))
+      }
+    </div>
+  )
 }

@@ -1,98 +1,39 @@
 {
-  "J/hVSQ": {
-    "translation": "{0}",
-    "message": "{0}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category-emoji.tsx",
-        466
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        525
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        558
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        119
-      ]
-    ]
-  },
-  "l1DhIF": {
-    "translation": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
-    "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        38
-      ]
-    ],
-    "obsolete": true
-  },
   "TsoDGX": {
-    "translation": "auto-i18n-next-lingui-tiny-demo, thêm một ngôn ngữ mới vào trang web của bạn trong vòng 5 phút",
+    "translation": "tự động dịch sang nhiều thứ tiếng với Lingui chỉ trong vòng 5 phút",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        14
+        16
       ]
     ]
   },
-  "dFY3S6": {
-    "translation": "Đến Trang con",
-    "message": "To Sub Page",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        33
-      ]
-    ],
-    "obsolete": true
-  },
   "aDJB+h": {
-    "translation": "Sử dụng Lingui để thêm một ngôn ngữ mới vào trang web của bạn trong vòng 5 phút với trợ lý thông minh",
+    "translation": "Sử dụng Lingui để thêm một ngôn ngữ mới vào trang web của bạn chỉ trong vòng 5 phút với trợ lý nhân tạo",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        15
+        17
       ]
     ]
   },
-  "QpzMsa": {
-    "translation": "Chào mừng bạn đến với <0>Next.js!</0>",
-    "message": "Welcome to <0>Next.js!</0>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        28
-      ]
-    ],
-    "obsolete": true
-  },
   "Z4NkC3": {
-    "translation": "Nhân viên văn phòng",
+    "translation": "Những người đi làm văn phòng",
     "message": "上班族",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        275
+        "src/components/category/category-emoji.tsx",
+        269
       ]
     ]
   },
   "/KqhBG": {
-    "translation": " Không muốn đi làm, thật mệt mỏi quá",
+    "translation": "Không muốn đi làm, thật mệt mỏi quá",
     "message": "不想上班好累啊",
     "comments": [],
     "origin": [
@@ -103,33 +44,33 @@
     ]
   },
   "uW7qaK": {
-    "translation": "Một biểu cảm",
+    "translation": "Một biểu tượng cảm xúc",
     "message": "个表情",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        485
+        "src/components/category/category-modal.tsx",
+        57
       ],
       [
-        "src/components/category-emoji.tsx",
-        528
+        "src/components/category/category-modal.tsx",
+        101
       ]
     ]
   },
   "qNbLwo": {
-    "translation": "Hôn",
+    "translation": "Hôn nhau",
     "message": "亲亲",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        39
+        "src/components/category/category-emoji.tsx",
+        33
       ]
     ]
   },
   "81qJXG": {
-    "translation": "Hôm nay tâm tình đặc biệt tốt",
+    "translation": "Hôm nay tâm trạng đặc biệt tốt",
     "message": "今天心情特别好",
     "comments": [],
     "origin": [
@@ -140,13 +81,13 @@
     ]
   },
   "zYyCyW": {
-    "translation": "Tất cả các danh mục",
+    "translation": "Danh mục tất cả",
     "message": "全部分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        373
+        "src/components/category/category-modal.tsx",
+        39
       ]
     ]
   },
@@ -156,8 +97,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        481
+        "src/components/category/category-modal.tsx",
+        53
       ]
     ]
   },
@@ -167,8 +108,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        276
+        "src/components/category/category-emoji.tsx",
+        270
       ]
     ]
   },
@@ -178,8 +119,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        278
+        "src/components/category/category-emoji.tsx",
+        272
       ]
     ]
   },
@@ -189,13 +130,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        35
+        "src/components/category/category-emoji.tsx",
+        29
       ]
     ]
   },
   "/pWV7M": {
-    "translation": "Buồn ngủ quá đi mất",
+    "translation": "Mệt muốn chết rồi",
     "message": "困得不行了",
     "comments": [],
     "origin": [
@@ -211,8 +152,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        23
+        "src/components/category/category-emoji.tsx",
+        17
       ]
     ]
   },
@@ -222,8 +163,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        26
+        "src/components/category/category-emoji.tsx",
+        20
       ]
     ]
   },
@@ -244,12 +185,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        606
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        166
+        "src/components/single-emoji.tsx",
+        84
       ]
     ]
   },
@@ -259,8 +196,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        22
+        "src/components/category/category-emoji.tsx",
+        16
       ]
     ]
   },
@@ -270,13 +207,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        33
+        "src/components/category/category-emoji.tsx",
+        27
       ]
     ]
   },
   "Yhxdgn": {
-    "translation": "Muốn cảm ơn nhưng phòng cảm ơn",
+    "translation": "Muốn cảm ơn nhưng muốn nhấn thích hơn là nhấn thích",
     "message": "想表达谢谢但点赞室",
     "comments": [],
     "origin": [
@@ -298,7 +235,7 @@
     ]
   },
   "ZB1owk": {
-    "translation": "Hỗ trợ mọi cách diễn đạt thông tục",
+    "translation": "Hỗ trợ mọi cách diễn đạt thông thường",
     "message": "支持各种口语表达",
     "comments": [],
     "origin": [
@@ -320,18 +257,18 @@
     ]
   },
   "qm8wCa": {
-    "translation": "Nhìn bằng mắt to tròn",
+    "translation": "Nhìn bằng mắt tỏ tình",
     "message": "星星眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        37
+        "src/components/category/category-emoji.tsx",
+        31
       ]
     ]
   },
   "oTQPJM": {
-    "translation": "Chúc mừng sinh nhật bạn bè",
+    "translation": "Bạn muốn gửi lời chúc sinh nhật tới bạn bè",
     "message": "朋友生日想祝福",
     "comments": [],
     "origin": [
@@ -348,7 +285,7 @@
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        178
+        114
       ]
     ]
   },
@@ -359,18 +296,18 @@
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        98
+        99
       ]
     ]
   },
   "9kPlaI": {
-    "translation": "Nhìn bằng mắt tình cảm",
+    "translation": "Nhìn bằng mắt tình yêu",
     "message": "爱心眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        36
+        "src/components/category/category-emoji.tsx",
+        30
       ]
     ]
   },
@@ -386,7 +323,7 @@
     ]
   },
   "+x4GVv": {
-    "translation": "Sử dụng trí thông minh nhân tạo để tìm biểu tượng cảm xứng phù hợp nhất",
+    "translation": "Sử dụng AI để tìm biểu tượng cảm xúc phù hợp nhất",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -397,7 +334,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "Miêu tả bằng cách tự nhiên nhất, trí thông minh nhân tạo hiểu mọi cảm xúc bạn muốn diễn đạt",
+    "translation": "Mô tả bằng cách tự nhiên nhất, AI hiểu mọi cảm xúc bạn muốn diễn đạt",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -408,7 +345,7 @@
     ]
   },
   "h+dKvB": {
-    "translation": "Miêu tả cảm giác của bạn bằng lời nói thông thường...",
+    "translation": "Viết cảm giác của bạn bằng lời nói thông thường...",
     "message": "用日常口语描述你的感受...",
     "comments": [],
     "origin": [
@@ -419,35 +356,35 @@
     ]
   },
   "HguvCd": {
-    "translation": "loại",
+    "translation": "một loại",
     "message": "种",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        483
+        "src/components/category/category-modal.tsx",
+        55
       ]
     ]
   },
   "KU2ZGU": {
-    "translation": "😂",
+    "translation": "đuôi mắt hí",
     "message": "笑哭",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        27
+        "src/components/category/category-emoji.tsx",
+        21
       ]
     ]
   },
   "2CQmUD": {
-    "translation": "Nhìn bằng mắt hí",
+    "translation": "Nhìn bằng mắt vui vẻ",
     "message": "笑眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        24
+        "src/components/category/category-emoji.tsx",
+        18
       ]
     ]
   },
@@ -457,13 +394,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        277
+        "src/components/category/category-emoji.tsx",
+        271
       ]
     ]
   },
   "d0FwMq": {
-    "translation": "Ông chủ đang đợi tôi rồi, thật vui",
+    "translation": "Sếp đang đợi tôi rồi, thật vui",
     "message": "老板等我了开开心",
     "comments": [],
     "origin": [
@@ -474,46 +411,46 @@
     ]
   },
   "BR+jxt": {
-    "translation": "Nghề nghiệp",
+    "translation": "nghề nghiệp",
     "message": "职业",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        273
+        "src/components/category/category-emoji.tsx",
+        267
       ]
     ]
   },
   "gjhVY9": {
-    "translation": "Họa sĩ",
+    "translation": "nghệ sĩ",
     "message": "艺术家",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        279
+        "src/components/category/category-emoji.tsx",
+        273
       ]
     ]
   },
   "tuZXxr": {
-    "translation": "Các danh mục biểu tượng cảm xúc",
+    "translation": "định danh biểu tượng cảm xúc",
     "message": "表情分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        366
+        "src/components/category/category-emoji.tsx",
+        302
       ]
     ]
   },
   "PemLuA": {
-    "translation": "Các biểu tượng cảm xúc",
+    "translation": "biểu tượng cảm xúc",
     "message": "表情符号",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        20
+        "src/components/category/category-emoji.tsx",
+        14
       ]
     ]
   },
@@ -529,24 +466,24 @@
     ]
   },
   "UI+jwu": {
-    "translation": "Cười lộ lợi",
+    "translation": "nhìn bằng mắt tươi cười",
     "message": "露齿笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        25
+        "src/components/category/category-emoji.tsx",
+        19
       ]
     ]
   },
   "IOyS5i": {
-    "translation": "Hôn môi",
+    "translation": "đưa môi lại gần",
     "message": "飞吻",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        38
+        "src/components/category/category-emoji.tsx",
+        32
       ]
     ]
   }

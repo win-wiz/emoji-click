@@ -6,19 +6,25 @@ import { type NextRequest, NextResponse } from 'next/server'
 import { locales, DEFAULT_LOCALE } from '@/locales/config'
 
 export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl
-  const defaultLocale = DEFAULT_LOCALE;
-
-  // remove the default locale, to avoid duplicates
-  const pathnameHasLocale = locales
-    .filter(locale => locale !== defaultLocale)
-    .some(locale => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`)
-
-  if (pathnameHasLocale) return
-
-  // `/` is actually `/en/`, the default locale
-  request.nextUrl.pathname = `/${defaultLocale}${pathname}`
-  return NextResponse.rewrite(request.nextUrl)
+  const nextUrl = (request as unknown as NextRequest).nextUrl
+  const pathname = nextUrl.pathname
+  const params = nextUrl.searchParams
+  const pathnameIsMissingLocale = locales.every(
+    (locale) =>
+      !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+  )
+  // Redirect if there is no locale
+  if (pathnameIsMissingLocale) {
+    // e.g. incoming request is /products
+    // The new URL is now /en-US/products
+    return NextResponse.redirect(
+      new URL(
+        `/${DEFAULT_LOCALE}/${pathname}?${params.toString()}`,
+        request.url
+      )
+    )
+  }
+  return NextResponse.next()
 }
 
 export const config = {

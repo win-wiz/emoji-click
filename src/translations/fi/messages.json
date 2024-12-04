@@ -1,98 +1,39 @@
 {
-  "J/hVSQ": {
-    "translation": "{0}",
-    "message": "{0}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category-emoji.tsx",
-        466
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        525
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        558
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        119
-      ]
-    ]
-  },
-  "l1DhIF": {
-    "translation": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
-    "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        38
-      ]
-    ],
-    "obsolete": true
-  },
   "TsoDGX": {
-    "translation": "auto-i18n-next-lingui-tiny-demo, lisää uuteen kieliin verkkosivullasi 5 minuutin",
+    "translation": "auto-i18n-next-lingui-tiny-demo, voit lisätä uuteen kieliin verkkosivustollesi 5 minuutin aikana",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        14
+        16
       ]
     ]
   },
-  "dFY3S6": {
-    "translation": "Seuraava-sivu",
-    "message": "To Sub Page",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        33
-      ]
-    ],
-    "obsolete": true
-  },
   "aDJB+h": {
-    "translation": "Käytä Linguia 5 minuutin aikana uuteen verkkosivulleen lisäämään uuden kielin AI:n avulla",
+    "translation": "Käytä Linguia 5 minuutin aikana lisätä uuteen kieliin verkkosivustollesi AI:n avulla",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        15
+        17
       ]
     ]
   },
-  "QpzMsa": {
-    "translation": "Tervetuloa <0>Next.js!</0>",
-    "message": "Welcome to <0>Next.js!</0>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        28
-      ]
-    ],
-    "obsolete": true
-  },
   "Z4NkC3": {
-    "translation": "työssäkäymässä",
+    "translation": "työntekijä",
     "message": "上班族",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        275
+        "src/components/category/category-emoji.tsx",
+        269
       ]
     ]
   },
   "/KqhBG": {
-    "translation": "Työssä enkä tahdo olla, vaan olen niin väsynyt",
+    "translation": "Ei halua töitä, vaan väsynyt",
     "message": "不想上班好累啊",
     "comments": [],
     "origin": [
@@ -103,28 +44,28 @@
     ]
   },
   "uW7qaK": {
-    "translation": "tämä emoji",
+    "translation": "tähän",
     "message": "个表情",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        485
+        "src/components/category/category-modal.tsx",
+        57
       ],
       [
-        "src/components/category-emoji.tsx",
-        528
+        "src/components/category/category-modal.tsx",
+        101
       ]
     ]
   },
   "qNbLwo": {
-    "translation": "sissesõda",
+    "translation": "sissesöö",
     "message": "亲亲",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        39
+        "src/components/category/category-emoji.tsx",
+        33
       ]
     ]
   },
@@ -140,13 +81,13 @@
     ]
   },
   "zYyCyW": {
-    "translation": "Koko luettelo",
+    "translation": "Koko luokka",
     "message": "全部分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        373
+        "src/components/category/category-modal.tsx",
+        39
       ]
     ]
   },
@@ -156,8 +97,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        481
+        "src/components/category/category-modal.tsx",
+        53
       ]
     ]
   },
@@ -167,19 +108,19 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        276
+        "src/components/category/category-emoji.tsx",
+        270
       ]
     ]
   },
   "5lS2OX": {
-    "translation": "päättäjä",
+    "translation": "pääruokailija",
     "message": "厨师",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        278
+        "src/components/category/category-emoji.tsx",
+        272
       ]
     ]
   },
@@ -189,13 +130,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        35
+        "src/components/category/category-emoji.tsx",
+        29
       ]
     ]
   },
   "/pWV7M": {
-    "translation": "olen niin väsynyt, että enkä voi enää",
+    "translation": "täysin unenäköisiä",
     "message": "困得不行了",
     "comments": [],
     "origin": [
@@ -211,8 +152,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        23
+        "src/components/category/category-emoji.tsx",
+        17
       ]
     ]
   },
@@ -222,13 +163,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        26
+        "src/components/category/category-emoji.tsx",
+        20
       ]
     ]
   },
   "fNpbkb": {
-    "translation": "Työn on valmiina, mikä on mahtavaa",
+    "translation": "työt on valmiina, hyvä",
     "message": "工作完成啦好棒",
     "comments": [],
     "origin": [
@@ -244,12 +185,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        606
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        166
+        "src/components/single-emoji.tsx",
+        84
       ]
     ]
   },
@@ -259,8 +196,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        22
+        "src/components/category/category-emoji.tsx",
+        16
       ]
     ]
   },
@@ -270,13 +207,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        33
+        "src/components/category/category-emoji.tsx",
+        27
       ]
     ]
   },
   "Yhxdgn": {
-    "translation": "Haluan kiittää, mutta tykkään myös tähän",
+    "translation": "haluan kiittää mutta tykkäämättömän",
     "message": "想表达谢谢但点赞室",
     "comments": [],
     "origin": [
@@ -287,7 +224,7 @@
     ]
   },
   "r6acDk": {
-    "translation": "Etsi",
+    "translation": "haku",
     "message": "搜索",
     "comments": [],
     "origin": [
@@ -298,7 +235,7 @@
     ]
   },
   "ZB1owk": {
-    "translation": "täyttää kaikki puhuvuusilmentymät",
+    "translation": "tuki monipuolisten puhekieltojen",
     "message": "支持各种口语表达",
     "comments": [],
     "origin": [
@@ -309,7 +246,7 @@
     ]
   },
   "lm7p2W": {
-    "translation": "täyttää monikielinen hakutoimitus",
+    "translation": "tuki monikielistä hakua",
     "message": "支持多语言搜索",
     "comments": [],
     "origin": [
@@ -320,18 +257,18 @@
     ]
   },
   "qm8wCa": {
-    "translation": "tähtiä näkyväinen silmä",
+    "translation": "tähtiä näkyviä silmiä",
     "message": "星星眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        37
+        "src/components/category/category-emoji.tsx",
+        31
       ]
     ]
   },
   "oTQPJM": {
-    "translation": "täyttää tavoitteita",
+    "translation": "täytyy tervehdellä ystävällään",
     "message": "朋友生日想祝福",
     "comments": [],
     "origin": [
@@ -342,40 +279,40 @@
     ]
   },
   "DDScQ8": {
-    "translation": "Klikkaa kopioida emoji",
+    "translation": "klikkaa kopioida lemmikkiä",
     "message": "点击可以复制表情",
     "comments": [],
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        178
+        114
       ]
     ]
   },
   "hvta5u": {
-    "translation": "suositeltuja emoji",
+    "translation": "suositut lemmikit",
     "message": "热门表情",
     "comments": [],
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        98
+        99
       ]
     ]
   },
   "9kPlaI": {
-    "translation": "sydämennäköinen silmä",
+    "translation": "sydämen silmät",
     "message": "爱心眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        36
+        "src/components/category/category-emoji.tsx",
+        30
       ]
     ]
   },
   "SMZ7ey": {
-    "translation": "ymmärrä tunteita ja -ympäristöjä",
+    "translation": "ymmärrä tunteiden kontekstia",
     "message": "理解情感语境",
     "comments": [],
     "origin": [
@@ -386,7 +323,7 @@
     ]
   },
   "+x4GVv": {
-    "translation": "löydä parhaiten sopivat emojiä käyttämällä AI:tä",
+    "translation": "etsi parhaiten sopivat lemmikit AI:lla",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -397,7 +334,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "kuvaa tunteita luonnollisessa ääressä, ja AI:tä ymmärtää mitä tahdot sanoa",
+    "translation": "kuvaa tunteita tựaalaisesti, AI ymmärtää mitä tahansa tunnetta",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -408,7 +345,7 @@
     ]
   },
   "h+dKvB": {
-    "translation": "kuvaa tunteita päivittäisessä puheessa...",
+    "translation": "kuvaa tunteita päivittäisessä kiekkotekstissä...",
     "message": "用日常口语描述你的感受...",
     "comments": [],
     "origin": [
@@ -424,30 +361,30 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        483
+        "src/components/category/category-modal.tsx",
+        55
       ]
     ]
   },
   "KU2ZGU": {
-    "translation": "😂",
+    "translation": "hilppa",
     "message": "笑哭",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        27
+        "src/components/category/category-emoji.tsx",
+        21
       ]
     ]
   },
   "2CQmUD": {
-    "translation": "hämmästynyt nauraaminen",
+    "translation": "nauraava silmä",
     "message": "笑眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        24
+        "src/components/category/category-emoji.tsx",
+        18
       ]
     ]
   },
@@ -457,13 +394,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        277
+        "src/components/category/category-emoji.tsx",
+        271
       ]
     ]
   },
   "d0FwMq": {
-    "translation": "isäntä odottaa, joten olen iloinen",
+    "translation": "isäntä odottaa minua, iloinen",
     "message": "老板等我了开开心",
     "comments": [],
     "origin": [
@@ -474,13 +411,13 @@
     ]
   },
   "BR+jxt": {
-    "translation": "työntekijä",
+    "translation": "työ",
     "message": "职业",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        273
+        "src/components/category/category-emoji.tsx",
+        267
       ]
     ]
   },
@@ -490,35 +427,35 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        279
+        "src/components/category/category-emoji.tsx",
+        273
       ]
     ]
   },
   "tuZXxr": {
-    "translation": "emoji-luokka",
+    "translation": "lemmikkiluokka",
     "message": "表情分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        366
+        "src/components/category/category-emoji.tsx",
+        302
       ]
     ]
   },
   "PemLuA": {
-    "translation": "emoji-merkit",
+    "translation": "lemmikkisignaalit",
     "message": "表情符号",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        20
+        "src/components/category/category-emoji.tsx",
+        14
       ]
     ]
   },
   "EojHaD": {
-    "translation": "kokeile tätä hakutoimitusta:",
+    "translation": "kokeile tätä hakua: ",
     "message": "试试这样搜索：",
     "comments": [],
     "origin": [
@@ -529,13 +466,13 @@
     ]
   },
   "UI+jwu": {
-    "translation": "höpöinen nauraaminen",
+    "translation": "höpöilevä nauraaminen",
     "message": "露齿笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        25
+        "src/components/category/category-emoji.tsx",
+        19
       ]
     ]
   },
@@ -545,8 +482,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        38
+        "src/components/category/category-emoji.tsx",
+        32
       ]
     ]
   }

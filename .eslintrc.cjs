@@ -46,7 +46,10 @@ const config = {
     "@typescript-eslint/consistent-indexed-object-style": "off",
     "@typescript-eslint/no-unsafe-enum-comparison": "off",
     "@typescript-eslint/prefer-optional-chain": "off",
-    "@typescript-eslint/non-nullable-type-assertion-style": "off"
+    "@typescript-eslint/non-nullable-type-assertion-style": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off"
   }
 }
 module.exports = config;

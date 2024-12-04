@@ -36,7 +36,6 @@ export default {
     }
   },
   plugins: [ 
-    require('daisyui'),
     // 添加自定义工具类来隐藏滚动条
     function({ addUtilities }: { addUtilities: (utilities: Record<string, any>) => void }) {
       addUtilities({
@@ -51,6 +50,7 @@ export default {
           }
         }
       })
-    }
+    },
+    require('daisyui')
   ],
 } satisfies Config;

@@ -1,98 +1,39 @@
 {
-  "J/hVSQ": {
-    "translation": "{0}",
-    "message": "{0}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category-emoji.tsx",
-        466
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        525
-      ],
-      [
-        "src/components/category-emoji.tsx",
-        558
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        119
-      ]
-    ]
-  },
-  "l1DhIF": {
-    "translation": "<0>키워드 1 (키워드.txt에는 번역하지 않음)</0><1>키워드 2</1><2>키워드 3 (키워드.txt에는 번역하지 않음)</2>",
-    "message": "<0>Keyword 1 (do not translate in keywords.txt)</0><1>Keyword 2</1><2>Keyword 3 (do not translate in keywords.txt)</2>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        38
-      ]
-    ],
-    "obsolete": true
-  },
   "TsoDGX": {
-    "translation": "자동 i18n-next-lingui-tiny-데모, 5분만에 웹사이트에 새로운 언어 추가",
+    "translation": "자동번역 플러그인-next-lingui-tiny-템플릿, 5분만에 웹사이트에 새로운 언어 추가하기",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        14
+        16
       ]
     ]
   },
-  "dFY3S6": {
-    "translation": "하위 페이지로 이동",
-    "message": "To Sub Page",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        33
-      ]
-    ],
-    "obsolete": true
-  },
   "aDJB+h": {
-    "translation": "Lingui를 사용하여 5분만에 AI를 사용하여 웹사이트에 새로운 언어 추가",
+    "translation": "Lingui를 사용하여 5분만에 웹사이트에 새로운 언어 추가하기",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/page.tsx",
-        15
+        17
       ]
     ]
   },
-  "QpzMsa": {
-    "translation": "<0>Next.js로 오신 것을 환영합니다!</0>",
-    "message": "Welcome to <0>Next.js!</0>",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/page.tsx",
-        28
-      ]
-    ],
-    "obsolete": true
-  },
   "Z4NkC3": {
-    "translation": "직장인",
+    "translation": "회사원",
     "message": "上班族",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        275
+        "src/components/category/category-emoji.tsx",
+        269
       ]
     ]
   },
   "/KqhBG": {
-    "translation": "회사에 가지 않고 싶다 너무 힘들다",
+    "translation": "회사 가지 싫다 너무 힘들다",
     "message": "不想上班好累啊",
     "comments": [],
     "origin": [
@@ -103,17 +44,17 @@
     ]
   },
   "uW7qaK": {
-    "translation": "표정",
+    "translation": "개 표정",
     "message": "个表情",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        485
+        "src/components/category/category-modal.tsx",
+        57
       ],
       [
-        "src/components/category-emoji.tsx",
-        528
+        "src/components/category/category-modal.tsx",
+        101
       ]
     ]
   },
@@ -123,13 +64,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        39
+        "src/components/category/category-emoji.tsx",
+        33
       ]
     ]
   },
   "81qJXG": {
-    "translation": "오늘의 기분이 매우 좋다",
+    "translation": "오늘 기분 매우 좋음",
     "message": "今天心情特别好",
     "comments": [],
     "origin": [
@@ -145,19 +86,19 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        373
+        "src/components/category/category-modal.tsx",
+        39
       ]
     ]
   },
   "ysc16k": {
-    "translation": "전체 이모티콘 카테고리",
+    "translation": "전체 표정 카테고리",
     "message": "全部表情分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        481
+        "src/components/category/category-modal.tsx",
+        53
       ]
     ]
   },
@@ -167,30 +108,30 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        276
+        "src/components/category/category-emoji.tsx",
+        270
       ]
     ]
   },
   "5lS2OX": {
-    "translation": "주방장",
+    "translation": "요리사",
     "message": "厨师",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        278
+        "src/components/category/category-emoji.tsx",
+        272
       ]
     ]
   },
   "CKHAZ/": {
-    "translation": "좋아하는",
+    "translation": "좋아함",
     "message": "喜欢",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        35
+        "src/components/category/category-emoji.tsx",
+        29
       ]
     ]
   },
@@ -206,29 +147,29 @@
     ]
   },
   "5F7lbF": {
-    "translation": "크게 웃다",
+    "translation": "크게 웃음",
     "message": "大笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        23
+        "src/components/category/category-emoji.tsx",
+        17
       ]
     ]
   },
   "VpgGxv": {
-    "translation": "당황스러운 웃음",
+    "translation": "당황하는 웃음",
     "message": "尴尬笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        26
+        "src/components/category/category-emoji.tsx",
+        20
       ]
     ]
   },
   "fNpbkb": {
-    "translation": "일이 끝났다 정말 멋졌다",
+    "translation": "업무 완료 잘했어 대박",
     "message": "工作完成啦好棒",
     "comments": [],
     "origin": [
@@ -239,28 +180,24 @@
     ]
   },
   "QM99lf": {
-    "translation": "복사되었습니다",
+    "translation": "복사되었음",
     "message": "已复制",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        606
-      ],
-      [
-        "src/components/hot-emoji.tsx",
-        166
+        "src/components/single-emoji.tsx",
+        84
       ]
     ]
   },
   "8Ml78r": {
-    "translation": "활짝 웃다",
+    "translation": "즐거운 웃음",
     "message": "开心笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        22
+        "src/components/category/category-emoji.tsx",
+        16
       ]
     ]
   },
@@ -270,13 +207,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        33
+        "src/components/category/category-emoji.tsx",
+        27
       ]
     ]
   },
   "Yhxdgn": {
-    "translation": "감사를 표하고 싶지만 좋아하는 것은 누르고 싶지 않다",
+    "translation": "감사를 표현하고 싶지만 좋아하기 기능 없음",
     "message": "想表达谢谢但点赞室",
     "comments": [],
     "origin": [
@@ -298,7 +235,7 @@
     ]
   },
   "ZB1owk": {
-    "translation": "모든 인상적인 표현을 지원합니다",
+    "translation": "다양한 구두 표현 지원",
     "message": "支持各种口语表达",
     "comments": [],
     "origin": [
@@ -309,7 +246,7 @@
     ]
   },
   "lm7p2W": {
-    "translation": "다국어 검색 지원",
+    "translation": "다언어 검색 지원",
     "message": "支持多语言搜索",
     "comments": [],
     "origin": [
@@ -320,13 +257,13 @@
     ]
   },
   "qm8wCa": {
-    "translation": "별안간 눈",
+    "translation": "별안간 눈웃음",
     "message": "星星眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        37
+        "src/components/category/category-emoji.tsx",
+        31
       ]
     ]
   },
@@ -342,40 +279,40 @@
     ]
   },
   "DDScQ8": {
-    "translation": "클릭하여 이모티콘을 복사할 수 있습니다",
+    "translation": "클릭하면 표정 복사 가능",
     "message": "点击可以复制表情",
     "comments": [],
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        178
+        114
       ]
     ]
   },
   "hvta5u": {
-    "translation": "인기 있는 이모티콘",
+    "translation": "인기 표정",
     "message": "热门表情",
     "comments": [],
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        98
+        99
       ]
     ]
   },
   "9kPlaI": {
-    "translation": "하트 아이",
+    "translation": "하트 눈",
     "message": "爱心眼",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        36
+        "src/components/category/category-emoji.tsx",
+        30
       ]
     ]
   },
   "SMZ7ey": {
-    "translation": "감정적인 상황을 이해",
+    "translation": "감정 상황 이해",
     "message": "理解情感语境",
     "comments": [],
     "origin": [
@@ -386,7 +323,7 @@
     ]
   },
   "+x4GVv": {
-    "translation": "AI로 가장 적합한 이모티콘을 찾기",
+    "translation": "AI로 가장 적합한 표정 찾기",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -397,7 +334,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "자연스럽게 설명하고 AI는 당신의 모든 감정을 이해합니다",
+    "translation": "자연스럽게 설명하기, AI는 당신의 모든 감정을 알아듣습니다",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -408,7 +345,7 @@
     ]
   },
   "h+dKvB": {
-    "translation": "일상적인 회화로 감정을 묘사하세요...",
+    "translation": "일상적인 구두 표현으로 감정을 설명하세요...",
     "message": "用日常口语描述你的感受...",
     "comments": [],
     "origin": [
@@ -424,8 +361,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        483
+        "src/components/category/category-modal.tsx",
+        55
       ]
     ]
   },
@@ -435,8 +372,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        27
+        "src/components/category/category-emoji.tsx",
+        21
       ]
     ]
   },
@@ -446,8 +383,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        24
+        "src/components/category/category-emoji.tsx",
+        18
       ]
     ]
   },
@@ -457,13 +394,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        277
+        "src/components/category/category-emoji.tsx",
+        271
       ]
     ]
   },
   "d0FwMq": {
-    "translation": "회사장 등 나를 기다리고 있어 행복하다",
+    "translation": "회사장 기다리고 있어 즐거워",
     "message": "老板等我了开开心",
     "comments": [],
     "origin": [
@@ -479,8 +416,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        273
+        "src/components/category/category-emoji.tsx",
+        267
       ]
     ]
   },
@@ -490,19 +427,19 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        279
+        "src/components/category/category-emoji.tsx",
+        273
       ]
     ]
   },
   "tuZXxr": {
-    "translation": "이모티콘 카테고리",
+    "translation": "표정 카테고리",
     "message": "表情分类",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        366
+        "src/components/category/category-emoji.tsx",
+        302
       ]
     ]
   },
@@ -512,8 +449,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        20
+        "src/components/category/category-emoji.tsx",
+        14
       ]
     ]
   },
@@ -529,24 +466,24 @@
     ]
   },
   "UI+jwu": {
-    "translation": "잘 웃다",
+    "translation": "턱시도 웃음",
     "message": "露齿笑",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        25
+        "src/components/category/category-emoji.tsx",
+        19
       ]
     ]
   },
   "IOyS5i": {
-    "translation": "키스",
+    "translation": "키스하기",
     "message": "飞吻",
     "comments": [],
     "origin": [
       [
-        "src/components/category-emoji.tsx",
-        38
+        "src/components/category/category-emoji.tsx",
+        32
       ]
     ]
   }
