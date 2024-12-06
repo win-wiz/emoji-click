@@ -3,8 +3,11 @@
 import { useState } from 'react'
 import { Trans, t } from '@lingui/macro'
 import SearchDialog from '@/components/search/search-dialog'
+import { AVAILABLE_LOCALES } from '@/locales/config'
 
-export const SearchEmoji = () => {
+export const SearchEmoji = ({
+  lang
+}: {lang: AVAILABLE_LOCALES}) => {
   const [isOpen, setIsOpen] = useState(false)
   const [searchText, setSearchText] = useState('')
 

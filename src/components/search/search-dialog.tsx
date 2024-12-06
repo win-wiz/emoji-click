@@ -5,6 +5,7 @@ import { Trans } from '@lingui/macro'
 import useDebounce from '@/hooks/use-debounce'
 import { Search, X } from 'lucide-react'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 interface SearchResult {
   emoji: string
@@ -131,10 +132,10 @@ export default function SearchDialog({
   }, [isOpen, onClose])
 
   // 处理跳转到详情页
-  const handleNavigateToDetails = (emoji: string) => {
-    onClose() // 先关闭弹框
-    router.push(`/details`) // 然后跳转
-  }
+  // const handleNavigateToDetails = (emoji: string) => {
+  //   onClose() // 先关闭弹框
+  //   router.push(`/details`) // 然后跳转
+  // }
 
   if (!isOpen) return null
 
@@ -196,10 +197,10 @@ export default function SearchDialog({
             
             <div className="space-y-2">
               {results.map((result, index) => (
-                <div
+                <Link
                   key={index}
+                  href={`/details`}
                   className="group flex items-center gap-4 p-3 hover:bg-white rounded-lg cursor-pointer transition-colors relative"
-                  onClick={() => handleNavigateToDetails(result.emoji)}
                 >
                   <span className="text-3xl">{result.emoji}</span>
 
@@ -261,7 +262,7 @@ export default function SearchDialog({
                       </div>
                     </div>
                   )}
-                </div>
+                </Link>
               ))}
             </div>
           </div>
