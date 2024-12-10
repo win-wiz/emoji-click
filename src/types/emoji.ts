@@ -1,5 +1,14 @@
 export interface EmojiItem {
-  emoji: string;
-  id?: number;
-  description: React.ReactNode;
+  id: number;
+  code: string;
+  fullCode: string;
+  baseCode: string;
+  diversity: number;
+  skinCode: string;
+  type: number;
+  sort: number;
+  related: string;
+  hot: number;
+  emotion: number;
+  createdAt: string;
 }

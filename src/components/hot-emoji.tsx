@@ -4,75 +4,15 @@ import { Trans } from '@lingui/macro'
 import SingleEmoji from './single-emoji'
 import { AVAILABLE_LOCALES } from '@/locales/config'
 
-interface EmojiItem {
-  emoji: string
-  description: string
-}
 
-const hotEmojis: EmojiItem[] = [
-  {
-    emoji: '😊',
-    description: '开心愉快'
-  },
-  {
-    emoji: '🤣',
-    description: '笑出眼泪'
-  },
-  {
-    emoji: '🥰',
-    description: '喜欢爱心'
-  },
-  {
-    emoji: '😅',
-    description: '尴尬而不失礼貌'
-  },
-  {
-    emoji: '🎉',
-    description: '庆祝祝贺'
-  },
-  {
-    emoji: '😭',
-    description: '伤心难过'
-  },
-  {
-    emoji: '🤔',
-    description: '思考疑惑'
-  },
-  {
-    emoji: '😴',
-    description: '困了想睡'
-  },
-  {
-    emoji: '🥳',
-    description: '开心庆祝'
-  },
-  {
-    emoji: '😤',
-    description: '生气愤怒'
-  },
-  {
-    emoji: '🤗',
-    description: '温暖拥抱'
-  },
-  {
-    emoji: '😇',
-    description: '天使乖巧'
-  },
-  {
-    emoji: '🙄',
-    description: '无语翻白眼'
-  },
-  {
-    emoji: '😋',
-    description: '美味可口'
-  },
-  {
-    emoji: '🤩',
-    description: '星星眼'
-  }
-]
 
-export const HotEmoji = ({ lang }: { lang: AVAILABLE_LOCALES }) => {
+export const HotEmoji = ({ 
+  lang,
+  hotEmojis = []
+}: { 
+  lang: AVAILABLE_LOCALES,
+  hotEmojis: Record<string, any>[]
+}) => {
 
   return (
     <div className="relative -mx-6 sm:-mx-12 md:-mx-24 lg:-mx-32">

@@ -5,6 +5,7 @@ import { HotEmoji } from '@/components/hot-emoji';
 import CategoryEmoji from '@/components/category/category-emoji';
 import { activateLocale } from '@/locales/locale';
 import { AVAILABLE_LOCALES } from '@/locales/config';
+import { fetchEmojiByGroup, fetchHotEmoji } from '@/server/home';
 
 export const runtime = 'edge';
 
@@ -18,17 +19,24 @@ export async function generateMetadata({ params }: { params: { lang: AVAILABLE_L
   }
 }
 
-export default function HomePage({ params }: { params: { lang: AVAILABLE_LOCALES } }) {
+export default async function HomePage({ params }: { params: { lang: AVAILABLE_LOCALES } }) {
+
+  // 查找热门表情
+  const hotEmoji = await fetchHotEmoji(params.lang);
+  
+  // 查找分类表情 
+  const emojiByGroup = await fetchEmojiByGroup(params.lang);
+
 
   return (
     <div className="px-4">
       <SearchEmoji />
       
       {/* 热门表情  */}
-      <HotEmoji lang={params.lang} />
+      <HotEmoji lang={params.lang} hotEmojis={hotEmoji.data ?? []} />
 
       {/* 表情分类 */}
-      <CategoryEmoji lang={params.lang} />
+      <CategoryEmoji lang={params.lang} categories={emojiByGroup.data ?? []}/>
 
     </div>
   )

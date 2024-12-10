@@ -38,3 +38,14 @@ export const FlagMaps = {
 export function getLocaleFlag(locale: string) {
   return FlagMaps[locale as keyof typeof FlagMaps] || '🌐';
 }
+
+// 优化防抖函数
+export function debounce(fn: Function, delay: number) {
+  let timeoutId: NodeJS.Timeout
+  const debouncedFn = function (this: any, ...args: any[]) {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => fn.apply(this, args), delay)
+  }
+  debouncedFn.cancel = () => clearTimeout(timeoutId)
+  return debouncedFn
+}

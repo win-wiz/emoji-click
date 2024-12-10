@@ -3,11 +3,14 @@
 import { useState } from 'react'
 import { Trans, t } from '@lingui/macro'
 import SearchDialog from '@/components/search/search-dialog'
-import { AVAILABLE_LOCALES } from '@/locales/config'
+import { AVAILABLE_LOCALES, DEFAULT_LOCALE } from '@/locales/config'
+import LandingTypeWrite from './landing-type-write'
 
 export const SearchEmoji = ({
-  lang
-}: {lang: AVAILABLE_LOCALES}) => {
+  lang = DEFAULT_LOCALE
+}: {
+  lang?: AVAILABLE_LOCALES
+}) => {
   const [isOpen, setIsOpen] = useState(false)
   const [searchText, setSearchText] = useState('')
 
@@ -31,12 +34,24 @@ export const SearchEmoji = ({
       
       <div className="relative max-w-3xl mx-auto px-6 py-20 text-center">
         {/* 标题和描述 */}
-        <h1 className="text-3xl font-bold mb-3 bg-gradient-to-r from-purple-600 to-purple-500 inline-block text-transparent bg-clip-text">
+        <h1 className="text-3xl font-bold mb-3 text-gray-800 inline-block bg-clip-text">
           <Trans>用AI找到最适合的表情</Trans>
         </h1>
-        <p className="text-gray-600 mb-12">
-          <Trans>用最自然的方式描述，AI 懂你想表达的每一种情绪</Trans>
-        </p>
+        
+        {/* 使用打字效果组件 */}
+        <h2 className="text-gray-600 mb-12 h-8 text-lg bg-gradient-to-r from-purple-600/80 to-purple-500/80 bg-clip-text text-transparent">
+          <LandingTypeWrite 
+            lang={lang}
+            texts={[
+              t`用最自然的方式描述，AI 懂你想表达的每一种情绪`,
+              t`描述你的心情，让 AI 帮你找到合适的表情`,
+              t`简单输入文字，快速找到想要的表情`
+            ]}
+            typingSpeed={80}
+            deletingSpeed={40}
+            pauseTime={3000}
+          />
+        </h2>
 
         {/* 搜索框 - 点击时打开对话框 */}
         <div className="relative mb-10">
@@ -86,7 +101,7 @@ export const SearchEmoji = ({
           </div>
           <div className="flex items-center gap-1.5">
             <span className="text-lg">🧠</span>
-            <span><Trans>理解情感语境</Trans></span>
+            <span><Trans>理解情感语���</Trans></span>
           </div>
         </div>
       </div>

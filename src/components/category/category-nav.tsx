@@ -1,6 +1,6 @@
 'use client'
 
-import { Category } from "@/types/category";
+import { EmojiType } from "@/types/category";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react"
 
@@ -9,7 +9,7 @@ export default function CategoryNav({
   selectedCategory,
   onChange
 }: {
-  categories: Category[];
+  categories: EmojiType[];
   selectedCategory: string;
   onChange?: (categoryId: string) => void;
 }) {
@@ -43,7 +43,7 @@ export default function CategoryNav({
         const distanceToRight = containerRect.right - elementRect.right
         
         // 如果元素右边缘接近或超出容器右边缘，自动滚动以显示下一个元素
-        if (distanceToRight < 100) { // 100px 是阈值，可以根据需要调整
+        if (distanceToRight < 100) { // 100px 阈值，可以根据需要调整
           const nextScrollPosition = container.scrollLeft + elementRect.width + 16 // 16px 是间距
           container.scrollTo({
             left: nextScrollPosition,
@@ -60,6 +60,8 @@ export default function CategoryNav({
       }
     }, 100)
   }
+
+  console.log('category===>>', categories)
 
   return (
     <div className="relative mb-12">
@@ -102,7 +104,7 @@ export default function CategoryNav({
                 scrollToCategory(category.id);
                 onChange?.(category.id);
               }}
-              className={`group relative flex flex-col items-center min-w-[76px] p-3 rounded-xl transition-all duration-300 ${
+              className={`group w-[200px] relative flex flex-col items-center min-w-[150px] p-3 rounded-xl transition-all duration-300 ${
                 selectedCategory === category.id
                   ? 'bg-gray-100 shadow-sm scale-105 transform'
                   : 'hover:bg-gray-50'
@@ -123,7 +125,7 @@ export default function CategoryNav({
               <span className={`text-2xl mb-1.5 transition-transform duration-300 ${
                 selectedCategory === category.id ? 'scale-110' : ''
               }`}>
-                {category.icon}
+                {category.icon || '😊'}
               </span>
               <span className={`text-xs font-medium whitespace-nowrap transition-colors max-w-[60px] overflow-hidden text-ellipsis ${
                 selectedCategory === category.id

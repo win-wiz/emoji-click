@@ -1,8 +1,11 @@
 import { EmojiItem } from "./emoji";
 
-export interface Category {
+export interface EmojiType {
   id: string;
   name: React.ReactNode;
-  icon: string;
+  type: number;
+  icon?: string;
+  language: string;
+  createdAt: string;
   emojis: EmojiItem[];
 }

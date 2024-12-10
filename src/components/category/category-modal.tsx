@@ -1,19 +1,18 @@
 'use client'
 
-import { Category } from "@/types/category";
 import { Trans } from "@lingui/macro";
 import { ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
 
 // 定义一个默认类别 ID
-const DEFAULT_CATEGORY_ID = 'faces'
+const DEFAULT_CATEGORY_ID = ''
 
 export default function CategoryModal({
   categories,
   onChange,
   choicedCategory
 }: {
-  categories: Category[];
+  categories: Record<string, any>[];
   onChange?: (selectNav: string) => void;
   choicedCategory?: string;
 }) {
@@ -91,7 +90,7 @@ export default function CategoryModal({
                   </span>
                   <div className="flex flex-col items-start">
                     <div 
-                      className={`font-medium max-w-[100px] overflow-hidden text-ellipsis ${
+                      className={`font-medium text-left leading-5 max-w-[100px] overflow-hidden text-ellipsis ${
                         selectedCategory === category.id
                           ? 'text-gray-900'
                           : 'text-gray-500 group-hover:text-gray-700'
@@ -99,7 +98,7 @@ export default function CategoryModal({
                     >
                       {category.name}
                     </div>
-                    <span className="text-xs text-gray-400">
+                    <span className="text-xs text-gray-400 mt-2">
                       {category.emojis.length} <Trans>个表情</Trans>
                     </span>
                   </div>

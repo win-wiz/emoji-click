@@ -1,0 +1,4 @@
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "aiEmoji"
+database_id = "1297caa8-27d7-4c20-a06b-c759243a242f"

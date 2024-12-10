@@ -7,8 +7,14 @@ export const env = createEnv({
    * isn't built with invalid env vars.
    */
   server: {
-    NODE_ENV: z.enum(["development", "test", "production"]),
+    NODE_ENV: 
+      z.enum(["development", "test", "production"])
+      .default("development"),
     PRODUCTION_URL: z.string().optional(),
+    DB_LOCAL_PATH: z.string().optional(),
+    CLOUDFLARE_ACCOUNT_ID: z.string().optional(),
+    CLOUDFLARE_API_TOKEN: z.string().optional(),
+    DB_PROD_DATABASE_ID: z.string().optional(),
   },
 
   /**
@@ -27,6 +33,10 @@ export const env = createEnv({
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
     PRODUCTION_URL: process.env.PRODUCTION_URL,
+    DB_LOCAL_PATH: process.env.DB_LOCAL_PATH,
+    CLOUDFLARE_ACCOUNT_ID: process.env.CLOUDFLARE_ACCOUNT_ID,
+    CLOUDFLARE_API_TOKEN: process.env.CLOUDFLARE_API_TOKEN,
+    DB_PROD_DATABASE_ID: process.env.DB_PROD_DATABASE_ID,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**

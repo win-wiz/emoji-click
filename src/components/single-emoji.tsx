@@ -18,7 +18,7 @@ export default function SingleEmoji({
 
   const [copySuccess, setCopySuccess] = useState(false);
 
-  const handleCopy = async (emoji: string, index: number) => {
+  const handleCopy = async (emoji: string) => {
 
     try {
       await navigator.clipboard.writeText(emoji)
@@ -30,32 +30,34 @@ export default function SingleEmoji({
       console.error('Failed to copy:', err)
     }
   }
+
+  // console.log('emojiItem', emojiItem)
   return (
     <section
-      className="group relative flex flex-col items-center p-3 sm:p-4 rounded-lg bg-white hover:bg-gray-50 border border-gray-100 transition-all duration-300"
+      className="group h-full relative flex flex-col items-center p-3 sm:p-4 rounded-lg bg-white hover:bg-gray-50 border border-gray-100 transition-all duration-300 w-full"
     >
       {/* 主要内容区域 - 点击跳转到详情页 */}
       <Link
-        href={`/${lang}/details`}
+        href={`/${lang}/${emojiItem.fullCode}`}
         className="flex flex-col items-center flex-1 w-full cursor-pointer"
       >
         <span className="text-4xl sm:text-5xl mb-2 transform group-hover:scale-110 transition-transform duration-300">
-          {emojiItem.emoji}
+          {emojiItem.code}
         </span>
-        <span className="text-xs sm:text-sm text-gray-600 group-hover:text-gray-800 transition-colors">
-          {emojiItem.description}
+        <span className="text-xs text-center sm:text-sm text-gray-600 group-hover:text-gray-800 transition-colors">
+          {emojiItem.name}
         </span>
       </Link>
 
       {/* 复制按钮 */}
       <div className="absolute top-2 right-2">
         <button
-          onClick={() => handleCopy(emojiItem.emoji, emojiItem.id)}
+          onClick={() => handleCopy(emojiItem.code)}
           className="p-1.5 rounded-full opacity-0 group-hover:opacity-100 hover:bg-gray-100 transition-all duration-300"
         >
           <ClipboardCopy 
             className="w-4 h-4 text-gray-400 hover:text-gray-600"
-            onClick={() => handleCopy(emojiItem.emoji, emojiItem.id)}
+            onClick={() => handleCopy(emojiItem.emoji)}
           />
         </button>
         

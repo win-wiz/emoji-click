@@ -17,16 +17,17 @@ export default async function RootLayout({
     lang: AVAILABLE_LOCALES;
   };
 }>) {
-
   const i18n = await serverSideTranslations(lang ?? DEFAULT_LOCALE);
   
   return (
     <html lang={lang} suppressHydrationWarning className="scroll-smooth">
       <body>
         <AppWithTranslation i18n={i18n}>
-          <main className="flex flex-col justify-between min-h-screen w-full">
+          <main className="flex flex-col min-h-screen">
             <Header lang={lang as AVAILABLE_LOCALES}/>
-            {children}
+            <div className="flex-grow">
+              {children}
+            </div>
             <Footer />
             <ScrollToTop />
           </main>
