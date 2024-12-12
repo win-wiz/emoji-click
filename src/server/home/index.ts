@@ -30,7 +30,7 @@ export async function fetchEmojiByGroup(lang: AVAILABLE_LOCALES) {
       .from(emojiType)
       .leftJoin(emoji, eq(emojiType.type, emoji.type))
       .leftJoin(emojiLanguage, eq(emoji.fullCode, emojiLanguage.fullCode))
-      .where(and(eq(emojiType.language, lang), eq(emojiLanguage.language, lang)))
+      .where(and(eq(emojiType.language, lang), eq(emojiLanguage.language, lang), eq(emoji.diversity, 0)))
       .groupBy(emojiType.type)
       .prepare();
 

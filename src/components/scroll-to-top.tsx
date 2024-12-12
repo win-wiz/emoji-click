@@ -1,6 +1,7 @@
 'use client'
 
-import { MoveUp } from 'lucide-react'
+import { cn } from '@/utils'
+import { ArrowUpToLine, MoveUp } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 export default function ScrollToTop() {
@@ -31,18 +32,16 @@ export default function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed right-4 bottom-4 sm:right-8 sm:bottom-8 p-2.5 
-            bg-white/90 hover:bg-white 
-            backdrop-blur-[2px]
-            rounded-full
-            shadow-sm hover:shadow
-            border border-purple-100/30
-            transition-all duration-300 
-            group
-            z-50"
+          className={cn(
+            "fixed bottom-8 rounded-full right-8 z-50 bg-violet-500 hover:bg-violet-600 shadow-lg transition-all duration-300 ease-in-out",
+            "hover:scale-110 p-2 text-white",
+            isVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-4 pointer-events-none cursor-default",
+          )}
           aria-label="回到顶部"
         >
-          <MoveUp className="w-5 h-5 text-purple-500/70 group-hover:text-purple-600 transition-colors"/>
+          <ArrowUpToLine className="h-5 w-5" aria-hidden="true" />
         </button>
       )}
     </>

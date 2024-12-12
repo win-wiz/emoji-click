@@ -11,7 +11,7 @@ import { debounce } from '@/utils'
 import { EmojiType } from '@/types/category'
 
 const ITEMS_PER_PAGE = 30
-const SCROLL_THRESHOLD = 800  // 增大滚动触发阈值，提前加载更多内容
+const SCROLL_THRESHOLD = 1000  // 增大滚动触发阈值，提前加载更多内容
 
 // 分类状态接口
 interface CategoryState {
@@ -49,7 +49,7 @@ const MemoizedEmojiItem = memo(function EmojiItem({
 }) {
   return (
     <div
-      className="opacity-0 animate-[fadeIn_0.3s_ease-in-out_forwards]"
+      className="opacity-100 animate-[fadeIn_0.3s_ease-in-out_forwards]"
       style={{
         animationDelay: `${Math.min(index * 0.05, 0.5)}s`
       }}

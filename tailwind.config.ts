@@ -28,33 +28,48 @@ export default {
           '50%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(-100%)' }
         },
-        'fadeIn': {
-          '0%': { opacity: '0', transform: 'translateY(10px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' }
+        'fade-in': {
+          '0%': { 
+            opacity: '0',
+            transform: 'translateY(10px)'
+          },
+          '100%': { 
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        },
+        'scale-up': {
+          '0%': { transform: 'scale(0.8)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' }
+        },
+        'check-mark': {
+          '0%': { transform: 'scale(0.5)', opacity: '0' },
+          '50%': { transform: 'scale(1.2)' },
+          '100%': { transform: 'scale(1)', opacity: '1' }
         },
         'gradient': {
-          '0%': { backgroundPosition: '0% 50%' },
-          '50%': { backgroundPosition: '100% 50%' },
-          '100%': { backgroundPosition: '0% 50%' }
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' }
         },
         'toast-in': {
           '0%': { 
-            opacity: '0',
-            transform: 'translate(-50%, -20px)'
+            transform: 'translateY(-100%) translateX(-50%) scale(0.9)',
+            opacity: '0'
           },
           '100%': {
-            opacity: '1',
-            transform: 'translate(-50%, 0)'
+            transform: 'translateY(0) translateX(-50%) scale(1)',
+            opacity: '1'
           }
         },
         'bounce-mini': {
-          '0%, 100%': { transform: 'scale(1)' },
-          '50%': { transform: 'scale(1.1)' }
+          '0%, 100%': { transform: 'translateY(-10%)' },
+          '50%': { transform: 'translateY(0)' }
         },
         'shake': {
-          '0%, 100%': { transform: 'translateX(0)' },
-          '20%, 60%': { transform: 'translateX(-2px)' },
-          '40%, 80%': { transform: 'translateX(2px)' }
+          '10%, 90%': { transform: 'translate3d(-1px, 0, 0)' },
+          '20%, 80%': { transform: 'translate3d(2px, 0, 0)' },
+          '30%, 50%, 70%': { transform: 'translate3d(-2px, 0, 0)' },
+          '40%, 60%': { transform: 'translate3d(2px, 0, 0)' }
         },
         'gradient-slow': {
           '0%, 100%': {
@@ -67,20 +82,27 @@ export default {
           }
         },
         'pulse-slow': {
-          '0%, 100%': {
-            opacity: '1'
-          },
-          '50%': {
-            opacity: '0.5'
-          }
+          '0%, 100%': { transform: 'scale(1)', opacity: '0.5' },
+          '50%': { transform: 'scale(1.1)', opacity: '0.2' }
         },
         'shine': {
           '0%': { backgroundPosition: '200% center' },
-          '100%': { backgroundPosition: '-200% center' },
+          '100%': { backgroundPosition: '-200% center' }
         },
+        'slideDown': {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0)' }
+        },
+        'spin-slow': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' }
+        }
       },
       animation: {
+        'fade-in': 'fade-in 0.6s ease-out forwards',
         'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+        'scale-up': 'scale-up 0.2s ease-out',
+        'check-mark': 'check-mark 0.4s ease-out',
         'bounce-slow': 'bounce-slow 3s ease-in-out infinite',
         'gradient': 'gradient 3s ease infinite',
         'toast-in': 'toast-in 0.3s ease-out forwards',
@@ -89,63 +111,9 @@ export default {
         'gradient-slow': 'gradient-slow 3s ease-in-out infinite',
         'pulse-slow': 'pulse-slow 2s ease-in-out infinite',
         'shine': 'shine 3s ease-in-out infinite',
+        'slideDown': 'slideDown 0.2s ease-out',
+        'spin-slow': 'spin-slow 8s linear infinite'
       }
-    },
-    animation: {
-      'fade-in': 'fade-in 0.2s ease-out',
-      'scale-up': 'scale-up 0.2s ease-out',
-      'check-mark': 'check-mark 0.4s ease-out',
-      'pulse-slow': 'pulse-slow 2s ease-in-out infinite'
-    },
-    keyframes: {
-      'fade-in': {
-        '0%': { opacity: '0' },
-        '100%': { opacity: '1' }
-      },
-      'scale-up': {
-        '0%': { transform: 'scale(0.8)', opacity: '0' },
-        '100%': { transform: 'scale(1)', opacity: '1' }
-      },
-      'check-mark': {
-        '0%': { transform: 'scale(0.5)', opacity: '0' },
-        '50%': { transform: 'scale(1.2)' },
-        '100%': { transform: 'scale(1)', opacity: '1' }
-      },
-      'pulse-slow': {
-        '0%, 100%': { transform: 'scale(1)', opacity: '0.5' },
-        '50%': { transform: 'scale(1.1)', opacity: '0.2' }
-      },
-      'loading': {
-        '0%': { transform: 'translateX(-100%)' },
-        '50%': { transform: 'translateX(100%)' },
-        '100%': { transform: 'translateX(-100%)' }
-      },
-      'fadeIn': {
-        '0%': { opacity: '0', transform: 'translateY(10px)' },
-        '100%': { opacity: '1', transform: 'translateY(0)' }
-      },
-      'toast-in': {
-        '0%': { transform: 'translateY(-100%) translateX(-50%) scale(0.9)', opacity: '0' },
-        '100%': { transform: 'translateY(0) translateX(-50%) scale(1)', opacity: '1' },
-      },
-      'gradient': {
-        '0%, 100%': { backgroundPosition: '0% 50%' },
-        '50%': { backgroundPosition: '100% 50%' },
-      },
-      'bounce-mini': {
-        '0%, 100%': { transform: 'translateY(-10%)' },
-        '50%': { transform: 'translateY(0)' },
-      },
-      'shake': {
-        '10%, 90%': { transform: 'translate3d(-1px, 0, 0)' },
-        '20%, 80%': { transform: 'translate3d(2px, 0, 0)' },
-        '30%, 50%, 70%': { transform: 'translate3d(-2px, 0, 0)' },
-        '40%, 60%': { transform: 'translate3d(2px, 0, 0)' },
-      },
-      'shine': {
-        '0%': { backgroundPosition: '200% center' },
-        '100%': { backgroundPosition: '-200% center' },
-      },
     }
   },
   plugins: [ 
@@ -179,6 +147,7 @@ export default {
         },
       })
     },
+    require('tailwindcss-animate'),
     require('daisyui')
   ],
 } satisfies Config;

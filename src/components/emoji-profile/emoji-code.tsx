@@ -40,21 +40,28 @@ const CopyButton = memo(function CopyButton({
 }) {
   return (
     <button
+      type="button"
       onClick={onCopy}
       disabled={copied}
+      tabIndex={0}
       className={`
         group relative px-8 py-3 rounded-full text-sm font-medium h-[46px]
         ${copied 
           ? 'bg-success/10 text-success border border-success/20' 
           : 'bg-white backdrop-blur-sm border border-primary/20 text-primary hover:border-primary/30 hover:bg-primary/5'
         }
-        transition-colors duration-300
+        transition-all duration-300
+        focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2
+        active:scale-95 hover:scale-105
+        disabled:opacity-50 disabled:cursor-not-allowed
+        disabled:hover:bg-white disabled:hover:border-primary/20
+        disabled:hover:scale-100
       `}
     >
       <div className="relative z-10 flex items-center gap-2.5 h-full justify-center">
         {copied ? (
           <>
-            <span className="text-base">✓</span>
+            <span className="text-base animate-bounce-mini">✓</span>
             <Trans>复制成功</Trans>
           </>
         ) : (
@@ -65,7 +72,7 @@ const CopyButton = memo(function CopyButton({
         )}
       </div>
       {!copied && (
-        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-primary/5 to-transparent opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300" />
       )}
     </button>
   );
@@ -85,6 +92,13 @@ const EmojiDisplay = memo(function EmojiDisplay({
       <div className="relative">
         <div 
           onClick={onCopy}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              onCopy();
+            }
+          }}
           className="relative z-10 text-[140px] sm:text-[180px] leading-none cursor-pointer select-none transform-gpu transition-all duration-500 hover:scale-110 active:scale-95"
         >
           {code}
@@ -151,8 +165,8 @@ export default function EmojiCode({
               </h1>
             </div>
 
-            {/* 操作按钮组 */}
-            <div className="flex flex-wrap justify-center gap-6">
+            {/* 操作按钮 */}
+            <div className="flex flex-wrap justify-center gap-6 relative z-10">
               <CopyButton copied={copied} onCopy={handleCopy} />
             </div>
           </div>
