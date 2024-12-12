@@ -1,4 +1,4 @@
-import { SearchEmoji } from '@/components/search-emoji';
+import { SearchEmoji } from '@/components/search/search-emoji';
 import { t } from '@lingui/macro'
 import { Metadata } from 'next'
 import { HotEmoji } from '@/components/hot-emoji';

@@ -10,6 +10,7 @@ export async function fetchEmojiProfileByFullCode(fullCode: string, lang: AVAILA
       .select({
         code: emoji.code,
         fullCode: emoji.fullCode,
+        emotion: emoji.emotion,
         name: emojiLanguage.name,
         meaning: emojiLanguage.meaning,
         usageExample: emojiLanguage.usageExample,

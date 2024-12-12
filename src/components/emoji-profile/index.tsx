@@ -24,18 +24,25 @@ export default function EmojiProfile({ emojiData = {} }: EmojiDetail) {
         {/* 基本含义 - 大号展示 */}
         <EmojiMeaning meaning={emojiData.meaning} />
 
-        {/* 搜索关键词区域 - 创新布局 */}
-        <EmojiKeywords keywords={emojiData.keywords} searchTips={emojiData.searchTips} />
+        {
+          emojiData.emotion === 1 && (
+            <>
+              {/* 搜索关键词区域 - 创新布局 */}
+              <EmojiKeywords keywords={emojiData.keywords} searchTips={emojiData.searchTips} />
 
-        {/* 使用场景和文化差异 */}
-        <EmojiCultura 
-          eastAsia={emojiData.easterCulturalUsage} 
-          westAsia={emojiData.westernCulturalUsage}
-          crossCulturalUsage={emojiData.crossCulturalUsage}
-        />
+              {/* 使用场景和文化差异 */}
+              <EmojiCultura 
+                eastAsia={emojiData.easterCulturalUsage} 
+                westAsia={emojiData.westernCulturalUsage}
+                crossCulturalUsage={emojiData.crossCulturalUsage}
+              />
 
-        {/* 使用场景 */}
-        <EmojiScene social={emojiData.socialSetting} work={emojiData.workSetting} />
+              {/* 使用场景 */}
+              <EmojiScene social={emojiData.socialSetting} work={emojiData.workSetting} />
+            </>
+          )
+        }
+        
       </div>
     </div>
   );

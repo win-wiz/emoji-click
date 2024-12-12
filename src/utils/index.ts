@@ -49,3 +49,5 @@ export function debounce(fn: Function, delay: number) {
   debouncedFn.cancel = () => clearTimeout(timeoutId)
   return debouncedFn
 }
+
+export const fetcher = (...args: Parameters<typeof fetch>) => fetch(...args).then((res) => res.json());

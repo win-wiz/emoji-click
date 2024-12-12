@@ -1,32 +1,62 @@
+import { memo, useMemo } from 'react';
+
 interface EmojiDisplayProps {
   code?: string;
   fullCode?: string;
   baseCode?: string;
+  onError?: (error: Error) => void;
 }
 
-export function EmojiDisplay({ code, fullCode, baseCode }: EmojiDisplayProps) {
-  const convertCodeToEmoji = (code: string) => {
-    // 处理可能包含多个码点的情况（用空格或-分隔）
-    const codes = code.split(/[\s-]+/);
-    
-    // 将每个码点转换为emoji并组合
-    return codes
+// 使用 Map 缓存已转换的 emoji
+const emojiCache = new Map<string, string>();
+
+const convertCodeToEmoji = (code: string): string => {
+  // 检查缓存
+  if (emojiCache.has(code)) {
+    return emojiCache.get(code)!;
+  }
+
+  try {
+    const emoji = code
+      .split(/[\s-]+/)
       .map(c => String.fromCodePoint(parseInt(c, 16)))
       .join('');
-  };
+    
+    // 存入缓存
+    emojiCache.set(code, emoji);
+    return emoji;
+  } catch (error) {
+    console.error('Error converting code to emoji:', error);
+    throw error;
+  }
+};
 
-  // 优先使用 fullCode，其次是 code，最后是 baseCode
-  const displayCode = fullCode || code || baseCode;
+export const EmojiDisplay = memo(function EmojiDisplay({ 
+  code, 
+  fullCode, 
+  baseCode,
+  onError 
+}: EmojiDisplayProps) {
+  const emoji = useMemo(() => {
+    const displayCode = fullCode || code || baseCode;
+    
+    if (!displayCode) return null;
+
+    try {
+      return convertCodeToEmoji(displayCode);
+    } catch (error) {
+      onError?.(error as Error);
+      return null;
+    }
+  }, [fullCode, code, baseCode, onError]);
   
-  if (!displayCode) return null;
+  if (!emoji) return null;
 
   return (
     <span className="emoji">
-      {convertCodeToEmoji(displayCode)}
+      {emoji}
     </span>
   );
-}
+});
 
-// 使用示例：
-// <EmojiDisplay fullCode="26bd" />  // ⚽
-// <EmojiDisplay fullCode="1F468 200D 1F469 200D 1F467" />  // 👨‍👩‍👧 
+EmojiDisplay.displayName = 'EmojiDisplay';

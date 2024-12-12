@@ -3,32 +3,8 @@
 import { useState, useCallback, memo } from "react";
 import EmojiShadow from "./emoji-shadown";
 import { ClipboardCopy } from "lucide-react";
-import { Trans } from "@lingui/macro";
-
-// 提取 Toast 组件
-const Toast = memo(function Toast() {
-  return (
-    <div className="fixed top-6 left-1/2 z-50">
-      <div id="toast-success" className="hidden h-8">
-        <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-success/10 animate-toast-in">
-          <span className="text-success">✓</span>
-          <span className="text-sm text-success">
-            <Trans>复制成功</Trans>
-          </span>
-        </div>
-      </div>
-
-      <div id="toast-error" className="hidden h-8">
-        <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-error/10 animate-toast-in">
-          <span className="text-error">!</span>
-          <span className="text-sm text-error">
-            <Trans>复制失败</Trans>
-          </span>
-        </div>
-      </div>
-    </div>
-  );
-});
+import { Trans, t } from "@lingui/macro";
+import { useToast } from "@/components/ui/use-toast";
 
 // 提取 CopyButton 组件
 const CopyButton = memo(function CopyButton({ 
@@ -116,27 +92,23 @@ export default function EmojiCode({
   name: string;
 }) {
   const [copied, setCopied] = useState(false);
+  const { toast } = useToast()
 
   const handleCopy = useCallback(async () => {
     try {
       await navigator.clipboard.writeText(code);
-      const toastElement = document.getElementById('toast-success');
-      if (toastElement) {
-        (toastElement as HTMLDivElement).classList.remove('hidden');
-        setTimeout(() => {
-          (toastElement as HTMLDivElement).classList.add('hidden');
-        }, 2000);
-      }
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      setTimeout(() => setCopied(false), 1500);
+      toast({
+        description: t`已复制到剪贴板`,
+        duration: 1500,
+      })
     } catch (err) {
-      const toastElement = document.getElementById('toast-error');
-      if (toastElement) {
-        (toastElement as HTMLDivElement).classList.remove('hidden');
-        setTimeout(() => {
-          (toastElement as HTMLDivElement).classList.add('hidden');
-        }, 2000);
-      }
+      toast({
+        variant: "destructive",
+        description: t`复制失败，请重试`,
+        duration: 1500,
+      })
     }
   }, [code]);
 
@@ -174,8 +146,6 @@ export default function EmojiCode({
 
         <EmojiShadow />
       </div>
-
-      <Toast />
     </>
   );
 }

@@ -12,3 +12,12 @@ export interface EmojiItem {
   emotion: number;
   createdAt: string;
 }
+
+export interface EmojiType {
+  fullCode: string
+  code: string
+  name: string
+  hot: number
+  type: string
+  typeName: string
+}

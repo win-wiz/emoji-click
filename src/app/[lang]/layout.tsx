@@ -5,6 +5,7 @@ import { AVAILABLE_LOCALES, DEFAULT_LOCALE } from "@/locales/config";
 import { serverSideTranslations } from "@/locales/serverSideTranslations";
 import "@/styles/globals.css";
 import ScrollToTop from '@/components/scroll-to-top'
+import { Toaster } from '@/components/ui/toaster'
 
 export default async function RootLayout({
   children,
@@ -30,6 +31,7 @@ export default async function RootLayout({
             </div>
             <Footer />
             <ScrollToTop />
+            <Toaster />
           </main>
         </AppWithTranslation>
       </body>

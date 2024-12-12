@@ -11,8 +11,6 @@ export default function LanguageToggle(
 
   const [currentLang, locales] = useI18nLocale(lang);
   const pathname = usePathname();
-  // console.log('pathname=>>>', pathname)
-  // console.log('pathname.split=>>>', pathname.split('/'))
 
   return (
     <div className="group dropdown dropdown-end dropdown-hover">
