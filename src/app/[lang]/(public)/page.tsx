@@ -5,7 +5,7 @@ import { HotEmoji } from '@/components/hot-emoji';
 import CategoryEmoji from '@/components/category/category-emoji';
 import { activateLocale } from '@/locales/locale';
 import { AVAILABLE_LOCALES } from '@/locales/config';
-import { fetchEmojiByGroup, fetchHotEmoji } from '@/server/home';
+import { fetchEmojiByGroup, fetchHotEmoji, fetchRandomKeywords } from '@/server/home';
 
 export const runtime = 'edge';
 
@@ -27,10 +27,12 @@ export default async function HomePage({ params }: { params: { lang: AVAILABLE_L
   // 查找分类表情 
   const emojiByGroup = await fetchEmojiByGroup(params.lang);
 
+  // 随机查找10个关键词
+  const randomKeywords = await fetchRandomKeywords(params.lang);
 
   return (
     <div className="px-4">
-      <SearchEmoji />
+      <SearchEmoji randomKeywords={randomKeywords.data ?? []} />
       
       {/* 热门表情  */}
       <HotEmoji lang={params.lang} hotEmojis={hotEmoji.data ?? []} />

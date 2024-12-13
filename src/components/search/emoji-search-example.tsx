@@ -3,20 +3,15 @@ import { memo, useCallback, useMemo } from "react";
 
 interface ExampleSearchProps {
   setSearchText: (text: string) => void;
+  randomKeywords: string[];
 }
 
 // 使用 const 声明组件
-const EmojiSearchExample = memo(function EmojiSearchExample({ setSearchText }: ExampleSearchProps) {
+const EmojiSearchExample = memo(function EmojiSearchExample({ setSearchText, randomKeywords = [] }: ExampleSearchProps) {
   // 使用 useMemo 缓存示例搜索数组，避免每次渲染重新创建
   const exampleSearches = useMemo(() => [
-    t`今天心情特别好`,
-    t`想表达谢谢但点赞室`,
-    t`不想上班好累啊`,
-    t`老板等我了开开心`,
-    t`朋友生日想祝福`,
-    t`工作完成啦好棒`,
-    t`困得不行了`
-  ], []);
+    ...randomKeywords,
+  ], [randomKeywords]);
 
   // 使用 useCallback 缓存点击处理函数
   const handleClick = useCallback((example: string) => {

@@ -9,9 +9,11 @@ import EmojiFuncTag from './emoji-func-tag';
 import EmojiSearchExample from './emoji-search-example';
 
 export const SearchEmoji = ({
-  lang = DEFAULT_LOCALE
+  lang = DEFAULT_LOCALE,
+  randomKeywords
 }: {
-  lang?: AVAILABLE_LOCALES
+  lang?: AVAILABLE_LOCALES,
+  randomKeywords: string[]
 }) => {
 
   const [searchText, setSearchText] = useState('')
@@ -36,7 +38,7 @@ export const SearchEmoji = ({
         <SearchEmojiDropdown initText={searchText} lang={lang} />
 
         {/* 示例搜索 */}
-        <EmojiSearchExample setSearchText={setSearchText} />
+        <EmojiSearchExample setSearchText={setSearchText} randomKeywords={randomKeywords}/>
 
         {/* 功能标签 */}
         <EmojiFuncTag />

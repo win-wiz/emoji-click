@@ -33,9 +33,20 @@ export async function GET(request: Request) {
       })
       .from(emojiKeywords)
       .leftJoin(emoji, eq(emojiKeywords.baseCode, emoji.fullCode))
-      .leftJoin(emojiLanguage, and(eq(emoji.fullCode, emojiLanguage.fullCode), eq(emojiLanguage.language, lang)))
-      .leftJoin(emojiType, and(eq(emoji.type, emojiType.type), eq(emojiType.language, lang)))
-      .where(and(eq(emojiKeywords.language, lang), eq(emoji.diversity, 0),  or(like(emojiKeywords.content, q), like(emojiKeywords.tag, q))))
+      .leftJoin(emojiLanguage, and(
+        eq(emoji.fullCode, emojiLanguage.fullCode), 
+        eq(emojiLanguage.language, lang)
+      ))
+      .leftJoin(emojiType, and(
+        eq(emoji.type, emojiType.type), 
+        eq(emojiType.language, lang)
+      ))
+      .where(and(
+        eq(emojiKeywords.language, lang), 
+        eq(emoji.diversity, 0),  
+        like(emojiKeywords.content, `%${q}%`)
+      ))
+      .groupBy(emoji.fullCode, emoji.code, emojiLanguage.name, emoji.hot, emojiType.type, emojiType.name)
       .orderBy(desc(emoji.hot))
       .prepare();
     

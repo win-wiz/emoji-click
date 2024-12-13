@@ -1,5 +1,5 @@
 import { db } from "@/server/db";
-import { emoji, emojiLanguage, emojiType } from "@/server/db/schema";
+import { emoji, emojiKeywords, emojiLanguage, emojiType } from "@/server/db/schema";
 import { eq, sql, and } from "drizzle-orm";
 import { AVAILABLE_LOCALES } from "@/locales/config";
 
@@ -89,4 +89,28 @@ export async function fetchHotEmoji(lang: AVAILABLE_LOCALES) {
       error: "Failed to fetch hot emoji"
     };
   }
+}
+
+// 随机查找10个关键词
+export async function fetchRandomKeywords(lang: AVAILABLE_LOCALES) {
+  const keywords = db
+    .select({
+      content: emojiKeywords.content
+    })
+    .from(emojiKeywords)
+    .where(eq(emojiKeywords.language, lang))
+    .orderBy(sql`RANDOM()`)
+    .limit(10)
+    .prepare();
+
+  const result = await keywords.execute();
+
+  const resultData = result.map((item) => item.content);
+
+  console.log(resultData);
+
+  return {
+    success: true,
+    data: resultData
+  };
 }
