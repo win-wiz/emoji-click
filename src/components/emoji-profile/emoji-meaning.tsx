@@ -25,9 +25,9 @@ const Content = memo(function Content({
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-purple-500/20 rounded-br-xl blur group-hover:blur-md transition-all duration-500" />
         </div>
         
-        <p className="relative text-base md:text-xl leading-relaxed prose prose-zinc max-w-none prose-p:text-gray-600">
+        <h3 className="relative text-base md:text-xl leading-relaxed prose prose-zinc max-w-none prose-p:text-gray-600">
           {meaning}
-        </p>
+        </h3>
       </div>
     </div>
   )

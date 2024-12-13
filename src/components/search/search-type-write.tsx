@@ -6,7 +6,7 @@ import { t } from "@lingui/macro";
 const SearchTypeWrite = memo(function SearchTypeWrite() {
 
   return (
-    <h2 className="text-gray-600 mb-12 h-8 text-lg bg-gradient-to-r from-purple-600/80 to-purple-500/80 bg-clip-text text-transparent">
+    <div className="text-gray-600 mb-12 h-8 text-lg bg-gradient-to-r from-purple-600/80 to-purple-500/80 bg-clip-text text-transparent">
       <LandingTypeWrite 
         texts={[
           t`用最自然的方式描述，AI 懂你想表达的每一种情绪`,
@@ -17,7 +17,7 @@ const SearchTypeWrite = memo(function SearchTypeWrite() {
         deletingSpeed={40}
         pauseTime={3000}
       />
-    </h2>
+    </div>
   )
 });
 

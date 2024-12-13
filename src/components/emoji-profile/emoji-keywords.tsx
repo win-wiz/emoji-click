@@ -43,9 +43,9 @@ const KeywordTag = memo(function KeywordTag({
   colorIndex: keyof typeof COLOR_SCHEMES;
 }) {
   return (
-    <span className={`${TAG_BASE_CLASSES} ${COLOR_SCHEMES[colorIndex].tag}`}>
+    <h4 className={`${TAG_BASE_CLASSES} ${COLOR_SCHEMES[colorIndex].tag}`}>
       {content}
-    </span>
+    </h4>
   )
 })
 
@@ -79,9 +79,9 @@ const EmojiKeywords = memo(function EmojiKeywords({
                 >
                   {/* 标签标题 */}
                   <div className="mb-3">
-                    <span className={`text-sm font-medium ${COLOR_SCHEMES[index as keyof typeof COLOR_SCHEMES].title}`}>
+                    <h3 className={`text-sm font-medium ${COLOR_SCHEMES[index as keyof typeof COLOR_SCHEMES].title}`}>
                       {tagItem.tag}
-                    </span>
+                    </h3>
                   </div>
 
                   {/* 关键词列表 */}

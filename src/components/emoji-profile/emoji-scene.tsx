@@ -14,11 +14,13 @@ const EmojiScene = memo(function EmojiScene({
     <div className="bg-violet-50/30 rounded-xl p-6 text-left">
       <div className="flex items-center gap-2.5 mb-4">
         <span className="inline-flex text-xl leading-none">💬</span>
-        <span className="text-sm font-medium text-violet-600">社交场景</span>
+        <h3 className="text-sm font-medium text-violet-600">
+          <Trans>社交场景</Trans>
+        </h3>
       </div>
-      <div className="text-sm text-violet-900/70 leading-relaxed space-y-2">
+      <h4 className="text-sm text-violet-900/70 leading-relaxed space-y-2">
         {social}
-      </div>
+      </h4>
     </div>
   ), [social])
 
@@ -26,11 +28,13 @@ const EmojiScene = memo(function EmojiScene({
     <div className="bg-emerald-50/30 rounded-xl p-6 text-left">
       <div className="flex items-center gap-2.5 mb-4">
         <span className="inline-flex text-xl leading-none">💼</span>
-        <span className="text-sm font-medium text-emerald-600">工作场景</span>
+        <h3 className="text-sm font-medium text-emerald-600">
+          <Trans>工作场景</Trans>
+        </h3>
       </div>
-      <div className="text-sm text-emerald-900/70 leading-relaxed space-y-2">
+      <h4 className="text-sm text-emerald-900/70 leading-relaxed space-y-2">
         {work}
-      </div>
+      </h4>
     </div>
   ), [work])
 

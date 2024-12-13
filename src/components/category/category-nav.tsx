@@ -36,10 +36,10 @@ const CategoryButton = memo(function CategoryButton({
   onClick: () => void;
 }) {
   return (
-    <button
+    <div
       id={`category-${category.id}`}
       onClick={onClick}
-      className={`group w-[200px] relative flex flex-col items-center min-w-[150px] p-3 rounded-xl transition-all duration-300 ${
+      className={`group w-[200px] cursor-pointer relative flex flex-col items-center min-w-[150px] p-3 rounded-xl transition-all duration-300 ${
         isSelected
           ? 'bg-gray-100 shadow-sm scale-105 transform'
           : 'hover:bg-gray-50'
@@ -60,14 +60,14 @@ const CategoryButton = memo(function CategoryButton({
       }`}>
         {category.icon || '😊'}
       </span>
-      <span className={`text-xs font-medium whitespace-nowrap transition-colors max-w-[60px] overflow-hidden text-ellipsis ${
+      <h3 className={`text-xs font-medium whitespace-nowrap transition-colors max-w-[60px] overflow-hidden text-ellipsis ${
         isSelected
           ? 'text-gray-900'
           : 'text-gray-400 group-hover:text-gray-600'
       }`}>
         {category.name}
-      </span>
-    </button>
+      </h3>
+    </div>
   );
 });
 

@@ -1,6 +1,6 @@
 import { memo, useMemo } from "react"
 import EmojiSectionTitle from "./emoji-section-title"
-import { Trans } from "@lingui/macro"
+import { Trans, t } from "@lingui/macro"
 
 // 定义配置类型
 type CultureConfigType = {
@@ -16,7 +16,7 @@ type CultureConfigType = {
 const CULTURE_CONFIG: Record<'east' | 'west', CultureConfigType> = {
   east: {
     icon: '🏮',
-    title: '东方文化解读',
+    title: t`东方文化解读`,
     bgColor: 'bg-indigo-50/30',
     textColor: 'text-indigo-600',
     dotColor: 'text-indigo-400',
@@ -24,7 +24,7 @@ const CULTURE_CONFIG: Record<'east' | 'west', CultureConfigType> = {
   },
   west: {
     icon: '🏛️',
-    title: '西方文化解读',
+    title: t`西方文化解读`,
     bgColor: 'bg-amber-50/30',
     textColor: 'text-amber-600',
     dotColor: 'text-amber-400',
@@ -45,7 +45,7 @@ const CultureListItem = memo(function CultureListItem({
   return (
     <li className="flex items-start gap-2.5">
       <span className={`inline-flex ${dotColor} text-base leading-relaxed`}>•</span>
-      <span className={`flex-1 leading-relaxed ${contentColor}`}>{content}</span>
+      <h4 className={`flex-1 leading-relaxed ${contentColor}`}>{content}</h4>
     </li>
   )
 })
@@ -64,7 +64,7 @@ const CultureSection = memo(function CultureSection({
     <div className={`${config.bgColor} rounded-xl p-6 text-left`}>
       <div className="flex items-center gap-2.5 mb-4">
         <span className="inline-flex text-xl leading-none">{config.icon}</span>
-        <span className={`text-sm font-medium ${config.textColor}`}>{config.title}</span>
+        <h3 className={`text-sm font-medium ${config.textColor}`}>{config.title}</h3>
       </div>
       <ul className="space-y-2.5 text-sm">
         {contentList?.map((item, index) => (
@@ -91,11 +91,13 @@ const CrossCulturalAdvice = memo(function CrossCulturalAdvice({
       <span className="inline-flex text-xl leading-none mt-0.5">🌏</span>
       <div className="flex-1 text-left">
         <div className="mb-2">
-          <span className="text-sm font-medium text-blue-600">跨文化使用建议</span>
+          <h3 className="text-sm font-medium text-blue-600">
+            <Trans>跨文化使用建议</Trans>
+          </h3>
         </div>
-        <span className="text-sm text-blue-900/70 leading-relaxed">
+        <h4 className="text-sm text-blue-900/70 leading-relaxed">
           {advice}
-        </span>
+        </h4>
       </div>
     </div>
   )

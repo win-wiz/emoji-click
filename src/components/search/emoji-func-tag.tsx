@@ -6,7 +6,7 @@ const Kouyu = memo(function Kouyu() {
   return (
     <div className="flex items-center gap-1.5">
       <span className="text-lg">🌐</span>
-      <span>{t`支持各种口语表达`}</span>
+      <h3>{t`支持各种口语表达`}</h3>
     </div>
   );
 });
@@ -17,7 +17,7 @@ const Multilingual = memo(function Multilingual() {
   return (
     <div className="flex items-center gap-1.5">
       <span className="text-lg">🔤</span>
-      <span>{t`支持多语言搜索`}</span>
+      <h3>{t`支持多语言搜索`}</h3>
     </div>
   );
 }); 
@@ -28,7 +28,7 @@ const Emotional = memo(function Emotional() {
   return (
     <div className="flex items-center gap-1.5">
       <span className="text-lg">🧠</span>
-      <span>{t`理解情感语义`}</span>
+      <h3>{t`理解情感语义`}</h3>
     </div>
   );
 });
