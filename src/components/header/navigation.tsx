@@ -19,26 +19,6 @@ export default function Navigation(
             </span>
           </Link>
           
-          <div className="hidden md:flex items-center gap-8">
-            {/* <Link href="/features" className="group relative">
-              <span className="text-zinc-600 group-hover:text-violet-600 transition-all duration-300 flex items-center gap-1">
-                <span>⚡️</span> Features
-                <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-violet-500 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></span>
-              </span>
-            </Link>
-            <Link href="/pricing" className="group relative">
-              <span className="text-zinc-600 group-hover:text-violet-600 transition-all duration-300 flex items-center gap-1">
-                <span>💫</span> Pricing
-                <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-violet-500 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></span>
-              </span>
-            </Link>
-            <Link href="/about" className="group relative">
-              <span className="text-zinc-600 group-hover:text-violet-600 transition-all duration-300 flex items-center gap-1">
-                <span>🌟</span> About
-                <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-violet-500 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></span>
-              </span>
-            </Link> */}
-          </div>
 
           <div className="flex items-center gap-4">
             <LanguageToggle lang={lang} />

@@ -145,8 +145,8 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
       const encodedText = encodeURIComponent(text);
       const response: Record<string, any> = await fetch(`${lang}/api/search?q=${encodedText}`);
       const { results, status } = await response.json();
-      console.log('results', results);
-      console.log('status', status);
+      // console.log('results', results);
+      // console.log('status', status);
 
       if (status === 200) {
         setEmojis(results);
@@ -243,6 +243,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
 
   useEffect(() => {
     if (initText) {
+      setIsLoading(true);
       setSearchText(initText);
       handleSearch(initText);
     }
@@ -311,9 +312,9 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
             </div>
           ) : (
             <div className="p-2 space-y-0.5">
-              {emojis.map((emoji) => (
+              {emojis.map((emoji, index) => (
                 <EmojiItem
-                  key={emoji.fullCode}
+                  key={emoji.fullCode || `emoji_ai_${index}`}
                   emoji={emoji}
                   onCopy={copyToClipboard}
                   lang={lang}

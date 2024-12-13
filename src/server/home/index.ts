@@ -101,13 +101,14 @@ export async function fetchHotEmoji(initLang: AVAILABLE_LOCALES) {
 export async function fetchRandomKeywords(initLang: AVAILABLE_LOCALES) {
 
   const lang = supportLang.includes(initLang) ? initLang : 'en';
-  
+
   const keywords = db
     .select({
       content: emojiKeywords.content
     })
     .from(emojiKeywords)
-    .where(eq(emojiKeywords.language, lang))
+    .leftJoin(emoji, eq(emojiKeywords.baseCode, emoji.fullCode))
+    .where(and(eq(emojiKeywords.language, lang), eq(emoji.emotion, 1)))
     .orderBy(sql`RANDOM()`)
     .limit(10)
     .prepare();
