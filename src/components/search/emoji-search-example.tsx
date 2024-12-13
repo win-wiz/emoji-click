@@ -3,7 +3,7 @@ import { memo, useCallback, useMemo } from "react";
 
 interface ExampleSearchProps {
   setSearchText: (text: string) => void;
-  randomKeywords: string[];
+  randomKeywords: Record<string, any>[];
 }
 
 // 使用 const 声明组件
@@ -27,11 +27,11 @@ const EmojiSearchExample = memo(function EmojiSearchExample({ setSearchText, ran
         {/* 使用示例文本作为 key 以确保唯一性 */}
         {exampleSearches.map((example) => (
           <button
-            key={example}
-            onClick={() => handleClick(example)}
+            key={example.content}
+            onClick={() => handleClick(example.content)}
             className="bg-white/80 backdrop-blur-sm px-4 py-1.5 rounded-full hover:bg-purple-50 border border-purple-100/50 transition-colors"
           >
-            {`"${example}"`}
+            {`"${example.content}"`}
           </button>
         ))}
       </div>

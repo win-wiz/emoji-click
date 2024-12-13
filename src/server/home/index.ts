@@ -105,12 +105,12 @@ export async function fetchRandomKeywords(lang: AVAILABLE_LOCALES) {
 
   const result = await keywords.execute();
 
-  const resultData = result.map((item) => item.content);
+  // const resultData = result.map((item) => item.content) || [];
 
-  console.log(resultData);
+  // console.log(resultData);
 
   return {
     success: true,
-    data: resultData
+    data: result
   };
 }

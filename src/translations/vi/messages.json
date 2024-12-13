@@ -1,12 +1,34 @@
 {
+  "J/hVSQ": {
+    "translation": "{0}",
+    "message": "{0}",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-nav.tsx",
+        68
+      ]
+    ]
+  },
+  "16BztB": {
+    "translation": "{text}",
+    "message": "{text}",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/emoji-func-tag.tsx",
+        35
+      ]
+    ]
+  },
   "TsoDGX": {
     "translation": "tự động dịch sang nhiều thứ tiếng với Lingui chỉ trong vòng 5 phút",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/page.tsx",
-        16
+        "src/app/[lang]/(public)/page.tsx",
+        17
       ]
     ]
   },
@@ -16,8 +38,8 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/page.tsx",
-        17
+        "src/app/[lang]/(public)/page.tsx",
+        18
       ]
     ]
   },
@@ -30,7 +52,8 @@
         "src/components/category/category-emoji.tsx",
         270
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "/KqhBG": {
     "translation": "Không muốn đi làm, thật mệt mỏi quá",
@@ -41,7 +64,8 @@
         "src/components/search-emoji.tsx",
         14
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "uW7qaK": {
     "translation": "Một biểu tượng cảm xúc",
@@ -50,11 +74,11 @@
     "origin": [
       [
         "src/components/category/category-modal.tsx",
-        57
+        56
       ],
       [
         "src/components/category/category-modal.tsx",
-        103
+        102
       ]
     ]
   },
@@ -67,7 +91,8 @@
         "src/components/category/category-emoji.tsx",
         34
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "81qJXG": {
     "translation": "Hôm nay tâm trạng đặc biệt tốt",
@@ -78,6 +103,18 @@
         "src/components/search-emoji.tsx",
         12
       ]
+    ],
+    "obsolete": true
+  },
+  "aB+fc8": {
+    "translation": "Các trường hợp sử dụng",
+    "message": "使用场景",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-scene.tsx",
+        40
+      ]
     ]
   },
   "zYyCyW": {
@@ -87,7 +124,7 @@
     "origin": [
       [
         "src/components/category/category-modal.tsx",
-        39
+        38
       ]
     ]
   },
@@ -98,7 +135,29 @@
     "origin": [
       [
         "src/components/category/category-modal.tsx",
-        53
+        52
+      ]
+    ]
+  },
+  "jmos6W": {
+    "translation": "Các từ khóa",
+    "message": "关键词",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-keywords.tsx",
+        68
+      ]
+    ]
+  },
+  "+d8Frh": {
+    "translation": "Đang tải...",
+    "message": "加载中...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-emoji.tsx",
+        177
       ]
     ]
   },
@@ -111,7 +170,8 @@
         "src/components/category/category-emoji.tsx",
         271
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "5lS2OX": {
     "translation": "Đầu bếp",
@@ -122,7 +182,8 @@
         "src/components/category/category-emoji.tsx",
         273
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "CKHAZ/": {
     "translation": "Thích",
@@ -133,7 +194,8 @@
         "src/components/category/category-emoji.tsx",
         30
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "/pWV7M": {
     "translation": "Mệt muốn chết rồi",
@@ -143,6 +205,66 @@
       [
         "src/components/search-emoji.tsx",
         18
+      ]
+    ],
+    "obsolete": true
+  },
+  "Q54ALc": {
+    "translation": "Ý nghĩa cơ bản",
+    "message": "基本含义",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-meaning.tsx",
+        54
+      ]
+    ]
+  },
+  "94fTVg": {
+    "translation": "Sao chép",
+    "message": "复制",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        73
+      ]
+    ]
+  },
+  "4Yl9f0": {
+    "translation": "Sao chép thất bại, hãy thử lại",
+    "message": "复制失败，请重试",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        109
+      ],
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        197
+      ]
+    ]
+  },
+  "9ufcus": {
+    "translation": "Sao chép thành công",
+    "message": "复制成功",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        41
+      ]
+    ]
+  },
+  "HYMMQU": {
+    "translation": "Sao chép biểu cảm",
+    "message": "复制表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        46
       ]
     ]
   },
@@ -155,7 +277,8 @@
         "src/components/category/category-emoji.tsx",
         18
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "VpgGxv": {
     "translation": "Cười khó xử",
@@ -166,7 +289,8 @@
         "src/components/category/category-emoji.tsx",
         21
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "fNpbkb": {
     "translation": "Hoàn thành công việc rồi, tuyệt vời quá",
@@ -177,7 +301,8 @@
         "src/components/search-emoji.tsx",
         17
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "QM99lf": {
     "translation": "Đã sao chép",
@@ -185,12 +310,23 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search/search-dialog.tsx",
-        258
+        "src/components/single-emoji.tsx",
+        32
+      ]
+    ]
+  },
+  "uTD4IG": {
+    "translation": "Đã sao chép vào bộ nhớ đệm",
+    "message": "已复制到剪贴板",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        103
       ],
       [
-        "src/components/single-emoji.tsx",
-        87
+        "src/components/search/search-emoji-dropdown.tsx",
+        191
       ]
     ]
   },
@@ -203,7 +339,8 @@
         "src/components/search/search-dialog.tsx",
         187
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "8Ml78r": {
     "translation": "Cười vui vẻ",
@@ -214,7 +351,8 @@
         "src/components/category/category-emoji.tsx",
         17
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "HbDzdg": {
     "translation": "Tình cảm",
@@ -225,7 +363,8 @@
         "src/components/category/category-emoji.tsx",
         28
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "Yhxdgn": {
     "translation": "Muốn cảm ơn nhưng muốn nhấn thích hơn là nhấn thích",
@@ -236,7 +375,8 @@
         "src/components/search-emoji.tsx",
         13
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "CQziCa": {
     "translation": "Nhấn phím ESC để đóng",
@@ -247,7 +387,8 @@
         "src/components/search/search-dialog.tsx",
         192
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "T4X3VY": {
     "translation": "Các biểu tượng cảm xúc được đề xuất",
@@ -258,6 +399,18 @@
         "src/components/search/search-dialog.tsx",
         296
       ]
+    ],
+    "obsolete": true
+  },
+  "z3xT8q": {
+    "translation": "Miêu tả tâm trạng của bạn, để AI giúp bạn tìm biểu cảm phù hợp",
+    "message": "描述你的心情，让 AI 帮你找到合适的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-type-write.tsx",
+        13
+      ]
     ]
   },
   "r6acDk": {
@@ -266,8 +419,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        52
+        "src/components/search/search-emoji-dropdown.tsx",
+        276
       ]
     ]
   },
@@ -277,8 +430,19 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search/search-dialog.tsx",
-        181
+        "src/components/search/search-emoji-dropdown.tsx",
+        276
+      ]
+    ]
+  },
+  "dnLXYZ": {
+    "translation": "Có lỗi xảy ra với tìm kiếm, vui lòng thử lại sau",
+    "message": "搜索出错，请稍后重试",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        155
       ]
     ]
   },
@@ -291,7 +455,8 @@
         "src/components/search/search-dialog.tsx",
         277
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "GMmB+X": {
     "translation": "Kết quả tìm kiếm ({0})",
@@ -302,7 +467,8 @@
         "src/components/search/search-dialog.tsx",
         183
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "ZB1owk": {
     "translation": "Hỗ trợ mọi cách diễn đạt thông thường",
@@ -313,7 +479,8 @@
         "src/components/search-emoji.tsx",
         78
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "lm7p2W": {
     "translation": "Hỗ trợ tìm kiếm đa ngôn ngữ",
@@ -323,6 +490,18 @@
       [
         "src/components/search-emoji.tsx",
         82
+      ]
+    ],
+    "obsolete": true
+  },
+  "5JC7T/": {
+    "translation": "Giải thích về sự khác biệt văn hóa",
+    "message": "文化差异解读",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-cultura.tsx",
+        116
       ]
     ]
   },
@@ -335,7 +514,8 @@
         "src/components/category/category-emoji.tsx",
         32
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "oTQPJM": {
     "translation": "Bạn muốn gửi lời chúc sinh nhật tới bạn bè",
@@ -346,7 +526,8 @@
         "src/components/search-emoji.tsx",
         16
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "WAgs9Z": {
     "translation": "Không tìm thấy biểu tượng cảm xúc liên quan",
@@ -357,6 +538,29 @@
         "src/components/search/search-dialog.tsx",
         185
       ]
+    ],
+    "obsolete": true
+  },
+  "yl0Syq": {
+    "translation": "Xem chi tiết",
+    "message": "查看详情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        85
+      ]
+    ]
+  },
+  "AW9NLp": {
+    "translation": "Không tìm thấy biểu cảm liên quan",
+    "message": "没有找到相关表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        291
+      ]
     ]
   },
   "DDScQ8": {
@@ -366,7 +570,18 @@
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        101
+        41
+      ]
+    ]
+  },
+  "zaqc+T": {
+    "translation": "Nổi tiếng",
+    "message": "热门",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        58
       ]
     ]
   },
@@ -377,7 +592,7 @@
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        85
+        25
       ]
     ]
   },
@@ -390,7 +605,8 @@
         "src/components/category/category-emoji.tsx",
         31
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "SMZ7ey": {
     "translation": "Hiểu ngữ cảnh tình cảm",
@@ -401,7 +617,8 @@
         "src/components/search-emoji.tsx",
         86
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "+x4GVv": {
     "translation": "Sử dụng AI để tìm biểu tượng cảm xúc phù hợp nhất",
@@ -409,7 +626,7 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
+        "src/components/search/search-emoji.tsx",
         32
       ]
     ]
@@ -420,8 +637,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        35
+        "src/components/search/search-type-write.tsx",
+        12
       ]
     ]
   },
@@ -431,8 +648,19 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        45
+        "src/components/search/search-emoji-dropdown.tsx",
+        254
+      ]
+    ]
+  },
+  "OS9sY4": {
+    "translation": "Các đề xuất liên quan",
+    "message": "相关推荐",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-recommand.tsx",
+        17
       ]
     ]
   },
@@ -443,7 +671,7 @@
     "origin": [
       [
         "src/components/category/category-modal.tsx",
-        55
+        54
       ]
     ]
   },
@@ -456,7 +684,8 @@
         "src/components/category/category-emoji.tsx",
         22
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "2CQmUD": {
     "translation": "Nhìn bằng mắt vui vẻ",
@@ -466,6 +695,18 @@
       [
         "src/components/category/category-emoji.tsx",
         19
+      ]
+    ],
+    "obsolete": true
+  },
+  "C1syp2": {
+    "translation": "Nhập văn bản đơn giản, nhanh chóng tìm biểu cảm bạn muốn",
+    "message": "简单输入文字，快速找到想要的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-type-write.tsx",
+        14
       ]
     ]
   },
@@ -478,7 +719,8 @@
         "src/components/category/category-emoji.tsx",
         272
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "d0FwMq": {
     "translation": "Sếp đang đợi tôi rồi, thật vui",
@@ -489,7 +731,8 @@
         "src/components/search-emoji.tsx",
         15
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "BR+jxt": {
     "translation": "nghề nghiệp",
@@ -500,7 +743,8 @@
         "src/components/category/category-emoji.tsx",
         268
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "gjhVY9": {
     "translation": "nghệ sĩ",
@@ -511,7 +755,8 @@
         "src/components/category/category-emoji.tsx",
         274
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "tuZXxr": {
     "translation": "định danh biểu tượng cảm xúc",
@@ -520,7 +765,7 @@
     "origin": [
       [
         "src/components/category/category-emoji.tsx",
-        307
+        220
       ]
     ]
   },
@@ -533,7 +778,8 @@
         "src/components/category/category-emoji.tsx",
         15
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "EojHaD": {
     "translation": "Thử tìm kiếm như thế này:",
@@ -541,8 +787,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        59
+        "src/components/search/emoji-search-example.tsx",
+        24
       ]
     ]
   },
@@ -555,7 +801,8 @@
         "src/components/category/category-emoji.tsx",
         20
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "IOyS5i": {
     "translation": "đưa môi lại gần",
@@ -566,6 +813,7 @@
         "src/components/category/category-emoji.tsx",
         33
       ]
-    ]
+    ],
+    "obsolete": true
   }
 }

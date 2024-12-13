@@ -10,10 +10,10 @@ import EmojiSearchExample from './emoji-search-example';
 
 export const SearchEmoji = ({
   lang = DEFAULT_LOCALE,
-  randomKeywords
+  randomKeywords = []
 }: {
   lang?: AVAILABLE_LOCALES,
-  randomKeywords: string[]
+  randomKeywords: Record<string, any>[]
 }) => {
 
   const [searchText, setSearchText] = useState('')

@@ -1,12 +1,34 @@
 {
+  "J/hVSQ": {
+    "translation": "{0}",
+    "message": "{0}",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-nav.tsx",
+        68
+      ]
+    ]
+  },
+  "16BztB": {
+    "translation": "{text}",
+    "message": "{text}",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/emoji-func-tag.tsx",
+        35
+      ]
+    ]
+  },
   "TsoDGX": {
     "translation": "auto-i18n-next-lingui-tiny-demo, agrega un nuevo idioma a tu sitio web en 5 minutos",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/page.tsx",
-        16
+        "src/app/[lang]/(public)/page.tsx",
+        17
       ]
     ]
   },
@@ -16,8 +38,8 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/page.tsx",
-        17
+        "src/app/[lang]/(public)/page.tsx",
+        18
       ]
     ]
   },
@@ -30,7 +52,8 @@
         "src/components/category/category-emoji.tsx",
         270
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "/KqhBG": {
     "translation": "No quiero trabajar, estoy tan cansada",
@@ -41,7 +64,8 @@
         "src/components/search-emoji.tsx",
         14
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "uW7qaK": {
     "translation": "un emoji",
@@ -50,11 +74,11 @@
     "origin": [
       [
         "src/components/category/category-modal.tsx",
-        57
+        56
       ],
       [
         "src/components/category/category-modal.tsx",
-        103
+        102
       ]
     ]
   },
@@ -67,7 +91,8 @@
         "src/components/category/category-emoji.tsx",
         34
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "81qJXG": {
     "translation": "estoy de buen humor hoy",
@@ -78,6 +103,18 @@
         "src/components/search-emoji.tsx",
         12
       ]
+    ],
+    "obsolete": true
+  },
+  "aB+fc8": {
+    "translation": "Escenarios de uso",
+    "message": "使用场景",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-scene.tsx",
+        40
+      ]
     ]
   },
   "zYyCyW": {
@@ -87,7 +124,7 @@
     "origin": [
       [
         "src/components/category/category-modal.tsx",
-        39
+        38
       ]
     ]
   },
@@ -98,7 +135,29 @@
     "origin": [
       [
         "src/components/category/category-modal.tsx",
-        53
+        52
+      ]
+    ]
+  },
+  "jmos6W": {
+    "translation": "Palabras clave",
+    "message": "关键词",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-keywords.tsx",
+        68
+      ]
+    ]
+  },
+  "+d8Frh": {
+    "translation": "Cargando...",
+    "message": "加载中...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-emoji.tsx",
+        177
       ]
     ]
   },
@@ -111,7 +170,8 @@
         "src/components/category/category-emoji.tsx",
         271
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "5lS2OX": {
     "translation": "cocinero",
@@ -122,7 +182,8 @@
         "src/components/category/category-emoji.tsx",
         273
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "CKHAZ/": {
     "translation": "me gusta",
@@ -133,7 +194,8 @@
         "src/components/category/category-emoji.tsx",
         30
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "/pWV7M": {
     "translation": "tan cansado que no puedo más",
@@ -143,6 +205,66 @@
       [
         "src/components/search-emoji.tsx",
         18
+      ]
+    ],
+    "obsolete": true
+  },
+  "Q54ALc": {
+    "translation": "Significado básico",
+    "message": "基本含义",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-meaning.tsx",
+        54
+      ]
+    ]
+  },
+  "94fTVg": {
+    "translation": "Copiar",
+    "message": "复制",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        73
+      ]
+    ]
+  },
+  "4Yl9f0": {
+    "translation": "La copia ha fallado, inténtelo de nuevo",
+    "message": "复制失败，请重试",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        109
+      ],
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        197
+      ]
+    ]
+  },
+  "9ufcus": {
+    "translation": "Copiado correctamente",
+    "message": "复制成功",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        41
+      ]
+    ]
+  },
+  "HYMMQU": {
+    "translation": "Copiar expresiones emocionales",
+    "message": "复制表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        46
       ]
     ]
   },
@@ -155,7 +277,8 @@
         "src/components/category/category-emoji.tsx",
         18
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "VpgGxv": {
     "translation": "sonrojarse",
@@ -166,7 +289,8 @@
         "src/components/category/category-emoji.tsx",
         21
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "fNpbkb": {
     "translation": "¡el trabajo está terminado, qué genial!",
@@ -177,7 +301,8 @@
         "src/components/search-emoji.tsx",
         17
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "QM99lf": {
     "translation": "se ha copiado",
@@ -185,12 +310,23 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search/search-dialog.tsx",
-        258
+        "src/components/single-emoji.tsx",
+        32
+      ]
+    ]
+  },
+  "uTD4IG": {
+    "translation": "Se ha copiado en el portapapeles",
+    "message": "已复制到剪贴板",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        103
       ],
       [
-        "src/components/single-emoji.tsx",
-        87
+        "src/components/search/search-emoji-dropdown.tsx",
+        191
       ]
     ]
   },
@@ -203,7 +339,8 @@
         "src/components/search/search-dialog.tsx",
         187
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "8Ml78r": {
     "translation": "reír feliz",
@@ -214,7 +351,8 @@
         "src/components/category/category-emoji.tsx",
         17
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "HbDzdg": {
     "translation": "emociones",
@@ -225,7 +363,8 @@
         "src/components/category/category-emoji.tsx",
         28
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "Yhxdgn": {
     "translation": "quiero expresar mi agradecimiento pero el cuarto de los votos",
@@ -236,7 +375,8 @@
         "src/components/search-emoji.tsx",
         13
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "CQziCa": {
     "translation": "Cerrar con ESC",
@@ -247,7 +387,8 @@
         "src/components/search/search-dialog.tsx",
         192
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "T4X3VY": {
     "translation": "Emoticonos recomendados",
@@ -258,6 +399,18 @@
         "src/components/search/search-dialog.tsx",
         296
       ]
+    ],
+    "obsolete": true
+  },
+  "z3xT8q": {
+    "translation": "Describe cómo te sientes y deja que AI te ayude a encontrar la expresión emocional adecuada",
+    "message": "描述你的心情，让 AI 帮你找到合适的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-type-write.tsx",
+        13
+      ]
     ]
   },
   "r6acDk": {
@@ -266,8 +419,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        52
+        "src/components/search/search-emoji-dropdown.tsx",
+        276
       ]
     ]
   },
@@ -277,8 +430,19 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search/search-dialog.tsx",
-        181
+        "src/components/search/search-emoji-dropdown.tsx",
+        276
+      ]
+    ]
+  },
+  "dnLXYZ": {
+    "translation": "Error en la búsqueda, inténtelo de nuevo más tarde",
+    "message": "搜索出错，请稍后重试",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        155
       ]
     ]
   },
@@ -291,7 +455,8 @@
         "src/components/search/search-dialog.tsx",
         277
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "GMmB+X": {
     "translation": "Resultados de búsqueda ({0})",
@@ -302,7 +467,8 @@
         "src/components/search/search-dialog.tsx",
         183
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "ZB1owk": {
     "translation": "soporta todo tipo de expresiones orales",
@@ -313,7 +479,8 @@
         "src/components/search-emoji.tsx",
         78
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "lm7p2W": {
     "translation": "soporta búsqueda en múltiples idiomas",
@@ -323,6 +490,18 @@
       [
         "src/components/search-emoji.tsx",
         82
+      ]
+    ],
+    "obsolete": true
+  },
+  "5JC7T/": {
+    "translation": "Interpretación de la diferencia cultural",
+    "message": "文化差异解读",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-cultura.tsx",
+        116
       ]
     ]
   },
@@ -335,7 +514,8 @@
         "src/components/category/category-emoji.tsx",
         32
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "oTQPJM": {
     "translation": "feliz cumpleaños a un amigo",
@@ -346,7 +526,8 @@
         "src/components/search-emoji.tsx",
         16
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "WAgs9Z": {
     "translation": "No se encontraron emoticonos relacionados",
@@ -357,6 +538,29 @@
         "src/components/search/search-dialog.tsx",
         185
       ]
+    ],
+    "obsolete": true
+  },
+  "yl0Syq": {
+    "translation": "Ver detalles",
+    "message": "查看详情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        85
+      ]
+    ]
+  },
+  "AW9NLp": {
+    "translation": "No se encontraron expresiones relacionadas",
+    "message": "没有找到相关表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        291
+      ]
     ]
   },
   "DDScQ8": {
@@ -366,7 +570,18 @@
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        101
+        41
+      ]
+    ]
+  },
+  "zaqc+T": {
+    "translation": "Más populares",
+    "message": "热门",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        58
       ]
     ]
   },
@@ -377,7 +592,7 @@
     "origin": [
       [
         "src/components/hot-emoji.tsx",
-        85
+        25
       ]
     ]
   },
@@ -390,7 +605,8 @@
         "src/components/category/category-emoji.tsx",
         31
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "SMZ7ey": {
     "translation": "entender el contexto emocional",
@@ -401,7 +617,8 @@
         "src/components/search-emoji.tsx",
         86
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "+x4GVv": {
     "translation": "utiliza el AI para encontrar el emoji más adecuado",
@@ -409,7 +626,7 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
+        "src/components/search/search-emoji.tsx",
         32
       ]
     ]
@@ -420,8 +637,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        35
+        "src/components/search/search-type-write.tsx",
+        12
       ]
     ]
   },
@@ -431,8 +648,19 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        45
+        "src/components/search/search-emoji-dropdown.tsx",
+        254
+      ]
+    ]
+  },
+  "OS9sY4": {
+    "translation": "Sugerencias relacionadas",
+    "message": "相关推荐",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-recommand.tsx",
+        17
       ]
     ]
   },
@@ -443,7 +671,7 @@
     "origin": [
       [
         "src/components/category/category-modal.tsx",
-        55
+        54
       ]
     ]
   },
@@ -456,7 +684,8 @@
         "src/components/category/category-emoji.tsx",
         22
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "2CQmUD": {
     "translation": "ojos sonrientes",
@@ -466,6 +695,18 @@
       [
         "src/components/category/category-emoji.tsx",
         19
+      ]
+    ],
+    "obsolete": true
+  },
+  "C1syp2": {
+    "translation": "Escriba texto sencillo y encuentre rápidamente el emoji que desea",
+    "message": "简单输入文字，快速找到想要的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-type-write.tsx",
+        14
       ]
     ]
   },
@@ -478,7 +719,8 @@
         "src/components/category/category-emoji.tsx",
         272
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "d0FwMq": {
     "translation": "mi jefe me espera, feliz",
@@ -489,7 +731,8 @@
         "src/components/search-emoji.tsx",
         15
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "BR+jxt": {
     "translation": "profesión",
@@ -500,7 +743,8 @@
         "src/components/category/category-emoji.tsx",
         268
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "gjhVY9": {
     "translation": "artista",
@@ -511,7 +755,8 @@
         "src/components/category/category-emoji.tsx",
         274
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "tuZXxr": {
     "translation": "categorización de emojis",
@@ -520,7 +765,7 @@
     "origin": [
       [
         "src/components/category/category-emoji.tsx",
-        307
+        220
       ]
     ]
   },
@@ -533,7 +778,8 @@
         "src/components/category/category-emoji.tsx",
         15
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "EojHaD": {
     "translation": "prueba a buscar así:",
@@ -541,8 +787,8 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        59
+        "src/components/search/emoji-search-example.tsx",
+        24
       ]
     ]
   },
@@ -555,7 +801,8 @@
         "src/components/category/category-emoji.tsx",
         20
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "IOyS5i": {
     "translation": "un beso",
@@ -566,6 +813,7 @@
         "src/components/category/category-emoji.tsx",
         33
       ]
-    ]
+    ],
+    "obsolete": true
   }
 }
