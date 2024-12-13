@@ -1,8 +1,10 @@
 import { db } from "@/server/db";
 import { emoji, emojiKeywords, emojiLanguage, emojiType } from "@/server/db/schema";
 import { NextResponse } from "next/server";
-import { like, or, and, eq, desc } from "drizzle-orm";
+import { like, or, and, eq, desc, sql } from "drizzle-orm";
 import { DEFAULT_LOCALE } from "@/locales/config";
+import { emojiAiSearch } from "@/aiModal/emoji-ai-search";
+import { supportLang } from "@/utils";
 
 export const runtime = 'edge';
 
@@ -18,9 +20,12 @@ function validateSearchQuery(q: string): boolean {
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
-    const lang = searchParams.get('lang') || DEFAULT_LOCALE;
+    let lang = searchParams.get('lang') || DEFAULT_LOCALE;
+
+    lang = supportLang.includes(lang) ? lang : 'en';
 
     const q = searchParams.get('q') ? decodeURIComponent(searchParams.get('q')!).trim() : '';
+    
 
     const searchPrepare = db
       .select({
@@ -44,7 +49,11 @@ export async function GET(request: Request) {
       .where(and(
         eq(emojiKeywords.language, lang), 
         eq(emoji.diversity, 0),  
-        like(emojiKeywords.content, `%${q}%`)
+        // like(emojiKeywords.content, `%${q}%`)
+        or(
+            like(sql`LOWER(${emojiKeywords.content})`, `%${q.toLowerCase()}%`),
+            like(sql`LOWER(${emojiLanguage.name})`, `%${q.toLowerCase()}%`)
+          )
       ))
       .groupBy(emoji.fullCode, emoji.code, emojiLanguage.name, emoji.hot, emojiType.type, emojiType.name)
       .orderBy(desc(emoji.hot))
@@ -63,11 +72,18 @@ export async function GET(request: Request) {
 
     const searchResults = await searchPrepare.execute();  
 
-    // console.log('搜索关键词:', q);
-    // console.log('搜索结果:', searchResults);
+    const aiEmojiList: Record<string, any>[] = [];
+    
+    if (searchResults.length === 0) {
+      // TODO 调用豆包api，根据语义查找相关的表情
+      const response: Record<string, any>[] = await emojiAiSearch(q, lang);
+      aiEmojiList.push(...response);
+    }
+
+    const reulst: Record<string, any>[] = [...searchResults, ...aiEmojiList];
     
     return NextResponse.json({
-      results: searchResults,
+      results: reulst,
       status: 200,
     });
   } catch (error) {

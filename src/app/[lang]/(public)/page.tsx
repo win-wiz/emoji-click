@@ -32,7 +32,7 @@ export default async function HomePage({ params }: { params: { lang: AVAILABLE_L
 
   return (
     <div className="px-4">
-      <SearchEmoji randomKeywords={randomKeywords.data ?? []} />
+      <SearchEmoji randomKeywords={randomKeywords.data ?? []} lang={params.lang}/>
       
       {/* 热门表情  */}
       <HotEmoji lang={params.lang} hotEmojis={hotEmoji.data ?? []} />

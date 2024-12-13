@@ -65,7 +65,7 @@ const CategoryButton = memo(function CategoryButton({
           ? 'text-gray-900'
           : 'text-gray-400 group-hover:text-gray-600'
       }`}>
-        <Trans>{category.name}</Trans>
+        {category.name}
       </span>
     </button>
   );

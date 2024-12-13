@@ -1,28 +1,6 @@
 {
-  "J/hVSQ": {
-    "translation": "{0}",
-    "message": "{0}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-nav.tsx",
-        68
-      ]
-    ]
-  },
-  "16BztB": {
-    "translation": "{text}",
-    "message": "{text}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/emoji-func-tag.tsx",
-        35
-      ]
-    ]
-  },
   "TsoDGX": {
-    "translation": "auto-i18n-next-lingui-tiny-demo, få ett nytt språk på din webbplats i fem minuter",
+    "translation": "auto-i18n-next-lingui-tiny-demo, sätt till ett nytt språk på din webbplats i 5 minuter",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "comments": [],
     "origin": [
@@ -33,7 +11,7 @@
     ]
   },
   "aDJB+h": {
-    "translation": "Använd Lingui för att få ett nytt språk på din webbplats i fem minuter med AI",
+    "translation": "Använd Lingui för att sätta till ett nytt språk på din webbplats i 5 minuter med AI",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
     "comments": [],
     "origin": [
@@ -43,32 +21,8 @@
       ]
     ]
   },
-  "Z4NkC3": {
-    "translation": "jobbade människor",
-    "message": "上班族",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        270
-      ]
-    ],
-    "obsolete": true
-  },
-  "/KqhBG": {
-    "translation": "inte vill gå på jobb, jag är riktigt trött",
-    "message": "不想上班好累啊",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        14
-      ]
-    ],
-    "obsolete": true
-  },
   "uW7qaK": {
-    "translation": "ett nytt sätt att använda bilder",
+    "translation": "ett uttryck",
     "message": "个表情",
     "comments": [],
     "origin": [
@@ -82,32 +36,8 @@
       ]
     ]
   },
-  "qNbLwo": {
-    "translation": "kyss",
-    "message": "亲亲",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        34
-      ]
-    ],
-    "obsolete": true
-  },
-  "81qJXG": {
-    "translation": "är väldigt nöjd idag",
-    "message": "今天心情特别好",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        12
-      ]
-    ],
-    "obsolete": true
-  },
   "aB+fc8": {
-    "translation": "Användningsområden",
+    "translation": "användningsområden",
     "message": "使用场景",
     "comments": [],
     "origin": [
@@ -140,7 +70,7 @@
     ]
   },
   "jmos6W": {
-    "translation": "Nyckelord",
+    "translation": "nyckelord",
     "message": "关键词",
     "comments": [],
     "origin": [
@@ -151,7 +81,7 @@
     ]
   },
   "+d8Frh": {
-    "translation": "Väntar...",
+    "translation": "laddar...",
     "message": "加载中...",
     "comments": [],
     "origin": [
@@ -161,56 +91,8 @@
       ]
     ]
   },
-  "eDowDR": {
-    "translation": "läkare",
-    "message": "医生",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        271
-      ]
-    ],
-    "obsolete": true
-  },
-  "5lS2OX": {
-    "translation": "kok",
-    "message": "厨师",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        273
-      ]
-    ],
-    "obsolete": true
-  },
-  "CKHAZ/": {
-    "translation": "älskar",
-    "message": "喜欢",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        30
-      ]
-    ],
-    "obsolete": true
-  },
-  "/pWV7M": {
-    "translation": "är väldigt trött",
-    "message": "困得不行了",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        18
-      ]
-    ],
-    "obsolete": true
-  },
   "Q54ALc": {
-    "translation": "Basis innebörd",
+    "translation": "grundläggande innebörd",
     "message": "基本含义",
     "comments": [],
     "origin": [
@@ -221,13 +103,13 @@
     ]
   },
   "94fTVg": {
-    "translation": "Kopiera",
+    "translation": "kopiera",
     "message": "复制",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        73
+        72
       ]
     ]
   },
@@ -242,7 +124,7 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        197
+        204
       ]
     ]
   },
@@ -258,7 +140,7 @@
     ]
   },
   "HYMMQU": {
-    "translation": "Kopiera ansikte",
+    "translation": "kopiera bilder",
     "message": "复制表情",
     "comments": [],
     "origin": [
@@ -268,44 +150,8 @@
       ]
     ]
   },
-  "5F7lbF": {
-    "translation": "skrattar",
-    "message": "大笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        18
-      ]
-    ],
-    "obsolete": true
-  },
-  "VpgGxv": {
-    "translation": "står lättpå",
-    "message": "尴尬笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        21
-      ]
-    ],
-    "obsolete": true
-  },
-  "fNpbkb": {
-    "translation": "jobb är klart, bra gjort",
-    "message": "工作完成啦好棒",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
-  },
   "QM99lf": {
-    "translation": "kopierat",
+    "translation": "har kopierats",
     "message": "已复制",
     "comments": [],
     "origin": [
@@ -316,7 +162,7 @@
     ]
   },
   "uTD4IG": {
-    "translation": "Kopierat till Urklipp",
+    "translation": "har kopierats till Urklipp",
     "message": "已复制到剪贴板",
     "comments": [],
     "origin": [
@@ -326,84 +172,12 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        191
+        198
       ]
     ]
   },
-  "SHDSIh": {
-    "translation": "Starta söktråd för uttryck",
-    "message": "开始搜索表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        187
-      ]
-    ],
-    "obsolete": true
-  },
-  "8Ml78r": {
-    "translation": "skrattar högt",
-    "message": "开心笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
-  },
-  "HbDzdg": {
-    "translation": "känsla",
-    "message": "情感",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        28
-      ]
-    ],
-    "obsolete": true
-  },
-  "Yhxdgn": {
-    "translation": "vill tacka men röstar inte",
-    "message": "想表达谢谢但点赞室",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        13
-      ]
-    ],
-    "obsolete": true
-  },
-  "CQziCa": {
-    "translation": "Stäng med ESC",
-    "message": "按 ESC 关闭",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        192
-      ]
-    ],
-    "obsolete": true
-  },
-  "T4X3VY": {
-    "translation": "Rekommenderade uttryck",
-    "message": "推荐表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        296
-      ]
-    ],
-    "obsolete": true
-  },
   "z3xT8q": {
-    "translation": "Beskriv dina känslor och låt AI hjälpa dig hitta rätt ansikte",
+    "translation": "beskriv dina känslor så hjälper AI dig att hitta rätt bilder",
     "message": "描述你的心情，让 AI 帮你找到合适的表情",
     "comments": [],
     "origin": [
@@ -420,67 +194,54 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        276
+        294
+      ]
+    ]
+  },
+  "ErJqLL": {
+    "translation": "På söksökningen",
+    "message": "搜索中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        291
       ]
     ]
   },
   "SU3X/o": {
-    "translation": "Söker...",
+    "translation": "söker...",
     "message": "搜索中...",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        276
+        284
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "dnLXYZ": {
-    "translation": "Sökningen misslyckades, försök igen senare",
+    "translation": "Sökningen gick fel, försök igen senare",
     "message": "搜索出错，请稍后重试",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        155
+        159
       ]
     ]
   },
-  "2KlFnY": {
-    "translation": "Söksammanfattning",
-    "message": "搜索示例",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        277
-      ]
-    ],
-    "obsolete": true
-  },
-  "GMmB+X": {
-    "translation": "Sökresultat ({0})",
-    "message": "搜索结果 ({0})",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        183
-      ]
-    ],
-    "obsolete": true
-  },
   "ZB1owk": {
-    "translation": "stöd för olika sätt att använda bilder",
+    "translation": "stöd för olika sätt att använda svenska",
     "message": "支持各种口语表达",
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        78
+        "src/components/search/emoji-func-tag.tsx",
+        9
       ]
-    ],
-    "obsolete": true
+    ]
   },
   "lm7p2W": {
     "translation": "stöd för flerspråkssökningar",
@@ -488,14 +249,13 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        82
+        "src/components/search/emoji-func-tag.tsx",
+        20
       ]
-    ],
-    "obsolete": true
+    ]
   },
   "5JC7T/": {
-    "translation": "Kulturkonfliktlösningar",
+    "translation": "tolknings av kulturella skillnader",
     "message": "文化差异解读",
     "comments": [],
     "origin": [
@@ -505,66 +265,30 @@
       ]
     ]
   },
-  "qm8wCa": {
-    "translation": "ögon som säger",
-    "message": "星星眼",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        32
-      ]
-    ],
-    "obsolete": true
-  },
-  "oTQPJM": {
-    "translation": "föräldrar födelsedag, vill önska någonting",
-    "message": "朋友生日想祝福",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        16
-      ]
-    ],
-    "obsolete": true
-  },
-  "WAgs9Z": {
-    "translation": "Inga relaterade bilder hittades",
-    "message": "未找到相关表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        185
-      ]
-    ],
-    "obsolete": true
-  },
   "yl0Syq": {
-    "translation": "Visa detaljer",
+    "translation": "visa detaljer",
     "message": "查看详情",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        85
+        86
       ]
     ]
   },
   "AW9NLp": {
-    "translation": "Inga relaterade bilder hittades",
+    "translation": "inga relaterade bilder hittades",
     "message": "没有找到相关表情",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        291
+        310
       ]
     ]
   },
   "DDScQ8": {
-    "translation": "klicka för att kunna kopiera bilder",
+    "translation": "klicka för att kopiera bilder",
     "message": "点击可以复制表情",
     "comments": [],
     "origin": [
@@ -575,13 +299,13 @@
     ]
   },
   "zaqc+T": {
-    "translation": "Populära",
+    "translation": "populära",
     "message": "热门",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        58
+        57
       ]
     ]
   },
@@ -596,32 +320,19 @@
       ]
     ]
   },
-  "9kPlaI": {
-    "translation": "kärlekshål",
-    "message": "爱心眼",
+  "w/qYEh": {
+    "translation": "förstå känslosemantiken",
+    "message": "理解情感语义",
     "comments": [],
     "origin": [
       [
-        "src/components/category/category-emoji.tsx",
+        "src/components/search/emoji-func-tag.tsx",
         31
       ]
-    ],
-    "obsolete": true
-  },
-  "SMZ7ey": {
-    "translation": "förstå känslomässiga kontexter",
-    "message": "理解情感语境",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        86
-      ]
-    ],
-    "obsolete": true
+    ]
   },
   "+x4GVv": {
-    "translation": "för att använda AI för att hitta det bästa lämpliga bilder",
+    "translation": "finna det bästa lämpliga uttrycket med AI",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -632,7 +343,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "för att beskriva på ett naturligt sätt, AI förstår varje känslan du vill uttrycka",
+    "translation": "beskriv på ett naturligt sätt, AI förstår varje känslan du vill uttrycka",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -643,18 +354,18 @@
     ]
   },
   "h+dKvB": {
-    "translation": "för att använda vardagligt svenska för att beskriva dina känslor...",
+    "translation": "beskriv dina känslor på vardags svenska...",
     "message": "用日常口语描述你的感受...",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        254
+        265
       ]
     ]
   },
   "OS9sY4": {
-    "translation": "Relaterade rekommendationer",
+    "translation": "relaterade rekommendationer",
     "message": "相关推荐",
     "comments": [],
     "origin": [
@@ -665,7 +376,7 @@
     ]
   },
   "HguvCd": {
-    "translation": "ett sätt",
+    "translation": "typ",
     "message": "种",
     "comments": [],
     "origin": [
@@ -675,32 +386,8 @@
       ]
     ]
   },
-  "KU2ZGU": {
-    "translation": "😂",
-    "message": "笑哭",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        22
-      ]
-    ],
-    "obsolete": true
-  },
-  "2CQmUD": {
-    "translation": "skrattande ögon",
-    "message": "笑眼",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        19
-      ]
-    ],
-    "obsolete": true
-  },
   "C1syp2": {
-    "translation": "Skriv enkelt text för att snabbt hitta önskade bilder",
+    "translation": "skriv enkelt några ord så hittar du snabbt det bilder du söker",
     "message": "简单输入文字，快速找到想要的表情",
     "comments": [],
     "origin": [
@@ -709,54 +396,6 @@
         14
       ]
     ]
-  },
-  "swD0Y5": {
-    "translation": "lärare",
-    "message": "老师",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        272
-      ]
-    ],
-    "obsolete": true
-  },
-  "d0FwMq": {
-    "translation": "chefen väntar på mig, verkligen nöjd",
-    "message": "老板等我了开开心",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        15
-      ]
-    ],
-    "obsolete": true
-  },
-  "BR+jxt": {
-    "translation": "yrke",
-    "message": "职业",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        268
-      ]
-    ],
-    "obsolete": true
-  },
-  "gjhVY9": {
-    "translation": "konståkare",
-    "message": "艺术家",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        274
-      ]
-    ],
-    "obsolete": true
   },
   "tuZXxr": {
     "translation": "bildkategorier",
@@ -769,20 +408,8 @@
       ]
     ]
   },
-  "PemLuA": {
-    "translation": "bildtecken",
-    "message": "表情符号",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        15
-      ]
-    ],
-    "obsolete": true
-  },
   "EojHaD": {
-    "translation": "försök att söka på följande sätt:",
+    "translation": "försök följande söka: ",
     "message": "试试这样搜索：",
     "comments": [],
     "origin": [
@@ -791,29 +418,5 @@
         24
       ]
     ]
-  },
-  "UI+jwu": {
-    "translation": "högt uppåtgående ögon",
-    "message": "露齿笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        20
-      ]
-    ],
-    "obsolete": true
-  },
-  "IOyS5i": {
-    "translation": "älskande kyssning",
-    "message": "飞吻",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        33
-      ]
-    ],
-    "obsolete": true
   }
 }

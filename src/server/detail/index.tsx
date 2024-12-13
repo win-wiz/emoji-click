@@ -2,8 +2,11 @@ import { AVAILABLE_LOCALES } from "@/locales/config";
 import { db } from "@/server/db";
 import { emoji, emojiKeywords, emojiLanguage } from "../db/schema";
 import { eq, and, sql } from "drizzle-orm";
+import { supportLang } from "@/utils";
 
-export async function fetchEmojiProfileByFullCode(fullCode: string, lang: AVAILABLE_LOCALES) {
+export async function fetchEmojiProfileByFullCode(fullCode: string, initLang: AVAILABLE_LOCALES) {
+
+  const lang = supportLang.includes(initLang) ? initLang : 'en';
 
   try {
     const profilePrepare = db

@@ -1,28 +1,6 @@
 {
-  "J/hVSQ": {
-    "translation": "{0}",
-    "message": "{0}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-nav.tsx",
-        68
-      ]
-    ]
-  },
-  "16BztB": {
-    "translation": "{text}",
-    "message": "{text}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/emoji-func-tag.tsx",
-        35
-      ]
-    ]
-  },
   "TsoDGX": {
-    "translation": "auto-i18n-next-lingui-tiny-demo, 5 دقیقه ای برای افزودن یک زبان جدید به وب سایت خود کنید",
+    "translation": "auto-i18n-next-lingui-tiny-demo, 5 دقیقه ای برای افزودن یک زبان جدید به وب سایت خود را ایجاد کنید",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "comments": [],
     "origin": [
@@ -33,7 +11,7 @@
     ]
   },
   "aDJB+h": {
-    "translation": "با استفاده از Lingui برای افزودن یک زبان جدید به وب سایت خود در 5 دقیقه با استفاده از AI",
+    "translation": "با استفاده از Lingui برای افزودن یک زبان جدید به وب سایت خود را در 5 دقیقه ای با AI",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
     "comments": [],
     "origin": [
@@ -43,32 +21,8 @@
       ]
     ]
   },
-  "Z4NkC3": {
-    "translation": "کارمند حرفی",
-    "message": "上班族",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        270
-      ]
-    ],
-    "obsolete": true
-  },
-  "/KqhBG": {
-    "translation": "نه خواب دارم خیلی زنگ خورده ام",
-    "message": "不想上班好累啊",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        14
-      ]
-    ],
-    "obsolete": true
-  },
   "uW7qaK": {
-    "translation": "یک عکس کاراکتر",
+    "translation": "یک عکس کاربرد",
     "message": "个表情",
     "comments": [],
     "origin": [
@@ -82,32 +36,8 @@
       ]
     ]
   },
-  "qNbLwo": {
-    "translation": "پیک",
-    "message": "亲亲",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        34
-      ]
-    ],
-    "obsolete": true
-  },
-  "81qJXG": {
-    "translation": "خیلی خوب ام hôm nay",
-    "message": "今天心情特别好",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        12
-      ]
-    ],
-    "obsolete": true
-  },
   "aB+fc8": {
-    "translation": "استخدام السيناريوهات",
+    "translation": "موارد استفاده",
     "message": "使用场景",
     "comments": [],
     "origin": [
@@ -129,7 +59,7 @@
     ]
   },
   "ysc16k": {
-    "translation": "تمامی دسته‌بندی های کاراکتر",
+    "translation": "تمامی دسته‌بندی‌های عکس کاربرد",
     "message": "全部表情分类",
     "comments": [],
     "origin": [
@@ -140,7 +70,7 @@
     ]
   },
   "jmos6W": {
-    "translation": "المفاتيح",
+    "translation": "کلید واژه‌ای",
     "message": "关键词",
     "comments": [],
     "origin": [
@@ -151,7 +81,7 @@
     ]
   },
   "+d8Frh": {
-    "translation": "تحميل...",
+    "translation": "در حال بارگذاری...",
     "message": "加载中...",
     "comments": [],
     "origin": [
@@ -161,56 +91,8 @@
       ]
     ]
   },
-  "eDowDR": {
-    "translation": "دکتر",
-    "message": "医生",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        271
-      ]
-    ],
-    "obsolete": true
-  },
-  "5lS2OX": {
-    "translation": "پیکچی",
-    "message": "厨师",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        273
-      ]
-    ],
-    "obsolete": true
-  },
-  "CKHAZ/": {
-    "translation": "می پسندید",
-    "message": "喜欢",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        30
-      ]
-    ],
-    "obsolete": true
-  },
-  "/pWV7M": {
-    "translation": "خیلی خواب دارم",
-    "message": "困得不行了",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        18
-      ]
-    ],
-    "obsolete": true
-  },
   "Q54ALc": {
-    "translation": "التعريف الأساسي",
+    "translation": "معانی پایه‌ای",
     "message": "基本含义",
     "comments": [],
     "origin": [
@@ -221,18 +103,18 @@
     ]
   },
   "94fTVg": {
-    "translation": "نسخ",
+    "translation": "کپی",
     "message": "复制",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        73
+        72
       ]
     ]
   },
   "4Yl9f0": {
-    "translation": "فشل النسخ، يرجى المحاولة مرة أخرى",
+    "translation": "کپی نشد، مجددا تلاش کنید",
     "message": "复制失败，请重试",
     "comments": [],
     "origin": [
@@ -242,12 +124,12 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        197
+        204
       ]
     ]
   },
   "9ufcus": {
-    "translation": "تم النسخ بنجاح",
+    "translation": "کپی شد",
     "message": "复制成功",
     "comments": [],
     "origin": [
@@ -258,7 +140,7 @@
     ]
   },
   "HYMMQU": {
-    "translation": "نسخ تعبيرات الوجه",
+    "translation": "کپی عکس کاربرد",
     "message": "复制表情",
     "comments": [],
     "origin": [
@@ -267,42 +149,6 @@
         46
       ]
     ]
-  },
-  "5F7lbF": {
-    "translation": "خنده دارید",
-    "message": "大笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        18
-      ]
-    ],
-    "obsolete": true
-  },
-  "VpgGxv": {
-    "translation": "خشم زدن",
-    "message": "尴尬笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        21
-      ]
-    ],
-    "obsolete": true
-  },
-  "fNpbkb": {
-    "translation": "کار من estàltalđen",
-    "message": "工作完成啦好棒",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
   },
   "QM99lf": {
     "translation": "کپی شد",
@@ -316,7 +162,7 @@
     ]
   },
   "uTD4IG": {
-    "translation": "تم النسخ إلى الحافظة",
+    "translation": "کپی شده روی چیستارکپی",
     "message": "已复制到剪贴板",
     "comments": [],
     "origin": [
@@ -326,84 +172,12 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        191
+        198
       ]
     ]
   },
-  "SHDSIh": {
-    "translation": "به دنبال رو های مورد نظر خود برای پیدا کردن شروع کنید",
-    "message": "开始搜索表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        187
-      ]
-    ],
-    "obsolete": true
-  },
-  "8Ml78r": {
-    "translation": "خنده دارید",
-    "message": "开心笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
-  },
-  "HbDzdg": {
-    "translation": "علاقه‌مند",
-    "message": "情感",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        28
-      ]
-    ],
-    "obsolete": true
-  },
-  "Yhxdgn": {
-    "translation": "می خواهیم که با یک پیک درست نشانه‌گذاریم اما نشانه‌گذاری نشده ام",
-    "message": "想表达谢谢但点赞室",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        13
-      ]
-    ],
-    "obsolete": true
-  },
-  "CQziCa": {
-    "translation": "برای ختم کردن این کار کلید ESC را بزنید",
-    "message": "按 ESC 关闭",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        192
-      ]
-    ],
-    "obsolete": true
-  },
-  "T4X3VY": {
-    "translation": "رو های پیشنهادی",
-    "message": "推荐表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        296
-      ]
-    ],
-    "obsolete": true
-  },
   "z3xT8q": {
-    "translation": "وصف مشاعرك، ودع AI يساعدك في العثور على التعبير المناسب",
+    "translation": "به‌روز خود beskriv dina känslor och lå AI hjälpa dig hitta rätt ansikte",
     "message": "描述你的心情，让 AI 帮你找到合适的表情",
     "comments": [],
     "origin": [
@@ -420,7 +194,18 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        276
+        294
+      ]
+    ]
+  },
+  "ErJqLL": {
+    "translation": "در حال جستجو",
+    "message": "搜索中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        291
       ]
     ]
   },
@@ -431,44 +216,21 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        276
+        284
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "dnLXYZ": {
-    "translation": "حدث خطأ في البحث، يرجى المحاولة مرة أخرى لاحقا",
+    "translation": "خطای در جستجو، مجددا تلاش کنید بعدا",
     "message": "搜索出错，请稍后重试",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        155
+        159
       ]
     ]
-  },
-  "2KlFnY": {
-    "translation": "مثال برای جستجو",
-    "message": "搜索示例",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        277
-      ]
-    ],
-    "obsolete": true
-  },
-  "GMmB+X": {
-    "translation": "نتایج جستجو ({0})",
-    "message": "搜索结果 ({0})",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        183
-      ]
-    ],
-    "obsolete": true
   },
   "ZB1owk": {
     "translation": "پشتیبانی از انواع عبارات آشپزی",
@@ -476,26 +238,24 @@
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        78
+        "src/components/search/emoji-func-tag.tsx",
+        9
       ]
-    ],
-    "obsolete": true
+    ]
   },
   "lm7p2W": {
-    "translation": "پشتیبانی از بیش از یک زبان برای جستجو",
+    "translation": "پشتیبانی از چند زبانه‌ای جستجو",
     "message": "支持多语言搜索",
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        82
+        "src/components/search/emoji-func-tag.tsx",
+        20
       ]
-    ],
-    "obsolete": true
+    ]
   },
   "5JC7T/": {
-    "translation": "تفكيك الاختلاف الثقافي",
+    "translation": "تفاوت فرهنگی در مطالعه",
     "message": "文化差异解读",
     "comments": [],
     "origin": [
@@ -505,66 +265,30 @@
       ]
     ]
   },
-  "qm8wCa": {
-    "translation": "عین های ماهیچه‌ای",
-    "message": "星星眼",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        32
-      ]
-    ],
-    "obsolete": true
-  },
-  "oTQPJM": {
-    "translation": "روز دختر شما رو 축vrier",
-    "message": "朋友生日想祝福",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        16
-      ]
-    ],
-    "obsolete": true
-  },
-  "WAgs9Z": {
-    "translation": "یافت نشد",
-    "message": "未找到相关表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        185
-      ]
-    ],
-    "obsolete": true
-  },
   "yl0Syq": {
-    "translation": "اطلع على التفاصيل",
+    "translation": "مشاهده جزئیات",
     "message": "查看详情",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        85
+        86
       ]
     ]
   },
   "AW9NLp": {
-    "translation": "لم يتم العثور على تعبيرات الوجه ذات الصلة",
+    "translation": "دیدگاهی مربوط به این دسته‌بندی یافت نشد",
     "message": "没有找到相关表情",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        291
+        310
       ]
     ]
   },
   "DDScQ8": {
-    "translation": "برای کپی کردن یک پیک کلیک کنید",
+    "translation": "برای کپی کردن یک عکس کاربرد اینجا کلیک کنید",
     "message": "点击可以复制表情",
     "comments": [],
     "origin": [
@@ -575,18 +299,18 @@
     ]
   },
   "zaqc+T": {
-    "translation": "المفضلة",
+    "translation": "پرطرفدار",
     "message": "热门",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        58
+        57
       ]
     ]
   },
   "hvta5u": {
-    "translation": "پر بازدیدترین پیک",
+    "translation": "عکس کاربرد پرطرفدار",
     "message": "热门表情",
     "comments": [],
     "origin": [
@@ -596,32 +320,19 @@
       ]
     ]
   },
-  "9kPlaI": {
-    "translation": "عین های دلvalg",
-    "message": "爱心眼",
+  "w/qYEh": {
+    "translation": "فهم معانی احساسی",
+    "message": "理解情感语义",
     "comments": [],
     "origin": [
       [
-        "src/components/category/category-emoji.tsx",
+        "src/components/search/emoji-func-tag.tsx",
         31
       ]
-    ],
-    "obsolete": true
-  },
-  "SMZ7ey": {
-    "translation": "فهم زمینه‌ های عاطفی کاراکتر",
-    "message": "理解情感语境",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        86
-      ]
-    ],
-    "obsolete": true
+    ]
   },
   "+x4GVv": {
-    "translation": "با استفاده از AI پیدا کنید بهترین پیک برای شما",
+    "translation": "با AI پیدا کردن بهترین عکس کاربرد",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -632,7 +343,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "به طور طبیعی تر توصیف کنید، AI می‌فهمید هر یک از احساسات شما را می‌گوید",
+    "translation": "با روش طبیعی‌ترین beskriv dina känslor...",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -643,18 +354,18 @@
     ]
   },
   "h+dKvB": {
-    "translation": "با یک زبان آشپزی beskriv dina känslor...",
+    "translation": "با یک زبان آشپزی beskriv cảm giác خود...",
     "message": "用日常口语描述你的感受...",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        254
+        265
       ]
     ]
   },
   "OS9sY4": {
-    "translation": "التوصيات ذات الصلة",
+    "translation": "بهینه پیشنهادی",
     "message": "相关推荐",
     "comments": [],
     "origin": [
@@ -665,7 +376,7 @@
     ]
   },
   "HguvCd": {
-    "translation": "یک نوع",
+    "translation": "انواع",
     "message": "种",
     "comments": [],
     "origin": [
@@ -675,32 +386,8 @@
       ]
     ]
   },
-  "KU2ZGU": {
-    "translation": "笑哭",
-    "message": "笑哭",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        22
-      ]
-    ],
-    "obsolete": true
-  },
-  "2CQmUD": {
-    "translation": "خنده دارید",
-    "message": "笑眼",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        19
-      ]
-    ],
-    "obsolete": true
-  },
   "C1syp2": {
-    "translation": "اكتب النصوص البسيطة، والعثور بسرعة على التعبيرات المرغوبة",
+    "translation": "با وارد کردن یک کلمه‌ی کوتاهی به سرعت یک دسته‌بندی مورد نظر پیدا کنید",
     "message": "简单输入文字，快速找到想要的表情",
     "comments": [],
     "origin": [
@@ -710,56 +397,8 @@
       ]
     ]
   },
-  "swD0Y5": {
-    "translation": "معلم",
-    "message": "老师",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        272
-      ]
-    ],
-    "obsolete": true
-  },
-  "d0FwMq": {
-    "translation": "باشگاه خود را امیدوارم که بخاطر شما منتظر باش",
-    "message": "老板等我了开开心",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        15
-      ]
-    ],
-    "obsolete": true
-  },
-  "BR+jxt": {
-    "translation": "مهنه",
-    "message": "职业",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        268
-      ]
-    ],
-    "obsolete": true
-  },
-  "gjhVY9": {
-    "translation": "هنرمند",
-    "message": "艺术家",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        274
-      ]
-    ],
-    "obsolete": true
-  },
   "tuZXxr": {
-    "translation": "دسته‌بندی کاراکتر",
+    "translation": "دسته‌بندی‌های عکس کاربرد",
     "message": "表情分类",
     "comments": [],
     "origin": [
@@ -768,18 +407,6 @@
         220
       ]
     ]
-  },
-  "PemLuA": {
-    "translation": "رمز کاراکتر",
-    "message": "表情符号",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        15
-      ]
-    ],
-    "obsolete": true
   },
   "EojHaD": {
     "translation": "اینطور جستجو کنید:",
@@ -791,29 +418,5 @@
         24
       ]
     ]
-  },
-  "UI+jwu": {
-    "translation": "خنده دارید",
-    "message": "露齿笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        20
-      ]
-    ],
-    "obsolete": true
-  },
-  "IOyS5i": {
-    "translation": "پیک دوستدار",
-    "message": "飞吻",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        33
-      ]
-    ],
-    "obsolete": true
   }
 }

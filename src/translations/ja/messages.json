@@ -1,28 +1,6 @@
 {
-  "J/hVSQ": {
-    "translation": "{0}",
-    "message": "{0}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-nav.tsx",
-        68
-      ]
-    ]
-  },
-  "16BztB": {
-    "translation": "{text}",
-    "message": "{text}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/emoji-func-tag.tsx",
-        35
-      ]
-    ]
-  },
   "TsoDGX": {
-    "translation": "自動翻譯- Lingui 輕鬆為您的網站添加新語言，只需 5 分鐘",
+    "translation": "自動翻譯- Lingui 插件，讓你在 5 分鐘內為你的網站添加新語言",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "comments": [],
     "origin": [
@@ -33,7 +11,7 @@
     ]
   },
   "aDJB+h": {
-    "translation": "使用 Lingui 輕鬆為您的網站添加新語言，只需 5 分鐘，使用 AI",
+    "translation": "使用 Lingui 插件，在 5 分鐘內使用 AI 為你的網站添加新語言",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
     "comments": [],
     "origin": [
@@ -43,32 +21,8 @@
       ]
     ]
   },
-  "Z4NkC3": {
-    "translation": "サラリーマン",
-    "message": "上班族",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        270
-      ]
-    ],
-    "obsolete": true
-  },
-  "/KqhBG": {
-    "translation": "仕事に行きたくない、疲れた",
-    "message": "不想上班好累啊",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        14
-      ]
-    ],
-    "obsolete": true
-  },
   "uW7qaK": {
-    "translation": "顔文字",
+    "translation": "表情",
     "message": "个表情",
     "comments": [],
     "origin": [
@@ -82,32 +36,8 @@
       ]
     ]
   },
-  "qNbLwo": {
-    "translation": "キス",
-    "message": "亲亲",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        34
-      ]
-    ],
-    "obsolete": true
-  },
-  "81qJXG": {
-    "translation": "今日はとても気分が良い",
-    "message": "今天心情特别好",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        12
-      ]
-    ],
-    "obsolete": true
-  },
   "aB+fc8": {
-    "translation": "使用シーン",
+    "translation": "使用場景",
     "message": "使用场景",
     "comments": [],
     "origin": [
@@ -129,7 +59,7 @@
     ]
   },
   "ysc16k": {
-    "translation": "全ての顔文字カテゴリ",
+    "translation": "所有表情分類",
     "message": "全部表情分类",
     "comments": [],
     "origin": [
@@ -140,7 +70,7 @@
     ]
   },
   "jmos6W": {
-    "translation": "キーワード",
+    "translation": "關鍵字",
     "message": "关键词",
     "comments": [],
     "origin": [
@@ -151,7 +81,7 @@
     ]
   },
   "+d8Frh": {
-    "translation": "読み込み中...",
+    "translation": "加載中...",
     "message": "加载中...",
     "comments": [],
     "origin": [
@@ -161,56 +91,8 @@
       ]
     ]
   },
-  "eDowDR": {
-    "translation": "医者",
-    "message": "医生",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        271
-      ]
-    ],
-    "obsolete": true
-  },
-  "5lS2OX": {
-    "translation": "シェフ",
-    "message": "厨师",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        273
-      ]
-    ],
-    "obsolete": true
-  },
-  "CKHAZ/": {
-    "translation": "好き",
-    "message": "喜欢",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        30
-      ]
-    ],
-    "obsolete": true
-  },
-  "/pWV7M": {
-    "translation": "眠くてたまらない",
-    "message": "困得不行了",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        18
-      ]
-    ],
-    "obsolete": true
-  },
   "Q54ALc": {
-    "translation": "基本的な意味",
+    "translation": "基本含義",
     "message": "基本含义",
     "comments": [],
     "origin": [
@@ -221,18 +103,18 @@
     ]
   },
   "94fTVg": {
-    "translation": "コピー",
+    "translation": "複製",
     "message": "复制",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        73
+        72
       ]
     ]
   },
   "4Yl9f0": {
-    "translation": "コピー失敗しました。もう一度試してください",
+    "translation": "複製失敗，請重試",
     "message": "复制失败，请重试",
     "comments": [],
     "origin": [
@@ -242,12 +124,12 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        197
+        204
       ]
     ]
   },
   "9ufcus": {
-    "translation": "コピー成功",
+    "translation": "複製成功",
     "message": "复制成功",
     "comments": [],
     "origin": [
@@ -258,7 +140,7 @@
     ]
   },
   "HYMMQU": {
-    "translation": "コピーした感情",
+    "translation": "複製表情",
     "message": "复制表情",
     "comments": [],
     "origin": [
@@ -268,44 +150,8 @@
       ]
     ]
   },
-  "5F7lbF": {
-    "translation": "大笑い",
-    "message": "大笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        18
-      ]
-    ],
-    "obsolete": true
-  },
-  "VpgGxv": {
-    "translation": "照れ笑い",
-    "message": "尴尬笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        21
-      ]
-    ],
-    "obsolete": true
-  },
-  "fNpbkb": {
-    "translation": "仕事が終わった、最高",
-    "message": "工作完成啦好棒",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
-  },
   "QM99lf": {
-    "translation": "コピーしました",
+    "translation": "已複製",
     "message": "已复制",
     "comments": [],
     "origin": [
@@ -316,7 +162,7 @@
     ]
   },
   "uTD4IG": {
-    "translation": "クリップボードにコピーされました",
+    "translation": "已複製到剪貼板",
     "message": "已复制到剪贴板",
     "comments": [],
     "origin": [
@@ -326,84 +172,12 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        191
+        198
       ]
     ]
   },
-  "SHDSIh": {
-    "translation": "絵文字を検索し始めます",
-    "message": "开始搜索表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        187
-      ]
-    ],
-    "obsolete": true
-  },
-  "8Ml78r": {
-    "translation": "楽しそうに笑う",
-    "message": "开心笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
-  },
-  "HbDzdg": {
-    "translation": "感情",
-    "message": "情感",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        28
-      ]
-    ],
-    "obsolete": true
-  },
-  "Yhxdgn": {
-    "translation": "感謝を伝えたいけど、いいね！",
-    "message": "想表达谢谢但点赞室",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        13
-      ]
-    ],
-    "obsolete": true
-  },
-  "CQziCa": {
-    "translation": "ESC を押して終了",
-    "message": "按 ESC 关闭",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        192
-      ]
-    ],
-    "obsolete": true
-  },
-  "T4X3VY": {
-    "translation": "おすすめの絵文字",
-    "message": "推荐表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        296
-      ]
-    ],
-    "obsolete": true
-  },
   "z3xT8q": {
-    "translation": "あなたの気持ちを説明して、AI が適切な感情を見つけてくれます",
+    "translation": "描述你的心情，讓 AI 幫你找到合適的表情",
     "message": "描述你的心情，让 AI 帮你找到合适的表情",
     "comments": [],
     "origin": [
@@ -414,88 +188,74 @@
     ]
   },
   "r6acDk": {
-    "translation": "検索",
+    "translation": "搜索",
     "message": "搜索",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        276
+        294
+      ]
+    ]
+  },
+  "ErJqLL": {
+    "translation": "検索中",
+    "message": "搜索中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        291
       ]
     ]
   },
   "SU3X/o": {
-    "translation": "検索中...",
+    "translation": "搜索中...",
     "message": "搜索中...",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        276
+        284
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "dnLXYZ": {
-    "translation": "検索エラーが発生しました。しばらくしてから再度お試しください",
+    "translation": "搜索出錯，請稍後重試",
     "message": "搜索出错，请稍后重试",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        155
+        159
       ]
     ]
   },
-  "2KlFnY": {
-    "translation": "検索の例",
-    "message": "搜索示例",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        277
-      ]
-    ],
-    "obsolete": true
-  },
-  "GMmB+X": {
-    "translation": "検索結果 ({0})",
-    "message": "搜索结果 ({0})",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        183
-      ]
-    ],
-    "obsolete": true
-  },
   "ZB1owk": {
-    "translation": "各種口語表現をサポート",
+    "translation": "支持各種口語表達",
     "message": "支持各种口语表达",
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        78
+        "src/components/search/emoji-func-tag.tsx",
+        9
       ]
-    ],
-    "obsolete": true
+    ]
   },
   "lm7p2W": {
-    "translation": "多言語検索をサポート",
+    "translation": "支持多語言搜索",
     "message": "支持多语言搜索",
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        82
+        "src/components/search/emoji-func-tag.tsx",
+        20
       ]
-    ],
-    "obsolete": true
+    ]
   },
   "5JC7T/": {
-    "translation": "カルチャーの違いの解読",
+    "translation": "文化差異解讀",
     "message": "文化差异解读",
     "comments": [],
     "origin": [
@@ -505,66 +265,30 @@
       ]
     ]
   },
-  "qm8wCa": {
-    "translation": "星の目",
-    "message": "星星眼",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        32
-      ]
-    ],
-    "obsolete": true
-  },
-  "oTQPJM": {
-    "translation": "友達の誕生日を祝福したい",
-    "message": "朋友生日想祝福",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        16
-      ]
-    ],
-    "obsolete": true
-  },
-  "WAgs9Z": {
-    "translation": "関連する絵文字が見つかりません",
-    "message": "未找到相关表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        185
-      ]
-    ],
-    "obsolete": true
-  },
   "yl0Syq": {
-    "translation": "詳細を表示",
+    "translation": "查看詳情",
     "message": "查看详情",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        85
+        86
       ]
     ]
   },
   "AW9NLp": {
-    "translation": "関連する感情が見つかりませんでした",
+    "translation": "未找到相關表情",
     "message": "没有找到相关表情",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        291
+        310
       ]
     ]
   },
   "DDScQ8": {
-    "translation": "クリックするとエモジをコピーできます",
+    "translation": "點擊可複製表情",
     "message": "点击可以复制表情",
     "comments": [],
     "origin": [
@@ -575,18 +299,18 @@
     ]
   },
   "zaqc+T": {
-    "translation": "ホット",
+    "translation": "熱門",
     "message": "热门",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        58
+        57
       ]
     ]
   },
   "hvta5u": {
-    "translation": "人気のある顔文字",
+    "translation": "熱門表情",
     "message": "热门表情",
     "comments": [],
     "origin": [
@@ -596,32 +320,19 @@
       ]
     ]
   },
-  "9kPlaI": {
-    "translation": "ラブアイ",
-    "message": "爱心眼",
+  "w/qYEh": {
+    "translation": "理解情感語義",
+    "message": "理解情感语义",
     "comments": [],
     "origin": [
       [
-        "src/components/category/category-emoji.tsx",
+        "src/components/search/emoji-func-tag.tsx",
         31
       ]
-    ],
-    "obsolete": true
-  },
-  "SMZ7ey": {
-    "translation": "感情の文脈を理解",
-    "message": "理解情感语境",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        86
-      ]
-    ],
-    "obsolete": true
+    ]
   },
   "+x4GVv": {
-    "translation": "AI で最適な表情を見つけます",
+    "translation": "用 AI 找到最合適的表情",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -632,7 +343,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "最も自然な言い方で、AI はあなたが表現したすべての感情を理解します",
+    "translation": "用最自然的方式描述，AI 懂你想表達的每一種情緒",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -643,18 +354,18 @@
     ]
   },
   "h+dKvB": {
-    "translation": "日常会話で感じを説明します...",
+    "translation": "用日常口語描述你的感受...",
     "message": "用日常口语描述你的感受...",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        254
+        265
       ]
     ]
   },
   "OS9sY4": {
-    "translation": "関連するおすすめ",
+    "translation": "相關推薦",
     "message": "相关推荐",
     "comments": [],
     "origin": [
@@ -665,7 +376,7 @@
     ]
   },
   "HguvCd": {
-    "translation": "種類",
+    "translation": "種",
     "message": "种",
     "comments": [],
     "origin": [
@@ -675,32 +386,8 @@
       ]
     ]
   },
-  "KU2ZGU": {
-    "translation": "😂",
-    "message": "笑哭",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        22
-      ]
-    ],
-    "obsolete": true
-  },
-  "2CQmUD": {
-    "translation": "笑顔",
-    "message": "笑眼",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        19
-      ]
-    ],
-    "obsolete": true
-  },
   "C1syp2": {
-    "translation": "簡単に文字を入力して、欲しい感情を素早く見つけます",
+    "translation": "簡單輸入文字，快速找到想要的表情",
     "message": "简单输入文字，快速找到想要的表情",
     "comments": [],
     "origin": [
@@ -710,56 +397,8 @@
       ]
     ]
   },
-  "swD0Y5": {
-    "translation": "先生",
-    "message": "老师",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        272
-      ]
-    ],
-    "obsolete": true
-  },
-  "d0FwMq": {
-    "translation": "社長が待っていて、楽しみ",
-    "message": "老板等我了开开心",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        15
-      ]
-    ],
-    "obsolete": true
-  },
-  "BR+jxt": {
-    "translation": "職業",
-    "message": "职业",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        268
-      ]
-    ],
-    "obsolete": true
-  },
-  "gjhVY9": {
-    "translation": "アーティスト",
-    "message": "艺术家",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        274
-      ]
-    ],
-    "obsolete": true
-  },
   "tuZXxr": {
-    "translation": "顔文字カテゴリ",
+    "translation": "表情分類",
     "message": "表情分类",
     "comments": [],
     "origin": [
@@ -769,20 +408,8 @@
       ]
     ]
   },
-  "PemLuA": {
-    "translation": "絵文字",
-    "message": "表情符号",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        15
-      ]
-    ],
-    "obsolete": true
-  },
   "EojHaD": {
-    "translation": "検索する際は、次のように検索してください：",
+    "translation": "試試這樣搜索：",
     "message": "试试这样搜索：",
     "comments": [],
     "origin": [
@@ -791,29 +418,5 @@
         24
       ]
     ]
-  },
-  "UI+jwu": {
-    "translation": "歯を見せて笑う",
-    "message": "露齿笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        20
-      ]
-    ],
-    "obsolete": true
-  },
-  "IOyS5i": {
-    "translation": "キスマーク",
-    "message": "飞吻",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        33
-      ]
-    ],
-    "obsolete": true
   }
 }

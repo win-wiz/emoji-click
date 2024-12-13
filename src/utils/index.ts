@@ -51,3 +51,5 @@ export function debounce(fn: Function, delay: number) {
 }
 
 export const fetcher = (...args: Parameters<typeof fetch>) => fetch(...args).then((res) => res.json());
+
+export const supportLang = ['zh', 'en'];

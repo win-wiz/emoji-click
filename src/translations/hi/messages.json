@@ -1,28 +1,6 @@
 {
-  "J/hVSQ": {
-    "translation": "{0}",
-    "message": "{0}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-nav.tsx",
-        68
-      ]
-    ]
-  },
-  "16BztB": {
-    "translation": "{text}",
-    "message": "{text}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/emoji-func-tag.tsx",
-        35
-      ]
-    ]
-  },
   "TsoDGX": {
-    "translation": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
+    "translation": "",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "comments": [],
     "origin": [
@@ -33,7 +11,7 @@
     ]
   },
   "aDJB+h": {
-    "translation": "Use Lingui to add a new language to your website in 5 minutes with AI",
+    "translation": "",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
     "comments": [],
     "origin": [
@@ -43,32 +21,8 @@
       ]
     ]
   },
-  "Z4NkC3": {
-    "translation": "office worker",
-    "message": "上班族",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        270
-      ]
-    ],
-    "obsolete": true
-  },
-  "/KqhBG": {
-    "translation": "Don't want to go to work, I'm so tired",
-    "message": "不想上班好累啊",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        14
-      ]
-    ],
-    "obsolete": true
-  },
   "uW7qaK": {
-    "translation": "emoji",
+    "translation": "",
     "message": "个表情",
     "comments": [],
     "origin": [
@@ -82,32 +36,8 @@
       ]
     ]
   },
-  "qNbLwo": {
-    "translation": "kissing",
-    "message": "亲亲",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        34
-      ]
-    ],
-    "obsolete": true
-  },
-  "81qJXG": {
-    "translation": "I'm in a great mood today",
-    "message": "今天心情特别好",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        12
-      ]
-    ],
-    "obsolete": true
-  },
   "aB+fc8": {
-    "translation": "उपयोग की स्थिति",
+    "translation": "",
     "message": "使用场景",
     "comments": [],
     "origin": [
@@ -118,7 +48,7 @@
     ]
   },
   "zYyCyW": {
-    "translation": "All categories",
+    "translation": "",
     "message": "全部分类",
     "comments": [],
     "origin": [
@@ -129,7 +59,7 @@
     ]
   },
   "ysc16k": {
-    "translation": "All emoji categories",
+    "translation": "",
     "message": "全部表情分类",
     "comments": [],
     "origin": [
@@ -140,7 +70,7 @@
     ]
   },
   "jmos6W": {
-    "translation": "शब्द",
+    "translation": "",
     "message": "关键词",
     "comments": [],
     "origin": [
@@ -151,7 +81,7 @@
     ]
   },
   "+d8Frh": {
-    "translation": "Loading...",
+    "translation": "",
     "message": "加载中...",
     "comments": [],
     "origin": [
@@ -161,56 +91,8 @@
       ]
     ]
   },
-  "eDowDR": {
-    "translation": "doctor",
-    "message": "医生",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        271
-      ]
-    ],
-    "obsolete": true
-  },
-  "5lS2OX": {
-    "translation": "chef",
-    "message": "厨师",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        273
-      ]
-    ],
-    "obsolete": true
-  },
-  "CKHAZ/": {
-    "translation": "like",
-    "message": "喜欢",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        30
-      ]
-    ],
-    "obsolete": true
-  },
-  "/pWV7M": {
-    "translation": "I'm so sleepy",
-    "message": "困得不行了",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        18
-      ]
-    ],
-    "obsolete": true
-  },
   "Q54ALc": {
-    "translation": "मूल अर्थ",
+    "translation": "",
     "message": "基本含义",
     "comments": [],
     "origin": [
@@ -221,18 +103,18 @@
     ]
   },
   "94fTVg": {
-    "translation": "कॉपी",
+    "translation": "",
     "message": "复制",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        73
+        72
       ]
     ]
   },
   "4Yl9f0": {
-    "translation": "कॉपी न 실failed हो चुका है, फिर से تلاش kijiye",
+    "translation": "",
     "message": "复制失败，请重试",
     "comments": [],
     "origin": [
@@ -242,12 +124,12 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        197
+        204
       ]
     ]
   },
   "9ufcus": {
-    "translation": "कॉपी सफ़ल हो चुका है",
+    "translation": "",
     "message": "复制成功",
     "comments": [],
     "origin": [
@@ -258,7 +140,7 @@
     ]
   },
   "HYMMQU": {
-    "translation": "कॉपी एमोजी",
+    "translation": "",
     "message": "复制表情",
     "comments": [],
     "origin": [
@@ -268,44 +150,8 @@
       ]
     ]
   },
-  "5F7lbF": {
-    "translation": "laughing",
-    "message": "大笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        18
-      ]
-    ],
-    "obsolete": true
-  },
-  "VpgGxv": {
-    "translation": "awkward laugh",
-    "message": "尴尬笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        21
-      ]
-    ],
-    "obsolete": true
-  },
-  "fNpbkb": {
-    "translation": "The work is done, great",
-    "message": "工作完成啦好棒",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
-  },
   "QM99lf": {
-    "translation": "Copied",
+    "translation": "",
     "message": "已复制",
     "comments": [],
     "origin": [
@@ -316,7 +162,7 @@
     ]
   },
   "uTD4IG": {
-    "translation": "क्लिपबोर्ड में नकल लिया गया",
+    "translation": "",
     "message": "已复制到剪贴板",
     "comments": [],
     "origin": [
@@ -326,84 +172,12 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        191
+        198
       ]
     ]
   },
-  "SHDSIh": {
-    "translation": "Start searching for emojis",
-    "message": "开始搜索表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        187
-      ]
-    ],
-    "obsolete": true
-  },
-  "8Ml78r": {
-    "translation": "happy laugh",
-    "message": "开心笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
-  },
-  "HbDzdg": {
-    "translation": "emotion",
-    "message": "情感",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        28
-      ]
-    ],
-    "obsolete": true
-  },
-  "Yhxdgn": {
-    "translation": "Want to express thanks but like the点赞室",
-    "message": "想表达谢谢但点赞室",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        13
-      ]
-    ],
-    "obsolete": true
-  },
-  "CQziCa": {
-    "translation": "Press ESC to close",
-    "message": "按 ESC 关闭",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        192
-      ]
-    ],
-    "obsolete": true
-  },
-  "T4X3VY": {
-    "translation": "Recommended emojis",
-    "message": "推荐表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        296
-      ]
-    ],
-    "obsolete": true
-  },
   "z3xT8q": {
-    "translation": "अपने भावनाओं का वर्णन करें, और AI आपको उपर्युक्त इमोजी मिलाएं",
+    "translation": "",
     "message": "描述你的心情，让 AI 帮你找到合适的表情",
     "comments": [],
     "origin": [
@@ -414,88 +188,74 @@
     ]
   },
   "r6acDk": {
-    "translation": "Search",
+    "translation": "",
     "message": "搜索",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        276
+        294
+      ]
+    ]
+  },
+  "ErJqLL": {
+    "translation": "",
+    "message": "搜索中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        291
       ]
     ]
   },
   "SU3X/o": {
-    "translation": "Searching...",
+    "translation": "",
     "message": "搜索中...",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        276
+        284
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "dnLXYZ": {
-    "translation": "क検索 में त्रुटि हो चुकी है, फिर से تلاش kijiye",
+    "translation": "",
     "message": "搜索出错，请稍后重试",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        155
+        159
       ]
     ]
   },
-  "2KlFnY": {
-    "translation": "Search example",
-    "message": "搜索示例",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        277
-      ]
-    ],
-    "obsolete": true
-  },
-  "GMmB+X": {
-    "translation": "Search results ({0})",
-    "message": "搜索结果 ({0})",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        183
-      ]
-    ],
-    "obsolete": true
-  },
   "ZB1owk": {
-    "translation": "Supports various colloquial expressions",
+    "translation": "",
     "message": "支持各种口语表达",
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        78
+        "src/components/search/emoji-func-tag.tsx",
+        9
       ]
-    ],
-    "obsolete": true
+    ]
   },
   "lm7p2W": {
-    "translation": "Supports multilingual search",
+    "translation": "",
     "message": "支持多语言搜索",
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        82
+        "src/components/search/emoji-func-tag.tsx",
+        20
       ]
-    ],
-    "obsolete": true
+    ]
   },
   "5JC7T/": {
-    "translation": "संस्कृति अन्तरफेरना व्याख्यान",
+    "translation": "",
     "message": "文化差异解读",
     "comments": [],
     "origin": [
@@ -505,66 +265,30 @@
       ]
     ]
   },
-  "qm8wCa": {
-    "translation": "starry eyes",
-    "message": "星星眼",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        32
-      ]
-    ],
-    "obsolete": true
-  },
-  "oTQPJM": {
-    "translation": "For a friend's birthday, want to wish",
-    "message": "朋友生日想祝福",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        16
-      ]
-    ],
-    "obsolete": true
-  },
-  "WAgs9Z": {
-    "translation": "No related emojis found",
-    "message": "未找到相关表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        185
-      ]
-    ],
-    "obsolete": true
-  },
   "yl0Syq": {
-    "translation": "छवि देखें",
+    "translation": "",
     "message": "查看详情",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        85
+        86
       ]
     ]
   },
   "AW9NLp": {
-    "translation": "इससे संबंधित इमोजी नहीं मिल_found",
+    "translation": "",
     "message": "没有找到相关表情",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        291
+        310
       ]
     ]
   },
   "DDScQ8": {
-    "translation": "Click to copy the emoji",
+    "translation": "",
     "message": "点击可以复制表情",
     "comments": [],
     "origin": [
@@ -575,18 +299,18 @@
     ]
   },
   "zaqc+T": {
-    "translation": "हॉट",
+    "translation": "",
     "message": "热门",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        58
+        57
       ]
     ]
   },
   "hvta5u": {
-    "translation": "Popular emojis",
+    "translation": "",
     "message": "热门表情",
     "comments": [],
     "origin": [
@@ -596,32 +320,19 @@
       ]
     ]
   },
-  "9kPlaI": {
-    "translation": "Hearts eyes",
-    "message": "爱心眼",
+  "w/qYEh": {
+    "translation": "",
+    "message": "理解情感语义",
     "comments": [],
     "origin": [
       [
-        "src/components/category/category-emoji.tsx",
+        "src/components/search/emoji-func-tag.tsx",
         31
       ]
-    ],
-    "obsolete": true
-  },
-  "SMZ7ey": {
-    "translation": "Understand the emotional context",
-    "message": "理解情感语境",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        86
-      ]
-    ],
-    "obsolete": true
+    ]
   },
   "+x4GVv": {
-    "translation": "Use AI to find the most suitable emoji",
+    "translation": "",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -632,7 +343,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "Describe in the most natural way, AI understands every emotion you want to express",
+    "translation": "",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -643,18 +354,18 @@
     ]
   },
   "h+dKvB": {
-    "translation": "Describe your feelings in everyday language...",
+    "translation": "",
     "message": "用日常口语描述你的感受...",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        254
+        265
       ]
     ]
   },
   "OS9sY4": {
-    "translation": "संबंधित सुझाव",
+    "translation": "",
     "message": "相关推荐",
     "comments": [],
     "origin": [
@@ -665,7 +376,7 @@
     ]
   },
   "HguvCd": {
-    "translation": "kind of",
+    "translation": "",
     "message": "种",
     "comments": [],
     "origin": [
@@ -675,32 +386,8 @@
       ]
     ]
   },
-  "KU2ZGU": {
-    "translation": "笑哭",
-    "message": "笑哭",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        22
-      ]
-    ],
-    "obsolete": true
-  },
-  "2CQmUD": {
-    "translation": "smiling eyes",
-    "message": "笑眼",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        19
-      ]
-    ],
-    "obsolete": true
-  },
   "C1syp2": {
-    "translation": "एक्सप्रेस करना आसान है, इमोजी को तेजी से खोजें",
+    "translation": "",
     "message": "简单输入文字，快速找到想要的表情",
     "comments": [],
     "origin": [
@@ -710,56 +397,8 @@
       ]
     ]
   },
-  "swD0Y5": {
-    "translation": "teacher",
-    "message": "老师",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        272
-      ]
-    ],
-    "obsolete": true
-  },
-  "d0FwMq": {
-    "translation": "boss is waiting for me, happy",
-    "message": "老板等我了开开心",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        15
-      ]
-    ],
-    "obsolete": true
-  },
-  "BR+jxt": {
-    "translation": "occupation",
-    "message": "职业",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        268
-      ]
-    ],
-    "obsolete": true
-  },
-  "gjhVY9": {
-    "translation": "artist",
-    "message": "艺术家",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        274
-      ]
-    ],
-    "obsolete": true
-  },
   "tuZXxr": {
-    "translation": "emoji category",
+    "translation": "",
     "message": "表情分类",
     "comments": [],
     "origin": [
@@ -769,20 +408,8 @@
       ]
     ]
   },
-  "PemLuA": {
-    "translation": "emoticon",
-    "message": "表情符号",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        15
-      ]
-    ],
-    "obsolete": true
-  },
   "EojHaD": {
-    "translation": "Try searching like this:",
+    "translation": "",
     "message": "试试这样搜索：",
     "comments": [],
     "origin": [
@@ -791,29 +418,5 @@
         24
       ]
     ]
-  },
-  "UI+jwu": {
-    "translation": "grinning",
-    "message": "露齿笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        20
-      ]
-    ],
-    "obsolete": true
-  },
-  "IOyS5i": {
-    "translation": "मुबारक भjaan",
-    "message": "飞吻",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        33
-      ]
-    ],
-    "obsolete": true
   }
 }

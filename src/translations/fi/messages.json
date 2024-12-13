@@ -1,28 +1,6 @@
 {
-  "J/hVSQ": {
-    "translation": "{0}",
-    "message": "{0}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-nav.tsx",
-        68
-      ]
-    ]
-  },
-  "16BztB": {
-    "translation": "{text}",
-    "message": "{text}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/emoji-func-tag.tsx",
-        35
-      ]
-    ]
-  },
   "TsoDGX": {
-    "translation": "auto-i18n-next-lingui-tiny-demo, voit lisätä uuteen kieliin verkkosivustollesi 5 minuutin aikana",
+    "translation": "auto-i18n-next-lingui-tiny-demo, voit lisätä uuteen kieliin verkkosivustollesi viiden minuutin kuluttua",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "comments": [],
     "origin": [
@@ -33,7 +11,7 @@
     ]
   },
   "aDJB+h": {
-    "translation": "Käytä Linguia 5 minuutin aikana lisätä uuteen kieliin verkkosivustollesi AI:n avulla",
+    "translation": "Käytä Linguia lisätä uuteen kieliin verkkosivustollesi viiden minuutin kuluttua AI:llä",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
     "comments": [],
     "origin": [
@@ -43,32 +21,8 @@
       ]
     ]
   },
-  "Z4NkC3": {
-    "translation": "työntekijä",
-    "message": "上班族",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        270
-      ]
-    ],
-    "obsolete": true
-  },
-  "/KqhBG": {
-    "translation": "Ei halua töitä, vaan väsynyt",
-    "message": "不想上班好累啊",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        14
-      ]
-    ],
-    "obsolete": true
-  },
   "uW7qaK": {
-    "translation": "tähän",
+    "translation": "viestiä",
     "message": "个表情",
     "comments": [],
     "origin": [
@@ -82,32 +36,8 @@
       ]
     ]
   },
-  "qNbLwo": {
-    "translation": "sissesöö",
-    "message": "亲亲",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        34
-      ]
-    ],
-    "obsolete": true
-  },
-  "81qJXG": {
-    "translation": "Tänään on erityisen hyvä päivä",
-    "message": "今天心情特别好",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        12
-      ]
-    ],
-    "obsolete": true
-  },
   "aB+fc8": {
-    "translation": "käyttötapaus",
+    "translation": "käyttötapauksia",
     "message": "使用场景",
     "comments": [],
     "origin": [
@@ -118,7 +48,7 @@
     ]
   },
   "zYyCyW": {
-    "translation": "Koko luokka",
+    "translation": "kaikki luokat",
     "message": "全部分类",
     "comments": [],
     "origin": [
@@ -129,7 +59,7 @@
     ]
   },
   "ysc16k": {
-    "translation": "Koko lemmikkielämän luokka",
+    "translation": "kaikki kännykkäkuvia",
     "message": "全部表情分类",
     "comments": [],
     "origin": [
@@ -140,7 +70,7 @@
     ]
   },
   "jmos6W": {
-    "translation": "avainsana",
+    "translation": "avainsanoja",
     "message": "关键词",
     "comments": [],
     "origin": [
@@ -161,54 +91,6 @@
       ]
     ]
   },
-  "eDowDR": {
-    "translation": "lääkäri",
-    "message": "医生",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        271
-      ]
-    ],
-    "obsolete": true
-  },
-  "5lS2OX": {
-    "translation": "pääruokailija",
-    "message": "厨师",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        273
-      ]
-    ],
-    "obsolete": true
-  },
-  "CKHAZ/": {
-    "translation": "tykkää",
-    "message": "喜欢",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        30
-      ]
-    ],
-    "obsolete": true
-  },
-  "/pWV7M": {
-    "translation": "täysin unenäköisiä",
-    "message": "困得不行了",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        18
-      ]
-    ],
-    "obsolete": true
-  },
   "Q54ALc": {
     "translation": "yleiskuvaus",
     "message": "基本含义",
@@ -227,7 +109,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        73
+        72
       ]
     ]
   },
@@ -242,7 +124,7 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        197
+        204
       ]
     ]
   },
@@ -258,7 +140,7 @@
     ]
   },
   "HYMMQU": {
-    "translation": "Kopioi emoji",
+    "translation": "Kopioi kuvaus",
     "message": "复制表情",
     "comments": [],
     "origin": [
@@ -267,42 +149,6 @@
         46
       ]
     ]
-  },
-  "5F7lbF": {
-    "translation": "hämmästysnäköinen nauraaminen",
-    "message": "大笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        18
-      ]
-    ],
-    "obsolete": true
-  },
-  "VpgGxv": {
-    "translation": " hämmästynyt nauraaminen",
-    "message": "尴尬笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        21
-      ]
-    ],
-    "obsolete": true
-  },
-  "fNpbkb": {
-    "translation": "työt on valmiina, hyvä",
-    "message": "工作完成啦好棒",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
   },
   "QM99lf": {
     "translation": "Kopioitu",
@@ -326,84 +172,12 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        191
+        198
       ]
     ]
   },
-  "SHDSIh": {
-    "translation": "Kutsuu etsintää",
-    "message": "开始搜索表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        187
-      ]
-    ],
-    "obsolete": true
-  },
-  "8Ml78r": {
-    "translation": "hauska nauraaminen",
-    "message": "开心笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
-  },
-  "HbDzdg": {
-    "translation": "tuntemukset",
-    "message": "情感",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        28
-      ]
-    ],
-    "obsolete": true
-  },
-  "Yhxdgn": {
-    "translation": "haluan kiittää mutta tykkäämättömän",
-    "message": "想表达谢谢但点赞室",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        13
-      ]
-    ],
-    "obsolete": true
-  },
-  "CQziCa": {
-    "translation": "Sulje ESC:n avulla",
-    "message": "按 ESC 关闭",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        192
-      ]
-    ],
-    "obsolete": true
-  },
-  "T4X3VY": {
-    "translation": "Suositeltavat kuvia",
-    "message": "推荐表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        296
-      ]
-    ],
-    "obsolete": true
-  },
   "z3xT8q": {
-    "translation": "Kerro tunteesi ja anna AI:tä löytää sopivan emoji-tunnisteen",
+    "translation": "kuvaa tunteesi, ja AI auttaa sinua löytämään sopivan kuvauksen",
     "message": "描述你的心情，让 AI 帮你找到合适的表情",
     "comments": [],
     "origin": [
@@ -414,88 +188,74 @@
     ]
   },
   "r6acDk": {
-    "translation": "haku",
+    "translation": "Etsi",
     "message": "搜索",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        276
+        294
+      ]
+    ]
+  },
+  "ErJqLL": {
+    "translation": "Etsinnässä",
+    "message": "搜索中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        291
       ]
     ]
   },
   "SU3X/o": {
-    "translation": "Etsinään...",
+    "translation": "Etsittäessä...",
     "message": "搜索中...",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        276
+        284
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "dnLXYZ": {
-    "translation": "Haku virheellinen, yritä myöhemmin uudelleen",
+    "translation": "Virheellinen hakutoimitus, yritä myöhemmin uudelleen",
     "message": "搜索出错，请稍后重试",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        155
+        159
       ]
     ]
   },
-  "2KlFnY": {
-    "translation": "Esimerkkiehto",
-    "message": "搜索示例",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        277
-      ]
-    ],
-    "obsolete": true
-  },
-  "GMmB+X": {
-    "translation": "Hakutuloksia ({0})",
-    "message": "搜索结果 ({0})",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        183
-      ]
-    ],
-    "obsolete": true
-  },
   "ZB1owk": {
-    "translation": "tuki monipuolisten puhekieltojen",
+    "translation": "tukee monialaisia kieliversioita",
     "message": "支持各种口语表达",
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        78
+        "src/components/search/emoji-func-tag.tsx",
+        9
       ]
-    ],
-    "obsolete": true
+    ]
   },
   "lm7p2W": {
-    "translation": "tuki monikielistä hakua",
+    "translation": "tukee monikielistä hakutoimintaa",
     "message": "支持多语言搜索",
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        82
+        "src/components/search/emoji-func-tag.tsx",
+        20
       ]
-    ],
-    "obsolete": true
+    ]
   },
   "5JC7T/": {
-    "translation": "kulttuuristen erojen tulkinta",
+    "translation": "kulttuuristen erojen tulkitseminen",
     "message": "文化差异解读",
     "comments": [],
     "origin": [
@@ -505,66 +265,30 @@
       ]
     ]
   },
-  "qm8wCa": {
-    "translation": "tähtiä näkyviä silmiä",
-    "message": "星星眼",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        32
-      ]
-    ],
-    "obsolete": true
-  },
-  "oTQPJM": {
-    "translation": "täytyy tervehdellä ystävällään",
-    "message": "朋友生日想祝福",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        16
-      ]
-    ],
-    "obsolete": true
-  },
-  "WAgs9Z": {
-    "translation": "Ei löytynyt vastaavaa kuvia",
-    "message": "未找到相关表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        185
-      ]
-    ],
-    "obsolete": true
-  },
   "yl0Syq": {
-    "translation": "Katso yksityiskohdat",
+    "translation": "Katso yksityiskohtia",
     "message": "查看详情",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        85
+        86
       ]
     ]
   },
   "AW9NLp": {
-    "translation": "Ei löytynyt liittyviä emoji-tunnuksia",
+    "translation": "ei löytynyt vastaavaa kännykkäkuvia",
     "message": "没有找到相关表情",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        291
+        310
       ]
     ]
   },
   "DDScQ8": {
-    "translation": "klikkaa kopioida lemmikkiä",
+    "translation": "Klikkaa kopioimaan kuvauksen",
     "message": "点击可以复制表情",
     "comments": [],
     "origin": [
@@ -575,18 +299,18 @@
     ]
   },
   "zaqc+T": {
-    "translation": "suositeltavaa",
+    "translation": "suositeltuja",
     "message": "热门",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        58
+        57
       ]
     ]
   },
   "hvta5u": {
-    "translation": "suositut lemmikit",
+    "translation": "suositeltuja kuvia",
     "message": "热门表情",
     "comments": [],
     "origin": [
@@ -596,32 +320,19 @@
       ]
     ]
   },
-  "9kPlaI": {
-    "translation": "sydämen silmät",
-    "message": "爱心眼",
+  "w/qYEh": {
+    "translation": "ymmärrä tunteiden semantiikkaa",
+    "message": "理解情感语义",
     "comments": [],
     "origin": [
       [
-        "src/components/category/category-emoji.tsx",
+        "src/components/search/emoji-func-tag.tsx",
         31
       ]
-    ],
-    "obsolete": true
-  },
-  "SMZ7ey": {
-    "translation": "ymmärrä tunteiden kontekstia",
-    "message": "理解情感语境",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        86
-      ]
-    ],
-    "obsolete": true
+    ]
   },
   "+x4GVv": {
-    "translation": "etsi parhaiten sopivat lemmikit AI:lla",
+    "translation": "löydä parhaiten sopivan kuvauksen AI:llä",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -632,7 +343,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "kuvaa tunteita tựaalaisesti, AI ymmärtää mitä tahansa tunnetta",
+    "translation": "kuvaa tunteesi luonnollisimmalla tavalla, ja AI ymmärtää mitä tahansa tunnetta",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -643,18 +354,18 @@
     ]
   },
   "h+dKvB": {
-    "translation": "kuvaa tunteita päivittäisessä kiekkotekstissä...",
+    "translation": "kerro tunteesi päivittäisessä kiekkotekstiään...",
     "message": "用日常口语描述你的感受...",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        254
+        265
       ]
     ]
   },
   "OS9sY4": {
-    "translation": "suositeltavat",
+    "translation": "suositeltuja",
     "message": "相关推荐",
     "comments": [],
     "origin": [
@@ -665,7 +376,7 @@
     ]
   },
   "HguvCd": {
-    "translation": "tavara",
+    "translation": "tavua",
     "message": "种",
     "comments": [],
     "origin": [
@@ -675,32 +386,8 @@
       ]
     ]
   },
-  "KU2ZGU": {
-    "translation": "hilppa",
-    "message": "笑哭",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        22
-      ]
-    ],
-    "obsolete": true
-  },
-  "2CQmUD": {
-    "translation": "nauraava silmä",
-    "message": "笑眼",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        19
-      ]
-    ],
-    "obsolete": true
-  },
   "C1syp2": {
-    "translation": "Kirjoita muutama sana ja hanki nopeasti haluamasi emoji",
+    "translation": "syötä yksinkertaisesti tekstiä löytämään haluamasi kuvauksen",
     "message": "简单输入文字，快速找到想要的表情",
     "comments": [],
     "origin": [
@@ -710,56 +397,8 @@
       ]
     ]
   },
-  "swD0Y5": {
-    "translation": "opettaja",
-    "message": "老师",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        272
-      ]
-    ],
-    "obsolete": true
-  },
-  "d0FwMq": {
-    "translation": "isäntä odottaa minua, iloinen",
-    "message": "老板等我了开开心",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        15
-      ]
-    ],
-    "obsolete": true
-  },
-  "BR+jxt": {
-    "translation": "työ",
-    "message": "职业",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        268
-      ]
-    ],
-    "obsolete": true
-  },
-  "gjhVY9": {
-    "translation": "taiteilija",
-    "message": "艺术家",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        274
-      ]
-    ],
-    "obsolete": true
-  },
   "tuZXxr": {
-    "translation": "lemmikkiluokka",
+    "translation": "kuvakaupat",
     "message": "表情分类",
     "comments": [],
     "origin": [
@@ -769,20 +408,8 @@
       ]
     ]
   },
-  "PemLuA": {
-    "translation": "lemmikkisignaalit",
-    "message": "表情符号",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        15
-      ]
-    ],
-    "obsolete": true
-  },
   "EojHaD": {
-    "translation": "kokeile tätä hakua: ",
+    "translation": "kokeile tätä hakutoimitusta:",
     "message": "试试这样搜索：",
     "comments": [],
     "origin": [
@@ -791,29 +418,5 @@
         24
       ]
     ]
-  },
-  "UI+jwu": {
-    "translation": "höpöilevä nauraaminen",
-    "message": "露齿笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        20
-      ]
-    ],
-    "obsolete": true
-  },
-  "IOyS5i": {
-    "translation": "suudelma",
-    "message": "飞吻",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        33
-      ]
-    ],
-    "obsolete": true
   }
 }

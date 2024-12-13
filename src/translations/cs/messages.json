@@ -1,26 +1,4 @@
 {
-  "J/hVSQ": {
-    "translation": "{0}",
-    "message": "{0}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-nav.tsx",
-        68
-      ]
-    ]
-  },
-  "16BztB": {
-    "translation": "{text}",
-    "message": "{text}",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/emoji-func-tag.tsx",
-        35
-      ]
-    ]
-  },
   "TsoDGX": {
     "translation": "auto-i18n-next-lingui-tiny-demo, přidejte nový jazyk na svůj web během 5 minut",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
@@ -43,32 +21,8 @@
       ]
     ]
   },
-  "Z4NkC3": {
-    "translation": "Kadernice",
-    "message": "上班族",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        270
-      ]
-    ],
-    "obsolete": true
-  },
-  "/KqhBG": {
-    "translation": "Nemám chuť do práce, jsem úplně vyřízená",
-    "message": "不想上班好累啊",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        14
-      ]
-    ],
-    "obsolete": true
-  },
   "uW7qaK": {
-    "translation": "jedno výrazové znaménko",
+    "translation": "jedním výrazem",
     "message": "个表情",
     "comments": [],
     "origin": [
@@ -82,32 +36,8 @@
       ]
     ]
   },
-  "qNbLwo": {
-    "translation": "polibky",
-    "message": "亲亲",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        34
-      ]
-    ],
-    "obsolete": true
-  },
-  "81qJXG": {
-    "translation": "Dneska jsem měla neskutečně dobrou náladu",
-    "message": "今天心情特别好",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        12
-      ]
-    ],
-    "obsolete": true
-  },
   "aB+fc8": {
-    "translation": "Použití scénáře",
+    "translation": "možnosti použití",
     "message": "使用场景",
     "comments": [],
     "origin": [
@@ -118,7 +48,7 @@
     ]
   },
   "zYyCyW": {
-    "translation": "Vše kategorizováno",
+    "translation": "Všeobecné kategorie",
     "message": "全部分类",
     "comments": [],
     "origin": [
@@ -129,7 +59,7 @@
     ]
   },
   "ysc16k": {
-    "translation": "Kategorie všech výrazových známek",
+    "translation": "Všechny kategorie výrazů",
     "message": "全部表情分类",
     "comments": [],
     "origin": [
@@ -151,7 +81,7 @@
     ]
   },
   "+d8Frh": {
-    "translation": "Načítání...",
+    "translation": "načítání...",
     "message": "加载中...",
     "comments": [],
     "origin": [
@@ -161,56 +91,8 @@
       ]
     ]
   },
-  "eDowDR": {
-    "translation": "Lékař",
-    "message": "医生",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        271
-      ]
-    ],
-    "obsolete": true
-  },
-  "5lS2OX": {
-    "translation": "Kuchař",
-    "message": "厨师",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        273
-      ]
-    ],
-    "obsolete": true
-  },
-  "CKHAZ/": {
-    "translation": "Mám ráda",
-    "message": "喜欢",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        30
-      ]
-    ],
-    "obsolete": true
-  },
-  "/pWV7M": {
-    "translation": "Nemůžu otevřít oči, jsem úplně vyřízená",
-    "message": "困得不行了",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        18
-      ]
-    ],
-    "obsolete": true
-  },
   "Q54ALc": {
-    "translation": "Základní význam",
+    "translation": "zásadní význam",
     "message": "基本含义",
     "comments": [],
     "origin": [
@@ -227,7 +109,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        73
+        72
       ]
     ]
   },
@@ -242,7 +124,7 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        197
+        204
       ]
     ]
   },
@@ -268,44 +150,8 @@
       ]
     ]
   },
-  "5F7lbF": {
-    "translation": "Velký smích",
-    "message": "大笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        18
-      ]
-    ],
-    "obsolete": true
-  },
-  "VpgGxv": {
-    "translation": "Rozpačitý úsměv",
-    "message": "尴尬笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        21
-      ]
-    ],
-    "obsolete": true
-  },
-  "fNpbkb": {
-    "translation": "Dokončila jsem práci, jsem neskutečně šťastná",
-    "message": "工作完成啦好棒",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
-  },
   "QM99lf": {
-    "translation": "Zkopírováno",
+    "translation": "bylo již zkopírováno",
     "message": "已复制",
     "comments": [],
     "origin": [
@@ -316,7 +162,7 @@
     ]
   },
   "uTD4IG": {
-    "translation": "Bylo zkopírováno do schránky",
+    "translation": "bylo zkopírováno do schránky",
     "message": "已复制到剪贴板",
     "comments": [],
     "origin": [
@@ -326,84 +172,12 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        191
+        198
       ]
     ]
   },
-  "SHDSIh": {
-    "translation": "Začni hledání výrazů",
-    "message": "开始搜索表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        187
-      ]
-    ],
-    "obsolete": true
-  },
-  "8Ml78r": {
-    "translation": "Úsměv štěstí",
-    "message": "开心笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
-  },
-  "HbDzdg": {
-    "translation": "Emoce",
-    "message": "情感",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        28
-      ]
-    ],
-    "obsolete": true
-  },
-  "Yhxdgn": {
-    "translation": "Chci poděkovat, ale tlačítko Líbí není správné",
-    "message": "想表达谢谢但点赞室",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        13
-      ]
-    ],
-    "obsolete": true
-  },
-  "CQziCa": {
-    "translation": "Zavři pomocí ESC",
-    "message": "按 ESC 关闭",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        192
-      ]
-    ],
-    "obsolete": true
-  },
-  "T4X3VY": {
-    "translation": "Doporučené výrazy",
-    "message": "推荐表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        296
-      ]
-    ],
-    "obsolete": true
-  },
   "z3xT8q": {
-    "translation": "Popište svou náladu a nechajte AI najít vhodný výraz",
+    "translation": "popište svou náladu a nechť vám AI najde vhodný výraz",
     "message": "描述你的心情，让 AI 帮你找到合适的表情",
     "comments": [],
     "origin": [
@@ -414,88 +188,74 @@
     ]
   },
   "r6acDk": {
-    "translation": "Vyhledávání",
+    "translation": "hledat",
     "message": "搜索",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        276
+        294
+      ]
+    ]
+  },
+  "ErJqLL": {
+    "translation": "Vyhledávání probíhá…",
+    "message": "搜索中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        291
       ]
     ]
   },
   "SU3X/o": {
-    "translation": "Hledání...",
+    "translation": "hledání...",
     "message": "搜索中...",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        276
+        284
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "dnLXYZ": {
-    "translation": "Chyba při hledání, zkuste to později znovu",
+    "translation": "chyba při hledání, zkuste to později znovu",
     "message": "搜索出错，请稍后重试",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        155
+        159
       ]
     ]
   },
-  "2KlFnY": {
-    "translation": "Příklad hledání",
-    "message": "搜索示例",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        277
-      ]
-    ],
-    "obsolete": true
-  },
-  "GMmB+X": {
-    "translation": "Vyhledávací výsledky ({0})",
-    "message": "搜索结果 ({0})",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        183
-      ]
-    ],
-    "obsolete": true
-  },
   "ZB1owk": {
-    "translation": "Podporuje různé způsob řeči",
+    "translation": "podporuje různé způsob řeči",
     "message": "支持各种口语表达",
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        78
+        "src/components/search/emoji-func-tag.tsx",
+        9
       ]
-    ],
-    "obsolete": true
+    ]
   },
   "lm7p2W": {
-    "translation": "Podporuje vícejazyčné vyhledávání",
+    "translation": "podporuje vícejazyčné vyhledávání",
     "message": "支持多语言搜索",
     "comments": [],
     "origin": [
       [
-        "src/components/search-emoji.tsx",
-        82
+        "src/components/search/emoji-func-tag.tsx",
+        20
       ]
-    ],
-    "obsolete": true
+    ]
   },
   "5JC7T/": {
-    "translation": "Interpretace kulturních rozdílů",
+    "translation": "výklad kulturních rozdílů",
     "message": "文化差异解读",
     "comments": [],
     "origin": [
@@ -505,42 +265,6 @@
       ]
     ]
   },
-  "qm8wCa": {
-    "translation": "Zvědavé oči",
-    "message": "星星眼",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        32
-      ]
-    ],
-    "obsolete": true
-  },
-  "oTQPJM": {
-    "translation": "Když chcete přát kamarádce k narozeninám",
-    "message": "朋友生日想祝福",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        16
-      ]
-    ],
-    "obsolete": true
-  },
-  "WAgs9Z": {
-    "translation": "Nenalezeny žádné související výrazy",
-    "message": "未找到相关表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-dialog.tsx",
-        185
-      ]
-    ],
-    "obsolete": true
-  },
   "yl0Syq": {
     "translation": "Zobrazit podrobnosti",
     "message": "查看详情",
@@ -548,7 +272,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        85
+        86
       ]
     ]
   },
@@ -559,12 +283,12 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        291
+        310
       ]
     ]
   },
   "DDScQ8": {
-    "translation": "Klikněte pro možnost zkopírování výrazového znaménka",
+    "translation": "Klikněte pro kopírování výrazu",
     "message": "点击可以复制表情",
     "comments": [],
     "origin": [
@@ -575,18 +299,18 @@
     ]
   },
   "zaqc+T": {
-    "translation": "Horké",
+    "translation": "žhavé",
     "message": "热门",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        58
+        57
       ]
     ]
   },
   "hvta5u": {
-    "translation": "Horké výrazové známky",
+    "translation": "žhavé výrazy",
     "message": "热门表情",
     "comments": [],
     "origin": [
@@ -596,32 +320,19 @@
       ]
     ]
   },
-  "9kPlaI": {
-    "translation": "Srdcové oko",
-    "message": "爱心眼",
+  "w/qYEh": {
+    "translation": "pochopte význam emocí",
+    "message": "理解情感语义",
     "comments": [],
     "origin": [
       [
-        "src/components/category/category-emoji.tsx",
+        "src/components/search/emoji-func-tag.tsx",
         31
       ]
-    ],
-    "obsolete": true
-  },
-  "SMZ7ey": {
-    "translation": "Porozumění kontextu emocí",
-    "message": "理解情感语境",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        86
-      ]
-    ],
-    "obsolete": true
+    ]
   },
   "+x4GVv": {
-    "translation": "Pomocí AI najděte nejvhodnější výrazové znaménko",
+    "translation": "najděte pomocí AI nejvhodnější výraz",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -632,7 +343,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "Popište pomocí nej přirozenější způsob, že každý pocit, který chcete vyjádřit, vám AI porozumí",
+    "translation": "popište pomocí nej přirozenější způsob, každý svůj pocit, který chcete vyjádřit, AI vás pochopí",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -643,13 +354,13 @@
     ]
   },
   "h+dKvB": {
-    "translation": "Popište pomocí obyčejného každodenního jazyka, jak se právě cítíte...",
+    "translation": "popište své pocity pomocí obyčejného hovorového výrazu...",
     "message": "用日常口语描述你的感受...",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        254
+        265
       ]
     ]
   },
@@ -665,7 +376,7 @@
     ]
   },
   "HguvCd": {
-    "translation": "jedním způsobem",
+    "translation": "druh",
     "message": "种",
     "comments": [],
     "origin": [
@@ -675,32 +386,8 @@
       ]
     ]
   },
-  "KU2ZGU": {
-    "translation": "😂",
-    "message": "笑哭",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        22
-      ]
-    ],
-    "obsolete": true
-  },
-  "2CQmUD": {
-    "translation": "Úsměv přes oko",
-    "message": "笑眼",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        19
-      ]
-    ],
-    "obsolete": true
-  },
   "C1syp2": {
-    "translation": "Jednoduchý vstup textu, rychlé nalezení požadovaných výrazů",
+    "translation": "Jednoduše zadejte nějaký text a rychle najděte požadovaný výraz",
     "message": "简单输入文字，快速找到想要的表情",
     "comments": [],
     "origin": [
@@ -710,56 +397,8 @@
       ]
     ]
   },
-  "swD0Y5": {
-    "translation": "Učitel",
-    "message": "老师",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        272
-      ]
-    ],
-    "obsolete": true
-  },
-  "d0FwMq": {
-    "translation": "Můj šéf už čeká, jsem neskutečně šťastná",
-    "message": "老板等我了开开心",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search-emoji.tsx",
-        15
-      ]
-    ],
-    "obsolete": true
-  },
-  "BR+jxt": {
-    "translation": "Odměna",
-    "message": "职业",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        268
-      ]
-    ],
-    "obsolete": true
-  },
-  "gjhVY9": {
-    "translation": "Umělec",
-    "message": "艺术家",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        274
-      ]
-    ],
-    "obsolete": true
-  },
   "tuZXxr": {
-    "translation": "Kategorie výrazových známek",
+    "translation": "Kategorie výrazů",
     "message": "表情分类",
     "comments": [],
     "origin": [
@@ -768,18 +407,6 @@
         220
       ]
     ]
-  },
-  "PemLuA": {
-    "translation": "Emotikon",
-    "message": "表情符号",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        15
-      ]
-    ],
-    "obsolete": true
   },
   "EojHaD": {
     "translation": "Zkuste takto hledat:",
@@ -791,29 +418,5 @@
         24
       ]
     ]
-  },
-  "UI+jwu": {
-    "translation": "Úsměv se zuby",
-    "message": "露齿笑",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        20
-      ]
-    ],
-    "obsolete": true
-  },
-  "IOyS5i": {
-    "translation": "Rozmazlený polibek",
-    "message": "飞吻",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/category/category-emoji.tsx",
-        33
-      ]
-    ],
-    "obsolete": true
   }
 }

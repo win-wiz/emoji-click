@@ -31,7 +31,7 @@ const EmojiSearchExample = memo(function EmojiSearchExample({ setSearchText, ran
             onClick={() => handleClick(example.content)}
             className="bg-white/80 backdrop-blur-sm px-4 py-1.5 rounded-full hover:bg-purple-50 border border-purple-100/50 transition-colors"
           >
-            {`"${example.content}"`}
+            {example.content}
           </button>
         ))}
       </div>

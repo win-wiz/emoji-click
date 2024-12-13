@@ -15,6 +15,9 @@ export const env = createEnv({
     CLOUDFLARE_ACCOUNT_ID: z.string().optional(),
     CLOUDFLARE_API_TOKEN: z.string().optional(),
     DB_PROD_DATABASE_ID: z.string().optional(),
+    DOUBAO_OPENAI_API_KEY: z.string().optional(),
+    DOUBAO_BASE_URL: z.string().optional(),
+    DOUBAO_LINK_128K_MODEL: z.string().optional(),
   },
 
   /**
@@ -37,6 +40,9 @@ export const env = createEnv({
     CLOUDFLARE_ACCOUNT_ID: process.env.CLOUDFLARE_ACCOUNT_ID,
     CLOUDFLARE_API_TOKEN: process.env.CLOUDFLARE_API_TOKEN,
     DB_PROD_DATABASE_ID: process.env.DB_PROD_DATABASE_ID,
+    DOUBAO_OPENAI_API_KEY: process.env.DOUBAO_OPENAI_API_KEY,
+    DOUBAO_BASE_URL: process.env.DOUBAO_BASE_URL,
+    DOUBAO_LINK_128K_MODEL: process.env.DOUBAO_LINK_128K_MODEL,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**

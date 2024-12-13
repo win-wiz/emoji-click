@@ -2,9 +2,13 @@ import { db } from "@/server/db";
 import { emoji, emojiKeywords, emojiLanguage, emojiType } from "@/server/db/schema";
 import { eq, sql, and } from "drizzle-orm";
 import { AVAILABLE_LOCALES } from "@/locales/config";
+import { supportLang } from "@/utils";
 
 // 分类查找表情
-export async function fetchEmojiByGroup(lang: AVAILABLE_LOCALES) {
+export async function fetchEmojiByGroup(initLang: AVAILABLE_LOCALES) {
+
+  const lang = supportLang.includes(initLang) ? initLang : 'en';
+
   try {
     const categoryPrepare = db
       .select({
@@ -62,7 +66,9 @@ export async function fetchEmojiByGroup(lang: AVAILABLE_LOCALES) {
 
 
 // 查找热门表情
-export async function fetchHotEmoji(lang: AVAILABLE_LOCALES) {
+export async function fetchHotEmoji(initLang: AVAILABLE_LOCALES) {
+
+  const lang = supportLang.includes(initLang) ? initLang : 'en'; 
   try {
     const hotPrepare = db
       .select({
@@ -92,7 +98,10 @@ export async function fetchHotEmoji(lang: AVAILABLE_LOCALES) {
 }
 
 // 随机查找10个关键词
-export async function fetchRandomKeywords(lang: AVAILABLE_LOCALES) {
+export async function fetchRandomKeywords(initLang: AVAILABLE_LOCALES) {
+
+  const lang = supportLang.includes(initLang) ? initLang : 'en';
+  
   const keywords = db
     .select({
       content: emojiKeywords.content

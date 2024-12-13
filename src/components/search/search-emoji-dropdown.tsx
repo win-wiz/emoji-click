@@ -1,15 +1,14 @@
 import { t, Trans } from "@lingui/macro";
 import { memo, useState, useCallback, useEffect, useRef, useMemo } from "react";
-import debounce from 'lodash/debounce';
 import { EmojiType } from "@/types/emoji";
 import clsx from "clsx";
 import { useToast } from '@/components/ui/use-toast'
-import { ArrowUpRight, X } from 'lucide-react'
+import { ArrowUpRight, X, Loader2 } from 'lucide-react'
 import { AVAILABLE_LOCALES } from "@/locales/config";
 import Link from "next/link";
 
 // 抽离常量
-const DEBOUNCE_DELAY = 300;
+// const DEBOUNCE_DELAY = 800;
 const HIDE_DELAY = 200;
 const TOAST_DURATION = 1500;
 
@@ -50,7 +49,7 @@ const EmojiItem = memo(function EmojiItem({
           <div className="flex items-center gap-2 mt-1">
             <div className="flex items-center gap-1.5">
               <span className="inline-flex items-center px-2 py-0.5 text-xs bg-purple-50 text-purple-700 rounded-md border border-purple-100/50">
-                {emoji.typeName}
+                {emoji.typeName || emoji.type}
               </span>
               {emoji.hot === 1 && (
                 <span className="inline-flex items-center px-1.5 py-0.5 text-xs bg-red-50 text-red-600 rounded-md border border-red-100/50">
@@ -78,14 +77,18 @@ const EmojiItem = memo(function EmojiItem({
         </button>
         
         {/* 跳转至详情 */}
-        <Link
-          href={`/${lang}/${emoji.fullCode}`}
-          className="p-2 text-gray-600 hover:text-purple-600 hover:bg-purple-100/80 rounded-lg transition-colors"
-          onClick={handleLinkClick}
-          title={t`查看详情`}
+        {
+          emoji.fullCode && (
+            <Link
+              href={`/${lang}/${emoji.fullCode}`}
+              className="p-2 text-gray-600 hover:text-purple-600 hover:bg-purple-100/80 rounded-lg transition-colors"
+              onClick={handleLinkClick}
+              title={t`查看详情`}
         >
-          <ArrowUpRight className="w-4 h-4" />
-        </Link>
+              <ArrowUpRight className="w-4 h-4" />
+            </Link>
+          )
+        }
       </div>
     </div>
   );
@@ -113,9 +116,10 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   // 使用 useMemo 优化搜索按钮的类名
   const searchButtonClassName = useMemo(() => 
     clsx(
-      "absolute right-2 top-1/2 -translate-y-1/2 px-6 py-2 rounded-xl transition-colors",
+      "absolute right-2 top-1/2 -translate-y-1/2 px-6 py-2 rounded-xl transition-all duration-200",
       "bg-purple-600 text-white hover:bg-purple-700",
-      isLoading && "opacity-50 cursor-not-allowed"
+      "flex items-center gap-2",
+      isLoading && "!bg-purple-500 cursor-not-allowed"
     ),
     [isLoading]
   );
@@ -159,29 +163,32 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
     }
   }
 
-  // 1. 先声明 debouncedSearch
-  const debouncedSearch = useMemo(
-    () => debounce((text: string) => {
-      if (!text.trim()) {
-        setEmojis([]);
-        setIsOpen(false);
-        return;
-      }
-
-      setIsLoading(true);
-      setError(null);
-      
-      handleSearch(text);
-    }, DEBOUNCE_DELAY),
-    []
-  );
-
-  // 2. 然后再声明依赖 debouncedSearch 的函数
+  // 移除 debouncedSearch，改为直接处理搜索
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setSearchText(value);
-    debouncedSearch(value);
-  }, [debouncedSearch]);
+  }, []);
+
+  // 新增处理搜索提交的函数
+  const handleSubmitSearch = useCallback(() => {
+    if (!searchText.trim()) {
+      setEmojis([]);
+      setIsOpen(false);
+      return;
+    }
+
+    setIsLoading(true);
+    setError(null);
+    handleSearch(searchText);
+  }, [searchText]);
+
+  // 新增处理回车键的函数
+  const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      handleSubmitSearch();
+    }
+  }, [handleSubmitSearch]);
 
   // 优化复制功能
   const copyToClipboard = useCallback(async (text: string) => {
@@ -211,9 +218,13 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   }, [hasResults]);
 
   const handleMouseLeave = useCallback((e: React.MouseEvent) => {
-    const relatedTarget = e.relatedTarget as Node;
-    if (containerRef.current?.contains(relatedTarget)) {
-      return;
+    try {
+      const relatedTarget = e.relatedTarget as Node;
+      if (containerRef.current?.contains(relatedTarget)) {
+        return;
+      }
+    } catch (error) {
+      console.error('handleMouseLeave error', error);
     }
     
     hideTimeoutRef.current = setTimeout(() => {
@@ -224,12 +235,11 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   // 清理副作用
   useEffect(() => {
     return () => {
-      debouncedSearch.cancel();
       if (hideTimeoutRef.current) {
         clearTimeout(hideTimeoutRef.current);
       }
     };
-  }, [debouncedSearch]);
+  }, []);
 
   useEffect(() => {
     if (initText) {
@@ -246,11 +256,12 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
       onMouseLeave={handleMouseLeave}
     >
       <div className="relative group">
-        {/* 搜索输入框 */}
+        {/* 更新搜索输入框，添加 onKeyDown 处理 */}
         <input
           type="text"
           value={searchText}
           onChange={handleInputChange}
+          onKeyDown={handleKeyDown}
           placeholder={t`用日常口语描述你的感受...`}
           className="w-full px-4 py-3.5 rounded-2xl border border-purple-200/70 focus:outline-none focus:ring-2 focus:ring-purple-500/30 shadow-sm bg-white/80 backdrop-blur-sm"
         />
@@ -268,12 +279,20 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
           </button>
         )}
 
-        {/* 搜索按钮 */}
+        {/* 更新搜索按钮 */}
         <button 
           className={searchButtonClassName}
           disabled={isLoading}
+          onClick={handleSubmitSearch}
         >
-          {isLoading ? <Trans>搜索中...</Trans> : <Trans>搜索</Trans>}
+          {isLoading ? (
+            <>
+              <Loader2 className="w-4 h-4 animate-spin" />
+              <span><Trans>搜索中</Trans></span>
+            </>
+          ) : (
+            <span><Trans>搜索</Trans></span>
+          )}
         </button>
       </div>
 
