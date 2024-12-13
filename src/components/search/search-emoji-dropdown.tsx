@@ -139,7 +139,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
     try {
       // 使用 encodeURIComponent 编码搜索键词
       const encodedText = encodeURIComponent(text);
-      const response: Record<string, any> = await fetch(`/api/search?q=${encodedText}`);
+      const response: Record<string, any> = await fetch(`${lang}/api/search?q=${encodedText}`);
       const { results, status } = await response.json();
       console.log('results', results);
       console.log('status', status);
