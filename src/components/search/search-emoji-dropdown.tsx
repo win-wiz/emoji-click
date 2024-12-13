@@ -263,7 +263,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
           value={searchText}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          placeholder={t`用日常口语描述你的感受...`}
+          placeholder={t`用日常口语描述你的感受，按回车或点击搜索...`}
           className="w-full px-4 py-3.5 rounded-2xl border border-purple-200/70 focus:outline-none focus:ring-2 focus:ring-purple-500/30 shadow-sm bg-white/80 backdrop-blur-sm"
         />
 

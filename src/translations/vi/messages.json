@@ -194,7 +194,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        294
+        295
       ]
     ]
   },
@@ -205,7 +205,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        291
+        292
       ]
     ]
   },
@@ -283,7 +283,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        310
+        311
       ]
     ]
   },
@@ -353,6 +353,17 @@
       ]
     ]
   },
+  "Ime1gk": {
+    "translation": "Miếng cảm giác của bạn bằng lời nói thông thường, nhấn Enter hoặc nhấp vào Tìm kiếm...",
+    "message": "用日常口语描述你的感受，按回车或点击搜索...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        266
+      ]
+    ]
+  },
   "h+dKvB": {
     "translation": "Miêu tả cảm giác của bạn bằng lời nói thông thường...",
     "message": "用日常口语描述你的感受...",
@@ -362,7 +373,8 @@
         "src/components/search/search-emoji-dropdown.tsx",
         265
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "OS9sY4": {
     "translation": "Các đề xuất liên quan",
