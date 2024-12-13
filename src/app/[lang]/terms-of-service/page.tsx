@@ -1,6 +1,7 @@
 import { t } from '@lingui/macro';
 import { memo } from 'react';
 
+export const runtime = 'edge';
 // 提取标题组件
 const PageTitle = memo(({ title, effectiveDate }: { title: string; effectiveDate: string }) => (
   <div className="text-center mb-12">
