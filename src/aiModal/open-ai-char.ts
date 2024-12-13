@@ -12,7 +12,8 @@ const doubao = createOpenAI({
   compatibility: 'compatible'
 });
 
-const MODEL_DOUBLE_LINK_128K = 'ep-20241129111228-9bswt';
+// const MODEL_DOUBLE_LINK_128K = 'ep-20241213221042-fgbmt';
+const MODEL_DOUBLE_LINK_128K = env.DOUBAO_LINK_128K_MODEL!;
 
 export async function doubaoGenerateEmoji(prompt: string) {
   const response = await generateText({
