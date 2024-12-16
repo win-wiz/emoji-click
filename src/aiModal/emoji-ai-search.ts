@@ -1,4 +1,4 @@
-import { doubaoGenerateEmoji } from "./open-ai-char";
+import { doubaoGenerateEmoji, moleGenerateEmoji } from "./open-ai-char";
 
 export async function emojiAiSearch(query: string, lang: string) {
 
@@ -25,7 +25,8 @@ export async function emojiAiSearch(query: string, lang: string) {
     - 使用的语言是：${lang}， 输入搜索的关键词是：${query}
   `
 
-  const response: Record<string, any> = await doubaoGenerateEmoji(prompt);
+  // const response: Record<string, any> = await doubaoGenerateEmoji(prompt);
+  const response: Record<string, any> = await moleGenerateEmoji(prompt);
   // console.log('response===>>>>', response);
 
   const emojiCtx = response.choices[0].message.content;
