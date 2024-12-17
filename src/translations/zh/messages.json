@@ -1,26 +1,4 @@
 {
-  "Wsme9p": {
-    "translation": "Ai Emoji 服务条款",
-    "message": "Ai Emoji 服务条款",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/terms-of-service/page.tsx",
-        71
-      ]
-    ]
-  },
-  "tMueux": {
-    "translation": "Ai Emoji 隐私政策",
-    "message": "Ai Emoji 隐私政策",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/privacy-policy/page.tsx",
-        46
-      ]
-    ]
-  },
   "TsoDGX": {
     "translation": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
@@ -32,6 +10,52 @@
       ]
     ]
   },
+  "CVPQ53": {
+    "translation": "Emoji Ai Finder 服务条款",
+    "message": "Emoji Ai Finder 服务条款",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        72
+      ]
+    ]
+  },
+  "Wsme9p": {
+    "translation": "Emoji Ai Finder 服务条款",
+    "message": "Emoji Ai Finder 服务条款",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        72
+      ]
+    ],
+    "obsolete": true
+  },
+  "sxwLz2": {
+    "translation": "Emoji Ai Finder 隐私政策",
+    "message": "Emoji Ai Finder 隐私政策",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        47
+      ]
+    ]
+  },
+  "tMueux": {
+    "translation": "Emoji Ai Finder 隐私政策",
+    "message": "Emoji Ai Finder 隐私政策",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        47
+      ]
+    ],
+    "obsolete": true
+  },
   "xKzy0A": {
     "translation": "Subrise 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
     "message": "Subrise 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
@@ -39,7 +63,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        92
+        93
       ]
     ]
   },
@@ -50,7 +74,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        62
+        63
       ]
     ]
   },
@@ -61,7 +85,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        90
+        91
       ]
     ]
   },
@@ -72,20 +96,32 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        84
+        85
       ]
     ]
   },
-  "QyN9D2": {
-    "translation": "Subrise 运营网站 https://subrise.co/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。",
-    "message": "Subrise 运营网站 https://subrise.co/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。",
+  "4ZSNQh": {
+    "translation": "Subrise 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。",
+    "message": "Subrise 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        49
+        50
       ]
     ]
+  },
+  "QyN9D2": {
+    "translation": "Subrise 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。",
+    "message": "Subrise 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        50
+      ]
+    ],
+    "obsolete": true
   },
   "aDJB+h": {
     "translation": "Use Lingui to add a new language to your website in 5 minutes with AI",
@@ -116,7 +152,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        51
+        52
       ]
     ]
   },
@@ -142,7 +178,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        80
+        81
       ]
     ]
   },
@@ -157,6 +193,17 @@
       ]
     ]
   },
+  "EjfkAX": {
+    "translation": "使用示例",
+    "message": "使用示例",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-example.tsx",
+        17
+      ]
+    ]
+  },
   "YDQxUt": {
     "translation": "使用许可",
     "message": "使用许可",
@@ -164,7 +211,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        75
+        76
       ]
     ]
   },
@@ -175,7 +222,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        50
+        51
       ]
     ]
   },
@@ -186,7 +233,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        91
+        92
       ]
     ]
   },
@@ -197,7 +244,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        77
+        78
       ]
     ]
   },
@@ -208,7 +255,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        63
+        64
       ]
     ]
   },
@@ -219,7 +266,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        76
+        77
       ]
     ]
   },
@@ -230,7 +277,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        83
+        84
       ]
     ]
   },
@@ -296,7 +343,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        88
+        89
       ]
     ]
   },
@@ -307,7 +354,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        86
+        87
       ]
     ]
   },
@@ -377,7 +424,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        68
+        69
       ]
     ]
   },
@@ -388,7 +435,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        96
+        97
       ]
     ]
   },
@@ -399,7 +446,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        82
+        83
       ]
     ]
   },
@@ -410,7 +457,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        53
+        54
       ]
     ]
   },
@@ -432,7 +479,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        78
+        79
       ]
     ]
   },
@@ -443,7 +490,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        79
+        80
       ]
     ]
   },
@@ -491,7 +538,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        73
+        74
       ]
     ]
   },
@@ -502,7 +549,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        66
+        67
       ]
     ]
   },
@@ -513,7 +560,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        52
+        53
       ]
     ]
   },
@@ -524,7 +571,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        64
+        65
       ]
     ]
   },
@@ -535,7 +582,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        58
+        59
       ]
     ]
   },
@@ -546,7 +593,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        81
+        82
       ]
     ]
   },
@@ -601,7 +648,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        55
+        56
       ]
     ]
   },
@@ -634,7 +681,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        60
+        61
       ]
     ]
   },
@@ -645,7 +692,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        61
+        62
       ]
     ]
   },
@@ -656,7 +703,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        59
+        60
       ]
     ]
   },
@@ -689,7 +736,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        65
+        66
       ]
     ]
   },
@@ -700,7 +747,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        87
+        88
       ]
     ]
   },
@@ -722,20 +769,32 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        48
+        49
       ]
     ]
   },
-  "hS0pSC": {
-    "translation": "欢迎访问 Subrise。通过访问我们的网站 (https://subrise.co/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。",
-    "message": "欢迎访问 Subrise。通过访问我们的网站 (https://subrise.co/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。",
+  "tr/dDQ": {
+    "translation": "欢迎访问 Subrise。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。",
+    "message": "欢迎访问 Subrise。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        74
+        75
       ]
     ]
+  },
+  "hS0pSC": {
+    "translation": "欢迎访问 Subrise。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。",
+    "message": "欢迎访问 Subrise。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        75
+      ]
+    ],
+    "obsolete": true
   },
   "AW9NLp": {
     "translation": "没有找到相关表情",
@@ -781,6 +840,17 @@
       ]
     ]
   },
+  "imwQl1": {
+    "translation": "版权所有 © 2024 EmojiAiFinder 保留所有权利",
+    "message": "版权所有 © 2024 EmojiAiFinder 保留所有权利",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        82
+      ]
+    ]
+  },
   "W1+tuL": {
     "translation": "版权所有 © 2024 Subrise. 保留所有权利 ✨",
     "message": "版权所有 © 2024 Subrise. 保留所有权利 ✨",
@@ -790,7 +860,8 @@
         "src/components/footer.tsx",
         82
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "w/qYEh": {
     "translation": "理解情感语义",
@@ -810,11 +881,11 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        47
+        48
       ],
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        72
+        73
       ]
     ]
   },
@@ -838,6 +909,18 @@
         "src/components/footer.tsx",
         66
       ]
+    ],
+    "obsolete": true
+  },
+  "KuBgYO": {
+    "translation": "用AI魔法创造富有表现力的表情 🤖",
+    "message": "用AI魔法创造富有表现力的表情 🤖",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        66
+      ]
     ]
   },
   "LgfBZM": {
@@ -851,6 +934,17 @@
       ]
     ]
   },
+  "ZEG8fP": {
+    "translation": "用日常口语描述你的感受，回车或点击",
+    "message": "用日常口语描述你的感受，回车或点击",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        266
+      ]
+    ]
+  },
   "Ime1gk": {
     "translation": "用日常口语描述你的感受，按回车或点击搜索...",
     "message": "用日常口语描述你的感受，按回车或点击搜索...",
@@ -860,7 +954,8 @@
         "src/components/search/search-emoji-dropdown.tsx",
         266
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "QGM+6Y": {
     "translation": "电子邮件地址",
@@ -869,7 +964,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        54
+        55
       ]
     ]
   },
@@ -924,7 +1019,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        93
+        94
       ]
     ]
   },
@@ -935,11 +1030,11 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        67
+        68
       ],
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        95
+        96
       ],
       [
         "src/components/footer.tsx",
@@ -987,7 +1082,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        85
+        86
       ]
     ]
   },
@@ -1009,7 +1104,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        56
+        57
       ]
     ]
   },
@@ -1020,7 +1115,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        94
+        95
       ]
     ]
   },
@@ -1031,7 +1126,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        89
+        90
       ]
     ]
   },
@@ -1053,7 +1148,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        57
+        58
       ]
     ]
   }

@@ -20,6 +20,9 @@ export const env = createEnv({
     DOUBAO_LINK_128K_MODEL: z.string().optional(),
     MOLE_API_KEY: z.string().optional(),
     MOLE_GPT_4O_MINI_MODEL: z.string().optional(),
+    MONICA_API_KEY: z.string().optional(),
+    MONICA_BASE_URL: z.string().optional(),
+    MONICA_MODEL: z.string().optional(),
   },
 
   /**
@@ -47,6 +50,9 @@ export const env = createEnv({
     DOUBAO_LINK_128K_MODEL: process.env.DOUBAO_LINK_128K_MODEL,
     MOLE_API_KEY: process.env.MOLE_API_KEY,
     MOLE_GPT_4O_MINI_MODEL: process.env.MOLE_GPT_4O_MINI_MODEL,
+    MONICA_API_KEY: process.env.MONICA_API_KEY,
+    MONICA_BASE_URL: process.env.MONICA_BASE_URL,
+    MONICA_MODEL: process.env.MONICA_MODEL,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**

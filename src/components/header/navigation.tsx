@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -13,9 +12,9 @@ export default function Navigation(
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl">✨</span>
-            <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600">
-              Ai Emoji
+            <span className="text-2xl">🤖</span>
+            <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
+              Emoji Ai Finder
             </span>
           </Link>
           

@@ -14,7 +14,7 @@ export default function LanguageToggle(
 
   return (
     <div className="group dropdown dropdown-end dropdown-hover">
-      <div tabIndex={0} role="button" className="relative btn border group-hover:border-2 group-hover:border-violet-600 bg-white m-1 hover:bg-transparent">
+      <div tabIndex={0} role="button" className="relative btn border group-hover:border-1 group-hover:border-violet-600 bg-white m-1 hover:bg-transparent">
         <p className="font-semibold flex items-center gap-2 text-md">
           {getLocaleFlag(lang || DEFAULT_LOCALE)} 
           <span>{ currentLang }</span>
@@ -24,7 +24,7 @@ export default function LanguageToggle(
         {
           locales.map((locale) => (
             <li key={locale.key}>
-              <Link href={`/${locale.key}/${pathname.split('/').slice(2).join('/')}`}>{getLocaleFlag(locale.key)} { locale.name }</Link>
+              <Link href={`/${locale.key}/${pathname?.split('/').slice(2).join('/')}`}>{getLocaleFlag(locale.key)} { locale.name }</Link>
             </li>
           ))
         }

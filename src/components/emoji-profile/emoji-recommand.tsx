@@ -8,7 +8,7 @@ const EmojiRecommand = memo(function EmojiRecommand({
   recommands,
   lang
 }: {
-  recommands: string[],
+  recommands: Record<string, any>[],
   lang: AVAILABLE_LOCALES
 }) {
   return (
@@ -16,8 +16,10 @@ const EmojiRecommand = memo(function EmojiRecommand({
       <EmojiSectionTitle>
         <Trans>相关推荐</Trans>
       </EmojiSectionTitle>
-      <div className="relative mt-8 max-w-3xl mx-auto grid md:grid-cols-2 gap-6">
-        {/* {recommands.map((recommand) => <SingleEmoji emojiItem={recommand} lang={lang} />)} */}
+      <div className="flex justify-center mt-8 max-w-3xl mx-auto space-x-4">
+        {recommands.map((recommand, index) => (
+          <SingleEmoji key={index} emojiItem={recommand} lang={lang} />
+        ))}
       </div>
     </section>
   )

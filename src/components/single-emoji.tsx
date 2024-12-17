@@ -2,7 +2,7 @@
 
 import { AVAILABLE_LOCALES } from "@/locales/config";
 import { Trans } from "@lingui/macro";
-import { NotebookTabs } from "lucide-react";
+import { Info } from "lucide-react";
 import Link from "next/link";
 import { memo, useCallback, useMemo, useState } from "react";
 
@@ -77,7 +77,7 @@ const SingleEmoji = memo(function SingleEmoji({
       <Link href={detailsUrl}>
         <div className="absolute top-2 right-2">
           <button className="p-1.5 rounded-full opacity-0 group-hover:opacity-100 hover:bg-gray-100 transition-all duration-300">
-            <NotebookTabs className="w-4 h-4 text-gray-400 hover:text-gray-600" />
+            <Info className="w-5 h-5 text-gray-400 hover:text-gray-600" />
           </button>
         </div>
       </Link>

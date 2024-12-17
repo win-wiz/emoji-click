@@ -22,11 +22,11 @@ export default async function RootLayout({
   
   return (
     <html lang={lang} suppressHydrationWarning className="scroll-smooth">
-      <body>
+      <body className="bg-white">
         <AppWithTranslation i18n={i18n}>
           <main className="flex flex-col min-h-screen">
             <Header lang={lang as AVAILABLE_LOCALES}/>
-            <div className="flex-grow">
+            <div className="flex-grow min-h-screen">
               {children}
             </div>
             <Footer lang={lang} />

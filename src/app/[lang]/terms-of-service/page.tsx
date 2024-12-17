@@ -69,10 +69,10 @@ AcceptanceSection.displayName = 'AcceptanceSection';
 
 function TermsOfService() {
   const _i18n = {
-    "title": t`Ai Emoji 服务条款`,
+    "title": t`Emoji Ai Finder 服务条款`,
     "effective_date": t`生效日期：2024-12-12`,
     "overview": t`引言`,
-    "overview_description": t`欢迎访问 Subrise。通过访问我们的网站 (https://subrise.co/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。`,
+    "overview_description": t`欢迎访问 Subrise。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。`,
     "acceptance_of_terms": t`使用许可`,
     "acceptance_of_terms_description": t`允许暂时下载 Subrise 网站上的材料（信息或软件）一份，仅供个人、非商业的临时观看。这是授予许可，而不是转让所有权，并且在此许可下，您不得：`,
     "acceptance_of_terms_description_1": t`修改或复制材料；`,

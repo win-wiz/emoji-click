@@ -8,9 +8,9 @@ import { memo, useMemo } from 'react';
 // 提取Logo组件并使用memo
 const Logo = memo(() => (
   <Link href="/" className="mb-6 flex items-center gap-2">
-    <span className="text-2xl">✨</span>
+    <span className="text-2xl">🤖</span>
     <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600">
-      Ai Emoji
+      Emoji Ai Finder
     </h1>
   </Link>
 ));
@@ -47,8 +47,8 @@ const ContactInfo = memo(() => (
       <span>💌</span>
       <Trans>联系我们</Trans>
     </h4>
-    <a href="mailto:support@aiemoji.co" className="hover:text-violet-600 transition-colors">
-      support@aiemoji.co
+    <a href="mailto:support@emojiaifinder.co" className="hover:text-violet-600 transition-colors">
+      support@emojiaifinder.co
     </a>
   </div>
 ));
@@ -63,7 +63,7 @@ function Footer({ lang }: { lang: AVAILABLE_LOCALES }) {
           <div className="col-span-2">
             <Logo />
             <p className="mb-6">
-              <Trans>用AI魔法创造富有表现力的表情 ✨</Trans>
+              <Trans>用AI魔法创造富有表现力的表情 🤖</Trans>
             </p>
             <ContactInfo />
           </div>
@@ -79,7 +79,7 @@ function Footer({ lang }: { lang: AVAILABLE_LOCALES }) {
         </div>
 
         <div className="mt-16 pt-8 border-t border-zinc-200 flex flex-col md:flex-row justify-between items-center">
-          <p><Trans>版权所有 © 2024 Subrise. 保留所有权利 ✨</Trans></p>
+          <p><Trans>版权所有 © 2024 EmojiAiFinder 保留所有权利</Trans></p>
         </div>
       </div>
     </footer>

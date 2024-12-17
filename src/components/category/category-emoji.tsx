@@ -11,7 +11,7 @@ import { debounce } from '@/utils'
 import { EmojiType } from '@/types/category'
 
 const ITEMS_PER_PAGE = 30
-const SCROLL_THRESHOLD = 1000  // 增大滚动触发阈值，提前加载更多内容
+const SCROLL_THRESHOLD = 200  // 增大滚动触发阈值，提前加载更多内容
 
 // 分类状态接口
 interface CategoryState {

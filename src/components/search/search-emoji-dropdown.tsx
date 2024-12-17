@@ -263,7 +263,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
           value={searchText}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          placeholder={t`用日常口语描述你的感受，按回车或点击搜索...`}
+          placeholder={t`用日常口语描述你的感受，回车或点击`}
           className="w-full px-4 py-3.5 rounded-2xl border border-purple-200/70 focus:outline-none focus:ring-2 focus:ring-purple-500/30 shadow-sm bg-white/80 backdrop-blur-sm"
         />
 
@@ -271,7 +271,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
         {searchText && (
           <button
             onClick={handleClearClick}
-            className="absolute right-24 top-1/2 -translate-y-1/2 p-1.5 rounded-full text-gray-400 
+            className="absolute right-28 top-1/2 -translate-y-1/2 p-1.5 rounded-full text-gray-400 
               hover:text-gray-500 hover:bg-gray-100/80 transition-all duration-200
               opacity-0 group-hover:opacity-100 focus:opacity-100"
             title="清空"

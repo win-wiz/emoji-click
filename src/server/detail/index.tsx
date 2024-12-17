@@ -1,7 +1,7 @@
 import { AVAILABLE_LOCALES } from "@/locales/config";
 import { db } from "@/server/db";
 import { emoji, emojiKeywords, emojiLanguage } from "../db/schema";
-import { eq, and, sql } from "drizzle-orm";
+import { eq, and, sql, inArray } from "drizzle-orm";
 import { supportLang } from "@/utils";
 
 export async function fetchEmojiProfileByFullCode(fullCode: string, initLang: AVAILABLE_LOCALES) {
@@ -14,6 +14,7 @@ export async function fetchEmojiProfileByFullCode(fullCode: string, initLang: AV
         code: emoji.code,
         fullCode: emoji.fullCode,
         emotion: emoji.emotion,
+        related: emoji.related,
         name: emojiLanguage.name,
         meaning: emojiLanguage.meaning,
         usageExample: emojiLanguage.usageExample,
@@ -74,9 +75,25 @@ export async function fetchEmojiProfileByFullCode(fullCode: string, initLang: AV
     }, []);
 
     // console.log('keywords====>>>', keywords)
+
+    // 查找相关推荐
+    const related = profile[0]?.related?.split(',') || [];
+    const recommandsPrepare = db
+      .select({
+        fullCode: emoji.fullCode,
+        code: emoji.code,
+        name: emojiLanguage.name,
+      })
+      .from(emoji)
+      .innerJoin(emojiLanguage, and(eq(emojiLanguage.fullCode, emoji.fullCode), eq(emojiLanguage.language, lang)))
+      .where(inArray(emoji.code, related))
+      .prepare();
+
+    const recommands = await recommandsPrepare.execute() || [];
     
     const data: Record<string, any> = profile[0] || {};
     data.keywords = keywords;
+    data.recommands = recommands;
 
     return {
       success: true,

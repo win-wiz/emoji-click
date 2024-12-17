@@ -28,7 +28,7 @@ export default async function DetailsPage({
   const emojiData = await fetchEmojiProfileByFullCode(slug, lang);
 
   return (
-    <EmojiProfile emojiData={emojiData.data || {}} />
+    <EmojiProfile emojiData={emojiData.data || {}} lang={lang} />
   )
 }
 

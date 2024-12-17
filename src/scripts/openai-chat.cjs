@@ -3,15 +3,23 @@ const { generateText } = require('ai');
 // import openai from '@ai-sdk/openai';
 // import { generateText } from 'ai';
 
+// 豆包
 const doubao = openai.createOpenAI({
   baseURL: 'https://ark.cn-beijing.volces.com/api/v3',
   apiKey: '892eb4d5-5b9c-4a8f-a62f-e234a171007f',
   compatibility: 'compatible'
 });
-
-console.log('apiKey===>>>>', process.env.DOUBAO_OPENAI_API_KEY);
 // 豆包模型
 const MODEL_DOUBLE_LINK_128K = 'ep-20241213221042-fgbmt';
+
+// 通义千问
+// console.log('apiKey===>>>>', process.env.DOUBAO_OPENAI_API_KEY);
+const tongyi = openai.createOpenAI({
+  baseURL: 'https://dashscope.aliyuncs.com/compatible-mode/v1',
+  apiKey: '892eb4d5-5b9c-4a8f-a62f-e234a171007f',
+  compatibility: 'compatible'
+});
+
 
 /**
  * @param {any} prompt

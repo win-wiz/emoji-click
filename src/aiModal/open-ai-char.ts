@@ -2,10 +2,6 @@ import { createOpenAI } from '@ai-sdk/openai';
 import { generateText } from 'ai';
 import { env } from '@/env';
 
-// const openai = new OpenAI({
-//   apiKey: env.DOUBAO_OPENAI_API_KEY!,
-//   baseURL: env.DOUBAO_BASE_URL
-// });
 const doubao = createOpenAI({
   baseURL: env.DOUBAO_BASE_URL,
   apiKey: env.DOUBAO_OPENAI_API_KEY!,
@@ -22,6 +18,33 @@ export async function doubaoGenerateEmoji(prompt: string) {
   });
 
   // console.log('doubao response===>>>>', response);
+  return {
+    choices: [
+      {
+        message: {
+          content: response.text || '',
+        },
+      },
+    ]
+  }
+}
+
+
+const monica = createOpenAI({
+  baseURL: env.MONICA_BASE_URL,
+  apiKey: env.MONICA_API_KEY!,
+  compatibility: 'compatible'
+});
+
+const MODEL_MONICA = env.MONICA_MODEL!;
+
+export async function monicaGenerateEmoji(prompt: string) {
+  const response = await generateText({
+    model: monica(MODEL_MONICA),
+    prompt,
+  });
+
+  console.log('monica response===>>>>', response);
   return {
     choices: [
       {

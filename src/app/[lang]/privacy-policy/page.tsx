@@ -44,10 +44,10 @@ PersonalDataList.displayName = 'PersonalDataList';
 function PrivacyPolicy() {
   // i18n对象保持不变
   const _i18n = {
-    "title": t`Ai Emoji 隐私政策`,
+    "title": t`Emoji Ai Finder 隐私政策`,
     "effective_date": t`生效日期：2024-12-12`,
     "overview": t`概述`,
-    "overview_description": t`Subrise 运营网站 https://subrise.co/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。`,
+    "overview_description": t`Subrise 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。`,
     "information_collection": t`信息收集`,
     "personal_data": t`个人数据`,
     "personal_data_description": t`我们收集您自愿提供给我们的个人数据，包括但不限于：`,
