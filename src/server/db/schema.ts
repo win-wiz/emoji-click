@@ -1,3 +1,4 @@
+import { sql } from "drizzle-orm";
 import { 
   sqliteTable,
   AnySQLiteColumn, 
@@ -75,4 +76,16 @@ export const emojiType = sqliteTable("emojiType", {
 	name: text("name"),
 	icon: text("icon"),
 	createdAt: numeric("createdAt"),
+});
+
+export const emojiSearchTips = sqliteTable("emojiSearchTips", {
+	id: integer("id").primaryKey({ autoIncrement: true }).notNull(),
+	language: text("language").notNull(),
+	content: text("content").notNull(),
+	createdAt: numeric("createdAt").default(sql`(CURRENT_TIMESTAMP)`).notNull(),
+},
+(table) => {
+	return {
+		language: index("emojiSearchTips_language").on(table.language),
+	}
 });

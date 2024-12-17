@@ -3,7 +3,7 @@
 import { t, Trans } from '@lingui/macro';
 import { memo } from 'react';
 
-// export const runtime = 'edge';
+export const runtime = 'edge';
 // 提取标题组件
 const PageTitle = memo(({ title, effectiveDate }: { title: React.ReactNode; effectiveDate: React.ReactNode }) => (
   <div className="text-center mb-12">

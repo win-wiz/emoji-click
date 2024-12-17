@@ -48,3 +48,7 @@ yarn-error.log*
 # sql
 migrations/
 sql/
+
+# wrangler
+wrangler.toml
+.wrangler
