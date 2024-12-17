@@ -32,7 +32,7 @@ const ContentSection = memo(({ title, content, className = '' }: {
 ContentSection.displayName = 'ContentSection';
 
 // 提取个人数据列表组件
-const PersonalDataList = memo(({ items }: { items: string[] }) => (
+const PersonalDataList = memo(({ items }: { items: React.ReactNode[] }) => (
   <ul className="list-disc list-inside space-y-2 text-zinc-600 ml-4">
     {items.map((item, index) => (
       <li key={index}>{item}</li>
