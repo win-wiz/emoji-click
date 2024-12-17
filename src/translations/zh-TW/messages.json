@@ -1,0 +1,1071 @@
+{
+  "TsoDGX": {
+    "translation": "auto-i18n-next-lingui-tiny-demo，在 5 分鐘內為您的網站新增一種語言",
+    "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        17
+      ]
+    ]
+  },
+  "CVPQ53": {
+    "translation": "Emoji Ai Finder 服務條款",
+    "message": "Emoji Ai Finder 服务条款",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        72
+      ]
+    ]
+  },
+  "sxwLz2": {
+    "translation": "Emoji Ai Finder 隱私政策",
+    "message": "Emoji Ai Finder 隐私政策",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        47
+      ]
+    ]
+  },
+  "xKzy0A": {
+    "translation": "Subrise 可隨時修改其網站的這些服務條款而不作通知。透過使用本網站，您同意受當時這些服務條款的約束。",
+    "message": "Subrise 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        93
+      ]
+    ]
+  },
+  "kpztl0": {
+    "translation": "Subrise 尊重您的隱私。我們不會與任何第三方分享您的個人資料，除非為了處理您的訂單或遵守法律要求。",
+    "message": "Subrise 尊重您的隐私。我们不会与任何第三方分享您的个人数据，除非为了处理您的订单或遵守法律要求。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        63
+      ]
+    ]
+  },
+  "HU4Sgh": {
+    "translation": "Subrise 未審查與其網站連結的所有站點，並且不對任何此類連結站點的內容負責。包含任何連結並不意味著 Subrise 對該站點的認可。使用任何此類連結網站由用戶自行承擔風險。",
+    "message": "Subrise 未审查与其网站链接的所有站点，并且不对任何此类链接站点的内容负责。包含任何链接并不意味着 Subrise 对该站点的认可。使用任何此类链接网站由用户自行承担风险。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        91
+      ]
+    ]
+  },
+  "8OAEmQ": {
+    "translation": "Subrise 網站上的材料按「原樣」提供。Subrise 不作任何明示或暗示的保證，並在此放棄和否定所有其他保證，包括但不限於對適銷性、特定用途的適用性或不侵犯知識產權或其他權利的暗示保證。",
+    "message": "Subrise 网站上的材料按“原样”提供。Subrise 不作任何明示或暗示的保证，并在此放弃和否定所有其他保证，包括但不限于对适销性、特定用途的适用性或不侵犯知识产权或其他权利的暗示保证。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        85
+      ]
+    ]
+  },
+  "4ZSNQh": {
+    "translation": "Subrise 運營網站 https://emojis.click/ 並致力於保護您的隱私。本隱私政策概述了我們收集的資訊類型、我們如何使用這些資訊，以及我們採取哪些步驟確保您的個人資訊被適當處理。",
+    "message": "Subrise 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        50
+      ]
+    ]
+  },
+  "aDJB+h": {
+    "translation": "使用 Lingui 借助 AI 在 5 分鐘內為您的網站新增一種語言",
+    "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        18
+      ]
+    ]
+  },
+  "3mGxau": {
+    "translation": "東方文化解讀",
+    "message": "东方文化解读",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-cultura.tsx",
+        19
+      ]
+    ]
+  },
+  "5jRDhE": {
+    "translation": "個人資料",
+    "message": "个人数据",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        52
+      ]
+    ]
+  },
+  "uW7qaK": {
+    "translation": "個表情",
+    "message": "个表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-modal.tsx",
+        56
+      ],
+      [
+        "src/components/category/category-modal.tsx",
+        102
+      ]
+    ]
+  },
+  "qMISlw": {
+    "translation": "從材料中移除任何版權或其他專有註釋；",
+    "message": "从材料中移除任何版权或其他专有注释；",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        81
+      ]
+    ]
+  },
+  "aB+fc8": {
+    "translation": "使用場景",
+    "message": "使用场景",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-scene.tsx",
+        44
+      ]
+    ]
+  },
+  "EjfkAX": {
+    "translation": "使用示例",
+    "message": "使用示例",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-example.tsx",
+        17
+      ]
+    ]
+  },
+  "YDQxUt": {
+    "translation": "使用許可",
+    "message": "使用许可",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        76
+      ]
+    ]
+  },
+  "8Cr33/": {
+    "translation": "資訊收集",
+    "message": "信息收集",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        51
+      ]
+    ]
+  },
+  "zil5pJ": {
+    "translation": "修改",
+    "message": "修改",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        92
+      ]
+    ]
+  },
+  "pAVyKF": {
+    "translation": "修改或複製材料；",
+    "message": "修改或复制材料；",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        78
+      ]
+    ]
+  },
+  "7+ngOM": {
+    "translation": "兒童隱私",
+    "message": "儿童隐私",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        64
+      ]
+    ]
+  },
+  "Kil56d": {
+    "translation": "允許暫時下載 Subrise 網站上的材料（資訊或軟體）一份，僅供個人、非商業的臨時觀看。這是授予許可，而不是轉讓所有權，並且在此許可下，您不得：",
+    "message": "允许暂时下载 Subrise 网站上的材料（信息或软件）一份，仅供个人、非商业的临时观看。这是授予许可，而不是转让所有权，并且在此许可下，您不得：",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        77
+      ]
+    ]
+  },
+  "buIPLU": {
+    "translation": "免責聲明",
+    "message": "免责声明",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        84
+      ]
+    ]
+  },
+  "zYyCyW": {
+    "translation": "全部分類",
+    "message": "全部分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-modal.tsx",
+        38
+      ]
+    ]
+  },
+  "ysc16k": {
+    "translation": "全部表情分類",
+    "message": "全部表情分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-modal.tsx",
+        52
+      ]
+    ]
+  },
+  "jmos6W": {
+    "translation": "關鍵字",
+    "message": "关键词",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-keywords.tsx",
+        68
+      ]
+    ]
+  },
+  "+d8Frh": {
+    "translation": "載入中...",
+    "message": "加载中...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-emoji.tsx",
+        177
+      ]
+    ]
+  },
+  "Xo8GXd": {
+    "translation": "部落格",
+    "message": "博客",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        23
+      ]
+    ]
+  },
+  "B9BhEG": {
+    "translation": "在 Subrise 網站上出現的材料可能包含技術、排版或攝影錯誤。Subrise 不保證其網站上的任何材料準確、完整或最新。Subrise 可以隨時更改其網站上包含的材料而不作通知。但是，Subrise 不承諾更新材料。",
+    "message": "在 Subrise 网站上出现的材料可能包含技术、排印或摄影错误。Subrise 不保证其网站上的任何材料准确、完整或最新。Subrise 可以随时更改其网站上包含的材料而不作通知。但是，Subrise 不承诺更新材料。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        89
+      ]
+    ]
+  },
+  "OEwk4i": {
+    "translation": "在任何情況下，Subrise 或其供應商均不對任何損害（包括但不限於資料或利潤損失或因業務中斷造成的損害）承擔責任，這些損害是由於使用或無法使用 Subrise 網站上的材料而引起的，即使 Subrise 或 Subrise 授權代表已被口頭或書面通知可能會造成此類損害的可能性。",
+    "message": "在任何情况下，Subrise 或其供应商均不对任何损害（包括但不限于数据或利润损失或因业务中断造成的损害）承担责任，这些损害是由于使用或无法使用 Subrise 网站上的材料而引起的，即使 Subrise 或 Subrise 授权代表已被口头或书面通知可能会造成此类损害的可能性。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        87
+      ]
+    ]
+  },
+  "Q54ALc": {
+    "translation": "基本含義",
+    "message": "基本含义",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-meaning.tsx",
+        54
+      ]
+    ]
+  },
+  "94fTVg": {
+    "translation": "複製",
+    "message": "复制",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        72
+      ]
+    ]
+  },
+  "4Yl9f0": {
+    "translation": "複製失敗，請重試",
+    "message": "复制失败，请重试",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        109
+      ],
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        204
+      ]
+    ]
+  },
+  "9ufcus": {
+    "translation": "複製成功",
+    "message": "复制成功",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        41
+      ]
+    ]
+  },
+  "HYMMQU": {
+    "translation": "複製表情",
+    "message": "复制表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        46
+      ]
+    ]
+  },
+  "SY3TBx": {
+    "translation": "如果您對本隱私政策有任何疑問或擔憂，請透過 support@subrise.co 與我們聯繫。",
+    "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@subrise.co 与我们联系。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        69
+      ]
+    ]
+  },
+  "Yzb/Ke": {
+    "translation": "如果您對這些條款有任何疑問，請透過 support@subrise.co 與我們聯繫。",
+    "message": "如果您对这些条款有任何疑问，请通过 support@subrise.co 与我们联系。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        97
+      ]
+    ]
+  },
+  "6J4GG8": {
+    "translation": "如果您違反這些限制中的任何一項，此許可將自動終止，並且 Subrise 可隨時終止此許可。在終止您查看這些材料或此許可終止時，您必須銷毀您是否以電子格式或印刷格式擁有的任何下載的材料。",
+    "message": "如果您违反这些限制中的任何一项，此许可将自动终止，并且 Subrise 可随时终止此许可。在终止您查看这些材料或此许可终止时，您必须销毁您是否以电子格式或印刷格式拥有的任何下载的材料。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        83
+      ]
+    ]
+  },
+  "3defIA": {
+    "translation": "姓名",
+    "message": "姓名",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        54
+      ]
+    ]
+  },
+  "Xr/E0m": {
+    "translation": "導航",
+    "message": "导航",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        74
+      ]
+    ]
+  },
+  "QP4I14": {
+    "translation": "將材料用於任何商業目的，或用於任何公共展示（商業或非商業）；",
+    "message": "将材料用于任何商业目的，或用于任何公共展示（商业或非商业）；",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        79
+      ]
+    ]
+  },
+  "Gke0/g": {
+    "translation": "嘗試對 Subrise 網站上的任何軟體進行反編譯或逆向工程；",
+    "message": "尝试对 Subrise 网站上的任何软件进行反编译或逆向工程；",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        80
+      ]
+    ]
+  },
+  "nrV1hs": {
+    "translation": "工作場景",
+    "message": "工作场景",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-scene.tsx",
+        32
+      ]
+    ]
+  },
+  "QM99lf": {
+    "translation": "已複製",
+    "message": "已复制",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/single-emoji.tsx",
+        32
+      ]
+    ]
+  },
+  "uTD4IG": {
+    "translation": "已複製到剪貼簿",
+    "message": "已复制到剪贴板",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        103
+      ],
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        198
+      ]
+    ]
+  },
+  "OIGOYd": {
+    "translation": "引言",
+    "message": "引言",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        74
+      ]
+    ]
+  },
+  "Mjq1wv": {
+    "translation": "我們可能會不時更新我們的隱私政策。我們將透過在本頁面上發佈新的隱私政策並更新頁面頂部的「生效日期」來通知您任何變更。我們還會透過電子郵件通知您重大變更。",
+    "message": "我们可能会不时更新我们的隐私政策。我们将通过在本页面上发布新的隐私政策并更新页面顶部的“生效日期”来通知您任何变更。我们还会通过电子邮件通知您重大变更。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        67
+      ]
+    ]
+  },
+  "W0blWg": {
+    "translation": "我們收集您自願提供給我們的個人資料，包括但不限於：",
+    "message": "我们收集您自愿提供给我们的个人数据，包括但不限于：",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        53
+      ]
+    ]
+  },
+  "7zNvUG": {
+    "translation": "我們的服務不適用於 18 歲以下的兒童。我們不會有意收集兒童的個人資訊。",
+    "message": "我们的服务不适用于18岁以下的儿童。我们不会有意收集儿童的个人信息。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        65
+      ]
+    ]
+  },
+  "1P/WNr": {
+    "translation": "我們還透過網路 cookie 收集非個人資料，其中包括您的 IP 位址、瀏覽器類型以及您在我們網站上訪問的頁面等使用詳情。這些資料用於增強您在我們網站上的體驗。",
+    "message": "我们还通过网络cookie收集非个人数据，其中包括您的IP地址、浏览器类型以及您在我们网站上访问的页面等使用详情。这些数据用于增强您在我们网站上的体验。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        59
+      ]
+    ]
+  },
+  "O1Pats": {
+    "translation": "或將材料轉移給另一個人或在任何其他伺服器上「鏡像」材料。",
+    "message": "或将材料转移给另一个人或在任何其他服务器上“镜像”材料。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        82
+      ]
+    ]
+  },
+  "z3xT8q": {
+    "translation": "描述您的心情，讓 AI 幫您找到合適的表情",
+    "message": "描述你的心情，让 AI 帮你找到合适的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-type-write.tsx",
+        13
+      ]
+    ]
+  },
+  "r6acDk": {
+    "translation": "搜尋",
+    "message": "搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        295
+      ]
+    ]
+  },
+  "ErJqLL": {
+    "translation": "搜尋中",
+    "message": "搜索中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        292
+      ]
+    ]
+  },
+  "dnLXYZ": {
+    "translation": "搜尋出錯，請稍後重試",
+    "message": "搜索出错，请稍后重试",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        159
+      ]
+    ]
+  },
+  "tEMpk0": {
+    "translation": "支付資訊",
+    "message": "支付信息",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        56
+      ]
+    ]
+  },
+  "ZB1owk": {
+    "translation": "支援各種口語表達",
+    "message": "支持各种口语表达",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/emoji-func-tag.tsx",
+        9
+      ]
+    ]
+  },
+  "lm7p2W": {
+    "translation": "支援多語言搜尋",
+    "message": "支持多语言搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/emoji-func-tag.tsx",
+        20
+      ]
+    ]
+  },
+  "ZQU+W3": {
+    "translation": "收集您的資料的主要目的是處理您的訂單並改善我們網站的功能和服務。",
+    "message": "收集您的数据的主要目的是处理您的订单并改善我们网站的功能和服务。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        61
+      ]
+    ]
+  },
+  "46hgBE": {
+    "translation": "資料共享",
+    "message": "数据共享",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        62
+      ]
+    ]
+  },
+  "KrpxAk": {
+    "translation": "資料收集目的",
+    "message": "数据收集目的",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        60
+      ]
+    ]
+  },
+  "5JC7T/": {
+    "translation": "文化差異解讀",
+    "message": "文化差异解读",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-cultura.tsx",
+        118
+      ]
+    ]
+  },
+  "F3PJlG": {
+    "translation": "服務條款",
+    "message": "服务条款",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        24
+      ]
+    ]
+  },
+  "geeoGa": {
+    "translation": "本隱私政策的更新",
+    "message": "本隐私政策的更新",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        66
+      ]
+    ]
+  },
+  "1zGFc9": {
+    "translation": "材料準確性",
+    "message": "材料准确性",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        88
+      ]
+    ]
+  },
+  "yl0Syq": {
+    "translation": "查看詳情",
+    "message": "查看详情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        86
+      ]
+    ]
+  },
+  "LF2Lag": {
+    "translation": "概述",
+    "message": "概述",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        49
+      ]
+    ]
+  },
+  "tr/dDQ": {
+    "translation": "歡迎訪問 Subrise。透過訪問我們的網站 (https://emojis.click/)，您同意受這些服務條款、所有適用的法律和規定的約束，並同意您有責任遵守任何適用的當地法律。如果您不同意這些條款中的任何一條，您被禁止使用或訪問本網站。",
+    "message": "欢迎访问 Subrise。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        75
+      ]
+    ]
+  },
+  "AW9NLp": {
+    "translation": "未找到相關表情",
+    "message": "没有找到相关表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        311
+      ]
+    ]
+  },
+  "DDScQ8": {
+    "translation": "點擊可以複製表情",
+    "message": "点击可以复制表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/hot-emoji.tsx",
+        41
+      ]
+    ]
+  },
+  "zaqc+T": {
+    "translation": "熱門",
+    "message": "热门",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        57
+      ]
+    ]
+  },
+  "hvta5u": {
+    "translation": "熱門表情",
+    "message": "热门表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/hot-emoji.tsx",
+        25
+      ]
+    ]
+  },
+  "imwQl1": {
+    "translation": "版權所有 © 2024 EmojiAiFinder 保留所有權利",
+    "message": "版权所有 © 2024 EmojiAiFinder 保留所有权利",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        82
+      ]
+    ]
+  },
+  "w/qYEh": {
+    "translation": "理解情感語義",
+    "message": "理解情感语义",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/emoji-func-tag.tsx",
+        31
+      ]
+    ]
+  },
+  "MaJ5h3": {
+    "translation": "生效日期：2024 - 12 - 12",
+    "message": "生效日期：2024-12-12",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        48
+      ],
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        73
+      ]
+    ]
+  },
+  "+x4GVv": {
+    "translation": "用 AI 找到最合適的表情",
+    "message": "用AI找到最适合的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji.tsx",
+        32
+      ]
+    ]
+  },
+  "KuBgYO": {
+    "translation": "用 AI 魔法創造富有表現力的表情 🤖",
+    "message": "用AI魔法创造富有表现力的表情 🤖",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        66
+      ]
+    ]
+  },
+  "LgfBZM": {
+    "translation": "用最自然的方式描述，AI 懂您想表達的每一種情緒",
+    "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-type-write.tsx",
+        12
+      ]
+    ]
+  },
+  "ZEG8fP": {
+    "translation": "用日常口語描述您的感受，回車或點擊",
+    "message": "用日常口语描述你的感受，回车或点击",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        266
+      ]
+    ]
+  },
+  "QGM+6Y": {
+    "translation": "電子郵件地址",
+    "message": "电子邮件地址",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        55
+      ]
+    ]
+  },
+  "OS9sY4": {
+    "translation": "相關推薦",
+    "message": "相关推荐",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-recommand.tsx",
+        17
+      ]
+    ]
+  },
+  "Xwe3Ld": {
+    "translation": "社交場景",
+    "message": "社交场景",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-scene.tsx",
+        18
+      ]
+    ]
+  },
+  "HguvCd": {
+    "translation": "種",
+    "message": "种",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-modal.tsx",
+        54
+      ]
+    ]
+  },
+  "C1syp2": {
+    "translation": "簡單輸入文字，快速找到想要的表情",
+    "message": "简单输入文字，快速找到想要的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-type-write.tsx",
+        14
+      ]
+    ]
+  },
+  "2bRzLV": {
+    "translation": "管轄法律",
+    "message": "管辖法律",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        94
+      ]
+    ]
+  },
+  "J0CfpT": {
+    "translation": "聯繫我們",
+    "message": "联系我们",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        68
+      ],
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        96
+      ],
+      [
+        "src/components/footer.tsx",
+        48
+      ]
+    ]
+  },
+  "tuZXxr": {
+    "translation": "表情分類",
+    "message": "表情分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-emoji.tsx",
+        220
+      ]
+    ]
+  },
+  "6bJ4pz": {
+    "translation": "西方文化解讀",
+    "message": "西方文化解读",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-cultura.tsx",
+        27
+      ]
+    ]
+  },
+  "EojHaD": {
+    "translation": "試試這樣搜尋：",
+    "message": "试试这样搜索：",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/emoji-search-example.tsx",
+        24
+      ]
+    ]
+  },
+  "NqIQv0": {
+    "translation": "責任限制",
+    "message": "责任限制",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        86
+      ]
+    ]
+  },
+  "2eLmtV": {
+    "translation": "跨文化使用建議",
+    "message": "跨文化使用建议",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-cultura.tsx",
+        95
+      ]
+    ]
+  },
+  "w/MMPR": {
+    "translation": "這些資訊是為了在我們的 Subrise 導航站上處理訂單而收集的。",
+    "message": "这些信息是为了在我们的 Subrise 导航站上处理订单而收集的。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        57
+      ]
+    ]
+  },
+  "7iV6ah": {
+    "translation": "這些條款和條件受美國法律的管轄並依據其解釋，您不可撤銷地服從該州或地點法院的專屬管轄權。",
+    "message": "这些条款和条件受美国法律的管辖并根据其解释，您不可撤销地服从该州或地点法院的专属管辖权。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        95
+      ]
+    ]
+  },
+  "hisZrx": {
+    "translation": "連結",
+    "message": "链接",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        90
+      ]
+    ]
+  },
+  "7nIkSW": {
+    "translation": "隱私政策",
+    "message": "隐私政策",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        25
+      ]
+    ]
+  },
+  "7bnvjZ": {
+    "translation": "非個人資料",
+    "message": "非个人数据",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        58
+      ]
+    ]
+  }
+}
