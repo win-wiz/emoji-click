@@ -10,6 +10,52 @@
       ]
     ]
   },
+  "/APyPo": {
+    "translation": "Emoji Ai Finder 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
+    "message": "Emoji Ai Finder 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        96
+      ]
+    ]
+  },
+  "xKzy0A": {
+    "translation": "Emoji Ai Finder 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
+    "message": "Emoji Ai Finder 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        93
+      ]
+    ],
+    "obsolete": true
+  },
+  "Ad1KRM": {
+    "translation": "Emoji Ai Finder 尊重您的隐私。我们不会与任何第三方分享您的个人数据，除非为了处理您的订单或遵守法律要求。",
+    "message": "Emoji Ai Finder 尊重您的隐私。我们不会与任何第三方分享您的个人数据，除非为了处理您的订单或遵守法律要求。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        65
+      ]
+    ]
+  },
+  "kpztl0": {
+    "translation": "Emoji Ai Finder 尊重您的隐私。我们不会与任何第三方分享您的个人数据，除非为了处理您的订单或遵守法律要求。",
+    "message": "Emoji Ai Finder 尊重您的隐私。我们不会与任何第三方分享您的个人数据，除非为了处理您的订单或遵守法律要求。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        63
+      ]
+    ],
+    "obsolete": true
+  },
   "CVPQ53": {
     "translation": "Emoji Ai Finder 服务条款",
     "message": "Emoji Ai Finder 服务条款",
@@ -17,7 +63,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        72
+        75
       ]
     ]
   },
@@ -33,48 +79,14 @@
     ],
     "obsolete": true
   },
-  "sxwLz2": {
-    "translation": "Emoji Ai Finder 隐私政策",
-    "message": "Emoji Ai Finder 隐私政策",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/privacy-policy/page.tsx",
-        47
-      ]
-    ]
-  },
-  "tMueux": {
-    "translation": "Emoji Ai Finder 隐私政策",
-    "message": "Emoji Ai Finder 隐私政策",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/privacy-policy/page.tsx",
-        47
-      ]
-    ],
-    "obsolete": true
-  },
-  "xKzy0A": {
-    "translation": "Emoji Ai Finder 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
-    "message": "Emoji Ai Finder 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
+  "EvuUmj": {
+    "translation": "Emoji Ai Finder 未审查与其网站链接的所有站点，并且不对任何此类链接站点的内容负责。包含任何链接并不意味着 Emoji Ai Finder 对该站点的认可。使用任何此类链接网站由用户自行承担风险。",
+    "message": "Emoji Ai Finder 未审查与其网站链接的所有站点，并且不对任何此类链接站点的内容负责。包含任何链接并不意味着 Emoji Ai Finder 对该站点的认可。使用任何此类链接网站由用户自行承担风险。",
     "comments": [],
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        93
-      ]
-    ]
-  },
-  "kpztl0": {
-    "translation": "Emoji Ai Finder 尊重您的隐私。我们不会与任何第三方分享您的个人数据，除非为了处理您的订单或遵守法律要求。",
-    "message": "Emoji Ai Finder 尊重您的隐私。我们不会与任何第三方分享您的个人数据，除非为了处理您的订单或遵守法律要求。",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/privacy-policy/page.tsx",
-        63
+        94
       ]
     ]
   },
@@ -87,6 +99,18 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         91
       ]
+    ],
+    "obsolete": true
+  },
+  "wlEib6": {
+    "translation": "Emoji Ai Finder 网站上的材料按“原样”提供。Emoji Ai Finder 不作任何明示或暗示的保证，并在此放弃和否定所有其他保证，包括但不限于对适销性、特定用途的适用性或不侵犯知识产权或其他权利的暗示保证。",
+    "message": "Emoji Ai Finder 网站上的材料按“原样”提供。Emoji Ai Finder 不作任何明示或暗示的保证，并在此放弃和否定所有其他保证，包括但不限于对适销性、特定用途的适用性或不侵犯知识产权或其他权利的暗示保证。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        88
+      ]
     ]
   },
   "8OAEmQ": {
@@ -97,6 +121,18 @@
       [
         "src/app/[lang]/terms-of-service/page.tsx",
         85
+      ]
+    ],
+    "obsolete": true
+  },
+  "0OEG3G": {
+    "translation": "Emoji Ai Finder 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。",
+    "message": "Emoji Ai Finder 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        52
       ]
     ]
   },
@@ -109,7 +145,8 @@
         "src/app/[lang]/privacy-policy/page.tsx",
         50
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "QyN9D2": {
     "translation": "Emoji Ai Finder 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。",
@@ -119,6 +156,29 @@
       [
         "src/app/[lang]/privacy-policy/page.tsx",
         50
+      ]
+    ],
+    "obsolete": true
+  },
+  "sxwLz2": {
+    "translation": "Emoji Ai Finder 隐私政策",
+    "message": "Emoji Ai Finder 隐私政策",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        49
+      ]
+    ]
+  },
+  "tMueux": {
+    "translation": "Emoji Ai Finder 隐私政策",
+    "message": "Emoji Ai Finder 隐私政策",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        47
       ]
     ],
     "obsolete": true
@@ -152,7 +212,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        52
+        54
       ]
     ]
   },
@@ -178,7 +238,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        81
+        84
       ]
     ]
   },
@@ -211,7 +271,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        76
+        79
       ]
     ]
   },
@@ -222,7 +282,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        51
+        53
       ]
     ]
   },
@@ -233,7 +293,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        92
+        95
       ]
     ]
   },
@@ -244,7 +304,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        78
+        81
       ]
     ]
   },
@@ -255,7 +315,18 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        64
+        66
+      ]
+    ]
+  },
+  "ZYI+z/": {
+    "translation": "允许暂时下载 Emoji Ai Finder 网站上的材料（信息或软件）一份，仅供个人、非商业的临时观看。这是授予许可，而不是转让所有权，并且在此许可下，您不得：",
+    "message": "允许暂时下载 Emoji Ai Finder 网站上的材料（信息或软件）一份，仅供个人、非商业的临时观看。这是授予许可，而不是转让所有权，并且在此许可下，您不得：",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        80
       ]
     ]
   },
@@ -268,7 +339,8 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         77
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "buIPLU": {
     "translation": "免责声明",
@@ -277,7 +349,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        84
+        87
       ]
     ]
   },
@@ -336,6 +408,17 @@
       ]
     ]
   },
+  "gUPr1f": {
+    "translation": "在 Emoji Ai Finder 网站上出现的材料可能包含技术、排印或摄影错误。Emoji Ai Finder 不保证其网站上的任何材料准确、完整或最新。Emoji Ai Finder 可以随时更改其网站上包含的材料而不作通知。但是，Emoji Ai Finder 不承诺更新材料。",
+    "message": "在 Emoji Ai Finder 网站上出现的材料可能包含技术、排印或摄影错误。Emoji Ai Finder 不保证其网站上的任何材料准确、完整或最新。Emoji Ai Finder 可以随时更改其网站上包含的材料而不作通知。但是，Emoji Ai Finder 不承诺更新材料。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        92
+      ]
+    ]
+  },
   "B9BhEG": {
     "translation": "在 Emoji Ai Finder 网站上出现的材料可能包含技术、排印或摄影错误。Emoji Ai Finder 不保证其网站上的任何材料准确、完整或最新。Emoji Ai Finder 可以随时更改其网站上包含的材料而不作通知。但是，Emoji Ai Finder 不承诺更新材料。",
     "message": "在 Emoji Ai Finder 网站上出现的材料可能包含技术、排印或摄影错误。Emoji Ai Finder 不保证其网站上的任何材料准确、完整或最新。Emoji Ai Finder 可以随时更改其网站上包含的材料而不作通知。但是，Emoji Ai Finder 不承诺更新材料。",
@@ -344,6 +427,18 @@
       [
         "src/app/[lang]/terms-of-service/page.tsx",
         89
+      ]
+    ],
+    "obsolete": true
+  },
+  "4AZhIJ": {
+    "translation": "在任何情况下，Emoji Ai Finder 或其供应商均不对任何损害（包括但不限于数据或利润损失或因业务中断造成的损害）承担责任，这些损害是由于使用或无法使用 Emoji Ai Finder 网站上的材料而引起的，即使 Emoji Ai Finder 或 Emoji Ai Finder 授权代表已被口头或书面通知可能会造成此类损害的可能性。",
+    "message": "在任何情况下，Emoji Ai Finder 或其供应商均不对任何损害（包括但不限于数据或利润损失或因业务中断造成的损害）承担责任，这些损害是由于使用或无法使用 Emoji Ai Finder 网站上的材料而引起的，即使 Emoji Ai Finder 或 Emoji Ai Finder 授权代表已被口头或书面通知可能会造成此类损害的可能性。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        90
       ]
     ]
   },
@@ -356,7 +451,8 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         87
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "Q54ALc": {
     "translation": "基本含义",
@@ -417,6 +513,17 @@
       ]
     ]
   },
+  "tZM844": {
+    "translation": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojiaifinder.co 与我们联系。",
+    "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojiaifinder.co 与我们联系。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        71
+      ]
+    ]
+  },
   "SY3TBx": {
     "translation": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojiaifinder.co 与我们联系。",
     "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojiaifinder.co 与我们联系。",
@@ -425,6 +532,18 @@
       [
         "src/app/[lang]/privacy-policy/page.tsx",
         69
+      ]
+    ],
+    "obsolete": true
+  },
+  "MInIhV": {
+    "translation": "如果您对这些条款有任何疑问，请通过 support@emojiaifinder.co 与我们联系。",
+    "message": "如果您对这些条款有任何疑问，请通过 support@emojiaifinder.co 与我们联系。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        100
       ]
     ]
   },
@@ -437,6 +556,18 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         97
       ]
+    ],
+    "obsolete": true
+  },
+  "EERd79": {
+    "translation": "如果您违反这些限制中的任何一项，此许可将自动终止，并且 Emoji Ai Finder 可随时终止此许可。在终止您查看这些材料或此许可终止时，您必须销毁您是否以电子格式或印刷格式拥有的任何下载的材料。",
+    "message": "如果您违反这些限制中的任何一项，此许可将自动终止，并且 Emoji Ai Finder 可随时终止此许可。在终止您查看这些材料或此许可终止时，您必须销毁您是否以电子格式或印刷格式拥有的任何下载的材料。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        86
+      ]
     ]
   },
   "6J4GG8": {
@@ -448,7 +579,8 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         83
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "3defIA": {
     "translation": "姓名",
@@ -457,7 +589,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        54
+        56
       ]
     ]
   },
@@ -479,7 +611,18 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        79
+        82
+      ]
+    ]
+  },
+  "TLRKbo": {
+    "translation": "尝试对 Emoji Ai Finder 网站上的任何软件进行反编译或逆向工程；",
+    "message": "尝试对 Emoji Ai Finder 网站上的任何软件进行反编译或逆向工程；",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        83
       ]
     ]
   },
@@ -492,7 +635,8 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         80
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "nrV1hs": {
     "translation": "工作场景",
@@ -538,7 +682,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        74
+        77
       ]
     ]
   },
@@ -549,7 +693,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        67
+        69
       ]
     ]
   },
@@ -560,7 +704,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        53
+        55
       ]
     ]
   },
@@ -571,7 +715,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        65
+        67
       ]
     ]
   },
@@ -582,7 +726,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        59
+        61
       ]
     ]
   },
@@ -593,7 +737,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        82
+        85
       ]
     ]
   },
@@ -648,7 +792,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        56
+        58
       ]
     ]
   },
@@ -681,7 +825,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        61
+        63
       ]
     ]
   },
@@ -692,7 +836,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        62
+        64
       ]
     ]
   },
@@ -703,7 +847,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        60
+        62
       ]
     ]
   },
@@ -736,7 +880,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        66
+        68
       ]
     ]
   },
@@ -747,7 +891,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        88
+        91
       ]
     ]
   },
@@ -769,7 +913,18 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        49
+        51
+      ]
+    ]
+  },
+  "EuPxox": {
+    "translation": "欢迎访问 Emoji Ai Finder。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。",
+    "message": "欢迎访问 Emoji Ai Finder。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        78
       ]
     ]
   },
@@ -782,7 +937,8 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         75
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "hS0pSC": {
     "translation": "欢迎访问 Emoji Ai Finder。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。",
@@ -840,17 +996,6 @@
       ]
     ]
   },
-  "imwQl1": {
-    "translation": "版权所有 © 2024 EmojiAiFinder 保留所有权利",
-    "message": "版权所有 © 2024 EmojiAiFinder 保留所有权利",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/footer.tsx",
-        82
-      ]
-    ]
-  },
   "W1+tuL": {
     "translation": "版权所有 © 2024 Emoji Ai Finder. 保留所有权利 ✨",
     "message": "版权所有 © 2024 Emoji Ai Finder. 保留所有权利 ✨",
@@ -862,6 +1007,17 @@
       ]
     ],
     "obsolete": true
+  },
+  "imwQl1": {
+    "translation": "版权所有 © 2024 EmojiAiFinder 保留所有权利",
+    "message": "版权所有 © 2024 EmojiAiFinder 保留所有权利",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        82
+      ]
+    ]
   },
   "w/qYEh": {
     "translation": "理解情感语义",
@@ -881,11 +1037,11 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        48
+        50
       ],
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        73
+        76
       ]
     ]
   },
@@ -964,7 +1120,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        55
+        57
       ]
     ]
   },
@@ -1019,7 +1175,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        94
+        97
       ]
     ]
   },
@@ -1030,11 +1186,11 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        68
+        70
       ],
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        96
+        99
       ],
       [
         "src/components/footer.tsx",
@@ -1082,7 +1238,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        86
+        89
       ]
     ]
   },
@@ -1097,6 +1253,17 @@
       ]
     ]
   },
+  "9WeTSM": {
+    "translation": "这些信息是为了在我们的 Emoji Ai Finder 导航站上处理订单而收集的。",
+    "message": "这些信息是为了在我们的 Emoji Ai Finder 导航站上处理订单而收集的。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        59
+      ]
+    ]
+  },
   "w/MMPR": {
     "translation": "这些信息是为了在我们的 Emoji Ai Finder 导航站上处理订单而收集的。",
     "message": "这些信息是为了在我们的 Emoji Ai Finder 导航站上处理订单而收集的。",
@@ -1106,7 +1273,8 @@
         "src/app/[lang]/privacy-policy/page.tsx",
         57
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "7iV6ah": {
     "translation": "这些条款和条件受美国法律的管辖并根据其解释，您不可撤销地服从该州或地点法院的专属管辖权。",
@@ -1115,7 +1283,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        95
+        98
       ]
     ]
   },
@@ -1126,7 +1294,7 @@
     "origin": [
       [
         "src/app/[lang]/terms-of-service/page.tsx",
-        90
+        93
       ]
     ]
   },
@@ -1148,7 +1316,7 @@
     "origin": [
       [
         "src/app/[lang]/privacy-policy/page.tsx",
-        58
+        60
       ]
     ]
   }
