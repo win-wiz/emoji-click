@@ -12,12 +12,12 @@ export async function emojiAiSearch(query: string, lang: string) {
     - 使用的语言是：${lang}， 输入搜索的关键词是：${query}
   `
 
-  // const response: Record<string, any> = await doubaoGenerateEmoji(prompt);
-  const response = await openMonicalAIChat(prompt);
+  const response: Record<string, any> = await doubaoGenerateEmoji(prompt);
+  // const response = await openMonicalAIChat(prompt);
   const emojiCtx = response.choices[0]?.message.content;
 
   let emojiList: Record<string, any>[] = [];
-  console.log('response:', response);
+  // console.log('response:', response);
   try {
     emojiList = JSON.parse(emojiCtx!);
     const result = JSON.parse(emojiCtx!);

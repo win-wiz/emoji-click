@@ -17,7 +17,7 @@ export async function doubaoGenerateEmoji(prompt: string) {
     prompt,
   });
 
-  // console.log('doubao response===>>>>', response);
+  console.log('doubao response===>>>>', response);
   return {
     choices: [
       {

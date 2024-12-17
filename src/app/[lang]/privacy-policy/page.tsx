@@ -1,9 +1,11 @@
-import { t } from '@lingui/macro';
+'use client'
+
+import { t, Trans } from '@lingui/macro';
 import { memo } from 'react';
 
-export const runtime = 'edge';
+// export const runtime = 'edge';
 // 提取标题组件
-const PageTitle = memo(({ title, effectiveDate }: { title: string; effectiveDate: string }) => (
+const PageTitle = memo(({ title, effectiveDate }: { title: React.ReactNode; effectiveDate: React.ReactNode }) => (
   <div className="text-center mb-12">
     <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-zinc-800 to-violet-500 bg-clip-text text-transparent">
       {title}
@@ -17,8 +19,8 @@ PageTitle.displayName = 'PageTitle';
 
 // 提取内容区块组件
 const ContentSection = memo(({ title, content, className = '' }: { 
-  title: string; 
-  content: string;
+  title: React.ReactNode; 
+  content: React.ReactNode;
   className?: string;
 }) => (
   <div className={`bg-white rounded-xl p-6 ${className}`}>
@@ -44,29 +46,29 @@ PersonalDataList.displayName = 'PersonalDataList';
 function PrivacyPolicy() {
   // i18n对象保持不变
   const _i18n = {
-    "title": t`Emoji Ai Finder 隐私政策`,
-    "effective_date": t`生效日期：2024-12-12`,
-    "overview": t`概述`,
-    "overview_description": t`Subrise 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。`,
-    "information_collection": t`信息收集`,
-    "personal_data": t`个人数据`,
-    "personal_data_description": t`我们收集您自愿提供给我们的个人数据，包括但不限于：`,
-    "personal_data_description_1": t`姓名`,
-    "personal_data_description_2": t`电子邮件地址`,
-    "personal_data_description_3": t`支付信息`,
-    "personal_data_description_4": t`这些信息是为了在我们的 Subrise 导航站上处理订单而收集的。`,
-    "non_personal_data": t`非个人数据`,
-    "non_personal_data_description": t`我们还通过网络cookie收集非个人数据，其中包括您的IP地址、浏览器类型以及您在我们网站上访问的页面等使用详情。这些数据用于增强您在我们网站上的体验。`,
-    "data_collection_purpose": t`数据收集目的`,
-    "data_collection_purpose_description": t`收集您的数据的主要目的是处理您的订单并改善我们网站的功能和服务。`,
-    "data_sharing": t`数据共享`,
-    "data_sharing_description": t`Subrise 尊重您的隐私。我们不会与任何第三方分享您的个人数据，除非为了处理您的订单或遵守法律要求。`,
-    "children_privacy": t`儿童隐私`,
-    "children_privacy_description": t`我们的服务不适用于18岁以下的儿童。我们不会有意收集儿童的个人信息。`,
-    "privacy_policy_update": t`本隐私政策的更新`,
-    "privacy_policy_update_description": t`我们可能会不时更新我们的隐私政策。我们将通过在本页面上发布新的隐私政策并更新页面顶部的“生效日期”来通知您任何变更。我们还会通过电子邮件通知您重大变更。`,
-    "contact_us": t`联系我们`,
-    "contact_us_description": t`如果您对本隐私政策有任何疑问或担忧，请通过 support@subrise.co 与我们联系。`
+    "title": <Trans>Emoji Ai Finder 隐私政策</Trans>,
+    "effective_date": <Trans>生效日期：2024-12-12</Trans>,
+    "overview": <Trans>概述</Trans>,
+    "overview_description": t`Emoji Ai Finder 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。`,
+    "information_collection": <Trans>信息收集</Trans>,
+    "personal_data": <Trans>个人数据</Trans>,
+    "personal_data_description": <Trans>我们收集您自愿提供给我们的个人数据，包括但不限于：</Trans>,
+    "personal_data_description_1": <Trans>姓名</Trans>,
+    "personal_data_description_2": <Trans>电子邮件地址</Trans>,
+    "personal_data_description_3": <Trans>支付信息</Trans>,
+    "personal_data_description_4": <Trans>这些信息是为了在我们的 Emoji Ai Finder 导航站上处理订单而收集的。</Trans>,
+    "non_personal_data": <Trans>非个人数据</Trans>,
+    "non_personal_data_description": <Trans>我们还通过网络cookie收集非个人数据，其中包括您的IP地址、浏览器类型以及您在我们网站上访问的页面等使用详情。这些数据用于增强您在我们网站上的体验。</Trans>,
+    "data_collection_purpose": <Trans>数据收集目的</Trans>,
+    "data_collection_purpose_description": <Trans>收集您的数据的主要目的是处理您的订单并改善我们网站的功能和服务。</Trans>,
+    "data_sharing": <Trans>数据共享</Trans>,
+    "data_sharing_description": <Trans>Emoji Ai Finder 尊重您的隐私。我们不会与任何第三方分享您的个人数据，除非为了处理您的订单或遵守法律要求。</Trans>,
+    "children_privacy": <Trans>儿童隐私</Trans>,
+    "children_privacy_description": <Trans>我们的服务不适用于18岁以下的儿童。我们不会有意收集儿童的个人信息。</Trans>,
+    "privacy_policy_update": <Trans>本隐私政策的更新</Trans>,
+    "privacy_policy_update_description": <Trans>我们可能会不时更新我们的隐私政策。我们将通过在本页面上发布新的隐私政策并更新页面顶部的“生效日期”来通知您任何变更。我们还会通过电子邮件通知您重大变更。</Trans>,
+    "contact_us": <Trans>联系我们</Trans>,
+    "contact_us_description": <Trans>如果您对本隐私政策有任何疑问或担忧，请通过 support@emojiaifinder.co 与我们联系。</Trans>
   }
 
   // 个人数据项列表
@@ -93,7 +95,7 @@ function PrivacyPolicy() {
 
           {/* Information Collection Section */}
           <section>
-            <h2 className="text-2xl font-bold text-zinc-800 mb-4">
+            <h2 className="text-2xl font-bold text-zinc-800 mb-4 px-4">
               {_i18n['information_collection']}
             </h2>
             

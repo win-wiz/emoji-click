@@ -5,7 +5,7 @@ import { Trans, t } from "@lingui/macro"
 // 定义配置类型
 type CultureConfigType = {
   icon: string;
-  title: string;
+  title: React.ReactNode;
   bgColor: string;
   textColor: string;
   dotColor: string;
@@ -16,7 +16,7 @@ type CultureConfigType = {
 const CULTURE_CONFIG: Record<'east' | 'west', CultureConfigType> = {
   east: {
     icon: '🏮',
-    title: t`东方文化解读`,
+    title: <Trans>东方文化解读</Trans>,
     bgColor: 'bg-indigo-50/30',
     textColor: 'text-indigo-600',
     dotColor: 'text-indigo-400',
@@ -24,7 +24,7 @@ const CULTURE_CONFIG: Record<'east' | 'west', CultureConfigType> = {
   },
   west: {
     icon: '🏛️',
-    title: t`西方文化解读`,
+    title: <Trans>西方文化解读</Trans>,
     bgColor: 'bg-amber-50/30',
     textColor: 'text-amber-600',
     dotColor: 'text-amber-400',

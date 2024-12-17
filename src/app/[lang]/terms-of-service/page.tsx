@@ -1,7 +1,8 @@
+'use client'
+
 import { t } from '@lingui/macro';
 import { memo } from 'react';
 
-export const runtime = 'edge';
 // 提取标题组件
 const PageTitle = memo(({ title, effectiveDate }: { title: string; effectiveDate: string }) => (
   <div className="text-center mb-12">
@@ -32,7 +33,7 @@ ContentSection.displayName = 'ContentSection';
 // 提取限制列表组件
 const RestrictionsList = memo(({ items }: { items: string[] }) => (
   <div className="ml-4 space-y-2">
-    <p className="text-zinc-600">您不得：</p>
+    {/* <p className="text-zinc-600">您不得：</p> */}
     <ul className="list-disc list-inside space-y-2 text-zinc-600 ml-4">
       {items.map((item, index) => (
         <li key={index}>{item}</li>
@@ -72,29 +73,29 @@ function TermsOfService() {
     "title": t`Emoji Ai Finder 服务条款`,
     "effective_date": t`生效日期：2024-12-12`,
     "overview": t`引言`,
-    "overview_description": t`欢迎访问 Subrise。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。`,
+    "overview_description": t`欢迎访问 Emoji Ai Finder。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。`,
     "acceptance_of_terms": t`使用许可`,
-    "acceptance_of_terms_description": t`允许暂时下载 Subrise 网站上的材料（信息或软件）一份，仅供个人、非商业的临时观看。这是授予许可，而不是转让所有权，并且在此许可下，您不得：`,
+    "acceptance_of_terms_description": t`允许暂时下载 Emoji Ai Finder 网站上的材料（信息或软件）一份，仅供个人、非商业的临时观看。这是授予许可，而不是转让所有权，并且在此许可下，您不得：`,
     "acceptance_of_terms_description_1": t`修改或复制材料；`,
     "acceptance_of_terms_description_2": t`将材料用于任何商业目的，或用于任何公共展示（商业或非商业）；`,
-    "acceptance_of_terms_description_3": t`尝试对 Subrise 网站上的任何软件进行反编译或逆向工程；`,
+    "acceptance_of_terms_description_3": t`尝试对 Emoji Ai Finder 网站上的任何软件进行反编译或逆向工程；`,
     "acceptance_of_terms_description_4": t`从材料中移除任何版权或其他专有注释；`,
     "acceptance_of_terms_description_5": t`或将材料转移给另一个人或在任何其他服务器上“镜像”材料。`,
-    "acceptance_of_terms_description_6": t`如果您违反这些限制中的任何一项，此许可将自动终止，并且 Subrise 可随时终止此许可。在终止您查看这些材料或此许可终止时，您必须销毁您是否以电子格式或印刷格式拥有的任何下载的材料。`,
+    "acceptance_of_terms_description_6": t`如果您违反这些限制中的任何一项，此许可将自动终止，并且 Emoji Ai Finder 可随时终止此许可。在终止您查看这些材料或此许可终止时，您必须销毁您是否以电子格式或印刷格式拥有的任何下载的材料。`,
     "disclaimer": t`免责声明`,
-    "disclaimer_description": t`Subrise 网站上的材料按“原样”提供。Subrise 不作任何明示或暗示的保证，并在此放弃和否定所有其他保证，包括但不限于对适销性、特定用途的适用性或不侵犯知识产权或其他权利的暗示保证。`,
+    "disclaimer_description": t`Emoji Ai Finder 网站上的材料按“原样”提供。Emoji Ai Finder 不作任何明示或暗示的保证，并在此放弃和否定所有其他保证，包括但不限于对适销性、特定用途的适用性或不侵犯知识产权或其他权利的暗示保证。`,
     "limitations": t`责任限制`,
-    "limitations_description": t`在任何情况下，Subrise 或其供应商均不对任何损害（包括但不限于数据或利润损失或因业务中断造成的损害）承担责任，这些损害是由于使用或无法使用 Subrise 网站上的材料而引起的，即使 Subrise 或 Subrise 授权代表已被口头或书面通知可能会造成此类损害的可能性。`,
+    "limitations_description": t`在任何情况下，Emoji Ai Finder 或其供应商均不对任何损害（包括但不限于数据或利润损失或因业务中断造成的损害）承担责任，这些损害是由于使用或无法使用 Emoji Ai Finder 网站上的材料而引起的，即使 Emoji Ai Finder 或 Emoji Ai Finder 授权代表已被口头或书面通知可能会造成此类损害的可能性。`,
     "material_accuracy": t`材料准确性`,
-    "material_accuracy_description": t`在 Subrise 网站上出现的材料可能包含技术、排印或摄影错误。Subrise 不保证其网站上的任何材料准确、完整或最新。Subrise 可以随时更改其网站上包含的材料而不作通知。但是，Subrise 不承诺更新材料。`,
+    "material_accuracy_description": t`在 Emoji Ai Finder 网站上出现的材料可能包含技术、排印或摄影错误。Emoji Ai Finder 不保证其网站上的任何材料准确、完整或最新。Emoji Ai Finder 可以随时更改其网站上包含的材料而不作通知。但是，Emoji Ai Finder 不承诺更新材料。`,
     "links": t`链接`,
-    "links_description": t`Subrise 未审查与其网站链接的所有站点，并且不对任何此类链接站点的内容负责。包含任何链接并不意味着 Subrise 对该站点的认可。使用任何此类链接网站由用户自行承担风险。`,
+    "links_description": t`Emoji Ai Finder 未审查与其网站链接的所有站点，并且不对任何此类链接站点的内容负责。包含任何链接并不意味着 Emoji Ai Finder 对该站点的认可。使用任何此类链接网站由用户自行承担风险。`,
     "modifications": t`修改`,
-    "modifications_description": t`Subrise 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。`,
+    "modifications_description": t`Emoji Ai Finder 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。`,
     "governing_law": t`管辖法律`,
     "governing_law_description": t`这些条款和条件受美国法律的管辖并根据其解释，您不可撤销地服从该州或地点法院的专属管辖权。`,
     "contact_us": t`联系我们`,
-    "contact_us_description": t`如果您对这些条款有任何疑问，请通过 support@subrise.co 与我们联系。`
+    "contact_us_description": t`如果您对这些条款有任何疑问，请通过 support@emojiaifinder.co 与我们联系。`
   }
 
   // 限制条款列表
