@@ -31,6 +31,13 @@ export function middleware(request: NextRequest) {
       )
     )
   }
+
+  const pathSegments = pathname.split('/');
+  const uniqueSegments = [...new Set(pathSegments)]; // 去重
+  if (pathSegments.length !== uniqueSegments.length) {
+    return NextResponse.redirect('/' + uniqueSegments.join('/')); // 重定向到去重后的路径
+  }
+
   return NextResponse.next()
 }
 
