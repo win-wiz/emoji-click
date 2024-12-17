@@ -1,5 +1,5 @@
 import { db } from "@/server/db";
-import { emoji, emojiKeywords, emojiLanguage, emojiType } from "@/server/db/schema";
+import { emoji, emojiKeywords, emojiLanguage, emojiSearchTips, emojiType } from "@/server/db/schema";
 import { eq, sql, and } from "drizzle-orm";
 import { AVAILABLE_LOCALES } from "@/locales/config";
 import { supportLang } from "@/utils";
@@ -104,11 +104,10 @@ export async function fetchRandomKeywords(initLang: AVAILABLE_LOCALES) {
 
   const keywords = db
     .select({
-      content: emojiKeywords.content
+      content: emojiSearchTips.content
     })
-    .from(emojiKeywords)
-    .leftJoin(emoji, eq(emojiKeywords.baseCode, emoji.fullCode))
-    .where(and(eq(emojiKeywords.language, lang), eq(emoji.emotion, 1)))
+    .from(emojiSearchTips)
+    .where(eq(emojiSearchTips.language, lang))
     .orderBy(sql`RANDOM()`)
     .limit(10)
     .prepare();
