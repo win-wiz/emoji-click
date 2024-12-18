@@ -340,7 +340,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        72
+        77
       ]
     ]
   },
@@ -355,7 +355,7 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        204
+        223
       ]
     ]
   },
@@ -491,7 +491,7 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        198
+        217
       ]
     ]
   },
@@ -579,7 +579,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        295
+        280
       ]
     ]
   },
@@ -590,7 +590,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        292
+        277
       ]
     ]
   },
@@ -601,7 +601,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        159
+        165
       ]
     ]
   },
@@ -722,7 +722,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        86
+        91
       ]
     ]
   },
@@ -755,7 +755,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        311
+        298
       ]
     ]
   },
@@ -777,7 +777,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        57
+        62
       ]
     ]
   },
@@ -870,6 +870,18 @@
       [
         "src/components/search/search-emoji-dropdown.tsx",
         266
+      ]
+    ],
+    "obsolete": true
+  },
+  "SFA0Fs": {
+    "translation": "",
+    "message": "用日常口语描述你的感受，回车或点击...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        251
       ]
     ]
   },
