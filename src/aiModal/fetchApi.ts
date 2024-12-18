@@ -24,23 +24,33 @@ export async function fetchApi(
     parameters: {}
   };
 
-  console.log('bodyData===>>>>', bodyData);
+  // console.log('bodyData===>>>>', bodyData);
   try {
-    const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${apiKey}`
-    },
-    body: JSON.stringify(bodyData)
-  });
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 10000); // 10秒超时
 
-  console.log('response===>>>>', response);
-  const data: Record<string, any> = await response.json();
-  // console.log('doubao response===>>>>', data);
-  return JSON.parse(data.choices[0]?.message.content || '');
-  } catch (err) {
-    console.error('fetchApi error===>>>>', err);
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`
+      },
+      body: JSON.stringify(bodyData),
+      signal: controller.signal // 添加中止信号
+    });
+
+    clearTimeout(timeoutId); // 请求成功,清除超时
+
+    // console.log('response===>>>>', response);
+    const data: Record<string, any> = await response.json();
+    // console.log('doubao response===>>>>', data);
+    return JSON.parse(data.choices[0]?.message.content || '');
+  } catch (err: unknown) {
+    if (err instanceof Error && err.name === 'AbortError') {
+      console.error('请求超时');
+    } else {
+      console.error('fetchApi error===>>>>', err);
+    }
     return [];
   }  
 }
