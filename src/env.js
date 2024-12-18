@@ -23,6 +23,7 @@ export const env = createEnv({
     MONICA_API_KEY: z.string().optional(),
     MONICA_BASE_URL: z.string().optional(),
     MONICA_MODEL: z.string().optional(),
+    OPENAI_API_KEY: z.string().optional(),
   },
 
   /**
@@ -53,6 +54,7 @@ export const env = createEnv({
     MONICA_API_KEY: process.env.MONICA_API_KEY,
     MONICA_BASE_URL: process.env.MONICA_BASE_URL,
     MONICA_MODEL: process.env.MONICA_MODEL,
+    OPENAI_API_KEY: process.env.OPENAI_API_KEY,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**

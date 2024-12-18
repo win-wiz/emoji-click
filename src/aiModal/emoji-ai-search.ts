@@ -1,6 +1,6 @@
 import { AVAILABLE_LOCALES } from "@/locales/config";
-import { Gpt4oMimiChar } from "./gpt-4o-mimi-char";
-import { openMonicalAIChat } from "./monica-ai-char";
+import { gpt4oMimiChar } from "./gpt-4o-mimi-char";
+import { monicaGenerateEmoji } from "./monica-ai-char";
 import { doubaoGenerateEmoji } from "./open-ai-char";
 
 export async function emojiAiSearch(query: string, lang: AVAILABLE_LOCALES) {
@@ -18,9 +18,11 @@ export async function emojiAiSearch(query: string, lang: AVAILABLE_LOCALES) {
 
   try {
     result = await doubaoGenerateEmoji(query, lang);
+    // result = await monicaGenerateEmoji(query, lang);
+    // result = await gpt4oMimiChar(lang, query);
   } catch (error) {
-    console.error('JSON解析失败，尝试修复');
+    console.error('JSON解析失败，尝试修复', error);
   }
-
+  // console.log('result===>>>>', result);
   return result;
 }

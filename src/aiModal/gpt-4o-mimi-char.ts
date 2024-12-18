@@ -1,24 +1,12 @@
 import { AVAILABLE_LOCALES } from "@/locales/config";
-import { AI_EMOJI_PROMPTS } from "./prompts";
+import { fetchApi } from "./fetchApi";
+import { env } from "@/env";
 
-export async function Gpt4oMimiChar(lang: AVAILABLE_LOCALES, query: string) {
+export async function gpt4oMimiChar(lang: AVAILABLE_LOCALES, query: string) {
   
-  const content = JSON.stringify({
-    lang,
-    query
-  })
-  const messages = [
-    {
-      role: 'system', 
-      content: AI_EMOJI_PROMPTS
-    },
-    {
-      role: 'user',
-      content: content
-    }
-  ]
+  const url = 'https://api.openai.com/v1/chat/completions';
+  const apiKey = env.OPENAI_API_KEY!;
+  const model = 'gpt-4o-mini';
 
-  // const response = await openMonicalAIChat(messages);
-  // return response;
-
+  return await fetchApi(url, model, lang, query, apiKey);
 }
