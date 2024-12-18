@@ -6,11 +6,16 @@ import { useToast } from '@/components/ui/use-toast'
 import { ArrowUpRight, X, Loader2 } from 'lucide-react'
 import { AVAILABLE_LOCALES } from "@/locales/config";
 import Link from "next/link";
+import { useForm } from 'react-hook-form'
 
 // 抽离常量
 // const DEBOUNCE_DELAY = 800;
 const HIDE_DELAY = 200;
 const TOAST_DURATION = 1500;
+
+interface SearchForm {
+  keyword: string;
+}
 
 // 抽离 EmojiItem 组件
 const EmojiItem = memo(function EmojiItem({
@@ -103,6 +108,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   initText: string;
   lang: AVAILABLE_LOCALES;
 }) {
+  const { register, handleSubmit, reset } = useForm<SearchForm>();
   const [isLoading, setIsLoading] = useState(false);
   const [emojis, setEmojis] = useState<EmojiType[]>([]);
   const [isOpen, setIsOpen] = useState(false);
@@ -111,12 +117,12 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   const hideTimeoutRef = useRef<NodeJS.Timeout>();
   const containerRef = useRef<HTMLDivElement>(null);
   const hasResults = emojis.length > 0;
-  const { toast } = useToast()
+  const { toast } = useToast();
 
   // 使用 useMemo 优化搜索按钮的类名
   const searchButtonClassName = useMemo(() => 
     clsx(
-      "absolute right-2 top-1/2 -translate-y-1/2 px-6 py-2 rounded-xl transition-all duration-200",
+      "px-6 py-2 rounded-xl transition-all duration-200",
       "bg-purple-600 text-white hover:bg-purple-700",
       "flex items-center gap-2",
       isLoading && "!bg-purple-500 cursor-not-allowed"
@@ -127,26 +133,26 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   // 使用 useCallback 优化事件处理函数
   const handleClearClick = useCallback(() => {
     setSearchText('');
+    reset(); // 重置表单的值
     setEmojis([]);
     setIsOpen(false);
-  }, []);
+  }, [reset]);
 
-  const handleSearch = async (text: string) => {
-    console.log('handleSearch', text);
-    // 调用 api 查看结果
-    if (text.trim() === '') {
-      setEmojis([]);
-      setIsOpen(false);
-      return;
-    }
+  const handleSearch = useCallback(async (data: SearchForm) => {
+    setIsLoading(true); // 在开始搜索时设置加载状态
+    setError(null);
+    setEmojis([]);
+    setIsOpen(false);
 
     try {
-      // 使用 encodeURIComponent 编码搜索键词
-      const encodedText = encodeURIComponent(text);
-      const response: Record<string, any> = await fetch(`${lang}/api/search?q=${encodedText}`);
+      const response: Record<string, any> = await fetch(`${lang}/api/search`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
       const { results, status } = await response.json();
-      // console.log('results', results);
-      // console.log('status', status);
 
       if (status === 200) {
         setEmojis(results);
@@ -159,36 +165,49 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
       setError(t`搜索出错，请稍后重试`);
       setEmojis([]);
     } finally {
-      setIsLoading(false);
+      setIsLoading(false); // 在结束搜索时重置加载状态
     }
-  }
+  }, [lang]);
 
-  // 移除 debouncedSearch，改为直接处理搜索
-  const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setSearchText(value);
-  }, []);
-
-  // 新增处理搜索提交的函数
-  const handleSubmitSearch = useCallback(() => {
-    if (!searchText.trim()) {
-      setEmojis([]);
-      setIsOpen(false);
+  const onSubmit = useCallback((data: SearchForm) => {
+    if (data.keyword.trim() === '') {
       return;
     }
+    handleSearch(data);
+  }, [handleSearch]);
 
-    setIsLoading(true);
-    setError(null);
-    handleSearch(searchText);
-  }, [searchText]);
-
-  // 新增处理回车键的函数
-  const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      handleSubmitSearch();
+  useEffect(() => {
+    if (initText) {
+      setSearchText(initText);
+      handleSearch({ keyword: initText });
     }
-  }, [handleSubmitSearch]);
+  }, [initText, handleSearch]);
+
+  // 添加 handleMouseEnter 和 handleMouseLeave 函数
+  const handleMouseEnter = useCallback(() => {
+    if (hideTimeoutRef.current) {
+      clearTimeout(hideTimeoutRef.current);
+    }
+    if (hasResults) {
+      setIsOpen(true);
+    }
+  }, [hasResults]);
+
+  const handleMouseLeave = useCallback((e: React.MouseEvent) => {
+    try {
+      const relatedTarget = e.relatedTarget; // 不进行类型转换
+      // 检查 relatedTarget 是否是 Node 类型
+      if (relatedTarget instanceof Node && containerRef.current?.contains(relatedTarget)) {
+        return;
+      }
+    } catch (error) {
+      console.error('handleMouseLeave error', error);
+    }
+    
+    hideTimeoutRef.current = setTimeout(() => {
+      setIsOpen(false);
+    }, HIDE_DELAY);
+  }, []);
 
   // 优化复制功能
   const copyToClipboard = useCallback(async (text: string) => {
@@ -207,48 +226,6 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
     }
   }, [toast]);
 
-  // 使用 useCallback 优化鼠标事件处理函数
-  const handleMouseEnter = useCallback(() => {
-    if (hideTimeoutRef.current) {
-      clearTimeout(hideTimeoutRef.current);
-    }
-    if (hasResults) {
-      setIsOpen(true);
-    }
-  }, [hasResults]);
-
-  const handleMouseLeave = useCallback((e: React.MouseEvent) => {
-    try {
-      const relatedTarget = e.relatedTarget as Node;
-      if (containerRef.current?.contains(relatedTarget)) {
-        return;
-      }
-    } catch (error) {
-      console.error('handleMouseLeave error', error);
-    }
-    
-    hideTimeoutRef.current = setTimeout(() => {
-      setIsOpen(false);
-    }, HIDE_DELAY);
-  }, []);
-
-  // 清理副作用
-  useEffect(() => {
-    return () => {
-      if (hideTimeoutRef.current) {
-        clearTimeout(hideTimeoutRef.current);
-      }
-    };
-  }, []);
-
-  useEffect(() => {
-    if (initText) {
-      setIsLoading(true);
-      setSearchText(initText);
-      handleSearch(initText);
-    }
-  }, [initText]);
-
   return (
     <div 
       className="relative mb-10" 
@@ -256,46 +233,56 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="relative group">
-        {/* 更新搜索输入框，添加 onKeyDown 处理 */}
-        <input
-          type="text"
-          value={searchText}
-          onChange={handleInputChange}
-          onKeyDown={handleKeyDown}
-          placeholder={t`用日常口语描述你的感受，回车或点击`}
-          className="w-full px-4 py-3.5 rounded-2xl border border-purple-200/70 focus:outline-none focus:ring-2 focus:ring-purple-500/30 shadow-sm bg-white/80 backdrop-blur-sm"
-        />
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="relative group flex items-center">
+          <input
+            type="text"
+            {...register('keyword')}
+            value={searchText}
+            onChange={(e) => {
+              setSearchText(e.target.value); // 更新输入框的值
+            }}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                e.preventDefault(); // 阻止默认行为
+                onSubmit({ keyword: searchText }); // 直接调用 onSubmit
+              }
+            }}
+            placeholder={t`用日常口语描述你的感受，回车或点击...`}
+            className="w-full px-4 py-3.5 rounded-2xl border border-purple-200/70 focus:outline-none focus:ring-2 focus:ring-purple-500/30 shadow-sm bg-white/80 backdrop-blur-sm"
+          />
 
-        {/* 清空按钮 */}
-        {searchText && (
-          <button
-            onClick={handleClearClick}
-            className="absolute right-28 top-1/2 -translate-y-1/2 p-1.5 rounded-full text-gray-400 
-              hover:text-gray-500 hover:bg-gray-100/80 transition-all duration-200
-              opacity-0 group-hover:opacity-100 focus:opacity-100"
-            title="清空"
-          >
-            <X className="w-4 h-4" />
-          </button>
-        )}
+          <div className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center">
+            {searchText && (
+              <button
+                onClick={handleClearClick}
+                type="button"
+                className="p-2 rounded-full mr-1 text-gray-400
+                  hover:text-gray-500 hover:bg-gray-100/80 transition-all duration-200
+                  opacity-0 group-hover:opacity-100 focus:opacity-100"
+                title="清空"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            )}
 
-        {/* 更新搜索按钮 */}
-        <button 
-          className={searchButtonClassName}
-          disabled={isLoading}
-          onClick={handleSubmitSearch}
-        >
-          {isLoading ? (
-            <>
-              <Loader2 className="w-4 h-4 animate-spin" />
-              <span><Trans>搜索中</Trans></span>
-            </>
-          ) : (
-            <span><Trans>搜索</Trans></span>
-          )}
-        </button>
-      </div>
+            <button
+              className={searchButtonClassName}
+              disabled={isLoading}
+              type="submit"
+            >
+              {isLoading ? (
+                <>
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                  <span><Trans>搜索中</Trans></span>
+                </>
+              ) : (
+                <span><Trans>搜索</Trans></span>
+              )}
+            </button>
+          </div>
+        </div>
+      </form>
 
       {/* 搜索结果下拉框 */}
       {isOpen && hasResults && (
