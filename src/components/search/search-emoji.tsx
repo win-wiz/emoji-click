@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import { Trans } from '@lingui/macro'
 import { AVAILABLE_LOCALES, DEFAULT_LOCALE } from '@/locales/config'
 import SearchEmojiDropdown from './search-emoji-dropdown';
@@ -16,7 +16,14 @@ export const SearchEmoji = ({
   randomKeywords: Record<string, any>[]
 }) => {
 
-  const [searchText, setSearchText] = useState('')
+  const [searchText, setSearchText] = useState('');
+  const [keywords, setKeywords] = useState<Record<string, any>[]>([...randomKeywords]);
+
+  const onRefresh = useCallback(async () => {
+    const response = await fetch('/api/search');
+    const results: Record<string, any> = await response.json();
+    setKeywords(results.data || []);
+  }, []);
 
   return (
     <div className="relative -mx-6 sm:-mx-12 md:-mx-24 lg:-mx-32">
@@ -38,7 +45,7 @@ export const SearchEmoji = ({
         <SearchEmojiDropdown initText={searchText} lang={lang} />
 
         {/* 示例搜索 */}
-        <EmojiSearchExample setSearchText={setSearchText} randomKeywords={randomKeywords}/>
+        <EmojiSearchExample setSearchText={setSearchText} randomKeywords={keywords} onRefresh={onRefresh}/>
 
         {/* 功能标签 */}
         <EmojiFuncTag />

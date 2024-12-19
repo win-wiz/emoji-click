@@ -79,43 +79,106 @@ export const AI_MONICA_PROMPTS_SDK = `
 //   N: JSON array with diverse types
 // `;
 
-export const AI_EMOJI_PROMPTS_EN = (L: AVAILABLE_LOCALES) => `
-  You are an emoji expert. Return exactly 10 relevant emojis based on the query.
-  IMPORTANT: Respond ONLY with a valid JSON array of objects.
+// export const AI_EMOJI_PROMPTS_EN = (L: AVAILABLE_LOCALES) => `
+//   You are an emoji expert. Return exactly 10 relevant emojis based on the query.
+//   IMPORTANT: Respond ONLY with a valid JSON array of objects.
 
-  Required format example:
-  [
-    {"name": "smile", "code": "😊", "type": "emotion"},
-    {"name": "heart", "code": "❤️", "type": "symbol"}
-  ]
+//   Required format example:
+//   [
+//     {"name": "smile", "code": "😊", "type": "emotion"},
+//     {"name": "heart", "code": "❤️", "type": "symbol"}
+//   ]
 
-  Rules:
-  1. Must return exactly 10 emojis
-  2. Must use language: ${L} for names and types
-  3. Must be valid JSON array
-  4. No explanations or additional text
-  5. Each object must have exactly these fields: name, code, type
-`;
+//   Rules:
+//   1. Must return exactly 10 emojis
+//   2. Must use language: ${L} for names and types
+//   3. Must be valid JSON array
+//   4. No explanations or additional text
+//   5. Each object must have exactly these fields: name, code, type
+// `;
 
+
+// export const AI_EMOJI_PROMPTS_ZH = `
+//   - 你是emoji选择器。分析关键词并返回emoji列表。
+//   - 规则：
+//     1. code字段必须且只能是一个标准的unicode emoji表情符号，如😊、🌙、💫、⭐️等；
+//     2. 严禁使用任何文字、ASCII字符、特殊符号、多个emoji组合等非单个emoji的内容；
+//     3. 返回10个以上结果；
+//     4. 格式示例：
+//       zh->{"name":"微笑","code":"😊","type":"情绪"}
+//   - 输出要求：
+//     1. name为2-4字，type为表情所属类型；  
+//     2. 在返回JSON数组之前，请仔细验证每个对象的code字段是否完全符合规则1和2，如有任何不符，务必移除该对象；
+//     3. 最终输出结果必须且只能是JSON数组，格式如：[{"name":"月亮","code":"🌙","type":"场景"}]；
+//     4. 不要包含任何其他内容，如解释、说明、示例等。
+// `;
 
 export const AI_EMOJI_PROMPTS_ZH = `
-  - 你是emoji选择器。分析关键词并返回emoji列表。
-  - 规则：
-    1. code字段必须且只能是一个标准的emoji表情符号，如😊、🌙、💫、⭐️等；
-    2. 严禁使用任何文字、ASCII字符、特殊符号、多个emoji组合等非单个emoji的内容；
-    3. 返回10个以上结果；
-    4. 格式示例：
-      en->{"name":"smile","code":"😊","type":"emotion"}  
-      zh->{"name":"微笑","code":"😊","type":"情绪"}
-  - 输出要求：
-    1. name为2-4字描述，type为单个词语，如场景、情绪、动作、物品等；  
-    2. 在返回JSON数组之前，请仔细验证每个对象的code字段是否完全符合规则1和2，如有任何不符，必须移除该对象；
-    3. 最终输出结果必须且只能是JSON数组，格式如：[{"name":"开心","code":"😊","type":"情绪"},{"name":"月亮","code":"🌙","type":"场景"}]；
-    4. 不要包含任何其他内容，如解释、说明、示例等。
+  - 你是emoji选择器。你必须且只能返回一个合法的JSON数组。
+
+  - 输出规则：
+    - 1. 格式要求：
+      - 必须是合法的JSON数组
+      - 每个对象格式：{"name":"微笑","code":"😊","type":"情绪"}
+      - 数组至少包含10个对象
+      - 不允许任何其他内容（包括空行、注释等）
+
+    - 2. 字段验证：
+      - code：仅限单个Unicode emoji（如：😊 🌙 😢）
+      - name：2-4个汉字
+      - type：情绪/自然/物品等分类
+
+    - 3. 严禁在code中使用：
+      - 文字描述
+      - 中文字符
+      - ASCII字符
+      - 特殊符号
+      - 多个emoji组合
+
+  - 示例：[{"name":"开心","code":"😊","type":"情绪"},{"name":"月亮","code":"🌙","type":"自然"}]
 `;
 
-// export const AI_EMOJI_PROMPTS_ZH = '根据关键词匹配emoji表情。要求：1.code必须是emoji键盘中的表情符号(如😊🌙💫⭐️)；2.禁止文字和特殊字符；3.返回>=10个结果；4.格式[{"name":"微笑","code":"😊","type":"情绪"}]。';
+export const AI_EMOJI_PROMPTS_EN = `
+  - TASK: Convert keywords into a diverse set of emojis.
+  - OUTPUT: Pure JSON array only - no other text.
 
-// export const AI_EMOJI_PROMPTS_ZH = '任务：将关键词转换为emoji列表。严格要求：1.必须且只能返回JSON数组 2.code字段必须是emoji表情符号(如😊🌙💫⭐️) 3.禁止任何解释性文字 4.格式[{"name":"微笑","code":"😊","type":"情绪"}] 5.返回>=10个结果。注意：不要返回任何其他内容，不要解释，不要说明，只输出JSON数组。';
+  - STRICT FORMAT RULES:
+    - [{"name": string, "code": single_emoji, "type": category},
+    -   ... minimum 10 UNIQUE entries
+    - ]
 
-// export const AI_EMOJI_PROMPTS_ZH = 'Output JSON array only: [{"name":"smile","code":"😊","type":"emotion"}] ×10';
+  - VALIDATION REQUIREMENTS:
+  - 1. Each "code" MUST:
+    - ✓ Be ONE single Unicode emoji
+    - ✓ Length must be 2-3 characters max
+    - × NO text descriptions
+    - × NO multi-emoji combinations
+    - × NO ASCII/special characters
+
+    - 2. Each "name" MUST:
+      - ✓ Be unique across all entries
+      - ✓ 2-4 descriptive words
+      - ✓ Accurately describe the emoji
+      - × NO duplicates or near-duplicates
+
+    - 3. Each "type" MUST:
+      - ✓ Use varied categories:
+        - emotion (😊 😢 😡)
+        - nature (🌙 🌞 🌺)
+        - object (📱 🎮 📚)
+        - food (🍎 🍕 🍜)
+        - activity (⚽ 🎨 🎭)
+
+  - DIVERSITY CHECK:
+    - Every emoji must be different
+    - Every name must be unique
+    - Mix different types/categories
+    - Avoid similar concepts
+
+  - Example output:
+    - [
+      - {"name":"happy face","code":"😊","type":"emotion"},
+      - {"name":"red apple","code":"🍎","type":"food"},
+      - {"name":"soccer ball","code":"⚽","type":"activity"}
+    - ]
+`;

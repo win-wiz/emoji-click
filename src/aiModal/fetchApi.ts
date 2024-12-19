@@ -1,5 +1,10 @@
 import { AVAILABLE_LOCALES } from "@/locales/config";
-import { AI_EMOJI_PROMPTS_ZH } from "./prompts";
+import { AI_EMOJI_PROMPTS_EN, AI_EMOJI_PROMPTS_ZH } from "./prompts";
+
+const map_prompts: Record<string, string> = {
+  zh: AI_EMOJI_PROMPTS_ZH,
+  en: AI_EMOJI_PROMPTS_EN
+}
 
 export async function fetchApi(
   url: string, 
@@ -14,7 +19,7 @@ export async function fetchApi(
     messages: [
       {
         role: 'system',
-        content: AI_EMOJI_PROMPTS_ZH
+        content: map_prompts[lang]
       },
       {
         role: 'user',
@@ -47,6 +52,7 @@ export async function fetchApi(
       keepalive: true
     });
 
+    console.log('response===>>>', response);
     const data: Record<string, any> = await response.json();
 
     return JSON.parse(data.choices[0]?.message.content || '');

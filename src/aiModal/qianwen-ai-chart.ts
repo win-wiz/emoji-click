@@ -8,4 +8,4 @@ export async function qianwenGenerateEmoji(query: string, lang: AVAILABLE_LOCALE
   const apiKey = env.QIANWEN_API_KEY!;
   const model = env.QIANWEN_MODEL!;
   return await fetchApi(url, model, lang, query, apiKey);
-} 
+}
