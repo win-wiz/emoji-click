@@ -6,6 +6,7 @@ import { serverSideTranslations } from "@/locales/serverSideTranslations";
 import "@/styles/globals.css";
 import ScrollToTop from '@/components/scroll-to-top'
 import { Toaster } from '@/components/ui/toaster'
+// import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default async function RootLayout({
   children,
@@ -34,6 +35,8 @@ export default async function RootLayout({
             <Toaster />
           </main>
         </AppWithTranslation>
+
+        {/* <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || ''} /> */}
       </body>
     </html>
   );

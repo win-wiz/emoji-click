@@ -139,10 +139,10 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   }, [reset]);
 
   const handleSearch = useCallback(async (data: SearchForm) => {
-    setIsLoading(true); // 在开始搜索时设置加载状态
+    setIsLoading(true); // 在开始搜索时设置加载状态 
     setError(null);
     setEmojis([]);
-    setIsOpen(false);
+    setIsOpen(true); // 显示下拉框
 
     try {
       const response: Record<string, any> = await fetch(`${lang}/api/search`, {
@@ -152,6 +152,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
         },
         body: JSON.stringify(data),
       });
+      
       const { results, status } = await response.json();
 
       if (status === 200) {
@@ -285,17 +286,21 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
       </form>
 
       {/* 搜索结果下拉框 */}
-      {isOpen && hasResults && (
+      {isOpen && (
         <div 
           className="absolute w-full mt-2 bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg border border-purple-100/50 max-h-[400px] overflow-y-auto z-10"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          {error ? (
+          {isLoading ? (
+            <div className="flex items-center justify-center p-4">
+              <Loader2 className="w-6 h-6 animate-spin text-purple-500" />  
+            </div>
+          ) : error ? (
             <div className="p-4 text-red-500 text-center">{error}</div>
           ) : emojis.length === 0 ? (
             <div className="p-4 text-gray-500 text-center">
-              <Trans>没有找到相关表情</Trans>
+              <Trans>没有找到相关表情</Trans>  
             </div>
           ) : (
             <div className="p-2 space-y-0.5">
