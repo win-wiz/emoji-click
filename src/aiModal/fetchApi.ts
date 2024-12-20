@@ -36,7 +36,7 @@ export async function fetchApi(
   };
 
   const reqBody = JSON.stringify(bodyData);
-  // try {
+  try {
 
     const response = await fetch(url, {
       method: 'POST',
@@ -57,15 +57,15 @@ export async function fetchApi(
 
     return JSON.parse(data.choices[0]?.message.content || '');
 
-  // } catch (err: unknown) {
-  //   if (err instanceof Error && err.name === 'AbortError') {
-  //     console.error('请求超时');
-  //   } else {
-  //     console.error('fetchApi error===>>>>', err);
-  //   }
-  //   return [{
-  //     status: 'error',
-  //     message: JSON.stringify(err),
-  //   }];
-  // }  
+  } catch (err: unknown) {
+    if (err instanceof Error && err.name === 'AbortError') {
+      console.error('请求超时');
+    } else {
+      console.error('fetchApi error===>>>>', err);
+    }
+    return [{
+      status: 'error',
+      message: JSON.stringify(err),
+    }];
+  }  
 }
