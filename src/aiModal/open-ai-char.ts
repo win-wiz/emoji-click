@@ -1,15 +1,16 @@
 import { env } from '@/env';
 import { AVAILABLE_LOCALES } from '@/locales/config';
 import { fetchApi } from './fetchApi';
-// import { createOpenAI } from '@ai-sdk/openai';
-// import { generateText } from 'ai';
+import { createOpenAI } from '@ai-sdk/openai';
+import { generateText } from 'ai';
+import { AI_EMOJI_PROMPTS_ZH } from './prompts';
 // import { AI_EMOJI_PROMPTS, AI_MONICA_PROMPTS_SDK } from './prompts';
 
-// const doubao = createOpenAI({
-//   baseURL: env.DOUBAO_BASE_URL,
-//   apiKey: env.DOUBAO_OPENAI_API_KEY!,
-//   compatibility: 'compatible'
-// });
+const doubao = createOpenAI({
+  baseURL: env.DOUBAO_BASE_URL,
+  apiKey: env.DOUBAO_OPENAI_API_KEY!,
+  compatibility: 'compatible'
+});
 
 const MODEL_DOUBLE_LINK_128K = env.DOUBAO_LINK_128K_MODEL!;
 
@@ -20,11 +21,13 @@ export async function doubaoGenerateEmoji(query: string, lang: AVAILABLE_LOCALES
 }
 
 
-// export async function doubaoGenerateEmojiBySDK(query: string, lang: AVAILABLE_LOCALES) {
-//   const result = await generateText({
-//     model: doubao(MODEL_DOUBLE_LINK_128K),
-//     prompt: AI_MONICA_PROMPTS_SDK.replace('<lang>', lang).replace('<query>', query)
-//   });
-//   console.log('result===>>>>', result);
-//   return JSON.parse(result.text);
-// }
+export async function doubaoGenerateEmojiBySDK(query: string, lang: AVAILABLE_LOCALES) {
+  const result = await generateText({
+    model: doubao(MODEL_DOUBLE_LINK_128K),
+    prompt: `${AI_EMOJI_PROMPTS_ZH}
+      - 使用的语言是：${lang}， 输入搜索的关键词是：${query}
+    `
+  });
+  console.log('result===>>>>', result);
+  return JSON.parse(result.text);
+}

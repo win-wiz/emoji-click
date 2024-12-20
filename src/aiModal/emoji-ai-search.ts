@@ -1,7 +1,7 @@
 import { AVAILABLE_LOCALES } from "@/locales/config";
 // import { gpt4oMimiChar } from "./gpt-4o-mimi-char";
 import { monicaGenerateEmoji } from "./monica-ai-char";
-import { doubaoGenerateEmoji } from "./open-ai-char";
+import { doubaoGenerateEmoji, doubaoGenerateEmojiBySDK } from "./open-ai-char";
 import { qianwenGenerateEmoji } from "./qianwen-ai-chart";
 
 export async function emojiAiSearch(query: string, lang: AVAILABLE_LOCALES) {
@@ -24,7 +24,7 @@ export async function emojiAiSearch(query: string, lang: AVAILABLE_LOCALES) {
     // result = await monicaGenerateEmoji(query, lang);
     // result = await qianwenGenerateEmoji(query, lang);
     // result = await doubaoGenerateEmoji(query, lang);
-    return await doubaoGenerateEmoji(query, lang);
+    return await doubaoGenerateEmojiBySDK(query, lang);
     // if (result.length === 0) {
     //   result = await doubaoGenerateEmoji(query, lang);
     // }
@@ -32,7 +32,7 @@ export async function emojiAiSearch(query: string, lang: AVAILABLE_LOCALES) {
   } catch (error) {
     console.error('JSON解析失败，尝试修复', error);
     result = [{
-      status: 'error',
+      status: 'search error',
       message: JSON.stringify(error),
     }];
   }
