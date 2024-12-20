@@ -29,8 +29,8 @@ export async function fetchApi(
       },
     ],
     parameters: {
-      max_tokens: 100,     // 减少 token 数量
-      temperature: 0.1,    // 降低随机性，提高响应速度
+      max_tokens: 250,     // 减少 token 数量
+      temperature: 0.3,    // 降低随机性，提高响应速度
       top_p: 0.1,         // 添加 top_p 参数
       stream: false,
     }
@@ -46,6 +46,7 @@ export async function fetchApi(
         'Authorization': `Bearer ${apiKey}`,
       },
       body: reqBody,
+      keepalive: true,
     });
 
     const data: Record<string, any> = await response.json();
