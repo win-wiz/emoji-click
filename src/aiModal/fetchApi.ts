@@ -14,12 +14,18 @@ export async function fetchApi(
   apiKey: string
 ) {
 
+  const prompts = map_prompts[lang];
+  // console.log('model===>>>>', modal);
+  // console.log('query===>>>>', query);
+  // console.log('lang===>>>>', lang);
+  // console.log('url===>>>>', url);
+
   const bodyData = {
     model,
     messages: [
       {
         role: 'system',
-        content: map_prompts[lang]
+        content: prompts
       },
       {
         role: 'user',
@@ -30,7 +36,7 @@ export async function fetchApi(
       max_tokens: 100,     // 减少 token 数量
       temperature: 0.1,    // 降低随机性，提高响应速度
       top_p: 0.1,         // 添加 top_p 参数
-      presence_penalty: 0, // 添加 presence_penalty
+      // presence_penalty: 0, // 添加 presence_penalty
       stream: false,
     }
   };
@@ -43,13 +49,13 @@ export async function fetchApi(
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${apiKey}`,
-        'Connection': 'keep-alive',     // 保持连接
-        'Accept-Encoding': 'gzip',      // 启用压缩
+      //   'Connection': 'keep-alive',     // 保持连接
+      //   'Accept-Encoding': 'gzip',      // 启用压缩
       },
       body: reqBody,
-      cache: 'no-cache',
-      priority: 'high',
-      keepalive: true
+      // cache: 'no-cache',
+      // priority: 'high',
+      // keepalive: true
     });
 
     // console.log('response===>>>', response);
