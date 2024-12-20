@@ -22,8 +22,8 @@ export async function emojiAiSearch(query: string, lang: AVAILABLE_LOCALES) {
     // result = await monicaGenerateEmoji(query, lang);
     // result = await gpt4oMimiChar(lang, query);
     // result = await monicaGenerateEmoji(query, lang);
-    // result = await qianwenGenerateEmoji(query, lang);
-    result = await doubaoGenerateEmoji(query, lang);
+    result = await qianwenGenerateEmoji(query, lang);
+    // result = await doubaoGenerateEmoji(query, lang);
     // return await doubaoGenerateEmojiBySDK(query, lang);
     // if (result.length === 0) {
     //   result = await doubaoGenerateEmoji(query, lang);

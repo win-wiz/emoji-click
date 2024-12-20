@@ -46,7 +46,7 @@ export async function fetchApi(
         'Authorization': `Bearer ${apiKey}`,
       },
       body: reqBody,
-      keepalive: true,
+      // keepalive: true,
     });
 
     const data: Record<string, any> = await response.json();
