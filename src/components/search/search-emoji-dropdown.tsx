@@ -153,14 +153,15 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
         body: JSON.stringify(data),
       });
       
-      const { results, status } = await response.json();
+      console.log('response===>>>', await response.json());
+      // const { results, status } = await response.json();
 
-      if (status === 200) {
-        setEmojis(results);
-        setIsOpen(true);
-      } else {
-        throw new Error('Invalid data format');
-      }
+      // if (status === 200) {
+      //   setEmojis(results);
+      //   setIsOpen(true);
+      // } else {
+      //   throw new Error('Invalid data format');
+      // }
       
     } catch (err) {
       setError(t`搜索出错，请稍后重试`);

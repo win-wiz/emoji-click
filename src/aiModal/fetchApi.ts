@@ -36,7 +36,7 @@ export async function fetchApi(
       max_tokens: 100,     // 减少 token 数量
       temperature: 0.1,    // 降低随机性，提高响应速度
       top_p: 0.1,         // 添加 top_p 参数
-      // presence_penalty: 0, // 添加 presence_penalty
+      presence_penalty: 0, // 添加 presence_penalty
       stream: false,
     }
   };
@@ -49,19 +49,20 @@ export async function fetchApi(
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${apiKey}`,
-      //   'Connection': 'keep-alive',     // 保持连接
-      //   'Accept-Encoding': 'gzip',      // 启用压缩
+        'Connection': 'keep-alive',     // 保持连接
+        'Accept-Encoding': 'gzip',      // 启用压缩
       },
       body: reqBody,
-      // cache: 'no-cache',
-      // priority: 'high',
-      // keepalive: true
+      cache: 'no-cache',
+      priority: 'high',
+      keepalive: true
     });
 
     // console.log('response===>>>', response);
     const data: Record<string, any> = await response.json();
 
-    return JSON.parse(data.choices[0]?.message.content || '');
+    // return JSON.parse(data.choices[0]?.message.content || '');
+    return data;
 
   } catch (err: unknown) {
     if (err instanceof Error && err.name === 'AbortError') {
