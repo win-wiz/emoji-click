@@ -36,7 +36,7 @@ export async function emojiAiSearch(query: string, lang: AVAILABLE_LOCALES) {
     console.error('JSON解析失败，尝试修复', error);
     result = [{
       status: 'error',
-      message: 'JSON解析失败，尝试修复' + error,
+      message: JSON.stringify(error),
     }];
   }
   // console.log('result===>>>>', result);

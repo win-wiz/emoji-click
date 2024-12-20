@@ -65,7 +65,7 @@ export async function fetchApi(
     }
     return [{
       status: 'error',
-      message: 'fetchApi error' + err,
+      message: JSON.stringify(err),
     }];
   }  
 }
