@@ -4,7 +4,6 @@ import { fetchApi } from './fetchApi';
 import { createOpenAI } from '@ai-sdk/openai';
 import { generateText } from 'ai';
 import { AI_EMOJI_PROMPTS_ZH } from './prompts';
-// import { AI_EMOJI_PROMPTS, AI_MONICA_PROMPTS_SDK } from './prompts';
 
 const doubao = createOpenAI({
   baseURL: env.DOUBAO_BASE_URL,
