@@ -52,7 +52,7 @@ export async function fetchApi(
       keepalive: true
     });
 
-    console.log('response===>>>', response);
+    // console.log('response===>>>', response);
     const data: Record<string, any> = await response.json();
 
     return JSON.parse(data.choices[0]?.message.content || '');
@@ -62,7 +62,7 @@ export async function fetchApi(
       console.error('请求超时');
     } else {
       console.error('fetchApi error===>>>>', err);
-      throw err;
+      throw new Error('fetchApi error=>>' + err);
     }
     return [];
   }  
