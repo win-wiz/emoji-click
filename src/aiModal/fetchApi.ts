@@ -15,10 +15,6 @@ export async function fetchApi(
 ) {
 
   const prompts = map_prompts[lang];
-  // console.log('model===>>>>', modal);
-  // console.log('query===>>>>', query);
-  // console.log('lang===>>>>', lang);
-  // console.log('url===>>>>', url);
 
   const bodyData = {
     model,
@@ -35,9 +31,8 @@ export async function fetchApi(
     parameters: {
       max_tokens: 100,     // 减少 token 数量
       temperature: 0.1,    // 降低随机性，提高响应速度
-      // top_p: 0.1,         // 添加 top_p 参数
-      // presence_penalty: 0, // 添加 presence_penalty
-      // stream: false,
+      top_p: 0.1,         // 添加 top_p 参数
+      stream: false,
     }
   };
 
@@ -53,11 +48,10 @@ export async function fetchApi(
       body: reqBody,
     });
 
-    // console.log('response===>>>', response);
     const data: Record<string, any> = await response.json();
 
-    // return JSON.parse(data.choices[0]?.message.content || '');
-    return data;
+    return JSON.parse(data.choices[0]?.message.content || '');
+    // return data;
 
   } catch (err: unknown) {
     if (err instanceof Error && err.name === 'AbortError') {
