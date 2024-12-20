@@ -47,7 +47,6 @@ export async function fetchApi(
         'Authorization': `Bearer ${apiKey}`,
       },
       body: reqBody,
-      cache: 'no-cache',
     });
 
     const data: Record<string, any> = await response.json();
