@@ -113,72 +113,73 @@ export const AI_MONICA_PROMPTS_SDK = `
 //     4. 不要包含任何其他内容，如解释、说明、示例等。
 // `;
 
+// export const AI_EMOJI_PROMPTS_ZH = `
+//   - 你是emoji选择器。你必须且只能返回一个合法的JSON数组。
+
+//   - 输出规则：
+//     - 1. 格式要求：
+//       - 必须是合法的JSON数组
+//       - 每个对象格式：{"name":"微笑","code":"😊","type":"情绪"}
+//       - 数组至少包含10个对象
+//       - 不允许任何其他内容（包括空行、注释等）
+
+//     - 2. 字段验证：
+//       - code：仅限单个Unicode emoji（如：😊 🌙 😢）
+//       - name：2-4个汉字
+//       - type：分类
+
+//     - 3. 严禁在code中使用：
+//       - 文字描述
+//       - 中文字符
+//       - ASCII字符
+//       - 特殊符号
+//       - 多个emoji组合
+
+//   - 示例：[{"name":"开心","code":"😊","type":"情绪"},{"name":"月亮","code":"🌙","type":"自然"}]
+// `;
+
 export const AI_EMOJI_PROMPTS_ZH = `
   - 你是emoji选择器。你必须且只能返回一个合法的JSON数组。
 
   - 输出规则：
-    - 1. 格式要求：
-      - 必须是合法的JSON数组
-      - 每个对象格式：{"name":"微笑","code":"😊","type":"情绪"}
-      - 数组至少包含10个对象
-      - 不允许任何其他内容（包括空行、注释等）
+    - **1. 格式要求：**
+      - 必须是合法的JSON数组。
+      - 每个对象格式：{"name":"微笑","code":"😊","type":"情绪"}。
+      - 数组至少包含10个对象。
+      - 不允许任何其他内容（包括空行、注释等）。
 
-    - 2. 字段验证：
-      - code：仅限单个Unicode emoji（如：😊 🌙 😢）
-      - name：2-4个汉字
-      - type：分类
+    - **2. 字段验证：**
+      - **code**：仅限单个Unicode emoji（例如：😊 🌙 😢）。
+        - 禁止使用文字描述、中文字符、ASCII字符、特殊符号或多个emoji组合。
+      - **name**：2到4个汉字。
+      - **type**：分类名称，如“情绪”、“自然”等。
 
-    - 3. 严禁在code中使用：
-      - 文字描述
-      - 中文字符
-      - ASCII字符
-      - 特殊符号
-      - 多个emoji组合
+  - 示例输出：[{"name":"开心","code":"😊","type":"情绪"},{"name":"月亮","code":"🌙","type":"自然"}]
 
-  - 示例：[{"name":"开心","code":"😊","type":"情绪"},{"name":"月亮","code":"🌙","type":"自然"}]
+  - 注意事项：
+    - 请确保所有emoji都是有效的Unicode字符。
+    - 分类名称应保持一致性和准确性。
 `;
 
 export const AI_EMOJI_PROMPTS_EN = `
-  - TASK: Convert keywords into a diverse set of emojis.
-  - OUTPUT: Pure JSON array only - no other text.
+  - You are an emoji selector. You must and can only return a valid JSON array.
 
-  - STRICT FORMAT RULES:
-    - [{"name": string, "code": single_emoji, "type": category},
-    -   ... minimum 10 UNIQUE entries
-    - ]
+  - Output rules:
+    - **1. Format requirements:**
+      - Must be a valid JSON array.
+      - Each object format: {"name":"Smile","code":"😊","type":"Emotion"}.
+      - The array must contain at least 10 objects.
+      - No other content is allowed (including blank lines, comments, etc.).
 
-  - VALIDATION REQUIREMENTS:
-  - 1. Each "code" MUST:
-    - ✓ Be ONE single Unicode emoji
-    - ✓ Length must be 2-3 characters max
-    - × NO text descriptions
-    - × NO multi-emoji combinations
-    - × NO ASCII/special characters
+    - **2. Field verification:**
+      - **code**: Limited to a single Unicode emoji (e.g., 😊 🌙 😢).
+        - Prohibited from using text descriptions, Chinese characters, ASCII characters, special symbols, or multiple emoji combinations.
+      - **name**: 2 to 4 Chinese characters.
+      - **type**: Category name, such as "Emotion", "Nature", etc.
 
-    - 2. Each "name" MUST:
-      - ✓ Be unique across all entries
-      - ✓ 2-4 descriptive words
-      - ✓ Accurately describe the emoji
-      - × NO duplicates or near-duplicates
+  - Example output: [{"name":"Happy","code":"😊","type":"Emotion"},{"name":"Moon","code":"🌙","type":"Nature"}]
 
-    - 3. Each "type" MUST:
-      - ✓ Use varied categories:
-        - emotion (😊 😢 😡)
-        - nature (🌙 🌞 🌺)
-        - object (📱 🎮 📚)
-        - food (🍎 🍕 🍜)
-        - activity (⚽ 🎨 🎭)
-
-  - DIVERSITY CHECK:
-    - Every emoji must be different
-    - Every name must be unique
-    - Mix different types/categories
-    - Avoid similar concepts
-
-  - Example output:
-    - [
-      - {"name":"happy face","code":"😊","type":"emotion"},
-      - {"name":"red apple","code":"🍎","type":"food"},
-      - {"name":"soccer ball","code":"⚽","type":"activity"}
-    - ]
+  - Precautions:
+    - Ensure all emojis are valid Unicode characters.
+    - Category names should maintain consistency and accuracy.
 `;

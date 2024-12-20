@@ -63,6 +63,9 @@ export async function fetchApi(
     } else {
       console.error('fetchApi error===>>>>', err);
     }
-    return [];
+    return [{
+      status: 'error',
+      message: 'fetchApi error' + err,
+    }];
   }  
 }

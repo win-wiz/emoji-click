@@ -23,17 +23,21 @@ export async function emojiAiSearch(query: string, lang: AVAILABLE_LOCALES) {
     // result = await gpt4oMimiChar(lang, query);
     result = await monicaGenerateEmoji(query, lang);
 
-    if (result.length === 0) {
-      result = await doubaoGenerateEmoji(query, lang);
-    }
+    // if (result.length === 0) {
+    //   result = await doubaoGenerateEmoji(query, lang);
+    // }
 
-    if (result.length === 0) {
-      result = await qianwenGenerateEmoji(query, lang);
-    }
+    // if (result.length === 0) {
+    //   result = await qianwenGenerateEmoji(query, lang);
+    // }
 
     // console.log('result===>>>>', result);
   } catch (error) {
     console.error('JSON解析失败，尝试修复', error);
+    result = [{
+      status: 'error',
+      message: 'JSON解析失败，尝试修复' + error,
+    }];
   }
   // console.log('result===>>>>', result);
   return result;
