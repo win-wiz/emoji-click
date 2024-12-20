@@ -20,7 +20,7 @@ export const SearchEmoji = ({
   const [keywords, setKeywords] = useState<Record<string, any>[]>([...randomKeywords]);
 
   const onRefresh = useCallback(async () => {
-    const response = await fetch('/api/search');
+    const response = await fetch(`${lang}/api/search`);
     const results: Record<string, any> = await response.json();
     setKeywords(results.data || []);
   }, []);
