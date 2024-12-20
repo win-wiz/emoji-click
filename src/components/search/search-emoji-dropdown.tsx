@@ -144,6 +144,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
     setEmojis([]);
     setIsOpen(true); // 显示下拉框
 
+    console.log('data===>>>', data);
     try {
       const response: Record<string, any> = await fetch(`${lang}/api/search`, {
         method: 'POST',
