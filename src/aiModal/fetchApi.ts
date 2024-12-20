@@ -15,6 +15,7 @@ export async function fetchApi(
 ) {
 
   const prompts = map_prompts[lang];
+  const content = lang === 'zh' ? `语言：${lang}, 关键词是：${query}` : `Language: ${lang}, Keywords: ${query}`;
 
   const bodyData = {
     model,
@@ -25,7 +26,7 @@ export async function fetchApi(
       },
       {
         role: 'user',
-        content: `lang: ${lang}, query: ${query}`,
+        content: content
       },
     ],
     parameters: {
@@ -46,7 +47,6 @@ export async function fetchApi(
         'Authorization': `Bearer ${apiKey}`,
       },
       body: reqBody,
-      keepalive: true,
       cache: 'no-cache',
     });
 
