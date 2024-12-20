@@ -24,7 +24,7 @@ export async function doubaoGenerateEmojiBySDK(query: string, lang: AVAILABLE_LO
   const result = await generateText({
     model: doubao(MODEL_DOUBLE_LINK_128K),
     prompt: `${AI_EMOJI_PROMPTS_ZH}
-      - 使用的语言是：${lang}， 输入搜索的关键词是：${query}
+      - 语言：${lang}， 关键词是：${query}
     `
   });
   console.log('result===>>>>', result);

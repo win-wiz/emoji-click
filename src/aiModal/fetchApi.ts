@@ -30,10 +30,9 @@ export async function fetchApi(
       },
     ],
     parameters: {
-      max_tokens: 250,     // 减少 token 数量
-      temperature: 0.3,    // 降低随机性，提高响应速度
-      top_p: 0.2,         // 添加 top_p 参数
+      temperature: 0.8,    // 降低随机性，提高响应速度
       stream: false,
+      max_tokens: 250,
     }
   };
 
