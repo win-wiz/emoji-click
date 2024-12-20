@@ -138,38 +138,38 @@ export const AI_MONICA_PROMPTS_SDK = `
 //   - 示例：[{"name":"开心","code":"😊","type":"情绪"},{"name":"月亮","code":"🌙","type":"自然"}]
 // `;
 
-// export const AI_EMOJI_PROMPTS_ZH = `
-//   - 你是emoji选择器。你必须且只能返回一个合法的JSON数组。
-
-//   - 输出规则：
-//     - 1. 格式要求：
-//       - 必须是合法的JSON数组。
-//       - 每个对象格式：{"name":"微笑","code":"😊","type":"情绪"}。
-//       - 数组至少包含10个对象。
-//       - 不允许任何其他内容（包括空行、注释等）。
-
-//     - 2. 字段验证：
-//       - code：仅限单个Unicode emoji（例如：😊 🌙 😢）。
-//         - 禁止使用文字描述、中文字符、ASCII字符、特殊符号或多个emoji组合。
-//       - name：2到4个汉字。
-//       - type：分类名称，如“情绪”、“自然”等。
-
-//   - 示例输出：[{"name":"开心","code":"😊","type":"情绪"},{"name":"月亮","code":"🌙","type":"自然"}]
-
-//   - 注意事项：
-//     - 请确保所有emoji都是有效的Unicode字符。
-//     - 分类名称应保持一致性和准确性。
-// `;
-
 export const AI_EMOJI_PROMPTS_ZH = `
-  - 你是一位表情符号领域的专家，你的任务是根据用户输入的语言和搜索关键词，提供匹配的表情符号。
-  - 规则：
-    1. 根据<lang>和<query>确定与特定情感、场景、语境和情绪相关的表情符号。
-    2. 对于找到的表情符号，确定其name、code（必须为emoji）、type。
-    3. 确保至少返回10个表情符号。
-    4. 最终输出结果必须为Array<{name: string, code: string, type: string}>格式，不要包含任何额外的解释或标签。
-    5. 使用的语言是：<lang>， 输入搜索的关键词是：<query>
-`
+  - 你是emoji选择器。你必须且只能返回一个合法的JSON数组。
+
+  - 输出规则：
+    - 1. 格式要求：
+      - 必须是合法的JSON数组。
+      - 每个对象格式：{"name":"微笑","code":"😊","type":"情绪"}。
+      - 数组至少包含10个对象。
+      - 不允许任何其他内容（包括空行、注释等）。
+
+    - 2. 字段验证：
+      - code：仅限单个Unicode emoji（例如：😊 🌙 😢）。
+        - 禁止使用文字描述、中文字符、ASCII字符、特殊符号或多个emoji组合。
+      - name：2到4个汉字。
+      - type：分类名称，如“情绪”、“自然”等。
+
+  - 示例输出：[{"name":"开心","code":"😊","type":"情绪"},{"name":"月亮","code":"🌙","type":"自然"}]
+
+  - 注意事项：
+    - 请确保所有emoji都是有效的Unicode字符。
+    - 分类名称应保持一致性和准确性。
+`;
+
+// export const AI_EMOJI_PROMPTS_ZH = `
+//   - 你是一位表情符号领域的专家，你的任务是根据用户输入的语言和搜索关键词，提供匹配的表情符号。
+//   - 规则：
+//     1. 根据<lang>和<query>确定与特定情感、场景、语境和情绪相关的表情符号。
+//     2. 对于找到的表情符号，确定其name、code（必须为emoji）、type。
+//     3. 确保至少返回10个表情符号。
+//     4. 最终输出结果必须为Array<{name: string, code: string, type: string}>格式，不要包含任何额外的解释或标签。
+//     5. 使用的语言是：<lang>， 输入搜索的关键词是：<query>
+// `
 
 export const AI_EMOJI_PROMPTS_EN = `
   - You are an emoji selector. You must and can only return a valid JSON array.
