@@ -62,7 +62,6 @@ export async function fetchApi(
       console.error('请求超时');
     } else {
       console.error('fetchApi error===>>>>', err);
-      throw new Error(`fetchApi error=>> ${err}`);
     }
     return [];
   }  

@@ -126,7 +126,7 @@ export const AI_EMOJI_PROMPTS_ZH = `
     - 2. 字段验证：
       - code：仅限单个Unicode emoji（如：😊 🌙 😢）
       - name：2-4个汉字
-      - type：情绪/自然/物品等分类
+      - type：分类
 
     - 3. 严禁在code中使用：
       - 文字描述
