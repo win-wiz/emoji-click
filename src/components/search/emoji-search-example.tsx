@@ -29,7 +29,7 @@ const EmojiSearchExample = memo(function EmojiSearchExample({ setSearchText, ran
       <span className="inline-flex items-center gap-1.5 mb-3">
         💡 <Trans>试试这样搜索：</Trans>
         <RefreshCw 
-          className="w-4 h-4 cursor-pointer hover:text-purple-500 transition-all duration-300 hover:rotate-180"
+          className="w-6 h-6 p-1  cursor-pointer hover:text-purple-500 transition-all duration-300 hover:bg-gray-100"
           onClick={handleRefresh}
         />
       </span>
