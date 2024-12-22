@@ -1,8 +1,8 @@
 module.exports = {
-  // "zh": '简体中文', // 简体中文
-  // "en": 'English', // 英语
+  "zh": '简体中文', // 简体中文
+  "en": 'English', // 英语
   // "cs": 'Čeština', // 捷克语
-  // "fr": 'Français', // 法语
+  "fr": 'Français', // 法语
   // "de": 'Deutsch', // 德语
   "es": 'Español', // 西班牙语
   // "it": 'Italiano', // 意大利语
@@ -13,7 +13,7 @@ module.exports = {
   // "ru": 'Русский', // 俄语
   // "uk": 'Українська', // 乌克兰语
   // "vi": 'Tiếng Việt', // 越南语
-  // "zh-TW": '繁体中文', // 繁体中文
+  "zh-TW": '繁体中文', // 繁体中文
   "pt": 'Português', // 葡萄牙语
   // "da": 'Dansk', // 丹麦语
   // "el": 'Ελληνικά (Elliniká)', // 希腊语

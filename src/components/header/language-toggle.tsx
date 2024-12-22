@@ -5,29 +5,39 @@ import { AVAILABLE_LOCALES, DEFAULT_LOCALE } from "@/locales/config";
 import { getLocaleFlag } from "@/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-export default function LanguageToggle(
-  { lang }: { lang: AVAILABLE_LOCALES }
-) {
+import { useMemo } from "react";
 
+export default function LanguageToggle({ lang }: { lang: AVAILABLE_LOCALES }) {
   const [currentLang, locales] = useI18nLocale(lang);
   const pathname = usePathname();
 
+  const dropdownItems = useMemo(() => {
+    return locales.map((locale) => (
+      <li key={locale.key}>
+        <Link href={`/${locale.key}/${pathname?.split('/').slice(2).join('/')}`}>
+          {getLocaleFlag(locale.key)} {locale.name}
+        </Link>
+      </li>
+    ));
+  }, [locales, pathname]);
+
   return (
     <div className="group dropdown dropdown-end">
-      <div tabIndex={0} role="button" className="relative btn border group-hover:border-1 group-hover:border-violet-600 bg-white m-1 hover:bg-transparent">
+      <div
+        tabIndex={0}
+        role="button"
+        className="relative btn border group-hover:border-1 group-hover:border-violet-600 bg-white m-1 hover:bg-transparent"
+      >
         <p className="font-semibold flex items-center gap-2 text-md">
-          {getLocaleFlag(lang || DEFAULT_LOCALE)} 
-          <span>{ currentLang }</span>
+          {getLocaleFlag(lang || DEFAULT_LOCALE)}
+          <span>{currentLang}</span>
         </p>
       </div>
-      <ul tabIndex={0} className="dropdown-content  menu bg-base-100 border grid grid-cols-2 rounded-lg z-[1] w-[480px] p-2 shadow">
-        {
-          locales.map((locale) => (
-            <li key={locale.key}>
-              <Link href={`/${locale.key}/${pathname?.split('/').slice(2).join('/')}`}>{getLocaleFlag(locale.key)} { locale.name }</Link>
-            </li>
-          ))
-        }
+      <ul
+        tabIndex={0}
+        className="dropdown-content menu bg-base-100 border grid grid-cols-2 rounded-lg z-[1] w-[480px] p-2 shadow"
+      >
+        {dropdownItems}
       </ul>
     </div>
   );

@@ -1,10 +1,11 @@
 'use client'
 
+import React from 'react'
 import { Trans } from '@lingui/macro'
-import { useState, useCallback, useMemo, useEffect, memo } from 'react'
+import { useState, useCallback, useMemo, useEffect, memo, useRef } from 'react'
 import SingleEmoji from '@/components/single-emoji'
-import CategoryModal from './category-modal'
-import CategoryNav from './category-nav'
+const CategoryModal = React.lazy(() => import('./category-modal'))
+const CategoryNav = React.lazy(() => import('./category-nav'))
 import { AVAILABLE_LOCALES } from '@/locales/config'
 import { motion, AnimatePresence } from 'framer-motion'
 import { debounce } from '@/utils'
@@ -61,14 +62,14 @@ const MemoizedEmojiItem = memo(function EmojiItem({
     </div>
   )
 }, (prevProps, nextProps) => {
-  // 自定义比较函数，只在必要时重新渲染
+  // 自定义比较函数，只在必要时重��渲染
   return (
     prevProps.item.id === nextProps.item.id &&
     prevProps.lang === nextProps.lang
   )
 })
 
-export default function CategoryEmoji({
+const CategoryEmoji = React.memo(function CategoryEmoji({
   lang,
   categories = []
 }: {
@@ -97,7 +98,7 @@ export default function CategoryEmoji({
     return initialStates
   })
 
-  // 获取当前分类数据
+  // 获取前分类数据
   const currentCategory = useMemo(() => 
     categories.find(c => c.id === selectedCategory) ?? categories[0],
     [categories, selectedCategory]
@@ -115,7 +116,7 @@ export default function CategoryEmoji({
       }
     }
     return state || { page: 1, hasMore: false, loading: false, items: [] }
-  }, [categoryStates, selectedCategory, currentCategory])
+  }, [categoryStates, selectedCategory, currentCategory?.emojis])
 
   // 加载更多数据
   const loadMore = useCallback(() => {
@@ -127,16 +128,29 @@ export default function CategoryEmoji({
 
     if (!hasMoreItems) return
 
+    // 先设置 loading 状态
     setCategoryStates(prev => {
       const newStates = new Map(prev)
       newStates.set(selectedCategory, {
-        page: nextPage,
-        loading: false,
-        hasMore: hasMoreItems,
-        items: currentCategory.emojis.slice(0, end)
+        ...(prev.get(selectedCategory) as CategoryState),
+        loading: true
       })
       return newStates
     })
+
+    // 模拟数据加载延迟
+    setTimeout(() => {
+      setCategoryStates(prev => {
+        const newStates = new Map(prev)
+        newStates.set(selectedCategory, {
+          page: nextPage,
+          loading: false,
+          hasMore: hasMoreItems,
+          items: currentCategory.emojis.slice(0, end)
+        })
+        return newStates
+      })
+    }, 500)
   }, [currentCategory?.emojis, currentState.loading, currentState.page, selectedCategory])
 
   // 处理滚动
@@ -168,18 +182,6 @@ export default function CategoryEmoji({
     </div>
   ), [currentState.items, lang])
 
-  // 优化加载指示器
-  const LoadingIndicator = useMemo(() => (
-    currentState.loading && (
-      <div className="py-4 flex justify-center">
-        <div className="flex items-center gap-2 text-primary/70">
-          <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
-          <span><Trans>加载中...</Trans></span>
-        </div>
-      </div>
-    )
-  ), [currentState.loading])
-
   // 优化滚动处理
   const debouncedScroll = useMemo(
     () => debounce(handleScroll, 150),
@@ -205,7 +207,7 @@ export default function CategoryEmoji({
     const newIndex = categories.findIndex(c => c.id === newCategoryId)
     setDirection(newIndex > currentIndex ? 1 : -1)
     setSelectedCategory(newCategoryId)
-  }, [categories, selectedCategory])
+  }, [categories])
 
   return (
     <div className="relative -mx-6 sm:-mx-12 md:-mx-24 lg:-mx-32">
@@ -220,18 +222,22 @@ export default function CategoryEmoji({
               <Trans>表情分类</Trans>
             </h2>
           </div>
-          <CategoryModal
-            categories={categories}
-            onChange={handleCategoryChange}
-            choicedCategory={selectedCategory}
-          />
+          <React.Suspense fallback={<div>Loading...</div>}>
+            <CategoryModal
+              categories={categories}
+              onChange={handleCategoryChange}
+              choicedCategory={selectedCategory}
+            />
+          </React.Suspense>
         </div>
 
-        <CategoryNav
-          categories={categories as EmojiType[]}
-          selectedCategory={selectedCategory}
-          onChange={handleCategoryChange}
-        />
+        <React.Suspense fallback={<div>Loading...</div>}>
+          <CategoryNav
+            categories={categories as EmojiType[]}
+            selectedCategory={selectedCategory}
+            onChange={handleCategoryChange}
+          />
+        </React.Suspense>
 
         {/* 表情网格区域 */}
         <div className="relative overflow-hidden">
@@ -252,13 +258,22 @@ export default function CategoryEmoji({
               {currentCategory && (
                 <div className="space-y-8">
                   {renderEmojiList}
-                  {LoadingIndicator}
+                  {currentState.loading && (
+                    <div className="py-4 flex justify-center">
+                      <div className="flex items-center gap-2 text-primary/70">
+                        <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                        <span><Trans>加载中...</Trans></span>
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
-            </motion.div>
+            </motion.div>å
           </AnimatePresence>
         </div>
       </div>
     </div>
   )
-}
+})
+
+export default CategoryEmoji

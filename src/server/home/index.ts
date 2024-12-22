@@ -80,6 +80,7 @@ export async function fetchHotEmoji(initLang: AVAILABLE_LOCALES) {
       .from(emojiLanguage)
       .innerJoin(emoji, eq(emojiLanguage.fullCode, emoji.fullCode))
       .where(and(eq(emojiLanguage.language, lang), eq(emoji.hot, 1)))
+      .orderBy(sql`RANDOM()`)
       .prepare();
 
     const hotEmoji = await hotPrepare.execute();

@@ -393,7 +393,7 @@
     "origin": [
       [
         "src/components/category/category-emoji.tsx",
-        177
+        265
       ]
     ]
   },
@@ -487,7 +487,7 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        223
+        226
       ]
     ]
   },
@@ -671,7 +671,7 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        217
+        220
       ]
     ]
   },
@@ -759,7 +759,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        280
+        283
       ]
     ]
   },
@@ -770,7 +770,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        277
+        280
       ]
     ]
   },
@@ -781,7 +781,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        165
+        168
       ]
     ]
   },
@@ -959,7 +959,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        298
+        305
       ]
     ]
   },
@@ -1052,7 +1052,7 @@
     "origin": [
       [
         "src/components/search/search-emoji.tsx",
-        32
+        39
       ]
     ]
   },
@@ -1109,7 +1109,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        251
+        254
       ]
     ]
   },
@@ -1217,7 +1217,7 @@
     "origin": [
       [
         "src/components/category/category-emoji.tsx",
-        220
+        222
       ]
     ]
   },
@@ -1239,7 +1239,7 @@
     "origin": [
       [
         "src/components/search/emoji-search-example.tsx",
-        24
+        30
       ]
     ]
   },

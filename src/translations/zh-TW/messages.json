@@ -1,6 +1,6 @@
 {
   "TsoDGX": {
-    "translation": "auto-i18n-next-lingui-tiny-demo，五分鐘內為您的網站添加新語言",
+    "translation": "auto-i18n-next-lingui-tiny-demo，在5分鐘內為您的網站添加一種新語言",
     "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
     "comments": [],
     "origin": [
@@ -55,7 +55,7 @@
     ]
   },
   "wlEib6": {
-    "translation": "Emoji Ai Finder 網站上的材料按「原樣」提供。Emoji Ai Finder 不作任何明示或暗示的保證，並在此放棄和否定所有其他保證，包括但不限於對適銷性、特定用途的適用性或不侵犯知識產權或其他權利的暗示保證。",
+    "translation": "Emoji Ai Finder 網站上的材料按“原樣”提供。Emoji Ai Finder 不作任何明示或暗示的保證，並在此放棄和否定所有其他保證，包括但不限於對適銷性、特定用途的適用性或不侵犯知識產權或其他權利的暗示保證。",
     "message": "Emoji Ai Finder 网站上的材料按“原样”提供。Emoji Ai Finder 不作任何明示或暗示的保证，并在此放弃和否定所有其他保证，包括但不限于对适销性、特定用途的适用性或不侵犯知识产权或其他权利的暗示保证。",
     "comments": [],
     "origin": [
@@ -88,7 +88,7 @@
     ]
   },
   "aDJB+h": {
-    "translation": "使用 Lingui 在五分鐘內用 AI 為您的網站添加新語言",
+    "translation": "使用Lingui在5分鐘內透過AI為您的網站添加新語言",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
     "comments": [],
     "origin": [
@@ -136,7 +136,7 @@
     ]
   },
   "qMISlw": {
-    "translation": "從材料中移除任何版權或其他專有注釋；",
+    "translation": "從材料中移除任何版權或其他專有註釋；",
     "message": "从材料中移除任何版权或其他专有注释；",
     "comments": [],
     "origin": [
@@ -224,7 +224,7 @@
     ]
   },
   "ZYI+z/": {
-    "translation": "允許暫時下載 Emoji Ai Finder 網站上的材料（信息或軟件）一份，僅供個人、非商業的臨時觀看。這是授權，而不是轉讓所有權，並且在此許可下，您不得：",
+    "translation": "允許暫時下載 Emoji Ai Finder 網站上的材料（信息或軟件）一份，僅供個人、非商業的臨時觀看。這是授予許可，而不是轉讓所有權，並且在此許可下，您不得：",
     "message": "允许暂时下载 Emoji Ai Finder 网站上的材料（信息或软件）一份，仅供个人、非商业的临时观看。这是授予许可，而不是转让所有权，并且在此许可下，您不得：",
     "comments": [],
     "origin": [
@@ -285,7 +285,7 @@
     "origin": [
       [
         "src/components/category/category-emoji.tsx",
-        177
+        265
       ]
     ]
   },
@@ -355,7 +355,7 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        223
+        226
       ]
     ]
   },
@@ -382,7 +382,7 @@
     ]
   },
   "tZM844": {
-    "translation": "如果您對本隱私政策有任何疑問或擔憂，請通過 support@emojiaifinder.co 與我們聯繫。",
+    "translation": "如果您對本隱私政策有任何疑問或關切，請通過 support@emojiaifinder.co 與我們聯繫。",
     "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojiaifinder.co 与我们联系。",
     "comments": [],
     "origin": [
@@ -491,7 +491,7 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        217
+        220
       ]
     ]
   },
@@ -507,7 +507,7 @@
     ]
   },
   "Mjq1wv": {
-    "translation": "我們可能會不時更新我們的隱私政策。我們將通過在本頁面上發布新的隱私政策並更新頁面頂部的「生效日期」來通知您任何變更。我們還會通過電子郵件通知您重大變更。",
+    "translation": "我們可能會不時更新我們的隱私政策。我們將通過在我們的頁面上發布新的隱私政策並更新頁面頂部的“生效日期”來通知您任何變更。我們還會通過電子郵件通知您重大變更。",
     "message": "我们可能会不时更新我们的隐私政策。我们将通过在本页面上发布新的隐私政策并更新页面顶部的“生效日期”来通知您任何变更。我们还会通过电子邮件通知您重大变更。",
     "comments": [],
     "origin": [
@@ -551,7 +551,7 @@
     ]
   },
   "O1Pats": {
-    "translation": "或將材料轉移給另一個人或在任何其他服務器上「鏡像」材料。",
+    "translation": "或將材料轉移給另一個人或在任何其他服務器上“鏡像”材料。",
     "message": "或将材料转移给另一个人或在任何其他服务器上“镜像”材料。",
     "comments": [],
     "origin": [
@@ -562,7 +562,7 @@
     ]
   },
   "z3xT8q": {
-    "translation": "描述你的心情，讓 AI 幫你找到合適的表情",
+    "translation": "描述你的心情，讓AI幫你找到合適的表情",
     "message": "描述你的心情，让 AI 帮你找到合适的表情",
     "comments": [],
     "origin": [
@@ -573,8 +573,19 @@
     ]
   },
   "r6acDk": {
-    "translation": "搜索",
+    "translation": "搜尋",
     "message": "搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        283
+      ]
+    ]
+  },
+  "ErJqLL": {
+    "translation": "搜尋中",
+    "message": "搜索中",
     "comments": [],
     "origin": [
       [
@@ -583,30 +594,19 @@
       ]
     ]
   },
-  "ErJqLL": {
-    "translation": "搜索中",
-    "message": "搜索中",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-emoji-dropdown.tsx",
-        277
-      ]
-    ]
-  },
   "dnLXYZ": {
-    "translation": "搜索出錯，請稍後重試",
+    "translation": "搜尋發生錯誤，請稍後再試",
     "message": "搜索出错，请稍后重试",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        165
+        168
       ]
     ]
   },
   "tEMpk0": {
-    "translation": "支付信息",
+    "translation": "付款資訊",
     "message": "支付信息",
     "comments": [],
     "origin": [
@@ -617,7 +617,7 @@
     ]
   },
   "ZB1owk": {
-    "translation": "支持各種口語表達",
+    "translation": "支援各種口語表達",
     "message": "支持各种口语表达",
     "comments": [],
     "origin": [
@@ -628,7 +628,7 @@
     ]
   },
   "lm7p2W": {
-    "translation": "支持多語言搜索",
+    "translation": "支援多語言搜尋",
     "message": "支持多语言搜索",
     "comments": [],
     "origin": [
@@ -716,7 +716,7 @@
     ]
   },
   "yl0Syq": {
-    "translation": "查看詳情",
+    "translation": "詳細查看",
     "message": "查看详情",
     "comments": [],
     "origin": [
@@ -727,7 +727,7 @@
     ]
   },
   "LF2Lag": {
-    "translation": "概述",
+    "translation": "概覽",
     "message": "概述",
     "comments": [],
     "origin": [
@@ -755,7 +755,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        298
+        305
       ]
     ]
   },
@@ -836,7 +836,7 @@
     "origin": [
       [
         "src/components/search/search-emoji.tsx",
-        32
+        39
       ]
     ]
   },
@@ -852,7 +852,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "用最自然的方式描述，AI 懂你想表達的每一種情緒",
+    "translation": "用最自然的方式描述，AI懂你想表達的每一種情緒",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -862,26 +862,14 @@
       ]
     ]
   },
-  "ZEG8fP": {
-    "translation": "用日常口語描述你的感受，回車或點擊",
-    "message": "用日常口语描述你的感受，回车或点击",
-    "comments": [],
-    "origin": [
-      [
-        "src/components/search/search-emoji-dropdown.tsx",
-        266
-      ]
-    ],
-    "obsolete": true
-  },
   "SFA0Fs": {
-    "translation": "用日常口语描述你的感觉，按回车或点击...",
+    "translation": "用日常口語描述你的感受，回車或點擊...",
     "message": "用日常口语描述你的感受，回车或点击...",
     "comments": [],
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        251
+        254
       ]
     ]
   },
@@ -977,7 +965,7 @@
     "origin": [
       [
         "src/components/category/category-emoji.tsx",
-        220
+        222
       ]
     ]
   },
@@ -993,13 +981,13 @@
     ]
   },
   "EojHaD": {
-    "translation": "試試這樣搜索：",
+    "translation": "試試這樣搜尋：",
     "message": "试试这样搜索：",
     "comments": [],
     "origin": [
       [
         "src/components/search/emoji-search-example.tsx",
-        24
+        30
       ]
     ]
   },
@@ -1026,7 +1014,7 @@
     ]
   },
   "9WeTSM": {
-    "translation": "這些信息是為了在我們的 Emoji Ai Finder 導航站上處理訂單而收集的。",
+    "translation": "這些信息是為了在我们的 Emoji Ai Finder 導航站上處理訂單而收集的。",
     "message": "这些信息是为了在我们的 Emoji Ai Finder 导航站上处理订单而收集的。",
     "comments": [],
     "origin": [

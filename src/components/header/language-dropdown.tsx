@@ -44,7 +44,7 @@ function LanguageDropdown({ locales, pathname }: LanguageDropdownProps) {
   return (
     <ul 
       tabIndex={0} 
-      className="dropdown-content menu bg-base-100 border grid grid-cols-2 rounded-lg z-[1] w-[480px] p-2 shadow"
+      className="dropdown-content menu bg-base-100 border flex flex-col rounded-lg z-[1] w-[480px] p-2 shadow"
       role="menu"
       aria-orientation="vertical"
     >
