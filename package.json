@@ -22,6 +22,7 @@
     "@ai-sdk/openai": "^1.0.5",
     "@lingui/core": "^4.14.1",
     "@lingui/react": "^4.13.0",
+    "@next/third-parties": "^15.1.2",
     "@t3-oss/env-nextjs": "^0.10.1",
     "@tanstack/react-virtual": "^3.11.1",
     "ai": "^4.0.9",

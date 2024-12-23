@@ -14,8 +14,9 @@ export async function generateMetadata({ params }: { params: { lang: AVAILABLE_L
   await activateLocale(params.lang)
 
   return {
-    title: t`auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes`,
-    description: t`Use Lingui to add a new language to your website in 5 minutes with AI`,
+    title: t`Emoji AI Finder | Smart Emoji Search for Every Chat`,
+    description: t`Need the right emoji, right now? Emoji AI Finder's got you covered. Just type what you're feeling, and we'll find the emoji that says it best. Fast, fun, and always on point.`,
+    keywords: t`emoji search, AI-powered emoji, Emoji AI Finder, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine`,
   }
 }
 

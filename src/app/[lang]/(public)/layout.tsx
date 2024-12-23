@@ -20,9 +20,13 @@ export default async function RootLayout({
   };
 }>) {
   const i18n = await serverSideTranslations(lang ?? DEFAULT_LOCALE);
+  // const isDev = process.env.NODE_ENV === 'development'
   
   return (
     <html lang={lang} suppressHydrationWarning className="scroll-smooth">
+      {/* <head>
+        <meta name="keywords" content="emoji search, AI-powered emoji, Emoji AI Finder, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine" />
+      </head> */}
       <body className="bg-white">
         <AppWithTranslation i18n={i18n}>
           <main className="flex flex-col min-h-screen">
@@ -35,8 +39,6 @@ export default async function RootLayout({
             <Toaster />
           </main>
         </AppWithTranslation>
-
-        {/* <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || ''} /> */}
       </body>
     </html>
   );

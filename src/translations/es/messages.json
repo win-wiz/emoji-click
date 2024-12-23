@@ -8,6 +8,18 @@
         "src/app/[lang]/(public)/page.tsx",
         17
       ]
+    ],
+    "obsolete": true
+  },
+  "kM0I9v": {
+    "translation": "Buscador de Emoji Inteligente | Búsqueda de Emoji para Cada Chat",
+    "message": "Emoji AI Finder | Smart Emoji Search for Every Chat",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        17
+      ]
     ]
   },
   "/APyPo": {
@@ -87,6 +99,28 @@
       ]
     ]
   },
+  "20D32f": {
+    "translation": "búsqueda de emoji, emoji impulsado por IA, Buscador de Emoji Inteligente, herramienta de emoji inteligente, emoji contextual, descubrimiento de emoji, mejora del chat, motor de recomendación de emoji",
+    "message": "emoji search, AI-powered emoji, Emoji AI Finder, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        19
+      ]
+    ]
+  },
+  "wt7TO4": {
+    "translation": "¿Necesitas el emoji adecuado, ya mismo? ¡Emoji AI Finder te tiene cubierto. Solo escribe lo que sientes, y encontraremos el emoji que mejor lo exprese. Rápido, divertido y siempre preciso.",
+    "message": "Need the right emoji, right now? Emoji AI Finder's got you covered. Just type what you're feeling, and we'll find the emoji that says it best. Fast, fun, and always on point.",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        18
+      ]
+    ]
+  },
   "aDJB+h": {
     "translation": "Use Lingui para agregar un nuevo idioma a su sitio web en 5 minutos con IA",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
@@ -96,7 +130,8 @@
         "src/app/[lang]/(public)/page.tsx",
         18
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "3mGxau": {
     "translation": "Interpretación de la cultura oriental",

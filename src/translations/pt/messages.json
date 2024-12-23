@@ -8,6 +8,18 @@
         "src/app/[lang]/(public)/page.tsx",
         17
       ]
+    ],
+    "obsolete": true
+  },
+  "kM0I9v": {
+    "translation": "Encontrador de Emoji IA | Pesquisa de Emoji Inteligente para Cada Chat",
+    "message": "Emoji AI Finder | Smart Emoji Search for Every Chat",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        17
+      ]
     ]
   },
   "/APyPo": {
@@ -87,6 +99,28 @@
       ]
     ]
   },
+  "20D32f": {
+    "translation": "pesquisa de emoji, emoji impulsionado por IA, Encontrador de Emoji IA, ferramenta inteligente de emoji, emoji contextual, descoberta de emoji, melhoria de chat, motor de recomendação de emoji",
+    "message": "emoji search, AI-powered emoji, Emoji AI Finder, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        19
+      ]
+    ]
+  },
+  "wt7TO4": {
+    "translation": "Precisa do emoji certo agora? O Emoji AI Finder tem você coberto. Basta digitar o que você está sentindo e encontraremos o emoji que diz melhor isso. Rápido, divertido e sempre na ponta.",
+    "message": "Need the right emoji, right now? Emoji AI Finder's got you covered. Just type what you're feeling, and we'll find the emoji that says it best. Fast, fun, and always on point.",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        18
+      ]
+    ]
+  },
   "aDJB+h": {
     "translation": "Use Lingui para adicionar um novo idioma ao seu site em 5 minutos com IA",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
@@ -96,7 +130,8 @@
         "src/app/[lang]/(public)/page.tsx",
         18
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "3mGxau": {
     "translation": "Interpretação da Cultura Oriental",
@@ -815,7 +850,7 @@
     ]
   },
   "MaJ5h3": {
-    "translation": "",
+    "translation": "Data de Entrada em Vigor: 2024-12-12",
     "message": "生效日期：2024-12-12",
     "comments": [],
     "origin": [

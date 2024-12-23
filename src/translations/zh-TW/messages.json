@@ -8,6 +8,18 @@
         "src/app/[lang]/(public)/page.tsx",
         17
       ]
+    ],
+    "obsolete": true
+  },
+  "kM0I9v": {
+    "translation": "表情符AI查找器 | 每個聊天的智能表情符搜索",
+    "message": "Emoji AI Finder | Smart Emoji Search for Every Chat",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        17
+      ]
     ]
   },
   "/APyPo": {
@@ -87,6 +99,28 @@
       ]
     ]
   },
+  "20D32f": {
+    "translation": "表情符搜索, AI驅動的表情符, 表情符AI查找器, 智能表情符工具, 上下文表情符, 表情符發現, 聊天增強, 表情符推薦引擎",
+    "message": "emoji search, AI-powered emoji, Emoji AI Finder, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        19
+      ]
+    ]
+  },
+  "wt7TO4": {
+    "translation": "現在就需要合適的表情符？表情符AI查找器來幫您解決。只需輸入您的感受，我們就會找到最能表達它的表情符。快速、有趣且總是恰到好處。",
+    "message": "Need the right emoji, right now? Emoji AI Finder's got you covered. Just type what you're feeling, and we'll find the emoji that says it best. Fast, fun, and always on point.",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        18
+      ]
+    ]
+  },
   "aDJB+h": {
     "translation": "使用Lingui在5分鐘內透過AI為您的網站添加新語言",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
@@ -96,7 +130,8 @@
         "src/app/[lang]/(public)/page.tsx",
         18
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "3mGxau": {
     "translation": "東方文化解讀",
