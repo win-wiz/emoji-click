@@ -5,9 +5,9 @@ import { AVAILABLE_LOCALES, DEFAULT_LOCALE } from './config';
 import zhMessages from '@/translations/zh/messages.json'
 import enMessages from '@/translations/en/messages.json'
 // import csMessages from '@/translations/cs/messages.json'
-// import frMessages from '@/translations/fr/messages.json'
+import frMessages from '@/translations/fr/messages.json'
 // import deMessages from '@/translations/de/messages.json'
-// import esMessages from '@/translations/es/messages.json'
+import esMessages from '@/translations/es/messages.json'
 // import itMessages from '@/translations/it/messages.json'
 // import jaMessages from '@/translations/ja/messages.json'
 // import koMessages from '@/translations/ko/messages.json'
@@ -16,8 +16,8 @@ import enMessages from '@/translations/en/messages.json'
 // import ruMessages from '@/translations/ru/messages.json'
 // import ukMessages from '@/translations/uk/messages.json'
 // import viMessages from '@/translations/vi/messages.json'
-// import zhTWMessages from '@/translations/zh-TW/messages.json'
-// import ptMessages from '@/translations/pt/messages.json'
+import zhTWMessages from '@/translations/zh-TW/messages.json'
+import ptMessages from '@/translations/pt/messages.json'
 // import daMessages from '@/translations/da/messages.json'
 // import elMessages from '@/translations/el/messages.json'
 // import noMessages from '@/translations/no/messages.json'
@@ -67,9 +67,9 @@ export const messagesMap: Record<string, Messages> = {
   "zh": convertToMessages(zhMessages as RawMessages),
   "en": convertToMessages(enMessages as RawMessages),
   // "cs": convertToMessages(csMessages as RawMessages),
-  // "fr": convertToMessages(frMessages as RawMessages),
+  "fr": convertToMessages(frMessages as RawMessages),
   // "de": convertToMessages(deMessages as RawMessages),
-  // "es": convertToMessages(esMessages as RawMessages),
+  "es": convertToMessages(esMessages as RawMessages),
   // "it": convertToMessages(itMessages as RawMessages),
   // "ja": convertToMessages(jaMessages as RawMessages),
   // "ko": convertToMessages(koMessages as RawMessages),
@@ -78,8 +78,8 @@ export const messagesMap: Record<string, Messages> = {
   // "ru": convertToMessages(ruMessages as RawMessages),
   // "uk": convertToMessages(ukMessages as RawMessages),
   // "vi": convertToMessages(viMessages as RawMessages),
-  // "zh-TW": convertToMessages(zhTWMessages as RawMessages),
-  // "pt": convertToMessages(ptMessages as RawMessages),
+  "zh-TW": convertToMessages(zhTWMessages as RawMessages),
+  "pt": convertToMessages(ptMessages as RawMessages),
   // "da": convertToMessages(daMessages as RawMessages),
   // "el": convertToMessages(elMessages as RawMessages),
   // "no": convertToMessages(noMessages as RawMessages),
