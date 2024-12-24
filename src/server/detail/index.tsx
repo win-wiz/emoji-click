@@ -110,3 +110,21 @@ export async function fetchEmojiProfileByFullCode(fullCode: string, initLang: AV
     }
   }
 }
+
+export async function fetchGenerateMetadata(lang: AVAILABLE_LOCALES, fullCode: string) {
+
+  const metadataPrepare = db
+    .select({
+      name: emojiLanguage.name,
+      meaning: emojiLanguage.meaning,
+    })
+    .from(emojiLanguage)
+    .where(and(eq(emojiLanguage.fullCode, fullCode), eq(emojiLanguage.language, lang)))
+    .prepare();
+
+  const metadata = await metadataPrepare.execute();
+
+  return {
+    data: metadata[0]
+  }
+}

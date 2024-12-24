@@ -53,3 +53,25 @@ export function debounce(fn: Function, delay: number) {
 export const fetcher = (...args: Parameters<typeof fetch>) => fetch(...args).then((res) => res.json());
 
 export const supportLang = ['zh', 'en'];
+
+export interface SitemapUrl {
+  loc: string
+  lastmod: string
+  changefreq: 'daily' | 'weekly' | 'monthly' | 'yearly'
+  priority: number
+}
+
+export function generateSitemapXml(urls: SitemapUrl[]) {
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>'
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+  urls.forEach(url => {
+    xml += `<url>
+              <loc>${url.loc}</loc>
+              <lastmod>${url.lastmod}</lastmod>
+              <changefreq>${url.changefreq}</changefreq>
+              <priority>${url.priority}</priority>
+            </url>`
+  })
+  xml += '</urlset>'
+  return xml
+}

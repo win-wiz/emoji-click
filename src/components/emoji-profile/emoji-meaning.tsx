@@ -1,3 +1,5 @@
+'use client'
+
 import { Trans } from "@lingui/macro"
 import { memo } from "react"
 import EmojiSectionTitle from "./emoji-section-title"

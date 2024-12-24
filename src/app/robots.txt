@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: *
+
+Sitemap: https://emojis.click/sitemap.xml
+Sitemap: https://subrise.co/en/api/sitemap
