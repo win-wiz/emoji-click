@@ -47,7 +47,7 @@ async function doubaoTranslate (prompt) {
  */
 async function tongyiTranslate (prompt) {
   const response = await generateText({
-    model: tongyi('qwen-turbo'),
+    model: tongyi('qwen2.5-32b-instruct'),
     prompt,
   });
 

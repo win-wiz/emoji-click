@@ -1,18 +1,6 @@
 {
-  "TsoDGX": {
-    "translation": "auto-i18n-next-lingui-tiny-demo, agregar un nuevo idioma a su sitio web en 5 minutos",
-    "message": "auto-i18n-next-lingui-tiny-demo, add a new language to your website in 5 minutes",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/(public)/page.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
-  },
   "kM0I9v": {
-    "translation": "Buscador de Emoji Inteligente | Búsqueda de Emoji para Cada Chat",
+    "translation": "Emoji AI Finder | Búsqueda inteligente de emojis para cada chat",
     "message": "Emoji AI Finder | Smart Emoji Search for Every Chat",
     "comments": [],
     "origin": [
@@ -23,7 +11,7 @@
     ]
   },
   "/APyPo": {
-    "translation": "Emoji Ai Finder puede modificar estos Términos de Servicio del sitio web en cualquier momento sin previo aviso. Al utilizar este sitio web, acepta estar vinculado por los Términos de Servicio vigentes en ese momento.",
+    "translation": "Emoji Ai Finder puede modificar en cualquier momento los términos de servicio de este sitio web sin notificación. Al usar este sitio web, aceptas estar sujeto a estos términos de servicio en el momento presente.",
     "message": "Emoji Ai Finder 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
     "comments": [],
     "origin": [
@@ -34,7 +22,7 @@
     ]
   },
   "Ad1KRM": {
-    "translation": "Emoji Ai Finder respeta su privacidad. No compartiremos sus datos personales con ninguna tercera parte, salvo que sea necesario para procesar su pedido o cumplir con las obligaciones legales.",
+    "translation": "Emoji Ai Finder respeta tu privacidad. No compartimos tus datos personales con terceros a menos que sea necesario para procesar tu pedido o cumplir con las obligaciones legales.",
     "message": "Emoji Ai Finder 尊重您的隐私。我们不会与任何第三方分享您的个人数据，除非为了处理您的订单或遵守法律要求。",
     "comments": [],
     "origin": [
@@ -45,7 +33,7 @@
     ]
   },
   "CVPQ53": {
-    "translation": "Términos de Servicio de Emoji Ai Finder",
+    "translation": "Términos de servicio de Emoji Ai Finder",
     "message": "Emoji Ai Finder 服务条款",
     "comments": [],
     "origin": [
@@ -56,7 +44,7 @@
     ]
   },
   "EvuUmj": {
-    "translation": "Emoji Ai Finder no ha revisado todos los sitios web vinculados a su sitio y no se hace responsable del contenido de ningún sitio vinculado. La inclusión de cualquier enlace no implica el respaldo de Emoji Ai Finder al sitio. El uso de cualquier sitio web vinculado está bajo riesgo del usuario.",
+    "translation": "Emoji Ai Finder no revisa todos los sitios web vinculados desde su sitio web y no es responsable del contenido de esos sitios. La inclusión de cualquier enlace no implica una aprobación por parte de Emoji Ai Finder. El uso de cualquier sitio web vinculado se realiza bajo tu propio riesgo.",
     "message": "Emoji Ai Finder 未审查与其网站链接的所有站点，并且不对任何此类链接站点的内容负责。包含任何链接并不意味着 Emoji Ai Finder 对该站点的认可。使用任何此类链接网站由用户自行承担风险。",
     "comments": [],
     "origin": [
@@ -67,7 +55,7 @@
     ]
   },
   "wlEib6": {
-    "translation": "Los materiales en el sitio web de Emoji Ai Finder se proporcionan “tal cual”. Emoji Ai Finder no hace garantías expresas o implícitas y renuncia a todas las demás garantías, incluyendo, sin limitación, las garantías implícitas de comerciabilidad, idoneidad para un propósito particular o no infracción de derechos de propiedad intelectual u otros derechos.",
+    "translation": "Los materiales en el sitio web de Emoji Ai Finder se proporcionan 'tal cual'. Emoji Ai Finder no hace ninguna garantía, expresa o implícita, y renuncia a todas las demás garantías, incluidas, pero no limitadas a, la comercialidad, la idoneidad para un propósito particular o la no violación de derechos de propiedad intelectual u otros derechos.",
     "message": "Emoji Ai Finder 网站上的材料按“原样”提供。Emoji Ai Finder 不作任何明示或暗示的保证，并在此放弃和否定所有其他保证，包括但不限于对适销性、特定用途的适用性或不侵犯知识产权或其他权利的暗示保证。",
     "comments": [],
     "origin": [
@@ -78,7 +66,7 @@
     ]
   },
   "0OEG3G": {
-    "translation": "Emoji Ai Finder opera el sitio web https://emojis.click/ y se compromete a proteger su privacidad. Esta Política de Privacidad resume los tipos de información que recopilamos, cómo la utilizamos y qué pasos tomamos para asegurar que su información personal se maneje adecuadamente.",
+    "translation": "Emoji Ai Finder opera el sitio web https://emojis.click/ y se compromete a proteger tu privacidad. Esta política de privacidad describe qué información recopilamos, cómo la usamos y qué pasos tomamos para asegurar que tu información personal se maneje adecuadamente.",
     "message": "Emoji Ai Finder 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。",
     "comments": [],
     "origin": [
@@ -89,7 +77,7 @@
     ]
   },
   "sxwLz2": {
-    "translation": "Política de Privacidad de Emoji Ai Finder",
+    "translation": "Política de privacidad de Emoji Ai Finder",
     "message": "Emoji Ai Finder 隐私政策",
     "comments": [],
     "origin": [
@@ -100,7 +88,7 @@
     ]
   },
   "20D32f": {
-    "translation": "búsqueda de emoji, emoji impulsado por IA, Buscador de Emoji Inteligente, herramienta de emoji inteligente, emoji contextual, descubrimiento de emoji, mejora del chat, motor de recomendación de emoji",
+    "translation": "búsqueda de emojis, emojis impulsados por IA, Emoji AI Finder, herramienta inteligente de emojis, emojis contextuales, descubrimiento de emojis, mejora de chats, motor de recomendación de emojis",
     "message": "emoji search, AI-powered emoji, Emoji AI Finder, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine",
     "comments": [],
     "origin": [
@@ -111,7 +99,7 @@
     ]
   },
   "wt7TO4": {
-    "translation": "¿Necesitas el emoji adecuado, ya mismo? ¡Emoji AI Finder te tiene cubierto. Solo escribe lo que sientes, y encontraremos el emoji que mejor lo exprese. Rápido, divertido y siempre preciso.",
+    "translation": "¿Necesitas el emoji correcto ahora mismo? Emoji AI Finder te tiene cubierto. Simplemente escribe lo que sientes y encontrarás el emoji que lo expresa mejor. Rápido, divertido y siempre al punto.",
     "message": "Need the right emoji, right now? Emoji AI Finder's got you covered. Just type what you're feeling, and we'll find the emoji that says it best. Fast, fun, and always on point.",
     "comments": [],
     "origin": [
@@ -121,18 +109,6 @@
       ]
     ]
   },
-  "aDJB+h": {
-    "translation": "Use Lingui para agregar un nuevo idioma a su sitio web en 5 minutos con IA",
-    "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/(public)/page.tsx",
-        18
-      ]
-    ],
-    "obsolete": true
-  },
   "3mGxau": {
     "translation": "Interpretación de la cultura oriental",
     "message": "东方文化解读",
@@ -140,7 +116,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-cultura.tsx",
-        19
+        21
       ]
     ]
   },
@@ -156,7 +132,7 @@
     ]
   },
   "uW7qaK": {
-    "translation": "Expresiones individuales",
+    "translation": "emoji",
     "message": "个表情",
     "comments": [],
     "origin": [
@@ -171,7 +147,7 @@
     ]
   },
   "qMISlw": {
-    "translation": "Elimine cualquier nota de copyright u otro aviso de propiedad; ",
+    "translation": "eliminar cualquier marca de derechos de autor u otro tipo de marca de propiedad del material;",
     "message": "从材料中移除任何版权或其他专有注释；",
     "comments": [],
     "origin": [
@@ -182,13 +158,13 @@
     ]
   },
   "aB+fc8": {
-    "translation": "Escenario de uso",
+    "translation": "Escenarios de uso",
     "message": "使用场景",
     "comments": [],
     "origin": [
       [
         "src/components/emoji-profile/emoji-scene.tsx",
-        44
+        46
       ]
     ]
   },
@@ -226,7 +202,7 @@
     ]
   },
   "zil5pJ": {
-    "translation": "Modificar",
+    "translation": "Modificaciones",
     "message": "修改",
     "comments": [],
     "origin": [
@@ -237,7 +213,7 @@
     ]
   },
   "pAVyKF": {
-    "translation": "Modificar o copiar los materiales;",
+    "translation": "modificar o copiar el material;",
     "message": "修改或复制材料；",
     "comments": [],
     "origin": [
@@ -248,7 +224,7 @@
     ]
   },
   "7+ngOM": {
-    "translation": "Privacidad de los niños",
+    "translation": "Privacidad infantil",
     "message": "儿童隐私",
     "comments": [],
     "origin": [
@@ -259,7 +235,7 @@
     ]
   },
   "ZYI+z/": {
-    "translation": "Permitimos descargar temporalmente una copia de los materiales (información o software) del sitio web de Emoji Ai Finder solo para uso personal y no comercial. Esta es una licencia, no una transferencia de propiedad, y bajo esta licencia, usted no puede:",
+    "translation": "Permite descargar temporalmente los materiales (información o software) del sitio web de Emoji Ai Finder para un uso personal y no comercial. Esta es una licencia, no una transferencia de propiedad, y bajo esta licencia no puedes:",
     "message": "允许暂时下载 Emoji Ai Finder 网站上的材料（信息或软件）一份，仅供个人、非商业的临时观看。这是授予许可，而不是转让所有权，并且在此许可下，您不得：",
     "comments": [],
     "origin": [
@@ -270,7 +246,7 @@
     ]
   },
   "buIPLU": {
-    "translation": "Renuncia",
+    "translation": "Aviso de exención de responsabilidad",
     "message": "免责声明",
     "comments": [],
     "origin": [
@@ -281,7 +257,7 @@
     ]
   },
   "zYyCyW": {
-    "translation": "Categoría completa",
+    "translation": "Todas las categorías",
     "message": "全部分类",
     "comments": [],
     "origin": [
@@ -292,7 +268,7 @@
     ]
   },
   "ysc16k": {
-    "translation": "Categoría completa de expresiones",
+    "translation": "Todas las categorías de emojis",
     "message": "全部表情分类",
     "comments": [],
     "origin": [
@@ -309,7 +285,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-keywords.tsx",
-        68
+        70
       ]
     ]
   },
@@ -336,7 +312,7 @@
     ]
   },
   "gUPr1f": {
-    "translation": "Los materiales que aparecen en el sitio web de Emoji Ai Finder pueden contener errores técnicos, tipográficos o fotográficos. Emoji Ai Finder no garantiza que los materiales en su sitio web sean precisos, completos o actuales. Emoji Ai Finder puede cambiar los materiales en su sitio web en cualquier momento sin previo aviso. Sin embargo, Emoji Ai Finder no promete actualizar los materiales.",
+    "translation": "Los materiales en el sitio web de Emoji Ai Finder pueden contener errores técnicos, tipográficos o fotográficos. Emoji Ai Finder no garantiza que cualquier material en su sitio web sea preciso, completo o actualizado. Emoji Ai Finder puede cambiar en cualquier momento los materiales en su sitio web sin previo aviso. Sin embargo, Emoji Ai Finder no se compromete a actualizar los materiales.",
     "message": "在 Emoji Ai Finder 网站上出现的材料可能包含技术、排印或摄影错误。Emoji Ai Finder 不保证其网站上的任何材料准确、完整或最新。Emoji Ai Finder 可以随时更改其网站上包含的材料而不作通知。但是，Emoji Ai Finder 不承诺更新材料。",
     "comments": [],
     "origin": [
@@ -347,7 +323,7 @@
     ]
   },
   "4AZhIJ": {
-    "translation": "En ningún caso, Emoji Ai Finder o sus proveedores serán responsables de daños (incluyendo, sin limitación, daños por pérdida de datos o beneficios o interrupción del negocio) como resultado del uso o la imposibilidad de usar los materiales en el sitio web de Emoji Ai Finder, incluso si Emoji Ai Finder o su representante autorizado han sido notificados verbalmente o por escrito de la posibilidad de tales daños.",
+    "translation": "En ningún caso Emoji Ai Finder ni sus proveedores serán responsables de daños (incluyendo, sin limitación, pérdida de datos o beneficios o daños causados por interrupción del negocio) que puedan surgir del uso o la imposibilidad de usar los materiales en el sitio web de Emoji Ai Finder, incluso si Emoji Ai Finder o un representante autorizado de Emoji Ai Finder ha sido avisado de la posibilidad de tales daños.",
     "message": "在任何情况下，Emoji Ai Finder 或其供应商均不对任何损害（包括但不限于数据或利润损失或因业务中断造成的损害）承担责任，这些损害是由于使用或无法使用 Emoji Ai Finder 网站上的材料而引起的，即使 Emoji Ai Finder 或 Emoji Ai Finder 授权代表已被口头或书面通知可能会造成此类损害的可能性。",
     "comments": [],
     "origin": [
@@ -364,7 +340,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-meaning.tsx",
-        54
+        56
       ]
     ]
   },
@@ -380,7 +356,7 @@
     ]
   },
   "4Yl9f0": {
-    "translation": "Fallo al copiar, inténtelo de nuevo",
+    "translation": "Fallo al copiar, inténtalo de nuevo",
     "message": "复制失败，请重试",
     "comments": [],
     "origin": [
@@ -395,7 +371,7 @@
     ]
   },
   "9ufcus": {
-    "translation": "Copia exitosa",
+    "translation": "Copiado exitosamente",
     "message": "复制成功",
     "comments": [],
     "origin": [
@@ -406,7 +382,7 @@
     ]
   },
   "HYMMQU": {
-    "translation": "Copiar expresión",
+    "translation": "Copiar emoji",
     "message": "复制表情",
     "comments": [],
     "origin": [
@@ -417,7 +393,7 @@
     ]
   },
   "tZM844": {
-    "translation": "Si tiene alguna pregunta o preocupación sobre esta Política de Privacidad, póngase en contacto con nosotros a través de support@emojiaifinder.co.",
+    "translation": "Si tienes alguna pregunta o inquietud sobre esta política de privacidad, ponte en contacto con nosotros a través de support@emojiaifinder.co.",
     "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojiaifinder.co 与我们联系。",
     "comments": [],
     "origin": [
@@ -428,7 +404,7 @@
     ]
   },
   "MInIhV": {
-    "translation": "Si tiene alguna pregunta sobre estos términos, póngase en contacto con nosotros a través de support@emojiaifinder.co.",
+    "translation": "Si tienes alguna pregunta sobre estos términos, ponte en contacto con nosotros a través de support@emojiaifinder.co.",
     "message": "如果您对这些条款有任何疑问，请通过 support@emojiaifinder.co 与我们联系。",
     "comments": [],
     "origin": [
@@ -439,7 +415,7 @@
     ]
   },
   "EERd79": {
-    "translation": "Si viola alguna de estas restricciones, esta licencia se rescindirá automáticamente y Emoji Ai Finder puede rescindirla en cualquier momento. Cuando finalice la visualización de estos materiales o cuando esta licencia se rescinda, debe destruir cualquier material descargado, ya sea en formato electrónico o impreso.",
+    "translation": "Si violas cualquiera de estas restricciones, esta licencia se terminará automáticamente y Emoji Ai Finder puede revocar esta licencia en cualquier momento. Al terminar tu acceso a estos materiales o al terminar esta licencia, debes destruir cualquier material que hayas descargado ya sea en formato electrónico o impreso.",
     "message": "如果您违反这些限制中的任何一项，此许可将自动终止，并且 Emoji Ai Finder 可随时终止此许可。在终止您查看这些材料或此许可终止时，您必须销毁您是否以电子格式或印刷格式拥有的任何下载的材料。",
     "comments": [],
     "origin": [
@@ -472,7 +448,7 @@
     ]
   },
   "QP4I14": {
-    "translation": "Utilizar los materiales para cualquier propósito comercial, o para cualquier exhibición pública (comercial o no comercial);",
+    "translation": "usar los materiales para cualquier propósito comercial, o para cualquier exhibición pública (comercial o no comercial);",
     "message": "将材料用于任何商业目的，或用于任何公共展示（商业或非商业）；",
     "comments": [],
     "origin": [
@@ -483,7 +459,7 @@
     ]
   },
   "TLRKbo": {
-    "translation": "Intentar descompilar o realizar ingeniería inversa de cualquier software en el sitio web de Emoji Ai Finder;",
+    "translation": "intentar descompilar o realizar ingeniería inversa en cualquier software en el sitio web de Emoji Ai Finder;",
     "message": "尝试对 Emoji Ai Finder 网站上的任何软件进行反编译或逆向工程；",
     "comments": [],
     "origin": [
@@ -500,7 +476,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-scene.tsx",
-        32
+        34
       ]
     ]
   },
@@ -542,7 +518,7 @@
     ]
   },
   "Mjq1wv": {
-    "translation": "Podemos actualizar nuestra Política de Privacidad de vez en cuando. Le notificaremos cualquier cambio publicando una nueva Política de Privacidad en esta página y actualizando la fecha de \"Fecha de entrada en vigor\" en la parte superior de la página. También le notificaremos por correo electrónico los cambios significativos.",
+    "translation": "Podemos actualizar nuestra política de privacidad de vez en cuando. Te informaremos de cualquier cambio publicando una nueva política de privacidad en esta página y actualizando la fecha de entrada en vigor en la parte superior de la página. También te notificaremos por correo electrónico sobre cambios significativos.",
     "message": "我们可能会不时更新我们的隐私政策。我们将通过在本页面上发布新的隐私政策并更新页面顶部的“生效日期”来通知您任何变更。我们还会通过电子邮件通知您重大变更。",
     "comments": [],
     "origin": [
@@ -553,7 +529,7 @@
     ]
   },
   "W0blWg": {
-    "translation": "Recopilamos datos personales que nos proporciona voluntariamente, incluyendo, pero no limitado a:",
+    "translation": "Recopilamos los datos personales que nos proporcionas voluntariamente, incluyendo, pero no limitado a:",
     "message": "我们收集您自愿提供给我们的个人数据，包括但不限于：",
     "comments": [],
     "origin": [
@@ -564,7 +540,7 @@
     ]
   },
   "7zNvUG": {
-    "translation": "Nuestros servicios no están dirigidos a niños menores de 18 años. No recopilamos intencionadamente información personal de niños.",
+    "translation": "Nuestro servicio no está destinado a menores de 18 años. No recopilamos intencionalmente información personal de niños.",
     "message": "我们的服务不适用于18岁以下的儿童。我们不会有意收集儿童的个人信息。",
     "comments": [],
     "origin": [
@@ -575,7 +551,7 @@
     ]
   },
   "1P/WNr": {
-    "translation": "También recopilamos datos no personales a través de cookies de red, que incluyen su dirección IP, tipo de navegador y detalles de navegación en las páginas de nuestro sitio web. Estos datos se utilizan para mejorar su experiencia en nuestro sitio web.",
+    "translation": "También recopilamos datos no personales a través de cookies de red, que incluyen detalles de uso como tu dirección IP, tipo de navegador y páginas que visitas en nuestro sitio web. Estos datos se utilizan para mejorar tu experiencia en nuestro sitio web.",
     "message": "我们还通过网络cookie收集非个人数据，其中包括您的IP地址、浏览器类型以及您在我们网站上访问的页面等使用详情。这些数据用于增强您在我们网站上的体验。",
     "comments": [],
     "origin": [
@@ -586,7 +562,7 @@
     ]
   },
   "O1Pats": {
-    "translation": "o transferir los materiales a otra persona o “espejar” los materiales en cualquier otro servidor.",
+    "translation": "o transferir los materiales a otra persona o 'espejar' los materiales en cualquier otro servidor.",
     "message": "或将材料转移给另一个人或在任何其他服务器上“镜像”材料。",
     "comments": [],
     "origin": [
@@ -597,7 +573,7 @@
     ]
   },
   "z3xT8q": {
-    "translation": "Describe su estado de ánimo para que el IA le ayude a encontrar la expresión adecuada",
+    "translation": "Describe tu estado de ánimo y deja que la IA te ayude a encontrar la expresión facial adecuada",
     "message": "描述你的心情，让 AI 帮你找到合适的表情",
     "comments": [],
     "origin": [
@@ -630,7 +606,7 @@
     ]
   },
   "dnLXYZ": {
-    "translation": "Error en la búsqueda, por favor intente de nuevo más tarde",
+    "translation": "Error de búsqueda, por favor inténtalo de nuevo más tarde",
     "message": "搜索出错，请稍后重试",
     "comments": [],
     "origin": [
@@ -652,7 +628,7 @@
     ]
   },
   "ZB1owk": {
-    "translation": "Soporta diversos modismos",
+    "translation": "Soporta diversas formas de hablar coloquial",
     "message": "支持各种口语表达",
     "comments": [],
     "origin": [
@@ -663,7 +639,7 @@
     ]
   },
   "lm7p2W": {
-    "translation": "Soporta búsquedas multilingües",
+    "translation": "Soporta búsqueda multilingüe",
     "message": "支持多语言搜索",
     "comments": [],
     "origin": [
@@ -674,7 +650,7 @@
     ]
   },
   "ZQU+W3": {
-    "translation": "El propósito principal de recopilar sus datos es procesar su pedido y mejorar las funciones y servicios de nuestro sitio web.",
+    "translation": "La principal finalidad de recopilar sus datos es procesar su pedido y mejorar las funciones y servicios de nuestro sitio web.",
     "message": "收集您的数据的主要目的是处理您的订单并改善我们网站的功能和服务。",
     "comments": [],
     "origin": [
@@ -696,7 +672,7 @@
     ]
   },
   "KrpxAk": {
-    "translation": "Propósito de recopilación de datos",
+    "translation": "Propósito de la recopilación de datos",
     "message": "数据收集目的",
     "comments": [],
     "origin": [
@@ -713,12 +689,12 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-cultura.tsx",
-        118
+        120
       ]
     ]
   },
   "F3PJlG": {
-    "translation": "Términos de servicio",
+    "translation": "Términos del servicio",
     "message": "服务条款",
     "comments": [],
     "origin": [
@@ -729,7 +705,7 @@
     ]
   },
   "geeoGa": {
-    "translation": "Actualizaciones de esta política de privacidad",
+    "translation": "Actualización de esta política de privacidad",
     "message": "本隐私政策的更新",
     "comments": [],
     "origin": [
@@ -740,7 +716,7 @@
     ]
   },
   "1zGFc9": {
-    "translation": "Precisión del material",
+    "translation": "Precisión de los materiales",
     "message": "材料准确性",
     "comments": [],
     "origin": [
@@ -773,7 +749,7 @@
     ]
   },
   "EuPxox": {
-    "translation": "Bienvenido a Emoji Ai Finder. Al visitar nuestro sitio web (https://emojis.click/), acepta estar sujeto a estos términos de servicio, todas las leyes y regulaciones aplicables, y acuerda que tiene la responsabilidad de cumplir con cualquier ley local aplicable. Si no está de acuerdo con alguno de estos términos, está prohibido usar o acceder a este sitio web.",
+    "translation": "Bienvenido a Emoji Ai Finder. Al acceder a nuestro sitio web (https://emojis.click/), aceptas estar sujeto a estos términos del servicio, todas las leyes y regulaciones aplicables, y aceptas ser responsable de cumplir con cualquier ley local aplicable. Si no estás de acuerdo con cualquiera de estos términos, estás prohibido usar o acceder a este sitio web.",
     "message": "欢迎访问 Emoji Ai Finder。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。",
     "comments": [],
     "origin": [
@@ -795,7 +771,7 @@
     ]
   },
   "DDScQ8": {
-    "translation": "Haga clic para copiar la expresión",
+    "translation": "Haz clic para copiar la expresión",
     "message": "点击可以复制表情",
     "comments": [],
     "origin": [
@@ -828,7 +804,7 @@
     ]
   },
   "imwQl1": {
-    "translation": "Derechos de autor © 2024 EmojiAiFinder. Todos los derechos reservados",
+    "translation": "Todos los derechos reservados © 2024 EmojiAiFinder Reservados todos los derechos",
     "message": "版权所有 © 2024 EmojiAiFinder 保留所有权利",
     "comments": [],
     "origin": [
@@ -839,7 +815,7 @@
     ]
   },
   "w/qYEh": {
-    "translation": "Entender la semántica emocional",
+    "translation": "Entendimiento de la semántica emocional",
     "message": "理解情感语义",
     "comments": [],
     "origin": [
@@ -865,7 +841,7 @@
     ]
   },
   "+x4GVv": {
-    "translation": "Encontrar la expresión más adecuada con IA",
+    "translation": "Encuentra la expresión más adecuada con IA",
     "message": "用AI找到最适合的表情",
     "comments": [],
     "origin": [
@@ -876,7 +852,7 @@
     ]
   },
   "KuBgYO": {
-    "translation": "Crear expresiones expresivas con la magia de IA 🤖",
+    "translation": "Crea expresiones faciales expresivas con el hechizo de la IA 🤖",
     "message": "用AI魔法创造富有表现力的表情 🤖",
     "comments": [],
     "origin": [
@@ -887,7 +863,7 @@
     ]
   },
   "LgfBZM": {
-    "translation": "Describa de la manera más natural posible, IA entiende cada emoción que desea expresar",
+    "translation": "Describe de la manera más natural, la IA entiende cada una de tus emociones",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -898,7 +874,7 @@
     ]
   },
   "SFA0Fs": {
-    "translation": "Describa sus sentimientos con un lenguaje cotidiano, presione Enter o haga clic...",
+    "translation": "Describe tus sentimientos con lenguaje cotidiano, presiona enter o haz clic...",
     "message": "用日常口语描述你的感受，回车或点击...",
     "comments": [],
     "origin": [
@@ -926,18 +902,18 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-recommand.tsx",
-        17
+        19
       ]
     ]
   },
   "Xwe3Ld": {
-    "translation": "Escenas sociales",
+    "translation": "Escenarios sociales",
     "message": "社交场景",
     "comments": [],
     "origin": [
       [
         "src/components/emoji-profile/emoji-scene.tsx",
-        18
+        20
       ]
     ]
   },
@@ -953,7 +929,7 @@
     ]
   },
   "C1syp2": {
-    "translation": "Ingrese texto simple para encontrar rápidamente la expresión deseada",
+    "translation": "Ingresa texto sencillo y encuentra rápidamente la expresión que deseas",
     "message": "简单输入文字，快速找到想要的表情",
     "comments": [],
     "origin": [
@@ -964,7 +940,7 @@
     ]
   },
   "2bRzLV": {
-    "translation": "Ley aplicable",
+    "translation": "Leyes aplicables",
     "message": "管辖法律",
     "comments": [],
     "origin": [
@@ -975,7 +951,7 @@
     ]
   },
   "J0CfpT": {
-    "translation": "Contáctenos",
+    "translation": "Contáctanos",
     "message": "联系我们",
     "comments": [],
     "origin": [
@@ -994,7 +970,7 @@
     ]
   },
   "tuZXxr": {
-    "translation": "Clasificación de emojis",
+    "translation": "Clasificación de expresiones",
     "message": "表情分类",
     "comments": [],
     "origin": [
@@ -1011,12 +987,12 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-cultura.tsx",
-        27
+        29
       ]
     ]
   },
   "EojHaD": {
-    "translation": "Pruebe a buscar así:",
+    "translation": "Prueba esta búsqueda:",
     "message": "试试这样搜索：",
     "comments": [],
     "origin": [
@@ -1038,13 +1014,13 @@
     ]
   },
   "2eLmtV": {
-    "translation": "Consejos para el uso intercultural",
+    "translation": "Consejos para uso intercultural",
     "message": "跨文化使用建议",
     "comments": [],
     "origin": [
       [
         "src/components/emoji-profile/emoji-cultura.tsx",
-        95
+        97
       ]
     ]
   },
@@ -1060,7 +1036,7 @@
     ]
   },
   "7iV6ah": {
-    "translation": "Estos términos y condiciones están sujetos a la legislación de Estados Unidos y se interpretan de acuerdo con ella, usted se somete irrevocablemente a la jurisdicción exclusiva de los tribunales de ese estado o lugar.",
+    "translation": "Estos términos y condiciones están sujetos a la ley de los Estados Unidos y se interpretan según dicha ley, y usted acepta de forma irrevocable la jurisdicción exclusiva de los tribunales de ese estado o ubicación.",
     "message": "这些条款和条件受美国法律的管辖并根据其解释，您不可撤销地服从该州或地点法院的专属管辖权。",
     "comments": [],
     "origin": [

@@ -236,7 +236,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-cultura.tsx",
-        19
+        21
       ]
     ]
   },
@@ -284,7 +284,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-scene.tsx",
-        44
+        46
       ]
     ]
   },
@@ -417,7 +417,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-keywords.tsx",
-        68
+        70
       ]
     ]
   },
@@ -496,7 +496,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-meaning.tsx",
-        54
+        56
       ]
     ]
   },
@@ -680,7 +680,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-scene.tsx",
-        32
+        34
       ]
     ]
   },
@@ -893,7 +893,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-cultura.tsx",
-        118
+        120
       ]
     ]
   },
@@ -1178,7 +1178,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-recommand.tsx",
-        17
+        19
       ]
     ]
   },
@@ -1189,7 +1189,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-scene.tsx",
-        18
+        20
       ]
     ]
   },
@@ -1263,7 +1263,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-cultura.tsx",
-        27
+        29
       ]
     ]
   },
@@ -1296,7 +1296,7 @@
     "origin": [
       [
         "src/components/emoji-profile/emoji-cultura.tsx",
-        95
+        97
       ]
     ]
   },
