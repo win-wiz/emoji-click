@@ -62,6 +62,6 @@ export enum AVAILABLE_LOCALES {
 
 export const locales = Object.keys(localeNames);
 
-export const DEFAULT_LOCALE = AVAILABLE_LOCALES.zh;
+export const DEFAULT_LOCALE = AVAILABLE_LOCALES.en;
 
 export const siteUrl = process.env.NODE_ENV === 'production' ? process.env.PRODUCTION_URL : "http://localhost:3000"

@@ -1,6 +1,7 @@
 import EmojiProfile from "@/components/emoji-profile";
 import { AVAILABLE_LOCALES } from "@/locales/config";
 import { fetchEmojiProfileByFullCode, fetchGenerateMetadata } from "@/server/detail";
+import { t } from "@lingui/macro";
 import { Metadata } from "next";
 
 export const runtime = 'edge';
@@ -12,7 +13,7 @@ export async function generateMetadata({ params, searchParams }: { params: { lan
   return {
     title: `Emoji AI Finder | ${data?.name} `,
     description: data?.meaning,
-    keywords: 'emoji search, AI-powered emoji, Emoji AI Finder, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine'
+    keywords: t`emoji search, AI-powered emoji, Emoji AI Finder, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine`
   }
   
 }

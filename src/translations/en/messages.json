@@ -8,6 +8,18 @@
         "src/app/[lang]/(public)/page.tsx",
         17
       ]
+    ],
+    "obsolete": true
+  },
+  "gsAuPr": {
+    "translation": "Emoji AI Finder | Smart Emoji Search for Every Chat",
+    "message": "Emoji AI Finder | 为每一次聊天提供智能表情搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        17
+      ]
     ]
   },
   "/APyPo": {
@@ -93,6 +105,10 @@
     "comments": [],
     "origin": [
       [
+        "src/app/[lang]/(profile)/[slug]/page.tsx",
+        16
+      ],
+      [
         "src/app/[lang]/(public)/page.tsx",
         19
       ]
@@ -107,7 +123,8 @@
         "src/app/[lang]/(public)/page.tsx",
         18
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "3mGxau": {
     "translation": "Eastern Cultural Interpretation",
@@ -309,6 +326,18 @@
         "src/components/footer.tsx",
         23
       ]
+    ],
+    "obsolete": true
+  },
+  "d4u/JD": {
+    "translation": "Friends",
+    "message": "友情链接",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        95
+      ]
     ]
   },
   "gUPr1f": {
@@ -436,6 +465,17 @@
       ]
     ]
   },
+  "tNjzzt": {
+    "translation": "Need the right emoji, right now? Emoji AI Finder's got you covered. Just type what you're feeling, and we'll find the emoji that says it best. Fast, fun, and always on point",
+    "message": "寻找合适的表情符号？只需输入你的感受，Emoji AI Finder会迅速为你找到最佳表情。快速、有趣，总是恰到好处。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        18
+      ]
+    ]
+  },
   "Xr/E0m": {
     "translation": "Navigation",
     "message": "导航",
@@ -443,7 +483,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        74
+        89
       ]
     ]
   },
@@ -810,7 +850,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        82
+        103
       ]
     ]
   },
@@ -858,12 +898,12 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        66
+        81
       ]
     ]
   },
   "LgfBZM": {
-    "translation": "Describe it in the most natural way, AI understands every emotion you want to convey",
+    "translation": "Just describe what you fell, our AI gets it",
     "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
     "comments": [],
     "origin": [
@@ -929,7 +969,7 @@
     ]
   },
   "C1syp2": {
-    "translation": "Enter text simply and quickly find the desired emoji",
+    "translation": "Simply enter text and swiftly find the emoji you want",
     "message": "简单输入文字，快速找到想要的表情",
     "comments": [],
     "origin": [
@@ -965,7 +1005,7 @@
       ],
       [
         "src/components/footer.tsx",
-        48
+        63
       ]
     ]
   },

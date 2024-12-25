@@ -150,7 +150,7 @@ const CategoryEmoji = React.memo(function CategoryEmoji({
         })
         return newStates
       })
-    }, 500)
+    }, 800)
   }, [currentCategory?.emojis, currentState.loading, currentState.page, selectedCategory])
 
   // 处理滚动

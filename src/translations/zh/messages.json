@@ -11,9 +11,9 @@
     ],
     "obsolete": true
   },
-  "kM0I9v": {
-    "translation": "Emoji AI Finder | Smart Emoji Search for Every Chat",
-    "message": "Emoji AI Finder | Smart Emoji Search for Every Chat",
+  "gsAuPr": {
+    "translation": "Emoji AI Finder | 为每一次聊天提供智能表情搜索",
+    "message": "Emoji AI Finder | 为每一次聊天提供智能表情搜索",
     "comments": [],
     "origin": [
       [
@@ -21,6 +21,18 @@
         17
       ]
     ]
+  },
+  "kM0I9v": {
+    "translation": "Emoji AI Finder | 为每一次聊天提供智能表情搜索",
+    "message": "Emoji AI Finder | 为每一次聊天提供智能表情搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        17
+      ]
+    ],
+    "obsolete": true
   },
   "/APyPo": {
     "translation": "Emoji Ai Finder 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
@@ -201,19 +213,12 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/(public)/page.tsx",
-        19
-      ]
-    ]
-  },
-  "wt7TO4": {
-    "translation": "Need the right emoji, right now? Emoji AI Finder's got you covered. Just type what you're feeling, and we'll find the emoji that says it best. Fast, fun, and always on point.",
-    "message": "Need the right emoji, right now? Emoji AI Finder's got you covered. Just type what you're feeling, and we'll find the emoji that says it best. Fast, fun, and always on point.",
-    "comments": [],
-    "origin": [
+        "src/app/[lang]/(profile)/[slug]/page.tsx",
+        16
+      ],
       [
         "src/app/[lang]/(public)/page.tsx",
-        18
+        19
       ]
     ]
   },
@@ -441,6 +446,18 @@
         "src/components/footer.tsx",
         23
       ]
+    ],
+    "obsolete": true
+  },
+  "d4u/JD": {
+    "translation": "友情链接",
+    "message": "友情链接",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        95
+      ]
     ]
   },
   "gUPr1f": {
@@ -628,6 +645,29 @@
       ]
     ]
   },
+  "wt7TO4": {
+    "translation": "寻找合适的表情符号？只需输入你的感受，Emoji AI Finder会迅速为你找到最佳表情。快速、有趣，总是恰到好处",
+    "message": "寻找合适的表情符号？只需输入你的感受，Emoji AI Finder会迅速为你找到最佳表情。快速、有趣，总是恰到好处",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        18
+      ]
+    ],
+    "obsolete": true
+  },
+  "tNjzzt": {
+    "translation": "",
+    "message": "寻找合适的表情符号？只需输入你的感受，Emoji AI Finder会迅速为你找到最佳表情。快速、有趣，总是恰到好处。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        18
+      ]
+    ]
+  },
   "Xr/E0m": {
     "translation": "导航",
     "message": "导航",
@@ -635,7 +675,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        74
+        89
       ]
     ]
   },
@@ -1050,7 +1090,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        82
+        103
       ]
     ]
   },
@@ -1110,7 +1150,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        66
+        81
       ]
     ]
   },
@@ -1241,7 +1281,7 @@
       ],
       [
         "src/components/footer.tsx",
-        48
+        63
       ]
     ]
   },

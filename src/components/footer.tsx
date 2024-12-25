@@ -20,7 +20,7 @@ Logo.displayName = 'Logo';
 // 提取导航链接组件
 const NavLinks = memo(({ lang }: { lang: AVAILABLE_LOCALES }) => {
   const links = useMemo(() => [
-    { href: "/", label: t`博客` },
+    // { href: "/", label: t`博客` },
     { href: `/${lang}/terms-of-service`, label: t`服务条款` },
     { href: `/${lang}/privacy-policy`, label: t`隐私政策` }
   ], [lang]);
@@ -39,6 +39,23 @@ const NavLinks = memo(({ lang }: { lang: AVAILABLE_LOCALES }) => {
 });
 
 NavLinks.displayName = 'NavLinks';
+
+const FriendLinks = memo(() => (
+  <ul className="space-y-3">
+    <li>
+      <Link target="_blank" href="https://subrise.co" className="hover:text-violet-600 transition-colors">
+        Subrise
+      </Link>
+    </li>
+    <li>
+      <Link target="_blank" href="https://wordless.online" className="hover:text-violet-600 transition-colors">
+        Wordless
+      </Link>
+    </li>
+  </ul>
+));
+
+FriendLinks.displayName = 'FriendLinks';
 
 // 提取联系信息组件
 const ContactInfo = memo(() => (
@@ -68,12 +85,18 @@ function Footer({ lang }: { lang: AVAILABLE_LOCALES }) {
             <ContactInfo />
           </div>
 
-          <div className="col-span-2 flex justify-end">
+          <div className="col-span-2 flex justify-end gap-32">
             <div>
               <h3 className="text-violet-600 text-xl font-medium mb-4 flex items-center gap-2">
                 <Trans>导航</Trans>
               </h3> 
               <NavLinks lang={lang} />
+            </div>
+             <div>
+              <h3 className="text-violet-600 text-xl font-medium mb-4 flex items-center gap-2">
+                <Trans>友情链接</Trans>
+              </h3> 
+              <FriendLinks />
             </div>
           </div>
         </div>

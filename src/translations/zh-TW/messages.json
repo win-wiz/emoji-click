@@ -8,6 +8,18 @@
         "src/app/[lang]/(public)/page.tsx",
         17
       ]
+    ],
+    "obsolete": true
+  },
+  "gsAuPr": {
+    "translation": " Emoji AI 找手 | 為每次聊天提供智慧表情搜尋",
+    "message": "Emoji AI Finder | 为每一次聊天提供智能表情搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        17
+      ]
     ]
   },
   "/APyPo": {
@@ -93,6 +105,10 @@
     "comments": [],
     "origin": [
       [
+        "src/app/[lang]/(profile)/[slug]/page.tsx",
+        16
+      ],
+      [
         "src/app/[lang]/(public)/page.tsx",
         19
       ]
@@ -107,7 +123,8 @@
         "src/app/[lang]/(public)/page.tsx",
         18
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "3mGxau": {
     "translation": "東方文化解讀",
@@ -309,6 +326,18 @@
         "src/components/footer.tsx",
         23
       ]
+    ],
+    "obsolete": true
+  },
+  "d4u/JD": {
+    "translation": "友站連結",
+    "message": "友情链接",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        95
+      ]
     ]
   },
   "gUPr1f": {
@@ -436,6 +465,17 @@
       ]
     ]
   },
+  "tNjzzt": {
+    "translation": "想找合適的表情符號嗎？只要輸入你的感受，Emoji AI 找手會迅速為你找到最棒的表情。快速、有趣，總是恰到好處。",
+    "message": "寻找合适的表情符号？只需输入你的感受，Emoji AI Finder会迅速为你找到最佳表情。快速、有趣，总是恰到好处。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        18
+      ]
+    ]
+  },
   "Xr/E0m": {
     "translation": "導航",
     "message": "导航",
@@ -443,7 +483,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        74
+        89
       ]
     ]
   },
@@ -810,7 +850,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        82
+        103
       ]
     ]
   },
@@ -858,7 +898,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        66
+        81
       ]
     ]
   },
@@ -965,7 +1005,7 @@
       ],
       [
         "src/components/footer.tsx",
-        48
+        63
       ]
     ]
   },
