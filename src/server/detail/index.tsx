@@ -117,8 +117,10 @@ export async function fetchGenerateMetadata(lang: AVAILABLE_LOCALES, fullCode: s
     .select({
       name: emojiLanguage.name,
       meaning: emojiLanguage.meaning,
+      code: emoji.code,
     })
     .from(emojiLanguage)
+    .leftJoin(emoji, eq(emojiLanguage.fullCode, emoji.fullCode))
     .where(and(eq(emojiLanguage.fullCode, fullCode), eq(emojiLanguage.language, lang)))
     .prepare();
 
