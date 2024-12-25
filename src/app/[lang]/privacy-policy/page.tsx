@@ -68,7 +68,7 @@ function PrivacyPolicy() {
     "privacy_policy_update": <Trans>本隐私政策的更新</Trans>,
     "privacy_policy_update_description": <Trans>我们可能会不时更新我们的隐私政策。我们将通过在本页面上发布新的隐私政策并更新页面顶部的“生效日期”来通知您任何变更。我们还会通过电子邮件通知您重大变更。</Trans>,
     "contact_us": <Trans>联系我们</Trans>,
-    "contact_us_description": <Trans>如果您对本隐私政策有任何疑问或担忧，请通过 support@emojiaifinder.co 与我们联系。</Trans>
+    "contact_us_description": <Trans>如果您对本隐私政策有任何疑问或担忧，请通过 support@emojis.click 与我们联系。</Trans>
   }
 
   // 个人数据项列表

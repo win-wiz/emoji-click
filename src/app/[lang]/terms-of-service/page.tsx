@@ -97,7 +97,7 @@ function TermsOfService() {
     "governing_law": t`管辖法律`,
     "governing_law_description": t`这些条款和条件受美国法律的管辖并根据其解释，您不可撤销地服从该州或地点法院的专属管辖权。`,
     "contact_us": t`联系我们`,
-    "contact_us_description": t`如果您对这些条款有任何疑问，请通过 support@emojiaifinder.co 与我们联系。`
+    "contact_us_description": t`如果您对这些条款有任何疑问，请通过 support@emojis.click 与我们联系。`
   }
 
   // 限制条款列表

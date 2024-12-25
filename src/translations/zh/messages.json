@@ -456,7 +456,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        95
+        97
       ]
     ]
   },
@@ -565,9 +565,9 @@
       ]
     ]
   },
-  "tZM844": {
-    "translation": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojiaifinder.co 与我们联系。",
-    "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojiaifinder.co 与我们联系。",
+  "7/4TPu": {
+    "translation": "",
+    "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojis.click 与我们联系。",
     "comments": [],
     "origin": [
       [
@@ -576,9 +576,21 @@
       ]
     ]
   },
+  "tZM844": {
+    "translation": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojis.click 与我们联系。",
+    "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojis.click 与我们联系。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        71
+      ]
+    ],
+    "obsolete": true
+  },
   "SY3TBx": {
-    "translation": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojiaifinder.co 与我们联系。",
-    "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojiaifinder.co 与我们联系。",
+    "translation": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojis.click 与我们联系。",
+    "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojis.click 与我们联系。",
     "comments": [],
     "origin": [
       [
@@ -588,9 +600,9 @@
     ],
     "obsolete": true
   },
-  "MInIhV": {
-    "translation": "如果您对这些条款有任何疑问，请通过 support@emojiaifinder.co 与我们联系。",
-    "message": "如果您对这些条款有任何疑问，请通过 support@emojiaifinder.co 与我们联系。",
+  "z446i9": {
+    "translation": "",
+    "message": "如果您对这些条款有任何疑问，请通过 support@emojis.click 与我们联系。",
     "comments": [],
     "origin": [
       [
@@ -599,9 +611,21 @@
       ]
     ]
   },
+  "MInIhV": {
+    "translation": "如果您对这些条款有任何疑问，请通过 support@emojis.click 与我们联系。",
+    "message": "如果您对这些条款有任何疑问，请通过 support@emojis.click 与我们联系。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        100
+      ]
+    ],
+    "obsolete": true
+  },
   "Yzb/Ke": {
-    "translation": "如果您对这些条款有任何疑问，请通过 support@emojiaifinder.co 与我们联系。",
-    "message": "如果您对这些条款有任何疑问，请通过 support@emojiaifinder.co 与我们联系。",
+    "translation": "如果您对这些条款有任何疑问，请通过 support@emojis.click 与我们联系。",
+    "message": "如果您对这些条款有任何疑问，请通过 support@emojis.click 与我们联系。",
     "comments": [],
     "origin": [
       [
@@ -675,7 +699,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        89
+        91
       ]
     ]
   },
@@ -1090,7 +1114,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        103
+        105
       ]
     ]
   },
@@ -1150,7 +1174,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        81
+        83
       ]
     ]
   },
@@ -1281,7 +1305,7 @@
       ],
       [
         "src/components/footer.tsx",
-        63
+        65
       ]
     ]
   },

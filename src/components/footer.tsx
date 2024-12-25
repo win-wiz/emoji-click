@@ -64,8 +64,8 @@ const ContactInfo = memo(() => (
       <span>💌</span>
       <Trans>联系我们</Trans>
     </h4>
-    <a href="mailto:support@emojiaifinder.co" className="hover:text-violet-600 transition-colors">
-      support@emojiaifinder.co
+    <a href="mailto:support@emojis.click" className="hover:text-violet-600 transition-colors">
+      support@emojis.click
     </a>
   </div>
 ));

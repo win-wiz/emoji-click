@@ -336,7 +336,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        95
+        97
       ]
     ]
   },
@@ -421,9 +421,9 @@
       ]
     ]
   },
-  "tZM844": {
-    "translation": "If you have any questions or concerns about this privacy policy, please contact us at support@emojiaifinder.co.",
-    "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojiaifinder.co 与我们联系。",
+  "7/4TPu": {
+    "translation": "If you have any questions or concerns about this privacy policy, please contact us at support@emojis.click.",
+    "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojis.click 与我们联系。",
     "comments": [],
     "origin": [
       [
@@ -432,9 +432,21 @@
       ]
     ]
   },
-  "MInIhV": {
-    "translation": "If you have any questions about these terms, please contact us at support@emojiaifinder.co.",
-    "message": "如果您对这些条款有任何疑问，请通过 support@emojiaifinder.co 与我们联系。",
+  "tZM844": {
+    "translation": "If you have any questions or concerns about this privacy policy, please contact us at support@emojis.click.",
+    "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojis.click 与我们联系。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        71
+      ]
+    ],
+    "obsolete": true
+  },
+  "z446i9": {
+    "translation": "If you have any questions about these terms, please contact us at support@emojis.click.",
+    "message": "如果您对这些条款有任何疑问，请通过 support@emojis.click 与我们联系。",
     "comments": [],
     "origin": [
       [
@@ -442,6 +454,18 @@
         100
       ]
     ]
+  },
+  "MInIhV": {
+    "translation": "If you have any questions about these terms, please contact us at support@emojis.click.",
+    "message": "如果您对这些条款有任何疑问，请通过 support@emojis.click 与我们联系。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        100
+      ]
+    ],
+    "obsolete": true
   },
   "EERd79": {
     "translation": "If you violate any of these restrictions, your permission to use these materials automatically terminates, and may be terminated by Emoji AI Finder at any time. Upon termination of your viewing of these materials or upon termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.",
@@ -483,7 +507,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        89
+        91
       ]
     ]
   },
@@ -850,7 +874,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        103
+        105
       ]
     ]
   },
@@ -898,7 +922,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        81
+        83
       ]
     ]
   },
@@ -1005,7 +1029,7 @@
       ],
       [
         "src/components/footer.tsx",
-        63
+        65
       ]
     ]
   },
