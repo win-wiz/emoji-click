@@ -1,5 +1,5 @@
 import { t, Trans } from "@lingui/macro";
-import { memo, useState, useCallback, useEffect, useRef, useMemo } from "react";
+import { memo, useState, useCallback, useEffect, useRef, useMemo, lazy, Suspense } from "react";
 import { EmojiType } from "@/types/emoji";
 import clsx from "clsx";
 import { useToast } from '@/components/ui/use-toast'
@@ -12,6 +12,9 @@ import { useForm } from 'react-hook-form'
 // const DEBOUNCE_DELAY = 800;
 const HIDE_DELAY = 200;
 const TOAST_DURATION = 1500;
+
+const SEARCH_BUTTON_LOADING = 'px-4 py-2 rounded-lg bg-purple-500 text-white flex items-center justify-center space-x-1 opacity-80';
+const SEARCH_BUTTON_NORMAL = 'px-4 py-2 rounded-lg bg-purple-500 hover:bg-purple-600 active:bg-purple-700 text-white flex items-center justify-center space-x-1 transition-colors duration-200';
 
 interface SearchForm {
   keyword: string;
@@ -101,6 +104,27 @@ const EmojiItem = memo(function EmojiItem({
 
 EmojiItem.displayName = 'EmojiItem';
 
+const EmojiItemMemo = memo(EmojiItem);
+
+const LoadingIcon = () => (
+  <svg className="w-8 h-8 animate-spin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path 
+      className="opacity-75" 
+      fill="currentColor"
+      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+    >
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 12 12"
+        to="360 12 12"
+        dur="1s"
+        repeatCount="indefinite"
+      />
+    </path>
+  </svg>
+);
+
 const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   initText,
   lang,
@@ -119,23 +143,16 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   const hasResults = emojis.length > 0;
   const { toast } = useToast();
 
-  // 使用 useMemo 优化搜索按钮的类名
   const searchButtonClassName = useMemo(() => 
-    clsx(
-      "px-6 py-2 rounded-xl transition-all duration-200",
-      "bg-purple-600 text-white hover:bg-purple-700",
-      "flex items-center gap-2",
-      isLoading && "!bg-purple-500 cursor-not-allowed"
-    ),
+    isLoading ? SEARCH_BUTTON_LOADING : SEARCH_BUTTON_NORMAL,
     [isLoading]
   );
 
-  // 使用 useCallback 优化事件处理函数
   const handleClearClick = useCallback(() => {
     setSearchText('');
-    reset(); // 重置表单的值
+    reset();
     setEmojis([]);
-    setIsOpen(false);
+    setError(null);
   }, [reset]);
 
   const handleSearch = useCallback(async (data: SearchForm) => {
@@ -186,30 +203,19 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
     }
   }, [initText, handleSearch]);
 
-  // 添加 handleMouseEnter 和 handleMouseLeave 函数
   const handleMouseEnter = useCallback(() => {
-    if (hideTimeoutRef.current) {
-      clearTimeout(hideTimeoutRef.current);
-    }
-    if (hasResults) {
-      setIsOpen(true);
-    }
-  }, [hasResults]);
+    clearTimeout(hideTimeoutRef.current);
+    setIsOpen(true);
+  }, []);
 
-  const handleMouseLeave = useCallback((e: React.MouseEvent) => {
-    try {
-      const relatedTarget = e.relatedTarget; // 不进行类型转换
-      // 检查 relatedTarget 是否是 Node 类型
-      if (relatedTarget instanceof Node && containerRef.current?.contains(relatedTarget)) {
-        return;
-      }
-    } catch (error) {
-      console.error('handleMouseLeave error', error);
-    }
-    
+  const handleMouseLeave = useCallback(() => {
     hideTimeoutRef.current = setTimeout(() => {
       setIsOpen(false);
-    }, HIDE_DELAY);
+    }, 200);
+  }, []);
+
+  const handleLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.stopPropagation();
   }, []);
 
   // 优化复制功能
@@ -243,7 +249,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
             {...register('keyword')}
             value={searchText}
             onChange={(e) => {
-              setSearchText(e.target.value); // 更新输入框的值
+              setSearchText(e.target.value); // 更新输入
             }}
             onKeyDown={(e) => {
               if (e.key === 'Enter') {
@@ -295,8 +301,36 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
           onMouseLeave={handleMouseLeave}
         >
           {isLoading ? (
-            <div className="flex items-center justify-center p-4">
-              <Loader2 className="w-6 h-6 animate-spin text-purple-500" />  
+            <div className="p-4 flex flex-col items-center justify-center space-y-2">
+              <div className="relative w-16 h-16">
+                <div className="absolute inset-0 flex items-center justify-center animate-spinnerRotate">
+                  <svg className="w-full h-full" viewBox="0 0 50 50">
+                    <circle
+                      className="stroke-purple-400 animate-spinnerDash from-purple-400 to-indigo-400"
+                      cx="25"
+                      cy="25"
+                      r="20"
+                      fill="none"
+                      strokeWidth="5"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center animate-spinnerRotateReverse animation-delay-1000">
+                  <svg className="w-3/4 h-3/4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path className="stroke-purple-300" d="M21 12a9 9 0 1 1-6.219-8.56" />
+                  </svg>
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-4 h-4 rounded-full animate-innerCircleColors"></div>
+                </div>
+                {/* <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="relative w-12 h-12 rounded-full flex items-center justify-center">
+                    <div className="absolute top-0 -left-6 text-2xl animate-bounce">😊</div>
+                    <div className="absolute bottom-0 -right-6 text-2xl animate-spin">💖</div>
+                  </div>
+                </div> */}
+              </div>
             </div>
           ) : error ? (
             <div className="p-4 text-red-500 text-center">{error}</div>
@@ -307,7 +341,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
           ) : (
             <div className="p-2 space-y-0.5">
               {emojis.map((emoji, index) => (
-                <EmojiItem
+                <EmojiItemMemo
                   key={emoji.fullCode || `emoji_ai_${index}`}
                   emoji={emoji}
                   onCopy={copyToClipboard}

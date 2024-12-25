@@ -260,6 +260,7 @@ const CategoryEmoji = React.memo(function CategoryEmoji({
                   {renderEmojiList}
                   {currentState.loading && (
                     <div className="py-4 flex justify-center">
+                      {/* 加载动画 */}
                       <div className="flex items-center gap-2 text-primary/70">
                         <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
                         <span><Trans>加载中...</Trans></span>

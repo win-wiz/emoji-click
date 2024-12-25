@@ -96,7 +96,88 @@ export default {
         'spin-slow': {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' }
-        }
+        },
+        pulseGradient: {
+          '0%, 100%': { 
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+            'opacity': '0.8'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+            'opacity': '1'
+          }
+        },
+        scaleUp: {
+          '0%': { transform: 'scale(0.8)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' }
+        },
+        spinnerRotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        spinnerRotateReverse: {
+          '0%': { transform: 'rotate(360deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        },
+        spinnerDash: {
+          '0%': { 'stroke-dasharray': '1, 150', 'stroke-dashoffset': '0' },
+          '50%': { 'stroke-dasharray': '90, 150', 'stroke-dashoffset': '-35' },
+          '100%': { 'stroke-dasharray': '90, 150', 'stroke-dashoffset': '-124' },
+        },
+        innerCircleColors: {
+          '0%': {
+            backgroundColor: '#f472b6',
+            transform: 'scale(0.8) translateZ(0)',
+            opacity: '0.8',
+          },
+          '12.5%': {
+            backgroundColor: '#f472b6',
+            transform: 'scale(1) translateZ(0)',
+            opacity: '0.7',
+          },
+          '16.66%': {
+            backgroundColor: '#f472b6',
+            transform: 'scale(1.2) translateZ(0)',
+            opacity: '0.6',
+          },
+          '33.33%': {
+            backgroundColor: '#60a5fa',
+            transform: 'scale(1) translateZ(0)',
+            opacity: '0.7',
+          },
+          '45.83%': {
+            backgroundColor: '#60a5fa',
+            transform: 'scale(0.8) translateZ(0)',
+            opacity: '0.8',
+          },
+          '50%': {
+            backgroundColor: '#60a5fa',
+            transform: 'scale(1) translateZ(0)',
+            opacity: '0.7',
+          },
+          '66.66%': {
+            backgroundColor: '#34d399',
+            transform: 'scale(1.2) translateZ(0)',
+            opacity: '0.6',
+          },
+          '79.16%': {
+            backgroundColor: '#34d399',
+            transform: 'scale(1) translateZ(0)',
+            opacity: '0.7',
+          },
+          '83.33%': {
+            backgroundColor: '#34d399',
+            transform: 'scale(0.8) translateZ(0)',
+            opacity: '0.8',
+          },
+          '100%': {
+            backgroundColor: '#f472b6',
+            transform: 'scale(0.8) translateZ(0)',
+            opacity: '0.8',
+          },
+        },
       },
       animation: {
         'fade-in': 'fade-in 0.6s ease-out forwards',
@@ -112,8 +193,14 @@ export default {
         'pulse-slow': 'pulse-slow 2s ease-in-out infinite',
         'shine': 'shine 3s ease-in-out infinite',
         'slideDown': 'slideDown 0.2s ease-out',
-        'spin-slow': 'spin-slow 8s linear infinite'
-      }
+        'spin-slow': 'spin-slow 8s linear infinite',
+        'pulseGradient': 'pulseGradient 3s ease-in-out infinite',
+        'scaleUp': 'scaleUp 0.6s ease-out forwards',
+        'spinnerRotate': 'spinnerRotate 3s linear infinite',
+        'spinnerRotateReverse': 'spinnerRotateReverse 4s linear infinite',
+        'spinnerDash': 'spinnerDash 1.5s ease-in-out infinite',
+        'innerCircleColors': 'innerCircleColors 6s ease-in-out infinite',
+      },
     }
   },
   plugins: [ 

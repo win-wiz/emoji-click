@@ -24,9 +24,9 @@ export default async function RootLayout({
   
   return (
     <html lang={lang} suppressHydrationWarning className="scroll-smooth">
-      {/* <head>
-        <meta name="keywords" content="emoji search, AI-powered emoji, Emoji AI Finder, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine" />
-      </head> */}
+      <head>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🤖</text></svg>" />
+      </head>
       <body className="bg-white">
         <AppWithTranslation i18n={i18n}>
           <main className="flex flex-col min-h-screen">

@@ -13,7 +13,9 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
 
   return (
     <html>
-    <head />
+    <head>
+      <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🤖</text></svg>" />
+    </head>
     <body
       className={clsx('min-h-screen Roboto,ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"')}
     >
