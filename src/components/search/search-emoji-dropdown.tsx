@@ -1,7 +1,7 @@
 import { t, Trans } from "@lingui/macro";
 import { memo, useState, useCallback, useEffect, useRef, useMemo, lazy, Suspense } from "react";
 import { EmojiType } from "@/types/emoji";
-import clsx from "clsx";
+// import clsx from "clsx";
 import { useToast } from '@/components/ui/use-toast'
 import { ArrowUpRight, X, Loader2 } from 'lucide-react'
 import { AVAILABLE_LOCALES } from "@/locales/config";
@@ -140,7 +140,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   const [searchText, setSearchText] = useState<string>(initText);
   const hideTimeoutRef = useRef<NodeJS.Timeout>();
   const containerRef = useRef<HTMLDivElement>(null);
-  const hasResults = emojis.length > 0;
+  // const hasResults = emojis.length > 0;
   const { toast } = useToast();
 
   const searchButtonClassName = useMemo(() => 
@@ -210,9 +210,9 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
 
   const handleMouseLeave = useCallback(() => {
     hideTimeoutRef.current = setTimeout(() => {
-      setIsOpen(false);
+      if (!isLoading) setIsOpen(false);
     }, 200);
-  }, []);
+  }, [isLoading]);
 
   const handleLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
     e.stopPropagation();
