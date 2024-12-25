@@ -11,7 +11,7 @@ export default function Navigation(
     <header className="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-zinc-200">
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href={`/${lang}`} className="flex items-center gap-2">
             <span className="text-2xl">🤖</span>
             <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
               Emoji Ai Finder
