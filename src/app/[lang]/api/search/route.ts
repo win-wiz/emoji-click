@@ -58,7 +58,7 @@ export async function POST(request: Request) {
       searchResults.push(item);
     }
 
-    let aiEmojiList: Record<string, any>[] = [];
+    const aiEmojiList: Record<string, any>[] = [];
     const emojiList: Record<string, any>[] = [];
     
     // 没有匹配到关键词，则调用豆包api，根据语义查找相关的表情

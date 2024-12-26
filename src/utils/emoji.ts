@@ -61,4 +61,4 @@ export const emojiUtils = {
 };
 
 // 使用示例：
-const emoji = emojiUtils.codeToEmoji('26bd');  // ⚽ 
+// const emoji = emojiUtils.codeToEmoji('26bd');  // ⚽ 
