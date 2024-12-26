@@ -126,9 +126,9 @@
     ],
     "obsolete": true
   },
-  "Zi7+zX": {
-    "translation": "EmojiClick | Smart Emoji Search for Every Chat",
-    "message": "EmojiClick | 为每一次聊天提供智能表情搜索",
+  "a17ysh": {
+    "translation": "EmojiClick | Find the perfect emoji with AI",
+    "message": "EmojiClick | 用AI找到最适合的表情",
     "comments": [],
     "origin": [
       [
@@ -137,9 +137,21 @@
       ]
     ]
   },
+  "Zi7+zX": {
+    "translation": "EmojiClick | Find the perfect emoji with AI",
+    "message": "EmojiClick | 用AI找到最适合的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/layout.tsx",
+        19
+      ]
+    ],
+    "obsolete": true
+  },
   "gsAuPr": {
-    "translation": "EmojiClick | Smart Emoji Search for Every Chat",
-    "message": "EmojiClick | 为每一次聊天提供智能表情搜索",
+    "translation": "EmojiClick | Find the perfect emoji with AI",
+    "message": "EmojiClick | 用AI找到最适合的表情",
     "comments": [],
     "origin": [
       [

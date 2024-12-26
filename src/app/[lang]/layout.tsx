@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: { lang: AVAILABLE_L
   await activateLocale(params.lang)
 
   return {
-    title: t`EmojiClick | 为每一次聊天提供智能表情搜索`,
+    title: t`EmojiClick | 用AI找到最适合的表情`,
     description: t`寻找合适的表情符号？只需输入你的感受，EmojiClick会迅速为你找到最佳表情。快速、有趣，总是恰到好处。`,
     keywords: t`emoji search, AI-powered emoji, EmojiClick, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine`,
   }

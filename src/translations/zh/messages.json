@@ -222,9 +222,9 @@
     ],
     "obsolete": true
   },
-  "Zi7+zX": {
-    "translation": "EmojiClick | 为每一次聊天提供智能表情搜索",
-    "message": "EmojiClick | 为每一次聊天提供智能表情搜索",
+  "a17ysh": {
+    "translation": "EmojiClick | 用AI找到最适合的表情",
+    "message": "EmojiClick | 用AI找到最适合的表情",
     "comments": [],
     "origin": [
       [
@@ -233,9 +233,21 @@
       ]
     ]
   },
+  "Zi7+zX": {
+    "translation": "EmojiClick | 用AI找到最适合的表情",
+    "message": "EmojiClick | 用AI找到最适合的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/layout.tsx",
+        19
+      ]
+    ],
+    "obsolete": true
+  },
   "gsAuPr": {
-    "translation": "EmojiClick | 为每一次聊天提供智能表情搜索",
-    "message": "EmojiClick | 为每一次聊天提供智能表情搜索",
+    "translation": "EmojiClick | 用AI找到最适合的表情",
+    "message": "EmojiClick | 用AI找到最适合的表情",
     "comments": [],
     "origin": [
       [
@@ -246,8 +258,8 @@
     "obsolete": true
   },
   "kM0I9v": {
-    "translation": "EmojiClick | 为每一次聊天提供智能表情搜索",
-    "message": "EmojiClick | 为每一次聊天提供智能表情搜索",
+    "translation": "EmojiClick | 用AI找到最适合的表情",
+    "message": "EmojiClick | 用AI找到最适合的表情",
     "comments": [],
     "origin": [
       [
