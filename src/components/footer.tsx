@@ -102,7 +102,7 @@ function Footer({ lang }: { lang: AVAILABLE_LOCALES }) {
         </div>
 
         <div className="mt-16 pt-8 border-t border-zinc-200 flex flex-col md:flex-row justify-between items-center">
-          <p><Trans>版权所有 © 2024 EmojiAiFinder 保留所有权利</Trans></p>
+          <p><Trans>版权所有 © 2024 EmojiClick 保留所有权利</Trans></p>
         </div>
       </div>
     </footer>
