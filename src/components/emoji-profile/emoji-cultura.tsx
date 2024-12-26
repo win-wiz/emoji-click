@@ -47,7 +47,7 @@ const CultureListItem = memo(function CultureListItem({
   return (
     <li className="flex items-start gap-2.5">
       <span className={`inline-flex ${dotColor} text-base leading-relaxed`}>•</span>
-      <h4 className={`flex-1 leading-relaxed ${contentColor}`}>{content}</h4>
+      <p className={`flex-1 leading-relaxed ${contentColor}`}>{content}</p>
     </li>
   )
 })
@@ -93,13 +93,13 @@ const CrossCulturalAdvice = memo(function CrossCulturalAdvice({
       <span className="inline-flex text-xl leading-none mt-0.5">🌏</span>
       <div className="flex-1 text-left">
         <div className="mb-2">
-          <h3 className="text-sm font-medium text-blue-600">
+          <p className="text-sm font-medium text-blue-600">
             <Trans>跨文化使用建议</Trans>
-          </h3>
+          </p>
         </div>
-        <h4 className="text-sm text-blue-900/70 leading-relaxed">
+        <p className="text-sm text-blue-900/70 leading-relaxed">
           {advice}
-        </h4>
+        </p>
       </div>
     </div>
   )

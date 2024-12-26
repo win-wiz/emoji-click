@@ -20,9 +20,9 @@ const EmojiScene = memo(function EmojiScene({
           <Trans>社交场景</Trans>
         </h3>
       </div>
-      <h4 className="text-sm text-violet-900/70 leading-relaxed space-y-2">
+      <p className="text-sm text-violet-900/70 leading-relaxed space-y-2">
         {social}
-      </h4>
+      </p>
     </div>
   ), [social])
 
@@ -34,9 +34,9 @@ const EmojiScene = memo(function EmojiScene({
           <Trans>工作场景</Trans>
         </h3>
       </div>
-      <h4 className="text-sm text-emerald-900/70 leading-relaxed space-y-2">
+      <p className="text-sm text-emerald-900/70 leading-relaxed space-y-2">
         {work}
-      </h4>
+      </p>
     </div>
   ), [work])
 
