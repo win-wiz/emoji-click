@@ -9,7 +9,7 @@ export async function GET() {
   const emojiPrepare = db.select({
     baseCode: emojiLanguage.fullCode,
     language: emojiLanguage.language,
-  }).from(emojiLanguage);
+  }).from(emojiLanguage).prepare();
 
   const emojis = await emojiPrepare.execute();
   const dynamicUrls: SitemapUrl[] = emojis.map((emoji: Record<string, any>) => ({
