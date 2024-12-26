@@ -23,11 +23,10 @@ export const AI_EMOJI_PROMPTS_ZH = `
   - 输出规则:
     - 1. 格式要求:
       - 必须是合法的JSON数组.
-      - 返回的emoji code 必须为 emoji 的 code.
-      - type 至少返回4种类型.
       - 每个对象格式: {"name":"微笑","code":"😊","type":"情绪"}.
       - 数组至少包含8个对象.
       - 不允许任何其他内容（包括空行、注释等）.
+      - name 和 type 必须与输入的语言相同.
 
     - 2. 字段验证:
       - code:仅限单个Unicode emoji（例如：😊 🌙 😢）.
@@ -48,12 +47,10 @@ export const AI_EMOJI_PROMPTS_EN = `
   - Output rules:
     - 1. Format requirements:
       - Must be a valid JSON array.
-      - Returned emoji code must be the code of the emoji.
-      - type must return at least 4 types.
       - Each object format: {"name":"Smile","code":"😊","type":"Emotion"}.
       - The array must contain at least 8 objects.
       - No other content is allowed (including blank lines, comments, etc.).
-
+      - name and type must be the same language as the input.
 
     - 2. Field verification:
       - code: Limited to a single Unicode emoji (e.g., 😊 🌙 😢).
