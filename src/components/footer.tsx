@@ -92,7 +92,7 @@ function Footer({ lang }: { lang: AVAILABLE_LOCALES }) {
               </h3> 
               <NavLinks lang={lang} />
             </div>
-             <div>
+            <div>
               <h3 className="text-violet-600 text-xl font-medium mb-4 flex items-center gap-2">
                 <Trans>友情链接</Trans>
               </h3> 

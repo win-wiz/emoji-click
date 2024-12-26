@@ -201,8 +201,8 @@
         16
       ],
       [
-        "src/app/[lang]/(public)/page.tsx",
-        19
+        "src/app/[lang]/layout.tsx",
+        21
       ]
     ]
   },
@@ -228,8 +228,8 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/(public)/page.tsx",
-        17
+        "src/app/[lang]/layout.tsx",
+        19
       ]
     ]
   },
@@ -847,8 +847,8 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/(public)/page.tsx",
-        18
+        "src/app/[lang]/layout.tsx",
+        20
       ]
     ]
   },
@@ -1042,7 +1042,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        289
+        300
       ]
     ]
   },
@@ -1053,7 +1053,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        286
+        297
       ]
     ]
   },
@@ -1254,7 +1254,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        339
+        350
       ]
     ]
   },
@@ -1303,7 +1303,7 @@
     ],
     "obsolete": true
   },
-  "imwQl1": {
+  "ZO88kw": {
     "translation": "版权所有 © 2024 EmojiClick 保留所有权利",
     "message": "版权所有 © 2024 EmojiClick 保留所有权利",
     "comments": [],
@@ -1313,6 +1313,18 @@
         105
       ]
     ]
+  },
+  "imwQl1": {
+    "translation": "版权所有 © 2024 EmojiClick 保留所有权利",
+    "message": "版权所有 © 2024 EmojiClick 保留所有权利",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        105
+      ]
+    ],
+    "obsolete": true
   },
   "w/qYEh": {
     "translation": "理解情感语义",
@@ -1404,7 +1416,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        260
+        271
       ]
     ]
   },
@@ -1534,7 +1546,7 @@
     "origin": [
       [
         "src/components/search/emoji-search-example.tsx",
-        28
+        31
       ]
     ]
   },
