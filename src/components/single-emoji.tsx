@@ -28,9 +28,9 @@ const CopySuccessIndicator = memo(function CopySuccessIndicator() {
               />
             </svg>
           </div>
-          <span className="text-xs sm:text-sm font-medium bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
+          <p className="text-xs sm:text-sm font-medium bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
             <Trans>已复制</Trans>
-          </span>
+          </p>
         </div>
       </div>
     </div>

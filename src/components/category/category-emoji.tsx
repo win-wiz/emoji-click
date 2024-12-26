@@ -12,7 +12,7 @@ import { debounce } from '@/utils'
 import { EmojiType } from '@/types/category'
 
 const ITEMS_PER_PAGE = 30
-const SCROLL_THRESHOLD = 200  // 增大滚动触发阈值，提前加载更多内容
+const SCROLL_THRESHOLD = 300  // 增大滚动触发阈值，提前加载更多内容
 
 // 分类状态接口
 interface CategoryState {
@@ -263,7 +263,7 @@ const CategoryEmoji = React.memo(function CategoryEmoji({
                       {/* 加载动画 */}
                       <div className="flex items-center gap-2 text-primary/70">
                         <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
-                        <span><Trans>加载中...</Trans></span>
+                        <Trans>加载中...</Trans>
                       </div>
                     </div>
                   )}

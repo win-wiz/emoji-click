@@ -38,7 +38,7 @@ export const HotEmoji = ({
 
         <div className="flex justify-center gap-1.5 sm:gap-2 mt-6 sm:mt-8 text-xs sm:text-sm text-gray-500">
           <span>👆</span>
-          <span><Trans>点击可以复制表情</Trans></span>
+          <Trans>点击可以复制表情</Trans>
         </div>
       </div>
     </div>

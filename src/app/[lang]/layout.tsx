@@ -41,9 +41,9 @@ export default async function RootLayout({
       <head>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🤖</text></svg>" />
       </head>
-      <body className="bg-white">
+      <body>
         <AppWithTranslation i18n={i18n}>
-          <main className="flex flex-col min-h-screen">
+          <main className="flex flex-col min-h-screen bg-white">
             <Header lang={lang as AVAILABLE_LOCALES}/>
             <div className="flex-grow min-h-screen">
               {children}

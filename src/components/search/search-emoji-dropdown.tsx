@@ -1,7 +1,7 @@
 import { t, Trans } from "@lingui/macro";
 import { memo, useState, useCallback, useEffect, useRef, useMemo, lazy, Suspense } from "react";
 import { EmojiType } from "@/types/emoji";
-import clsx from "clsx";
+// import clsx from "clsx";
 import { useToast } from '@/components/ui/use-toast'
 import { ArrowUpRight, X, Loader2 } from 'lucide-react'
 import { AVAILABLE_LOCALES } from "@/locales/config";
@@ -10,7 +10,7 @@ import { useForm } from 'react-hook-form'
 
 // 抽离常量
 // const DEBOUNCE_DELAY = 800;
-const HIDE_DELAY = 200;
+// const HIDE_DELAY = 200;
 const TOAST_DURATION = 1500;
 
 const SEARCH_BUTTON_LOADING = 'px-4 py-2 rounded-lg bg-purple-500 text-white flex items-center justify-center space-x-1 opacity-80';
@@ -106,24 +106,24 @@ EmojiItem.displayName = 'EmojiItem';
 
 const EmojiItemMemo = memo(EmojiItem);
 
-const LoadingIcon = () => (
-  <svg className="w-8 h-8 animate-spin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path 
-      className="opacity-75" 
-      fill="currentColor"
-      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-    >
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        from="0 12 12"
-        to="360 12 12"
-        dur="1s"
-        repeatCount="indefinite"
-      />
-    </path>
-  </svg>
-);
+// const LoadingIcon = () => (
+//   <svg className="w-8 h-8 animate-spin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+//     <path 
+//       className="opacity-75" 
+//       fill="currentColor"
+//       d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+//     >
+//       <animateTransform
+//         attributeName="transform"
+//         type="rotate"
+//         from="0 12 12"
+//         to="360 12 12"
+//         dur="1s"
+//         repeatCount="indefinite"
+//       />
+//     </path>
+//   </svg>
+// );
 
 const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   initText,
@@ -140,7 +140,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   const [searchText, setSearchText] = useState<string>(initText);
   const hideTimeoutRef = useRef<NodeJS.Timeout>();
   const containerRef = useRef<HTMLDivElement>(null);
-  const hasResults = emojis.length > 0;
+  // const hasResults = emojis.length > 0;
   const { toast } = useToast();
 
   const searchButtonClassName = useMemo(() => 
@@ -294,10 +294,10 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
               {isLoading ? (
                 <>
                   <Loader2 className="w-4 h-4 animate-spin" />
-                  <span><Trans>搜索中</Trans></span>
+                  <Trans>搜索中</Trans>
                 </>
               ) : (
-                <span><Trans>搜索</Trans></span>
+                <Trans>搜索</Trans>
               )}
             </button>
           </div>

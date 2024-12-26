@@ -27,7 +27,7 @@ const EmojiSearchExample = memo(function EmojiSearchExample({ setSearchText, ran
 
   return (    
     <div className="text-sm text-gray-500">
-      <span className="inline-flex items-center gap-1.5 mb-3">
+      <div className="inline-flex items-center gap-1.5 mb-3">
         💡 <Trans>试试这样搜索：</Trans>
         <motion.div
           animate={{ rotate: 360 }}
@@ -39,7 +39,7 @@ const EmojiSearchExample = memo(function EmojiSearchExample({ setSearchText, ran
             onClick={handleRefresh}
           />
         </motion.div>
-      </span>
+      </div>
       <div className="flex flex-wrap justify-center gap-2">
         {exampleSearches.map((example) => (
           <motion.button
