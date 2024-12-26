@@ -6,7 +6,7 @@
 //   - 输出结果必须为Array<{name: string, code: string, type: string}>格式，且不包含任何额外的解释或标签。
 // `;
 
-import { AVAILABLE_LOCALES } from "@/locales/config";
+// import { AVAILABLE_LOCALES } from "@/locales/config";
 
 // export const AI_EMOJI_PROMPTS = `
 //   你是表情符号领域的专家，你的任务是根据用户输入的语言和搜索关键词，提供匹配的表情符号。

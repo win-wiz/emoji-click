@@ -1,5 +1,5 @@
 import { db } from "@/server/db";
-import { emoji, emojiKeywords, emojiLanguage, emojiSearchTips, emojiType } from "@/server/db/schema";
+import { emoji, emojiLanguage, emojiSearchTips, emojiType } from "@/server/db/schema";
 import { eq, sql, and } from "drizzle-orm";
 import { AVAILABLE_LOCALES } from "@/locales/config";
 import { supportLang } from "@/utils";
