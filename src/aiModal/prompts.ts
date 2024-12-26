@@ -23,14 +23,16 @@ export const AI_EMOJI_PROMPTS_ZH = `
   - 输出规则：
     - 1. 格式要求：
       - 必须是合法的JSON数组。
+      - 返回的emoji code 必须为 emoji 的 code。
+      - type 至少返回4种类型。
       - 每个对象格式：{"name":"微笑","code":"😊","type":"情绪"}。
-      - 数组至少包含10个对象。
+      - 数组至少包含8个对象。
       - 不允许任何其他内容（包括空行、注释等）。
 
     - 2. 字段验证：
       - code：仅限单个Unicode emoji（例如：😊 🌙 😢）。
         - 禁止使用文字描述、中文字符、ASCII字符、特殊符号或多个emoji组合。
-      - name：2到4个汉字。
+      - name：2到10个汉字。
       - type：分类名称，如“情绪”、“自然”等。
 
   - 示例输出：[{"name":"开心","code":"😊","type":"情绪"},{"name":"月亮","code":"🌙","type":"自然"}]
@@ -46,14 +48,17 @@ export const AI_EMOJI_PROMPTS_EN = `
   - Output rules:
     - 1. Format requirements:
       - Must be a valid JSON array.
+      - Returned emoji code must be the code of the emoji.
+      - type must return at least 4 types.
       - Each object format: {"name":"Smile","code":"😊","type":"Emotion"}.
-      - The array must contain at least 10 objects.
+      - The array must contain at least 8 objects.
       - No other content is allowed (including blank lines, comments, etc.).
+
 
     - 2. Field verification:
       - code: Limited to a single Unicode emoji (e.g., 😊 🌙 😢).
         - Prohibited from using text descriptions, Chinese characters, ASCII characters, special symbols, or multiple emoji combinations.
-      - name: 2 to 4 Chinese characters.
+      - name: 2 to 10 Chinese characters.
       - type: Category name, such as "Emotion", "Nature", etc.
 
   - Example output: [{"name":"Happy","code":"😊","type":"Emotion"},{"name":"Moon","code":"🌙","type":"Nature"}]
