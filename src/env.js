@@ -27,6 +27,9 @@ export const env = createEnv({
     QIANWEN_API_KEY: z.string().optional(),
     QIANWEN_BASE_URL: z.string().optional(),
     QIANWEN_MODEL: z.string().optional(),
+    DEEPSEEK_API_KEY: z.string().optional(),
+    DEEPSEEK_BASE_URL: z.string().optional(),
+    DEEPSEEK_MODEL: z.string().optional(),
   },
 
   /**
@@ -61,7 +64,9 @@ export const env = createEnv({
     QIANWEN_API_KEY: process.env.QIANWEN_API_KEY,
     QIANWEN_BASE_URL: process.env.QIANWEN_BASE_URL,
     QIANWEN_MODEL: process.env.QIANWEN_MODEL,
-
+    DEEPSEEK_API_KEY: process.env.DEEPSEEK_API_KEY,
+    DEEPSEEK_BASE_URL: process.env.DEEPSEEK_BASE_URL,
+    DEEPSEEK_MODEL: process.env.DEEPSEEK_MODEL,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**
