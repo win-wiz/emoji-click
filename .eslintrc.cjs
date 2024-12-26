@@ -53,6 +53,7 @@ const config = {
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-unsafe-function-type": "off",
     "@typescript-eslint/dot-notation": "off",
+    "@typescript-eslint/no-base-to-string": "off",
   }
 }
 module.exports = config;

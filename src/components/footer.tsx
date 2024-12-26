@@ -9,9 +9,9 @@ import { memo, useMemo } from 'react';
 const Logo = memo(() => (
   <Link href="/" className="mb-6 flex items-center gap-2">
     <span className="text-2xl">🤖</span>
-    <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600">
-      Emoji Ai Finder
-    </h1>
+    <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600">
+      EmojiClick
+    </h2>
   </Link>
 ));
 
@@ -60,10 +60,10 @@ FriendLinks.displayName = 'FriendLinks';
 // 提取联系信息组件
 const ContactInfo = memo(() => (
   <div className="mt-8">
-    <h4 className="text-violet-600 font-medium mb-2 flex items-center gap-2">
+    <p className="text-violet-600 font-medium mb-2 flex items-center gap-2">
       <span>💌</span>
       <Trans>联系我们</Trans>
-    </h4>
+    </p>
     <a href="mailto:support@emojis.click" className="hover:text-violet-600 transition-colors">
       support@emojis.click
     </a>

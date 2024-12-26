@@ -11,9 +11,9 @@ export async function generateMetadata({ params, searchParams }: { params: { lan
   const { data } = await fetchGenerateMetadata(params.lang, searchParams.slug);
 
   return {
-    title: `Emoji AI Finder | ${data?.name} ${data?.code}`,
+    title: `EmojiClick | ${data?.name} ${data?.code}`,
     description: data?.meaning,
-    keywords: t`emoji search, AI-powered emoji, Emoji AI Finder, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine`
+    keywords: t`emoji search, AI-powered emoji, EmojiClick, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine`
   }
   
 }

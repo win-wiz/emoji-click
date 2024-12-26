@@ -1,6 +1,7 @@
 import { Trans } from "@lingui/macro";
 import { RefreshCw } from "lucide-react";
 import { memo, useCallback, useMemo } from "react";
+import { motion } from "framer-motion";
 
 interface ExampleSearchProps {
   setSearchText: (text: string) => void;
@@ -28,21 +29,32 @@ const EmojiSearchExample = memo(function EmojiSearchExample({ setSearchText, ran
     <div className="text-sm text-gray-500">
       <span className="inline-flex items-center gap-1.5 mb-3">
         💡 <Trans>试试这样搜索：</Trans>
-        <RefreshCw 
-          className="w-6 h-6 p-1  cursor-pointer hover:text-purple-500 transition-all duration-300 hover:bg-gray-100"
-          onClick={handleRefresh}
-        />
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ duration: 0.5 }}
+          key={exampleSearches?.join(",")}
+        >
+          <RefreshCw 
+            className="w-6 h-6 p-1 cursor-pointer hover:text-purple-500 transition-all duration-300 hover:bg-gray-100"
+            onClick={handleRefresh}
+          />
+        </motion.div>
       </span>
       <div className="flex flex-wrap justify-center gap-2">
-        {/* 使用示例文本作为 key 以确保唯一性 */}
         {exampleSearches.map((example) => (
-          <button
+          <motion.button
             key={example.content}
             onClick={() => handleClick(example.content)}
-            className="bg-white/80 backdrop-blur-sm px-4 py-1.5 rounded-full hover:bg-purple-50 border border-purple-100/50 transition-colors"
+            className="bg-white/80 backdrop-blur-sm px-4 py-1.5 rounded-full border border-purple-100/50 
+                transition duration-300 ease-in-out 
+                hover:bg-purple-50 hover:-translate-y-1 hover:shadow-lg"
+            initial={{ scale: 0, y: 50, opacity: 0 }}
+            animate={{ scale: 1, y: 0, opacity: 1 }}
+            exit={{ scale: 0, y: 50, opacity: 0 }}
+            transition={{ duration: 0.3 }}
           >
             {example.content}
-          </button>
+          </motion.button>
         ))}
       </div>
     </div>

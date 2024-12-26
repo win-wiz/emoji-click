@@ -1,7 +1,7 @@
 import { t, Trans } from "@lingui/macro";
 import { memo, useState, useCallback, useEffect, useRef, useMemo, lazy, Suspense } from "react";
 import { EmojiType } from "@/types/emoji";
-// import clsx from "clsx";
+import clsx from "clsx";
 import { useToast } from '@/components/ui/use-toast'
 import { ArrowUpRight, X, Loader2 } from 'lucide-react'
 import { AVAILABLE_LOCALES } from "@/locales/config";
@@ -140,7 +140,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   const [searchText, setSearchText] = useState<string>(initText);
   const hideTimeoutRef = useRef<NodeJS.Timeout>();
   const containerRef = useRef<HTMLDivElement>(null);
-  // const hasResults = emojis.length > 0;
+  const hasResults = emojis.length > 0;
   const { toast } = useToast();
 
   const searchButtonClassName = useMemo(() => 
@@ -210,13 +210,13 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
 
   const handleMouseLeave = useCallback(() => {
     hideTimeoutRef.current = setTimeout(() => {
-      if (!isLoading) setIsOpen(false);
+      setIsOpen(false);
     }, 200);
-  }, [isLoading]);
-
-  const handleLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.stopPropagation();
   }, []);
+
+  // const handleLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+  //   e.stopPropagation();
+  // }, []);
 
   // 优化复制功能
   const copyToClipboard = useCallback(async (text: string) => {
@@ -234,6 +234,17 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
       });
     }
   }, [toast]);
+
+  const RenderEmojis = useCallback((emojis: EmojiType[]) => {
+    return emojis.map((emoji, index) => (
+      <EmojiItemMemo
+        key={emoji.fullCode || `emoji_ai_${index}`}
+        emoji={emoji}
+        onCopy={copyToClipboard}
+        lang={lang}
+      />
+    ));
+  }, [copyToClipboard, lang]);
 
   return (
     <div 
@@ -340,14 +351,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
             </div>
           ) : (
             <div className="p-2 space-y-0.5">
-              {emojis.map((emoji, index) => (
-                <EmojiItemMemo
-                  key={emoji.fullCode || `emoji_ai_${index}`}
-                  emoji={emoji}
-                  onCopy={copyToClipboard}
-                  lang={lang}
-                />
-              ))}
+              {RenderEmojis(emojis)}
             </div>
           )}
         </div>

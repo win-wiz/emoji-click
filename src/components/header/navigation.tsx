@@ -14,7 +14,7 @@ export default function Navigation(
           <Link href={`/${lang}`} className="flex items-center gap-2">
             <span className="text-2xl">🤖</span>
             <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
-              Emoji Ai Finder
+              EmojiClick
             </span>
           </Link>
           

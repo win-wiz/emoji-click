@@ -6,7 +6,21 @@ import { serverSideTranslations } from "@/locales/serverSideTranslations";
 import "@/styles/globals.css";
 import ScrollToTop from '@/components/scroll-to-top'
 import { Toaster } from '@/components/ui/toaster'
+import { activateLocale } from "@/locales/locale";
+import { t } from "@lingui/macro";
+import { Metadata } from "next";
 // import { GoogleAnalytics } from '@next/third-parties/google'
+
+export async function generateMetadata({ params }: { params: { lang: AVAILABLE_LOCALES } }): Promise<Metadata> {
+
+  await activateLocale(params.lang)
+
+  return {
+    title: t`EmojiClick | 为每一次聊天提供智能表情搜索`,
+    description: t`寻找合适的表情符号？只需输入你的感受，EmojiClick会迅速为你找到最佳表情。快速、有趣，总是恰到好处。`,
+    keywords: t`emoji search, AI-powered emoji, EmojiClick, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine`,
+  }
+}
 
 export default async function RootLayout({
   children,

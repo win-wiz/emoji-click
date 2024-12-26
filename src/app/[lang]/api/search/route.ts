@@ -1,7 +1,7 @@
 import { db } from "@/server/db";
 import { emoji, emojiKeywords, emojiLanguage, emojiSearchTips, emojiType } from "@/server/db/schema";
 import { NextResponse } from "next/server";
-import { like, or, and, eq, desc, sql, inArray } from "drizzle-orm";
+import { like, and, eq, desc, sql, inArray, or } from "drizzle-orm";
 import { AVAILABLE_LOCALES, DEFAULT_LOCALE } from "@/locales/config";
 import { emojiAiSearch } from "@/aiModal/emoji-ai-search";
 import { supportLang } from "@/utils";
@@ -20,7 +20,7 @@ export async function POST(request: Request) {
 
     const q = keyword.trim();
     // 第一步， 匹配关键字
-    const keywordPrepare = db
+    const keywordContentPrepare = db
       .select({
         baseCode: emojiKeywords.baseCode
       })
@@ -32,8 +32,31 @@ export async function POST(request: Request) {
       .groupBy(emojiKeywords.baseCode)
       .prepare();
 
-    const searchResults = await keywordPrepare.execute();  
-    // console.log('searchResults===>>>', searchResults);
+    const keywordNamePrepare = db
+      .select({
+        baseCode: emojiLanguage.fullCode
+      })
+      .from(emojiLanguage)
+      .where(and(
+        eq(emojiLanguage.language, lang),
+        like(sql`LOWER(${emojiLanguage.name})`, `%${q.toLowerCase()}%`)
+      ))
+      .groupBy(emojiLanguage.fullCode)
+      .prepare();
+
+    let searchResults = [];
+    const keywordContentResults = await keywordContentPrepare.execute();
+    const keywordNameResults = await keywordNamePrepare.execute();
+    // console.log('keywordNameResults===>>>', keywordNameResults);
+    // searchResults = [...keywordContentResults, ...keywordNameResults];
+    searchResults = [...keywordNameResults];
+  
+    for (const item of keywordContentResults) {
+      if (searchResults.find(result => result.baseCode === item.baseCode)) {
+        continue;
+      }
+      searchResults.push(item);
+    }
 
     const aiEmojiList: Record<string, any>[] = [];
     const emojiList: Record<string, any>[] = [];
@@ -60,39 +83,46 @@ export async function POST(request: Request) {
       }
     } else {
       const baseCodes: string[] = searchResults.map(item => item.baseCode).filter(code => code !== null);
-      // 第二步： 根据 baseCode 查询 emoji 信息
-      const emojiPrepare = db
-        .select({
-          fullCode: emoji.fullCode,
-          code: emoji.code,
-          name: emojiLanguage.name,
-          hot: emoji.hot,
-          type: emojiType.type,
-          typeName: emojiType.name
-        })
-        .from(emoji)
-        .leftJoin(emojiLanguage, and(
-          eq(emoji.fullCode, emojiLanguage.fullCode),
-          eq(emojiLanguage.language, lang)
-        ))
-        .leftJoin(emojiType, and(
-          eq(emoji.type, emojiType.type),
-          eq(emojiType.language, lang)
-        ))
-        .where(
-          and(
-            inArray(emoji.fullCode, baseCodes),
-            eq(emoji.diversity, 0)
+      
+      // 分批查询
+      for (let i = 0; i < baseCodes.length; i += 50) {
+        const batch = baseCodes.slice(i, i + 50);
+        // const emojiResults = await emojiPrepare.execute();
+        const emojiResults = await db
+          .select({
+            fullCode: emoji.fullCode,
+            code: emoji.code,
+            name: emojiLanguage.name,
+            hot: emoji.hot,
+            type: emoji.type,
+            typeName: emojiType.name
+          })
+          .from(emoji)
+          .leftJoin(emojiLanguage, and(
+            eq(emoji.fullCode, emojiLanguage.fullCode),
+            eq(emojiLanguage.language, lang)
+          ))
+          .leftJoin(emojiType, and(
+            eq(emoji.type, emojiType.type),
+            eq(emojiType.language, lang)
+          ))
+          .where(
+            and(
+              inArray(emoji.fullCode, batch),
+              or(eq(emoji.diversity, 0), eq(emoji.hot, 1))
+            )
           )
-        )
-        .orderBy(desc(emoji.hot))
-        .prepare();
+          .orderBy(desc(emoji.hot))
+          .limit(100);
 
-      const emojiResults = await emojiPrepare.execute();
-      // console.log('emojiResults===>>>', emojiResults);
-      emojiList.push(...emojiResults);
+          emojiList.push(...emojiResults);
+          if (emojiList.length >= 300) {
+            break;
+          }
+      }
     }
 
+    // 最多返回500条
     const reulst: Record<string, any>[] = [...aiEmojiList, ...emojiList];
     
     return NextResponse.json({
