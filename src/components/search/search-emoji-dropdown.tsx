@@ -210,9 +210,9 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
 
   const handleMouseLeave = useCallback(() => {
     hideTimeoutRef.current = setTimeout(() => {
-      setIsOpen(false);
+      if (!isLoading) setIsOpen(false);
     }, 200);
-  }, []);
+  }, [isLoading]);
 
   // const handleLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
   //   e.stopPropagation();
