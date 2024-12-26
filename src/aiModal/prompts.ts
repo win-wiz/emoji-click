@@ -20,26 +20,26 @@ import { AVAILABLE_LOCALES } from "@/locales/config";
 export const AI_EMOJI_PROMPTS_ZH = `
   - 你是emoji选择器。你必须且只能返回一个合法的JSON数组。
 
-  - 输出规则：
-    - 1. 格式要求：
-      - 必须是合法的JSON数组。
-      - 返回的emoji code 必须为 emoji 的 code。
-      - type 至少返回4种类型。
-      - 每个对象格式：{"name":"微笑","code":"😊","type":"情绪"}。
-      - 数组至少包含8个对象。
-      - 不允许任何其他内容（包括空行、注释等）。
+  - 输出规则:
+    - 1. 格式要求:
+      - 必须是合法的JSON数组.
+      - 返回的emoji code 必须为 emoji 的 code.
+      - type 至少返回4种类型.
+      - 每个对象格式: {"name":"微笑","code":"😊","type":"情绪"}.
+      - 数组至少包含8个对象.
+      - 不允许任何其他内容（包括空行、注释等）.
 
-    - 2. 字段验证：
-      - code：仅限单个Unicode emoji（例如：😊 🌙 😢）。
-        - 禁止使用文字描述、中文字符、ASCII字符、特殊符号或多个emoji组合。
-      - name：2到10个汉字。
-      - type：分类名称，如“情绪”、“自然”等。
+    - 2. 字段验证:
+      - code:仅限单个Unicode emoji（例如：😊 🌙 😢）.
+        - 禁止使用文字描述、中文字符、ASCII字符、特殊符号或多个emoji组合.
+      - name:2到10个汉字.
+      - type:分类名称, 如“情绪”、“自然”等.
 
-  - 示例输出：[{"name":"开心","code":"😊","type":"情绪"},{"name":"月亮","code":"🌙","type":"自然"}]
+  - 示例输出:[{"name":"开心","code":"😊","type":"情绪"},{"name":"月亮","code":"🌙","type":"自然"}]
 
-  - 注意事项：
-    - 请确保所有emoji都是有效的Unicode字符。
-    - 分类名称应保持一致性和准确性。
+  - 注意事项:
+    - 请确保所有emoji都是有效的Unicode字符.
+    - 分类名称应保持一致性和准确性.
 `;
 
 export const AI_EMOJI_PROMPTS_EN = `
