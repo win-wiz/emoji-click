@@ -28,14 +28,14 @@ export default function LanguageToggle({ lang }: { lang: AVAILABLE_LOCALES }) {
         role="button"
         className="relative btn border group-hover:border-1 group-hover:border-violet-600 bg-white m-1 hover:bg-transparent"
       >
-        <p className="font-semibold flex items-center gap-2 text-md w-[120px]">
+        <p className="font-semibold flex items-center gap-2 text-md w-[122px]">
           {getLocaleFlag(lang || DEFAULT_LOCALE)}
           <span>{currentLang}</span>
         </p>
       </div>
       <ul
         tabIndex={0}
-        className="dropdown-content menu bg-base-100 border rounded-lg z-[1] p-2 w-[160px] shadow"
+        className="dropdown-content menu bg-base-100 border rounded-lg z-[1] p-2 w-[164px] shadow"
       >
         {dropdownItems}
       </ul>
