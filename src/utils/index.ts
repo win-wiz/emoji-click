@@ -52,7 +52,7 @@ export function debounce(fn: Function, delay: number) {
 
 export const fetcher = (...args: Parameters<typeof fetch>) => fetch(...args).then((res) => res.json());
 
-export const supportLang = ['zh', 'en'];
+export const supportLang = ['zh', 'en', 'fr', 'es', 'pt', 'zh-TW'];
 
 export interface SitemapUrl {
   loc: string
@@ -75,3 +75,5 @@ export function generateSitemapXml(urls: SitemapUrl[]) {
   xml += '</urlset>'
   return xml
 }
+
+export const SITEMAP_INDEX_PAGE_SIZE = 2000;

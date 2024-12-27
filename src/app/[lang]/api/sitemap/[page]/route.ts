@@ -1,15 +1,26 @@
 import { db } from "@/server/db";
 import { emojiLanguage } from "@/server/db/schema";
-import { generateSitemapXml, SitemapUrl } from "@/utils";
-import { NextResponse } from "next/server";
+import { generateSitemapXml, SITEMAP_INDEX_PAGE_SIZE, SitemapUrl } from "@/utils";
+import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = 'edge';
 
-export async function GET() {
-  const emojiPrepare = db.select({
-    baseCode: emojiLanguage.fullCode,
-    language: emojiLanguage.language,
-  }).from(emojiLanguage).prepare();
+export async function GET(req: NextRequest) {
+
+  const page = req.nextUrl.searchParams.get('page') || 1;
+
+  const limitPage = SITEMAP_INDEX_PAGE_SIZE;
+  const offset = (+(page || 1) - 1) * limitPage;
+
+  const emojiPrepare = db
+    .select({
+      baseCode: emojiLanguage.fullCode,
+      language: emojiLanguage.language,
+    })
+    .from(emojiLanguage)
+    .limit(limitPage)
+    .offset(offset)
+    .prepare();
 
   const emojis = await emojiPrepare.execute();
   const dynamicUrls: SitemapUrl[] = emojis.map((emoji: Record<string, any>) => ({
