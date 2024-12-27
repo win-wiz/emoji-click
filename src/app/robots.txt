@@ -2,4 +2,4 @@ User-Agent: *
 Allow: *
 
 Sitemap: https://emojis.click/sitemap.xml
-Sitemap: https://subrise.co/en/api/sitemap
+Sitemap: https://emojis.click/en/api/sitemap-index

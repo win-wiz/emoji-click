@@ -77,3 +77,16 @@ export function generateSitemapXml(urls: SitemapUrl[]) {
 }
 
 export const SITEMAP_INDEX_PAGE_SIZE = 2000;
+
+export function generateSitemapIndexXml(urls: string[]) {
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>'
+  xml += '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+  urls.forEach(url => {
+    xml += `<sitemap>
+              <loc>${url}</loc>
+              <lastmod>${new Date().toISOString()}</lastmod>
+            </sitemap>`
+  })
+  xml += '</sitemapindex>'
+  return xml
+}
