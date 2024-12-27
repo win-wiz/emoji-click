@@ -1,3 +1,4 @@
+
 import EmojiProfile from "@/components/emoji-profile";
 import { AVAILABLE_LOCALES } from "@/locales/config";
 import { fetchEmojiProfileByFullCode, fetchGenerateMetadata } from "@/server/detail";
@@ -6,34 +7,32 @@ import { Metadata } from "next";
 
 export const runtime = 'edge';
 
-export async function generateMetadata({ params, searchParams }: { params: { lang: AVAILABLE_LOCALES }, searchParams: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ 
+  params, 
+}: { 
+  params: { lang: AVAILABLE_LOCALES, slug: string }
+}): Promise<Metadata> {
 
-  const { data } = await fetchGenerateMetadata(params.lang, searchParams.slug);
+  const { data } = await fetchGenerateMetadata(params.lang, params.slug);
 
   return {
     title: `EmojiClick | ${data?.name} ${data?.code}`,
     description: data?.meaning,
     keywords: t`emoji search, AI-powered emoji, EmojiClick, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine`
-  }
-  
+  } 
 }
 
 export default async function DetailsPage({
-  searchParams: {
-    slug
-  },
   params: {
-    lang
+    lang, 
+    slug
   }
 }: {
-  searchParams: {
+  params: {
+    lang: AVAILABLE_LOCALES,
     slug: string
   }
-  params: {
-    lang: AVAILABLE_LOCALES
-  }
 }) {
-
 
   if (!slug) {
     return <div>No emoji found</div>

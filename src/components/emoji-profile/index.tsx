@@ -1,3 +1,5 @@
+'use client';
+
 import EmojiCode from "./emoji-code";
 import EmojiMeaning from "./emoji-meaning";
 import EmojiKeywords from "./emoji-keywords";
@@ -13,7 +15,6 @@ interface EmojiDetail {
 }
 
 export default function EmojiProfile({ emojiData = {}, lang }: EmojiDetail) {
-  // const [copied, setCopied] = useState(false);
 
   return (
     <div className="min-h-screen">

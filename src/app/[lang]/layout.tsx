@@ -9,6 +9,7 @@ import { Toaster } from '@/components/ui/toaster'
 import { activateLocale } from "@/locales/locale";
 import { t } from "@lingui/macro";
 import { Metadata } from "next";
+import HeadIco from "@/components/head-ico";
 // import { GoogleAnalytics } from '@next/third-parties/google'
 
 export async function generateMetadata({ params }: { params: { lang: AVAILABLE_LOCALES } }): Promise<Metadata> {
@@ -39,9 +40,9 @@ export default async function RootLayout({
   return (
     <html lang={lang} suppressHydrationWarning className="scroll-smooth">
       <head>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🤖</text></svg>" />
+        <HeadIco />
       </head>
-      <body>
+      <body className="bg-gray-800">
         <AppWithTranslation i18n={i18n}>
           <main className="flex flex-col min-h-screen bg-white">
             <Header lang={lang as AVAILABLE_LOCALES}/>

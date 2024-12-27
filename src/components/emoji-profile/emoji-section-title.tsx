@@ -1,3 +1,5 @@
+'use client';
+
 import { memo, ReactNode } from "react"
 
 interface SectionTitleProps {

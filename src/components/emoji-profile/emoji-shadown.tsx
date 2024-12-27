@@ -1,3 +1,5 @@
+'use client';
+
 import { memo } from 'react'
 
 // 抽离样式常量
