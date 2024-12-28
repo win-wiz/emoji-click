@@ -1,9 +1,22 @@
 import { AVAILABLE_LOCALES } from "@/locales/config";
-import { AI_EMOJI_PROMPTS_EN, AI_EMOJI_PROMPTS_ZH } from "./prompts";
+import { AI_EMOJI_PROMPTS_EN, AI_EMOJI_PROMPTS_ES, AI_EMOJI_PROMPTS_FR, AI_EMOJI_PROMPTS_PT, AI_EMOJI_PROMPTS_ZH, AI_EMOJI_PROMPTS_ZH_TW } from "./prompts";
 
 const map_prompts: Record<string, string> = {
   zh: AI_EMOJI_PROMPTS_ZH,
-  en: AI_EMOJI_PROMPTS_EN
+  en: AI_EMOJI_PROMPTS_EN,
+  fr: AI_EMOJI_PROMPTS_FR,
+  pt: AI_EMOJI_PROMPTS_PT,
+  es: AI_EMOJI_PROMPTS_ES,
+  'zh-TW': AI_EMOJI_PROMPTS_ZH_TW,
+}
+
+const map_contents: Record<string, (lang: string, query: string) => string> = {
+  zh: (lang: string, query: string) => `语言：${lang}, 关键词是：${query}`,
+  en: (lang: string, query: string) => `Language: ${lang}, Keywords: ${query}`,
+  fr: (lang: string, query: string) => `Langue: ${lang}, Mots-clés: ${query}`,
+  pt: (lang: string, query: string) => `Linguagem: ${lang}, Palavras-chave: ${query}`,
+  es: (lang: string, query: string) => `Lenguaje: ${lang}, Palabras clave: ${query}`,
+  'zh-TW': (lang: string, query: string) => `語言：${lang}, 關鍵詞是：${query}`,
 }
 
 export async function fetchApi(
@@ -15,7 +28,10 @@ export async function fetchApi(
 ) {
 
   const prompts = map_prompts[lang];
-  const content = lang === 'zh' ? `语言：${lang}, 关键词是：${query}` : `Language: ${lang}, Keywords: ${query}`;
+  // const content = lang === 'zh' ? `语言：${lang}, 关键词是：${query}` : `Language: ${lang}, Keywords: ${query}`;
+  const content = lang && map_contents[lang] ? map_contents[lang](lang, query) : '';
+  console.log('prompts===>>>', prompts);
+  console.log('content===>>>', content);
 
   const bodyData = {
     model,
