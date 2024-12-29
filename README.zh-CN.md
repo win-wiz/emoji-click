@@ -1,10 +1,10 @@
-# AI Emoji 😄🌍
+# Emoji Click 😄🌍
 
 你是否有过这样的经历？当你想在社交媒体上发布一个时刻，却难以找到最贴切的表情符号。无论是想表达"今天心情像过山车一样起伏"，还是"生活突然给了我一记重击"，或者"我现在百感交集"，似乎总也找不到那个恰到好处的表情。
 
 现在，有了 EmojiClick，你的烦恼就解决了！这是一个由 AI 驱动的表情符号搜索工具，无需记忆表情符号的名字，也不用担心不匹配。你只需输入任何内容——你的心情、一种感觉、一句诗，甚至歌词——EmojiClick 就会为你找到最完美的表情符号。🚀 https://emojis.click/
 
-AI Emoji 是一个使用 Next.js 和 TypeScript 构建的开源表情符号网站。它提供了大量分类到不同部分的表情符号，支持多种语言和流畅的动画效果。
+Emoji Click 是一个使用 Next.js 和 TypeScript 构建的开源表情符号网站。它提供了大量分类到不同部分的表情符号，支持多种语言和流畅的动画效果。
 
 ## 🌟 特性
 
@@ -44,7 +44,7 @@ yarn dev
 
 ## 🤝 贡献
 
-我们欢迎对 AI Emoji 的贡献！请按照以下步骤：
+我们欢迎对 Emoji Click 的贡献！请按照以下步骤：
 
 1. Fork 仓库
 2. 创建新分支 (`git checkout -b feature/your-feature`)
@@ -54,4 +54,4 @@ yarn dev
 
 ## 📜 许可证
 
-AI Emoji 是根据 [MIT 许可证](https://opensource.org/licenses/MIT) 许可的开源软件。 
+Emoji Click 是根据 [MIT 许可证](https://opensource.org/licenses/MIT) 许可的开源软件。 

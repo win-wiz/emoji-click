@@ -1,12 +1,12 @@
 *Read this in other languages: [简体中文](README.zh-CN.md)*
 
-# AI Emoji 😄🌍
+# Emoji Click 😄🌍
 
 Have you ever found yourself in a situation where you want to post a moment on social media, but struggle to find the perfect emoji to express your feelings? Whether you're trying to convey "my mood is a rollercoaster today", "life just hit me hard", or "I'm feeling all the feels", it seems like you can never find that just-right emoji.
 
 Now, with EmojiClick, your troubles are solved! It's an AI-powered emoji search tool that doesn't require you to memorize emoji names or worry about mismatches. Just type in anything—your mood, a feeling, a line of poetry, or even song lyrics—and EmojiClick will find the perfect emoji for you. 🚀 https://emojis.click/
 
-AI Emoji is an open-source emoji website built with Next.js and TypeScript. It provides a wide range of emojis categorized into different sections, supporting multiple languages and smooth animations.
+Emoji Click is an open-source emoji website built with Next.js and TypeScript. It provides a wide range of emojis categorized into different sections, supporting multiple languages and smooth animations.
 
 ## 🌟 Features
 
@@ -46,7 +46,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 🤝 Contributing
 
-We welcome contributions to AI Emoji! Please follow these steps:
+We welcome contributions to Emoji Click! Please follow these steps:
 
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature/your-feature`)
@@ -56,4 +56,4 @@ We welcome contributions to AI Emoji! Please follow these steps:
 
 ## 📜 License
 
-AI Emoji is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Emoji Click is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
