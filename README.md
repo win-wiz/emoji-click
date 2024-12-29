@@ -1,29 +1,59 @@
-# Create T3 App
+*Read this in other languages: [简体中文](README.zh-CN.md)*
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+# AI Emoji 😄🌍
 
-## What's next? How do I make an app with this?
+Have you ever found yourself in a situation where you want to post a moment on social media, but struggle to find the perfect emoji to express your feelings? Whether you're trying to convey "my mood is a rollercoaster today", "life just hit me hard", or "I'm feeling all the feels", it seems like you can never find that just-right emoji.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+Now, with EmojiClick, your troubles are solved! It's an AI-powered emoji search tool that doesn't require you to memorize emoji names or worry about mismatches. Just type in anything—your mood, a feeling, a line of poetry, or even song lyrics—and EmojiClick will find the perfect emoji for you. 🚀 https://emojis.click/
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+AI Emoji is an open-source emoji website built with Next.js and TypeScript. It provides a wide range of emojis categorized into different sections, supporting multiple languages and smooth animations.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## 🌟 Features
 
-## Learn More
+- 📦 Built with Next.js framework, supporting server-side rendering and static generation
+- 🌐 Multilingual support (currently English and Chinese)
+- 🗂️ Emojis categorized into different sections
+- 🚀 Lazy loading and infinite scrolling for better performance
+- 💫 Smooth animations powered by Framer Motion
+- 🎨 Styling with Tailwind CSS for rapid development
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+- [Next.js](https://nextjs.org/) - React framework for server-rendered applications
+- [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - Animation library for React
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## 🚀 Getting Started
 
-## How do I deploy this?
+First, run the development server:
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 📁 Project Structure
+
+- `src/app`: Next.js app directory
+- `src/components`: React components
+- `src/locales`: Locale configuration and translation files
+- `src/types`: TypeScript type definitions
+- `src/utils`: Utility functions
+
+## 🤝 Contributing
+
+We welcome contributions to AI Emoji! Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add your feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
+
+## 📜 License
+
+AI Emoji is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).

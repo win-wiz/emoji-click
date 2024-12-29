@@ -226,6 +226,61 @@
       ]
     ]
   },
+  "buP6IE": {
+    "translation": "EmojiClick utilise des technologies d'IA avancées pour analyser votre entrée – qu'il s'agisse d'émotions, de phrases ou de paroles de chansons – et sélectionner le emoji le plus pertinent dans sa base de données. Vous pouvez le considérer comme votre traducteur emoji.",
+    "message": "EmojiClick利用先进的AI技术分析你的输入——无论是情绪、短语，还是一句歌词——并从数据库中匹配最相关的emoji。你可以把它看作你的emoji翻译官",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        56
+      ]
+    ]
+  },
+  "+v8jUx": {
+    "translation": "EmojiClick prend-il en charge plusieurs langues ?",
+    "message": "EmojiClick支持多种语言吗？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        81
+      ]
+    ]
+  },
+  "Fp98du": {
+    "translation": "EmojiClick est un **outil de recherche d'emoji piloté par l'IA**. En comprenant votre langage naturel, il vous aide à trouver rapidement le emoji le plus approprié – sans avoir besoin de connaître les noms des emojis ni de fouiller dans la bibliothèque d'expressions.",
+    "message": "EmojiClick是一款**AI驱动的emoji搜索工具**。它通过理解你的自然语言，帮你快速找到最贴切的emoji——无需记住emoji名字，也无需翻遍表情库。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        51
+      ]
+    ]
+  },
+  "LIbuH1": {
+    "translation": "La recherche d'emoji par IA d'EmojiClick recommande immédiatement le emoji le plus adapté.",
+    "message": "EmojiClick的AI emoji搜索会立即推荐最合适的emoji。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        64
+      ]
+    ]
+  },
+  "WEVHnj": {
+    "translation": "Comment fonctionne la recherche d'emoji par IA d'EmojiClick ?",
+    "message": "EmojiClick的AI表情搜索是如何工作的？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        55
+      ]
+    ]
+  },
   "wt7TO4": {
     "translation": "Besoin de l'émoticône appropriée, maintenant ? EmojiClick est là pour vous aider. Tapez ce que vous ressentez, et nous trouverons l'émoticône qui l'exprime le mieux. Rapide, amusant et toujours pertinent.",
     "message": "Need the right emoji, right now? EmojiClick's got you covered. Just type what you're feeling, and we'll find the emoji that says it best. Fast, fun, and always on point.",
@@ -272,6 +327,17 @@
       [
         "src/components/category/category-modal.tsx",
         102
+      ]
+    ]
+  },
+  "NIQoFc": {
+    "translation": "Qu'est-ce que EmojiClick ?",
+    "message": "什么是EmojiClick？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        50
       ]
     ]
   },
@@ -437,7 +503,7 @@
     "origin": [
       [
         "src/components/category/category-emoji.tsx",
-        266
+        267
       ]
     ]
   },
@@ -566,6 +632,28 @@
       [
         "src/components/emoji-profile/emoji-code.tsx",
         46
+      ]
+    ]
+  },
+  "92RI1v": {
+    "translation": "Comment utiliser EmojiClick ?",
+    "message": "如何使用EmojiClick？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        60
+      ]
+    ]
+  },
+  "IK419M": {
+    "translation": "Si vous ne trouvez pas la réponse que vous cherchez, n'hésitez pas à contacter notre équipe de support par e-mail. Nous répondrons à vos questions au plus vite !",
+    "message": "如果你没有找到想要的答案,欢迎通过邮件联系我们的客服团队。我们将尽快回复你的疑问!",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        126
       ]
     ]
   },
@@ -754,6 +842,17 @@
       ]
     ]
   },
+  "RHjkTG": {
+    "translation": "Questions fréquentes",
+    "message": "常见问题解答",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        97
+      ]
+    ]
+  },
   "OIGOYd": {
     "translation": "citation",
     "message": "引言",
@@ -762,6 +861,17 @@
       [
         "src/app/[lang]/terms-of-service/page.tsx",
         77
+      ]
+    ]
+  },
+  "1Z6ccK": {
+    "translation": "Bien sûr ! Une fois que vous avez trouvé l'emoji, vous pouvez le copier et le coller dans n'importe quelle application, plateforme ou message – que ce soit pour des conversations, des médias sociaux ou des courriels.",
+    "message": "当然可以！找到emoji后，你可以将它复制粘贴到任何应用、平台或消息中——无论是聊天、社交媒体还是邮件。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        72
       ]
     ]
   },
@@ -787,6 +897,28 @@
       ]
     ]
   },
+  "wv1DzS": {
+    "translation": "Nous avons compilé quelques questions fréquentes pour vous aider à mieux utiliser EmojiClick. Si vous avez d'autres questions, n'hésitez pas à nous contacter !",
+    "message": "我们整理了一些常见问题,希望能够帮助你更好地使用EmojiClick。如果你有其他疑问,欢迎随时联系我们!",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        100
+      ]
+    ]
+  },
+  "HBPAVn": {
+    "translation": "Notre outil de recherche d'emoji par IA met régulièrement à jour sa base de données pour inclure les derniers emojis et tendances populaires. Vous trouverez toujours les options d'expressions les plus récentes.",
+    "message": "我们的AI emoji搜索工具会定期更新数据库，以包含最新的emoji和流行趋势。你总能找到最新鲜的表情选项。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        87
+      ]
+    ]
+  },
   "7zNvUG": {
     "translation": "Nos services ne sont pas destinés aux mineurs de moins de 18 ans. Nous ne collectons pas intentionnellement les informations personnelles des enfants.",
     "message": "我们的服务不适用于18岁以下的儿童。我们不会有意收集儿童的个人信息。",
@@ -806,6 +938,17 @@
       [
         "src/app/[lang]/privacy-policy/page.tsx",
         61
+      ]
+    ]
+  },
+  "AuDf/2": {
+    "translation": "Peux-je utiliser ces emojis partout ?",
+    "message": "我可以在任何地方使用这些表情吗？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        71
       ]
     ]
   },
@@ -941,6 +1084,17 @@
       ]
     ]
   },
+  "3bDcMx": {
+    "translation": "Oui, EmojiClick est entièrement gratuit à utiliser ! Pas de frais cachés, pas de souscription – rendre la recherche d'emojis simple.",
+    "message": "是的，EmojiClick完全免费使用！没有隐藏费用，也没有订阅——让emoji搜索变得简单。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        77
+      ]
+    ]
+  },
   "F3PJlG": {
     "translation": "Conditions d'utilisation",
     "message": "服务条款",
@@ -1038,6 +1192,17 @@
       [
         "src/components/hot-emoji.tsx",
         41
+      ]
+    ]
+  },
+  "DtlTmG": {
+    "translation": "Cliquez pour copier, puis utilisez librement !",
+    "message": "点击复制，然后随意使用！",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        65
       ]
     ]
   },
@@ -1167,6 +1332,17 @@
       ]
     ]
   },
+  "8d8fCg": {
+    "translation": "Pour l'instant, EmojiClick offre une prise en charge optimale du chinois, mais nous travaillons à ajouter plus de langues. Restez à l'écoute des mises à jour !",
+    "message": "目前，EmojiClick对中文的支持最为友好，但我们正在努力添加更多语言。敬请期待更新！",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        82
+      ]
+    ]
+  },
   "OS9sY4": {
     "translation": "Recommandations pertinentes",
     "message": "相关推荐",
@@ -1236,6 +1412,10 @@
         99
       ],
       [
+        "src/components/faq.tsx",
+        129
+      ],
+      [
         "src/components/footer.tsx",
         65
       ]
@@ -1249,6 +1429,17 @@
       [
         "src/components/category/category-emoji.tsx",
         222
+      ]
+    ]
+  },
+  "9GQzzK": {
+    "translation": "Avec quelle fréquence la base de données d'emojis est-elle mise à jour ?",
+    "message": "表情数据库多久更新一次？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        86
       ]
     ]
   },
@@ -1296,6 +1487,28 @@
       ]
     ]
   },
+  "Gu+yJ9": {
+    "translation": "Entrez ce que vous souhaitez exprimer (par exemple, « Je suis fatigué » ou « Je me sens comme une star »).",
+    "message": "输入你想表达的内容（比如“我好累”或“感觉自己像个明星”）。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        63
+      ]
+    ]
+  },
+  "XwSzkU": {
+    "translation": "Avez-vous d'autres questions ?",
+    "message": "还有其他问题吗?",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        123
+      ]
+    ]
+  },
   "9WeTSM": {
     "translation": "Ces informations sont recueillies pour traiter vos commandes sur notre navigateur Emoji Ai Finder.",
     "message": "这些信息是为了在我们的 Emoji Ai Finder 导航站上处理订单而收集的。",
@@ -1327,6 +1540,17 @@
       [
         "src/app/[lang]/terms-of-service/page.tsx",
         98
+      ]
+    ]
+  },
+  "Tg/Khw": {
+    "translation": "Ce service est-il gratuit ?",
+    "message": "这项服务是免费的吗？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        76
       ]
     ]
   },

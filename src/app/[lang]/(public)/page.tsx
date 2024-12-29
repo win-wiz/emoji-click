@@ -6,7 +6,7 @@ import CategoryEmoji from '@/components/category/category-emoji';
 // import { activateLocale } from '@/locales/locale';
 import { AVAILABLE_LOCALES } from '@/locales/config';
 import { fetchEmojiByGroup, fetchHotEmoji, fetchRandomKeywords } from '@/server/home';
-// import FAQ from '@/components/faq';
+import FAQ from '@/components/faq';
 
 export const runtime = 'edge';
 
@@ -36,7 +36,7 @@ export default async function HomePage({ params }: { params: { lang: AVAILABLE_L
         
       </div>
       {/* FAQ */}
-      {/* <FAQ /> */}
+      <FAQ />
     </>
   )
 }

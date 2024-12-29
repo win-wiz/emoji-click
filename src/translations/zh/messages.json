@@ -346,6 +346,61 @@
       ]
     ]
   },
+  "buP6IE": {
+    "translation": "EmojiClick利用先进的AI技术分析你的输入——无论是情绪、短语，还是一句歌词——并从数据库中匹配最相关的emoji。你可以把它看作你的emoji翻译官",
+    "message": "EmojiClick利用先进的AI技术分析你的输入——无论是情绪、短语，还是一句歌词——并从数据库中匹配最相关的emoji。你可以把它看作你的emoji翻译官",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        56
+      ]
+    ]
+  },
+  "+v8jUx": {
+    "translation": "EmojiClick支持多种语言吗？",
+    "message": "EmojiClick支持多种语言吗？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        81
+      ]
+    ]
+  },
+  "Fp98du": {
+    "translation": "EmojiClick是一款**AI驱动的emoji搜索工具**。它通过理解你的自然语言，帮你快速找到最贴切的emoji——无需记住emoji名字，也无需翻遍表情库。",
+    "message": "EmojiClick是一款**AI驱动的emoji搜索工具**。它通过理解你的自然语言，帮你快速找到最贴切的emoji——无需记住emoji名字，也无需翻遍表情库。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        51
+      ]
+    ]
+  },
+  "LIbuH1": {
+    "translation": "EmojiClick的AI emoji搜索会立即推荐最合适的emoji。",
+    "message": "EmojiClick的AI emoji搜索会立即推荐最合适的emoji。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        64
+      ]
+    ]
+  },
+  "WEVHnj": {
+    "translation": "EmojiClick的AI表情搜索是如何工作的？",
+    "message": "EmojiClick的AI表情搜索是如何工作的？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        55
+      ]
+    ]
+  },
   "aDJB+h": {
     "translation": "使用 Lingui 在 5 分钟内为您的网站添加新语言",
     "message": "Use Lingui to add a new language to your website in 5 minutes with AI",
@@ -392,6 +447,17 @@
       [
         "src/components/category/category-modal.tsx",
         102
+      ]
+    ]
+  },
+  "NIQoFc": {
+    "translation": "什么是EmojiClick？",
+    "message": "什么是EmojiClick？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        50
       ]
     ]
   },
@@ -569,7 +635,7 @@
     "origin": [
       [
         "src/components/category/category-emoji.tsx",
-        266
+        267
       ]
     ]
   },
@@ -722,6 +788,28 @@
       [
         "src/components/emoji-profile/emoji-code.tsx",
         46
+      ]
+    ]
+  },
+  "92RI1v": {
+    "translation": "如何使用EmojiClick？",
+    "message": "如何使用EmojiClick？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        60
+      ]
+    ]
+  },
+  "IK419M": {
+    "translation": "如果你没有找到想要的答案,欢迎通过邮件联系我们的客服团队。我们将尽快回复你的疑问!",
+    "message": "如果你没有找到想要的答案,欢迎通过邮件联系我们的客服团队。我们将尽快回复你的疑问!",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        126
       ]
     ]
   },
@@ -970,6 +1058,17 @@
       ]
     ]
   },
+  "RHjkTG": {
+    "translation": "常见问题解答",
+    "message": "常见问题解答",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        97
+      ]
+    ]
+  },
   "OIGOYd": {
     "translation": "引言",
     "message": "引言",
@@ -978,6 +1077,17 @@
       [
         "src/app/[lang]/terms-of-service/page.tsx",
         77
+      ]
+    ]
+  },
+  "1Z6ccK": {
+    "translation": "当然可以！找到emoji后，你可以将它复制粘贴到任何应用、平台或消息中——无论是聊天、社交媒体还是邮件。",
+    "message": "当然可以！找到emoji后，你可以将它复制粘贴到任何应用、平台或消息中——无论是聊天、社交媒体还是邮件。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        72
       ]
     ]
   },
@@ -1003,6 +1113,28 @@
       ]
     ]
   },
+  "wv1DzS": {
+    "translation": "我们整理了一些常见问题,希望能够帮助你更好地使用EmojiClick。如果你有其他疑问,欢迎随时联系我们!",
+    "message": "我们整理了一些常见问题,希望能够帮助你更好地使用EmojiClick。如果你有其他疑问,欢迎随时联系我们!",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        100
+      ]
+    ]
+  },
+  "HBPAVn": {
+    "translation": "我们的AI emoji搜索工具会定期更新数据库，以包含最新的emoji和流行趋势。你总能找到最新鲜的表情选项。",
+    "message": "我们的AI emoji搜索工具会定期更新数据库，以包含最新的emoji和流行趋势。你总能找到最新鲜的表情选项。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        87
+      ]
+    ]
+  },
   "7zNvUG": {
     "translation": "我们的服务不适用于18岁以下的儿童。我们不会有意收集儿童的个人信息。",
     "message": "我们的服务不适用于18岁以下的儿童。我们不会有意收集儿童的个人信息。",
@@ -1022,6 +1154,17 @@
       [
         "src/app/[lang]/privacy-policy/page.tsx",
         61
+      ]
+    ]
+  },
+  "AuDf/2": {
+    "translation": "我可以在任何地方使用这些表情吗？",
+    "message": "我可以在任何地方使用这些表情吗？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        71
       ]
     ]
   },
@@ -1157,6 +1300,17 @@
       ]
     ]
   },
+  "3bDcMx": {
+    "translation": "是的，EmojiClick完全免费使用！没有隐藏费用，也没有订阅——让emoji搜索变得简单。",
+    "message": "是的，EmojiClick完全免费使用！没有隐藏费用，也没有订阅——让emoji搜索变得简单。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        77
+      ]
+    ]
+  },
   "F3PJlG": {
     "translation": "服务条款",
     "message": "服务条款",
@@ -1278,6 +1432,17 @@
       [
         "src/components/hot-emoji.tsx",
         41
+      ]
+    ]
+  },
+  "DtlTmG": {
+    "translation": "点击复制，然后随意使用！",
+    "message": "点击复制，然后随意使用！",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        65
       ]
     ]
   },
@@ -1455,6 +1620,17 @@
       ]
     ]
   },
+  "8d8fCg": {
+    "translation": "目前，EmojiClick对中文的支持最为友好，但我们正在努力添加更多语言。敬请期待更新！",
+    "message": "目前，EmojiClick对中文的支持最为友好，但我们正在努力添加更多语言。敬请期待更新！",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        82
+      ]
+    ]
+  },
   "OS9sY4": {
     "translation": "相关推荐",
     "message": "相关推荐",
@@ -1524,6 +1700,10 @@
         99
       ],
       [
+        "src/components/faq.tsx",
+        129
+      ],
+      [
         "src/components/footer.tsx",
         65
       ]
@@ -1537,6 +1717,17 @@
       [
         "src/components/category/category-emoji.tsx",
         222
+      ]
+    ]
+  },
+  "9GQzzK": {
+    "translation": "表情数据库多久更新一次？",
+    "message": "表情数据库多久更新一次？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        86
       ]
     ]
   },
@@ -1584,6 +1775,28 @@
       ]
     ]
   },
+  "Gu+yJ9": {
+    "translation": "输入你想表达的内容（比如“我好累”或“感觉自己像个明星”）。",
+    "message": "输入你想表达的内容（比如“我好累”或“感觉自己像个明星”）。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        63
+      ]
+    ]
+  },
+  "XwSzkU": {
+    "translation": "还有其他问题吗? ",
+    "message": "还有其他问题吗?",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        123
+      ]
+    ]
+  },
   "9WeTSM": {
     "translation": "这些信息是为了在我们的 Emoji Ai Finder 导航站上处理订单而收集的。",
     "message": "这些信息是为了在我们的 Emoji Ai Finder 导航站上处理订单而收集的。",
@@ -1627,6 +1840,17 @@
       [
         "src/app/[lang]/terms-of-service/page.tsx",
         98
+      ]
+    ]
+  },
+  "Tg/Khw": {
+    "translation": "这项服务是免费的吗？",
+    "message": "这项服务是免费的吗？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        76
       ]
     ]
   },
