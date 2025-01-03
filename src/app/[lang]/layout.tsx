@@ -40,6 +40,7 @@ export default async function RootLayout({
     <html lang={lang} suppressHydrationWarning className="scroll-smooth">
       <head>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🤖</text></svg>" />
+        <link rel="canonical" href="https://emojis.click/en" />
       </head>
       <body>
         <AppWithTranslation i18n={i18n}>
