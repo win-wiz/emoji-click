@@ -24,17 +24,13 @@ export default async function HomePage({ params }: { params: { lang: AVAILABLE_L
 
   return (
     <>
-      <div className="px-4">
-        <SearchEmoji randomKeywords={randomKeywords.data ?? []} lang={params.lang}/>
-        
-        {/* 热门表情  */}
-        <HotEmoji lang={params.lang} hotEmojis={hotEmoji.data ?? []} />
+      <SearchEmoji randomKeywords={randomKeywords.data ?? []} lang={params.lang}/>
+      {/* 热门表情  */}
+      <HotEmoji lang={params.lang} hotEmojis={hotEmoji.data ?? []} />
 
-        {/* 表情分类 */}
-        <CategoryEmoji lang={params.lang} categories={emojiByGroup.data ?? []}/>
+      {/* 表情分类 */}
+      <CategoryEmoji lang={params.lang} categories={emojiByGroup.data ?? []}/>
 
-        
-      </div>
       {/* FAQ */}
       <FAQ />
     </>

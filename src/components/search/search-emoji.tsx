@@ -26,7 +26,7 @@ export const SearchEmoji = ({
   }, []);
 
   return (
-    <div className="relative -mx-6 sm:-mx-12 md:-mx-24 lg:-mx-32">
+    <div className="relative">
       {/* 顶部渐变装饰 */}
       <div className="absolute inset-x-0 -top-24 h-24 bg-gradient-to-b from-transparent to-purple-50/90" />
       
