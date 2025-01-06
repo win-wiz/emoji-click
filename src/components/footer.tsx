@@ -107,7 +107,7 @@ function Footer({ lang }: { lang: AVAILABLE_LOCALES }) {
         </div>
 
         <div className="mt-16 pt-8 border-t border-zinc-200 flex flex-col md:flex-row justify-between items-center">
-          <p><Trans>版权所有 © {currentYear} EmojiClick 保留所有权利</Trans></p>
+          <p>{t`版权所有 ©`} {currentYear} {t`EmojiClick 保留所有权利`}</p>
         </div>
       </div>
     </footer>
