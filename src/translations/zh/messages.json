@@ -269,6 +269,17 @@
     ],
     "obsolete": true
   },
+  "Rudogq": {
+    "translation": "EmojiClick 保留所有权利",
+    "message": "EmojiClick 保留所有权利",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        110
+      ]
+    ]
+  },
   "22/xk0": {
     "translation": "EmojiClick 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
     "message": "EmojiClick 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
@@ -658,7 +669,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        97
+        102
       ]
     ]
   },
@@ -765,7 +776,7 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        232
+        233
       ]
     ]
   },
@@ -971,7 +982,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        91
+        96
       ]
     ]
   },
@@ -1054,7 +1065,7 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        226
+        227
       ]
     ]
   },
@@ -1197,7 +1208,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        300
+        302
       ]
     ]
   },
@@ -1208,7 +1219,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        297
+        299
       ]
     ]
   },
@@ -1219,7 +1230,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        185
+        201
       ]
     ]
   },
@@ -1318,7 +1329,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        24
+        29
       ]
     ]
   },
@@ -1468,6 +1479,17 @@
       ]
     ]
   },
+  "Z5lut1": {
+    "translation": "版权所有 ©",
+    "message": "版权所有 ©",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        110
+      ]
+    ]
+  },
   "W1+tuL": {
     "translation": "版权所有 © 2024 Emoji Ai Finder. 保留所有权利 ✨",
     "message": "版权所有 © 2024 Emoji Ai Finder. 保留所有权利 ✨",
@@ -1489,7 +1511,8 @@
         "src/components/footer.tsx",
         105
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "imwQl1": {
     "translation": "版权所有 © 2024 EmojiClick 保留所有权利",
@@ -1559,7 +1582,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        83
+        88
       ]
     ]
   },
@@ -1593,7 +1616,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        271
+        273
       ]
     ]
   },
@@ -1705,7 +1728,7 @@
       ],
       [
         "src/components/footer.tsx",
-        65
+        70
       ]
     ]
   },
@@ -1872,7 +1895,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        25
+        30
       ]
     ]
   },
