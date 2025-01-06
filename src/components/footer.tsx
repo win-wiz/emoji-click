@@ -5,6 +5,11 @@ import { Trans, t } from '@lingui/macro';
 import Link from 'next/link';
 import { memo, useMemo } from 'react';
 
+const currentYear = new Date().getFullYear();
+
+const linkStyle = "hover:text-violet-600 transition-colors";
+const sectionTitleStyle = "text-violet-600 text-xl font-medium mb-4 flex items-center gap-2";
+
 // 提取Logo组件并使用memo
 const Logo = memo(() => (
   <Link href="/" className="mb-6 flex items-center gap-2">
@@ -29,7 +34,7 @@ const NavLinks = memo(({ lang }: { lang: AVAILABLE_LOCALES }) => {
     <ul className="space-y-3">
       {links.map(({ href, label }) => (
         <li key={href}>
-          <Link href={href} className="hover:text-violet-600 transition-colors">
+          <Link href={href} className={linkStyle}>
             {label}
           </Link>
         </li>
@@ -43,12 +48,12 @@ NavLinks.displayName = 'NavLinks';
 const FriendLinks = memo(() => (
   <ul className="space-y-3">
     <li>
-      <Link target="_blank" href="https://subrise.co" className="hover:text-violet-600 transition-colors">
+      <Link target="_blank" href="https://subrise.co" className={linkStyle}>
         Subrise
       </Link>
     </li>
     <li>
-      <Link target="_blank" href="https://wordless.online" className="hover:text-violet-600 transition-colors">
+      <Link target="_blank" href="https://wordless.online" className={linkStyle}>
         Wordless
       </Link>
     </li>
@@ -64,7 +69,7 @@ const ContactInfo = memo(() => (
       <span>💌</span>
       <Trans>联系我们</Trans>
     </p>
-    <a href="mailto:support@emojis.click" className="hover:text-violet-600 transition-colors">
+    <a href="mailto:support@emojis.click" className={linkStyle}>
       support@emojis.click
     </a>
   </div>
@@ -87,13 +92,13 @@ function Footer({ lang }: { lang: AVAILABLE_LOCALES }) {
 
           <div className="col-span-2 flex justify-end gap-32">
             <div>
-              <h3 className="text-violet-600 text-xl font-medium mb-4 flex items-center gap-2">
+              <h3 className={sectionTitleStyle}>
                 <Trans>导航</Trans>
               </h3> 
               <NavLinks lang={lang} />
             </div>
             <div>
-              <h3 className="text-violet-600 text-xl font-medium mb-4 flex items-center gap-2">
+              <h3 className={sectionTitleStyle}>
                 <Trans>友情链接</Trans>
               </h3> 
               <FriendLinks />
@@ -102,7 +107,7 @@ function Footer({ lang }: { lang: AVAILABLE_LOCALES }) {
         </div>
 
         <div className="mt-16 pt-8 border-t border-zinc-200 flex flex-col md:flex-row justify-between items-center">
-          <p><Trans>版权所有 © 2024 EmojiClick 保留所有权利</Trans></p>
+          <p><Trans>版权所有 © {currentYear} EmojiClick 保留所有权利</Trans></p>
         </div>
       </div>
     </footer>
