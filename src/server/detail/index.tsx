@@ -1,7 +1,7 @@
 import { AVAILABLE_LOCALES } from "@/locales/config";
 import { db } from "@/server/db";
 import { emoji, emojiKeywords, emojiLanguage } from "../db/schema";
-import { eq, and, sql, inArray } from "drizzle-orm";
+import { eq, and, sql, inArray, count } from "drizzle-orm";
 import { supportLang } from "@/utils";
 
 export async function fetchEmojiProfileByFullCode(fullCode: string, initLang: AVAILABLE_LOCALES) {
@@ -129,4 +129,11 @@ export async function fetchGenerateMetadata(lang: AVAILABLE_LOCALES, fullCode: s
   return {
     data: metadata[0]
   }
+}
+
+export async function getEmojiLanguageCount() {
+  return db
+    .select({ count: count() })
+    .from(emojiLanguage)
+    .execute();
 }

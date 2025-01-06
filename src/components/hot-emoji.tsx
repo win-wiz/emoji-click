@@ -15,7 +15,7 @@ export const HotEmoji = ({
 }) => {
 
   return (
-    <div className="relative -mx-6 sm:-mx-12 md:-mx-24 lg:-mx-32">
+    <div className="relative">
       <div className="absolute inset-0 bg-gray-50" />
 
       <div className="relative container mx-auto px-4 sm:px-6 py-8 sm:py-12">

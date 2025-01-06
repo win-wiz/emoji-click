@@ -20,7 +20,7 @@ export const FlagMaps = {
   ru: '🇷🇺', // 俄语
   uk: '🇺🇦', // 乌克兰语
   vi: '🇻🇳', // 越南语
-  'zh-TW': '🇨🇳', // 繁体中文
+  'zh-TW': '🇭🇰', // 繁体中文
   pt: '🇵🇹', // 葡萄牙语
   da: '🇩🇰', // 丹麦语
   el: '🇬🇷', // 希腊语
@@ -52,7 +52,7 @@ export function debounce(fn: Function, delay: number) {
 
 export const fetcher = (...args: Parameters<typeof fetch>) => fetch(...args).then((res) => res.json());
 
-export const supportLang = ['zh', 'en'];
+export const supportLang = ['zh', 'en', 'fr', 'es', 'pt', 'zh-TW'];
 
 export interface SitemapUrl {
   loc: string
@@ -73,5 +73,20 @@ export function generateSitemapXml(urls: SitemapUrl[]) {
             </url>`
   })
   xml += '</urlset>'
+  return xml
+}
+
+export const SITEMAP_INDEX_PAGE_SIZE = 2000;
+
+export function generateSitemapIndexXml(urls: string[]) {
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>'
+  xml += '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+  urls.forEach(url => {
+    xml += `<sitemap>
+              <loc>${url}</loc>
+              <lastmod>${new Date().toISOString()}</lastmod>
+            </sitemap>`
+  })
+  xml += '</sitemapindex>'
   return xml
 }

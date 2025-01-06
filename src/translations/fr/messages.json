@@ -1,27 +1,4 @@
 {
-  "kM0I9v": {
-    "translation": "EmojiClick | Recherche d'émoticônes intelligente pour tous les chats",
-    "message": "EmojiClick | Smart Emoji Search for Every Chat",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/(public)/page.tsx",
-        17
-      ]
-    ],
-    "obsolete": true
-  },
-  "gsAuPr": {
-    "translation": "EmojiClick | Recherche d'émoticônes intelligentes pour chaque conversation",
-    "message": "EmojiClick | 用AI找到最适合的表情",
-    "comments": [],
-    "origin": [
-      [
-        "src/app/[lang]/(public)/page.tsx",
-        17
-      ]
-    ]
-  },
   "/APyPo": {
     "translation": "Emoji Ai Finder peut modifier ses conditions d'utilisation à tout moment sans préavis. En utilisant ce site, vous acceptez de vous conformer aux conditions d'utilisation en vigueur au moment de votre utilisation.",
     "message": "Emoji Ai Finder 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
@@ -31,7 +8,8 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         96
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "Ad1KRM": {
     "translation": "Emoji Ai Finder respecte votre vie privée. Nous ne partageons pas vos données personnelles avec des tiers sauf pour traiter votre commande ou pour nous conformer à la loi.",
@@ -42,7 +20,8 @@
         "src/app/[lang]/privacy-policy/page.tsx",
         65
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "CVPQ53": {
     "translation": "Conditions d'utilisation d'Emoji Ai Finder",
@@ -53,7 +32,8 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         75
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "EvuUmj": {
     "translation": "Emoji Ai Finder ne vérifie pas tous les sites web liés à son site et n'est pas responsable du contenu de ces sites. L'inclusion de liens ne constitue pas une approbation par Emoji Ai Finder. L'utilisation de ces sites est à votre propre risque.",
@@ -64,7 +44,8 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         94
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "wlEib6": {
     "translation": "Les matériaux disponibles sur le site d'Emoji Ai Finder sont fournis \"tel quel\". Emoji Ai Finder ne donne aucune garantie explicite ou implicite et renonce à toutes autres garanties, y compris mais sans s'y limiter, la garantie implicite de qualité marchande, l'adéquation à un usage particulier ou la non-violation des droits de propriété intellectuelle ou d'autres droits.",
@@ -75,7 +56,8 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         88
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "0OEG3G": {
     "translation": "Emoji Ai Finder exploite le site https://emojis.click/ et s'engage à protéger votre vie privée. Cette politique de confidentialité décrit les types d'informations que nous collectons, comment nous les utilisons et les mesures que nous prenons pour assurer un traitement approprié de vos informations personnelles.",
@@ -86,7 +68,8 @@
         "src/app/[lang]/privacy-policy/page.tsx",
         52
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "sxwLz2": {
     "translation": "Politique de confidentialité d'Emoji Ai Finder",
@@ -96,6 +79,22 @@
       [
         "src/app/[lang]/privacy-policy/page.tsx",
         49
+      ]
+    ],
+    "obsolete": true
+  },
+  "CAHYAc": {
+    "translation": "recherche d'émoticônes, émoticônes alimentées par l'IA, EmojiClick, outil intelligent d'émoticônes, émoticônes contextuelles, découverte d'émoticônes, amélioration des conversations, moteur de recommandation d'émoticônes",
+    "message": "emoji search, AI-powered emoji, EmojiClick, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(profile)/[slug]/page.tsx",
+        16
+      ],
+      [
+        "src/app/[lang]/layout.tsx",
+        21
       ]
     ]
   },
@@ -111,6 +110,174 @@
       [
         "src/app/[lang]/(public)/page.tsx",
         19
+      ]
+    ],
+    "obsolete": true
+  },
+  "kM0I9v": {
+    "translation": "EmojiClick | Recherche d'émoticônes intelligente pour tous les chats",
+    "message": "EmojiClick | Smart Emoji Search for Every Chat",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        17
+      ]
+    ],
+    "obsolete": true
+  },
+  "a17ysh": {
+    "translation": "EmojiClick | Trouvez la meilleure émoticône avec l'IA",
+    "message": "EmojiClick | 用AI找到最适合的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/layout.tsx",
+        19
+      ]
+    ]
+  },
+  "gsAuPr": {
+    "translation": "EmojiClick | Recherche d'émoticônes intelligentes pour chaque conversation",
+    "message": "EmojiClick | 用AI找到最适合的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/page.tsx",
+        17
+      ]
+    ],
+    "obsolete": true
+  },
+  "22/xk0": {
+    "translation": "EmojiClick peut modifier ses conditions d'utilisation à tout moment sans notification. En utilisant ce site, vous acceptez d'être lié par ces conditions d'utilisation telles qu'elles sont en vigueur.",
+    "message": "EmojiClick 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        96
+      ]
+    ]
+  },
+  "Ivq2Ee": {
+    "translation": "EmojiClick respecte votre vie privée. Nous ne partageons pas vos données personnelles avec des tiers, sauf pour traiter votre commande ou pour nous conformer à une obligation légale.",
+    "message": "EmojiClick 尊重您的隐私。我们不会与任何第三方分享您的个人数据，除非为了处理您的订单或遵守法律要求。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        65
+      ]
+    ]
+  },
+  "wO+F7p": {
+    "translation": "Conditions d'utilisation d'EmojiClick",
+    "message": "EmojiClick 服务条款",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        75
+      ]
+    ]
+  },
+  "+0PbSu": {
+    "translation": "EmojiClick n'a pas examiné tous les sites liés au sien et n'est pas responsable du contenu de ces sites. L'inclusion de tout lien ne constitue pas une approbation par EmojiClick de ce site. L'utilisation de ces sites liés est à vos propres risques.",
+    "message": "EmojiClick 未审查与其网站链接的所有站点，并且不对任何此类链接站点的内容负责。包含任何链接并不意味着 EmojiClick 对该站点的认可。使用任何此类链接网站由用户自行承担风险。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        94
+      ]
+    ]
+  },
+  "XSt0bN": {
+    "translation": "Les matériaux sur le site d'EmojiClick sont fournis tels quels. EmojiClick ne fait aucune garantie explicite ou implicite et renonce et nie toutes autres garanties, y compris mais sans s'y limiter, les garanties implicites de qualité marchande, d'adéquation à un usage particulier ou de non-violation des droits de propriété intellectuelle ou de tout autre droit.",
+    "message": "EmojiClick 网站上的材料按“原样”提供。EmojiClick 不作任何明示或暗示的保证，并在此放弃和否定所有其他保证，包括但不限于对适销性、特定用途的适用性或不侵犯知识产权或其他权利的暗示保证。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        88
+      ]
+    ]
+  },
+  "mbdAlO": {
+    "translation": "EmojiClick exploite le site web https://emojis.click/ et est déterminé à protéger votre vie privée. Cette politique de confidentialité explique les types d'informations que nous recueillons, comment nous les utilisons et les mesures que nous prenons pour assurer un traitement approprié de vos informations personnelles.",
+    "message": "EmojiClick 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        52
+      ]
+    ]
+  },
+  "tlbf3I": {
+    "translation": "Politique de confidentialité d'EmojiClick",
+    "message": "EmojiClick 隐私政策",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        49
+      ]
+    ]
+  },
+  "buP6IE": {
+    "translation": "EmojiClick utilise des technologies d'IA avancées pour analyser votre entrée – qu'il s'agisse d'émotions, de phrases ou de paroles de chansons – et sélectionner le emoji le plus pertinent dans sa base de données. Vous pouvez le considérer comme votre traducteur emoji.",
+    "message": "EmojiClick利用先进的AI技术分析你的输入——无论是情绪、短语，还是一句歌词——并从数据库中匹配最相关的emoji。你可以把它看作你的emoji翻译官",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        56
+      ]
+    ]
+  },
+  "+v8jUx": {
+    "translation": "EmojiClick prend-il en charge plusieurs langues ?",
+    "message": "EmojiClick支持多种语言吗？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        81
+      ]
+    ]
+  },
+  "Fp98du": {
+    "translation": "EmojiClick est un **outil de recherche d'emoji piloté par l'IA**. En comprenant votre langage naturel, il vous aide à trouver rapidement le emoji le plus approprié – sans avoir besoin de connaître les noms des emojis ni de fouiller dans la bibliothèque d'expressions.",
+    "message": "EmojiClick是一款**AI驱动的emoji搜索工具**。它通过理解你的自然语言，帮你快速找到最贴切的emoji——无需记住emoji名字，也无需翻遍表情库。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        51
+      ]
+    ]
+  },
+  "LIbuH1": {
+    "translation": "La recherche d'emoji par IA d'EmojiClick recommande immédiatement le emoji le plus adapté.",
+    "message": "EmojiClick的AI emoji搜索会立即推荐最合适的emoji。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        64
+      ]
+    ]
+  },
+  "WEVHnj": {
+    "translation": "Comment fonctionne la recherche d'emoji par IA d'EmojiClick ?",
+    "message": "EmojiClick的AI表情搜索是如何工作的？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        55
       ]
     ]
   },
@@ -160,6 +327,17 @@
       [
         "src/components/category/category-modal.tsx",
         102
+      ]
+    ]
+  },
+  "NIQoFc": {
+    "translation": "Qu'est-ce que EmojiClick ?",
+    "message": "什么是EmojiClick？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        50
       ]
     ]
   },
@@ -260,6 +438,18 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         80
       ]
+    ],
+    "obsolete": true
+  },
+  "p0L+iY": {
+    "translation": "Vous êtes autorisé à télécharger temporairement des matériaux (informations ou logiciels) du site d'EmojiClick pour un usage personnel et non commercial. C'est une licence qui n'implique pas de transfert de propriété. Sous cette licence, vous ne pouvez pas :",
+    "message": "允许暂时下载 EmojiClick 网站上的材料（信息或软件）一份，仅供个人、非商业的临时观看。这是授予许可，而不是转让所有权，并且在此许可下，您不得：",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        80
+      ]
     ]
   },
   "buIPLU": {
@@ -313,7 +503,7 @@
     "origin": [
       [
         "src/components/category/category-emoji.tsx",
-        265
+        267
       ]
     ]
   },
@@ -336,7 +526,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        95
+        97
       ]
     ]
   },
@@ -349,11 +539,35 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         92
       ]
+    ],
+    "obsolete": true
+  },
+  "nmILnC": {
+    "translation": "Les matériaux sur le site d'EmojiClick peuvent contenir des erreurs techniques, typographiques ou photographiques. EmojiClick ne garantit pas l'exactitude, l'exhaustivité ou l'actualité des matériaux sur son site. EmojiClick peut modifier à tout moment les matériaux sur son site sans préavis. Cependant, EmojiClick ne s'engage pas à mettre à jour ces matériaux.",
+    "message": "在 EmojiClick 网站上出现的材料可能包含技术、排印或摄影错误。EmojiClick 不保证其网站上的任何材料准确、完整或最新。EmojiClick 可以随时更改其网站上包含的材料而不作通知。但是，EmojiClick 不承诺更新材料。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        92
+      ]
     ]
   },
   "4AZhIJ": {
     "translation": "Dans tous les cas, Emoji Ai Finder ou ses fournisseurs ne seront pas tenus responsables de tout dommage (y compris, sans limitation, la perte de données ou de bénéfices ou de dommages résultant d'une interruption d'activité), qui pourrait résulter de l'utilisation ou de l'impossibilité d'utiliser les matériaux disponibles sur le site d'Emoji Ai Finder, même si Emoji Ai Finder ou un représentant autorisé d'Emoji Ai Finder avait été informé de manière orale ou écrite de la possibilité d'un tel dommage.",
     "message": "在任何情况下，Emoji Ai Finder 或其供应商均不对任何损害（包括但不限于数据或利润损失或因业务中断造成的损害）承担责任，这些损害是由于使用或无法使用 Emoji Ai Finder 网站上的材料而引起的，即使 Emoji Ai Finder 或 Emoji Ai Finder 授权代表已被口头或书面通知可能会造成此类损害的可能性。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        90
+      ]
+    ],
+    "obsolete": true
+  },
+  "FOx1w0": {
+    "translation": "En aucun cas, EmojiClick ou ses fournisseurs ne seront responsables de tout dommage (y compris mais sans s'y limiter, les pertes de données ou de bénéfices ou les dommages résultant d'une interruption d'activité) résultant de l'utilisation ou de l'impossibilité d'utiliser les matériaux sur le site d'EmojiClick, même si EmojiClick ou un représentant agréé d'EmojiClick a été informé de la possibilité de tels dommages.",
+    "message": "在任何情况下，EmojiClick 或其供应商均不对任何损害（包括但不限于数据或利润损失或因业务中断造成的损害）承担责任，这些损害是由于使用或无法使用 EmojiClick 网站上的材料而引起的，即使 EmojiClick 或 EmojiClick 授权代表已被口头或书面通知可能会造成此类损害的可能性。",
     "comments": [],
     "origin": [
       [
@@ -380,7 +594,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        77
+        80
       ]
     ]
   },
@@ -395,7 +609,7 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        226
+        232
       ]
     ]
   },
@@ -421,6 +635,39 @@
       ]
     ]
   },
+  "92RI1v": {
+    "translation": "Comment utiliser EmojiClick ?",
+    "message": "如何使用EmojiClick？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        60
+      ]
+    ]
+  },
+  "IK419M": {
+    "translation": "Si vous ne trouvez pas la réponse que vous cherchez, n'hésitez pas à contacter notre équipe de support par e-mail. Nous répondrons à vos questions au plus vite !",
+    "message": "如果你没有找到想要的答案,欢迎通过邮件联系我们的客服团队。我们将尽快回复你的疑问!",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        126
+      ]
+    ]
+  },
+  "7/4TPu": {
+    "translation": "Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité, veuillez nous contacter à support@emojis.click.",
+    "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojis.click 与我们联系。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        71
+      ]
+    ]
+  },
   "tZM844": {
     "translation": "Si vous avez des questions ou des préoccupations concernant notre politique de confidentialité, veuillez nous contacter à support@emojis.click.",
     "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojis.click 与我们联系。",
@@ -429,6 +676,18 @@
       [
         "src/app/[lang]/privacy-policy/page.tsx",
         71
+      ]
+    ],
+    "obsolete": true
+  },
+  "z446i9": {
+    "translation": "Si vous avez des questions sur ces termes, veuillez nous contacter à support@emojis.click.",
+    "message": "如果您对这些条款有任何疑问，请通过 support@emojis.click 与我们联系。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        100
       ]
     ]
   },
@@ -441,11 +700,24 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         100
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "EERd79": {
     "translation": "En cas de violation de l'une de ces restrictions, cette licence se terminera automatiquement et Emoji Ai Finder peut mettre fin à cette licence à tout moment. À la fin de votre accès à ces matériaux ou à la fin de cette licence, vous devez détruire tout matériel téléchargé, que vous le possédiez sous forme électronique ou imprimée.",
     "message": "如果您违反这些限制中的任何一项，此许可将自动终止，并且 Emoji Ai Finder 可随时终止此许可。在终止您查看这些材料或此许可终止时，您必须销毁您是否以电子格式或印刷格式拥有的任何下载的材料。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        86
+      ]
+    ],
+    "obsolete": true
+  },
+  "Kbnttf": {
+    "translation": "Si vous enfreignez l'un de ces restrictions, cette licence se terminera automatiquement et EmojiClick peut mettre fin à cette licence à tout moment. À la fin de votre consultation de ces matériaux ou de cette licence, vous devez détruire tous les matériaux téléchargés que vous possédez, sous forme électronique ou imprimée.",
+    "message": "如果您违反这些限制中的任何一项，此许可将自动终止，并且 EmojiClick 可随时终止此许可。在终止您查看这些材料或此许可终止时，您必须销毁您是否以电子格式或印刷格式拥有的任何下载的材料。",
     "comments": [],
     "origin": [
       [
@@ -465,6 +737,17 @@
       ]
     ]
   },
+  "YlOxro": {
+    "translation": "Recherchez l'émoticône parfaite ? Entrez simplement vos sentiments, EmojiClick trouvera rapidement l'émoticône idéale pour vous. Rapide, amusant et toujours approprié.",
+    "message": "寻找合适的表情符号？只需输入你的感受，EmojiClick会迅速为你找到最佳表情。快速、有趣，总是恰到好处。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/layout.tsx",
+        20
+      ]
+    ]
+  },
   "tNjzzt": {
     "translation": "À la recherche de l'émoticône parfaite ? Entrez simplement ce que vous ressentez, et EmojiClick trouvera rapidement le meilleur émoji pour vous. Rapide, amusant et toujours approprié.",
     "message": "寻找合适的表情符号？只需输入你的感受，EmojiClick会迅速为你找到最佳表情。快速、有趣，总是恰到好处。",
@@ -474,7 +757,8 @@
         "src/app/[lang]/(public)/page.tsx",
         18
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "Xr/E0m": {
     "translation": "navigation",
@@ -483,7 +767,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        89
+        91
       ]
     ]
   },
@@ -501,6 +785,18 @@
   "TLRKbo": {
     "translation": "tenter de désassembler ou de rétro-ingénier le logiciel disponible sur le site d'Emoji Ai Finder ;",
     "message": "尝试对 Emoji Ai Finder 网站上的任何软件进行反编译或逆向工程；",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        83
+      ]
+    ],
+    "obsolete": true
+  },
+  "3IYGOy": {
+    "translation": "tenter de désassembler ou de rétro-ingénier le logiciel présent sur le site d'EmojiClick ;",
+    "message": "尝试对 EmojiClick 网站上的任何软件进行反编译或逆向工程；",
     "comments": [],
     "origin": [
       [
@@ -542,7 +838,18 @@
       ],
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        220
+        226
+      ]
+    ]
+  },
+  "RHjkTG": {
+    "translation": "Questions fréquentes",
+    "message": "常见问题解答",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        97
       ]
     ]
   },
@@ -554,6 +861,17 @@
       [
         "src/app/[lang]/terms-of-service/page.tsx",
         77
+      ]
+    ]
+  },
+  "1Z6ccK": {
+    "translation": "Bien sûr ! Une fois que vous avez trouvé l'emoji, vous pouvez le copier et le coller dans n'importe quelle application, plateforme ou message – que ce soit pour des conversations, des médias sociaux ou des courriels.",
+    "message": "当然可以！找到emoji后，你可以将它复制粘贴到任何应用、平台或消息中——无论是聊天、社交媒体还是邮件。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        72
       ]
     ]
   },
@@ -579,6 +897,28 @@
       ]
     ]
   },
+  "wv1DzS": {
+    "translation": "Nous avons compilé quelques questions fréquentes pour vous aider à mieux utiliser EmojiClick. Si vous avez d'autres questions, n'hésitez pas à nous contacter !",
+    "message": "我们整理了一些常见问题,希望能够帮助你更好地使用EmojiClick。如果你有其他疑问,欢迎随时联系我们!",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        100
+      ]
+    ]
+  },
+  "HBPAVn": {
+    "translation": "Notre outil de recherche d'emoji par IA met régulièrement à jour sa base de données pour inclure les derniers emojis et tendances populaires. Vous trouverez toujours les options d'expressions les plus récentes.",
+    "message": "我们的AI emoji搜索工具会定期更新数据库，以包含最新的emoji和流行趋势。你总能找到最新鲜的表情选项。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        87
+      ]
+    ]
+  },
   "7zNvUG": {
     "translation": "Nos services ne sont pas destinés aux mineurs de moins de 18 ans. Nous ne collectons pas intentionnellement les informations personnelles des enfants.",
     "message": "我们的服务不适用于18岁以下的儿童。我们不会有意收集儿童的个人信息。",
@@ -598,6 +938,17 @@
       [
         "src/app/[lang]/privacy-policy/page.tsx",
         61
+      ]
+    ]
+  },
+  "AuDf/2": {
+    "translation": "Peux-je utiliser ces emojis partout ?",
+    "message": "我可以在任何地方使用这些表情吗？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        71
       ]
     ]
   },
@@ -630,7 +981,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        283
+        300
       ]
     ]
   },
@@ -641,7 +992,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        280
+        297
       ]
     ]
   },
@@ -652,7 +1003,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        168
+        185
       ]
     ]
   },
@@ -733,6 +1084,17 @@
       ]
     ]
   },
+  "3bDcMx": {
+    "translation": "Oui, EmojiClick est entièrement gratuit à utiliser ! Pas de frais cachés, pas de souscription – rendre la recherche d'emojis simple.",
+    "message": "是的，EmojiClick完全免费使用！没有隐藏费用，也没有订阅——让emoji搜索变得简单。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        77
+      ]
+    ]
+  },
   "F3PJlG": {
     "translation": "Conditions d'utilisation",
     "message": "服务条款",
@@ -773,7 +1135,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        91
+        94
       ]
     ]
   },
@@ -797,6 +1159,18 @@
         "src/app/[lang]/terms-of-service/page.tsx",
         78
       ]
+    ],
+    "obsolete": true
+  },
+  "3gwTaz": {
+    "translation": "Bienvenue chez EmojiClick. En accédant à notre site (https://emojis.click/), vous acceptez de vous conformer à ces conditions d'utilisation, à toutes les lois et réglementations applicables et vous acceptez d'être responsable du respect de toute loi locale applicable. Si vous ne consentez pas à l'une de ces conditions, vous êtes interdit d'utiliser ou d'accéder à ce site.",
+    "message": "欢迎访问 EmojiClick。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/terms-of-service/page.tsx",
+        78
+      ]
     ]
   },
   "AW9NLp": {
@@ -806,7 +1180,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        305
+        350
       ]
     ]
   },
@@ -821,6 +1195,17 @@
       ]
     ]
   },
+  "DtlTmG": {
+    "translation": "Cliquez pour copier, puis utilisez librement !",
+    "message": "点击复制，然后随意使用！",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        65
+      ]
+    ]
+  },
   "zaqc+T": {
     "translation": "Populaire",
     "message": "热门",
@@ -828,7 +1213,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        62
+        65
       ]
     ]
   },
@@ -843,6 +1228,17 @@
       ]
     ]
   },
+  "ZO88kw": {
+    "translation": "© 2024 Tous droits réservés EmojiClick",
+    "message": "版权所有 © 2024 EmojiClick 保留所有权利",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        105
+      ]
+    ]
+  },
   "imwQl1": {
     "translation": "© 2024 EmojiClick Tous droits réservés",
     "message": "版权所有 © 2024 EmojiClick 保留所有权利",
@@ -852,7 +1248,8 @@
         "src/components/footer.tsx",
         103
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "w/qYEh": {
     "translation": "Comprendre le sens émotionnel",
@@ -898,7 +1295,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        81
+        83
       ]
     ]
   },
@@ -920,7 +1317,7 @@
     "origin": [
       [
         "src/components/search/search-emoji-dropdown.tsx",
-        254
+        271
       ]
     ]
   },
@@ -932,6 +1329,17 @@
       [
         "src/app/[lang]/privacy-policy/page.tsx",
         57
+      ]
+    ]
+  },
+  "8d8fCg": {
+    "translation": "Pour l'instant, EmojiClick offre une prise en charge optimale du chinois, mais nous travaillons à ajouter plus de langues. Restez à l'écoute des mises à jour !",
+    "message": "目前，EmojiClick对中文的支持最为友好，但我们正在努力添加更多语言。敬请期待更新！",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        82
       ]
     ]
   },
@@ -1004,8 +1412,12 @@
         99
       ],
       [
+        "src/components/faq.tsx",
+        129
+      ],
+      [
         "src/components/footer.tsx",
-        63
+        65
       ]
     ]
   },
@@ -1017,6 +1429,17 @@
       [
         "src/components/category/category-emoji.tsx",
         222
+      ]
+    ]
+  },
+  "9GQzzK": {
+    "translation": "Avec quelle fréquence la base de données d'emojis est-elle mise à jour ?",
+    "message": "表情数据库多久更新一次？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        86
       ]
     ]
   },
@@ -1038,7 +1461,7 @@
     "origin": [
       [
         "src/components/search/emoji-search-example.tsx",
-        30
+        31
       ]
     ]
   },
@@ -1064,9 +1487,43 @@
       ]
     ]
   },
+  "Gu+yJ9": {
+    "translation": "Entrez ce que vous souhaitez exprimer (par exemple, « Je suis fatigué » ou « Je me sens comme une star »).",
+    "message": "输入你想表达的内容（比如“我好累”或“感觉自己像个明星”）。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        63
+      ]
+    ]
+  },
+  "XwSzkU": {
+    "translation": "Avez-vous d'autres questions ?",
+    "message": "还有其他问题吗?",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        123
+      ]
+    ]
+  },
   "9WeTSM": {
     "translation": "Ces informations sont recueillies pour traiter vos commandes sur notre navigateur Emoji Ai Finder.",
     "message": "这些信息是为了在我们的 Emoji Ai Finder 导航站上处理订单而收集的。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/privacy-policy/page.tsx",
+        59
+      ]
+    ],
+    "obsolete": true
+  },
+  "WsDpb9": {
+    "translation": "Ces informations sont collectées pour traiter vos commandes sur notre site de navigation EmojiClick.",
+    "message": "这些信息是为了在我们的 EmojiClick 导航站上处理订单而收集的。",
     "comments": [],
     "origin": [
       [
@@ -1083,6 +1540,17 @@
       [
         "src/app/[lang]/terms-of-service/page.tsx",
         98
+      ]
+    ]
+  },
+  "Tg/Khw": {
+    "translation": "Ce service est-il gratuit ?",
+    "message": "这项服务是免费的吗？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        76
       ]
     ]
   },

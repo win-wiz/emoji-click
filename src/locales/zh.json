@@ -1,0 +1,43 @@
+{
+  "faq": {
+    "title": "常见问题解答",
+    "description": "我们整理了一些常见问题,希望能够帮助你更好地使用EmojiClick。如果你有其他疑问,欢迎随时联系我们!",
+    "questions": {
+      "whatIsEmojiClick": {
+        "title": "什么是EmojiClick？",
+        "content": "EmojiClick是一款AI驱动的emoji搜索工具。它通过理解你的自然语言,帮你快速找到最贴切的emoji。"
+      },
+      "howEmojiClickWorks": {
+        "title": "EmojiClick的AI表情搜索是如何工作的？",
+        "content": "EmojiClick利用先进的AI技术分析你的输入,并从数据库中匹配最相关的emoji。"
+      },
+      "howToUseEmojiClick": {
+        "title": "如何使用EmojiClick？",
+        "steps": [
+          "输入你想表达的内容。",
+          "EmojiClick会推荐最合适的emoji。", 
+          "点击复制,然后随意使用！"
+        ]
+      },
+      "canUseEmojisAnywhere": {
+        "title": "我可以在任何地方使用这些表情吗？",
+        "content": "当然可以！找到emoji后,你可以将它复制粘贴到任何应用、平台或消息中。"
+      },
+      "isEmojiClickFree": {
+        "title": "这项服务是免费的吗？",
+        "content": "是的,EmojiClick完全免费使用！没有隐藏费用,也没有订阅。"
+      },
+      "doesEmojiClickSupportMultipleLanguages": {
+        "title": "EmojiClick支持多种语言吗？",
+        "content": "目前,EmojiClick对中文的支持最为友好,但我们正在努力添加更多语言。敬请期待更新！"
+      },
+      "howOftenIsEmojiDatabaseUpdated": {
+        "title": "表情数据库多久更新一次？",
+        "content": "我们的AI emoji搜索工具会定期更新数据库,以包含最新的emoji和流行趋势。"
+      }
+    },
+    "otherQuestions": "还有其他问题吗?",
+    "otherQuestionsDescription": "如果你没有找到想要的答案,欢迎通过邮件联系我们的客服团队。我们将尽快回复你的疑问!",
+    "contactUs": "联系我们"
+  }
+} 

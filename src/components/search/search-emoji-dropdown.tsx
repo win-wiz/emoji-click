@@ -138,15 +138,33 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   const [isOpen, setIsOpen] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [searchText, setSearchText] = useState<string>(initText);
-  const hideTimeoutRef = useRef<NodeJS.Timeout>();
   const containerRef = useRef<HTMLDivElement>(null);
-  // const hasResults = emojis.length > 0;
   const { toast } = useToast();
 
   const searchButtonClassName = useMemo(() => 
     isLoading ? SEARCH_BUTTON_LOADING : SEARCH_BUTTON_NORMAL,
     [isLoading]
   );
+
+  // 添加点击外部关闭的逻辑
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const handleMouseEnter = useCallback(() => {
+    if (emojis.length > 0) {
+      setIsOpen(true);
+    }
+  }, [emojis.length]);
 
   const handleClearClick = useCallback(() => {
     setSearchText('');
@@ -156,12 +174,11 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
   }, [reset]);
 
   const handleSearch = useCallback(async (data: SearchForm) => {
-    setIsLoading(true); // 在开始搜索时设置加载状态 
+    setIsLoading(true);
     setError(null);
     setEmojis([]);
-    setIsOpen(true); // 显示下拉框
+    setIsOpen(true);
 
-    // console.log('data===>>>', data);
     try {
       const response: Record<string, any> = await fetch(`${lang}/api/search`, {
         method: 'POST',
@@ -171,7 +188,6 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
         body: JSON.stringify(data),
       });
       
-      // console.log('response===>>>', await response.json());
       const { results, status } = await response.json();
 
       if (status === 200) {
@@ -185,7 +201,7 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
       setError(t`搜索出错，请稍后重试`);
       setEmojis([]);
     } finally {
-      setIsLoading(false); // 在结束搜索时重置加载状态
+      setIsLoading(false);
     }
   }, [lang]);
 
@@ -202,21 +218,6 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
       handleSearch({ keyword: initText });
     }
   }, [initText, handleSearch]);
-
-  const handleMouseEnter = useCallback(() => {
-    clearTimeout(hideTimeoutRef.current);
-    setIsOpen(true);
-  }, []);
-
-  const handleMouseLeave = useCallback(() => {
-    hideTimeoutRef.current = setTimeout(() => {
-      if (!isLoading) setIsOpen(false);
-    }, 200);
-  }, [isLoading]);
-
-  // const handleLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
-  //   e.stopPropagation();
-  // }, []);
 
   // 优化复制功能
   const copyToClipboard = useCallback(async (text: string) => {
@@ -250,11 +251,12 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
     <div 
       className="relative mb-10" 
       ref={containerRef}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
     >
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="relative group flex items-center">
+        <div 
+          className="relative group flex items-center"
+          onMouseEnter={handleMouseEnter}
+        >
           <input
             type="text"
             {...register('keyword')}
@@ -308,8 +310,6 @@ const SearchEmojiDropdown = memo(function SearchEmojiDropdown({
       {isOpen && (
         <div 
           className="absolute w-full mt-2 bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg border border-purple-100/50 max-h-[400px] overflow-y-auto z-10"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
         >
           {isLoading ? (
             <div className="p-4 flex flex-col items-center justify-center space-y-2">

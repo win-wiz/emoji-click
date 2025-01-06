@@ -12,7 +12,7 @@ import { debounce } from '@/utils'
 import { EmojiType } from '@/types/category'
 
 const ITEMS_PER_PAGE = 30
-const SCROLL_THRESHOLD = 300  // 增大滚动触发阈值，提前加载更多内容
+// const SCROLL_THRESHOLD = 300  // 增大滚动触发阈值，提前加载更多内容
 
 // 分类状态接口
 interface CategoryState {
@@ -153,19 +153,19 @@ const CategoryEmoji = React.memo(function CategoryEmoji({
     }, 800)
   }, [currentCategory?.emojis, currentState.loading, currentState.page, selectedCategory])
 
+  const emojiListRef = useRef<HTMLDivElement>(null)
+
   // 处理滚动
   const handleScroll = useCallback(() => {
     if (currentState.loading) return
 
-    const scrollHeight = document.documentElement.scrollHeight
-    const scrollTop = window.scrollY
-    const clientHeight = window.innerHeight
-    const remainingSpace = scrollHeight - scrollTop - clientHeight
+    const emojiListBottom = emojiListRef.current?.getBoundingClientRect().bottom ?? Infinity
+    const windowBottom = window.innerHeight
 
-    // 当距离底部 SCROLL_THRESHOLD 像素时触发加载
-    if (remainingSpace < SCROLL_THRESHOLD && currentState.hasMore) {
+    // 当组件底部距离可见区域小于 50px 时触发加载
+    if (emojiListBottom - windowBottom < 50 && currentState.hasMore) {
       loadMore()
-    }
+    }  
   }, [currentState.loading, currentState.hasMore, loadMore])
 
   // 优化渲染列表
@@ -210,7 +210,7 @@ const CategoryEmoji = React.memo(function CategoryEmoji({
   }, [categories])
 
   return (
-    <div className="relative -mx-6 sm:-mx-12 md:-mx-24 lg:-mx-32">
+    <div className="relative">
       <div className="absolute inset-0 bg-white" />
 
       <div className="relative container mx-auto px-4 sm:px-6 py-8 sm:py-12">
@@ -243,6 +243,7 @@ const CategoryEmoji = React.memo(function CategoryEmoji({
         <div className="relative overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
+              ref={emojiListRef}
               key={selectedCategory}
               custom={direction}
               variants={containerVariants}

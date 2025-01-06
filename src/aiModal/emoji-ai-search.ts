@@ -13,6 +13,7 @@ export async function emojiAiSearch(query: string, lang: AVAILABLE_LOCALES) {
     // result = await qianwenGenerateEmoji(query, lang);
     // result = await doubaoGenerateEmojiBySDK(query, lang);
     result = await deepseekGenerateEmoji(query, lang);
+    console.log('result', result);
   } catch (error) {
     console.error('JSON解析失败，尝试修复', error);
     result = [{

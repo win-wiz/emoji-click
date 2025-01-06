@@ -2,7 +2,7 @@ import { AVAILABLE_LOCALES, DEFAULT_LOCALE, locales, siteUrl } from "./config"
 import { globalI18n } from "./i18n"
 import { serverSideTranslations } from "./serverSideTranslations"
 
-export function isAcceptedLocale(locale: unknown): locale is AVAILABLE_LOCALES {
+export function isAcceptedLocale(locale: AVAILABLE_LOCALES): locale is AVAILABLE_LOCALES {
   if (typeof locale !== 'string') {
     return false
   }
@@ -11,7 +11,7 @@ export function isAcceptedLocale(locale: unknown): locale is AVAILABLE_LOCALES {
 }
 
 export function selectFirstAcceptedLocale(
-  ...mayBeLocales: Array<unknown>
+  ...mayBeLocales: Array<AVAILABLE_LOCALES>
 ): AVAILABLE_LOCALES {
   for (const mayBeLocale of mayBeLocales) {
     if (isAcceptedLocale(mayBeLocale)) {
