@@ -3,7 +3,6 @@
 import { EmojiType } from "@/types/category";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState, useCallback, memo } from "react";
-import { Trans } from "@lingui/macro";
 
 // 提取导航按钮组件
 const NavButton = memo(function NavButton({
