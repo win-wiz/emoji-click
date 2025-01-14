@@ -89,3 +89,23 @@ export const emojiSearchTips = sqliteTable("emojiSearchTips", {
 		language: index("emojiSearchTips_language").on(table.language),
 	}
 });
+
+export const emojiGame = sqliteTable("emojiGame", {
+	id: integer("id").primaryKey({ autoIncrement: true }).notNull(),
+	language: text("language").notNull(),
+	name: text("name").notNull(),
+	code: text("code").notNull(),
+	coverImageUrl: text("coverImageUrl"),
+	iframeUrl: text("iframeUrl"),
+	starting: text("starting"),
+	briefDesc: text("briefDesc"),
+	detailDesc: text("detailDesc"),
+	basicRule: text("basicRule"),
+	advancedSkills: text("advancedSkills"),
+	benefits: text("benefits"),
+	features: text("features"),
+	levelDesc: text("levelDesc"),
+	gameSecret: text("gameSecret"),
+	faq: text("faq"),
+	createdAt: numeric("createdAt").default(sql`(CURRENT_TIMESTAMP)`).notNull(),
+});

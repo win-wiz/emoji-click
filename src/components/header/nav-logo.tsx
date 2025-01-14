@@ -2,6 +2,7 @@ import React from "react";
 import { useMemo } from "react";
 import Link from "next/link";
 import { AVAILABLE_LOCALES } from "@/locales/config";
+import Logo from "./logo";
 
 const NavLogo = ({ lang }: { lang: AVAILABLE_LOCALES }) => {
   
@@ -9,7 +10,7 @@ const NavLogo = ({ lang }: { lang: AVAILABLE_LOCALES }) => {
 
   return (
     <Link href={href} className="flex items-center gap-2">
-      <span className="text-2xl">🤖</span>
+      <Logo />
       <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
         EmojiClick
       </span>

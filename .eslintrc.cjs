@@ -54,6 +54,7 @@ const config = {
     "@typescript-eslint/no-unsafe-function-type": "off",
     "@typescript-eslint/dot-notation": "off",
     "@typescript-eslint/no-base-to-string": "off",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
   }
 }
 module.exports = config;

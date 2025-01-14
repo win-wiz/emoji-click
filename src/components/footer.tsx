@@ -4,6 +4,7 @@ import { AVAILABLE_LOCALES } from '@/locales/config';
 import { Trans, t } from '@lingui/macro';
 import Link from 'next/link';
 import { memo, useMemo } from 'react';
+import Logo from './header/logo';
 
 const currentYear = new Date().getFullYear();
 
@@ -11,16 +12,16 @@ const linkStyle = "hover:text-violet-600 transition-colors";
 const sectionTitleStyle = "text-violet-600 text-xl font-medium mb-4 flex items-center gap-2";
 
 // 提取Logo组件并使用memo
-const Logo = memo(() => (
+const LogoWrapper = memo(() => (
   <Link href="/" className="mb-6 flex items-center gap-2">
-    <span className="text-2xl">🤖</span>
+    <Logo />
     <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600">
       EmojiClick
     </h2>
   </Link>
 ));
 
-Logo.displayName = 'Logo';
+LogoWrapper.displayName = 'LogoWrapper';
 
 // 提取导航链接组件
 const NavLinks = memo(({ lang }: { lang: AVAILABLE_LOCALES }) => {
@@ -83,9 +84,10 @@ function Footer({ lang }: { lang: AVAILABLE_LOCALES }) {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-2">
-            <Logo />
-            <p className="mb-6">
-              <Trans>用AI魔法创造富有表现力的表情 🤖</Trans>
+            <LogoWrapper />
+            <p className="mb-6 flex items-center gap-2">
+              <Trans>用AI魔法创造富有表现力的表情 </Trans>
+              <Logo />
             </p>
             <ContactInfo />
           </div>
