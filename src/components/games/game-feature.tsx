@@ -129,8 +129,8 @@ export function GameFeature({ features }: { features: string }) {
         icon={HEADER_ICON}
         title='game.features.title'
         description='game.features.description'
-        iconBgColor="bg-rose-50"
-        iconColor="text-rose-600"
+        iconBgColor="bg-violet-50"
+        iconColor="text-violet-600"
       />
       <div className={STYLES.container.content}>
         <FeatureGrid features={featureList} />

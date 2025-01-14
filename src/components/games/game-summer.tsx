@@ -10,10 +10,10 @@ const STYLES = {
   },
   item: {
     wrapper: "relative bg-white rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-lg",
-    decorator: "absolute left-0 top-0 bottom-0 w-[3px] bg-yellow-100 group-hover:bg-yellow-400 transition-colors duration-300",
+    decorator: "absolute left-0 top-0 bottom-0 w-[3px] bg-teal-100 group-hover:bg-teal-400 transition-colors duration-300",
     content: {
       wrapper: "flex items-start p-6",
-      index: "flex-shrink-0 w-6 h-6 rounded-full bg-yellow-50 text-yellow-600 flex items-center justify-center text-sm font-medium mr-4",
+      index: "flex-shrink-0 w-6 h-6 rounded-full bg-teal-50 text-teal-600 flex items-center justify-center text-sm font-medium mr-4",
       text: "flex-1 text-gray-600 text-sm leading-relaxed"
     }
   }

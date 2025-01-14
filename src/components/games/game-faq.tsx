@@ -112,8 +112,8 @@ export function GameFAQ({ faqs }: { faqs: string }) {
         icon={HEADER_ICON}
         title='game.faq.title'
         description='game.faq.description'
-        iconBgColor="bg-orange-50"
-        iconColor="text-orange-600"
+        iconBgColor="bg-purple-50"
+        iconColor="text-purple-600"
       />
       <FAQList faqs={faqList} />
     </div>

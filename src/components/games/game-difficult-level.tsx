@@ -156,8 +156,8 @@ export function GameDifficultLevel({ levelDesc }: { levelDesc: string }) {
         icon={HEADER_ICON}
         title='game.difficulty.title'
         description='game.difficulty.description'
-        iconBgColor="bg-purple-50"
-        iconColor="text-purple-600"
+        iconBgColor="bg-green-50"
+        iconColor="text-green-600"
       />
       <div className={STYLES.container.content}>
         <LevelGrid levels={levels} />

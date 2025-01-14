@@ -121,8 +121,8 @@ export function GamePlaySecret({ gameSecret }: { gameSecret: string }) {
         icon={HEADER_ICON}
         title='game.secrets.title'
         description='game.secrets.description'
-        iconBgColor="bg-yellow-50"
-        iconColor="text-yellow-600"
+        iconBgColor="bg-fuchsia-50"
+        iconColor="text-fuchsia-600"
       />
       <div className={STYLES.container.content}>
         <SecretGrid secrets={secrets} />
