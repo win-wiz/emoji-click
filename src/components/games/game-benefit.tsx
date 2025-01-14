@@ -125,9 +125,9 @@ export function GameBenefit({ benefits }: { benefits: string }) {
     <div className={STYLES.container.wrapper}>
       <SectionHeader
         icon={HEADER_ICON}
-        title={{ id: "game.benefit.title", message: "游戏益处" }}
-        description={{ id: "game.benefit.description", message: "玩游戏获得的好处" }}
-        iconBgColor="bg-green-100"
+        title='game.benefits.title'
+        description='game.benefits.description'
+        iconBgColor="bg-green-50"
         iconColor="text-green-600"
       />
       <BenefitsGrid benefits={benefitsList} />

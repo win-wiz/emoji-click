@@ -119,10 +119,10 @@ export function GamePlaySecret({ gameSecret }: { gameSecret: string }) {
     <div className={STYLES.container.wrapper}>
       <SectionHeader
         icon={HEADER_ICON}
-        title={{ id: "game.secret.title", message: "游戏秘诀" }}
-        description={{ id: "game.secret.description", message: "掌握这些秘诀提升游戏体验" }}
-        iconBgColor="bg-pink-100"
-        iconColor="text-pink-600"
+        title='game.secrets.title'
+        description='game.secrets.description'
+        iconBgColor="bg-yellow-50"
+        iconColor="text-yellow-600"
       />
       <div className={STYLES.container.content}>
         <SecretGrid secrets={secrets} />

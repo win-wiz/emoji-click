@@ -127,10 +127,10 @@ export function GameFeature({ features }: { features: string }) {
     <div className={STYLES.container.wrapper}>
       <SectionHeader
         icon={HEADER_ICON}
-        title={{ id: "game.feature.title", message: "游戏特色" }}
-        description={{ id: "game.feature.description", message: "独特的游戏体验" }}
-        iconBgColor="bg-violet-100"
-        iconColor="text-violet-600"
+        title='game.features.title'
+        description='game.features.description'
+        iconBgColor="bg-rose-50"
+        iconColor="text-rose-600"
       />
       <div className={STYLES.container.content}>
         <FeatureGrid features={featureList} />

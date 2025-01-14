@@ -76,42 +76,35 @@ function LevelContent({ level }: { level: Level }) {
   );
 }
 
-const LEVEL_STYLES = {
-  beginner: {
+const LEVEL_STYLES: Record<string, any> = {
+  '0': {
     wrapper: "bg-green-50/80 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 border border-green-100/50",
     title: "text-lg font-semibold text-green-800",
     description: "text-green-700 mt-2 leading-relaxed"
   },
-  intermediate: {
+  '1': {
     wrapper: "bg-blue-50/80 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 border border-blue-100/50",
     title: "text-lg font-semibold text-blue-800",
     description: "text-blue-700 mt-2 leading-relaxed"
   },
-  advanced: {
+  '2': {
     wrapper: "bg-purple-50/80 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 border border-purple-100/50",
     title: "text-lg font-semibold text-purple-800",
     description: "text-purple-700 mt-2 leading-relaxed"
   },
-  expert: {
+  '3': {
     wrapper: "bg-orange-50/80 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 border border-orange-100/50",
     title: "text-lg font-semibold text-orange-800",
     description: "text-orange-700 mt-2 leading-relaxed"
   }
 } as const;
 
-const LEVEL_TITLES = {
-  beginner: "初级难度",
-  intermediate: "中级难度",
-  advanced: "高级难度",
-  expert: "专家难度"
-} as const;
-
-function LevelCard({ level, description }: { level: keyof typeof LEVEL_STYLES; description: string }) {
-  const styles = LEVEL_STYLES[level];
+function LevelCard({ level, description, index }: { level: string; description: string; index: number }) {
+  const styles = LEVEL_STYLES[index];
   
   return (
     <div className={styles.wrapper}>
-      <h4 className={styles.title}>{LEVEL_TITLES[level]}</h4>
+      <h4 className={styles.title}>{level}</h4>
       <p className={styles.description}>{description}</p>
     </div>
   );
@@ -121,15 +114,16 @@ function LevelCard({ level, description }: { level: keyof typeof LEVEL_STYLES; d
 function LevelGrid({ levels }: { levels: Level[] }) {
   if (!levels.length) return null;
 
-  const levelKeys: (keyof typeof LEVEL_STYLES)[] = ['beginner', 'intermediate', 'advanced', 'expert'];
+  // const levelKeys: (keyof typeof LEVEL_STYLES)[] = ['beginner', 'intermediate', 'advanced', 'expert'];
 
   return (
     <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
       {levels.map((level, index) => (
         <LevelCard
           key={`level-${index}`}
-          level={levelKeys[index] ?? 'beginner'}
+          level={level.contentKey}
           description={level.contentValue}
+          index={index}
         />
       ))}
     </div>
@@ -150,6 +144,8 @@ function parseLevels(levelDesc: string): Level[] {
 export function GameDifficultLevel({ levelDesc }: { levelDesc: string }) {
   const levels = parseLevels(levelDesc);
 
+  // console.log(levels);
+
   if (!levels.length) {
     return null;
   }
@@ -158,10 +154,10 @@ export function GameDifficultLevel({ levelDesc }: { levelDesc: string }) {
     <div className={STYLES.container.wrapper}>
       <SectionHeader
         icon={HEADER_ICON}
-        title={{ id: "game.difficulty.title", message: "难度级别" }}
-        description={{ id: "game.difficulty.description", message: "选择适合你的挑战等级" }}
-        iconBgColor="bg-amber-100"
-        iconColor="text-amber-600"
+        title='game.difficulty.title'
+        description='game.difficulty.description'
+        iconBgColor="bg-purple-50"
+        iconColor="text-purple-600"
       />
       <div className={STYLES.container.content}>
         <LevelGrid levels={levels} />

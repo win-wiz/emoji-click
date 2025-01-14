@@ -209,8 +209,8 @@ export function GameRules({ gameRules }: { gameRules: string }) {
     <div className={STYLES.container.wrapper}>
       <SectionHeader
         icon={HEADER_ICON}
-        title={{ id: "game.rules.title", message: "游戏规则" }}
-        description={{ id: "game.rules.description", message: "掌握这些规则开始游戏" }}
+        title='game.rules.title'
+        description='game.rules.description'
         iconBgColor="bg-red-100"
         iconColor="text-red-600"
       />

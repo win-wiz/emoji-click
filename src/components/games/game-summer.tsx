@@ -73,10 +73,10 @@ export function GameSummer({ gameSummer }: { gameSummer: string }) {
     <div className={STYLES.container.wrapper}>
       <SectionHeader
         icon={HEADER_ICON}
-        title={{ id: "game.summer.title", message: "游戏总结" }}
-        description={{ id: "game.summer.description", message: "查看您的游戏表现" }}
-        iconBgColor="bg-yellow-50"
-        iconColor="text-yellow-600"
+        title='game.summer.title'
+        description='game.summer.description'
+        iconBgColor="bg-teal-50"
+        iconColor="text-teal-600"
       />
       <ContentContainer items={items} />
     </div>

@@ -2,8 +2,16 @@
 
 import React, { memo, useState, useEffect, useMemo, useCallback } from "react";
 import { Trans, Plural } from '@lingui/macro';
+import SectionHeader from "@/components/common/section-header";
 
 export type LoadingState = 'initial' | 'loading' | 'retrying' | 'success' | 'error';
+
+// 静态资源缓存
+const HEADER_ICON = (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+  </svg>
+);
 
 // 预定义常量，避免重复创建
 const SPINNER_EMOJIS = [
@@ -15,12 +23,12 @@ const SPINNER_EMOJIS = [
 
 // 加载提示文本
 const LOADING_TIPS = [
-  <Trans key="loading-tip-1">正在召唤游戏精灵...</Trans>,
-  <Trans key="loading-tip-2">组装游戏积木中...</Trans>,
-  <Trans key="loading-tip-3">为您准备欢乐时光...</Trans>,
-  <Trans key="loading-tip-4">打开快乐开关...</Trans>,
-  <Trans key="loading-tip-5">注入游戏能量...</Trans>,
-  <Trans key="loading-tip-6">调试游戏画面...</Trans>,
+  <Trans key="loading-tip-1" id="game.loading.tips.1">正在召唤游戏精灵...</Trans>,
+  <Trans key="loading-tip-2" id="game.loading.tips.2">组装游戏积木中...</Trans>,
+  <Trans key="loading-tip-3" id="game.loading.tips.3">为您准备欢乐时光...</Trans>,
+  <Trans key="loading-tip-4" id="game.loading.tips.4">打开快乐开关...</Trans>,
+  <Trans key="loading-tip-5" id="game.loading.tips.5">注入游戏能量...</Trans>,
+  <Trans key="loading-tip-6" id="game.loading.tips.6">调试游戏画面...</Trans>,
 ] as const;
 
 // 抽取可重用的样式对象
@@ -213,10 +221,10 @@ interface GameLoadingProps {
 export const GameLoading = memo(({ state, retryCount, onRetry }: GameLoadingProps) => {
   const statusText = useMemo(() => {
     if (state === 'success') return null;
-    if (state === 'initial') return <Trans>准备开始游戏</Trans>;
-    if (state === 'loading') return <Trans>游戏加载中</Trans>;
-    if (state === 'retrying') return <Trans>重新连接中</Trans>;
-    if (state === 'error') return <Trans>连接失败</Trans>;
+    if (state === 'initial') return <Trans id="game.loading.status.initial">准备开始游戏</Trans>;
+    if (state === 'loading') return <Trans id="game.loading.status.loading">游戏加载中</Trans>;
+    if (state === 'retrying') return <Trans id="game.loading.status.retrying">重新连接中</Trans>;
+    if (state === 'error') return <Trans id="game.loading.status.error">连接失败</Trans>;
     return '';
   }, [state]);
 
@@ -234,6 +242,13 @@ export const GameLoading = memo(({ state, retryCount, onRetry }: GameLoadingProp
     <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-white/95 to-white/80 backdrop-blur-sm z-10">
       <div className="max-w-md w-full mx-4 bg-white/90 rounded-3xl shadow-2xl p-8 transform transition-all">
         <div className="flex flex-col items-center">
+          <SectionHeader
+            icon={HEADER_ICON}
+            title='game.loading.title'
+            description='game.loading.description'
+            iconBgColor="bg-rose-50"
+            iconColor="text-rose-600"
+          />
           <GameLoadingSpinner />
           <div className="mt-8 w-full space-y-4">
             {(state === 'initial' || state === 'loading') && (
@@ -259,11 +274,10 @@ export const GameLoading = memo(({ state, retryCount, onRetry }: GameLoadingProp
                   {statusText}
                 </h3>
                 <p className="text-gray-500 text-center">
-                  <Plural
-                    value={retryCount}
-                    one="第 # 次重试"
-                    other="第 # 次重试"
-                  />
+                  <Trans id="game.loading.retry.count">
+                    重试次数
+                  </Trans>
+                  : {retryCount}
                 </p>
                 <RetryIndicator count={retryCount} />
               </>
@@ -274,13 +288,13 @@ export const GameLoading = memo(({ state, retryCount, onRetry }: GameLoadingProp
                   {statusText}
                 </h3>
                 <p className="text-gray-500 text-center">
-                  <Trans>请检查网络连接后重试</Trans>
+                  <Trans id="game.loading.error.network">请检查网络连接后重试</Trans>
                 </p>
                 <button
                   onClick={handleRetry}
                   className="mt-4 w-full py-2 px-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:opacity-90 transition-opacity"
                 >
-                  <Trans>重新加载</Trans>
+                  <Trans id="game.loading.error.reload">重新加载</Trans>
                 </button>
               </>
             )}

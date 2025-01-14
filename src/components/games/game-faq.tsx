@@ -110,10 +110,10 @@ export function GameFAQ({ faqs }: { faqs: string }) {
     <div className={STYLES.container.wrapper}>
       <SectionHeader
         icon={HEADER_ICON}
-        title={{ id: "game.faq.title", message: "常见问题" }}
-        description={{ id: "game.faq.description", message: "解答您的疑惑" }}
-        iconBgColor="bg-purple-100"
-        iconColor="text-purple-600"
+        title='game.faq.title'
+        description='game.faq.description'
+        iconBgColor="bg-orange-50"
+        iconColor="text-orange-600"
       />
       <FAQList faqs={faqList} />
     </div>

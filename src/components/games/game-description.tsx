@@ -84,10 +84,10 @@ export function GameDescription({ detailDesc }: { detailDesc: string }) {
     <div className={STYLES.container.wrapper}>
       <SectionHeader
         icon={HEADER_ICON}
-        title={{ id: "game.description.title", message: "游戏简介" }}
-        description={{ id: "game.description.description", message: "了解游戏基本信息" }}
-        iconBgColor="bg-teal-50"
-        iconColor="text-teal-500"
+        title='game.description.title'
+        description='game.description.description'
+        iconBgColor="bg-blue-50"
+        iconColor="text-blue-600"
       />
       <ContentContainer items={items} />
     </div>

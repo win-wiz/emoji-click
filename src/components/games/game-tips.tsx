@@ -73,8 +73,8 @@ export function GameTips({ starting }: { starting: string }) {
     <div className={STYLES.container.wrapper}>
       <SectionHeader
         icon={HEADER_ICON}
-        title={{ id: "game.tips.title", message: "游戏提示" }}
-        description={{ id: "game.tips.description", message: "开始游戏前的重要提示" }}
+        title='game.tips.title'
+        description='game.tips.description'
         iconBgColor="bg-indigo-50"
         iconColor="text-indigo-600"
       />

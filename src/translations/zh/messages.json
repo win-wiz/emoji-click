@@ -197,12 +197,12 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/(profile)/[slug]/page.tsx",
-        16
+        "src/app/[lang]/(public)/[slug]/page.tsx",
+        21
       ],
       [
         "src/app/[lang]/layout.tsx",
-        21
+        24
       ]
     ]
   },
@@ -229,7 +229,7 @@
     "origin": [
       [
         "src/app/[lang]/layout.tsx",
-        19
+        22
       ]
     ]
   },
@@ -276,7 +276,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        110
+        112
       ]
     ]
   },
@@ -286,7 +286,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         96
       ]
     ]
@@ -297,7 +297,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         65
       ]
     ]
@@ -308,7 +308,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         75
       ]
     ]
@@ -319,7 +319,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         94
       ]
     ]
@@ -330,7 +330,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         88
       ]
     ]
@@ -341,7 +341,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         52
       ]
     ]
@@ -352,7 +352,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         49
       ]
     ]
@@ -441,7 +441,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         54
       ]
     ]
@@ -461,6 +461,29 @@
       ]
     ]
   },
+  "game.loading.tips.3": {
+    "translation": "为您准备欢乐时光...",
+    "message": "为您准备欢乐时光...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        28
+      ]
+    ]
+  },
+  "VY5dPV": {
+    "translation": "为您准备欢乐时光...",
+    "message": "为您准备欢乐时光...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        20
+      ]
+    ],
+    "obsolete": true
+  },
   "NIQoFc": {
     "translation": "什么是EmojiClick？",
     "message": "什么是EmojiClick？",
@@ -478,7 +501,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         84
       ]
     ]
@@ -511,7 +534,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         79
       ]
     ]
@@ -522,7 +545,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         53
       ]
     ]
@@ -533,7 +556,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         95
       ]
     ]
@@ -544,7 +567,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         81
       ]
     ]
@@ -555,7 +578,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         66
       ]
     ]
@@ -590,7 +613,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         80
       ]
     ]
@@ -601,7 +624,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         87
       ]
     ]
@@ -639,6 +662,29 @@
       ]
     ]
   },
+  "game.loading.status.initial": {
+    "translation": "准备开始游戏",
+    "message": "准备开始游戏",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        224
+      ]
+    ]
+  },
+  "cYSRQg": {
+    "translation": "准备开始游戏",
+    "message": "准备开始游戏",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        216
+      ]
+    ],
+    "obsolete": true
+  },
   "+d8Frh": {
     "translation": "加载中...",
     "message": "加载中...",
@@ -669,7 +715,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        102
+        104
       ]
     ]
   },
@@ -703,7 +749,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         92
       ]
     ]
@@ -738,7 +784,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         90
       ]
     ]
@@ -830,7 +876,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         71
       ]
     ]
@@ -865,7 +911,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         100
       ]
     ]
@@ -924,7 +970,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         86
       ]
     ]
@@ -935,7 +981,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         56
       ]
     ]
@@ -959,7 +1005,7 @@
     "origin": [
       [
         "src/app/[lang]/layout.tsx",
-        20
+        23
       ]
     ]
   },
@@ -982,7 +1028,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        96
+        98
       ]
     ]
   },
@@ -992,7 +1038,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         82
       ]
     ]
@@ -1027,7 +1073,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         83
       ]
     ]
@@ -1069,6 +1115,28 @@
       ]
     ]
   },
+  "game.faq.title": {
+    "translation": "常见问题",
+    "message": "常见问题",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        43
+      ]
+    ]
+  },
+  "game.faq.description": {
+    "translation": "常见问题解答",
+    "message": "常见问题解答",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        44
+      ]
+    ]
+  },
   "RHjkTG": {
     "translation": "常见问题解答",
     "message": "常见问题解答",
@@ -1080,13 +1148,24 @@
       ]
     ]
   },
+  "game.tips.description": {
+    "translation": "开始游戏前的重要提示",
+    "message": "开始游戏前的重要提示",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        24
+      ]
+    ]
+  },
   "OIGOYd": {
     "translation": "引言",
     "message": "引言",
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         77
       ]
     ]
@@ -1108,7 +1187,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         69
       ]
     ]
@@ -1119,7 +1198,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         55
       ]
     ]
@@ -1152,7 +1231,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         67
       ]
     ]
@@ -1163,7 +1242,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         61
       ]
     ]
@@ -1185,8 +1264,53 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         85
+      ]
+    ]
+  },
+  "game.loading.tips.4": {
+    "translation": "打开快乐开关...",
+    "message": "打开快乐开关...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        29
+      ]
+    ]
+  },
+  "tM3R2A": {
+    "translation": "打开快乐开关...",
+    "message": "打开快乐开关...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        21
+      ]
+    ],
+    "obsolete": true
+  },
+  "game.advance-tips.description": {
+    "translation": "掌握这些技巧提升游戏水平",
+    "message": "掌握这些技巧提升游戏水平",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        40
+      ]
+    ]
+  },
+  "game.rules.description": {
+    "translation": "掌握这些规则开始游戏",
+    "message": "掌握这些规则开始游戏",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        26
       ]
     ]
   },
@@ -1240,7 +1364,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         58
       ]
     ]
@@ -1273,7 +1397,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         63
       ]
     ]
@@ -1284,7 +1408,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         64
       ]
     ]
@@ -1295,7 +1419,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         62
       ]
     ]
@@ -1329,7 +1453,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        29
+        30
       ]
     ]
   },
@@ -1339,7 +1463,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         68
       ]
     ]
@@ -1350,8 +1474,19 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         91
+      ]
+    ]
+  },
+  "game.summer.description": {
+    "translation": "查看您的游戏表现",
+    "message": "查看您的游戏表现",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        36
       ]
     ]
   },
@@ -1372,7 +1507,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         51
       ]
     ]
@@ -1419,10 +1554,33 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         78
       ]
     ]
+  },
+  "game.loading.tips.1": {
+    "translation": "正在召唤游戏精灵...",
+    "message": "正在召唤游戏精灵...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        26
+      ]
+    ]
+  },
+  "xa/uuY": {
+    "translation": "正在召唤游戏精灵...",
+    "message": "正在召唤游戏精灵...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        18
+      ]
+    ],
+    "obsolete": true
   },
   "AW9NLp": {
     "translation": "没有找到相关表情",
@@ -1432,6 +1590,173 @@
       [
         "src/components/search/search-emoji-dropdown.tsx",
         350
+      ]
+    ]
+  },
+  "game.loading.tips.5": {
+    "translation": "注入游戏能量...",
+    "message": "注入游戏能量...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        30
+      ]
+    ]
+  },
+  "P0aKnv": {
+    "translation": "注入游戏能量...",
+    "message": "注入游戏能量...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        22
+      ]
+    ],
+    "obsolete": true
+  },
+  "cKm/RQ": {
+    "translation": "",
+    "message": "游戏",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/header/navigation.tsx",
+        36
+      ]
+    ]
+  },
+  "game.loading.title": {
+    "translation": "游戏加载",
+    "message": "游戏加载",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        37
+      ]
+    ]
+  },
+  "game.loading.status.loading": {
+    "translation": "游戏加载中",
+    "message": "游戏加载中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        225
+      ]
+    ]
+  },
+  "eVqsol": {
+    "translation": "游戏加载中",
+    "message": "游戏加载中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        217
+      ]
+    ],
+    "obsolete": true
+  },
+  "game.summer.title": {
+    "translation": "游戏总结",
+    "message": "游戏总结",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        35
+      ]
+    ]
+  },
+  "game.tips.title": {
+    "translation": "游戏提示",
+    "message": "游戏提示",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        23
+      ]
+    ]
+  },
+  "game.features.title": {
+    "translation": "游戏特色",
+    "message": "游戏特色",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        29
+      ]
+    ]
+  },
+  "game.benefits.title": {
+    "translation": "游戏益处",
+    "message": "游戏益处",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        31
+      ]
+    ]
+  },
+  "game.secrets.title": {
+    "translation": "游戏秘籍",
+    "message": "游戏秘籍",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        33
+      ]
+    ]
+  },
+  "game.description.title": {
+    "translation": "游戏简介",
+    "message": "游戏简介",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        41
+      ]
+    ]
+  },
+  "game.description.description": {
+    "translation": "游戏简要介绍",
+    "message": "游戏简要介绍",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        42
+      ]
+    ]
+  },
+  "game.rules.title": {
+    "translation": "游戏规则",
+    "message": "游戏规则",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        25
+      ]
+    ]
+  },
+  "game.secrets.description": {
+    "translation": "游戏进阶秘籍",
+    "message": "游戏进阶秘籍",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        34
       ]
     ]
   },
@@ -1486,7 +1811,7 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        110
+        112
       ]
     ]
   },
@@ -1526,6 +1851,28 @@
     ],
     "obsolete": true
   },
+  "game.features.description": {
+    "translation": "独特的游戏特色",
+    "message": "独特的游戏特色",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        30
+      ]
+    ]
+  },
+  "game.benefits.description": {
+    "translation": "玩游戏的好处",
+    "message": "玩游戏的好处",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        32
+      ]
+    ]
+  },
   "w/qYEh": {
     "translation": "理解情感语义",
     "message": "理解情感语义",
@@ -1543,11 +1890,11 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         50
       ],
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         76
       ]
     ]
@@ -1560,6 +1907,17 @@
       [
         "src/components/search/search-emoji.tsx",
         39
+      ]
+    ]
+  },
+  "1pO6Et": {
+    "translation": "",
+    "message": "用AI魔法创造富有表现力的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        89
       ]
     ]
   },
@@ -1584,7 +1942,8 @@
         "src/components/footer.tsx",
         88
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "LgfBZM": {
     "translation": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
@@ -1638,7 +1997,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         57
       ]
     ]
@@ -1704,10 +2063,33 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         97
       ]
     ]
+  },
+  "game.loading.tips.2": {
+    "translation": "组装游戏积木中...",
+    "message": "组装游戏积木中...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        27
+      ]
+    ]
+  },
+  "HIZepK": {
+    "translation": "组装游戏积木中...",
+    "message": "组装游戏积木中...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        19
+      ]
+    ],
+    "obsolete": true
   },
   "J0CfpT": {
     "translation": "联系我们",
@@ -1715,11 +2097,11 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         70
       ],
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         99
       ],
       [
@@ -1728,7 +2110,7 @@
       ],
       [
         "src/components/footer.tsx",
-        70
+        71
       ]
     ]
   },
@@ -1776,13 +2158,70 @@
       ]
     ]
   },
+  "game.loading.error.network": {
+    "translation": "请检查网络连接后重试",
+    "message": "请检查网络连接后重试",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        291
+      ]
+    ]
+  },
+  "UKXqF/": {
+    "translation": "请检查网络连接后重试",
+    "message": "请检查网络连接后重试",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        277
+      ]
+    ],
+    "obsolete": true
+  },
+  "game.loading.description": {
+    "translation": "请稍候，游戏正在加载中",
+    "message": "请稍候，游戏正在加载中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        38
+      ]
+    ]
+  },
+  "game.loading.tips.6": {
+    "translation": "调试游戏画面...",
+    "message": "调试游戏画面...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        31
+      ]
+    ]
+  },
+  "KOrjhO": {
+    "translation": "调试游戏画面...",
+    "message": "调试游戏画面...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        23
+      ]
+    ],
+    "obsolete": true
+  },
   "NqIQv0": {
     "translation": "责任限制",
     "message": "责任限制",
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         89
       ]
     ]
@@ -1850,7 +2289,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         59
       ]
     ]
@@ -1861,7 +2300,7 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         98
       ]
     ]
@@ -1877,13 +2316,104 @@
       ]
     ]
   },
+  "game.loading.status.error": {
+    "translation": "连接失败",
+    "message": "连接失败",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        227
+      ]
+    ]
+  },
+  "W8amOR": {
+    "translation": "连接失败",
+    "message": "连接失败",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        219
+      ]
+    ],
+    "obsolete": true
+  },
+  "game.difficulty.description": {
+    "translation": "",
+    "message": "选择适合你的难度",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        28
+      ]
+    ]
+  },
+  "game.loading.error.reload": {
+    "translation": "重新加载",
+    "message": "重新加载",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        297
+      ]
+    ]
+  },
+  "jKkiBC": {
+    "translation": "重新加载",
+    "message": "重新加载",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        283
+      ]
+    ],
+    "obsolete": true
+  },
+  "game.loading.status.retrying": {
+    "translation": "重新连接中",
+    "message": "重新连接中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        226
+      ]
+    ]
+  },
+  "R50Rnr": {
+    "translation": "重新连接中",
+    "message": "重新连接中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        218
+      ]
+    ],
+    "obsolete": true
+  },
+  "game.loading.retry.count": {
+    "translation": "重试次数",
+    "message": "重试次数",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        277
+      ]
+    ]
+  },
   "hisZrx": {
     "translation": "链接",
     "message": "链接",
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/terms-of-service/page.tsx",
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
         93
       ]
     ]
@@ -1895,7 +2425,18 @@
     "origin": [
       [
         "src/components/footer.tsx",
-        30
+        31
+      ]
+    ]
+  },
+  "game.difficulty.title": {
+    "translation": "难度级别",
+    "message": "难度级别",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        27
       ]
     ]
   },
@@ -1905,8 +2446,19 @@
     "comments": [],
     "origin": [
       [
-        "src/app/[lang]/privacy-policy/page.tsx",
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
         60
+      ]
+    ]
+  },
+  "game.advance-tips.title": {
+    "translation": "高级技巧",
+    "message": "高级技巧",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        39
       ]
     ]
   }

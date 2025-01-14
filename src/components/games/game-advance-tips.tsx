@@ -114,8 +114,8 @@ export function GameAdvanceTips({ advanceTips }: { advanceTips: string }) {
     <div className={STYLES.container.wrapper}>
       <SectionHeader
         icon={HEADER_ICON}
-        title={{ id: "game.tips.advanced.title", message: "高级技巧" }}
-        description={{ id: "game.tips.advanced.description", message: "掌握这些技巧提升游戏水平" }}
+        title='game.advance-tips.title'
+        description='game.advance-tips.description'
         iconBgColor="bg-amber-100"
         iconColor="text-amber-600"
       />
