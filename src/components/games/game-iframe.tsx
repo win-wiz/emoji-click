@@ -96,7 +96,7 @@ export const GameIframe = memo(({ src }: GameIframeProps) => {
   }, [resetIframe]);
 
   return (
-    <div className="game-iframe-container relative w-full h-[70vh] max-h-[800px] overflow-hidden rounded-lg shadow-lg bg-white">
+    <div className="game-iframe-container relative w-full min-h-[750px] h-[75vh] max-h-[800px] overflow-hidden rounded-lg shadow-lg bg-gradient-to-r from-purple-50/50 to-white/50">
       <GameLoading state={loadingState} retryCount={retryCount} onRetry={handleRetry} />
       <iframe
         ref={iframeRef}

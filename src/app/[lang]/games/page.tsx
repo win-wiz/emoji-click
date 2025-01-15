@@ -29,9 +29,9 @@ export default async function GamesPage({ params }: GamesPageProps) {
   const gameObj = result.data![0] ?? {} as GameItem;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
       {/* 游戏名称 */}
-      <div className="w-full bg-gradient-to-r from-gray-50/50 to-white/50">
+      <div className="w-full bg-gradient-to-r from-purple-50/50 to-white/50">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
           <GameName name={gameObj?.name!} />
         </div>
@@ -40,7 +40,7 @@ export default async function GamesPage({ params }: GamesPageProps) {
       {/* 游戏Iframe */}
       <div className="relative w-full">
         {/* 背景遮罩 */}
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/40 via-white/30 to-indigo-50/40 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-50/40 via-white/30 to-purple-50/40 backdrop-blur-[1px]" />
         
         <div className="relative container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
           <GameIframe src={`https://memory-game.emojis.click/${lang}`} />

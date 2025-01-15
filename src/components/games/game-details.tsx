@@ -20,16 +20,16 @@ const STYLES = {
     inner: "container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
   },
   gradient: {
-    tips: "bg-gradient-to-r from-indigo-50/30 to-blue-50/30",
-    summer: "bg-gradient-to-r from-blue-50/30 to-indigo-50/30",
-    description: "bg-gradient-to-r from-purple-50/30 to-pink-50/30",
-    rules: "bg-gradient-to-r from-red-50/30 to-orange-50/30",
-    advanceTips: "bg-gradient-to-r from-amber-50/30 to-yellow-50/30",
-    benefit: "bg-gradient-to-r from-green-50/30 to-emerald-50/30",
-    feature: "bg-gradient-to-r from-emerald-50/30 to-teal-50/30",
-    level: "bg-gradient-to-r from-yellow-50/30 to-amber-50/30",
-    secret: "bg-gradient-to-r from-pink-50/30 to-rose-50/30",
-    faq: "bg-gradient-to-r from-orange-50/30 to-red-50/30"
+    tips: "bg-gradient-to-r from-pink-50/10 via-purple-50/15 to-pink-50/10",
+    summer: "bg-gradient-to-r from-purple-50/10 via-pink-50/15 to-purple-50/10",
+    description: "bg-gradient-to-r from-pink-50/15 via-purple-50/20 to-pink-50/15",
+    rules: "bg-gradient-to-r from-purple-50/15 via-pink-50/20 to-purple-50/15",
+    advanceTips: "bg-gradient-to-r from-pink-50/10 via-purple-50/15 to-pink-50/10",
+    benefit: "bg-gradient-to-r from-purple-50/10 via-pink-50/15 to-purple-50/10",
+    feature: "bg-gradient-to-r from-pink-50/15 via-purple-50/20 to-pink-50/15",
+    level: "bg-gradient-to-r from-purple-50/15 via-pink-50/20 to-purple-50/15",
+    secret: "bg-gradient-to-r from-pink-50/10 via-purple-50/15 to-pink-50/10",
+    faq: "bg-gradient-to-r from-purple-50/10 via-pink-50/15 to-purple-50/10"
   }
 } as const;
 
