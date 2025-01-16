@@ -23,8 +23,8 @@ export const GameIframe = memo(({ src }: GameIframeProps) => {
       if (typeof event.data === 'object' && 
           event.data.type === 'heightChange' && 
           typeof event.data.height === 'number') {
-        const newHeight = Math.max(750, Math.ceil(event.data.height));
-        console.log('newHeight===》》》》', newHeight);
+        const newHeight = Math.max(750, Math.ceil(event.data.height) + 100);
+        // console.log('newHeight===》》》》', newHeight);
         setContainerHeight(newHeight);
       }
     };

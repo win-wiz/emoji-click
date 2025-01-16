@@ -55,7 +55,7 @@ export const SectionHeader = memo(({
   const iconContainerStyles = `${ICON_CONTAINER_BASE_STYLES} ${iconBgColor}`;
   const iconStyles = `${ICON_BASE_STYLES} ${iconColor}`;
 
-  console.log(i18n._(title));
+  // console.log(i18n._(title));
   return (
     <div className={CONTAINER_STYLES}>
       <div className={iconContainerStyles}>

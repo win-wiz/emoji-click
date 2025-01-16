@@ -1,5 +1,5 @@
 import { GameItem } from "@/types/memoryGame";
-import GameTips from "./game-tips";
+// import GameTips from "./game-tips";
 import GameSummer from "./game-summer";
 import GameDescription from "./game-description";
 import GameRules from "./game-rules";
@@ -54,16 +54,15 @@ function GameSection({
 export function GameDetail({ gameItem }: { gameItem: Partial<GameItem> }) {
   return (
     <div className={STYLES.container.wrapper}>
-      <GameSection gradient="tips">
+      {/* <GameSection gradient="tips">
         <GameTips starting={gameItem.starting ?? ''} />
+      </GameSection> */}
+      <GameSection gradient="description">
+        <GameDescription detailDesc={gameItem.detailDesc ?? ''} />
       </GameSection>
 
       <GameSection gradient="summer">
         <GameSummer gameSummer={gameItem.briefDesc ?? ''} />
-      </GameSection>
-
-      <GameSection gradient="description">
-        <GameDescription detailDesc={gameItem.detailDesc ?? ''} />
       </GameSection>
 
       <GameSection gradient="rules">
