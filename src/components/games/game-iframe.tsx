@@ -10,11 +10,28 @@ interface GameIframeProps {
 export const GameIframe = memo(({ src }: GameIframeProps) => {
   const [loadingState, setLoadingState] = useState<LoadingState>('initial');
   const [retryCount, setRetryCount] = useState(0);
+  const [containerHeight, setContainerHeight] = useState<number>(750);
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const timersRef = useRef<{
     loading?: NodeJS.Timeout;
     retry?: NodeJS.Timeout;
   }>({});
+
+  // 处理来自iframe的高度变化消息
+  useEffect(() => {
+    const handleHeightChange = (event: MessageEvent) => {
+      if (typeof event.data === 'object' && 
+          event.data.type === 'heightChange' && 
+          typeof event.data.height === 'number') {
+        const newHeight = Math.max(750, Math.ceil(event.data.height));
+        console.log('newHeight===》》》》', newHeight);
+        setContainerHeight(newHeight);
+      }
+    };
+
+    window.addEventListener('message', handleHeightChange);
+    return () => window.removeEventListener('message', handleHeightChange);
+  }, []);
 
   // 使用useMemo缓存URL对象
   const urlWithTimestamp = useMemo(() => {
@@ -96,7 +113,13 @@ export const GameIframe = memo(({ src }: GameIframeProps) => {
   }, [resetIframe]);
 
   return (
-    <div className="game-iframe-container relative w-full min-h-[750px] h-[75vh] max-h-[800px] overflow-hidden rounded-lg shadow-lg bg-gradient-to-r from-purple-50/50 to-white/50">
+    <div 
+      className="game-iframe-container relative w-full rounded-lg shadow-lg bg-gradient-to-r from-purple-50/50 to-white/50"
+      style={{ 
+        height: `${containerHeight}px`,
+        transition: 'height 0.3s ease-in-out'
+      }}
+    >
       <GameLoading state={loadingState} retryCount={retryCount} onRetry={handleRetry} />
       <iframe
         ref={iframeRef}
@@ -106,6 +129,10 @@ export const GameIframe = memo(({ src }: GameIframeProps) => {
         loading="eager"
         allow="fullscreen"
         title="Game Iframe"
+        style={{ 
+          height: '100%',
+          border: 'none'
+        }}
       />
     </div>
   );
