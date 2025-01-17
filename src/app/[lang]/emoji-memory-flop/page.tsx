@@ -4,13 +4,29 @@ import GameIframe from "@/components/games/game-iframe";
 import GameName from "@/components/games/game-name";
 import GameAutoScroll from "@/components/games/game-auto-scroll";
 import { AVAILABLE_LOCALES } from "@/locales/config";
-import { fetchEmojiMemberGame } from "@/server/games/member";
+import { fetchEmojiMemberGame, fetchEmojiMemberGameForMeta } from "@/server/games/member";
 import { GameItem } from "@/types/memoryGame";
+import { Metadata } from "next";
+// import { activateLocale } from "@/locales/locale";
+// import { t } from "@lingui/macro";
 
 interface GamesPageProps {
   params: {
     lang: AVAILABLE_LOCALES;
   };
+}
+
+export async function generateMetadata({ params }: { params: { lang: AVAILABLE_LOCALES } }): Promise<Metadata> {
+
+  // await activateLocale(params.lang)
+  const result = await fetchEmojiMemberGameForMeta(params.lang);
+
+  const gameObj = result.data![0] ?? {} as GameItem;
+  return {
+    title: `EmojiClick | ${gameObj.name}`,
+    description: gameObj.briefDesc,
+    keywords: `emoji search, AI-powered emoji, EmojiClick, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine`,
+  }
 }
 
 export default async function GamesPage({ params }: GamesPageProps) {

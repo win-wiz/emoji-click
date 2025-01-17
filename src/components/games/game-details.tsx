@@ -61,9 +61,9 @@ export function GameDetail({ gameItem }: { gameItem: Partial<GameItem> }) {
         <GameDescription detailDesc={gameItem.detailDesc ?? ''} />
       </GameSection>
 
-      <GameSection gradient="summer">
+      {/* <GameSection gradient="summer">
         <GameSummer gameSummer={gameItem.briefDesc ?? ''} />
-      </GameSection>
+      </GameSection> */}
 
       <GameSection gradient="rules">
         <GameRules gameRules={gameItem.basicRule ?? ''} />

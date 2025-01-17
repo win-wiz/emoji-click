@@ -44,3 +44,31 @@ export async function fetchEmojiMemberGame(initLang: AVAILABLE_LOCALES) {
     };
   }
 }
+
+export async function fetchEmojiMemberGameForMeta(initLang: AVAILABLE_LOCALES) {
+
+  const lang = supportLang.includes(initLang) ? initLang : 'en';
+
+  try {
+    const emojiGamePrepare = db
+      .select({
+        name: emojiGame.name,
+        briefDesc: emojiGame.briefDesc,
+      })
+      .from(emojiGame)
+      .where(and(eq(emojiGame.language, lang)))
+      .prepare();
+
+    const result = await emojiGamePrepare.execute();
+
+    return {
+      success: true,
+      data: result
+    };
+  } catch (error) {
+    return {
+      success: false,
+      error: "Failed to fetch emoji game"
+    };
+  }
+}
