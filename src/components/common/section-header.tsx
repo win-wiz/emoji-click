@@ -68,11 +68,11 @@ export const SectionHeader = memo(({
         <h3 className={TITLE_STYLES}>
           {i18n._(title)}
         </h3>
-        {description && (
+        {/* {description && (
           <p className={DESCRIPTION_STYLES}>
             {i18n._(description)}
           </p>
-        )}
+        )} */}
       </div>
     </div>
   );
