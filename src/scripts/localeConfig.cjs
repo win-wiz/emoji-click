@@ -6,7 +6,7 @@ module.exports = {
   // "de": 'Deutsch', // 德语
   "es": 'Español', // 西班牙语
   // "it": 'Italiano', // 意大利语
-  // "ja": '日本語', // 日语
+  "ja": '日本語', // 日语
   // "ko": '한국어', // 韩语
   // "nl": 'Nederlands', // 荷兰语
   // "pt-BR": 'Português do Brasil', // 巴西葡萄牙语

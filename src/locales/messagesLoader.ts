@@ -9,7 +9,7 @@ import frMessages from '@/translations/fr/messages.json'
 // import deMessages from '@/translations/de/messages.json'
 import esMessages from '@/translations/es/messages.json'
 // import itMessages from '@/translations/it/messages.json'
-// import jaMessages from '@/translations/ja/messages.json'
+import jaMessages from '@/translations/ja/messages.json'
 // import koMessages from '@/translations/ko/messages.json'
 // import nlMessages from '@/translations/nl/messages.json'
 // import ptBRMessages from '@/translations/pt-BR/messages.json'
@@ -71,7 +71,7 @@ export const messagesMap: Record<string, Messages> = {
   // "de": convertToMessages(deMessages as RawMessages),
   "es": convertToMessages(esMessages as RawMessages),
   // "it": convertToMessages(itMessages as RawMessages),
-  // "ja": convertToMessages(jaMessages as RawMessages),
+  "ja": convertToMessages(jaMessages as RawMessages),
   // "ko": convertToMessages(koMessages as RawMessages),
   // "nl": convertToMessages(nlMessages as RawMessages),
   // "pt-BR": convertToMessages(ptBRMessages as RawMessages),

@@ -1,0 +1,1717 @@
+{
+  "CAHYAc": {
+    "translation": "絵文字検索、AIによる絵文字、EmojiClick、スマート絵文字ツール、文脈に合わせた絵文字、絵文字の発見、チャットの向上、絵文字の推奨エンジン",
+    "message": "emoji search, AI-powered emoji, EmojiClick, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/[slug]/page.tsx",
+        21
+      ],
+      [
+        "src/app/[lang]/layout.tsx",
+        24
+      ]
+    ]
+  },
+  "a17ysh": {
+    "translation": "EmojiClick | AIが最適な絵文字を見つける",
+    "message": "EmojiClick | 用AI找到最适合的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/layout.tsx",
+        22
+      ]
+    ]
+  },
+  "Rudogq": {
+    "translation": "EmojiClickはすべての権利を保持します",
+    "message": "EmojiClick 保留所有权利",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        112
+      ]
+    ]
+  },
+  "22/xk0": {
+    "translation": "EmojiClickは、事前の通知なしにこれらのサービス条項をいつでも変更できます。このウェブサイトを使用することで、あなたは当時のサービス条項に拘束されることに同意したことになります。",
+    "message": "EmojiClick 可以随时修改其网站的这些服务条款而不作通知。通过使用本网站，您同意受当时这些服务条款的约束。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        96
+      ]
+    ]
+  },
+  "Ivq2Ee": {
+    "translation": "EmojiClickはあなたのプライバシーを尊重します。私たちは、注文の処理や法的要件を除き、個人データを第三者と共有することはありません。",
+    "message": "EmojiClick 尊重您的隐私。我们不会与任何第三方分享您的个人数据，除非为了处理您的订单或遵守法律要求。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        65
+      ]
+    ]
+  },
+  "wO+F7p": {
+    "translation": "EmojiClick サービス条項",
+    "message": "EmojiClick 服务条款",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        75
+      ]
+    ]
+  },
+  "+0PbSu": {
+    "translation": "EmojiClickは、そのウェブサイトにリンクされているすべてのサイトを審査せず、それらのリンクサイトの内容について責任を負いません。リンクの存在は、EmojiClickがそのサイトを承認していることを意味するものではありません。このようなリンクサイトの使用はユーザーのリスクにおいて行われます。",
+    "message": "EmojiClick 未审查与其网站链接的所有站点，并且不对任何此类链接站点的内容负责。包含任何链接并不意味着 EmojiClick 对该站点的认可。使用任何此类链接网站由用户自行承担风险。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        94
+      ]
+    ]
+  },
+  "XSt0bN": {
+    "translation": "EmojiClickのウェブサイト上の資料は「現状」で提供されています。EmojiClickはいかなる明示または黙示の保証も行わず、ここで述べられている他のすべての保証を放棄し否定します。具体的には、販売可能性、特定の目的への適合性、または知的財産権またはその他の権利の侵害に対する黙示の保証を含みますがこれらに限定されません。",
+    "message": "EmojiClick 网站上的材料按“原样”提供。EmojiClick 不作任何明示或暗示的保证，并在此放弃和否定所有其他保证，包括但不限于对适销性、特定用途的适用性或不侵犯知识产权或其他权利的暗示保证。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        88
+      ]
+    ]
+  },
+  "mbdAlO": {
+    "translation": "EmojiClickはhttps://emojis.click/で運営されており、あなたのプライバシー保護に尽力しています。このプライバシーポリシーでは、私たちが収集する情報の種類、その情報をどのように使用するか、および私たちがどのようにあなたの個人情報を適切に処理するかを説明します。",
+    "message": "EmojiClick 运营网站 https://emojis.click/ 并致力于保护您的隐私。本隐私政策概述了我们收集的信息类型、我们如何使用这些信息，以及我们采取哪些步骤确保您的个人信息被适当处理。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        52
+      ]
+    ]
+  },
+  "tlbf3I": {
+    "translation": "EmojiClick プライバシーポリシー",
+    "message": "EmojiClick 隐私政策",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        49
+      ]
+    ]
+  },
+  "buP6IE": {
+    "translation": "EmojiClickは高度なAI技術を使用してあなたの入力——感情、フレーズ、または歌詞——を解析し、データベースから最も関連性の高い絵文字をマッチングします。これをお手伝いの絵文字通訳官と考えてください。",
+    "message": "EmojiClick利用先进的AI技术分析你的输入——无论是情绪、短语，还是一句歌词——并从数据库中匹配最相关的emoji。你可以把它看作你的emoji翻译官",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        56
+      ]
+    ]
+  },
+  "+v8jUx": {
+    "translation": "EmojiClickは複数の言語をサポートしていますか？",
+    "message": "EmojiClick支持多种语言吗？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        81
+      ]
+    ]
+  },
+  "Fp98du": {
+    "translation": "EmojiClickは**AI駆動の絵文字検索ツール**です。自然言語を理解することで、あなたが最も適切な絵文字を見つけるのに役立ちます——絵文字の名前を覚える必要も、絵文字のライブラリを探し回る必要もありません。",
+    "message": "EmojiClick是一款**AI驱动的emoji搜索工具**。它通过理解你的自然语言，帮你快速找到最贴切的emoji——无需记住emoji名字，也无需翻遍表情库。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        51
+      ]
+    ]
+  },
+  "LIbuH1": {
+    "translation": "EmojiClickのAI絵文字検索はすぐに最適な絵文字を推奨します。",
+    "message": "EmojiClick的AI emoji搜索会立即推荐最合适的emoji。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        64
+      ]
+    ]
+  },
+  "WEVHnj": {
+    "translation": "EmojiClickのAI絵文字検索はどのように動作しますか？",
+    "message": "EmojiClick的AI表情搜索是如何工作的？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        55
+      ]
+    ]
+  },
+  "3mGxau": {
+    "translation": "東洋文化解釈",
+    "message": "东方文化解读",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-cultura.tsx",
+        21
+      ]
+    ]
+  },
+  "5jRDhE": {
+    "translation": "個人データ",
+    "message": "个人数据",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        54
+      ]
+    ]
+  },
+  "uW7qaK": {
+    "translation": "絵文字",
+    "message": "个表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-modal.tsx",
+        56
+      ],
+      [
+        "src/components/category/category-modal.tsx",
+        102
+      ]
+    ]
+  },
+  "game.loading.tips.3": {
+    "translation": "楽しい時間を準備中...",
+    "message": "为您准备欢乐时光...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        28
+      ]
+    ]
+  },
+  "NIQoFc": {
+    "translation": "EmojiClickとは何ですか？",
+    "message": "什么是EmojiClick？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        50
+      ]
+    ]
+  },
+  "qMISlw": {
+    "translation": "著作権またはその他の専有注記を材料から削除する；",
+    "message": "从材料中移除任何版权或其他专有注释；",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        84
+      ]
+    ]
+  },
+  "aB+fc8": {
+    "translation": "使用シーン",
+    "message": "使用场景",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-scene.tsx",
+        46
+      ]
+    ]
+  },
+  "EjfkAX": {
+    "translation": "使用例",
+    "message": "使用示例",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-example.tsx",
+        17
+      ]
+    ]
+  },
+  "YDQxUt": {
+    "translation": "使用許諾",
+    "message": "使用许可",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        79
+      ]
+    ]
+  },
+  "8Cr33/": {
+    "translation": "情報収集",
+    "message": "信息收集",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        53
+      ]
+    ]
+  },
+  "zil5pJ": {
+    "translation": "修正",
+    "message": "修改",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        95
+      ]
+    ]
+  },
+  "pAVyKF": {
+    "translation": "材料の複製または修正；",
+    "message": "修改或复制材料；",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        81
+      ]
+    ]
+  },
+  "7+ngOM": {
+    "translation": "子供のプライバシー",
+    "message": "儿童隐私",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        66
+      ]
+    ]
+  },
+  "p0L+iY": {
+    "translation": "EmojiClickのウェブサイトの材料（情報またはソフトウェア）の一時的なダウンロードを許可します。これは所有権の譲渡ではなく、許可であり、この許可の下ではあなたは次のことをできません：",
+    "message": "允许暂时下载 EmojiClick 网站上的材料（信息或软件）一份，仅供个人、非商业的临时观看。这是授予许可，而不是转让所有权，并且在此许可下，您不得：",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        80
+      ]
+    ]
+  },
+  "buIPLU": {
+    "translation": "免責事項",
+    "message": "免责声明",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        87
+      ]
+    ]
+  },
+  "zYyCyW": {
+    "translation": "全カテゴリー",
+    "message": "全部分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-modal.tsx",
+        38
+      ]
+    ]
+  },
+  "ysc16k": {
+    "translation": "全絵文字カテゴリー",
+    "message": "全部表情分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-modal.tsx",
+        52
+      ]
+    ]
+  },
+  "jmos6W": {
+    "translation": "キーワード",
+    "message": "关键词",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-keywords.tsx",
+        70
+      ]
+    ]
+  },
+  "game.loading.status.initial": {
+    "translation": "ゲーム開始準備中",
+    "message": "准备开始游戏",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        224
+      ]
+    ]
+  },
+  "+d8Frh": {
+    "translation": "読み込み中...",
+    "message": "加载中...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-emoji.tsx",
+        267
+      ]
+    ]
+  },
+  "d4u/JD": {
+    "translation": "リンク",
+    "message": "友情链接",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        104
+      ]
+    ]
+  },
+  "nmILnC": {
+    "translation": "EmojiClickのウェブサイト上の材料には技術的、校正、または写真撮影の誤りが含まれている場合があります。EmojiClickはそのウェブサイト上のどの材料も正確、完全、または最新であることを保証しません。EmojiClickはいつでも事前の通知なしにそのウェブサイトに含まれる材料を変更できます。ただし、EmojiClickは材料を更新することを約束しません。",
+    "message": "在 EmojiClick 网站上出现的材料可能包含技术、排印或摄影错误。EmojiClick 不保证其网站上的任何材料准确、完整或最新。EmojiClick 可以随时更改其网站上包含的材料而不作通知。但是，EmojiClick 不承诺更新材料。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        92
+      ]
+    ]
+  },
+  "FOx1w0": {
+    "translation": "どのような場合でも、EmojiClickまたはそのサプライヤーは、EmojiClickのウェブサイト上の材料を使用または使用できないことにより生じる損失（データや利益の損失、または事業中断による損害を含むがこれらに限定されない）に対して責任を負わないものとします。それらの損害がEmojiClickまたはEmojiClickの認定代理店に口頭または書面でそのような損害の可能性があることを通知された場合でも同様です。",
+    "message": "在任何情况下，EmojiClick 或其供应商均不对任何损害（包括但不限于数据或利润损失或因业务中断造成的损害）承担责任，这些损害是由于使用或无法使用 EmojiClick 网站上的材料而引起的，即使 EmojiClick 或 EmojiClick 授权代表已被口头或书面通知可能会造成此类损害的可能性。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        90
+      ]
+    ]
+  },
+  "Q54ALc": {
+    "translation": "基本的な意味",
+    "message": "基本含义",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-meaning.tsx",
+        56
+      ]
+    ]
+  },
+  "94fTVg": {
+    "translation": "コピー",
+    "message": "复制",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        80
+      ]
+    ]
+  },
+  "4Yl9f0": {
+    "translation": "コピーに失敗しました、もう一度お試しください",
+    "message": "复制失败，请重试",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        109
+      ],
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        233
+      ]
+    ]
+  },
+  "9ufcus": {
+    "translation": "コピーに成功しました",
+    "message": "复制成功",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        41
+      ]
+    ]
+  },
+  "HYMMQU": {
+    "translation": "絵文字をコピー",
+    "message": "复制表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        46
+      ]
+    ]
+  },
+  "92RI1v": {
+    "translation": "EmojiClickはどのように使用しますか？",
+    "message": "如何使用EmojiClick？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        60
+      ]
+    ]
+  },
+  "IK419M": {
+    "translation": "ご質問がございましたら、お気軽にお問い合わせください。support@emojis.clickまでメールでお問い合わせいただければ、できるだけ早く回答いたします。",
+    "message": "如果你没有找到想要的答案,欢迎通过邮件联系我们的客服团队。我们将尽快回复你的疑问!",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        126
+      ]
+    ]
+  },
+  "7/4TPu": {
+    "translation": "プライバシーポリシーに関する質問や懸念がある場合は、support@emojis.clickまでご連絡ください。",
+    "message": "如果您对本隐私政策有任何疑问或担忧，请通过 support@emojis.click 与我们联系。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        71
+      ]
+    ]
+  },
+  "z446i9": {
+    "translation": "これらの条項について何かご不明な点があれば、support@emojis.clickまでご連絡ください。",
+    "message": "如果您对这些条款有任何疑问，请通过 support@emojis.click 与我们联系。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        100
+      ]
+    ]
+  },
+  "Kbnttf": {
+    "translation": "これらの制限のいずれかに違反した場合、この許可は自動的に終了し、EmojiClickはいつでもこの許可を終了することができます。あなたがこれらの資料の閲覧を終了するか、この許可が終了した場合、あなたは電子形式または印刷形式で保有しているダウンロードした資料を破棄しなければなりません。",
+    "message": "如果您违反这些限制中的任何一项，此许可将自动终止，并且 EmojiClick 可随时终止此许可。在终止您查看这些材料或此许可终止时，您必须销毁您是否以电子格式或印刷格式拥有的任何下载的材料。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        86
+      ]
+    ]
+  },
+  "3defIA": {
+    "translation": "名前",
+    "message": "姓名",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        56
+      ]
+    ]
+  },
+  "YlOxro": {
+    "translation": "適切な絵文字を探していますか？感情を入力するだけで、EmojiClickがあなたのために最適な絵文字を見つけます。速く、面白く、いつも適切です。",
+    "message": "寻找合适的表情符号？只需输入你的感受，EmojiClick会迅速为你找到最佳表情。快速、有趣，总是恰到好处。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/layout.tsx",
+        23
+      ]
+    ]
+  },
+  "Xr/E0m": {
+    "translation": "ナビゲーション",
+    "message": "导航",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        98
+      ]
+    ]
+  },
+  "QP4I14": {
+    "translation": "資料を商業目的で使用する、または公共の場所（商業的であれ非商業的であれ）で展示すること；",
+    "message": "将材料用于任何商业目的，或用于任何公共展示（商业或非商业）；",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        82
+      ]
+    ]
+  },
+  "3IYGOy": {
+    "translation": "EmojiClick ウェブサイト上のソフトウェアを逆アセンブルや逆エンジニアリングしようとすること；",
+    "message": "尝试对 EmojiClick 网站上的任何软件进行反编译或逆向工程；",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        83
+      ]
+    ]
+  },
+  "nrV1hs": {
+    "translation": "業務シーン",
+    "message": "工作场景",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-scene.tsx",
+        34
+      ]
+    ]
+  },
+  "QM99lf": {
+    "translation": "コピーされました",
+    "message": "已复制",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/single-emoji.tsx",
+        32
+      ]
+    ]
+  },
+  "uTD4IG": {
+    "translation": "クリップボードにコピーされました",
+    "message": "已复制到剪贴板",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-code.tsx",
+        103
+      ],
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        227
+      ]
+    ]
+  },
+  "game.faq.title": {
+    "translation": "よくある質問",
+    "message": "常见问题",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        43
+      ]
+    ]
+  },
+  "game.faq.description": {
+    "translation": "よくある質問とその回答",
+    "message": "常见问题解答",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        44
+      ]
+    ]
+  },
+  "RHjkTG": {
+    "translation": "よくある質問とその回答",
+    "message": "常见问题解答",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        97
+      ]
+    ]
+  },
+  "game.tips.description": {
+    "translation": "ゲーム開始前の重要なヒント",
+    "message": "开始游戏前的重要提示",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        24
+      ]
+    ]
+  },
+  "OIGOYd": {
+    "translation": "序文",
+    "message": "引言",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        77
+      ]
+    ]
+  },
+  "1Z6ccK": {
+    "translation": "もちろんです！絵文字を見つけると、それを任意のアプリケーション、プラットフォーム、メッセージにコピー&ペーストできます——チャット、ソーシャルメディア、メールなど何でも。",
+    "message": "当然可以！找到emoji后，你可以将它复制粘贴到任何应用、平台或消息中——无论是聊天、社交媒体还是邮件。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        72
+      ]
+    ]
+  },
+  "Mjq1wv": {
+    "translation": "私たちは時々プライバシーポリシーを更新します。変更がある場合、このページで新しいポリシーを掲載し、「有効日」を更新してお知らせします。重大な変更についてはメールでもお知らせします。",
+    "message": "我们可能会不时更新我们的隐私政策。我们将通过在本页面上发布新的隐私政策并更新页面顶部的“生效日期”来通知您任何变更。我们还会通过电子邮件通知您重大变更。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        69
+      ]
+    ]
+  },
+  "W0blWg": {
+    "translation": "あなたが自発的に提供した個人データを収集します。これには但不限于以下が含まれます：",
+    "message": "我们收集您自愿提供给我们的个人数据，包括但不限于：",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        55
+      ]
+    ]
+  },
+  "wv1DzS": {
+    "translation": "私たちが整理したよくある質問は、あなたがEmojiClickをより効果的に利用するのに役立つことを願っています。他の疑問があれば、いつでもお気軽にお問い合わせください!",
+    "message": "我们整理了一些常见问题,希望能够帮助你更好地使用EmojiClick。如果你有其他疑问,欢迎随时联系我们!",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        100
+      ]
+    ]
+  },
+  "HBPAVn": {
+    "translation": "私たちのAI絵文字検索ツールは定期的にデータベースを更新し、最新の絵文字とトレンドを含めます。あなたは常に最新の絵文字オプションを見つけることができます。",
+    "message": "我们的AI emoji搜索工具会定期更新数据库，以包含最新的emoji和流行趋势。你总能找到最新鲜的表情选项。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        87
+      ]
+    ]
+  },
+  "7zNvUG": {
+    "translation": "私たちのサービスは18歳未満の子供には適していません。私たちは故意に子供の個人情報を収集しません。",
+    "message": "我们的服务不适用于18岁以下的儿童。我们不会有意收集儿童的个人信息。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        67
+      ]
+    ]
+  },
+  "1P/WNr": {
+    "translation": "また、ネットワーククッキーを通じて非個人データも収集しています。これにはIPアドレス、ブラウザの種類、および当社のウェブサイトで訪れたページなどの詳細が含まれます。これらのデータは、当社のウェブサイトでのあなたの体験を向上させるために使用されます。",
+    "message": "我们还通过网络cookie收集非个人数据，其中包括您的IP地址、浏览器类型以及您在我们网站上访问的页面等使用详情。这些数据用于增强您在我们网站上的体验。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        61
+      ]
+    ]
+  },
+  "AuDf/2": {
+    "translation": "私はこれら的表情をどこでも使うことができますか？",
+    "message": "我可以在任何地方使用这些表情吗？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        71
+      ]
+    ]
+  },
+  "O1Pats": {
+    "translation": "または資料を他の人に移転したり、他のサーバーで「ミラーリング」したりすること。",
+    "message": "或将材料转移给另一个人或在任何其他服务器上“镜像”材料。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        85
+      ]
+    ]
+  },
+  "game.loading.tips.4": {
+    "translation": "楽しいスイッチを開く...",
+    "message": "打开快乐开关...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        29
+      ]
+    ]
+  },
+  "game.advance-tips.description": {
+    "translation": "これらのテクニックをマスターしてゲームのレベルを上げよう",
+    "message": "掌握这些技巧提升游戏水平",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        40
+      ]
+    ]
+  },
+  "game.rules.description": {
+    "translation": "これらのルールをマスターしてゲームを始めよう",
+    "message": "掌握这些规则开始游戏",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        26
+      ]
+    ]
+  },
+  "z3xT8q": {
+    "translation": "あなたの気分を説明し、AIがあなたに適切な表情を見つけてくれる",
+    "message": "描述你的心情，让 AI 帮你找到合适的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-type-write.tsx",
+        13
+      ]
+    ]
+  },
+  "r6acDk": {
+    "translation": "検索",
+    "message": "搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        302
+      ]
+    ]
+  },
+  "ErJqLL": {
+    "translation": "検索中",
+    "message": "搜索中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        299
+      ]
+    ]
+  },
+  "dnLXYZ": {
+    "translation": "検索エラー、後で再度お試しください",
+    "message": "搜索出错，请稍后重试",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        201
+      ]
+    ]
+  },
+  "tEMpk0": {
+    "translation": "支払い情報",
+    "message": "支付信息",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        58
+      ]
+    ]
+  },
+  "ZB1owk": {
+    "translation": "様々な口頭表現をサポート",
+    "message": "支持各种口语表达",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/emoji-func-tag.tsx",
+        9
+      ]
+    ]
+  },
+  "lm7p2W": {
+    "translation": "多言語検索をサポート",
+    "message": "支持多语言搜索",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/emoji-func-tag.tsx",
+        20
+      ]
+    ]
+  },
+  "ZQU+W3": {
+    "translation": "あなたのデータを収集する主な目的は、あなたの注文を処理し、私たちのウェブサイトの機能とサービスを改善することです。",
+    "message": "收集您的数据的主要目的是处理您的订单并改善我们网站的功能和服务。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        63
+      ]
+    ]
+  },
+  "46hgBE": {
+    "translation": "データ共有",
+    "message": "数据共享",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        64
+      ]
+    ]
+  },
+  "KrpxAk": {
+    "translation": "データ収集の目的",
+    "message": "数据收集目的",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        62
+      ]
+    ]
+  },
+  "5JC7T/": {
+    "translation": "文化的な違いの解釈",
+    "message": "文化差异解读",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-cultura.tsx",
+        120
+      ]
+    ]
+  },
+  "3bDcMx": {
+    "translation": "はい、EmojiClickは完全に無料で利用できます！隠れた料金はありませんし、サブスクリプションもありません——絵文字検索をシンプルにします。",
+    "message": "是的，EmojiClick完全免费使用！没有隐藏费用，也没有订阅——让emoji搜索变得简单。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        77
+      ]
+    ]
+  },
+  "F3PJlG": {
+    "translation": "利用規約",
+    "message": "服务条款",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        30
+      ]
+    ]
+  },
+  "geeoGa": {
+    "translation": "プライバシーポリシーの更新",
+    "message": "本隐私政策的更新",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        68
+      ]
+    ]
+  },
+  "1zGFc9": {
+    "translation": "資料の正確性",
+    "message": "材料准确性",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        91
+      ]
+    ]
+  },
+  "game.summer.description": {
+    "translation": "あなたのゲームパフォーマンスを確認",
+    "message": "查看您的游戏表现",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        36
+      ]
+    ]
+  },
+  "yl0Syq": {
+    "translation": "詳細を確認",
+    "message": "查看详情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        94
+      ]
+    ]
+  },
+  "LF2Lag": {
+    "translation": "概要",
+    "message": "概述",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        51
+      ]
+    ]
+  },
+  "3gwTaz": {
+    "translation": "EmojiClickへようこそ。当ウェブサイト (https://emojis.click/) を訪問することで、これらの利用規約、適用されるすべての法律と規則に従うことに同意し、適用される地元の法律を遵守する責任があることを認識します。これらの条項のいずれかに同意しない場合は、このウェブサイトの使用やアクセスを禁じられています。",
+    "message": "欢迎访问 EmojiClick。通过访问我们的网站 (https://emojis.click/)，您同意受这些服务条款、所有适用的法律和规定的约束，并同意您有责任遵守任何适用的当地法律。如果您不同意这些条款中的任何一条，您被禁止使用或访问本网站。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        78
+      ]
+    ]
+  },
+  "game.loading.tips.1": {
+    "translation": "ゲームスピリットを呼び出す中...",
+    "message": "正在召唤游戏精灵...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        26
+      ]
+    ]
+  },
+  "AW9NLp": {
+    "translation": "関連する表情が見つかりません",
+    "message": "没有找到相关表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        350
+      ]
+    ]
+  },
+  "game.loading.tips.5": {
+    "translation": "ゲームエネルギーを注入中...",
+    "message": "注入游戏能量...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        30
+      ]
+    ]
+  },
+  "cKm/RQ": {
+    "translation": "ゲーム",
+    "message": "游戏",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/header/navigation.tsx",
+        36
+      ]
+    ]
+  },
+  "game.loading.title": {
+    "translation": "ゲームロード",
+    "message": "游戏加载",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        37
+      ]
+    ]
+  },
+  "game.loading.status.loading": {
+    "translation": "ゲームロード中",
+    "message": "游戏加载中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        225
+      ]
+    ]
+  },
+  "game.summer.title": {
+    "translation": "ゲームサマリー",
+    "message": "游戏总结",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        35
+      ]
+    ]
+  },
+  "game.tips.title": {
+    "translation": "ゲームヒント",
+    "message": "游戏提示",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        23
+      ]
+    ]
+  },
+  "game.features.title": {
+    "translation": "ゲームの特徴",
+    "message": "游戏特色",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        29
+      ]
+    ]
+  },
+  "game.benefits.title": {
+    "translation": "ゲームの利点",
+    "message": "游戏益处",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        31
+      ]
+    ]
+  },
+  "game.secrets.title": {
+    "translation": "ゲームの秘訣",
+    "message": "游戏秘籍",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        33
+      ]
+    ]
+  },
+  "game.description.title": {
+    "translation": "ゲーム紹介",
+    "message": "游戏简介",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        41
+      ]
+    ]
+  },
+  "game.description.description": {
+    "translation": "ゲームの簡単な説明",
+    "message": "游戏简要介绍",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        42
+      ]
+    ]
+  },
+  "game.rules.title": {
+    "translation": "ゲームのルール",
+    "message": "游戏规则",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        25
+      ]
+    ]
+  },
+  "game.secrets.description": {
+    "translation": "ゲームの高度な秘訣",
+    "message": "游戏进阶秘籍",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        34
+      ]
+    ]
+  },
+  "DDScQ8": {
+    "translation": "クリックして絵文字をコピー",
+    "message": "点击可以复制表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/hot-emoji.tsx",
+        41
+      ]
+    ]
+  },
+  "DtlTmG": {
+    "translation": "クリックしてコピーし、自由に使いましょう！",
+    "message": "点击复制，然后随意使用！",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        65
+      ]
+    ]
+  },
+  "zaqc+T": {
+    "translation": "人気",
+    "message": "热门",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        65
+      ]
+    ]
+  },
+  "hvta5u": {
+    "translation": "人気の絵文字",
+    "message": "热门表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/hot-emoji.tsx",
+        25
+      ]
+    ]
+  },
+  "Z5lut1": {
+    "translation": "著作権 ©",
+    "message": "版权所有 ©",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        112
+      ]
+    ]
+  },
+  "game.features.description": {
+    "translation": "ユニークなゲームの特徴",
+    "message": "独特的游戏特色",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        30
+      ]
+    ]
+  },
+  "game.benefits.description": {
+    "translation": "ゲームをするメリット",
+    "message": "玩游戏的好处",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        32
+      ]
+    ]
+  },
+  "w/qYEh": {
+    "translation": "感情の意味を理解する",
+    "message": "理解情感语义",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/emoji-func-tag.tsx",
+        31
+      ]
+    ]
+  },
+  "MaJ5h3": {
+    "translation": "有効期限：2024-12-12",
+    "message": "生效日期：2024-12-12",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        50
+      ],
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        76
+      ]
+    ]
+  },
+  "+x4GVv": {
+    "translation": "AIを使って最適な絵文字を見つける",
+    "message": "用AI找到最适合的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji.tsx",
+        39
+      ]
+    ]
+  },
+  "1pO6Et": {
+    "translation": "AIの魔法で表現豊かな絵文字を作成",
+    "message": "用AI魔法创造富有表现力的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        89
+      ]
+    ]
+  },
+  "LgfBZM": {
+    "translation": "自然な言葉で表現、AIはあなたの全ての感情を理解します",
+    "message": "用最自然的方式描述，AI 懂你想表达的每一种情绪",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-type-write.tsx",
+        12
+      ]
+    ]
+  },
+  "SFA0Fs": {
+    "translation": "日常的な言葉で感情を表現し、エンターキーを押すかクリックして...",
+    "message": "用日常口语描述你的感受，回车或点击...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-emoji-dropdown.tsx",
+        273
+      ]
+    ]
+  },
+  "QGM+6Y": {
+    "translation": "メールアドレス",
+    "message": "电子邮件地址",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        57
+      ]
+    ]
+  },
+  "8d8fCg": {
+    "translation": "現在、EmojiClickは中国語への対応が最も充実していますが、他の言語の追加も計画しています。アップデートをお楽しみに！",
+    "message": "目前，EmojiClick对中文的支持最为友好，但我们正在努力添加更多语言。敬请期待更新！",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        82
+      ]
+    ]
+  },
+  "OS9sY4": {
+    "translation": "関連推薦",
+    "message": "相关推荐",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-recommand.tsx",
+        19
+      ]
+    ]
+  },
+  "Xwe3Ld": {
+    "translation": "ソーシャルシーン",
+    "message": "社交场景",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-scene.tsx",
+        20
+      ]
+    ]
+  },
+  "HguvCd": {
+    "translation": "種類",
+    "message": "种",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-modal.tsx",
+        54
+      ]
+    ]
+  },
+  "C1syp2": {
+    "translation": "簡単に文字を入力し、すぐに必要な絵文字を見つけます",
+    "message": "简单输入文字，快速找到想要的表情",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/search-type-write.tsx",
+        14
+      ]
+    ]
+  },
+  "2bRzLV": {
+    "translation": "適用法",
+    "message": "管辖法律",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        97
+      ]
+    ]
+  },
+  "game.loading.tips.2": {
+    "translation": "ゲームのブロックを組み立て中...",
+    "message": "组装游戏积木中...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        27
+      ]
+    ]
+  },
+  "J0CfpT": {
+    "translation": "お問い合わせ",
+    "message": "联系我们",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        70
+      ],
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        99
+      ],
+      [
+        "src/components/faq.tsx",
+        129
+      ],
+      [
+        "src/components/footer.tsx",
+        71
+      ]
+    ]
+  },
+  "tuZXxr": {
+    "translation": "絵文字の分類",
+    "message": "表情分类",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/category/category-emoji.tsx",
+        222
+      ]
+    ]
+  },
+  "9GQzzK": {
+    "translation": "絵文字データベースは何日ごとに更新されますか？",
+    "message": "表情数据库多久更新一次？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        86
+      ]
+    ]
+  },
+  "6bJ4pz": {
+    "translation": "西洋文化の解釈",
+    "message": "西方文化解读",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-cultura.tsx",
+        29
+      ]
+    ]
+  },
+  "EojHaD": {
+    "translation": "次のように検索してみてください：",
+    "message": "试试这样搜索：",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/search/emoji-search-example.tsx",
+        31
+      ]
+    ]
+  },
+  "game.loading.error.network": {
+    "translation": "ネットワーク接続を確認してから再度試してください",
+    "message": "请检查网络连接后重试",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        291
+      ]
+    ]
+  },
+  "game.loading.description": {
+    "translation": "少々お待ちください、ゲームを読み込み中です",
+    "message": "请稍候，游戏正在加载中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        38
+      ]
+    ]
+  },
+  "game.loading.tips.6": {
+    "translation": "ゲーム画面の調整中...",
+    "message": "调试游戏画面...",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        31
+      ]
+    ]
+  },
+  "NqIQv0": {
+    "translation": "責任制限",
+    "message": "责任限制",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        89
+      ]
+    ]
+  },
+  "2eLmtV": {
+    "translation": "文化的な使用上の注意",
+    "message": "跨文化使用建议",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/emoji-profile/emoji-cultura.tsx",
+        97
+      ]
+    ]
+  },
+  "Gu+yJ9": {
+    "translation": "表現したい内容を入力してください（例えば、「疲れた」や「スターみたいだ」など）。",
+    "message": "输入你想表达的内容（比如“我好累”或“感觉自己像个明星”）。",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        63
+      ]
+    ]
+  },
+  "XwSzkU": {
+    "translation": "他に質問がありますか？",
+    "message": "还有其他问题吗?",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        123
+      ]
+    ]
+  },
+  "WsDpb9": {
+    "translation": "これらの情報は、私たちのEmojiClickナビゲーションサイトでの注文処理のために収集されています。",
+    "message": "这些信息是为了在我们的 EmojiClick 导航站上处理订单而收集的。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        59
+      ]
+    ]
+  },
+  "7iV6ah": {
+    "translation": "これらの利用規約はアメリカ合衆国の法律に準拠し、その解釈に基づいています。あなたはその州または場所の裁判所の専属管轄権に服することに同意します。",
+    "message": "这些条款和条件受美国法律的管辖并根据其解释，您不可撤销地服从该州或地点法院的专属管辖权。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        98
+      ]
+    ]
+  },
+  "Tg/Khw": {
+    "translation": "このサービスは無料ですか？",
+    "message": "这项服务是免费的吗？",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/faq.tsx",
+        76
+      ]
+    ]
+  },
+  "game.loading.status.error": {
+    "translation": "接続エラー",
+    "message": "连接失败",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        227
+      ]
+    ]
+  },
+  "game.difficulty.description": {
+    "translation": "自分のレベルに合った難易度を選択",
+    "message": "选择适合你的难度",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        28
+      ]
+    ]
+  },
+  "game.loading.error.reload": {
+    "translation": "再読み込み",
+    "message": "重新加载",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        297
+      ]
+    ]
+  },
+  "game.loading.status.retrying": {
+    "translation": "再接続中",
+    "message": "重新连接中",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        226
+      ]
+    ]
+  },
+  "game.loading.retry.count": {
+    "translation": "再試行回数",
+    "message": "重试次数",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/games/game-loading.tsx",
+        277
+      ]
+    ]
+  },
+  "hisZrx": {
+    "translation": "リンク",
+    "message": "链接",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/terms-of-service/page.tsx",
+        93
+      ]
+    ]
+  },
+  "7nIkSW": {
+    "translation": "プライバシーポリシー",
+    "message": "隐私政策",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/footer.tsx",
+        31
+      ]
+    ]
+  },
+  "game.difficulty.title": {
+    "translation": "難易度レベル",
+    "message": "难度级别",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        27
+      ]
+    ]
+  },
+  "7bnvjZ": {
+    "translation": "個人情報以外のデータ",
+    "message": "非个人数据",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/(public)/privacy-policy/page.tsx",
+        60
+      ]
+    ]
+  },
+  "game.advance-tips.title": {
+    "translation": "上級テクニック",
+    "message": "高级技巧",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/common/section-header.tsx",
+        39
+      ]
+    ]
+  }
+}
