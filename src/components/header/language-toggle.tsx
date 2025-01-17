@@ -21,7 +21,7 @@ const LanguageToggleButton = memo(function LanguageToggleButton({
       role="button"
       className="relative btn border group-hover:border-1 group-hover:border-violet-600 bg-white m-1 hover:bg-transparent"
     >
-      <p className="font-semibold flex items-center justify-between gap-2 text-md w-[126px]">
+      <p className="font-semibold flex items-center justify-between gap-2 text-md w-[116px]">
         <span className="ml-2">
           {getLocaleFlag(lang || DEFAULT_LOCALE)}
           <span className="ml-1">{currentLang}</span>
@@ -47,7 +47,7 @@ const LanguageDropdownItems = memo(function LanguageDropdownItems({
   return (
     <ul
       tabIndex={0}
-      className="dropdown-content menu bg-base-100 border rounded-lg z-[1] p-2 w-[164px] shadow"
+      className="dropdown-content menu bg-base-100 border rounded-lg z-[1] p-2 w-[154px] shadow"
     >
       {locales.map((locale) => (
         <li key={locale.key}>
