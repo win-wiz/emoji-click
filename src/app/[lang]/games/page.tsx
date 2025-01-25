@@ -4,7 +4,7 @@ import { loadTranslationMessagesOnServerSide } from "@/locales/messagesLoader";
 import { cn } from "@/utils";
 import { msg } from "@lingui/macro";
 import { setupI18n } from "@lingui/core";
-import { Link } from "lucide-react";
+import Link from "next/link";
 
 // 统一的样式常量定义
 const STYLES = {
