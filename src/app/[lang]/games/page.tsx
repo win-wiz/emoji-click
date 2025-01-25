@@ -4,6 +4,7 @@ import { loadTranslationMessagesOnServerSide } from "@/locales/messagesLoader";
 import { cn } from "@/utils";
 import { msg } from "@lingui/macro";
 import { setupI18n } from "@lingui/core";
+import { Link } from "lucide-react";
 
 // 统一的样式常量定义
 const STYLES = {
@@ -85,9 +86,9 @@ export default async function GamesPage({ params: { lang } }: { params: { lang: 
             const bg = GAME_BACKGROUNDS[game.id as keyof typeof GAME_BACKGROUNDS];
             const gameMessages = GAME_MESSAGES[game.id as keyof typeof GAME_MESSAGES];
             return (
-              <a 
+              <Link
                 key={game.id}
-                href={`/games/${game.id}`} 
+                href={`/${lang}/games/${game.id}`} 
                 className={STYLES.card.base}
               >
                 <div className={cn(
@@ -108,7 +109,7 @@ export default async function GamesPage({ params: { lang } }: { params: { lang: 
                     {i18n._(gameMessages.description)}
                   </p>
                 </div>
-              </a>
+              </Link>
             );
           })}
         </div>
