@@ -11,10 +11,23 @@ console.log('localeNames===>>>>', localeNames);
  * @param {string} file 
  */
 async function processLanguage (file) {
-
   const language = file.split('.')[0];
 
+  // 对于中文，我们需要确保 translation 字段和 message 字段一致
   if (language === 'zh') {
+    console.log('处理中文翻译...');
+    const content = await fs.readFile(path.join(directoryPath, file + '/messages.json'), 'utf8');
+    const json = JSON.parse(content);
+    const keys = Object.keys(json);
+
+    // 确保所有中文条目的 translation 字段和 message 字段一致
+    keys.forEach(key => {
+      json[key].translation = json[key].message;
+    });
+
+    const jsonStr = JSON.stringify(json, null, 2);
+    await fs.writeFile(path.join(directoryPath, file + '/messages.json'), jsonStr, 'utf8');
+    console.log('中文翻译处理完成');
     return;
   }
 
@@ -44,19 +57,6 @@ async function processLanguage (file) {
 
   console.log(`需要翻译 ${Object.keys(needTranslateKeys).length} 条数据`);
 
-  // const prompt = `
-  //   - 你是一个擅长数据处理和多语言翻译的AI专家，具备高效处理JSON数据和灵活应对多种语言需求的能力。 
-  //   - 翻译考虑到专业术语和正式风格，适用于正式文档和官方交流。
-  //   - 翻译的结果输出为JSON内容key保持不变，直接输出json内容不要加\`\`\`json\`\`\`标签。，不要做任何解释
-  //   - 保证json格式准确性，确保key与内容成对出现。
-  //   - 不是简单的翻译，而是要基于原有语言的上下文意思，进行符合目标语言文化习惯的改写，确保自然，简洁，地道
-  //   - 翻译考虑使用当地的习惯用语，而不是简单的文字翻译，了解原始文字的意境找到当地的表达方式进行翻译
-  //   - 翻译应忠于原文，同时考虑到目标语言的文化、习俗和网络用语，避免直译，确保翻译的自然流畅和文化适应性
-  //   - 翻译目标语言为：${localeNames[language]}
-  //   - 不要做任何解释，直接输出json内容，也不要输出\`\`\`json\`\`\`标签
-  //   - 输入JSON数据：
-  //       ${JSON.stringify(needTranslateKeys, null, 2)}
-  // `;
   const prompt = `
     - Role: 国际网页翻译专家
     - Background: 用户需要将网页产品进行国际化，确保翻译不仅准确，而且能够贴近目标语言的文化和表达习惯，使产品在不同地区都能获得良好的用户体验。
@@ -78,10 +78,9 @@ async function processLanguage (file) {
    * @type {any}
    */
   let msg = await translate(prompt);
-  // console.log('openai 返回的数据：', JSON.stringify(msg, null, 2));
 
   msg = msg.choices[0].message.content;
-  // console.log('返回的数据中包含的msg===>>>>', msg);
+
   /**
    * 修复JSON格式
    * @param {string} str 
@@ -108,7 +107,7 @@ async function processLanguage (file) {
   msg = safeJSONParse(msg);
 
   if (!msg) {
-    // console.error(`${language} 语言包翻译失败`);
+    console.error(`${language} 语言包翻译失败`);
     return;
   }
 
@@ -164,14 +163,21 @@ async function processLanguageByQueue (languages, concurrency = 3) {
 
   return results;
 }
+
 /**
  * 入口主函数
  */
 async function main () {
   try {
     const files = await fs.readdir(directoryPath);
-    const languagesToProcess = files.filter(file => file !== 'zh');
-    const results = await processLanguageByQueue(languagesToProcess);
+    // 先处理中文文件，确保中文翻译正确
+    const zhIndex = files.indexOf('zh');
+    if (zhIndex !== -1) {
+      await processLanguage('zh');
+      files.splice(zhIndex, 1);
+    }
+    // 再处理其他语言
+    const results = await processLanguageByQueue(files);
     console.log('翻译结果：', results.join('\n'));
   } catch (error) {
     console.error('翻译失败', error);

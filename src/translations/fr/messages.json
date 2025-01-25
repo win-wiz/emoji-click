@@ -828,6 +828,17 @@
       ]
     ]
   },
+  "hz2d0u": {
+    "translation": "Combinez deux emojis en un seul pour créer de nouveaux emojis amusants.",
+    "message": "将两个表情合并成一个表情，创造出有趣的新表情。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        32
+      ]
+    ]
+  },
   "QP4I14": {
     "translation": "utiliser les matériaux à des fins commerciales ou pour toute présentation publique (commerciale ou non commerciale) ;",
     "message": "将材料用于任何商业目的，或用于任何公共展示（商业或非商业）；",
@@ -995,6 +1006,17 @@
       [
         "src/components/faq.tsx",
         100
+      ]
+    ]
+  },
+  "BIU953": {
+    "translation": "Nous travaillons dur sur ce jeu divertissant, restez à l'écoute !",
+    "message": "我们正在努力开发这个有趣的游戏，敬请期待！",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/emoji-merge/page.tsx",
+        24
       ]
     ]
   },
@@ -1421,6 +1443,17 @@
     ],
     "obsolete": true
   },
+  "e2HE+S": {
+    "translation": "En cours de développement",
+    "message": "游戏开发中",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/emoji-merge/page.tsx",
+        21
+      ]
+    ]
+  },
   "game.summer.title": {
     "translation": "Récapitulatif du jeu",
     "message": "游戏总结",
@@ -1803,6 +1836,17 @@
     ],
     "obsolete": true
   },
+  "IXXphT": {
+    "translation": "Un jeu ludique pour tester votre mémoire, en matchant des emojis similaires en retournant les cartes.",
+    "message": "考验记忆力的趣味游戏，通过翻牌匹配相同的表情来提升记忆能力。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        28
+      ]
+    ]
+  },
   "J0CfpT": {
     "translation": "Contactez-nous",
     "message": "联系我们",
@@ -1837,6 +1881,17 @@
       ]
     ]
   },
+  "fXMSrx": {
+    "translation": "Combinaison d'emojis",
+    "message": "表情合并",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        31
+      ]
+    ]
+  },
   "9GQzzK": {
     "translation": "Avec quelle fréquence la base de données d'emojis est-elle mise à jour ?",
     "message": "表情数据库多久更新一次？",
@@ -1845,6 +1900,17 @@
       [
         "src/components/faq.tsx",
         86
+      ]
+    ]
+  },
+  "/J/MuP": {
+    "translation": "Souvenirs de visages",
+    "message": "表情记忆翻牌",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        27
       ]
     ]
   },
@@ -1935,6 +2001,17 @@
       [
         "src/app/[lang]/(public)/terms-of-service/page.tsx",
         89
+      ]
+    ]
+  },
+  "E5e0iE": {
+    "translation": "Collection de jeux amusants",
+    "message": "趣味游戏集",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        63
       ]
     ]
   },

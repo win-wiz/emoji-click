@@ -572,6 +572,17 @@
       ]
     ]
   },
+  "hz2d0u": {
+    "translation": "2つの絵文字を1つに結合し、面白い新しい絵文字を作り出します。",
+    "message": "将两个表情合并成一个表情，创造出有趣的新表情。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        32
+      ]
+    ]
+  },
   "QP4I14": {
     "translation": "資料を商業目的で使用する、または公共の場所（商業的であれ非商業的であれ）で展示すること；",
     "message": "将材料用于任何商业目的，或用于任何公共展示（商业或非商业）；",
@@ -727,6 +738,17 @@
       [
         "src/components/faq.tsx",
         100
+      ]
+    ]
+  },
+  "BIU953": {
+    "translation": "私たちはこの楽しいゲームの開発に尽力しています。お楽しみに！",
+    "message": "我们正在努力开发这个有趣的游戏，敬请期待！",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/emoji-merge/page.tsx",
+        24
       ]
     ]
   },
@@ -1093,6 +1115,17 @@
       ]
     ]
   },
+  "e2HE+S": {
+    "translation": "ゲーム開発中",
+    "message": "游戏开发中",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/emoji-merge/page.tsx",
+        21
+      ]
+    ]
+  },
   "game.summer.title": {
     "translation": "ゲームサマリー",
     "message": "游戏总结",
@@ -1427,6 +1460,17 @@
       ]
     ]
   },
+  "IXXphT": {
+    "translation": "記憶力を試す楽しいゲームで、同じ絵文字を見つけるためにカードをめくって記憶力を高めましょう。",
+    "message": "考验记忆力的趣味游戏，通过翻牌匹配相同的表情来提升记忆能力。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        28
+      ]
+    ]
+  },
   "J0CfpT": {
     "translation": "お問い合わせ",
     "message": "联系我们",
@@ -1461,6 +1505,17 @@
       ]
     ]
   },
+  "fXMSrx": {
+    "translation": "絵文字の結合",
+    "message": "表情合并",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        31
+      ]
+    ]
+  },
   "9GQzzK": {
     "translation": "絵文字データベースは何日ごとに更新されますか？",
     "message": "表情数据库多久更新一次？",
@@ -1469,6 +1524,17 @@
       [
         "src/components/faq.tsx",
         86
+      ]
+    ]
+  },
+  "/J/MuP": {
+    "translation": "絵文字記憶カードゲーム",
+    "message": "表情记忆翻牌",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        27
       ]
     ]
   },
@@ -1535,6 +1601,17 @@
       [
         "src/app/[lang]/(public)/terms-of-service/page.tsx",
         89
+      ]
+    ]
+  },
+  "E5e0iE": {
+    "translation": "楽しいゲーム集",
+    "message": "趣味游戏集",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        63
       ]
     ]
   },

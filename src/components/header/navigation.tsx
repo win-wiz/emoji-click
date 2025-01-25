@@ -32,7 +32,7 @@ const Navigation = ({
             <NavItem>
               {
                 !isGamesRoute ? (
-                  <Link href={`/${lang}/emoji-memory-flop`} className="text-purple-600 hover:text-purple-800 transition-colors inline-flex items-center relative group">
+                  <Link href={`/${lang}/games/emoji-memory-flop`} className="text-purple-600 hover:text-purple-800 transition-colors inline-flex items-center relative group">
                     <Trans>游戏</Trans>
                     <span className="absolute -top-0.5 -right-2.5 flex h-2.5 w-2.5">
                       <span className="absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75 animate-[ping_1.5s_cubic-bezier(0,0,0.2,1)_infinite]"></span>

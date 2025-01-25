@@ -840,6 +840,17 @@
       ]
     ]
   },
+  "hz2d0u": {
+    "translation": "Merge two emojis to create a new emoji, making it more interesting.",
+    "message": "将两个表情合并成一个表情，创造出有趣的新表情。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        32
+      ]
+    ]
+  },
   "QP4I14": {
     "translation": "Use the materials for any commercial purpose, or for any public display (commercial or non-commercial);",
     "message": "将材料用于任何商业目的，或用于任何公共展示（商业或非商业）；",
@@ -1007,6 +1018,17 @@
       [
         "src/components/faq.tsx",
         100
+      ]
+    ]
+  },
+  "BIU953": {
+    "translation": "We are working hard to develop this fun game, stay tuned!",
+    "message": "我们正在努力开发这个有趣的游戏，敬请期待！",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/emoji-merge/page.tsx",
+        24
       ]
     ]
   },
@@ -1433,6 +1455,17 @@
     ],
     "obsolete": true
   },
+  "e2HE+S": {
+    "translation": "We are working hard to develop this fun game, stay tuned!",
+    "message": "我们正在努力开发这个有趣的游戏，敬请期待！",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/emoji-merge/page.tsx",
+        21
+      ]
+    ]
+  },
   "game.summer.title": {
     "translation": "Game Summary",
     "message": "游戏总结",
@@ -1815,6 +1848,17 @@
     ],
     "obsolete": true
   },
+  "IXXphT": {
+    "translation": "A fun memory challenge game where you match pairs of identical emojis by flipping cards, helping to boost your memory skills.",
+    "message": "考验记忆力的趣味游戏，通过翻牌匹配相同的表情来提升记忆能力。",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        28
+      ]
+    ]
+  },
   "J0CfpT": {
     "translation": "Contact Us",
     "message": "联系我们",
@@ -1849,6 +1893,17 @@
       ]
     ]
   },
+  "fXMSrx": {
+    "translation": "Emoji Merge",
+    "message": "表情合并",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        31
+      ]
+    ]
+  },
   "9GQzzK": {
     "translation": "How often is the emoji database updated?",
     "message": "表情数据库多久更新一次？",
@@ -1857,6 +1912,17 @@
       [
         "src/components/faq.tsx",
         86
+      ]
+    ]
+  },
+  "/J/MuP": {
+    "translation": "Emoji Memory Flop",
+    "message": "表情记忆翻牌",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        27
       ]
     ]
   },
@@ -1947,6 +2013,17 @@
       [
         "src/app/[lang]/(public)/terms-of-service/page.tsx",
         89
+      ]
+    ]
+  },
+  "E5e0iE": {
+    "translation": "Game Collection",
+    "message": "趣味游戏集",
+    "comments": [],
+    "origin": [
+      [
+        "src/app/[lang]/games/page.tsx",
+        63
       ]
     ]
   },
