@@ -16,6 +16,8 @@ const MODEL_DOUBLE_LINK_128K = env.DOUBAO_LINK_128K_MODEL!;
 export async function doubaoGenerateEmoji(query: string, lang: AVAILABLE_LOCALES) {
   const url = env.DOUBAO_BASE_URL! + '/chat/completions';
   const apiKey = env.DOUBAO_OPENAI_API_KEY!;
+  console.log('url===>>>', url);
+  console.log('apiKey===>>>', apiKey);
   return fetchApi(url, MODEL_DOUBLE_LINK_128K, lang, query, apiKey);
 }
 

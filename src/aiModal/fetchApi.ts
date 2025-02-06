@@ -30,8 +30,8 @@ export async function fetchApi(
   const prompts = map_prompts[lang];
   // const content = lang === 'zh' ? `语言：${lang}, 关键词是：${query}` : `Language: ${lang}, Keywords: ${query}`;
   const content = lang && map_contents[lang] ? map_contents[lang](lang, query) : '';
-  console.log('prompts===>>>', prompts);
-  console.log('content===>>>', content);
+  // console.log('prompts===>>>', prompts);
+  // console.log('content===>>>', content);
 
   const bodyData = {
     model,
@@ -64,7 +64,10 @@ export async function fetchApi(
       body: reqBody,
     });
 
+    // console.log('response===>>>', response);
     const data: Record<string, any> = await response.json();
+
+    // console.log('data===>>>', data);
 
     return JSON.parse(data.choices[0]?.message.content || '');
     // return data;
