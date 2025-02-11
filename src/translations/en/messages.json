@@ -114,6 +114,17 @@
     ],
     "obsolete": true
   },
+  "emoji_plugin": {
+    "translation": "Emoji Toolbar",
+    "message": "Emoji 插件",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/header/navigation.tsx",
+        54
+      ]
+    ]
+  },
   "kM0I9v": {
     "translation": "EmojiClick | Intelligent Emoji Search for All Chats",
     "message": "EmojiClick | Smart Emoji Search for Every Chat",
@@ -847,7 +858,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        32
+        51
       ]
     ]
   },
@@ -1417,7 +1428,7 @@
     "origin": [
       [
         "src/components/header/navigation.tsx",
-        36
+        61
       ]
     ]
   },
@@ -1457,7 +1468,7 @@
   },
   "e2HE+S": {
     "translation": "We are working hard to develop this fun game, stay tuned!",
-    "message": "我们正在努力开发这个有趣的游戏，敬请期待！",
+    "message": "游戏开发中",
     "comments": [],
     "origin": [
       [
@@ -1855,7 +1866,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        28
+        47
       ]
     ]
   },
@@ -1900,7 +1911,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        31
+        50
       ]
     ]
   },
@@ -1922,7 +1933,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        27
+        46
       ]
     ]
   },
@@ -2023,7 +2034,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        63
+        82
       ]
     ]
   },

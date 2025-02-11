@@ -14,6 +14,17 @@
       ]
     ]
   },
+  "emoji_plugin": {
+    "translation": "絵文字ツールバー",
+    "message": "Emoji 插件",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/header/navigation.tsx",
+        54
+      ]
+    ]
+  },
   "a17ysh": {
     "translation": "EmojiClick | AIが最適な絵文字を見つける",
     "message": "EmojiClick | 用AI找到最适合的表情",
@@ -579,7 +590,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        32
+        51
       ]
     ]
   },
@@ -1089,7 +1100,7 @@
     "origin": [
       [
         "src/components/header/navigation.tsx",
-        36
+        61
       ]
     ]
   },
@@ -1467,7 +1478,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        28
+        47
       ]
     ]
   },
@@ -1512,7 +1523,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        31
+        50
       ]
     ]
   },
@@ -1534,7 +1545,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        27
+        46
       ]
     ]
   },
@@ -1611,7 +1622,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        63
+        82
       ]
     ]
   },

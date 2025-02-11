@@ -5,7 +5,7 @@ import { AVAILABLE_LOCALES } from "@/locales/config";
 import NavLogo from "./nav-logo";
 import Link from "next/link";
 import NavItem from "./nav-item";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Trans } from "@lingui/macro";
 
@@ -18,6 +18,26 @@ const Navigation = ({
   const pathname = usePathname();
   const isGamesRoute = (pathname.endsWith(`/${lang}/games`) || pathname.endsWith(`/${lang}/games/`));
   
+  const [linkUrl, setLinkUrl] = useState<string>('');
+
+  useEffect(() => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    let storeUrl = '';
+
+    if (userAgent.includes('edg/')) {
+      // Microsoft Edge
+      storeUrl = 'https://microsoftedge.microsoft.com/addons/detail/emojiclick-toolbar/bendknbccalcldbflflcgkpbnoldneli?hl=zh-CN';
+    } else if (userAgent.includes('firefox')) {
+      // Firefox
+      storeUrl = 'https://addons.mozilla.org/zh-CN/firefox/addon/emojiclick-toolbar/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search';
+    } else {
+      // Default to Chrome/Others
+      storeUrl = 'https://chromewebstore.google.com/detail/emojiclick-toolbar/aconcpkdjoahofphmapdpjiioenkcaeo';
+    }
+
+    setLinkUrl(storeUrl);
+  }, []);
+
   return (
     <header className={`sticky top-0 z-50 w-full ${
       isGamesRoute 
@@ -29,6 +49,11 @@ const Navigation = ({
           <NavLogo lang={lang} />
           
           <div className="flex items-center gap-6">
+            <NavItem>
+              <Link target="_blank" href={linkUrl} className="text-purple-600 hover:text-purple-800 transition-colors inline-flex items-center relative group">
+                <Trans id="emoji_plugin">Emoji 插件</Trans>
+              </Link>
+            </NavItem>
             <NavItem>
               {
                 !isGamesRoute ? (

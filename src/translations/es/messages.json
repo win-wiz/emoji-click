@@ -114,6 +114,17 @@
     ],
     "obsolete": true
   },
+  "emoji_plugin": {
+    "translation": "Emoji Toolbar",
+    "message": "Emoji 插件",
+    "comments": [],
+    "origin": [
+      [
+        "src/components/header/navigation.tsx",
+        54
+      ]
+    ]
+  },
   "kM0I9v": {
     "translation": "EmojiClick | Búsqueda inteligente de emojis para cada chat",
     "message": "EmojiClick | Smart Emoji Search for Every Chat",
@@ -835,7 +846,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        32
+        51
       ]
     ]
   },
@@ -1405,7 +1416,7 @@
     "origin": [
       [
         "src/components/header/navigation.tsx",
-        36
+        61
       ]
     ]
   },
@@ -1843,7 +1854,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        28
+        47
       ]
     ]
   },
@@ -1888,7 +1899,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        31
+        50
       ]
     ]
   },
@@ -1910,7 +1921,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        27
+        46
       ]
     ]
   },
@@ -2011,7 +2022,7 @@
     "origin": [
       [
         "src/app/[lang]/games/page.tsx",
-        63
+        82
       ]
     ]
   },
