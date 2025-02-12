@@ -43,6 +43,7 @@ export default async function RootLayout({
     <html lang={lang} suppressHydrationWarning className="scroll-smooth">
       <head>
         <link rel="canonical" href="https://emojis.click/en" />
+        <meta name="baidu-site-verification" content="codeva-UbrA1SnenS" />
       </head>
       <body className="bg-gray-800">
         <AppWithTranslation i18n={i18n}>
