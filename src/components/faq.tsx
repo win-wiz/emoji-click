@@ -93,9 +93,9 @@ const FAQ = memo(() => {
   return (
     <div className="bg-violet-50/30 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-3xl font-extrabold text-gray-900 mb-4 text-center">
+        <h2 className="text-3xl font-extrabold text-gray-900 mb-4 text-center">
           {t`常见问题解答`}
-        </h1>
+        </h2>
         <p className="text-center text-gray-600 mb-8">
           {t`我们整理了一些常见问题,希望能够帮助你更好地使用EmojiClick。如果你有其他疑问,欢迎随时联系我们!`}
         </p>
@@ -107,9 +107,9 @@ const FAQ = memo(() => {
                   <span className="flex flex-shrink-0 items-center justify-center w-6 h-6 rounded-full bg-violet-500 text-violet-100 text-sm mr-2">
                     {question.icon}
                   </span>
-                  <h2 className="text-base font-semibold tracking-tight text-gray-900 hover:text-violet-600 transition-colors">
+                  <h3 className="text-base font-semibold tracking-tight text-gray-900 hover:text-violet-600 transition-colors">
                     {question.title}
-                  </h2>
+                  </h3>
                 </div>
                 <div className="text-sm text-gray-700 leading-relaxed">
                   {question.content}
