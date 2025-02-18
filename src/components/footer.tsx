@@ -58,6 +58,11 @@ const FriendLinks = memo(() => (
         Wordless
       </Link>
     </li>
+    <li>
+      <Link target="_blank" href="https://mergeek.com" className={linkStyle}>
+        Mergeek Discover
+      </Link>
+    </li>
   </ul>
 ));
 
