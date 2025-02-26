@@ -18,7 +18,7 @@ export async function emojiAiSearch(query: string, lang: AVAILABLE_LOCALES) {
     console.error('JSON解析失败，尝试修复', error);
 
     result = await doubaoGenerateEmoji(query, lang);
-    console.log('result', result);
+    // console.log('result', result);
     // result = [{
     //   status: 'search error',
     //   message: JSON.stringify(error),
