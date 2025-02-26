@@ -34,7 +34,7 @@ export async function fetchEmojiGame(initLang: AVAILABLE_LOCALES, code: string) 
 
     const result = await emojiGamePrepare.execute();
 
-    console.log('返回的结果===>>>', result);
+    // console.log('返回的结果===>>>', result);
     return {
       success: true,
       data: result
