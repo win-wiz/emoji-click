@@ -20,6 +20,8 @@ const DecorativeLine = memo(() => (
   <div className="absolute left-4 -top-2 bottom-0 w-[2px] bg-gradient-to-b from-transparent via-purple-300/30 to-transparent" />
 ));
 
+DecorativeLine.displayName = 'DecorativeLine';
+
 BackgroundGradient.displayName = 'BackgroundGradient';
 
 const GamePageLayout = memo(({ gameObj, iframeSrc }: GamePageLayoutProps) => {

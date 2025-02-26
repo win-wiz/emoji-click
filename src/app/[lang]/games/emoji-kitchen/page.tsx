@@ -11,7 +11,7 @@ interface GamesPageProps {
   };
 }
 
-const BaseUrl = 'https://emoji-kitchen-game.pages.dev';
+const BaseUrl = 'https://emoji-kitchen.emojis.click';
 
 const defaultGameData: GameItemResponse = {
   name: 'Emoji Kitchen',
