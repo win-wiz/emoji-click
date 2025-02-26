@@ -51,7 +51,7 @@ function GameSection({
 }
 
 // 主组件
-export function GameDetail({ gameItem }: { gameItem: Partial<GameItem> }) {
+export function GameDetail({ gameItem }: { gameItem: Partial<Record<string, any>> }) {
   return (
     <div className={STYLES.container.wrapper}>
       {/* <GameSection gradient="tips">

@@ -1,0 +1,36 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  text-align: center;
+  padding: 2rem;
+}
+
+.spinner {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  border-top: 2px solid rgb(168 85 247); /* purple-500 */
+  border-bottom: 2px solid rgb(168 85 247);
+  animation: spin 1s linear infinite;
+  will-change: transform;
+}
+
+.text {
+  margin-top: 1rem;
+  color: rgb(75 85 99); /* gray-600 */
+} 

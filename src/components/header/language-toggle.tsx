@@ -16,19 +16,18 @@ const LanguageToggleButton = memo(function LanguageToggleButton({
   currentLang: string;
 }) {
   return (
-    <div
-      tabIndex={0}
-      role="button"
-      className="relative btn border group-hover:border-1 group-hover:border-violet-600 bg-white m-1 hover:bg-transparent"
+    <button
+      type="button"
+      className="outline-none flex items-center px-3 py-2 rounded-lg bg-white hover:bg-gray-50/80 transition-colors duration-200"
     >
-      <p className="font-semibold flex items-center justify-between gap-2 text-md w-[116px]">
-        <span className="ml-2">
+      <div className="font-semibold flex items-center justify-between gap-2 text-md w-[116px]">
+        <span>
           {getLocaleFlag(lang || DEFAULT_LOCALE)}
-          <span className="ml-1">{currentLang}</span>
+          <span className="ml-1 text-purple-600 hover:text-purple-800 font-normal">{currentLang}</span>
         </span>
         <ChevronDown className="w-4 h-4"/>
-      </p>
-    </div>
+      </div>
+    </button>
   );
 });
 
@@ -46,12 +45,14 @@ const LanguageDropdownItems = memo(function LanguageDropdownItems({
 
   return (
     <ul
-      tabIndex={0}
-      className="dropdown-content menu bg-base-100 border rounded-lg z-[1] p-2 w-[154px] shadow"
+      className="dropdown-content menu bg-white border border-gray-100 rounded-lg z-[1] p-2 w-[154px] shadow-lg"
     >
       {locales.map((locale) => (
-        <li key={locale.key}>
-          <Link href={getLocalePath(locale.key)}>
+        <li key={locale.key} className="outline-none">
+          <Link 
+            href={getLocalePath(locale.key)} 
+            className="flex items-center gap-2 px-4 py-2 text-sm text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors duration-200 outline-none active:bg-purple-50"
+          >
             {getLocaleFlag(locale.key)} {locale.name}
           </Link>
         </li>
@@ -65,7 +66,7 @@ function LanguageToggle({ lang }: { lang: AVAILABLE_LOCALES }) {
   const pathname = usePathname();
 
   return (
-    <div className="group dropdown dropdown-end">
+    <div className="dropdown dropdown-end">
       <LanguageToggleButton lang={lang} currentLang={currentLang} />
       <LanguageDropdownItems locales={locales} pathname={pathname} />
     </div>

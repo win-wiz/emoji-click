@@ -1,5 +1,4 @@
 export interface GameItem {
-  id: number;
   name: string;
   code: string;
   coverImageUrl: string;
@@ -8,10 +7,12 @@ export interface GameItem {
   briefDesc: string;
   detailDesc: string;
   basicRule: string;
-  advancedSkills: string;
-  benefits: string;
-  features: string;
-  levelDesc: string;
-  gameSecret: string;
+  advancedRule: string;
+  tips: string;
   faq: string;
 }
+
+// 创建一个新的类型，用于处理可能为空的字段
+export type GameItemResponse = {
+  [K in keyof GameItem]: GameItem[K] | null;
+};

@@ -8,6 +8,7 @@ import NavItem from "./nav-item";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Trans } from "@lingui/macro";
+import GameDropdown from "./game-dropdown";
 
 const Navigation = ({
   lang
@@ -54,22 +55,7 @@ const Navigation = ({
                 <Trans id="emoji_plugin">Emoji 插件</Trans>
               </Link>
             </NavItem>
-            <NavItem>
-              {
-                !isGamesRoute ? (
-                  <Link href={`/${lang}/games/emoji-memory-flop`} className="text-purple-600 hover:text-purple-800 transition-colors inline-flex items-center relative group">
-                    <Trans>游戏</Trans>
-                    <span className="absolute -top-0.5 -right-2.5 flex h-2.5 w-2.5">
-                      <span className="absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75 animate-[ping_1.5s_cubic-bezier(0,0,0.2,1)_infinite]"></span>
-                      <span className="absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75 animate-[ping_1.5s_cubic-bezier(0,0,0.2,1)_infinite] delay-300"></span>
-                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-gradient-to-r from-red-500 to-rose-400 group-hover:from-red-600 group-hover:to-rose-500 transition-colors duration-200 shadow-sm"></span>
-                    </span>
-                  </Link>
-                ) : (
-                  <></>
-                )
-              }
-            </NavItem>
+            <GameDropdown lang={lang} isGamesRoute={isGamesRoute} />
             <LanguageToggle lang={lang} />
           </div>
         </nav>

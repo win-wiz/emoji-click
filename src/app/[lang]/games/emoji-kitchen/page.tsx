@@ -11,9 +11,11 @@ interface GamesPageProps {
   };
 }
 
+const BaseUrl = 'https://emoji-kitchen-game.pages.dev';
+
 const defaultGameData: GameItemResponse = {
-  name: 'Emoji Memory Flop',
-  code: 'emoji-memory-flop',
+  name: 'Emoji Kitchen',
+  code: 'emoji-kitchen',
   coverImageUrl: null,
   iframeUrl: null,
   starting: null,
@@ -26,19 +28,19 @@ const defaultGameData: GameItemResponse = {
 };
 
 export async function generateMetadata({ params }: { params: { lang: AVAILABLE_LOCALES } }): Promise<Metadata> {
-  const result = await fetchEmojiGameForMeta(params.lang, 'emoji-memory-flop');
+  const result = await fetchEmojiGameForMeta(params.lang, 'emoji-kitchen');
   const gameObj = result.success && result.data?.[0] ? result.data[0] : defaultGameData;
 
   return {
-    title: `EmojiClick | ${gameObj.name ?? 'Memory Game'}`,
-    description: gameObj.briefDesc ?? 'An engaging emoji memory game',
+    title: `EmojiClick | ${gameObj.name ?? 'Kitchen Game'}`,
+    description: gameObj.briefDesc ?? 'An engaging emoji kitchen game',
     keywords: `emoji search, AI-powered emoji, EmojiClick, smart emoji tool, contextual emoji, emoji discovery, chat enhancement, emoji recommendation engine`,
   }
 }
 
 export default async function GamesPage({ params }: GamesPageProps) {
   const { lang } = params;
-  const result = await fetchEmojiGame(lang, 'emoji-memory-flop');
+  const result = await fetchEmojiGame(lang, 'emoji-kitchen');
 
   if (!result.success) {
     return (
@@ -55,7 +57,7 @@ export default async function GamesPage({ params }: GamesPageProps) {
   return (
     <GamePageLayout 
       gameObj={gameObj as GameItemResponse} 
-      iframeSrc={`https://memory-game.emojis.click/${lang}`} 
+      iframeSrc={`${BaseUrl}/${lang}`} 
     />
   );
 }

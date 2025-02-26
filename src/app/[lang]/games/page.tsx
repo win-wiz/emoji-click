@@ -46,7 +46,7 @@ const GAME_MESSAGES = {
     title: msg`表情记忆翻牌`,
     description: msg`考验记忆力的趣味游戏，通过翻牌匹配相同的表情来提升记忆能力。`
   },
-  'emoji-merge': {
+  'emoji-kitchen': {
     title: msg`表情合并`,
     description: msg`将两个表情合并成一个表情，创造出有趣的新表情。`
   }

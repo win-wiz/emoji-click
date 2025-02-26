@@ -5,10 +5,11 @@ import { db } from "@/server/db";
 import { eq, and } from "drizzle-orm";
 
 
-export async function fetchEmojiMemberGame(initLang: AVAILABLE_LOCALES) {
+export async function fetchEmojiGame(initLang: AVAILABLE_LOCALES, code: string) {
 
   const lang = supportLang.includes(initLang) ? initLang : 'en';
 
+  // console.log('lang===>>>', lang);
   try {
     const emojiGamePrepare = db
       .select({
@@ -28,11 +29,12 @@ export async function fetchEmojiMemberGame(initLang: AVAILABLE_LOCALES) {
         faq: emojiGame.faq,
       })
       .from(emojiGame)
-      .where(and(eq(emojiGame.language, lang)))
+      .where(and(eq(emojiGame.language, lang), eq(emojiGame.code, code)))
       .prepare();
 
     const result = await emojiGamePrepare.execute();
 
+    console.log('返回的结果===>>>', result);
     return {
       success: true,
       data: result
@@ -45,7 +47,7 @@ export async function fetchEmojiMemberGame(initLang: AVAILABLE_LOCALES) {
   }
 }
 
-export async function fetchEmojiMemberGameForMeta(initLang: AVAILABLE_LOCALES) {
+export async function fetchEmojiGameForMeta(initLang: AVAILABLE_LOCALES, code: string) {
 
   const lang = supportLang.includes(initLang) ? initLang : 'en';
 
@@ -56,7 +58,7 @@ export async function fetchEmojiMemberGameForMeta(initLang: AVAILABLE_LOCALES) {
         briefDesc: emojiGame.briefDesc,
       })
       .from(emojiGame)
-      .where(and(eq(emojiGame.language, lang)))
+      .where(and(eq(emojiGame.language, lang), eq(emojiGame.code, code)))
       .prepare();
 
     const result = await emojiGamePrepare.execute();
