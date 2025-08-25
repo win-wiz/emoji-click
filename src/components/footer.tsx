@@ -59,6 +59,11 @@ const FriendLinks = memo(() => (
       </Link>
     </li>
     <li>
+      <Link target="_blank" href="https://sutom.fun" className={linkStyle}>
+        Sutom
+      </Link>
+    </li>
+    <li>
       <Link target="_blank" href="https://mergeek.com" className={linkStyle}>
         Mergeek Discover
       </Link>
