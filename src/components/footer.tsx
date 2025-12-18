@@ -49,6 +49,11 @@ NavLinks.displayName = 'NavLinks';
 const FriendLinks = memo(() => (
   <ul className="space-y-3">
     <li>
+      <Link href="https://newsinsimple.com" target="_blank" className={linkStyle}>
+        NewsInSimple
+      </Link>
+    </li>
+    <li>
       <Link target="_blank" href="https://subrise.co" className={linkStyle}>
         Subrise
       </Link>
