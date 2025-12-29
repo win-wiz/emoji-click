@@ -6,8 +6,200 @@ import { AVAILABLE_LOCALES, DEFAULT_LOCALE } from "@/locales/config";
 import { emojiAiSearch } from "@/aiModal/emoji-ai-search";
 import { supportLang } from "@/utils";
 import { doubaoGenerateEmoji } from "@/aiModal/open-ai-char";
+import { getCached, setCached, getOrSetCached } from "@/utils/kv-cache";
 
 export const runtime = 'edge';
+
+// 添加缓存配置
+const CACHE_TTL = 60 * 60; // 1小时缓存
+const SEARCH_CACHE_TTL = 60 * 5; // 搜索结果缓存5分钟
+const AI_CACHE_TTL = 60 * 30; // AI结果缓存30分钟
+
+// 限流配置
+const RATE_LIMIT_WINDOW = 60 * 1000; // 1分钟窗口
+const MAX_REQUESTS_PER_MINUTE = 20; // 每分钟最多20次请求
+const MAX_REQUESTS_PER_HOUR = 200; // 每小时最多200次请求
+const AI_RATE_LIMIT = 5; // AI搜索每分钟最多5次
+const BAN_DURATION = 60 * 60 * 1000; // 封禁1小时
+
+// 内存缓存(Edge Runtime简单实现)
+const searchCache = new Map<string, { data: any; timestamp: number }>();
+const aiCache = new Map<string, { data: any; timestamp: number }>();
+
+// 限流存储
+const rateLimitMap = new Map<string, { count: number; hourCount: number; aiCount: number; resetTime: number; hourResetTime: number; aiResetTime: number }>();
+const bannedIPs = new Map<string, number>(); // IP -> 封禁到期时间
+
+// 已知爬虫User-Agent特征
+const BOT_PATTERNS = [
+  /bot/i,
+  /crawl/i,
+  /spider/i,
+  /scrape/i,
+  /wget/i,
+  /curl/i,
+  /python/i,
+  /java(?!script)/i,
+  /http/i,
+  /axios/i,
+  /fetch/i,
+  /requests/i,
+  /scraper/i,
+  /phantom/i,
+  /headless/i,
+  /selenium/i,
+  /puppeteer/i,
+];
+
+// 缓存清理函数
+function cleanCache(cache: Map<string, { data: any; timestamp: number }>, ttl: number) {
+  const now = Date.now();
+  for (const [key, value] of cache.entries()) {
+    if (now - value.timestamp > ttl * 1000) {
+      cache.delete(key);
+    }
+  }
+}
+
+// 检测爬虫
+function isBot(userAgent: string | null): boolean {
+  if (!userAgent || userAgent.length < 10) return true; // 无UA或UA过短
+  return BOT_PATTERNS.some(pattern => pattern.test(userAgent));
+}
+
+// 获取客户端IP
+function getClientIP(request: Request): string {
+  const headers = request.headers;
+  // Cloudflare headers
+  const cfConnectingIP = headers.get('cf-connecting-ip');
+  if (cfConnectingIP) return cfConnectingIP;
+  
+  // 其他常见headers
+  const xForwardedFor = headers.get('x-forwarded-for');
+  if (xForwardedFor) return xForwardedFor.split(',')[0]?.trim() || 'unknown';
+  
+  const xRealIP = headers.get('x-real-ip');
+  if (xRealIP) return xRealIP;
+  
+  return 'unknown';
+}
+
+// 限流检查
+function checkRateLimit(ip: string, isAiSearch = false): { allowed: boolean; reason?: string } {
+  const now = Date.now();
+  
+  // 检查是否在封禁列表中
+  const banExpiry = bannedIPs.get(ip);
+  if (banExpiry && now < banExpiry) {
+    return { 
+      allowed: false, 
+      reason: `IP已被封禁，请${Math.ceil((banExpiry - now) / 60000)}分钟后重试` 
+    };
+  } else if (banExpiry) {
+    bannedIPs.delete(ip); // 解除过期封禁
+  }
+  
+  // 获取或创建限流记录
+  let record = rateLimitMap.get(ip);
+  if (!record || now > record.resetTime) {
+    record = { 
+      count: 0, 
+      hourCount: 0,
+      aiCount: 0,
+      resetTime: now + RATE_LIMIT_WINDOW,
+      hourResetTime: now + 60 * 60 * 1000,
+      aiResetTime: now + RATE_LIMIT_WINDOW
+    };
+    rateLimitMap.set(ip, record);
+  }
+  
+  // 重置小时计数器
+  if (now > record.hourResetTime) {
+    record.hourCount = 0;
+    record.hourResetTime = now + 60 * 60 * 1000;
+  }
+  
+  // 重置AI计数器
+  if (isAiSearch && now > record.aiResetTime) {
+    record.aiCount = 0;
+    record.aiResetTime = now + RATE_LIMIT_WINDOW;
+  }
+  
+  // 检查小时限制
+  if (record.hourCount >= MAX_REQUESTS_PER_HOUR) {
+    // 超过小时限制，封禁IP
+    bannedIPs.set(ip, now + BAN_DURATION);
+    return { 
+      allowed: false, 
+      reason: '请求过于频繁，已被暂时封禁1小时' 
+    };
+  }
+  
+  // 检查分钟限制
+  if (record.count >= MAX_REQUESTS_PER_MINUTE) {
+    return { 
+      allowed: false, 
+      reason: `请求过于频繁，请${Math.ceil((record.resetTime - now) / 1000)}秒后重试` 
+    };
+  }
+  
+  // 检查AI搜索限制
+  if (isAiSearch && record.aiCount >= AI_RATE_LIMIT) {
+    return { 
+      allowed: false, 
+      reason: `AI搜索请求过于频繁，请${Math.ceil((record.aiResetTime - now) / 1000)}秒后重试` 
+    };
+  }
+  
+  // 更新计数
+  record.count++;
+  record.hourCount++;
+  if (isAiSearch) {
+    record.aiCount++;
+  }
+  
+  // 定期清理过期记录
+  if (rateLimitMap.size > 10000) {
+    for (const [key, value] of rateLimitMap.entries()) {
+      if (now > value.resetTime && now > value.hourResetTime) {
+        rateLimitMap.delete(key);
+      }
+    }
+  }
+  
+  return { allowed: true };
+}
+
+// 清理过期封禁
+function cleanBannedIPs() {
+  const now = Date.now();
+  for (const [ip, expiry] of bannedIPs.entries()) {
+    if (now > expiry) {
+      bannedIPs.delete(ip);
+    }
+  }
+  if (bannedIPs.size > 1000) {
+    bannedIPs.clear();
+  }
+}
+
+// 获取缓存
+function getCache<T>(cache: Map<string, { data: any; timestamp: number }>, key: string, ttl: number): T | null {
+  const cached = cache.get(key);
+  if (cached && Date.now() - cached.timestamp < ttl * 1000) {
+    return cached.data as T;
+  }
+  return null;
+}
+
+// 设置缓存
+function setCache<T>(cache: Map<string, { data: any; timestamp: number }>, key: string, data: T): void {
+  cache.set(key, { data, timestamp: Date.now() });
+  // 定期清理过期缓存
+  if (cache.size > 1000) {
+    cleanCache(cache, 0);
+  }
+}
 
 function handleResponse(response: Record<string, any>[]) {
   // TODO 调用豆包api，根据语义查找相关的表情
@@ -27,6 +219,19 @@ function handleResponse(response: Record<string, any>[]) {
 
 export async function POST(request: Request) {
   try {
+    // 获取客户端IP和User-Agent
+    const clientIP = getClientIP(request);
+    const userAgent = request.headers.get('user-agent');
+    
+    // 检测爬虫
+    if (isBot(userAgent)) {
+      console.warn(`检测到爬虫访问: IP=${clientIP}, UA=${userAgent}`);
+      return NextResponse.json(
+        { error: '检测到异常访问，请使用正常浏览器访问' },
+        { status: 403 }
+      );
+    }
+    
     const { searchParams } = new URL(request.url);
 
     let lang = searchParams.get('lang') || DEFAULT_LOCALE;
@@ -36,34 +241,77 @@ export async function POST(request: Request) {
     const { keyword } = await request.json() as { keyword: string };
 
     const q = keyword.trim();
-    // 第一步， 匹配关键字
-    const keywordContentPrepare = db
-      .select({
-        baseCode: emojiKeywords.baseCode
-      })
-      .from(emojiKeywords)
-      .where(and(
-        eq(emojiKeywords.language, lang),
-        like(sql`LOWER(${emojiKeywords.content})`, `%${q.toLowerCase()}%`)
-      ))
-      .groupBy(emojiKeywords.baseCode)
-      .prepare();
-
-    const keywordNamePrepare = db
-      .select({
-        baseCode: emojiLanguage.fullCode
-      })
-      .from(emojiLanguage)
-      .where(and(
-        eq(emojiLanguage.language, lang),
-        like(sql`LOWER(${emojiLanguage.name})`, `%${q.toLowerCase()}%`)
-      ))
-      .groupBy(emojiLanguage.fullCode)
-      .prepare();
+    
+    // 检查输入合法性
+    if (!q || q.length > 100) {
+      return NextResponse.json(
+        { error: '搜索关键词无效' },
+        { status: 400 }
+      );
+    }
+    
+    // 预先检查是否需要AI搜索(用于限流)
+    const willNeedAI = q.length > 0;
+    
+    // 限流检查(暂不判断AI)
+    const rateLimitCheck = checkRateLimit(clientIP, false);
+    if (!rateLimitCheck.allowed) {
+      console.warn(`限流拦截: IP=${clientIP}, 原因=${rateLimitCheck.reason}`);
+      return NextResponse.json(
+        { error: rateLimitCheck.reason },
+        { 
+          status: 429,
+          headers: {
+            'Retry-After': '60',
+            'X-RateLimit-Limit': MAX_REQUESTS_PER_MINUTE.toString(),
+          }
+        }
+      );
+    }
+    
+    // 检查KV缓存
+    const cacheKey = `${lang}:${q.toLowerCase()}`;
+    const cachedResult = await getCached<any[]>('search', cacheKey);
+    if (cachedResult) {
+      return NextResponse.json({
+        results: cachedResult,
+        status: 200,
+        cached: true,
+        source: 'kv',
+      });
+    }
+    // 第一步， 匹配关键字 - 优化查询
+    const lowerQ = q.toLowerCase();
+    
+    // 并行执行两个查询以提高性能
+    const [keywordContentResults, keywordNameResults] = await Promise.all([
+      db
+        .select({
+          baseCode: emojiKeywords.baseCode
+        })
+        .from(emojiKeywords)
+        .where(and(
+          eq(emojiKeywords.language, lang),
+          like(sql`LOWER(${emojiKeywords.content})`, `%${lowerQ}%`)
+        ))
+        .groupBy(emojiKeywords.baseCode)
+        .limit(200) // 限制结果数量
+        .execute(),
+      db
+        .select({
+          baseCode: emojiLanguage.fullCode
+        })
+        .from(emojiLanguage)
+        .where(and(
+          eq(emojiLanguage.language, lang),
+          like(sql`LOWER(${emojiLanguage.name})`, `%${lowerQ}%`)
+        ))
+        .groupBy(emojiLanguage.fullCode)
+        .limit(200) // 限制结果数量
+        .execute()
+    ]);
 
     let searchResults = [];
-    const keywordContentResults = await keywordContentPrepare.execute();
-    const keywordNameResults = await keywordNamePrepare.execute();
     // console.log('keywordNameResults===>>>', keywordNameResults);
     // searchResults = [...keywordContentResults, ...keywordNameResults];
     searchResults = [...keywordNameResults];
@@ -80,78 +328,117 @@ export async function POST(request: Request) {
     
     // 没有匹配到关键词，则调用豆包api，根据语义查找相关的表情
     if (searchResults.length === 0) {
-
-      let response: Record<string, any>[] = [];
-      try {
-
-        // const response: Record<string, any>[] = await emojiAiSearch(q, lang as AVAILABLE_LOCALES);
-        response = await emojiAiSearch(q, lang as AVAILABLE_LOCALES);
-        // 过滤非code的emoji
-        console.log(response);
-        // console.log('response===>>>', response[0]?.code?.length);
-        // for (const item of response) {
-        //   console.log('item===>>>', item.code.length);
-        // }
-        // aiEmojiList.push(...response.filter(item => [2, 3].includes(item.code.length)));
-        aiEmojiList.push(...handleResponse(response));
-      } catch (error) {
-        // console.error('解析 emojiAiSearch 返回数据错误:', error);
-        // 解析失败时，返回空数组
+      // AI搜索额外限流检查
+      const aiRateLimitCheck = checkRateLimit(clientIP, true);
+      if (!aiRateLimitCheck.allowed) {
+        console.warn(`AI搜索限流: IP=${clientIP}, 原因=${aiRateLimitCheck.reason}`);
+        return NextResponse.json(
+          { error: aiRateLimitCheck.reason },
+          { status: 429 }
+        );
+      }
+      
+      // 检查AI KV缓存
+      const aiCacheKey = `${lang}:${q.toLowerCase()}`;
+      const cachedAiResult = await getCached<any[]>('ai', aiCacheKey);
+      
+      if (cachedAiResult) {
+        aiEmojiList.push(...cachedAiResult);
+      } else {
+        let response: Record<string, any>[] = [];
         try {
-          response = await doubaoGenerateEmoji(q, lang as AVAILABLE_LOCALES);
-          aiEmojiList.push(...handleResponse(response));
+          // 添加超时控制
+          const timeoutPromise = new Promise<never>((_, reject) => 
+            setTimeout(() => reject(new Error('AI请求超时')), 8000)
+          );
+          
+          response = await Promise.race([
+            emojiAiSearch(q, lang as AVAILABLE_LOCALES),
+            timeoutPromise
+          ]) as Record<string, any>[];
+          
+          const processedResponse = handleResponse(response);
+          aiEmojiList.push(...processedResponse);
+          // 缓存AI结果到KV
+          await setCached('ai', aiCacheKey, processedResponse, AI_CACHE_TTL);
         } catch (error) {
-          // console.error('解析 doubaoGenerateEmoji 返回数据错误:', error);
+          // 快速失败，不再尝试第二个AI
+          console.error('AI搜索失败:', error);
           aiEmojiList.push([]);
         }
       }
     } else {
       const baseCodes: string[] = searchResults.map(item => item.baseCode).filter(code => code !== null);
       
-      // 分批查询
-      for (let i = 0; i < baseCodes.length; i += 50) {
-        const batch = baseCodes.slice(i, i + 50);
-        // const emojiResults = await emojiPrepare.execute();
-        const emojiResults = await db
-          .select({
-            fullCode: emoji.fullCode,
-            code: emoji.code,
-            name: emojiLanguage.name,
-            hot: emoji.hot,
-            type: emoji.type,
-            typeName: emojiType.name
-          })
-          .from(emoji)
-          .leftJoin(emojiLanguage, and(
-            eq(emoji.fullCode, emojiLanguage.fullCode),
-            eq(emojiLanguage.language, lang)
-          ))
-          .leftJoin(emojiType, and(
-            eq(emoji.type, emojiType.type),
-            eq(emojiType.language, lang)
-          ))
-          .where(
-            and(
-              inArray(emoji.fullCode, batch),
-              or(eq(emoji.diversity, 0), eq(emoji.hot, 1))
+      // 优化：增加批次大小，减少数据库往返
+      const batchSize = 100; // 从50增加到100
+      const maxResults = 200; // 降低最大结果数
+      
+      // 分批查询，但并行处理
+      const batches = [];
+      for (let i = 0; i < baseCodes.length && emojiList.length < maxResults; i += batchSize) {
+        batches.push(baseCodes.slice(i, i + batchSize));
+        if (batches.length >= 3) break; // 最多3个批次并行
+      }
+      
+      // 并行执行所有批次
+      const batchResults = await Promise.all(
+        batches.map(batch => 
+          db
+            .select({
+              fullCode: emoji.fullCode,
+              code: emoji.code,
+              name: emojiLanguage.name,
+              hot: emoji.hot,
+              type: emoji.type,
+              typeName: emojiType.name
+            })
+            .from(emoji)
+            .leftJoin(emojiLanguage, and(
+              eq(emoji.fullCode, emojiLanguage.fullCode),
+              eq(emojiLanguage.language, lang)
+            ))
+            .leftJoin(emojiType, and(
+              eq(emoji.type, emojiType.type),
+              eq(emojiType.language, lang)
+            ))
+            .where(
+              and(
+                inArray(emoji.fullCode, batch),
+                or(eq(emoji.diversity, 0), eq(emoji.hot, 1))
+              )
             )
-          )
-          .orderBy(desc(emoji.hot))
-          .limit(100);
-
-          emojiList.push(...emojiResults);
-          if (emojiList.length >= 300) {
-            break;
-          }
+            .orderBy(desc(emoji.hot))
+            .limit(100)
+            .execute()
+        )
+      );
+      
+      // 合并结果
+      for (const results of batchResults) {
+        emojiList.push(...results);
+        if (emojiList.length >= maxResults) {
+          break;
+        }
       }
     }
 
-    // 最多返回500条
-    const reulst: Record<string, any>[] = [...aiEmojiList, ...emojiList];
+    // 最多返回200条
+    const result: Record<string, any>[] = [...aiEmojiList, ...emojiList].slice(0, 200);
+    
+    // 设置KV缓存
+    await setCached('search', cacheKey, result, SEARCH_CACHE_TTL);
     
     return NextResponse.json({
-      results: reulst,
+      results: result,
       status: 200,
+      cached: false,
+    }, {
+      headers: {
+        'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600',
+        'X-RateLimit-Limit': MAX_REQUESTS_PER_MINUTE.toString(),
+        'X-RateLimit-Remaining': (MAX_REQUESTS_PER_MINUTE - (rateLimitMap.get(clientIP)?.count || 0)).toString(),
+      }
     });
   } catch (error) {
     console.error('搜索接口错误:', error);
@@ -159,31 +446,70 @@ export async function POST(request: Request) {
       { error: '搜索请求处理失败' },
       { status: 500 }
     );
+  } finally {
+    // 定期清理
+    if (Math.random() < 0.01) { // 1%概率清理
+      cleanBannedIPs();
+    }
   }
 }
 
-export async function GET(request: Request) { 
+// 随机关键词缓存
+const keywordsCache = new Map<string, { data: any; timestamp: number }>();
 
+export async function GET(request: Request) { 
+  // GET请求也进行限流和爬虫检查
+  const clientIP = getClientIP(request);
+  const userAgent = request.headers.get('user-agent');
+  
+  // 检测爬虫(GET请求限制稍宽松)
+  if (isBot(userAgent)) {
+    console.warn(`GET请求检测到爬虫: IP=${clientIP}, UA=${userAgent}`);
+    return NextResponse.json(
+      { error: '检测到异常访问' },
+      { status: 403 }
+    );
+  }
+  
+  // 限流检查(GET请求使用相同限流)
+  const rateLimitCheck = checkRateLimit(clientIP, false);
+  if (!rateLimitCheck.allowed) {
+    return NextResponse.json(
+      { error: rateLimitCheck.reason },
+      { status: 429 }
+    );
+  }
+  
   const { searchParams } = new URL(request.url);
   
   let lang = searchParams.get('lang') || DEFAULT_LOCALE;
-
   lang = supportLang.includes(lang) ? lang : 'en';
 
-  const keywordsPrepare = db
-    .select({
-      content: emojiSearchTips.content
-    })
-    .from(emojiSearchTips)
-    .where(eq(emojiSearchTips.language, lang))
-    .orderBy(sql`RANDOM()`)
-    .limit(10)
-    .prepare();
-
-  const keywords = await keywordsPrepare.execute();
+  // 使用KV缓存获取随机关键词
+  const keywords = await getOrSetCached(
+    'keywords',
+    lang,
+    async () => {
+      return await db
+        .select({
+          content: emojiSearchTips.content
+        })
+        .from(emojiSearchTips)
+        .where(eq(emojiSearchTips.language, lang))
+        .orderBy(sql`RANDOM()`)
+        .limit(10)
+        .execute();
+    },
+    300 // 5分钟缓存
+  );
 
   return NextResponse.json({
     data: keywords,
     status: 200,
+    cached: true,
+  }, {
+    headers: {
+      'Cache-Control': 'public, s-maxage=300',
+    }
   });
 }

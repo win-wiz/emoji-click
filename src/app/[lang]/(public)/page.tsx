@@ -9,6 +9,8 @@ import { fetchEmojiByGroup, fetchHotEmoji, fetchRandomKeywords } from '@/server/
 import FAQ from '@/components/faq';
 
 export const runtime = 'edge';
+export const revalidate = 3600; // 每小时重新验证一次
+export const dynamic = 'force-static'; // 尽量静态生成
 
 
 export default async function HomePage({ params }: { params: { lang: AVAILABLE_LOCALES } }) {

@@ -8,6 +8,7 @@
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
+    "test:security": "node test-security.js",
     "lingui:extract": "lingui extract",
     "lingui:compile": "lingui compile",
     "translate": "pnpm run lingui:extract && node ./src/scripts/translate-locale.cjs",

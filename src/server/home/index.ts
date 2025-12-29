@@ -3,124 +3,166 @@ import { emoji, emojiLanguage, emojiSearchTips, emojiType } from "@/server/db/sc
 import { eq, sql, and } from "drizzle-orm";
 import { AVAILABLE_LOCALES } from "@/locales/config";
 import { supportLang } from "@/utils";
+import { getOrSetCached } from "@/utils/kv-cache";
+
+// 添加缓存
+const CACHE_TTL = 60 * 60 * 1000; // 1小时
+const cache = new Map<string, { data: any; timestamp: number }>();
+
+function getCachedData<T>(key: string): T | null {
+  const cached = cache.get(key);
+  if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+    return cached.data as T;
+  }
+  cache.delete(key); // 清除过期缓存
+  return null;
+}
+
+function setCachedData<T>(key: string, data: T): void {
+  cache.set(key, { data, timestamp: Date.now() });
+  // 防止缓存无限增长
+  if (cache.size > 100) {
+    const firstKey = cache.keys().next().value as string | undefined;
+    if (firstKey) {
+      cache.delete(firstKey);
+    }
+  }
+}
 
 // 分类查找表情
 export async function fetchEmojiByGroup(initLang: AVAILABLE_LOCALES) {
-
   const lang = supportLang.includes(initLang) ? initLang : 'en';
+  
+  // 使用KV缓存
+  return await getOrSetCached(
+    'emojiByGroup',
+    lang,
+    async () => {
+      const categoryPrepare = db
+        .select({
+          // 类型信息
+          typeId: emojiType.type,
+          typeName: emojiType.name,
+          typeLanguage: emojiType.language,
+          icon: emojiType.icon,
+          // 使用 JSON_GROUP_ARRAY 将每个类型的emoji聚合为数组
+          emojis: sql<string>`json_group_array(json_object(
+            'id', ${emoji.id},
+            'code', ${emoji.code},
+            'fullCode', ${emoji.fullCode},
+            'baseCode', ${emoji.baseCode},
+            'type', ${emoji.type},
+            'sort', ${emoji.sort},
+            'related', ${emoji.related},
+            'hot', ${emoji.hot},
+            'emotion', ${emoji.emotion},
+            'name', ${emojiLanguage.name}
+          ))`
+        })
+        .from(emojiType)
+        .leftJoin(emoji, eq(emojiType.type, emoji.type))
+        .leftJoin(emojiLanguage, eq(emoji.fullCode, emojiLanguage.fullCode))
+        .where(and(eq(emojiType.language, lang), eq(emojiLanguage.language, lang), eq(emoji.diversity, 0)))
+        .groupBy(emojiType.type)
+        .prepare();
 
-  try {
-    const categoryPrepare = db
-      .select({
-        // 类型信息
-        typeId: emojiType.type,
-        typeName: emojiType.name,
-        typeLanguage: emojiType.language,
-        icon: emojiType.icon,
-        // 使用 JSON_GROUP_ARRAY 将每个类型的emoji聚合为数组
-        emojis: sql<string>`json_group_array(json_object(
-          'id', ${emoji.id},
-          'code', ${emoji.code},
-          'fullCode', ${emoji.fullCode},
-          'baseCode', ${emoji.baseCode},
-          'type', ${emoji.type},
-          'sort', ${emoji.sort},
-          'related', ${emoji.related},
-          'hot', ${emoji.hot},
-          'emotion', ${emoji.emotion},
-          'name', ${emojiLanguage.name}
-        ))`
-      })
-      .from(emojiType)
-      .leftJoin(emoji, eq(emojiType.type, emoji.type))
-      .leftJoin(emojiLanguage, eq(emoji.fullCode, emojiLanguage.fullCode))
-      .where(and(eq(emojiType.language, lang), eq(emojiLanguage.language, lang), eq(emoji.diversity, 0)))
-      .groupBy(emojiType.type)
-      .prepare();
+      const result = await categoryPrepare.execute();
 
+      // 处理结果，将JSON字符串解析为对象
+      const formattedResult = result.map(item => ({
+        id: item.typeId,
+        name: item.typeName,
+        language: item.typeLanguage,
+        icon: item.icon,
+        emojis: JSON.parse(item.emojis).filter((e: any) => e.id !== null) // 过滤掉空值
+      }));
 
-    const result = await categoryPrepare.execute();
-
-    // 处理结果，将JSON字符串解析为对象
-    const formattedResult = result.map(item => ({
-      id: item.typeId,
-      name: item.typeName,
-      language: item.typeLanguage,
-      icon: item.icon,
-      emojis: JSON.parse(item.emojis).filter((e: any) => e.id !== null) // 过滤掉空值
-    }));
-
-    return {
-      success: true,
-      data: formattedResult
-    };
-
-  } catch (error) {
+      return {
+        success: true,
+        data: formattedResult
+      };
+    },
+    3600 // 1小时缓存
+  ).catch(error => {
     console.error("Error fetching emoji by group:", error);
     return {
       success: false,
       error: "Failed to fetch emoji by group"
     };
-  }
+  });
 }
 
 
 // 查找热门表情
 export async function fetchHotEmoji(initLang: AVAILABLE_LOCALES) {
+  const lang = supportLang.includes(initLang) ? initLang : 'en';
+  
+  // 使用KV缓存
+  return await getOrSetCached(
+    'hotEmoji',
+    lang,
+    async () => {
+      const hotPrepare = db
+        .select({
+          fullCode: emojiLanguage.fullCode,
+          name: emojiLanguage.name,
+          code: emoji.code,
+          baseCode: emoji.baseCode,
+        })
+        .from(emojiLanguage)
+        .innerJoin(emoji, eq(emojiLanguage.fullCode, emoji.fullCode))
+        .where(and(eq(emojiLanguage.language, lang), eq(emoji.hot, 1)))
+        .orderBy(sql`RANDOM()`)
+        .prepare();
 
-  const lang = supportLang.includes(initLang) ? initLang : 'en'; 
-  try {
-    const hotPrepare = db
-      .select({
-        fullCode: emojiLanguage.fullCode,
-        name: emojiLanguage.name,
-        code: emoji.code,
-        baseCode: emoji.baseCode,
-      })
-      .from(emojiLanguage)
-      .innerJoin(emoji, eq(emojiLanguage.fullCode, emoji.fullCode))
-      .where(and(eq(emojiLanguage.language, lang), eq(emoji.hot, 1)))
-      .orderBy(sql`RANDOM()`)
-      .prepare();
+      const hotEmoji = await hotPrepare.execute();
 
-    const hotEmoji = await hotPrepare.execute();
-
-    return {
-      success: true,
-      data: hotEmoji
-    };
-  } catch (error) {
+      return {
+        success: true,
+        data: hotEmoji
+      };
+    },
+    3600 // 1小时缓存
+  ).catch(error => {
     console.error("Error fetching hot emoji:", error);
     return {
       success: false,
       error: "Failed to fetch hot emoji"
     };
-  }
+  });
 }
 
 // 随机查找10个关键词
 export async function fetchRandomKeywords(initLang: AVAILABLE_LOCALES) {
-
   const lang = supportLang.includes(initLang) ? initLang : 'en';
+  
+  // 使用KV缓存
+  return await getOrSetCached(
+    'randomKeywords',
+    lang,
+    async () => {
+      const keywords = db
+        .select({
+          content: emojiSearchTips.content
+        })
+        .from(emojiSearchTips)
+        .where(eq(emojiSearchTips.language, lang))
+        .orderBy(sql`RANDOM()`)
+        .limit(10)
+        .prepare();
 
-  const keywords = db
-    .select({
-      content: emojiSearchTips.content
-    })
-    .from(emojiSearchTips)
-    .where(eq(emojiSearchTips.language, lang))
-    .orderBy(sql`RANDOM()`)
-    .limit(10)
-    .prepare();
+      const result = await keywords.execute();
 
-  const result = await keywords.execute();
-
-  // const resultData = result.map((item) => item.content) || [];
-
-  // console.log(resultData);
-
-  return {
-    success: true,
-    data: result
-  };
+      return {
+        success: true,
+        data: result
+      };
+    },
+    300 // 5分钟缓存
+  ).catch(() => {
+    return {
+      success: true,
+      data: []
+    };
+  });
 }

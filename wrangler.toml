@@ -1,4 +1,26 @@
+name = "emoji-click"
+compatibility_date = "2024-12-01"
+
+# KV 命名空间绑定
+[[kv_namespaces]]
+binding = "EMOJI_CACHE"
+id = "your-kv-namespace-id-here"  # 需要替换为实际的 KV namespace ID
+
+# 生产环境 KV 配置
+# 部署时使用: wrangler publish
+[env.production]
+[[env.production.kv_namespaces]]
+binding = "EMOJI_CACHE"
+id = "1b8cea2dd4dc4d2dba304831b558191e"  # 生产环境的 KV namespace ID
+
+# 开发环境 KV 配置
+# 本地开发使用: wrangler dev
+[[env.development.kv_namespaces]]
+binding = "EMOJI_CACHE"
+id = "776f350b7549405fa8a079b386011ff9"  # 开发环境的 KV namespace ID
+
+# D1 数据库配置（已有的配置）
 [[d1_databases]]
-binding = "DB" # i.e. available in your Worker on env.DB
+binding = "DB"
 database_name = "aiEmoji"
-database_id = "1297caa8-27d7-4c20-a06b-c759243a242f"
+database_id = "your-database-id"  # 需要替换为实际的数据库 ID
