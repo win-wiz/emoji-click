@@ -30,6 +30,11 @@ export const emoji = sqliteTable("emoji", {
 (table) => {
 	return {
 		fullCode: uniqueIndex("emoji_fullCode").on(table.fullCode),
+		// Add indexes for performance optimization
+		type: index("emoji_type_idx").on(table.type),
+		hot: index("emoji_hot_idx").on(table.hot),
+		code: index("emoji_code_idx").on(table.code),
+		diversity: index("emoji_diversity_idx").on(table.diversity),
 	}
 });
 
@@ -82,6 +87,11 @@ export const emojiType = sqliteTable("emojiType", {
 	name: text("name"),
 	icon: text("icon"),
 	createdAt: numeric("createdAt"),
+},
+(table) => {
+	return {
+		languageType: index("emojiType_language_type_idx").on(table.language, table.type),
+	}
 });
 
 export const emojiSearchTips = sqliteTable("emojiSearchTips", {
