@@ -492,15 +492,17 @@ export async function GET(request: Request) {
     'keywords',
     lang,
     async () => {
-      return await db
+      const keywordsResult = await db
         .select({
           content: emojiSearchTips.content
         })
         .from(emojiSearchTips)
         .where(eq(emojiSearchTips.language, lang))
-        .orderBy(sql`RANDOM()`)
-        .limit(10)
+        .limit(50) // 限制数量，减少 CPU 消耗
         .execute();
+      
+      // 在应用层随机打乱，避免数据库 RANDOM() 消耗 CPU
+      return keywordsResult.sort(() => Math.random() - 0.5).slice(0, 10);
     },
     300 // 5分钟缓存
   );

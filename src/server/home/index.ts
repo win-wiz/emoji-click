@@ -119,10 +119,14 @@ export async function fetchHotEmoji(initLang: AVAILABLE_LOCALES) {
         .from(emojiLanguage)
         .innerJoin(emoji, eq(emojiLanguage.fullCode, emoji.fullCode))
         .where(and(eq(emojiLanguage.language, lang), eq(emoji.hot, 1)))
-        .orderBy(sql`RANDOM()`)
+        .limit(100) // 限制数量，减少 CPU 消耗
         .prepare();
 
-      const hotEmoji = await hotPrepare.execute();
+      const hotEmojiResult = await hotPrepare.execute();
+      
+      // 在应用层随机打乱，避免数据库 RANDOM() 消耗 CPU
+      const shuffled = hotEmojiResult.sort(() => Math.random() - 0.5).slice(0, 50);
+      const hotEmoji = shuffled;
 
       return {
         success: true,
@@ -155,11 +159,14 @@ export async function fetchRandomKeywords(initLang: AVAILABLE_LOCALES) {
         })
         .from(emojiSearchTips)
         .where(eq(emojiSearchTips.language, lang))
-        .orderBy(sql`RANDOM()`)
-        .limit(10)
+        .limit(50) // 限制数量，减少 CPU 消耗
         .prepare();
 
-      const result = await keywords.execute();
+      const keywordsResult = await keywords.execute();
+      
+      // 在应用层随机打乱，避免数据库 RANDOM() 消耗 CPU
+      const shuffled = keywordsResult.sort(() => Math.random() - 0.5).slice(0, 10);
+      const result = shuffled;
 
       return {
         success: true,
