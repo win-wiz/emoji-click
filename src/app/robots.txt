@@ -1,5 +1,44 @@
-User-Agent: *
-Allow: *
+# 默认爬虫规则 - 允许所有内容，但限制频率
+User-agent: *
+Allow: /
+Crawl-delay: 5
 
+# 搜索引擎爬虫 - 允许较快爬取（有利于 SEO）
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# SEO 工具爬虫 - 允许但限制频率
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 30
+
+User-agent: DotBot
+Allow: /
+Crawl-delay: 10
+
+# 恶意爬虫 - 完全禁止
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SputnikBot
+Disallow: /
+
+User-agent: AhrefsBot/1.0
+Disallow: /
+
+# Sitemap 位置
 Sitemap: https://emojis.click/sitemap.xml
 Sitemap: https://emojis.click/en/api/sitemap-index
