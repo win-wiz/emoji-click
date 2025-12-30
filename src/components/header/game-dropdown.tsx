@@ -30,12 +30,12 @@ const GameDropdown = memo(function GameDropdown({
       </NavItem>
       
       <ul className="dropdown-content menu bg-white border rounded-lg z-[1] p-2 w-[230px] shadow-lg mt-2">
-        <li>
+        {/* <li>
           <Link href={`/${lang}/games/emoji-memory-flop`} className="flex outline-none items-center gap-2 px-4 py-2 text-sm text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-all duration-200">
             <span className="text-lg">🧠</span>
             <span>Emoji Memory Game</span>
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link href={`/${lang}/games/emoji-kitchen`} className="flex outline-none items-center gap-2 px-4 py-2 text-sm text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-all duration-200">
             <span className="text-lg">👨‍🍳</span>
