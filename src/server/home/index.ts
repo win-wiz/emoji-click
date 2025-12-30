@@ -60,9 +60,15 @@ export async function fetchEmojiByGroup(initLang: AVAILABLE_LOCALES) {
           ))`
         })
         .from(emojiType)
-        .leftJoin(emoji, eq(emojiType.type, emoji.type))
-        .leftJoin(emojiLanguage, eq(emoji.fullCode, emojiLanguage.fullCode))
-        .where(and(eq(emojiType.language, lang), eq(emojiLanguage.language, lang), eq(emoji.diversity, 0)))
+        .leftJoin(emoji, and(
+          eq(emojiType.type, emoji.type),
+          eq(emoji.diversity, 0) // 将过滤条件移到 JOIN 中，减少聚合数据量
+        ))
+        .leftJoin(emojiLanguage, and(
+          eq(emoji.fullCode, emojiLanguage.fullCode),
+          eq(emojiLanguage.language, lang) // 将过滤条件移到 JOIN 中
+        ))
+        .where(eq(emojiType.language, lang))
         .groupBy(emojiType.type)
         .prepare();
 
@@ -87,6 +93,7 @@ export async function fetchEmojiByGroup(initLang: AVAILABLE_LOCALES) {
     console.error("Error fetching emoji by group:", error);
     return {
       success: false,
+      data: [],
       error: "Failed to fetch emoji by group"
     };
   });
@@ -127,6 +134,7 @@ export async function fetchHotEmoji(initLang: AVAILABLE_LOCALES) {
     console.error("Error fetching hot emoji:", error);
     return {
       success: false,
+      data: [],
       error: "Failed to fetch hot emoji"
     };
   });

@@ -39,12 +39,15 @@ export const emojiKeywords = sqliteTable("emojiKeywords", {
 	language: text("language"),
 	tag: numeric("tag"),
 	content: text("content"),
+	contentLower: text("contentLower"), // 添加小写内容字段用于搜索优化
 	display: integer("display"),
 	createdAt: numeric("createdAt"),
 },
 (table) => {
 	return {
 		baseCode: index("emojiKeywords_baseCode").on(table.baseCode),
+		// 添加复合索引优化搜索性能
+		languageContentLower: index("emojiKeywords_language_contentLower").on(table.language, table.contentLower),
 	}
 });
 
@@ -53,6 +56,7 @@ export const emojiLanguage = sqliteTable("emojiLanguage", {
 	fullCode: text("fullCode"),
 	language: text("language"),
 	name: text("name"),
+	nameLower: text("nameLower"), // 添加小写name字段用于搜索优化
 	meaning: text("meaning"),
 	usageExample: text("usageExample"),
 	searchTips: text("searchTips"),
@@ -66,6 +70,8 @@ export const emojiLanguage = sqliteTable("emojiLanguage", {
 (table) => {
 	return {
 		fullCode: index("emojiLanguage_fullCode").on(table.fullCode),
+		// 添加复合索引优化搜索性能
+		languageNameLower: index("emojiLanguage_language_nameLower").on(table.language, table.nameLower),
 	}
 });
 

@@ -292,10 +292,11 @@ export async function POST(request: Request) {
         .from(emojiKeywords)
         .where(and(
           eq(emojiKeywords.language, lang),
-          like(sql`LOWER(${emojiKeywords.content})`, `%${lowerQ}%`)
+          // 使用 contentLower 字段代替 LOWER() 函数，可以利用索引
+          like(emojiKeywords.contentLower, `%${lowerQ}%`)
         ))
         .groupBy(emojiKeywords.baseCode)
-        .limit(200) // 限制结果数量
+        .limit(100) // 减少限制数量，从 200 降低到 100
         .execute(),
       db
         .select({
@@ -304,10 +305,11 @@ export async function POST(request: Request) {
         .from(emojiLanguage)
         .where(and(
           eq(emojiLanguage.language, lang),
-          like(sql`LOWER(${emojiLanguage.name})`, `%${lowerQ}%`)
+          // 使用 nameLower 字段代替 LOWER() 函数，可以利用索引
+          like(emojiLanguage.nameLower, `%${lowerQ}%`)
         ))
         .groupBy(emojiLanguage.fullCode)
-        .limit(200) // 限制结果数量
+        .limit(100) // 减少限制数量，从 200 降低到 100
         .execute()
     ]);
 
