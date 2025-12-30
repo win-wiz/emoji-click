@@ -3,12 +3,18 @@ import { db } from "@/server/db";
 import { emoji, emojiKeywords, emojiLanguage } from "../db/schema";
 import { eq, and, sql, inArray, count } from "drizzle-orm";
 import { supportLang } from "@/utils";
+import { getOrSetCached } from "@/utils/kv-cache";
 
 export async function fetchEmojiProfileByFullCode(fullCode: string, initLang: AVAILABLE_LOCALES) {
 
   const lang = supportLang.includes(initLang) ? initLang : 'en';
 
-  try {
+  // 使用 KV 缓存，7天缓存，表情详情数据基本不变
+  return await getOrSetCached(
+    'emojiProfile',
+    `${fullCode}:${lang}`,
+    async () => {
+      try {
     const profilePrepare = db
       .select({
         code: emoji.code,
@@ -39,16 +45,16 @@ export async function fetchEmojiProfileByFullCode(fullCode: string, initLang: AV
       .select({
         baseCode: emojiKeywords.baseCode,
         tag: emojiKeywords.tag,
-        contents: sql<string>`GROUP_CONCAT(${emojiKeywords.content})`,
+        content: emojiKeywords.content, // 单条查询，避免 GROUP_CONCAT
       })
       .from(emojiKeywords)
       .where(and(eq(emojiKeywords.baseCode, fullCode), eq(emojiKeywords.language, lang)))
-      .groupBy(emojiKeywords.baseCode, emojiKeywords.tag)
       .prepare();
 
     // 查找关键字
     const keywordsResult = await keywordsPrepare.execute();
 
+    // 在应用层聚合，避免数据库 GROUP_CONCAT 消耗 CPU
     const keywords = keywordsResult.reduce<Array<{
       baseCode: string;
       tags: Array<{
@@ -58,16 +64,21 @@ export async function fetchEmojiProfileByFullCode(fullCode: string, initLang: AV
     }>>((acc, curr) => {
       const existingEntry = acc.find(entry => entry.baseCode === curr.baseCode);
       if (existingEntry) {
-        existingEntry.tags.push({
-          tag: curr.tag!,
-          contents: curr.contents.split(','),
-        });
+        const existingTag = existingEntry.tags.find(t => t.tag === curr.tag);
+        if (existingTag) {
+          existingTag.contents.push(curr.content!);
+        } else {
+          existingEntry.tags.push({
+            tag: curr.tag!,
+            contents: [curr.content!],
+          });
+        }
       } else {
         acc.push({
           baseCode: curr.baseCode!,
           tags: [{
             tag: curr.tag!,
-            contents: curr.contents.split(','),
+            contents: [curr.content!],
           }],
         });
       }
@@ -101,34 +112,51 @@ export async function fetchEmojiProfileByFullCode(fullCode: string, initLang: AV
       data
     }
 
-  } catch (error) {
-    console.error('Failed to fetch emoji profile by full code:', error)
+      } catch (error) {
+        console.error('Failed to fetch emoji profile by full code:', error)
+        return {
+          success: false,
+          message: 'Failed to fetch emoji profile by full code',
+          data: null
+        }
+      }
+    },
+    86400 * 7 // 7天缓存 - 表情详情数据基本不变
+  ).catch(error => {
+    console.error('Failed to fetch emoji profile:', error);
     return {
       success: false,
       message: 'Failed to fetch emoji profile by full code',
       data: null
-    }
-  }
+    };
+  });
 }
 
 export async function fetchGenerateMetadata(lang: AVAILABLE_LOCALES, fullCode: string) {
+  // 使用 KV 缓存，7天缓存，SEO 元数据基本不变
+  return await getOrSetCached(
+    'emojiMetadata',
+    `${fullCode}:${lang}`,
+    async () => {
+      const metadataPrepare = db
+        .select({
+          name: emojiLanguage.name,
+          meaning: emojiLanguage.meaning,
+          code: emoji.code,
+        })
+        .from(emojiLanguage)
+        .leftJoin(emoji, eq(emojiLanguage.fullCode, emoji.fullCode))
+        .where(and(eq(emojiLanguage.fullCode, fullCode), eq(emojiLanguage.language, lang)))
+        .prepare();
 
-  const metadataPrepare = db
-    .select({
-      name: emojiLanguage.name,
-      meaning: emojiLanguage.meaning,
-      code: emoji.code,
-    })
-    .from(emojiLanguage)
-    .leftJoin(emoji, eq(emojiLanguage.fullCode, emoji.fullCode))
-    .where(and(eq(emojiLanguage.fullCode, fullCode), eq(emojiLanguage.language, lang)))
-    .prepare();
+      const metadata = await metadataPrepare.execute();
 
-  const metadata = await metadataPrepare.execute();
-
-  return {
-    data: metadata[0]
-  }
+      return {
+        data: metadata[0]
+      }
+    },
+    86400 * 7 // 7天缓存
+  ).catch(() => ({ data: null }));
 }
 
 export async function getEmojiLanguageCount() {

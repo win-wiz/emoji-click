@@ -372,15 +372,15 @@ export async function POST(request: Request) {
     } else {
       const baseCodes: string[] = searchResults.map(item => item.baseCode).filter(code => code !== null);
       
-      // 优化：增加批次大小，减少数据库往返
-      const batchSize = 100; // 从50增加到100
-      const maxResults = 200; // 降低最大结果数
+      // 优化：减少批次大小和并发数，降低 CPU 消耗
+      const batchSize = 30; // 从 100 降低到 30
+      const maxResults = 100; // 从 200 降低到 100
       
       // 分批查询，但并行处理
       const batches = [];
       for (let i = 0; i < baseCodes.length && emojiList.length < maxResults; i += batchSize) {
         batches.push(baseCodes.slice(i, i + batchSize));
-        if (batches.length >= 3) break; // 最多3个批次并行
+        if (batches.length >= 2) break; // 最多 2 个批次并行，减少 CPU 消耗
       }
       
       // 并行执行所有批次
@@ -411,7 +411,7 @@ export async function POST(request: Request) {
               )
             )
             .orderBy(desc(emoji.hot))
-            .limit(100)
+            .limit(30) // 减少每批次限制，降低 CPU 消耗
             .execute()
         )
       );
@@ -425,8 +425,8 @@ export async function POST(request: Request) {
       }
     }
 
-    // 最多返回200条
-    const result: Record<string, any>[] = [...aiEmojiList, ...emojiList].slice(0, 200);
+    // 最多返回 100 条，减少数据传输和 CPU 消耗
+    const result: Record<string, any>[] = [...aiEmojiList, ...emojiList].slice(0, 100);
     
     // 设置KV缓存
     await setCached('search', cacheKey, result, SEARCH_CACHE_TTL);
