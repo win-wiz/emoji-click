@@ -15,12 +15,12 @@ const CACHE_TTL = 60 * 60; // 1小时缓存
 const SEARCH_CACHE_TTL = 60 * 5; // 搜索结果缓存5分钟
 const AI_CACHE_TTL = 60 * 30; // AI结果缓存30分钟
 
-// 限流配置
+// 限流配置 - 放宽限制，减少限流判断 CPU 消耗
 const RATE_LIMIT_WINDOW = 60 * 1000; // 1分钟窗口
-const MAX_REQUESTS_PER_MINUTE = 20; // 每分钟最多20次请求
-const MAX_REQUESTS_PER_HOUR = 200; // 每小时最多200次请求
-const AI_RATE_LIMIT = 5; // AI搜索每分钟最多5次
-const BAN_DURATION = 60 * 60 * 1000; // 封禁1小时
+const MAX_REQUESTS_PER_MINUTE = 30; // 每分钟最多 30 次请求（从 20 提升）
+const MAX_REQUESTS_PER_HOUR = 300; // 每小时最多 300 次请求（从 200 提升）
+const AI_RATE_LIMIT = 10; // AI搜索每分钟最多 10 次（从 5 提升）
+const BAN_DURATION = 30 * 60 * 1000; // 封禁 30 分钟（从 1 小时缩短）
 
 // 内存缓存(Edge Runtime简单实现)
 const searchCache = new Map<string, { data: any; timestamp: number }>();
@@ -158,8 +158,8 @@ function checkRateLimit(ip: string, isAiSearch = false): { allowed: boolean; rea
     record.aiCount++;
   }
   
-  // 定期清理过期记录
-  if (rateLimitMap.size > 10000) {
+  // 定期清理过期记录 - 提高阈值，减少清理频率
+  if (rateLimitMap.size > 20000) { // 从 10000 提高到 20000
     for (const [key, value] of rateLimitMap.entries()) {
       if (now > value.resetTime && now > value.hourResetTime) {
         rateLimitMap.delete(key);

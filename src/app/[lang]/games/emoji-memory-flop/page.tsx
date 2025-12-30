@@ -5,6 +5,11 @@ import { fetchEmojiGame, fetchEmojiGameForMeta } from "@/server/games/index";
 import { GameItemResponse } from "@/types/memoryGame";
 import { Metadata } from "next";
 
+export const runtime = 'edge';
+export const revalidate = 86400 * 7; // 7天重新验证，游戏页面数据基本不变
+export const dynamic = 'force-static';
+export const fetchCache = 'force-cache';
+
 interface GamesPageProps {
   params: {
     lang: AVAILABLE_LOCALES;

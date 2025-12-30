@@ -2,6 +2,7 @@ import { db } from "@/server/db";
 import { emojiLanguage } from "@/server/db/schema";
 import { generateSitemapXml, SITEMAP_INDEX_PAGE_SIZE, SitemapUrl } from "@/utils";
 import { NextRequest, NextResponse } from "next/server";
+import { getOrSetCached } from "@/utils/kv-cache";
 
 export const runtime = 'edge';
 
@@ -12,17 +13,25 @@ export async function GET(req: NextRequest) {
   const limitPage = SITEMAP_INDEX_PAGE_SIZE;
   const offset = (+(page || 1) - 1) * limitPage;
 
-  const emojiPrepare = db
-    .select({
-      baseCode: emojiLanguage.fullCode,
-      language: emojiLanguage.language,
-    })
-    .from(emojiLanguage)
-    .limit(limitPage)
-    .offset(offset)
-    .prepare();
+  // 使用 KV 缓存，7天缓存，sitemap 数据基本不变
+  const emojis = await getOrSetCached(
+    'sitemap',
+    `page_${page}`,
+    async () => {
+      const emojiPrepare = db
+        .select({
+          baseCode: emojiLanguage.fullCode,
+          language: emojiLanguage.language,
+        })
+        .from(emojiLanguage)
+        .limit(limitPage)
+        .offset(offset)
+        .prepare();
 
-  const emojis = await emojiPrepare.execute();
+      return await emojiPrepare.execute();
+    },
+    86400 * 7 // 7天缓存
+  ).catch(() => []);
   const dynamicUrls: SitemapUrl[] = emojis.map((emoji: Record<string, any>) => ({
     loc: `https://emojis.click/${emoji.language}/${emoji.baseCode}`,
     lastmod: new Date().toISOString(),

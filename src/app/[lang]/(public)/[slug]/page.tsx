@@ -6,6 +6,9 @@ import { t } from "@lingui/macro";
 import { Metadata } from "next";
 
 export const runtime = 'edge';
+export const revalidate = 86400 * 7; // 7天重新验证，表情详情页数据基本不变
+export const dynamic = 'force-static'; // 尽量静态生成
+export const fetchCache = 'force-cache'; // 强制缓存
 
 export async function generateMetadata({ 
   params, 

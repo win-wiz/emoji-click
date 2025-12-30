@@ -6,6 +6,11 @@ import { msg } from "@lingui/macro";
 import { setupI18n } from "@lingui/core";
 import Link from "next/link";
 
+export const runtime = 'edge';
+export const revalidate = 86400 * 7; // 7天重新验证，游戏列表页面数据基本不变
+export const dynamic = 'force-static';
+export const fetchCache = 'force-cache';
+
 // 统一的样式常量定义
 const STYLES = {
   page: {

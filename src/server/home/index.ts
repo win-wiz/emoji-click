@@ -5,30 +5,6 @@ import { AVAILABLE_LOCALES } from "@/locales/config";
 import { supportLang } from "@/utils";
 import { getOrSetCached } from "@/utils/kv-cache";
 
-// 添加缓存
-const CACHE_TTL = 60 * 60 * 1000; // 1小时
-const cache = new Map<string, { data: any; timestamp: number }>();
-
-function getCachedData<T>(key: string): T | null {
-  const cached = cache.get(key);
-  if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
-    return cached.data as T;
-  }
-  cache.delete(key); // 清除过期缓存
-  return null;
-}
-
-function setCachedData<T>(key: string, data: T): void {
-  cache.set(key, { data, timestamp: Date.now() });
-  // 防止缓存无限增长
-  if (cache.size > 100) {
-    const firstKey = cache.keys().next().value as string | undefined;
-    if (firstKey) {
-      cache.delete(firstKey);
-    }
-  }
-}
-
 // 分类查找表情
 export async function fetchEmojiByGroup(initLang: AVAILABLE_LOCALES) {
   const lang = supportLang.includes(initLang) ? initLang : 'en';
