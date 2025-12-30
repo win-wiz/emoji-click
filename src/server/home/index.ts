@@ -33,7 +33,7 @@ function setCachedData<T>(key: string, data: T): void {
 export async function fetchEmojiByGroup(initLang: AVAILABLE_LOCALES) {
   const lang = supportLang.includes(initLang) ? initLang : 'en';
   
-  // 使用KV缓存
+  // 使用KV缓存 - 7天缓存，首页数据基本不变
   return await getOrSetCached(
     'emojiByGroup',
     lang,
@@ -88,7 +88,7 @@ export async function fetchEmojiByGroup(initLang: AVAILABLE_LOCALES) {
         data: formattedResult
       };
     },
-    3600 // 1小时缓存
+    86400 * 7 // 7天缓存 - 首页分类数据基本不变
   ).catch(error => {
     console.error("Error fetching emoji by group:", error);
     return {
@@ -104,7 +104,7 @@ export async function fetchEmojiByGroup(initLang: AVAILABLE_LOCALES) {
 export async function fetchHotEmoji(initLang: AVAILABLE_LOCALES) {
   const lang = supportLang.includes(initLang) ? initLang : 'en';
   
-  // 使用KV缓存
+  // 使用KV缓存 - 1天缓存，热门表情可以定期轮换
   return await getOrSetCached(
     'hotEmoji',
     lang,
@@ -129,7 +129,7 @@ export async function fetchHotEmoji(initLang: AVAILABLE_LOCALES) {
         data: hotEmoji
       };
     },
-    3600 // 1小时缓存
+    86400 // 1天缓存 - 热门表情每天轮换一次
   ).catch(error => {
     console.error("Error fetching hot emoji:", error);
     return {
@@ -144,7 +144,7 @@ export async function fetchHotEmoji(initLang: AVAILABLE_LOCALES) {
 export async function fetchRandomKeywords(initLang: AVAILABLE_LOCALES) {
   const lang = supportLang.includes(initLang) ? initLang : 'en';
   
-  // 使用KV缓存
+  // 使用KV缓存 - 1小时缓存，搜索提示词可以更频繁轮换
   return await getOrSetCached(
     'randomKeywords',
     lang,
@@ -166,7 +166,7 @@ export async function fetchRandomKeywords(initLang: AVAILABLE_LOCALES) {
         data: result
       };
     },
-    300 // 5分钟缓存
+    3600 // 1小时缓存 - 随机关键词每小时轮换
   ).catch(() => {
     return {
       success: true,

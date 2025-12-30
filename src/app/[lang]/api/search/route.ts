@@ -296,7 +296,7 @@ export async function POST(request: Request) {
           like(emojiKeywords.contentLower, `%${lowerQ}%`)
         ))
         .groupBy(emojiKeywords.baseCode)
-        .limit(100) // 减少限制数量，从 200 降低到 100
+        .limit(50) // 进一步减少限制数量，减少数据库负载
         .execute(),
       db
         .select({
@@ -309,7 +309,7 @@ export async function POST(request: Request) {
           like(emojiLanguage.nameLower, `%${lowerQ}%`)
         ))
         .groupBy(emojiLanguage.fullCode)
-        .limit(100) // 减少限制数量，从 200 降低到 100
+        .limit(50) // 进一步减少限制数量，减少数据库负载
         .execute()
     ]);
 
