@@ -363,7 +363,7 @@ export async function POST(request: Request) {
     // 并行执行两个查询以提高性能
     const [keywordContentResults, keywordNameResults] = await Promise.all([
       db
-        .select({
+        .selectDistinct({
           baseCode: emojiKeywords.baseCode
         })
         .from(emojiKeywords)
@@ -373,11 +373,10 @@ export async function POST(request: Request) {
           // 去掉前缀通配符 % 以启用索引前缀搜索，避免全表扫描
           like(emojiKeywords.contentLower, `${lowerQ}%`)
         ))
-        .groupBy(emojiKeywords.baseCode)
         .limit(50) // 进一步减少限制数量，减少数据库负载
         .execute(),
       db
-        .select({
+        .selectDistinct({
           baseCode: emojiLanguage.fullCode
         })
         .from(emojiLanguage)
@@ -387,7 +386,6 @@ export async function POST(request: Request) {
           // 去掉前缀通配符 % 以启用索引前缀搜索，避免全表扫描
           like(emojiLanguage.nameLower, `${lowerQ}%`)
         ))
-        .groupBy(emojiLanguage.fullCode)
         .limit(50) // 进一步减少限制数量，减少数据库负载
         .execute()
     ]);

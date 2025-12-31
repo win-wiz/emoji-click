@@ -2,14 +2,14 @@
 -- 解决全表扫描问题，提升查询性能
 
 -- 1. emojiKeywords 表优化
--- 已有索引：emojiKeywords_baseCode, emojiKeywords_language_contentLower
--- 添加语言索引（如果不存在）
-CREATE INDEX IF NOT EXISTS emojiKeywords_language ON emojiKeywords(language);
+-- 更新索引为覆盖索引 (Covering Index) 以支持 SELECT baseCode
+DROP INDEX IF EXISTS emojiKeywords_language_contentLower;
+CREATE INDEX IF NOT EXISTS emojiKeywords_language_contentLower ON emojiKeywords(language, contentLower, baseCode);
 
 -- 2. emojiLanguage 表优化
--- 已有索引：emojiLanguage_fullCode, emojiLanguage_language_nameLower
--- 添加语言索引（如果不存在）
-CREATE INDEX IF NOT EXISTS emojiLanguage_language ON emojiLanguage(language);
+-- 更新索引为覆盖索引 (Covering Index) 以支持 SELECT fullCode
+DROP INDEX IF EXISTS emojiLanguage_language_nameLower;
+CREATE INDEX IF NOT EXISTS emojiLanguage_language_nameLower ON emojiLanguage(language, nameLower, fullCode);
 
 -- 3. emoji 表优化
 -- 添加常用查询字段索引

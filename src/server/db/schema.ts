@@ -54,7 +54,7 @@ export const emojiKeywords = sqliteTable("emojiKeywords", {
 	return {
 		baseCode: index("emojiKeywords_baseCode").on(table.baseCode),
 		// 添加复合索引优化搜索性能
-		languageContentLower: index("emojiKeywords_language_contentLower").on(table.language, table.contentLower),
+		languageContentLower: index("emojiKeywords_language_contentLower").on(table.language, table.contentLower, table.baseCode),
 	}
 });
 
@@ -78,7 +78,7 @@ export const emojiLanguage = sqliteTable("emojiLanguage", {
 	return {
 		fullCode: index("emojiLanguage_fullCode").on(table.fullCode),
 		// 添加复合索引优化搜索性能
-		languageNameLower: index("emojiLanguage_language_nameLower").on(table.language, table.nameLower),
+		languageNameLower: index("emojiLanguage_language_nameLower").on(table.language, table.nameLower, table.fullCode),
 		fullCodeLanguage: uniqueIndex("emojiLanguage_fullCode_language_idx").on(table.fullCode, table.language),
 	}
 });

@@ -90,24 +90,48 @@ export async function fetchHotEmoji(initLang: AVAILABLE_LOCALES) {
     'hotEmoji',
     lang,
     async () => {
-      const hotPrepare = db
+      // 1. 从 emoji 表中获取热门表情 (使用索引)
+      // 限制 100 个候选，避免 JOIN 带来的全表扫描
+      const hotCandidates = await db
         .select({
-          fullCode: emojiLanguage.fullCode,
-          name: emojiLanguage.name,
+          fullCode: emoji.fullCode,
           code: emoji.code,
           baseCode: emoji.baseCode,
         })
-        .from(emojiLanguage)
-        .innerJoin(emoji, eq(emojiLanguage.fullCode, emoji.fullCode))
-        .where(and(eq(emojiLanguage.language, lang), eq(emoji.hot, 1)))
-        .limit(100) // 限制数量，减少 CPU 消耗
-        .prepare();
+        .from(emoji)
+        .where(eq(emoji.hot, 1))
+        .limit(100)
+        .execute();
 
-      const hotEmojiResult = await hotPrepare.execute();
-      
-      // 在应用层随机打乱，避免数据库 RANDOM() 消耗 CPU
-      const shuffled = hotEmojiResult.sort(() => Math.random() - 0.5).slice(0, 50);
-      const hotEmoji = shuffled;
+      if (!hotCandidates.length) {
+        return { success: true, data: [] };
+      }
+
+      // 2. 在应用层随机打乱，选取 50 个
+      const shuffledCandidates = hotCandidates.sort(() => Math.random() - 0.5).slice(0, 50);
+      const fullCodes = shuffledCandidates.map(c => c.fullCode);
+
+      // 3. 批量获取语言详情 (使用 IN 查询)
+      const details = await db
+        .select({
+          fullCode: emojiLanguage.fullCode,
+          name: emojiLanguage.name,
+        })
+        .from(emojiLanguage)
+        .where(and(
+          eq(emojiLanguage.language, lang),
+          inArray(emojiLanguage.fullCode, fullCodes)
+        ))
+        .execute();
+
+      // 4. 合并结果
+      const hotEmoji = shuffledCandidates.map(c => {
+        const detail = details.find(d => d.fullCode === c.fullCode);
+        return {
+          ...c,
+          name: detail?.name || ''
+        };
+      }).filter(item => item.name); // 过滤掉没有翻译的(理论上不应该发生)
 
       return {
         success: true,
