@@ -1,6 +1,6 @@
 import { db } from "@/server/db";
 import { emoji, emojiLanguage, emojiSearchTips, emojiType } from "@/server/db/schema";
-import { eq, sql, and } from "drizzle-orm";
+import { eq, sql, and, inArray } from "drizzle-orm";
 import { AVAILABLE_LOCALES } from "@/locales/config";
 import { supportLang } from "@/utils";
 import { getOrSetCached } from "@/utils/kv-cache";
@@ -109,7 +109,14 @@ export async function fetchHotEmoji(initLang: AVAILABLE_LOCALES) {
 
       // 2. 在应用层随机打乱，选取 50 个
       const shuffledCandidates = hotCandidates.sort(() => Math.random() - 0.5).slice(0, 50);
-      const fullCodes = shuffledCandidates.map(c => c.fullCode);
+      // 过滤掉可能的 null 值，确保类型安全
+      const fullCodes = shuffledCandidates
+        .map(c => c.fullCode)
+        .filter((c): c is string => c !== null);
+
+      if (fullCodes.length === 0) {
+        return { success: true, data: [] };
+      }
 
       // 3. 批量获取语言详情 (使用 IN 查询)
       const details = await db
