@@ -34,6 +34,7 @@ export const emoji = sqliteTable("emoji", {
 		type: index("emoji_type_idx").on(table.type),
 		hot: index("emoji_hot_idx").on(table.hot),
 		code: index("emoji_code_idx").on(table.code),
+		codeFullCode: index("emoji_code_fullCode_idx").on(table.code, table.fullCode),
 		diversity: index("emoji_diversity_idx").on(table.diversity),
 		typeDiversity: index("emoji_type_diversity_idx").on(table.type, table.diversity),
 	}
