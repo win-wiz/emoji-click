@@ -6,7 +6,7 @@ import { AVAILABLE_LOCALES, DEFAULT_LOCALE } from "@/locales/config";
 import { emojiAiSearch } from "@/aiModal/emoji-ai-search";
 import { supportLang } from "@/utils";
 import { doubaoGenerateEmoji } from "@/aiModal/open-ai-char";
-import { getCached, setCached, getOrSetCached } from "@/utils/kv-cache";
+import { getCached, setCached, getOrSetCached, getKVNamespace } from "@/utils/kv-cache";
 
 export const runtime = 'edge';
 
@@ -17,18 +17,23 @@ const AI_CACHE_TTL = 60 * 30; // AI结果缓存30分钟
 
 // 限流配置 - 放宽限制，减少限流判断 CPU 消耗
 const RATE_LIMIT_WINDOW = 60 * 1000; // 1分钟窗口
-const MAX_REQUESTS_PER_MINUTE = 30; // 每分钟最多 30 次请求（从 20 提升）
-const MAX_REQUESTS_PER_HOUR = 300; // 每小时最多 300 次请求（从 200 提升）
-const AI_RATE_LIMIT = 10; // AI搜索每分钟最多 10 次（从 5 提升）
-const BAN_DURATION = 30 * 60 * 1000; // 封禁 30 分钟（从 1 小时缩短）
+const MAX_REQUESTS_PER_MINUTE = 30; // 每分钟最多 30 次请求
+const MAX_REQUESTS_PER_HOUR = 300; // 每小时最多 300 次请求
+const AI_RATE_LIMIT = 10; // AI搜索每分钟最多 10 次
+const BAN_DURATION = 30 * 60 * 1000; // 封禁 30 分钟
 
 // 内存缓存(Edge Runtime简单实现)
-const searchCache = new Map<string, { data: any; timestamp: number }>();
-const aiCache = new Map<string, { data: any; timestamp: number }>();
+// const searchCache = new Map<string, { data: any; timestamp: number }>();
+// const aiCache = new Map<string, { data: any; timestamp: number }>();
 
 // 限流存储
 const rateLimitMap = new Map<string, { count: number; hourCount: number; aiCount: number; resetTime: number; hourResetTime: number; aiResetTime: number }>();
 const bannedIPs = new Map<string, number>(); // IP -> 封禁到期时间
+
+// 全局封禁检查缓存 (IP -> 检查时间)
+// 用于减少对 KV 的读取，如果 10秒内检查过该IP且未封禁，则不再查 KV
+const checkedCleanIPs = new Map<string, number>();
+const CHECKED_CLEAN_TTL = 10 * 1000; // 10秒
 
 // 已知爬虫User-Agent特征
 const BOT_PATTERNS = [
@@ -84,11 +89,68 @@ function getClientIP(request: Request): string {
   return 'unknown';
 }
 
-// 限流检查
-function checkRateLimit(ip: string, isAiSearch = false): { allowed: boolean; reason?: string } {
+// 异步设置全局封禁
+async function setGlobalBan(ip: string, durationMs: number) {
+  try {
+    const kv = await getKVNamespace();
+    if (!kv) return;
+    
+    // 写入 KV，标记该 IP 被封禁
+    // Key: ban:IP, Value: timestamp
+    const banKey = `ban:${ip}`;
+    await kv.put(banKey, Date.now().toString(), {
+      expirationTtl: Math.ceil(durationMs / 1000)
+    });
+    console.log(`[GlobalBan] IP ${ip} banned for ${durationMs/1000}s`);
+  } catch (error) {
+    console.error('[GlobalBan] Failed to set global ban:', error);
+  }
+}
+
+// 检查全局封禁
+async function checkGlobalBan(ip: string): Promise<boolean> {
   const now = Date.now();
   
-  // 检查是否在封禁列表中
+  // 1. 检查本地"白名单"缓存 (最近检查过且未封禁)
+  const lastCheck = checkedCleanIPs.get(ip);
+  if (lastCheck && now - lastCheck < CHECKED_CLEAN_TTL) {
+    return false; // 认为是干净的
+  }
+  
+  // 2. 检查 KV
+  try {
+    const kv = await getKVNamespace();
+    if (!kv) return false;
+    
+    const banKey = `ban:${ip}`;
+    const isBanned = await kv.get(banKey);
+    
+    if (isBanned) {
+      // 确实被封禁了，更新本地封禁列表，避免下次再查 KV
+      bannedIPs.set(ip, now + BAN_DURATION); // 同步到本地封禁
+      return true;
+    } else {
+      // 未被封禁，更新本地"白名单"
+      checkedCleanIPs.set(ip, now);
+      // 防止 Map 无限增长
+      if (checkedCleanIPs.size > 5000) {
+        // 简单清理，删除最早的 key (这里简化为清空或随机删，为性能考虑)
+        // Edge Runtime 下通常不会存活太久，简单清理即可
+        if (Math.random() < 0.1) checkedCleanIPs.clear();
+      }
+      return false;
+    }
+  } catch (error) {
+    console.error('[GlobalBan] Check failed:', error);
+    return false; // 故障时默认放行
+  }
+}
+
+// 限流检查
+async function checkRateLimit(ip: string, isAiSearch = false): Promise<{ allowed: boolean; reason?: string }> {
+  const now = Date.now();
+  
+  // 检查是否在封禁列表中 (本地内存)
   const banExpiry = bannedIPs.get(ip);
   if (banExpiry && now < banExpiry) {
     return { 
@@ -97,6 +159,17 @@ function checkRateLimit(ip: string, isAiSearch = false): { allowed: boolean; rea
     };
   } else if (banExpiry) {
     bannedIPs.delete(ip); // 解除过期封禁
+  }
+  
+  // 检查全局封禁 (KV) - 仅在本地未封禁时检查
+  // 注意：为了不阻塞每个请求，这里可以作为前置检查，或者只在请求频率较高时检查
+  // 策略：所有搜索请求都做检查，但有 checkedCleanIPs 保护，性能损耗可控
+  const isGloballyBanned = await checkGlobalBan(ip);
+  if (isGloballyBanned) {
+    return {
+      allowed: false,
+      reason: `IP已被全局封禁，请稍后重试`
+    };
   }
   
   // 获取或创建限流记录
@@ -127,8 +200,11 @@ function checkRateLimit(ip: string, isAiSearch = false): { allowed: boolean; rea
   
   // 检查小时限制
   if (record.hourCount >= MAX_REQUESTS_PER_HOUR) {
-    // 超过小时限制，封禁IP
+    // 超过小时限制，封禁IP (本地 + 全局)
     bannedIPs.set(ip, now + BAN_DURATION);
+    // 异步触发全局封禁，不阻塞当前响应
+    setGlobalBan(ip, BAN_DURATION).catch(console.error);
+    
     return { 
       allowed: false, 
       reason: '请求过于频繁，已被暂时封禁1小时' 
@@ -254,7 +330,7 @@ export async function POST(request: Request) {
     const willNeedAI = q.length > 0;
     
     // 限流检查(暂不判断AI)
-    const rateLimitCheck = checkRateLimit(clientIP, false);
+    const rateLimitCheck = await checkRateLimit(clientIP, false);
     if (!rateLimitCheck.allowed) {
       console.warn(`限流拦截: IP=${clientIP}, 原因=${rateLimitCheck.reason}`);
       return NextResponse.json(
@@ -271,6 +347,7 @@ export async function POST(request: Request) {
     
     // 检查KV缓存
     const cacheKey = `${lang}:${q.toLowerCase()}`;
+    // 使用统一的 KV 缓存工具 (含内存 L1 缓存)
     const cachedResult = await getCached<any[]>('search', cacheKey);
     if (cachedResult) {
       return NextResponse.json({
@@ -293,7 +370,8 @@ export async function POST(request: Request) {
         .where(and(
           eq(emojiKeywords.language, lang),
           // 使用 contentLower 字段代替 LOWER() 函数，可以利用索引
-          like(emojiKeywords.contentLower, `%${lowerQ}%`)
+          // 去掉前缀通配符 % 以启用索引前缀搜索，避免全表扫描
+          like(emojiKeywords.contentLower, `${lowerQ}%`)
         ))
         .groupBy(emojiKeywords.baseCode)
         .limit(50) // 进一步减少限制数量，减少数据库负载
@@ -306,7 +384,8 @@ export async function POST(request: Request) {
         .where(and(
           eq(emojiLanguage.language, lang),
           // 使用 nameLower 字段代替 LOWER() 函数，可以利用索引
-          like(emojiLanguage.nameLower, `%${lowerQ}%`)
+          // 去掉前缀通配符 % 以启用索引前缀搜索，避免全表扫描
+          like(emojiLanguage.nameLower, `${lowerQ}%`)
         ))
         .groupBy(emojiLanguage.fullCode)
         .limit(50) // 进一步减少限制数量，减少数据库负载
@@ -331,7 +410,7 @@ export async function POST(request: Request) {
     // 没有匹配到关键词，则调用豆包api，根据语义查找相关的表情
     if (searchResults.length === 0) {
       // AI搜索额外限流检查
-      const aiRateLimitCheck = checkRateLimit(clientIP, true);
+      const aiRateLimitCheck = await checkRateLimit(clientIP, true);
       if (!aiRateLimitCheck.allowed) {
         console.warn(`AI搜索限流: IP=${clientIP}, 原因=${aiRateLimitCheck.reason}`);
         return NextResponse.json(
@@ -376,6 +455,30 @@ export async function POST(request: Request) {
       const batchSize = 30; // 从 100 降低到 30
       const maxResults = 100; // 从 200 降低到 100
       
+      // 并行获取 Emoji 类型映射，避免在循环中 JOIN
+      const typeMapPromise = getOrSetCached(
+        'emojiTypeMap',
+        lang,
+        async () => {
+          const types = await db
+            .select({
+              type: emojiType.type,
+              name: emojiType.name
+            })
+            .from(emojiType)
+            .where(eq(emojiType.language, lang))
+            .execute();
+            
+          return types.reduce((acc, curr) => {
+            if (curr.type !== null && curr.name !== null) {
+              acc[curr.type] = curr.name;
+            }
+            return acc;
+          }, {} as Record<number, string>);
+        },
+        86400 // 缓存 1 天
+      );
+
       // 分批查询，但并行处理
       const batches = [];
       for (let i = 0; i < baseCodes.length && emojiList.length < maxResults; i += batchSize) {
@@ -383,9 +486,10 @@ export async function POST(request: Request) {
         if (batches.length >= 2) break; // 最多 2 个批次并行，减少 CPU 消耗
       }
       
-      // 并行执行所有批次
-      const batchResults = await Promise.all(
-        batches.map(batch => 
+      // 并行执行所有查询和类型获取
+      const [typeMap, ...batchResults] = await Promise.all([
+        typeMapPromise,
+        ...batches.map(batch => 
           db
             .select({
               fullCode: emoji.fullCode,
@@ -393,17 +497,18 @@ export async function POST(request: Request) {
               name: emojiLanguage.name,
               hot: emoji.hot,
               type: emoji.type,
-              typeName: emojiType.name
+              // typeName: emojiType.name // 移除 JOIN，改为内存映射
             })
             .from(emoji)
             .leftJoin(emojiLanguage, and(
               eq(emoji.fullCode, emojiLanguage.fullCode),
               eq(emojiLanguage.language, lang)
             ))
-            .leftJoin(emojiType, and(
-              eq(emoji.type, emojiType.type),
-              eq(emojiType.language, lang)
-            ))
+            // 移除 emojiType JOIN，改用内存映射
+            // .leftJoin(emojiType, and(
+            //   eq(emoji.type, emojiType.type),
+            //   eq(emojiType.language, lang)
+            // ))
             .where(
               and(
                 inArray(emoji.fullCode, batch),
@@ -414,11 +519,15 @@ export async function POST(request: Request) {
             .limit(30) // 减少每批次限制，降低 CPU 消耗
             .execute()
         )
-      );
+      ]);
       
-      // 合并结果
+      // 合并结果并填充 typeName
       for (const results of batchResults) {
-        emojiList.push(...results);
+        const resultsWithTypeName = results.map(item => ({
+          ...item,
+          typeName: item.type !== null ? typeMap[item.type] : null
+        }));
+        emojiList.push(...resultsWithTypeName);
         if (emojiList.length >= maxResults) {
           break;
         }
@@ -428,7 +537,7 @@ export async function POST(request: Request) {
     // 最多返回 100 条，减少数据传输和 CPU 消耗
     const result: Record<string, any>[] = [...aiEmojiList, ...emojiList].slice(0, 100);
     
-    // 设置KV缓存
+    // 设置KV缓存 (同时也写入内存缓存)
     await setCached('search', cacheKey, result, SEARCH_CACHE_TTL);
     
     return NextResponse.json({
@@ -442,7 +551,16 @@ export async function POST(request: Request) {
         'X-RateLimit-Remaining': (MAX_REQUESTS_PER_MINUTE - (rateLimitMap.get(clientIP)?.count || 0)).toString(),
       }
     });
-  } catch (error) {
+  } catch (error: any) {
+    // 优化数据库表不存在的报错信息
+    if (error?.message?.includes('no such table')) {
+      console.error('Database Error: Table not found. Please run "npm run db:migrate:local" to initialize the database.');
+      return NextResponse.json(
+        { error: 'Database not initialized' },
+        { status: 500 }
+      );
+    }
+
     console.error('搜索接口错误:', error);
     return NextResponse.json(
       { error: '搜索请求处理失败' },
@@ -474,7 +592,7 @@ export async function GET(request: Request) {
   }
   
   // 限流检查(GET请求使用相同限流)
-  const rateLimitCheck = checkRateLimit(clientIP, false);
+  const rateLimitCheck = await checkRateLimit(clientIP, false);
   if (!rateLimitCheck.allowed) {
     return NextResponse.json(
       { error: rateLimitCheck.reason },

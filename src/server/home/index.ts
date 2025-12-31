@@ -66,7 +66,12 @@ export async function fetchEmojiByGroup(initLang: AVAILABLE_LOCALES) {
     },
     86400 * 7 // 7天缓存 - 首页分类数据基本不变
   ).catch(error => {
-    console.error("Error fetching emoji by group:", error);
+    // 优化数据库表不存在的报错信息
+    if (error?.message?.includes('no such table')) {
+      console.error('Database Error: Table not found. Please run "npm run db:migrate:local" to initialize the database.');
+    } else {
+      console.error("Error fetching emoji by group:", error);
+    }
     return {
       success: false,
       data: [],
@@ -111,7 +116,12 @@ export async function fetchHotEmoji(initLang: AVAILABLE_LOCALES) {
     },
     86400 // 1天缓存 - 热门表情每天轮换一次
   ).catch(error => {
-    console.error("Error fetching hot emoji:", error);
+    // 优化数据库表不存在的报错信息
+    if (error?.message?.includes('no such table')) {
+      console.error('Database Error: Table not found. Please run "npm run db:migrate:local" to initialize the database.');
+    } else {
+      console.error("Error fetching hot emoji:", error);
+    }
     return {
       success: false,
       data: [],
@@ -150,7 +160,11 @@ export async function fetchRandomKeywords(initLang: AVAILABLE_LOCALES) {
       };
     },
     3600 // 1小时缓存 - 随机关键词每小时轮换
-  ).catch(() => {
+  ).catch((error) => {
+    // 优化数据库表不存在的报错信息
+    if (error?.message?.includes('no such table')) {
+      console.error('Database Error: Table not found. Please run "npm run db:migrate:local" to initialize the database.');
+    }
     return {
       success: true,
       data: []

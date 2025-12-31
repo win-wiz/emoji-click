@@ -23,7 +23,7 @@ const MEMORY_CACHE_TTL = 60 * 1000; // 内存缓存默认1分钟
  * 获取 KV 命名空间
  * 开发环境和生产环境自动适配
  */
-function getKVNamespace(): KVNamespace | null {
+export async function getKVNamespace(): Promise<KVNamespace | null> {
   try {
     if (typeof process !== 'undefined' && process.env.NODE_ENV === 'development') {
       // 开发环境：从 cloudflare next-on-pages 获取
@@ -95,7 +95,7 @@ export async function getCached<T>(
 
   // L2: 检查 KV 缓存
   try {
-    const kv = getKVNamespace();
+    const kv = await getKVNamespace();
     if (!kv) {
       return null;
     }
@@ -154,7 +154,7 @@ export async function setCached<T>(
 
   // L2: 写入 KV（异步，不阻塞）
   try {
-    const kv = getKVNamespace();
+    const kv = await getKVNamespace();
     if (!kv) {
       return;
     }
@@ -181,7 +181,7 @@ export async function deleteCached(
 
   // 删除 KV 缓存
   try {
-    const kv = getKVNamespace();
+    const kv = await getKVNamespace();
     if (kv) {
       await kv.delete(cacheKey);
     }
@@ -208,7 +208,7 @@ export async function deleteCachedByPrefix(
 
   // KV 不支持批量删除，需要列出所有 key 再删除
   try {
-    const kv = getKVNamespace();
+    const kv = await getKVNamespace();
     if (!kv) {
       return;
     }
