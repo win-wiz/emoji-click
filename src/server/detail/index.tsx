@@ -89,18 +89,22 @@ export async function fetchEmojiProfileByFullCode(fullCode: string, initLang: AV
 
     // 查找相关推荐
     const related = profile[0]?.related?.split(',') || [];
-    const recommandsPrepare = db
-      .select({
-        fullCode: emoji.fullCode,
-        code: emoji.code,
-        name: emojiLanguage.name,
-      })
-      .from(emoji)
-      .innerJoin(emojiLanguage, and(eq(emojiLanguage.fullCode, emoji.fullCode), eq(emojiLanguage.language, lang)))
-      .where(inArray(emoji.code, related))
-      .prepare();
+    let recommands: { fullCode: string | null; code: string | null; name: string | null; }[] = [];
 
-    const recommands = await recommandsPrepare.execute() || [];
+    if (related.length > 0) {
+      const recommandsPrepare = db
+        .select({
+          fullCode: emoji.fullCode,
+          code: emoji.code,
+          name: emojiLanguage.name,
+        })
+        .from(emoji)
+        .innerJoin(emojiLanguage, and(eq(emojiLanguage.fullCode, emoji.fullCode), eq(emojiLanguage.language, lang)))
+        .where(inArray(emoji.code, related))
+        .prepare();
+
+      recommands = await recommandsPrepare.execute();
+    }
     
     const data: Record<string, any> = profile[0] || {};
     data.keywords = keywords;
