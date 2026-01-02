@@ -11,7 +11,7 @@ export async function fetchEmojiByGroup(initLang: AVAILABLE_LOCALES) {
   
   // 使用KV缓存 - 7天缓存，首页数据基本不变
   return await getOrSetCached(
-    'emojiByGroup',
+    'emojiByGroup_v2', // 更新缓存Key以应用新的查询逻辑
     lang,
     async () => {
       // 优化：并行查询三个表，在内存中聚合，避免 JOIN 产生的高 Read Rows
