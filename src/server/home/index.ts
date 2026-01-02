@@ -14,49 +14,77 @@ export async function fetchEmojiByGroup(initLang: AVAILABLE_LOCALES) {
     'emojiByGroup',
     lang,
     async () => {
-      const categoryPrepare = db
-        .select({
-          // 类型信息
-          typeId: emojiType.type,
-          typeName: emojiType.name,
-          typeLanguage: emojiType.language,
-          icon: emojiType.icon,
-          // 使用 JSON_GROUP_ARRAY 将每个类型的emoji聚合为数组
-          emojis: sql<string>`json_group_array(json_object(
-            'id', ${emoji.id},
-            'code', ${emoji.code},
-            'fullCode', ${emoji.fullCode},
-            'baseCode', ${emoji.baseCode},
-            'type', ${emoji.type},
-            'sort', ${emoji.sort},
-            'related', ${emoji.related},
-            'hot', ${emoji.hot},
-            'emotion', ${emoji.emotion},
-            'name', ${emojiLanguage.name}
-          ))`
-        })
-        .from(emojiType)
-        .leftJoin(emoji, and(
-          eq(emojiType.type, emoji.type),
-          eq(emoji.diversity, 0) // 将过滤条件移到 JOIN 中，减少聚合数据量
-        ))
-        .leftJoin(emojiLanguage, and(
-          eq(emoji.fullCode, emojiLanguage.fullCode),
-          eq(emojiLanguage.language, lang) // 将过滤条件移到 JOIN 中
-        ))
-        .where(eq(emojiType.language, lang))
-        .groupBy(emojiType.type)
-        .prepare();
+      // 优化：并行查询三个表，在内存中聚合，避免 JOIN 产生的高 Read Rows
+      const [categories, emojis, names] = await Promise.all([
+        // 1. 获取分类
+        db
+          .select({
+            id: emojiType.type,
+            name: emojiType.name,
+            language: emojiType.language,
+            icon: emojiType.icon,
+          })
+          .from(emojiType)
+          .where(eq(emojiType.language, lang))
+          .execute(),
 
-      const result = await categoryPrepare.execute();
+        // 2. 获取基础表情 (diversity=0)
+        db
+          .select({
+            id: emoji.id,
+            code: emoji.code,
+            fullCode: emoji.fullCode,
+            baseCode: emoji.baseCode,
+            type: emoji.type,
+            sort: emoji.sort,
+            related: emoji.related,
+            hot: emoji.hot,
+            emotion: emoji.emotion,
+          })
+          .from(emoji)
+          .where(eq(emoji.diversity, 0))
+          .execute(),
 
-      // 处理结果，将JSON字符串解析为对象
-      const formattedResult = result.map(item => ({
-        id: item.typeId,
-        name: item.typeName,
-        language: item.typeLanguage,
-        icon: item.icon,
-        emojis: JSON.parse(item.emojis).filter((e: any) => e.id !== null) // 过滤掉空值
+        // 3. 获取语言包名称
+        db
+          .select({
+            fullCode: emojiLanguage.fullCode,
+            name: emojiLanguage.name,
+          })
+          .from(emojiLanguage)
+          .where(eq(emojiLanguage.language, lang))
+          .execute()
+      ]);
+
+      // 4. 在内存中构建映射
+      const nameMap = new Map(names.map(n => [n.fullCode, n.name]));
+      
+      const emojisByType = new Map<number, any[]>();
+      
+      // 5. 将表情分配到分类
+      for (const e of emojis) {
+        if (e.type === null) continue;
+        
+        // 组合数据
+        const emojiData = {
+          ...e,
+          name: nameMap.get(e.fullCode!) || ''
+        };
+
+        if (!emojisByType.has(e.type)) {
+          emojisByType.set(e.type, []);
+        }
+        emojisByType.get(e.type)!.push(emojiData);
+      }
+
+      // 6. 组装最终结果
+      const formattedResult = categories.map(cat => ({
+        id: cat.id,
+        name: cat.name,
+        language: cat.language,
+        icon: cat.icon,
+        // 获取该分类下的表情，并按 sort 排序(如果数据库未排序)
+        emojis: (emojisByType.get(cat.id!) || []).sort((a, b) => (a.sort || 0) - (b.sort || 0))
       }));
 
       return {
