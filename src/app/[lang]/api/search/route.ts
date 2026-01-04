@@ -370,8 +370,9 @@ export async function POST(request: Request) {
         .where(and(
           eq(emojiKeywords.language, lang),
           // 使用 contentLower 字段代替 LOWER() 函数，可以利用索引
-          // 去掉前缀通配符 % 以启用索引前缀搜索，避免全表扫描
-          like(emojiKeywords.contentLower, `${lowerQ}%`)
+          // 使用 GLOB 代替 LIKE，因为 SQLite 的 LIKE 是大小写不敏感的，而索引是二进制的
+          // 这会导致索引无法用于前缀搜索。GLOB 是大小写敏感的，可以利用索引。
+          sql`${emojiKeywords.contentLower} GLOB ${lowerQ + '*'}`
         ))
         .limit(50) // 进一步减少限制数量，减少数据库负载
         .execute(),
@@ -383,8 +384,8 @@ export async function POST(request: Request) {
         .where(and(
           eq(emojiLanguage.language, lang),
           // 使用 nameLower 字段代替 LOWER() 函数，可以利用索引
-          // 去掉前缀通配符 % 以启用索引前缀搜索，避免全表扫描
-          like(emojiLanguage.nameLower, `${lowerQ}%`)
+          // 使用 GLOB 代替 LIKE 以启用索引前缀搜索
+          sql`${emojiLanguage.nameLower} GLOB ${lowerQ + '*'}`
         ))
         .limit(50) // 进一步减少限制数量，减少数据库负载
         .execute()

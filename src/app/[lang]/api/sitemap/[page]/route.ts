@@ -6,12 +6,14 @@ import { getOrSetCached } from "@/utils/kv-cache";
 
 export const runtime = 'edge';
 
-export async function GET(req: NextRequest) {
+export async function GET(req: NextRequest, { params }: { params: { page: string } }) {
 
-  const page = req.nextUrl.searchParams.get('page') || 1;
+  // 优先从路由参数获取 page，兼容旧的 query 参数方式
+  const pageParam = params?.page || req.nextUrl.searchParams.get('page') || '1';
+  const page = parseInt(pageParam, 10) || 1;
 
   const limitPage = SITEMAP_INDEX_PAGE_SIZE;
-  const offset = (+(page || 1) - 1) * limitPage;
+  const offset = (page - 1) * limitPage;
 
   // 使用 KV 缓存，7天缓存，sitemap 数据基本不变
   const emojis = await getOrSetCached(
@@ -24,6 +26,9 @@ export async function GET(req: NextRequest) {
           language: emojiLanguage.language,
         })
         .from(emojiLanguage)
+        // 添加排序以确保分页确定性，并利用 (fullCode, language) 覆盖索引进行扫描
+        // 这将避免全表扫描，只扫描索引，显著提高 offset 性能
+        .orderBy(emojiLanguage.fullCode, emojiLanguage.language)
         .limit(limitPage)
         .offset(offset)
         .prepare();
