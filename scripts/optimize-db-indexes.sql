@@ -11,12 +11,18 @@ CREATE INDEX IF NOT EXISTS emojiKeywords_language_contentLower ON emojiKeywords(
 DROP INDEX IF EXISTS emojiLanguage_language_nameLower;
 CREATE INDEX IF NOT EXISTS emojiLanguage_language_nameLower ON emojiLanguage(language, nameLower, fullCode);
 
+-- 新增：覆盖索引优化 fetchEmojiByGroup 的查询 (select fullCode, name where language = ?)
+CREATE INDEX IF NOT EXISTS emojiLanguage_language_fullCode_name_idx ON emojiLanguage(language, fullCode, name);
+
 -- 3. emoji 表优化
 -- 添加常用查询字段索引
 CREATE INDEX IF NOT EXISTS emoji_type ON emoji(type);
 CREATE INDEX IF NOT EXISTS emoji_hot ON emoji(hot);
 CREATE INDEX IF NOT EXISTS emoji_diversity ON emoji(diversity);
 CREATE INDEX IF NOT EXISTS emoji_type_diversity ON emoji(type, diversity);
+
+-- 新增：覆盖索引优化 fetchEmojiByGroup 的查询 (select code, fullCode, type, sort where diversity = 0)
+CREATE INDEX IF NOT EXISTS emoji_diversity_covering_idx ON emoji(diversity, type, sort, fullCode, code);
 
 -- 4. emojiType 表优化
 -- 添加常用查询字段索引

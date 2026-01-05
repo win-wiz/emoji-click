@@ -29,17 +29,18 @@ export async function fetchEmojiByGroup(initLang: AVAILABLE_LOCALES) {
           .execute(),
 
         // 2. 获取基础表情 (diversity=0)
+        // 优化：只查询必要字段，配合覆盖索引减少 IO
         db
           .select({
-            id: emoji.id,
+            // id: emoji.id, // 不需要
             code: emoji.code,
             fullCode: emoji.fullCode,
-            baseCode: emoji.baseCode,
+            // baseCode: emoji.baseCode, // 不需要
             type: emoji.type,
             sort: emoji.sort,
-            related: emoji.related,
-            hot: emoji.hot,
-            emotion: emoji.emotion,
+            // related: emoji.related, // 不需要
+            // hot: emoji.hot, // 不需要
+            // emotion: emoji.emotion, // 不需要
           })
           .from(emoji)
           .where(eq(emoji.diversity, 0))
