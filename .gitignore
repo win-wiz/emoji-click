@@ -51,4 +51,4 @@ sql/
 
 # wrangler
 wrangler.toml
-.wrangler
+.wrangler 
