@@ -29,7 +29,7 @@ Emoji Click 是一个使用 Next.js 和 TypeScript 构建的开源表情符号�
 ```bash
 npm run dev
 # 或者
-yarn dev
+yarn dev 
 ```
 
 在浏览器中打开 [http://localhost:3000](http://localhost:3000) 查看结果。
