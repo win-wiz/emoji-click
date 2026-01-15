@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 // import clsx from 'clsx'
 import dynamic from 'next/dynamic'
+import AdSenseScript from '@/components/adsense-script'
 // import { GoogleAnalytics } from '@next/third-parties/google'
 // import MicrosoftClarity from '@/components/microsoft-clarity'
 
@@ -15,6 +16,7 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
     <html>
     <head>
       <link rel="canonical" href="https://emojis.click/en" />
+      {!isDev && <AdSenseScript />}
     </head>
     <body
       className="min-h-screen w-full"
